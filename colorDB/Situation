@@ -1,0 +1,23 @@
+22
+"1_darkgrey" N {100,100,100}
+"2_blue" N {0,0,255}
+"3_grey" N {180,180,180}
+"4_lightgrey" N {240,240,240}
+"5_magenta" N {127,0,127}
+"6_darkwhite" N {230,230,230}
+"7_white" N {255,255,255}
+"8_grey" N {127,127,127}
+"9_yellow" N {255,255,0}
+"10_red" N {255,0,0}
+"13_magenta" N {127,0,127}
+"16_stroke" N {255,255,255}
+"9_yellowcamuna" N <{255,255,0},2,"_3DFace",2>
+"9_yellowwentuna" N <{255,255,0},4,"_3DFace",4>
+"10_redcamuna" N <{255,0,0},2,"_3DFace",2>
+"10_redwentuna" N <{255,0,0},4,"_3DFace",4>
+"el_violet" N {102,0,204}
+"fact_contract" N {1,217,255}
+"fact_order" N {186,186,186}
+"fact_product" N {130,130,130}
+"11_transparent" N {0,0,0,0}
+"WF_warning" N {255,232,138}

@@ -1,0 +1,264 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 657 258 N "fon_static" 2
+"$dpe_value"
+"$i_type"
+"main()
+{
+  //DebugN(\"!!-------!!$dpNav = \"+$dpNav);
+  setBtnText();
+}
+" 0
+ E E E E 1 -1 -1 0  120 50
+""0  1
+E "/**
+  Название для кнопки
+*/
+void setBtnText()
+{
+  dyn_string alert, trend;
+  alert[1] = \"Подтв. все\";
+  alert[2] = \"Ackn. all\";
+  trend[1] = \"Откр. тренд\";
+  trend[2] = \"Open trend\";
+  langString langAlert = alert;
+  langString langTrend = trend;
+  if (tab.activeRegister==0) {
+    btn.text(langAlert.text());
+  } else if (tab.activeRegister==1) {
+    btn.text(langTrend.text());
+  }
+}
+
+/**
+  Выполнение действий по нажатию на кнопки
+  @param type тип кнопки
+*/
+void btnDoAction(int type)
+{
+  if (type==1)//Подтв./тренд
+  {
+    if (tab.activeRegister==0) {
+      dpSetWait($dpe_value+\".OUT:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+      dpSetWait($dpe_value+\".SIM:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+      dpSetWait($dpe_value+\".invalid:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+    } else if (tab.activeRegister==1) {
+      //btn.text(langTrend.text());
+    }
+  }
+  else if (type==2)//Блок-и
+  {
+  }
+  else if (type==3)//Мнем
+  {
+    openPnlForElement($dpe_value);
+  }
+  else if (type==4)//Подр-ти
+  {
+    openDetailPanel($dpe_value);
+  }
+}" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+28 86
+"tab"
+""
+1 37 20 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+2
+"layoutAlignment" "AlignNone"
+"selchangedcb" "main()
+{
+  setBtnText();
+}"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  35 18 639 232
+E2 "alert" 2
+LANG:10027 24 Сигнализации
+LANG:10001 5 Alert
+1 "navigation/front/sub/frontAlerts.pnl" 2
+LANG:10027 0 
+LANG:10001 0 
+2
+"$dpe_value""$dpe_value"
+"$i_type""$i_type"
+
+"trend" 2
+LANG:10027 10 Тренд
+LANG:10001 5 Trend
+1 "navigation/front/sub/frontTrendsDi.pnl" 2
+LANG:10027 0 
+LANG:10001 0 
+1
+"$dpe_value""$dpe_value"
+
+
+13 87
+"btn"
+""
+1 537 23.3 E E E 1 E 1 E N "_ButtonText" E N "fon_static" E E
+ E E
+45 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  535 18 639 45
+
+T 
+2
+LANG:10027 19 Откр.тренд
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  btnDoAction(1);
+}" 0
+ E E E
+13 88
+"btnBlock"
+""
+1 37 233 E E E 1 E 1 E N "_ButtonText" E N "fon_static" E E
+ E E
+46 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  35 228 120 255
+
+T 
+2
+LANG:10027 11 Блок-и
+LANG:10001 5 Block
+"main(mapping event)
+{
+  btnDoAction(2);
+}" 0
+ E E E
+13 89
+"btnMnem"
+""
+1 118 233 E E E 1 E 1 E N "_ButtonText" E N "fon_static" E E
+ E E
+47 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  116 228 201 255
+
+T 
+2
+LANG:10027 9 Мнем.
+LANG:10001 6 Schema
+"main(mapping event)
+{
+  btnDoAction(3);
+}" 0
+ E E E
+13 90
+"btnDetail"
+""
+1 199 233 E E E 1 E 1 E N "_ButtonText" E N "fon_static" E E
+ E E
+48 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  197 228 282 255
+
+T 
+2
+LANG:10027 13 Подр-ти
+LANG:10001 7 Details
+"main(mapping event)
+{
+  btnDoAction(4);
+}" 0
+ E E E
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

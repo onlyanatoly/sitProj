@@ -1,0 +1,388 @@
+V 14
+3
+LANG:10027 18 (БезИмени)
+LANG:10001 8 (NoName)
+LANG:10000 8 (NoName)
+PANEL,-1 -1 365 267 N "_3DFace" 0
+E E E E E 1 -1 -1 0  90 20
+""0  1
+E E 3
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+2 4
+"Text1"
+""
+1 90 20 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 92 22 245 40
+0 2 0 "0s" 0 0 0 192 0 0  92 22 1
+3
+LANG:10027 26 Arial,-1,17,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,17,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,17,5,75,0,0,0,0,0
+0 3
+LANG:10027 29 Примеры трендов
+LANG:10001 24 Trend view example panel
+LANG:10000 22 Trendanzeige Testpanel
+13 0
+"Button1"
+""
+1 40 50 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,12,5,50,0,0,0,0,0
+0  38 48 332 78
+
+T 
+3
+LANG:10027 55 Создать тестовые точки данных
+LANG:10001 25 Generate test data points
+LANG:10000 25 Generiere Testdatenpunkte
+"
+main()
+{
+dyn_string ds;
+int i;
+string defaultDp;
+string mySystem = getSystemName();							// Systemname
+langString ls;
+string sNumber, tempDp;
+string s;
+string LineStyle = \"[solid,oneColor,JoinMiter,CapButt,1]\";
+string ColorStyle = \"[100,40,20]\";
+string CurveScale = \"AUTO:\";
+string FillStyle = \"1:1:1:\";
+string now = getCurrentTime();
+
+defaultDp = \"ExampleTrend1\";
+if (!dpExists(defaultDp))
+{
+  for (i=1; i<=getNoOfLangs();i++)                           // generateDP          
+		ds[i]=defaultDp + \"_Name\";
+  ls = ds;
+  dpCreate(defaultDp,\"_VarTrend\",getSystemId(mySystem));
+  dpSetWait(mySystem+defaultDp+\".LineStyle:_original.._value\",makeDynString(LineStyle,LineStyle,LineStyle,LineStyle,LineStyle,LineStyle,LineStyle,LineStyle),
+  			mySystem+defaultDp+\".ColorStyle:_original.._value\",makeDynString(\"[100,80,60]\",\"[100,0,0]\",\"[0,100,0]\",\"[40,0,100]\",\"[60,0,0]\",\"[0,60,60]\",\"[100,100,0]\",\"[40,80,80]\"),
+  			mySystem+defaultDp+\".FillStyle:_original.._value\",makeDynString(FillStyle,FillStyle,FillStyle,FillStyle,FillStyle,FillStyle,FillStyle,FillStyle),
+  			mySystem+defaultDp+\".Scale:_original.._value\",makeDynString(1,0,0,0,0,0,0,0),
+  			mySystem+defaultDp+\".CurveScale:_original.._value\",makeDynString(CurveScale,CurveScale,CurveScale,CurveScale,CurveScale,CurveScale,CurveScale,CurveScale),
+ 			mySystem+defaultDp+\".DP:_original.._value\",makeDynString(\"ExampleDP_Result.\"),
+ 			mySystem+defaultDp+\".TrendType:_original.._value\",1,
+ 			mySystem+defaultDp+\".StartTime:_original.._value\",makeDynTime(now,now,0,0,0,0,0,0),
+  			mySystem+defaultDp+\".EndTime:_original.._value\",makeDynTime(now,now,0,0,0,0,0,0),
+			mySystem+defaultDp+\".Compression:_original.._value\",makeDynBool(0,0,0,0,0,0,0,0));
+  dpSetWait(mySystem+defaultDp+\".TrendName:_original.._value\",ls, 
+  			mySystem+defaultDp+\".User:_original.._value\",getUserName());
+}
+
+defaultDp = \"ExampleTrend2\";
+      
+if (!dpExists(defaultDp))
+{
+  for (i=1; i<=getNoOfLangs();i++)                           // generateDP          
+		ds[i]=defaultDp + \"_Name\";
+  ls = ds;
+  dpCreate(defaultDp,\"_VarTrend\",getSystemId(mySystem));
+  dpSetWait(mySystem+defaultDp+\".LineStyle:_original.._value\",makeDynString(LineStyle,LineStyle,LineStyle,LineStyle,LineStyle,LineStyle,LineStyle,LineStyle),
+  			mySystem+defaultDp+\".ColorStyle:_original.._value\",makeDynString(\"[100,80,60]\",\"[100,0,0]\",\"[0,100,0]\",\"[40,0,100]\",\"[60,0,0]\",\"[0,60,60]\",\"[100,100,0]\",\"[40,80,80]\"),
+  			mySystem+defaultDp+\".FillStyle:_original.._value\",makeDynString(FillStyle,FillStyle,FillStyle,FillStyle,FillStyle,FillStyle,FillStyle,FillStyle),
+  			mySystem+defaultDp+\".Scale:_original.._value\",makeDynString(1,0,0,0,0,0,0,0),
+  			mySystem+defaultDp+\".CurveScale:_original.._value\",makeDynString(CurveScale,CurveScale,CurveScale,CurveScale,CurveScale,CurveScale,CurveScale,CurveScale),
+ 			mySystem+defaultDp+\".DP:_original.._value\",makeDynString(\"$CURVE1\"),
+ 			mySystem+defaultDp+\".TrendType:_original.._value\",1,
+ 			mySystem+defaultDp+\".StartTime:_original.._value\",makeDynTime(now,now,0,0,0,0,0,0),
+  			mySystem+defaultDp+\".EndTime:_original.._value\",makeDynTime(now,now,0,0,0,0,0,0),
+			mySystem+defaultDp+\".Compression:_original.._value\",makeDynBool(0,0,0,0,0,0,0,0));
+  dpSetWait(mySystem+defaultDp+\".TrendName:_original.._value\",ls, 
+  			mySystem+defaultDp+\".User:_original.._value\",getUserName());
+}
+      
+}     
+" 0
+ E E E
+13 1
+"Button2"
+""
+1 80 140 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,12,5,50,0,0,0,0,0
+0  38 88 332 118
+
+T 
+3
+LANG:10027 71 Тренд с указ. DPE в кач.источников данных
+LANG:10001 22 Show trend with curves
+LANG:10000 35 Trendanzeige mit definierten Kurven
+"main()
+{
+
+//
+//   Select predefined TrendConfiguration
+//
+
+openTrend(\"ExampleTrend1_Name\", -1);
+
+//
+//  1st parameter: Trendname
+//  2nd parameter: Trendtype:
+//
+// -1) last view
+//  0) undefined
+//  1) Trend today open
+//  2) Trend yesterday closed
+//  3) Trend selected day closed
+//  4) Trend this week open
+//  5) Trend last week closed
+//  6) Trend defined timerange closed
+//  7) Trend last 24 hous open
+//  8) 3 day trend open
+//
+
+
+
+}" 0
+ E E E
+13 2
+"Button3"
+""
+1 120 270 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,12,5,50,0,0,0,0,0
+0  38 128 332 158
+
+T 
+3
+LANG:10027 82 Тренд с $-параметрами в кач.источников данных
+LANG:10001 22 Show trend with $CURVE
+LANG:10000 35 Trendanzeige mit $-Parameter Kurven
+"main()
+{
+
+//
+//   Select predefined TrendConfiguration
+//
+
+openTrendCurves(\"ExampleTrend2_Name\", -1, makeDynString(\"$CURVE1:ExampleDP_Result.\"));
+
+
+//  openTrendCurves(string trendName, int trendType, dyn_string Curves)
+//  öffnet den Trend mit der Konfiguration trendName und ersetzt die Kurven
+//  dp = makeDynString (\"$CURVE1:dp1\",\"$CURVE2:dp2\",...,\"$CURVE3:dp3);
+//
+//  1st parameter: Trendname
+//  2nd parameter: Trendtype 
+//
+// -1) last view
+//  0) undefined
+//  1) Trend today open
+//  2) Trend yesterday closed
+//  3) Trend selected day closed
+//  4) Trend this week open
+//  5) Trend last week closed
+//  6) Trend defined timerange closed
+//  7) Trend last 24 hous open
+//  8) 3 day trend open
+//
+
+
+}" 0
+ E E E
+13 3
+"Button4"
+""
+1 120 310 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,12,5,50,0,0,0,0,0
+0  38 168 332 198
+
+T 
+3
+LANG:10027 44 Отобразить пустой тренд
+LANG:10001 16 Show empty trend
+LANG:10000 27 Anzeige eines leeren Trends
+"main()
+{
+ // reset Trend
+  string sRuntimeDp = \"_VarTrendOpen_\"+myUiNumber()+\"_\"+myModuleName();
+          
+  if ( !dpExists(sRuntimeDp) )
+    dpCreate(sRuntimeDp, \"_VarTrendOpen\");
+  
+  dpSet(sRuntimeDp+\".UiNumber:_original.._value\",myUiNumber(),
+        sRuntimeDp+\".PanelName:_original.._value\",\"Trend: \", 
+        sRuntimeDp+\".TrendData:_original.._value\",\"\");
+  // open new Module
+    ModuleOnWithPanel(\"Trend\",
+                    0, 0, 0, 0, 0, 0, \"\",
+                    \"vision/trend/VT_trend.pnl\",
+                    \"Trend: Testtrend\",
+                    makeDynString(\"$VARTRENDDP:\"));
+}" 0
+ E E E
+13 5
+"Button5"
+""
+1 80 260 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,12,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,12,5,50,0,0,0,0,0
+0  38 208 332 238
+
+T 
+3
+LANG:10027 55 Удалить тестовые точки данных
+LANG:10001 23 Delete test data points
+LANG:10000 33 Löschen der Trendtestdatenpunkte
+"
+main()
+{
+dyn_string ds;
+int i;
+string defaultDp;
+string mySystem = getSystemName();							// Systemname
+langString ls;
+string sNumber, tempDp;
+string s;
+string LineStyle = \"[solid,oneColor,JoinMiter,CapButt,1]\";
+string ColorStyle = \"[100,40,20]\";
+string CurveScale = \"AUTO:\";
+string FillStyle = \"1:1:1:\";
+string now = getCurrentTime();
+
+defaultDp = \"ExampleTrend1\";
+if (dpExists(defaultDp))
+{
+   dpDelete(defaultDp);
+}
+
+defaultDp = \"ExampleTrend2\";
+      
+if (!dpExists(defaultDp))
+{
+}
+   dpDelete(defaultDp);
+      
+}     
+" 0
+ E E E
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

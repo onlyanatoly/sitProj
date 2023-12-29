@@ -1,0 +1,3136 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 848 579 N {80,80,80} 1
+"$NKU"
+E E E E E 1 -1 -1 0  77.32805754376386 105.4101236998667
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.8619"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+2 1
+"PRIMITIVE_TEXT173"
+""
+1 222.057857304062 228.8992550973631 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 222.057857304062 228.8992550973631 255 247
+0 2 2 "0s" 0 0 0 192 0 0  222.057857304062 228.8992550973631 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 3 1QF
+2 2
+"PRIMITIVE_TEXT175"
+""
+1 196.9975234782569 246.7123096957044 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 196.9975234782569 246.7123096957044 271 265
+0 2 2 "0s" 0 0 0 192 0 0  196.9975234782569 246.7123096957044 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 13 Ввод №1
+2 3
+"PRIMITIVE_TEXT426"
+""
+1 454.3458157440772 229.2323543451796 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 454.3458157440772 229.2323543451796 487 247
+0 2 2 "0s" 0 0 0 192 0 0  454.3458157440772 229.2323543451796 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 3 2QF
+2 4
+"PRIMITIVE_TEXT428"
+""
+1 432.2854819182711 247.045408943521 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 432.2854819182711 247.045408943521 507 265
+0 2 2 "0s" 0 0 0 192 0 0  432.2854819182711 247.045408943521 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 13 Ввод №2
+4 5
+"LINE406"
+""
+1 79.82805754376386 286.7269920545396 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  79.82805754376386 286.7269920545396 354.0460216230897 286.7269920545396
+7 6
+"ELLIPSE377"
+""
+1 213 577 E E E 1 E 1 E N {190,190,190} E N {190,190,190} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.193376810070443 0 1.238787090560997 191.4513220974578 -494.1395399456311 1 E 213.5331159496478 630.306064547195 2.5 2.5
+7 7
+"ELLIPSE378"
+""
+1 213 577 E E E 1 E 1 E N {190,190,190} E N {190,190,190} E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.193376810070443 0 1.238787090560997 99.22055286669703 -494.088023808832 1 E 213.5331159496478 630.306064547195 2.5 2.5
+4 8
+"LINE460"
+""
+1 354.0460216230897 288.6201826047128 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  354.0460216230897 288.6201826047128 354.0460216230897 372.0202230987682
+4 9
+"LINE521"
+""
+1 446.27679085385 289.6656341943166 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  446.27679085385 289.6656341943166 446.27679085385 372.0600913023563
+2 10
+"PRIMITIVE_TEXT346"
+""
+1 382.8323898429913 307.7479784651451 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 382.8323898429913 307.7479784651451 415 326
+0 2 2 "0s" 0 0 0 192 0 0  382.8323898429913 307.7479784651451 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 3 3QF
+2 11
+"PRIMITIVE_TEXT345"
+""
+1 398.2570339719765 331.039102059598 E E E 1 E 1 E N "Black" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 386 331.039102059598 410 349
+0 2 2 "0s" 0 0 0 193 0 0  398.2570339719765 331.039102059598 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 4 СВ
+4 12
+"LINE547"
+""
+1 446.6316714454859 287.0600913023563 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  446.6316714454859 287.0600913023563 804 287.0600913023563
+7 13
+"ELLIPSE380"
+""
+1 213 577 E E E 1 E 1 E N {190,190,190} E N {190,190,190} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.193376810070443 0 1.238787090560997 26.53473526654793 -494.0880238088322 1 E 213.5331159496478 630.306064547195 2.5 2.5
+2 14
+"PRIMITIVE_TEXT239"
+""
+1 1090.575711461266 38.69659821771869 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.11575076396409 0 1 -1047.818115423916 96.24057093738031 0 E 1090.575711461266 38.69659821771869 1274 53
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 38.69659821771869 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 51 Наличие напряжения на вводе
+2 15
+"PRIMITIVE_TEXT240"
+""
+1 1090.575711461266 72.69659821771847 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.19626626488126 0 1 -1135.626365120318 86.24057093738043 0 E 1090.575711461266 72.69659821771847 1269 87
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 72.69659821771847 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 50 Аварийное отключение ввода
+7 16
+"ELLIPSE316"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $NKU+\".Vvod1_Avar_Off\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$NKU+\".Vvod1_Avar_Off\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Vvod1_Avar_Off\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Vvod1_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Vvod1_Avar_Off\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 91.27505362648773 29.58887004623963 1 E 292.5 136.5 8.5 8.5
+30 17
+"FRAME3"
+""
+1 8 98 E E E 1 E 1 E N {200,150,100} E N {0,0,0} E E
+ E E
+16 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 3 1 1 E 0.7613693302120126 0 0.2467326705373849 149.8764066771139 83.230321987203 0 E 8 98 344 421
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 13 Ввод №1
+2 18
+"PRIMITIVE_TEXT431"
+""
+1 1090.575711461266 38.69659821771869 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.11575076396409 0 1 -779.8674413929741 96.24057093738026 0 E 1090.575711461266 38.69659821771869 1274 53
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 38.69659821771869 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 51 Наличие напряжения на вводе
+7 19
+"ELLIPSE382"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Napr_Na_Vvod2\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".Napr_Na_Vvod2\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Napr_Na_Vvod2\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Napr_Na_Vvod2\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Napr_Na_Vvod2\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 359.2257276574294 5.58887004623972 1 E 292.5 136.5 8.5 8.5
+2 20
+"PRIMITIVE_TEXT432"
+""
+1 1090.575711461266 72.69659821771847 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.19626626488126 0 1 -867.6756910893764 86.24057093738031 0 E 1090.575711461266 72.69659821771847 1269 87
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 72.69659821771847 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 50 Аварийное отключение ввода
+7 21
+"ELLIPSE383"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $NKU+\".Vvod2_Avar_Off\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$NKU+\".Vvod2_Avar_Off\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Vvod2_Avar_Off\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Vvod2_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Vvod2_Avar_Off\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 359.2257276574294 29.58887004623952 1 E 292.5 136.5 8.5 8.5
+30 22
+"FRAME4"
+""
+1 8 98 E E E 1 E 1 E N {200,150,100} E N {0,0,0} E E
+ E E
+21 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 3 1 1 E 0.7613693302120126 0 0.2467326705373849 417.8270807080556 83.23032198720296 0 E 8 98 344 421
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 13 Ввод №2
+4 23
+"LINE548"
+""
+1 281.3602040229406 252.6033618466417 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod1_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  281.3602040229406 252.7269920545394 281.3602040229406 286.7269920545394
+4 24
+"LINE549"
+""
+1 281.3602040229406 195.7269920545394 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod1_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  281.3602040229406 195.7269920545394 281.3602040229406 229.7269920545394
+6 25
+"RECTANGLE113"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod1_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.857167300702119 -0.5150380749100434 0.5150380749100434 0.857167300702119 -92.69004976273379 -25.21171229241776 1 E 173 406 177 411
+4 26
+"LINE550"
+""
+1 281.3602040229406 253.7269920545394 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod1_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod1_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  281.3602040229406 253.7269920545394 267.3602040229406 230.8506222624373
+6 27
+"RECTANGLE114"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod1_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.9999999999999999 -6.425415755018093e-15 6.425415755018093e-15 0.9999999999999999 104.2272805425848 -174.1614279335317 1 E 173 406 177 411
+4 28
+"LINE551"
+""
+1 281.4526715306618 253.4599849327232 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod1_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod1_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod1_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  281.3602040229406 253.7269920545394 281.3602040229406 229.7269920545394
+4 29
+"LINE552"
+""
+1 279.3602040229406 225.7269920545394 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  279.3602040229406 225.7269920545394 283.3602040229406 229.7269920545394
+4 30
+"LINE553"
+""
+1 283.3602040229406 225.7269920545394 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  283.3602040229406 225.7269920545394 279.3602040229406 229.7269920545394
+7 31
+"ELLIPSE386"
+""
+1 213 577 E E E 1 E 1 E N {190,190,190} E N {190,190,190} E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.193376810070443 0 1.238787090560997 266.1745312436074 -494.4119835897742 1 E 213.5331159496478 630.306064547195 2.5 2.5
+4 32
+"LINE560"
+""
+1 389.1732647236385 372.0600913023563 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".SV_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  389.0459984175352 372.0599468595094 354.0460216230897 372.0202230987682
+4 33
+"LINE561"
+""
+1 446.0459595141056 372.1265425760459 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".SV_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  446.0459595141056 372.1265425760459 412.0459827196601 372.0868188153048
+6 34
+"RECTANGLE117"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".SV_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.5150380749100524 0.8571673007021136 -0.8571673007021136 0.5150380749100524 666.0041470394481 -0.9657248155536706 1 E 173 406 177 411
+4 35
+"LINE562"
+""
+1 389.1696285410535 372.0600913023563 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".SV_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".SV_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  389.1696285410535 372.0600913023563 412.0623395623182 358.0868283705331
+6 36
+"RECTANGLE118"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".SV_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 2.484124017598788e-15 1 -1 2.484124017598788e-15 815.9392328331401 194.9514310998801 1 E 173 406 177 411
+4 37
+"LINE563"
+""
+1 388.312898005597 372.1515579148929 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".SV_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".SV_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  388.0459991000515 372.0587785136051 412.0459827196601 372.0868188153048
+4 38
+"LINE564"
+""
+1 416.0483166814032 370.091493563954 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  416.0483166814032 370.091493563954 412.0436460278518 374.0868174502721
+4 39
+"LINE565"
+""
+1 416.0436432977866 374.0914908338887 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  416.0436432977866 374.0914908338887 412.0483194114684 370.0868201803374
+4 40
+"LINE566"
+""
+1 521.0000000000001 252.2794020656997 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod2_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  521.0000000000001 252.4030322735974 521.0000000000001 286.4030322735974
+4 41
+"LINE567"
+""
+1 521.0000000000001 195.4030322735974 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+40 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod2_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  521.0000000000001 195.4030322735974 521.0000000000001 229.4030322735974
+6 42
+"RECTANGLE119"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+41 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod2_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.857167300702119 -0.5150380749100434 0.5150380749100434 0.857167300702119 146.9497462143256 -25.53567207335976 1 E 173 406 177 411
+4 43
+"LINE568"
+""
+1 521.0000000000001 252.2794020656995 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod2_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod2_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  521.0000000000001 252.2794020656995 507.0000000000001 229.4030322735974
+6 44
+"RECTANGLE120"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod2_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.9999999999999999 -6.425415755018093e-15 6.425415755018093e-15 0.9999999999999999 343.8670765196442 -174.4853877144737 1 E 173 406 177 411
+4 45
+"LINE569"
+""
+1 521.0924675077213 253.1360251517812 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod2_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod2_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod2_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  521.0000000000001 253.4030322735974 521.0000000000001 229.4030322735974
+4 46
+"LINE570"
+""
+1 519.0000000000001 225.4030322735974 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+45 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  519.0000000000001 225.4030322735974 523.0000000000001 229.4030322735974
+4 47
+"LINE571"
+""
+1 523.0000000000001 225.4030322735974 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+46 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  523.0000000000001 225.4030322735974 519.0000000000001 229.4030322735974
+7 48
+"ELLIPSE387"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E E
+ E E
+47 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Napr_Na_Vvod1\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            $NKU+\".Napr_Na_Vvod1\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Napr_Na_Vvod1\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Vvod1_On\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Vvod1_On\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 91.27505362648773 7.588870046239634 1 E 292.5 136.5 8.5 8.5
+2 49
+"PRIMITIVE_TEXT435"
+""
+1 1090.575711461266 72.69659821771847 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+48 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.19626626488126 0 1 -1213.041214723866 260.3727680577384 0 E 1090.575711461266 72.69659821771847 1253 87
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 72.69659821771847 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 46 Минимальная температура 
+7 50
+"ELLIPSE389"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $NKU+\".Min_Temperatura\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$NKU+\".Min_Temperatura\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+49 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Min_Temperatura\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".Min_Temperatura\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Min_Temperatura\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Min_Temperatura\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Min_Temperatura\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -13.13979597705941 203.7210671665976 1 E 292.5 136.5 8.5 8.5
+7 51
+"ELLIPSE390"
+""
+1 213 577 E E E 1 E 1 E N {190,190,190} E N {190,190,190} E E
+ E E
+50 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.193376810070443 0 1.238787090560997 429.4903669663503 -493.7549245610153 1 E 213.5331159496478 630.306064547195 2.5 2.5
+4 52
+"LINE572"
+""
+1 684.3158357227429 343.9364610944587 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+51 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod3_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  684.3158357227429 344.0600913023563 684.3158357227429 378.0600913023563
+4 53
+"LINE573"
+""
+1 684.3158357227429 287.0600913023563 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod3_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  684.3158357227429 287.0600913023563 684.3158357227429 321.0600913023563
+6 54
+"RECTANGLE121"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod3_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.857167300702119 -0.5150380749100434 0.5150380749100434 0.857167300702119 310.2655819370684 66.12138695539915 1 E 173 406 177 411
+4 55
+"LINE574"
+""
+1 684.3158357227429 343.9364610944585 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+54 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod3_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod3_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  684.3158357227429 343.9364610944585 670.3158357227429 321.0600913023563
+6 56
+"RECTANGLE122"
+""
+1 173 406 E E E 1 E 1 E N {0,0,0} E N "Black" E E
+ E E
+55 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod3_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.9999999999999999 -6.425415755018093e-15 6.425415755018093e-15 0.9999999999999999 507.1829122423869 -82.82832868571475 1 E 173 406 177 411
+4 57
+"LINE575"
+""
+1 684.4083032304642 344.7930841805401 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+56 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $NKU+\".Vvod3_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$NKU+\".Vvod3_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  684.315835722743 345.0600913023562 684.315835722743 321.0600913023562
+4 58
+"LINE576"
+""
+1 682.3158357227429 317.0600913023563 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+57 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  682.3158357227429 317.0600913023563 686.3158357227429 321.0600913023563
+4 59
+"LINE577"
+""
+1 686.3158357227429 317.0600913023563 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+58 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  686.3158357227429 317.0600913023563 682.3158357227429 321.0600913023563
+2 60
+"PRIMITIVE_TEXT436"
+""
+1 1090.575711461266 38.69659821771869 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+59 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.11575076396409 0 1 -653.2163261080101 373.9972604574552 0 E 1090.575711461266 38.69659821771869 1274 53
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 38.69659821771869 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 51 Наличие напряжения на вводе
+7 61
+"ELLIPSE391"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E E
+ E E
+60 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Napr_Na_Vvod3\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".Napr_Na_Vvod3\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Napr_Na_Vvod3\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Napr_Na_Vvod3\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Napr_Na_Vvod3\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 485.8768429423933 283.3455595663146 1 E 292.5 136.5 8.5 8.5
+2 62
+"PRIMITIVE_TEXT437"
+""
+1 1090.575711461266 72.69659821771847 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+61 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.19626626488126 0 1 -741.0245758044124 363.9972604574552 0 E 1090.575711461266 72.69659821771847 1269 87
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 72.69659821771847 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 50 Аварийное отключение ввода
+7 63
+"ELLIPSE392"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $NKU+\".Vvod3_Avar_Off\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$NKU+\".Vvod3_Avar_Off\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+62 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".Vvod3_Avar_Off\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".Vvod3_Avar_Off\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".Vvod3_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".Vvod3_Avar_Off\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 485.8768429423934 307.3455595663145 1 E 292.5 136.5 8.5 8.5
+30 64
+"FRAME5"
+""
+1 8 98 E E E 1 E 1 E N {200,150,100} E N {0,0,0} E E
+ E E
+63 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 3 1 1 E 0.7613693302120126 0 0.2467326705373849 544.4781959930195 360.9870115072779 0 E 8 98 344 421
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 13 Ввод №3
+2 65
+"PRIMITIVE_TEXT438"
+""
+1 615.5205774512866 325.092483925334 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+64 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 615.5205774512866 325.092483925334 648 343
+0 2 2 "0s" 0 0 0 192 0 0  615.5205774512866 325.092483925334 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 3 3QF
+2 66
+"PRIMITIVE_TEXT439"
+""
+1 593.4602436254805 342.9055385236754 E E E 1 E 1 E N {190,190,190} E N "_Window" E E
+ E E
+65 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 593.4602436254805 342.9055385236754 668 361
+0 2 2 "0s" 0 0 0 192 0 0  593.4602436254805 342.9055385236754 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 13 Ввод №3
+2 68
+"PRIMITIVE_TEXT440"
+""
+1 1090.575711461266 72.69659821771847 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+67 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.19626626488126 0 1 -1021.681893336558 339.148961348596 0 E 1090.575711461266 72.69659821771847 1269 87
+0 2 2 "0s" 0 0 0 192 0 0  1090.575711461266 72.69659821771847 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 50 Аварийное отключение ввода
+7 69
+"ELLIPSE393"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $NKU+\".SV_Avar_Off\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$NKU+\".SV_Avar_Off\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+68 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $NKU+\".SV_Avar_Off\"+\":_alert_hdl.._act_state_color\",
+            $NKU+\".SV_Avar_Off\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$NKU+\".SV_Avar_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {$NKU+\".SV_Avar_Off\"}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 205.2195254102408 282.4972604574552 1 E 292.5 136.5 8.5 8.5
+30 70
+"FRAME6"
+""
+1 8 98 E E E 1 E 1 E N {200,150,100} E N {0,0,0} E E
+ E E
+69 0 0 0 0 0
+E E E
+1
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 3 1 1 E 0.7613693302120126 0 0.1832077906016481 263.8208784608671 367.3641506321208 0 E 8 98 344 421
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 4 СВ
+6 71
+"RECTANGLE12"
+""
+1 134 98 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ "main()
+{
+	symb_actionAtRightClick2($NKU, $NKU);
+}
+
+symb_actionAtRightClick2(string DPT, string DPE)
+{
+  // check user
+  // depending on DPT & user generate Popup
+  // open correct panel
+
+  bool bBuildTrendPopup;
+  dyn_string popup;
+  int answer;
+
+  //
+  //  build POPUP:
+  //
+  //  Trends & Trend
+  //  Information&Simulation
+  //  Options
+  //  Properties
+  //
+  //
+  //
+  //   Trend-Popup
+  bBuildTrendPopup = symb_isDptTrendable2(DPT);
+  if (bBuildTrendPopup)
+    dynAppend(popup, makeDynString(\"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trends\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),     // OPERATOR
+                                   \"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trendbuffer\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),// Operator
+                                   \"SEPARATOR\"));
+  //  Information&Simulation
+  //
+  switch (DPT)
+  {
+   case \"SLIDE_VALVE_HAND1\": dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+
+                                         \"SEPARATOR\"));break;
+   //default: dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+                                //         \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"simulation\")+\" , 1,\" +(getUserPermission(4)?\"1\":\"0\"),  // PARA
+                                  //       \"SEPARATOR\"));break;
+  }
+  //
+  //  DPT-specific Options
+  //
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"UTM_AI\":               // no special options
+   case \"COUNTER1\":             // no special options
+   case \"BIT_CONDITION\":        // no special options
+   case \"DRIVE1\":              // no special options
+   case \"DRIVE2\":              // no special options
+   case \"PUMP1\":               // no special options
+   case \"PUMP2\":               // no special options
+   case \"SETPOINT\":             // no special options
+   case \"SLIDE_VALVE1\":        // no special options
+   case \"SLIDE_VALVE2\":        // no special options
+   case \"SLIDE_VALVE_HAND1\":   // no special options
+   case \"ANALOG2\":              // no special options
+   case \"ANALOG1\":   break;     // no special options
+   //default:                      dynAppend(popup, makeDynString(\"PUSH_BUTTON, EXTEND1 , 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+  //                                                        \"PUSH_BUTTON, EXTEND2 , 1,\" +(getUserPermission(3)?\"1\":\"0\"),  // OPERATOR ALL
+   //                                                       \"SEPARATOR\"));
+        break;
+  }
+  //  DPT_CHANGE END
+  //
+  //  Properties
+  //
+    dynAppend(popup, makeDynString( \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"properties\")+\", 3,\"  +(getUserPermission(4)?\"1\":\"0\")));  // PARA
+
+  //
+  // build subpopups
+  //
+  if (bBuildTrendPopup)                            // Trend
+  {
+     symb_buildPopUpTrend(popup,1000,getCatStr(\"STD_Symbols\",\"trends\"));
+     symb_buildPopUpTrendbuffer(popup);
+  }
+  //
+  //  show popup
+  //
+  //
+
+  if (dynlen(popup) > 0)
+  {
+     popupMenu(popup, answer);
+     symb_EvaluatePopup2(popup, answer, DPE, DPT);
+  }
+
+}
+
+symb_EvaluatePopup2(dyn_string popup, int answer, string DPE, string DPT)
+{
+   //
+   //   !!! actual only working with STD_objects !!!
+   //
+   string sObjectPath = \"objects_parts/STD_OBJECTS/\";
+   string PANEL, path;
+
+   switch (answer)
+   {
+   case 0:  break;   // ESCAPE
+   case 1:           // Simulation
+             symb_checkDPE(DPE,DPT);
+             PANEL = sObjectPath+DPT+\"_sim.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_sim.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"SIM:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+  //           break;
+   case 2:           // Informaton
+             PANEL = sObjectPath+DPT+\"_info.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_info.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"INFO:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+             break;
+   case 3:           // Properties
+                PANEL = sObjectPath+DPT+\"_prop.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_prop.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dp:\"+dpSubStr(DPE, DPSUB_SYS_DP)));
+                else
+                       ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"PARA:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_prop.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+              break;
+   default:
+               symb_EvaluatePopupOtherActions(popup, answer, DPE, DPT);
+  }
+}
+
+
+bool symb_isDptTrendable2(string DPT)
+{
+  bool ret = false;
+
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"WH_SC1\":
+   case \"COUNTER1\":
+   case \"ANALOG2\":
+   case \"ANALOG1\": ret = TRUE; break;
+   case \"BIT_CONDITION\":
+   case \"DRIVE1\":
+   case \"DRIVE2\":
+   case \"PUMP1\":
+   case \"PUMP2\":
+   case \"SETPOINT\":
+   case \"SLIDE_VALVE1\":
+   case \"SLIDE_VALVE2\":
+   case \"SLIDE_VALVE_HAND1\":
+   default:      break;
+  }
+  //  DPT_CHANGE END
+  return ret;
+}" 0
+ E
+70 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 17.52076578946475 0 9.135442317028266 -2286.17554473526 -804.9619243839571 1 E 134 98 177 140
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+1 0 "SHAPE_GROUP1" -1
+2 0 
+29 30 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 1 "SHAPE_GROUP3" -1
+2 0 
+38 39 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 2 "SHAPE_GROUP5" -1
+2 0 
+46 47 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 3 "SHAPE_GROUP6" -1
+2 0 
+58 59 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

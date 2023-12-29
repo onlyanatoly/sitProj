@@ -1,0 +1,139 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 656 400 N "_3DFace" 0
+"/*
+main() {
+int rc;
+
+anytype userData = getUserName();
+
+
+
+
+rc = dpQueryConnectSingle(\"work\", true, userData, \"SELECT ALERT SINGLE '_alert_hdl.._state','_alert_hdl.._gone_time' FROM 'E*'\");
+
+DebugN(\"nach QueryConnectSingle: \", rc);
+
+}
+
+
+work(anytype userData, dyn_dyn_anytype val) {
+  int i;
+
+  DebugN(\"Callback:\", dynlen(val), userData);
+  DebugN(val);
+}*/" 0
+ E E E E 1 -1 -1 0  50 113
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+22 37
+"cbbox"
+""
+1 250 120 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  248 115 322.5 149
+3
+2
+LANG:10027 1 T
+LANG:10001 3 ???
+
+0
+2
+LANG:10027 1 P
+LANG:10001 3 ???
+
+0
+2
+LANG:10027 8 Засл
+LANG:10001 3 ???
+
+0
+
+"dyn_string namesER = makeDynString(\"T\", \"P\", \"Засл\");
+dyn_string namesHR = makeDynString(\"T\", \"P\");
+dyn_string namesBR = makeDynString(\"T\", \"P\", \"Прод\");
+
+main()
+{
+  int type;
+  dyn_string names;
+  type = 2;
+  if (type==0) {
+    names = namesER;
+  } else if (type==1) {
+    names = namesHR;
+  } else if (type==2) {
+    names = namesBR;
+  }
+  setValue(\"cbbox\", \"items\", names);
+}" 0
+
+"main()
+{
+  DebugN(\"ПОЗИЦИЯ CheckBox\" +\" \"+ cbbox.selectedPos);
+}" 0
+
+E
+ 0 0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

@@ -1,0 +1,296 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 228 107 N "_3DFace" 1
+"$dpe_value"
+E E E E E 1 -1 -1 0  159.4273802736598 86.64618920176201
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "141.585"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 5
+"refBorder"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+//bool isPoint;
+int sliderX;
+int sliderY;
+int s1BackSizeX;
+int s1BackSizeY;
+bool isOutAi;
+int aiType;
+int pointX, pointY;
+int s1BackSizeX, s1BackSizeY;
+
+main()
+{
+ msDPE=$dpe_value;
+ //msCol=$s_Col;
+ msCol=\"cont_static\";
+ miDirection=2;
+ mbIBit=true;
+ miNum=1;
+ miNum2=1;
+ aiType = 0;
+ isSlider = true;
+ isOutAi = false;
+ getValue(\"s1back\", \"size\", s1BackSizeX, s1BackSizeY);
+ getValue(\"slider1\", \"position\", sliderX, sliderY);
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_Regulator();
+}
+
+" 0
+ "main(mapping event)
+{
+  //openFrontAndDetailPanel($dpe_value);
+}" 0
+ 3 1 1 0 1 E 4 0 0.6060606060606061 9.999999999999993 33.93939393939394 1 E 10 10 40 43
+6 1
+"s1back"
+""
+1 181.0344827586207 40.15924719507781 E E E 1 E 1 E N "cont_static" E N "fon_open" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E -3.111875865552192e-17 0.1125000000000018 -9.537261972634001 -1.163478042928615e-15 450.1452394526806 29.63362068965489 1 E 110 30 190 40
+10 2
+"slider1"
+""
+1 60 30 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.2375 0 0.2375 54.44642721398705 44.83580628698741 1 E 3 60 30
+50 50
+70 50
+ 1
+2 3
+"PRIMITIVE_TEXT138"
+""
+1 67.65476054732036 39.50247295365409 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue)+getTagUnit(dp));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E U  0 E 52 39.86401141519246 67.48809388065374 52
+0 2 2 "0s" 0 0 0 194 0 0  67.48809388065374 39.86401141519246 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 3 xxx
+LANG:10001 3 xxx
+LANG:10000 4 Text
+6 4
+"s1"
+""
+1 45.57549857549816 218.8589743589745 E E E 1 E 0 E N "fon_open" E N "fon_static" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "fon_open"
+"antiAliased" "0"
+"
+main()
+{
+  EP_setFillElements();
+  setScale();
+}
+
+void EP_setFillElements()
+{
+
+  dpConnect(\"EP_setFillElementCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".invalid\",
+            $dpe_value+\".REP\",
+            $dpe_value+\".SHOW\",
+            $dpe_value+\".REG\",
+            $dpe_value+\".MEST\");
+
+}
+
+
+void EP_setFillElementCB(string dp1, float fNewValue1, string dp2, bool boNewValue2, string dp3, int iNewValue3, string dp4, int boNewValue4, string dp5, bool iNewValue5, string dp6, int iNewValue6)
+{
+    fillElements();
+}
+
+void setScale()
+{
+   dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_online.._value\"))
+  {
+    setValue(\"s1\", \"backCol\", \"fon_nan\");
+    setValue(\"s1back\", \"backCol\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"setScaleCB\",
+            $dpe_value+\".OUT:_online.._value\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+  {
+    setValue(\"s1\", \"backCol\", \"fon_nan\");
+    setValue(\"s1back\", \"backCol\", \"fon_nan\");
+  }
+}
+
+void setScaleCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool isRep)
+{
+    fillElements();
+}
+" 0
+ E -1 1 1 0 1 E -8.33834490672482e-16 0.2666666666666666 -0.4816798976077765 -6.65349396774175e-16 173.1792983282083 37.70862068965527 1 E 18 19 48 217
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

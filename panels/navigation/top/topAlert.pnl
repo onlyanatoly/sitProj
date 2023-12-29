@@ -1,0 +1,308 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 449 86 N "fon_static" 0
+"main()
+{
+  int i;
+  for(i=1; i<=8; i++)
+  {
+    setValue(\"PANEL_REF_ALARM\"+i, \"visible\", false);
+    setValue(\"PANEL_REF_WARN\"+i, \"visible\", false);
+    setValue(\"PANEL_REF_NAN\"+i, \"visible\", false);
+  }
+
+  dpConnect(\"work\", \"ALERT.TAG\", \"ALERT.PRIOR\");
+}
+
+void work(string dpTags, dyn_string tags, string dpPriors, dyn_int priors)
+{
+  DebugN(\"work\");
+  int n;
+  n = dynlen(priors);
+
+  /* Отсортируем массив по убыванию */
+  for(int i = 1; i < n; ++i)
+  {
+  	for(int r = 0; r < n-i; r++)
+  	{
+  		if(priors[r+1] < priors[r+2])
+  		{
+  			// Обмен местами
+  			int temp = priors[r+1];
+        string tempstr = tags[r+1];
+  			priors[r+1] = priors[r+2];
+  			priors[r+2] = temp;
+  			tags[r+1] = tags[r+2];
+  			tags[r+2] = tempstr;
+  		}
+  	}
+  }
+
+
+  DebugN(tags);
+  DebugN(priors);
+
+
+}" 0
+ E E E E 1 -1 -1 0  100 20
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 1
+"RECTANGLE1"
+""
+1 100 20 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.818693009118541 0 0.7833333333333333 -52.65501519756843 1.333333333333335 1 E 100 20 570 80
+1 4 5 "" 2
+0
+1 36 21 "" 2
+0
+1 38 22 "" 2
+0
+1 40 23 "" 2
+0
+1 42 24 "" 2
+0
+1 44 25 "" 2
+0
+1 46 26 "" 2
+0
+1 48 27 "" 2
+0
+1 2 3 "" 1
+0
+1 8 7 "" 1
+0
+1 10 8 "" 1
+0
+1 12 9 "" 1
+0
+1 14 10 "" 1
+0
+1 16 11 "" 1
+0
+1 18 12 "" 1
+0
+1 20 13 "" 1
+0
+1 6 6 "" 2
+0
+1 22 14 "" 2
+0
+1 24 15 "" 2
+0
+1 26 16 "" 2
+0
+1 28 17 "" 2
+0
+1 30 18 "" 2
+0
+1 32 19 "" 2
+0
+1 34 20 "" 2
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 3 "PANEL_REF_ALARM1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 4 1 0 1 -111.2142857142857 -169.125
+1
+"$b_disableCnt""TRUE"
+3 5 "PANEL_REF_NAN1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 6 1 0 1 -76.75 -208.875
+1
+"$b_disableCnt""TRUE"
+3 6 "PANEL_REF_WARN1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 7 1 0 1 -64.42857142857142 -250
+1
+"$b_disableCnt""TRUE"
+3 7 "PANEL_REF_ALARM2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 12 1 0 1 -65.10714285714286 -169.1964285714286
+1
+"$b_disableCnt""TRUE"
+3 8 "PANEL_REF_ALARM3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 13 1 0 1 -19.10714285714283 -169.0535714285714
+1
+"$b_disableCnt""TRUE"
+3 9 "PANEL_REF_ALARM4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 14 1 0 1 25.74999999999997 -169.0535714285714
+1
+"$b_disableCnt""TRUE"
+3 10 "PANEL_REF_ALARM5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 15 1 0 1 70.60714285714278 -169.0535714285714
+1
+"$b_disableCnt""TRUE"
+3 11 "PANEL_REF_ALARM6" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 16 1 0 1 116.6071428571428 -168.9107142857143
+1
+"$b_disableCnt""TRUE"
+3 12 "PANEL_REF_ALARM7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 17 1 0 1 161.4642857142856 -168.9107142857143
+1
+"$b_disableCnt""TRUE"
+3 13 "PANEL_REF_ALARM8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarmAck.pnl" 187 221.1428571428571 T 18 1 0 1 206.3214285714283 -168.9107142857143
+1
+"$b_disableCnt""TRUE"
+3 14 "PANEL_REF_WARN2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 19 1 0 1 -17.74999999999997 -249.9910714285714
+1
+"$b_disableCnt""TRUE"
+3 15 "PANEL_REF_WARN3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 20 1 0 1 28.25000000000003 -249.9910714285714
+1
+"$b_disableCnt""TRUE"
+3 16 "PANEL_REF_WARN4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 21 1 0 1 72.53571428571422 -249.7767857142857
+1
+"$b_disableCnt""TRUE"
+3 17 "PANEL_REF_WARN5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 22 1 0 1 117.3928571428571 -249.7767857142857
+1
+"$b_disableCnt""TRUE"
+3 18 "PANEL_REF_WARN6" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 23 1 0 1 163.3928571428571 -249.7767857142857
+1
+"$b_disableCnt""TRUE"
+3 19 "PANEL_REF_WARN7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 24 1 0 1 209.3928571428571 -249.7767857142857
+1
+"$b_disableCnt""TRUE"
+3 20 "PANEL_REF_WARN8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warningAck.pnl" 139.6428571428571 301 T 25 1 0 1 252.5357142857141 -249.9196428571429
+1
+"$b_disableCnt""TRUE"
+3 21 "PANEL_REF_NAN2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 26 1 0 1 -30.74999999999997 -208.875
+1
+"$b_disableCnt""TRUE"
+3 22 "PANEL_REF_NAN3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 27 1 0 1 15.25000000000003 -208.875
+1
+"$b_disableCnt""TRUE"
+3 23 "PANEL_REF_NAN4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 28 1 0 1 59.53571428571422 -208.875
+1
+"$b_disableCnt""TRUE"
+3 24 "PANEL_REF_NAN5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 29 1 0 1 105.5357142857142 -208.875
+1
+"$b_disableCnt""TRUE"
+3 25 "PANEL_REF_NAN6" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 30 1 0 1 151.5357142857142 -208.875
+1
+"$b_disableCnt""TRUE"
+3 26 "PANEL_REF_NAN7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 31 1 0 1 193.535714285714 -208.875
+1
+"$b_disableCnt""TRUE"
+3 27 "PANEL_REF_NAN8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nanAck.pnl" 152.6428571428571 261 T 32 1 0 1 239.535714285714 -208.875
+1
+"$b_disableCnt""TRUE"
+0

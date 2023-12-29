@@ -1,0 +1,3588 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 850 246 N "_3DFace" 1
+"$DP"
+E E E E E 1 -1 -1 0  325 10
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+6 125
+"RECTANGLE35"
+""
+1 71 10 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+124 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 15.38019082446689 0 3.774516486888138 -1082.617280275999 -30.62751781005779 1 E 71 10 121 60
+6 318
+"RECTANGLE44"
+""
+1 80 40 E E E 1 E 1 E N {0,0,0} E N "WF_MenupointTextOver" E E
+ E E
+317 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 1 1 E 0.7993274651277639 0 0.5582644187262019 712.0538027897788 -15.21292969022449 1 E 80 40 154 379
+13 282
+"abbrechen"
+""
+1 751 208 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+281 0 0 0 27 0
+E E E
+0
+3
+LANG:10027 31 Discard changes and close panel
+LANG:0 40 �nderungen verwerfen und Panel schlie�en
+LANG:1 31 Discard changes and close panel
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:0 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:1 26 Arial,-1,13,5,40,0,0,0,0,0
+0  749 207 837 235
+
+T 
+3
+LANG:10027 14 Закрыть
+LANG:0 9 Abbrechen
+LANG:1 6 Cancel
+"main()
+{
+  PanelOff();
+}" 0
+ E E E
+4 283
+"LINE60"
+""
+1 -607.6237317388493 210.2427931358253 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+282 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  139 7 139 196
+4 126
+"LINE1"
+""
+1 9.40419529826346 63.11764705882359 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+125 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 63 835 63
+4 152
+"LINE27"
+""
+1 9.551523946906656 176.8229252621164 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+151 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 177 835 177
+4 153
+"LINE28"
+""
+1 9.551523946906656 157.6956674047251 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+152 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 158 835 158
+4 154
+"LINE29"
+""
+1 9.551523946906656 139.5150790602372 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+153 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 139 835 139
+4 155
+"LINE30"
+""
+1 9.551523946906656 119.7034399679989 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+154 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 120 835 120
+4 156
+"LINE31"
+""
+1 9.551523946906656 82.57618211060759 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+155 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 82 835 82
+4 157
+"LINE32"
+""
+1 9.551523946906656 101.5761821106076 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+156 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 101 835 101
+4 183
+"LINE58"
+""
+1 9.404195298263531 43.47745103239393 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+182 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  9 44 835 44
+4 327
+"LINE61"
+""
+1 -702.6237317388493 210.1176470588236 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+326 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  44 7 44 196
+4 329
+"LINE62"
+""
+1 -51.00376358683684 210.1176470588236 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+328 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  696 7 696 196
+4 339
+"LINE63"
+""
+1 -138.0037635868368 211.1176470588236 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+338 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 1 2 1 E  609 8 609 197
+2 373
+"PRIMITIVE_TEXT115"
+""
+1 612 46 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+372 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN1_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN1_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN1_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN1_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+" 0
+ E 0 1 1 2 1 E U  0 E 612 46 662 61
+0 2 2 "3.3f" 7 0 0 192 0 0  612 46 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 374
+"PRIMITIVE_TEXT116"
+""
+1 612 65 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+373 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN2_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN2_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN2_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN2_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN2_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN2_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+" 0
+ E 0 1 1 2 1 E U  0 E 612 65 662 80
+0 2 2 "3.3f" 7 0 0 192 0 0  612 65 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 375
+"PRIMITIVE_TEXT117"
+""
+1 612 84 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+374 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN3_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN3_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN3_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN3_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+" 0
+ E 0 1 1 2 1 E U  0 E 612 84 662 99
+0 2 2 "3.3f" 7 0 0 192 0 0  612 84 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 376
+"PRIMITIVE_TEXT118"
+""
+1 612 103 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+375 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN4_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN4_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN4_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN4_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+" 0
+ E 0 1 1 2 1 E U  0 E 612 103 662 118
+0 2 2 "3.3f" 7 0 0 192 0 0  612 103 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 377
+"PRIMITIVE_TEXT119"
+""
+1 612 122 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+376 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN5_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN5_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN5_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN5_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+" 0
+ E 0 1 1 2 1 E U  0 E 612 122 662 137
+0 2 2 "3.3f" 7 0 0 192 0 0  612 122 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 378
+"PRIMITIVE_TEXT120"
+""
+1 612 141 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+377 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN6_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN6_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN6_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN6_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+" 0
+ E 0 1 1 2 1 E U  0 E 612 141 662 156
+0 2 2 "3.3f" 7 0 0 192 0 0  612 141 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 379
+"PRIMITIVE_TEXT121"
+""
+1 612 160 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+378 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN7_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN7_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN7_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN7_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+" 0
+ E 0 1 1 2 1 E U  0 E 612 160 662 175
+0 2 2 "3.3f" 7 0 0 192 0 0  612 160 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 380
+"PRIMITIVE_TEXT122"
+""
+1 612 179 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+379 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN8_Value:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".REZ_IN8_Value:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".REZ_IN8_Value:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".REZ_IN8_Value:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.REZ_IN1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+" 0
+ E 0 1 1 2 1 E U  0 E 612 179 662 194
+0 2 2 "3.3f" 7 0 0 192 0 0  612 179 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 405
+"PRIMITIVE_TEXT38"
+""
+1 141 46 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+404 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF1\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF1\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 46 191 61
+0 2 2 "0s" 0 0 0 192 0 0  141 46 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 406
+"PRIMITIVE_TEXT39"
+""
+1 141 65 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+405 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF2\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF2\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 65 191 80
+0 2 2 "0s" 0 0 0 192 0 0  141 65 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 407
+"PRIMITIVE_TEXT40"
+""
+1 141 84 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+406 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF3\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF3\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 84 191 99
+0 2 2 "0s" 0 0 0 192 0 0  141 84 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 408
+"PRIMITIVE_TEXT41"
+""
+1 141 103 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+407 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF4\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF4\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 103 191 118
+0 2 2 "0s" 0 0 0 192 0 0  141 103 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 409
+"PRIMITIVE_TEXT42"
+""
+1 141 122 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+408 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF5\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF5\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 122 191 137
+0 2 2 "0s" 0 0 0 192 0 0  141 122 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 410
+"PRIMITIVE_TEXT43"
+""
+1 141 141 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+409 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF6\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF6\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 141 191 156
+0 2 2 "0s" 0 0 0 192 0 0  141 141 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 411
+"PRIMITIVE_TEXT44"
+""
+1 141 160 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+410 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF7\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF7\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 160 191 175
+0 2 2 "0s" 0 0 0 192 0 0  141 160 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 412
+"PRIMITIVE_TEXT45"
+""
+1 141 179 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+411 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".CSF8\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".CSF8\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 141 179 191 194
+0 2 2 "0s" 0 0 0 192 0 0  141 179 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 413
+"PRIMITIVE_TEXT124"
+""
+1 698 46 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+412 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT1:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT1:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT1:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT1:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 46 748 61
+0 2 2 "2s" 2 0 0 192 0 0  698 46 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 414
+"PRIMITIVE_TEXT125"
+""
+1 698 65 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+413 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT2:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT2:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT2:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT2:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT2_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT2_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 65 748 80
+0 2 2 "2s" 2 0 0 192 0 0  698 65 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 415
+"PRIMITIVE_TEXT126"
+""
+1 698 84 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+414 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT3:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT3:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT3:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT3:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 84 748 99
+0 2 2 "2s" 2 0 0 192 0 0  698 84 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 416
+"PRIMITIVE_TEXT127"
+""
+1 698 103 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+415 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT4:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT4:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT4:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT4:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 103 748 118
+0 2 2 "2s" 2 0 0 192 0 0  698 103 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 417
+"PRIMITIVE_TEXT128"
+""
+1 698 122 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+416 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT5:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT5:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT5:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT5:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 122 748 137
+0 2 2 "2s" 2 0 0 192 0 0  698 122 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 418
+"PRIMITIVE_TEXT129"
+""
+1 698 141 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+417 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT6:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT6:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT6:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT6:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 141 748 156
+0 2 2 "2s" 2 0 0 192 0 0  698 141 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 419
+"PRIMITIVE_TEXT130"
+""
+1 698 160 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+418 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT7:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT7:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT7:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT7:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 160 748 175
+0 2 2 "2s" 2 0 0 192 0 0  698 160 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 420
+"PRIMITIVE_TEXT131"
+""
+1 698 179 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+419 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  EP_setInvalid();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT8:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT8:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, TRUE) );
+}
+
+void EP_setInvalid()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT8:_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setInvalidCB\",
+                 $DP+\".PV_OUT8:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+// SimpleCtrlScript {EP_setInvalid}
+// DP {C1AI1.PV_OUT1_Value}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 698 179 748 194
+0 2 2 "2s" 2 0 0 192 0 0  698 179 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+0
+LAYER, 1 
+1
+LANG:10027 0 
+2 68
+"PRIMITIVE_TEXT5"
+""
+1 20.3762682611507 45.11764705882359 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+67 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.3762682611507 45.11764705882359 29 60
+0 2 2 "0s" 0 0 0 192 0 0  20.3762682611507 45.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 1
+2 69
+"PRIMITIVE_TEXT6"
+""
+1 20.44769683257925 64.2790616246499 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+68 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.44769683257925 64.2790616246499 29 79
+0 2 2 "0s" 0 0 0 192 0 0  20.44769683257925 64.2790616246499 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 2
+2 70
+"PRIMITIVE_TEXT7"
+""
+1 20.54769683257925 83.2790616246499 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+69 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.54769683257925 83.2790616246499 29 98
+0 2 2 "0s" 0 0 0 192 0 0  20.54769683257925 83.2790616246499 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 3
+2 71
+"PRIMITIVE_TEXT8"
+""
+1 20.57553296703298 102.0568977591037 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+70 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.57553296703298 102.0568977591037 29 117
+0 2 2 "0s" 0 0 0 192 0 0  20.57553296703298 102.0568977591037 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 4
+2 72
+"PRIMITIVE_TEXT10"
+""
+1 20.55273884938598 121.1025910364146 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+71 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.55273884938598 121.1025910364146 29 136
+0 2 2 "0s" 0 0 0 192 0 0  20.55273884938598 121.1025910364146 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 5
+2 73
+"PRIMITIVE_TEXT11"
+""
+1 20.48498674854562 139.8636204481795 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+72 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.48498674854562 139.8636204481795 29 155
+0 2 2 "0s" 0 0 0 192 0 0  20.48498674854562 139.8636204481795 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 6
+2 74
+"PRIMITIVE_TEXT12"
+""
+1 20.27038590820953 159.1025910364146 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+73 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.27038590820953 159.1025910364146 29 174
+0 2 2 "0s" 0 0 0 192 0 0  20.27038590820953 159.1025910364146 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 7
+2 75
+"PRIMITIVE_TEXT13"
+""
+1 20.60263380736916 178.3454131652662 E E E 1 E 1 E N "Black" E N "white" E E
+ E E
+74 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20.60263380736916 178.3454131652662 29 193
+0 2 2 "0s" 0 0 0 192 0 0  20.60263380736916 178.3454131652662 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 8
+2 280
+"PRIMITIVE_TEXT70"
+""
+1 144.3762682611507 17.11764705882359 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+279 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 144.3762682611507 17.11764705882359 266 32
+0 2 2 "0s" 0 0 0 192 0 0  144.3762682611507 17.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 31 Название сигнала
+2 316
+"PRIMITIVE_TEXT103"
+""
+1 49.3762682611508 17.11764705882359 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+315 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 49.3762682611508 17.11764705882359 107 32
+0 2 2 "0s" 0 0 0 192 0 0  49.3762682611508 17.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 14 Позиция
+2 317
+"PRIMITIVE_TEXT104"
+""
+1 777.9962364131632 17.11764705882359 E E E 1 E 1 E N "White" E N "_Window" E E
+ E E
+316 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 777.9962364131632 17.11764705882359 830 32
+0 2 2 "0s" 0 0 0 192 0 0  777.9962364131632 17.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Ошибка
+2 328
+"PRIMITIVE_TEXT105"
+""
+1 19.3762682611507 17.11764705882359 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+327 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 19.3762682611507 17.11764705882359 35 32
+0 2 2 "0s" 0 0 0 192 0 0  19.3762682611507 17.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 3 №
+6 319
+"RECTANGLE3"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+318 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF1:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF1:_online.._value\",
+                 $DP+\".CSF1:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF1}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF1}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2487394957983192 0 0.2352941176470588 742.2987574215665 16.52941176470595 1 E 240 130 290 180
+6 320
+"RECTANGLE4"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+319 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF2:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF2:_online.._value\",
+                 $DP+\".CSF2:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF2}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF2}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2352941176470588 743.7575247130985 35.84110007639428 1 E 240 130 290 180
+6 321
+"RECTANGLE5"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+320 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF3:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF3:_online.._value\",
+                 $DP+\".CSF3:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF3}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF3}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2389140271493212 743.7575247130985 54.50717517776344 1 E 240 130 290 180
+6 322
+"RECTANGLE6"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+321 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF4:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF4:_online.._value\",
+                 $DP+\".CSF4:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF4}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF4}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2372549019607842 743.7575247130985 73.11606824548011 1 E 240 130 290 180
+6 323
+"RECTANGLE7"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+322 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF5:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF5:_online.._value\",
+                 $DP+\".CSF5:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF5}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF5}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2352941176470588 743.7575247130985 92.68525592055011 1 E 240 130 290 180
+6 324
+"RECTANGLE8"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+323 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF6:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF6:_online.._value\",
+                 $DP+\".CSF6:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF6}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF6}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2352941176470588 743.7575247130985 111.9969442322384 1 E 240 130 290 180
+6 325
+"RECTANGLE9"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+324 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF7:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF7:_online.._value\",
+                 $DP+\".CSF7:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF7}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF7}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2316236978451507 743.7575247130985 130.9562009928157 1 E 240 130 290 180
+6 326
+"RECTANGLE10"
+""
+1 240 130 E E E 1 E 1 E N {0,0,0} E N {0,255,0} E E
+ E E
+325 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".CSF8:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".CSF8:_online.._value\",
+                 $DP+\".CSF8:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.CSF8}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.CSF8}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2409049773755655 0 0.2352941176470588 743.7575247130985 149.5294117647059 1 E 240 130 290 180
+2 348
+"PRIMITIVE_TEXT123"
+""
+1 613.9962364131633 18.11764705882359 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+347 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 613.9962364131633 18.11764705882359 679 33
+0 2 2 "0s" 0 0 0 192 0 0  613.9962364131633 18.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 16 Значение
+2 338
+"PRIMITIVE_TEXT114"
+""
+1 700.9962364131633 17.11764705882359 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+337 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 700.9962364131633 17.11764705882359 766 32
+0 2 2 "0s" 0 0 0 192 0 0  700.9962364131633 17.11764705882359 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 16 Значение
+2 421
+"PRIMITIVE_TEXT132"
+""
+1 46 45.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+420 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT1\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT1\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 45.5 96 61
+0 2 2 "0s" 0 0 0 192 0 0  46 45.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 422
+"PRIMITIVE_TEXT133"
+""
+1 46 64.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+421 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT2\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT2\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 64.5 96 80
+0 2 2 "0s" 0 0 0 192 0 0  46 64.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 423
+"PRIMITIVE_TEXT134"
+""
+1 46 83.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+422 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT3\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT3\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 83.5 96 99
+0 2 2 "0s" 0 0 0 192 0 0  46 83.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 424
+"PRIMITIVE_TEXT135"
+""
+1 46 102.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+423 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT4\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT4\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 102.5 96 118
+0 2 2 "0s" 0 0 0 192 0 0  46 102.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 425
+"PRIMITIVE_TEXT136"
+""
+1 46 121.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+424 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT5\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT5\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 121.5 96 137
+0 2 2 "0s" 0 0 0 192 0 0  46 121.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 426
+"PRIMITIVE_TEXT137"
+""
+1 46 140.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+425 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT6\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT6\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 140.5 96 156
+0 2 2 "0s" 0 0 0 192 0 0  46 140.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 427
+"PRIMITIVE_TEXT138"
+""
+1 46 159.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+426 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT7\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT7\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 159.5 96 175
+0 2 2 "0s" 0 0 0 192 0 0  46 159.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+2 428
+"PRIMITIVE_TEXT139"
+""
+1 46 178.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+427 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeft|AlignLeading"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  int rc;
+  if( !dpExists( $DP+\".PV_OUT8\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_textFieldInCB\",
+                 $DP+\".PV_OUT8\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_textFieldInCB(string dp, string sNewValue)
+{
+  setValue(\"\", \"text\", dpGetComment(dp));
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {OIP01.POS}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+
+
+
+
+" 0
+ E 0 1 1 2 1 E U  0 E 46 178.5 96 194
+0 2 2 "0s" 0 0 0 192 0 0  46 178.5 1
+1
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 12 Резерв
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

@@ -1,0 +1,340 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 186 168 N "_3DFace" 2
+"$b_isDetail"
+"$dpe_value"
+E E E E E 1 -1 -1 0  155.0774038461538 115.7949575759658
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "141.585"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 25
+"RECTANGLE2"
+""
+1 110 80 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.5379345065762489 0 0.9358118693545643 19.49816066265888 -32.28883297714994 1 E 110 80 160 90
+6 24
+"RECTANGLE1"
+""
+1 110 80 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.5379345065762489 0 0.9358118693545643 20.25698870142025 3.207183006446868 1 E 110 80 160 90
+6 2
+"refBorder"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_IspMech\"
+
+string mse;
+dyn_string elementNames;
+
+main()
+{
+  elementNames = makeDynString(\"Elem1\",\"Elem2\",\"Elem3\",\"Elem4\");
+  mse = $dpe_value;
+  elementsFunct();
+  setVisibleTags();
+}
+
+void setVisibleTags()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SHOW:_online.._value\"))
+  {
+    return;
+  }
+  dpConnect(\"setVisibleTagsCB\",
+            $dpe_value+\".SHOW:_online.._value\");
+}
+
+void setVisibleTagsCB(string dp, bool boNewValue)
+{
+  if (!$b_isDetail)
+  {
+  setValue(\"tag\", \"visible\", boNewValue);
+  }
+  else//если во вкладке детальной панели то не отображаем никогда
+  {
+  setValue(\"tag\", \"visible\", false);
+  }
+}
+" 0
+ E 3 1 1 0 1 E 2.945816803655136 0 1.726663503564858 0.5418319634486259 15.75346934671112 1 E 10 10 40 43
+2 3
+"tag"
+""
+1 188.1666666666666 24.3529914529915 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagName($dpe_value));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.9750000000000003 -141.5694276178259 34.00647524311978 0 E 174 24.83846153846165 202 37
+0 2 2 "0s" 0 0 0 193 0 0  188 24.83846153846165 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 Xxxxx
+LANG:10001 5 Xxxxx
+LANG:10000 4 Text
+7 4
+"Elem3"
+""
+1 160 80 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.6302083333333334 0 0.627429452943881 -8.218254109654112 15.14942684283976 1 E 160 80 30 30
+6 6
+"alarmBorder"
+""
+1 120 100 E E E 1 E 1 E N "fon_nan" E N "_Transparent" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 4 3 2 1 E 1.465980487061322 0 0.3798659707842686 -145.9176584473586 -4.96649269606717 0 E 120 100 180 250
+4 9
+"LINE636"
+""
+1 92.61507922367923 46.52089949003381 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  92.61507922367923 46.52089949003381 92.61507922367923 57.75064192228861
+4 10
+"LINE637"
+""
+1 73.79219563536279 65.34378307835027 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  73.79219563536279 65.34378307835027 84.70354076214082 65.34378307835027
+4 14
+"LINE641"
+""
+1 92.49873306983307 72.25572589728438 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  92.49873306983307 72.25572589728438 92.49873306983307 83.48546832953915
+4 15
+"LINE642"
+""
+1 100.2939253775254 65.00318390978646 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  100.2939253775254 65.00318390978646 111.2052705043034 65.00318390978646
+4 18
+"LINE645"
+""
+1 79.42978442480762 51.93423526476084 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  79.42978442480762 51.93423526476084 105.5676817148587 78.07213255481201
+4 20
+"LINE647"
+""
+1 105.5676817148587 51.93423526476084 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  105.5676817148587 51.93423526476084 79.42978442480762 78.07213255481201
+7 5
+"Elem4"
+""
+1 135 55 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 -24.7060746224746 -23.83333333333331 1 E 117.2048076923077 88.83651724311981 7.5 7.252542
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 26 0 "" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 152 96.25 T 0 0.8659492588369435 0 0.9175719540708085 -60.05966421987827 -52.09954086035247
+0
+0

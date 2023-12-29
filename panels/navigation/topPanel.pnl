@@ -1,0 +1,597 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1900 66 N "fon_static" 0
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 1 0 0 0 0 1 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+13 38
+"PUSH_BUTTON8"
+""
+1 826.1666666666667 21.9375 E E E 1 E 1 E N "cont_text" E N "_Button" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 45 Журнал алармов и событий
+LANG:10001 45 Журнал алармов и событий
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,16,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  824.1666666666667 0.9375 887.1666666666667 63.9375
+
+B 
+4294967295
+"pictures/AesScreen.png"
+2
+LANG:10027 1 5
+LANG:10001 0 
+"#uses \"panel.ctl\"
+
+main(mapping event)
+{
+  sdOpenPopup(\"\", \"vision/aes/AES_Last5.pnl\", \"Последние 5 аварийных сообщений\", -1, -1, 2, makeDynString(\"\"),false);
+}" 0
+ E E "main()
+{
+ // dpConnect(\"Access_init\",myUiDpName()+\".UserName:_online.._value\");
+}
+
+/*Access_init(string dp1, string UserName)
+{
+  if (getUserPermission(2))
+    setValue(\"\",\"enabled\", true);
+  else
+    setValue(\"\",\"enabled\", false);
+}*/
+" 0
+
+13 1
+"PUSH_BUTTON1"
+""
+1 247 21.9375 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E "main(mapping event)
+{
+  openMainPanel();
+}" 0
+
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 30 Схема            СИКГ
+LANG:10001 30 Схема            СИКГ
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,16,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  245 0.9375 308 63.9375
+
+P 
+4294967295
+"pictures/Screen_40.png"
+2
+LANG:10027 0 
+LANG:10001 0 
+"main()
+{
+  openNavigationCurrentScreen();
+}" 0
+ E E "main()
+{
+  dpConnect(\"Access_init\",myUiDpName()+\".UserName:_online.._value\");
+}
+
+Access_init(string dp1, string UserName)
+{
+  if (getUserPermission(2))
+    setValue(\"\",\"enabled\", true);
+  else
+    setValue(\"\",\"enabled\", false);
+}
+" 0
+
+15 8
+"CLOCK1"
+""
+1 1708 1 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+7 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+2
+"minimumSize" "1 2"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  1704.542682926829 1 1893.542682926829 63
+E 1 1 "%X" "%x"
+1 1 1 1
+2
+LANG:10027 26 Arial,-1,16,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,75,0,0,0,0,0
+0  2
+LANG:10027 26 Arial,-1,16,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,75,0,0,0,0,0
+0 
+13 15
+"login"
+""
+1 1526.54268292683 1.987788690720772 E E E 1 E 1 E N "cont_text" E N "_Button" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+1
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 26 Arial,-1,16,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:0 107 -microsoft windows-Arial-normal-r-normal-*-*-120-100-100-*-*-iso8859-1|-13,0,0,0,400,0,0,0,0,3,2,1,34,Arial
+LANG:1 107 -microsoft windows-Arial-normal-r-normal-*-*-120-100-100-*-*-iso8859-1|-13,0,0,0,400,0,0,0,0,3,2,1,34,Arial
+0  1524.542682926829 0 1702.542682926829 34
+
+T 
+2
+LANG:10027 22 Регистрация
+LANG:10001 22 Регистрация
+"main()
+{
+  sdOpenPopup(\"\", \"vision/login.pnl\", \"Окно авторизации\", 700, 250, 1, \"\",true);
+}" 0
+ E E E
+14 22
+"TextField1"
+""
+1 113.542682926829 278.1530985452454 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ "main()
+{
+STD_UserPopup();
+}
+" 0
+ E
+20 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+1
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 26 Arial,-1,16,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:0 26 Arial,10,-1,5,75,0,0,0,0,0
+LANG:1 26 Arial,10,-1,5,75,0,0,0,0,0
+0  1525.542682926829 30 1701.542682926829 64
+2 "0s" 0 0 0 1 0 -1  E "main()
+{
+STD_showUser();
+} 
+" 0
+ E
+13 24
+"PUSH_BUTTON2"
+""
+1 319.1666666666667 21.9375 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 45 Журнал алармов и событий
+LANG:10001 45 Журнал алармов и событий
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,16,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  317.1666666666667 0.9375 380.1666666666667 63.9375
+
+P 
+4294967295
+"pictures/AesScreen.png"
+2
+LANG:10027 0 
+LANG:10001 0 
+"//#uses \"panelNames.ctl\"
+
+main()
+{  
+  
+  openAES(\"aes_alerts\",ptms_BuildModuleName(\"mainModule\",ptnavi_GetScreenName()),0,\"\",0,0);
+  
+  //openAES(\"aes_alerts\",FALSE,0,\"\",0,0);
+}" 0
+ E E "main()
+{
+  dpConnect(\"Access_init\",myUiDpName()+\".UserName:_online.._value\");
+}
+
+Access_init(string dp1, string UserName)
+{
+  if (getUserPermission(2))
+    setValue(\"\",\"enabled\", true);
+  else
+    setValue(\"\",\"enabled\", false);
+}
+" 0
+
+13 25
+"PUSH_BUTTON3"
+""
+1 391.3333333333334 21.9375 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 12 Тренды
+LANG:10001 12 Тренды
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,16,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  389.3333333333334 0.9375 452.3333333333334 63.9375
+
+P 
+4294967295
+"pictures/VariableTrend_40.png"
+2
+LANG:10027 0 
+LANG:10001 0 
+"#uses \"mobileUtil.ctl\"
+main()
+{
+  //openTrend(\"Основные_показания_по_НГКМ\",1);
+  string pnl = \"vision/trend/VT_trend.pnl\";
+  //string pnl = getTrendPathForMobile();
+  string path = getPath(PANELS_REL_PATH,pnl);
+  if (path!=\"\")
+  {
+    RootPanelOnModule( pnl, \"\",ptms_BuildModuleName(\"mainModule\",ptnavi_GetScreenName()), makeDynString());
+  }
+}" 0
+ E E "main()
+{
+  dpConnect(\"Access_init\",myUiDpName()+\".UserName:_online.._value\");
+}
+
+Access_init(string dp1, string UserName)
+{
+  if (getUserPermission(2))
+    setValue(\"\",\"enabled\", true);
+  else
+    setValue(\"\",\"enabled\", false);
+}
+" 0
+
+13 26
+"PUSH_BUTTON4"
+""
+1 463.5 21.9375 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 12 Печать
+LANG:10001 12 Печать
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,16,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  461.5 0.9375 524.5 63.93749999999999
+
+P 
+4294967295
+"pictures/Printer-icon2.png"
+2
+LANG:10027 0 
+LANG:10001 0 
+"main() 
+{
+  printPanel(myModuleName(),myPanelName(), \"F_BMP, [100,100,100], PrintImg -b -l %s\");
+}
+" 0
+ E E "main()
+{
+  dpConnect(\"Access_init\",myUiDpName()+\".UserName:_online.._value\");
+}
+
+Access_init(string dp1, string UserName)
+{
+  if (getUserPermission(2))
+    setValue(\"\",\"enabled\", true);
+  else
+    setValue(\"\",\"enabled\", false);
+}
+" 0
+
+13 27
+"PUSH_BUTTON5"
+""
+1 535.6666666666667 21.9375 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 14 Справка
+LANG:10001 14 Справка
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,16,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  533.6666666666667 0.9375 596.6666666666667 63.9375
+
+P 
+4294967295
+"pictures/info_40.png"
+2
+LANG:10027 0 
+LANG:10001 0 
+"main() 
+{
+  openPanelInMainModule(ARK_SPRAVKA);
+}
+" 0
+ E E "main()
+{
+  dpConnect(\"Access_init\",myUiDpName()+\".UserName:_online.._value\");
+}
+
+Access_init(string dp1, string UserName)
+{
+  if (getUserPermission(2))
+    setValue(\"\",\"enabled\", true);
+  else
+    setValue(\"\",\"enabled\", false);
+}
+" 0
+
+13 31
+"PUSH_BUTTON6"
+""
+1 680 21.9375 E E E 1 E 1 E N "cont_text" E N "_Button" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 12 Печать
+LANG:10001 12 Печать
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  678 0.9375 741 63.9375
+
+T 
+2
+LANG:10027 22 Вкл.
+надписи
+LANG:10001 13 Enable labels
+"main()
+{
+  bool isTurn;
+  dpGet(\"NAVIGATION.showElement\", isTurn);
+  dpSet(\"NAVIGATION.showElement\", !isTurn);
+}
+" 0
+ E E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setText();
+}
+
+void EP_setText()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"NAVIGATION.showElement:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setTextCB\",
+            \"NAVIGATION.showElement:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setTextCB(string dp, bool boNewValue)
+{
+
+  if (!boNewValue)
+  {
+    setValue(\"\", \"text\", \"Вкл.\\nнадписи\");
+  }
+  else
+  {
+    setValue(\"\", \"text\", \"Выкл.\\nнадписи\");
+  }
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {NAVIGATION.showElement}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+
+6 32
+"RECTANGLE1"
+""
+1 30 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E -1 1 3 2 1 E 0.8294117647058823 0 1.5 4.117647058823531 -12.5625 2  1 0  "pictures/Rusal_Logo.svg" 4294967295 E 30 10 200 50
+13 33
+"PUSH_BUTTON7"
+""
+1 607.8333333333334 21.9375 E E E 1 E 1 E N "cont_text" E N "_Button" E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 12 Печать
+LANG:10001 12 Печать
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 41 Arial,-1,13,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,16,5,50,0,0,0,0,0
+0  605.8333333333334 0.9375 668.8333333333334 63.9375
+
+T 
+2
+LANG:10027 21 Ввод
+данных
+LANG:10001 13 Enable labels
+E E E E
+6 37
+"RECTANGLE4"
+""
+1 750 30 E E E 1 E 1 E N "cont_static" E N {221,221,221} E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.9 0 5.899999999999999 -3673.285714285714 -174.0625 1 E 750 30 760 40
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 34
+"RECTANGLE2"
+""
+1 739 3 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6483516483516483 0 0.8805970149253731 272.5824175824177 0.2957089552238769 2  1 0  "pictures/pngegg (1)adsda.png" 4294967295 E 739 3 830 70
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+1 0 "SHAPE_GROUP1" -1
+2 0 
+37 34 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

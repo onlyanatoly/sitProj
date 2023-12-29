@@ -1,0 +1,2850 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 1674 868 N "_3DFace" 0
+"main()
+{
+    dpSet(\"PanelName.\",\"ЭПУ, ТПУ СИКН 414\");
+}" 0
+ E E E E 1 -1 -1 0  157 128
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+6 238
+"RECTANGLE37"
+""
+1 80 54 E E E 1 E 1 E N {0,0,0} E N {255,255,255,0} E E
+ E E
+88 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 1 4 2 1 1 E 1.045372050816697 0 1.24168093806321 -67.62976406533576 294.9492293445867 1 E 80 54 493.2500000000001 430
+6 237
+"RECTANGLE36"
+""
+1 80 54 E E E 1 E 1 E N {0,0,0} E N {255,255,255,0} E E
+ E E
+87 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 1 4 2 1 1 E 1.043859649122807 0 0.8324468085106385 -64.19627192982463 -17.95212765957459 1 E 80 54 493.2500000000001 430
+7 2
+"ELLIPSE1"
+""
+1 481 188 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 0.8083333333333334 0 1.091666666666667 -32.59404761904952 -89.28987205013758 1 E 481 188 60 60
+7 3
+"ELLIPSE2"
+""
+1 481 188 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 0.8083333333333334 0 1.091666666666667 -296.5940476190494 -89.28987205013758 1 E 481 188 60 60
+6 1
+"RECTANGLE1"
+""
+1 157 128 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 4 2 1 1 E 1 0 1.091666666666667 -64.78571428571615 -89.28987205013758 1 E 157 128 421 248
+1 4638 2 "" 26
+0
+2 31
+"PRIMITIVE_TEXT148"
+""
+1 308.2142857142839 61.4434612831957 E E E 1 E 1 E N {52,57,94} E N "_Window" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 285 61.4434612831957 331 85
+0 2 2 "0s" 0 0 0 193 0 0  308.2142857142839 61.4434612831957 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,21,5,50,0,0,0,0,0
+0 1
+LANG:10027 4 E501
+2 91
+"PRIMITIVE_TEXT149"
+""
+1 66.21428571428385 33.44346128319575 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 66.21428571428385 33.44346128319575 67 45
+0 2 2 "0s" 0 0 0 193 0 0  66.21428571428385 33.44346128319575 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 1
+LANG:10027 0 
+2 94
+"PRIMITIVE_TEXT152"
+""
+1 313.8749999999978 298.9256041403384 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 251 298.9256041403384 377 332
+0 2 2 "0s" 0 0 0 193 0 0  313.8749999999978 298.9256041403384 2
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 34 Минимальная тем-ра
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 32 в приборном шкафу
+2 95
+"PRIMITIVE_TEXT153"
+""
+1 282.4642857142816 143.0684612831958 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 212 143.0684612831958 352 176
+0 2 2 "0s" 0 0 0 193 0 0  282.4642857142816 143.0684612831958 2
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 34 Емкость для воды и 
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 39 промывочной жидкости
+7 122
+"ELLIPSE3"
+""
+1 481 188 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 0.8083333333333334 0 1.091666666666667 -23.8083333333353 259.6386993784339 1 E 481 188 60 60
+7 123
+"ELLIPSE4"
+""
+1 481 188 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 0.8083333333333334 0 1.091666666666667 -287.8083333333353 259.6386993784339 1 E 481 188 60 60
+6 124
+"RECTANGLE8"
+""
+1 157 128 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 4 2 1 1 E 1 0 1.091666666666667 -56.00000000000193 259.6386993784339 1 E 157 128 421 248
+2 132
+"PRIMITIVE_TEXT154"
+""
+1 307.9999999999981 410.3720327117672 E E E 1 E 1 E N {52,57,94} E N "_Window" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 285 410.3720327117672 331 434
+0 2 2 "0s" 0 0 0 193 0 0  307.9999999999981 410.3720327117672 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,21,5,50,0,0,0,0,0
+0 1
+LANG:10027 4 E502
+2 139
+"PRIMITIVE_TEXT155"
+""
+1 83.99999999999807 360.3720327117672 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 83.99999999999807 360.3720327117672 85 372
+0 2 2 "0s" 0 0 0 193 0 0  83.99999999999807 360.3720327117672 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 1
+LANG:10027 0 
+2 141
+"PRIMITIVE_TEXT157"
+""
+1 352.7499999999999 498.6250000000001 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.045454545454545 0 1 -86.54545454545649 -6.127967288232696 0 E 293 498.6250000000001 413 532
+0 2 2 "0s" 0 0 0 193 0 0  352.7499999999999 498.6250000000001 2
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 22 Емкость для 
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 35 отработанной смеси
+7 190
+"ELLIPSE8"
+""
+1 481 188 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+67 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 0.8083333333333334 0 1.091666666666667 -23.05833333333519 501.2636993784337 1 E 481 188 60 60
+7 191
+"ELLIPSE9"
+""
+1 481 188 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+68 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 0.8083333333333334 0 1.091666666666667 -287.0583333333352 501.2636993784337 1 E 481 188 60 60
+6 192
+"RECTANGLE29"
+""
+1 157 128 E E E 1 E 1 E N {0,0,0} E N {110,160,255} E E
+ E E
+69 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 4 2 1 1 E 1 0 1.091666666666667 -55.25000000000182 501.2636993784337 1 E 157 128 421 248
+2 200
+"PRIMITIVE_TEXT166"
+""
+1 307.7499999999982 651.9970327117671 E E E 1 E 1 E N {52,57,94} E N "_Window" E E
+ E E
+70 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 285 651.9970327117671 331 676
+0 2 2 "0s" 0 0 0 193 0 0  307.7499999999982 651.9970327117671 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,21,5,50,0,0,0,0,0
+0 1
+LANG:10027 4 E402
+2 207
+"PRIMITIVE_TEXT167"
+""
+1 89.99999999999807 575.8720327117674 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+77 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 89.99999999999807 575.8720327117674 91 588
+0 2 2 "0s" 0 0 0 193 0 0  89.99999999999807 575.8720327117674 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 1
+LANG:10027 0 
+2 209
+"PRIMITIVE_TEXT169"
+""
+1 353.5 740.2499999999999 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+79 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.057692307692308 0 1 -91.92307692307915 -6.127967288232696 0 E 293 740.2499999999999 415 773
+0 2 2 "0s" 0 0 0 193 0 0  353.5 740.2499999999999 2
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 34 Емкость-хранилище 
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 21 чистой воды
+1 4648 9 "" 26
+0
+2 232
+"PRIMITIVE_TEXT171"
+""
+1 366.75 796.6249999999998 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+86 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.082278481012658 0 1 -101.6962025316475 -9.127967288232696 0 E 304 796.6249999999998 430 830
+0 2 2 "0s" 0 0 0 193 0 0  366.75 796.6249999999998 2
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 34 Минимальная тем-ра
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 32 в приборном шкафу
+4 302
+"LINE2"
+""
+1 136.2142857142839 182.4434612831957 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+90 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  136.2142857142838 182.4434612831956 136.2142857142838 260.3720327117677
+4 303
+"LINE3"
+""
+1 136.2142857142839 260.3720327117677 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+91 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  136.2142857142838 260.3720327117677 204.499999999998 260.3720327117677
+4 304
+"LINE4"
+""
+1 136.2142857142841 640.9970327117671 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+92 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  136.2142857142838 640.9970327117669 136.2142857142838 599.8720327117673
+4 306
+"LINE6"
+""
+1 414.2499999999983 706.4970327117669 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+94 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  414.2499999999982 706.4970327117668 480.7499999999981 706.4970327117668
+4 307
+"LINE7"
+""
+1 480.7499999999983 706.4970327117669 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+95 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  480.7499999999981 706.4970327117665 480.7499999999981 843.8720327117668
+4 374
+"LINE10"
+""
+1 873.306598701636 61 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+103 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  873.3065987016355 61 873.3065987016355 260.9999999999999
+4 377
+"LINE13"
+""
+1 711.9999999999965 260.8720327117675 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+106 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  711.9999999999982 260.8720327117675 1280 260.8720327117675
+4 381
+"LINE17"
+""
+1 495.9999999999985 260.8720327117675 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+110 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  495.9999999999982 260.8720327117675 711.9999999999982 260.8720327117675
+4 382
+"LINE18"
+""
+1 711.9999999999981 62 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+111 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  711.9999999999978 62 711.9999999999978 405.3720327117676
+4 400
+"LINE20"
+""
+1 770.5714285714266 390.5910803308153 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+115 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  770.5714285714263 390.5910803308153 711.5794181419175 390.5910803308153
+4 402
+"LINE22"
+""
+1 767.9920104295092 346.8577469974819 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+117 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  767.9920104295093 346.8577469974819 712 346.8577469974819
+4 403
+"LINE23"
+""
+1 808.6934012983597 431.3720327117675 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+119 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E  808.6934012983597 431.372032711767 611.69340129836 431.372032711767
+9 406
+"ARC2"
+""
+1 575.2853023960786 419 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+122 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E 4.445387970516377e-016 -0.8046469768974016 1.448529411764704 2.457685930440644e-016 104.2595777689487 1206.202183566852 0 E 575.2853023960786 419 68 68
+ 0 575.2853023960786 351 575.2853023960786 469 1
+6 407
+"RECTANGLE89"
+""
+1 670 277 E E E 1 E 1 E N "_3DFace" E N "_3DFace" E E
+ E E
+123 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 0 3 2 1 E -1.814176243504723e-016 0.7247178804674392 -1.966810966810962 -2.651284566179735e-016 1353.663780663779 241.7392123375195 1 E 670 277 696 376
+4 408
+"LINE26"
+""
+1 711.9999999999983 453.4323406410721 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+124 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E  711.9999999999984 453.4323406410715 711.9999999999984 689.3720327117674
+4 409
+"LINE27"
+""
+1 817.0719727269319 391.3720327117673 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+125 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E  817.0719727269318 391.3720327117674 802.3148298697886 391.3720327117674
+4 410
+"LINE28"
+""
+1 620.0719727269316 393.7053660451012 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+126 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E  620.0719727269312 393.705366045101 605.3148298697885 393.705366045101
+1 4727 18 "" 2
+0
+4 775
+"LINE31"
+""
+1 494.9999999999978 671.8720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+138 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  494.9999999999977 671.8720327117673 607.9999999999998 671.8720327117673
+4 776
+"LINE32"
+""
+1 711.9999999999985 689.3720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+139 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  711.9999999999984 689.3720327117674 805.9999999999998 689.3720327117674
+4 405
+"LINE25"
+""
+1 809.6934012983601 391.3720327117675 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+121 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E  809.69340129836 391.3720327117673 809.6934012983595 743.3006041403393
+4 404
+"LINE24"
+""
+1 612.6934012983601 393.705366045101 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+120 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 2 1 1 E  612.6934012983602 393.705366045101 612.6934012983602 743.3006041403393
+2 809
+"PRIMITIVE_TEXT178"
+""
+1 970 86 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+151 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.231707317073171 0 1 -396.1812385665999 -25.0565387168042 0 E 931 86 1009 108
+0 2 2 "0s" 0 0 0 193 0 0  970 86 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0
+0 1
+LANG:10027 13 УПП ТПУ
+4 810
+"LINE34"
+""
+1 259.9999999999999 260.8720327117674 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+152 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  260 260.8720327117675 495.9999999999982 260.8720327117675
+4 811
+"LINE35"
+""
+1 494.9999999999981 260.8720327117675 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+153 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  494.9999999999977 260.8720327117675 494.9999999999977 672.8720327117671
+2 812
+"PRIMITIVE_TEXT179"
+""
+1 410 24 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+154 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.261006289308176 0 1 224.9874213836458 -15.12796728823247 0 E 224 24 596 48
+0 2 2 "0s" 0 0 0 193 0 0  410 24 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,21,5,50,0,0,0,0,0
+0 1
+LANG:10027 65 Эталонная поверочная установка/ТПУ
+10 1009
+"POLYGON5"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+157 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 5.442874662877066e-017 0.8888888888888792 -1.000000000000007 6.123233995736809e-017 1024.693401298362 -1305.127967288216 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1010
+"POLYGON6"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+158 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 5.442874662877066e-017 0.8888888888888792 1.000000000000007 -6.123233995736809e-017 560.3065987016337 -1304.372032711752 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1011
+"POLYGON7"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+159 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 0.8888888888888792 0 1.000000000000007 -890.492496137521 -51.29319322829439 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1012
+"POLYGON8"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+160 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 5.442874662877066e-017 0.8888888888888792 -1.000000000000007 6.123233995736809e-017 1024.693401298362 -1190.627967288215 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1013
+"POLYGON9"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+161 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E -0.8888888888888792 -1.088574932575413e-016 1.224646799147362e-016 -1.000000000000007 2034.999999999982 984.3720327117699 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1014
+"POLYGON10"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+162 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E -0.8888888888888792 0 -1.000000000000007 2656.731300036453 573.2931932282944 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1015
+"POLYGON11"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+163 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E -0.8888888888888792 -1.088574932575413e-016 1.224646799147362e-016 -1.000000000000007 1660.999999999982 913.2167919799523 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+10 1016
+"POLYGON12"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+164 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E -0.8888888888888792 -1.088574932575413e-016 1.224646799147362e-016 -1.000000000000007 1660.999999999982 573.3720327117701 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+4 1033
+"LINE36"
+""
+1 592 597 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+169 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  592 597 614.9999999999999 597
+4 1034
+"LINE37"
+""
+1 592 548 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+170 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  591.9999999999998 548 613.9999999999999 548
+4 1035
+"LINE38"
+""
+1 817.3362584412171 548.8720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+171 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  817.3362584412167 548.8720327117674 808.6934012983595 548.8720327117674
+4 1036
+"LINE39"
+""
+1 818.3362584412171 596.8720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+172 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  818.3362584412168 596.8720327117677 809.6934012983595 596.8720327117677
+2 1037
+"PRIMITIVE_TEXT180"
+""
+1 713 639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+173 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1 0 1.038461538461539 133.69340129836 -123.2819044930974 0 E 708 639 718 656
+0 2 2 "0s" 0 0 0 193 0 0  713 639 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 1
+2 1038
+"PRIMITIVE_TEXT181"
+""
+1 846.3868025967199 586.8720327117677 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+174 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 841 586.8720327117677 851 604
+0 2 2 "0s" 0 0 0 193 0 0  846.3868025967199 586.8720327117677 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 2
+2 1039
+"PRIMITIVE_TEXT182"
+""
+1 713 639 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+175 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1 0 1.038461538461539 -142 -76.153937204865 0 E 708 639 718 656
+0 2 2 "0s" 0 0 0 193 0 0  713 639 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 3
+2 1040
+"PRIMITIVE_TEXT183"
+""
+1 571.69340129836 538.0000000000001 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+176 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 567 538.0000000000001 577 555
+0 2 2 "0s" 0 0 0 193 0 0  571.69340129836 538.0000000000001 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0
+0 1
+LANG:10027 1 4
+1 4760 28 "" 18
+0
+2 426
+"PRIMITIVE_TEXT173"
+""
+1 609.3362584412172 821.8720327117674 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+130 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.154336734693876 0 1 -137.6380494505484 -34.62796728823309 0 E 545 821.8720327117674 673 837
+0 2 2 "0s" 0 0 0 193 0 0  609.3362584412172 821.8720327117674 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 37 Контроль затопления
+2 427
+"PRIMITIVE_TEXT174"
+""
+1 820.3362584412174 821.8720327117674 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+131 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.215097751129915 0 1 -113.9202578740734 -34.62796728823309 0 E 763 821.8720327117674 877 837
+0 2 2 "0s" 0 0 0 193 0 0  820.3362584412174 821.8720327117674 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 33 Контроль протечки
+2 428
+"PRIMITIVE_TEXT175"
+""
+1 886.5 897.4999999999996 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+132 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E 1.948494278777605 0 1.132236576932042 -1018.942724626556 -269.9178546426433 0 E 869 897.4999999999996 905 919
+0 2 2 "0s" 0 0 0 193 0 0  886.5 897.4999999999996 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0
+0 1
+LANG:10027 6 ТПУ
+4 601
+"LINE29"
+""
+1 739.69340129836 486.3720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+136 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  739.6934012983595 486.3720327117677 712.6934012983598 486.3720327117677
+4 602
+"LINE30"
+""
+1 741.69340129836 531.3720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+137 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 2 1 1 E  741.6934012983598 531.3720327117676 712.6934012983598 531.3720327117676
+4 806
+"LINE33"
+""
+1 966.6934012983602 689.3720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+148 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  966.6934012983597 689.3720327117669 1280 689.3720327117669
+2 808
+"PRIMITIVE_TEXT177"
+""
+1 1304.17861623341 656.110163558836 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+150 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 1274 656.110163558836 1334 678
+0 2 2 "0s" 0 0 0 193 0 0  1304.17861623341 656.110163558836 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,75,0,0,0,0,0
+0 1
+LANG:10027 8 c БИЛ
+4 1254
+"LINE40"
+""
+1 136.2142857142841 599.8720327117674 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+178 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  136.2142857142839 599.8720327117673 495.9999999999981 599.8720327117673
+1 4763 29 "" 1
+0
+1 4771 30 "" 1
+0
+1 4779 31 "" 1
+0
+6 1477
+"RECTANGLE124"
+""
+1 520 749 E E E 1 E 1 E N {0,0,0} E N {223,223,223} E E
+ E E
+186 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 3.017543859649109 0 1.639639639639638 -421.1228070175364 -1211.218057378321 1 E 520 749 691 860
+2 1478
+"PRIMITIVE_TEXT210"
+""
+1 236.0208344622911 772.9594335285319 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+187 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.106157607467428 0 1 1056.850309414312 -751.6279672882322 0 E 236.0208344622911 772.9594335285319 408 790
+0 2 2 "0s" 0 0 0 192 0 0  236.0208344622911 772.9594335285319 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,15,5,75,0,0,0,0,0
+0 1
+LANG:10027 38 Загазованность в ТПУ
+2 1479
+"PRIMITIVE_TEXT211"
+""
+1 1157.308187290577 60.80021624029966 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+188 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 1157.308187290577 60.80021624029966 1324 76
+0 2 2 "0s" 0 0 0 192 0 0  1157.308187290577 60.80021624029966 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 43 Уровень загазованности
+6 1482
+"RECTANGLE126"
+""
+1 386 120 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+191 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"QT671.MAX3:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"QT671.MAX3:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:BB672.QVALUE}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 0.5793509615384608 0 0.7148437500000012 1254.041956809661 -28.08593750000022 1 E 386 120 486 154
+2 1483
+"PRIMITIVE_TEXT214"
+""
+1 1078.75 157.0625 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+192 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+}
+   " 0
+ E 0 1 3 2 1 E 0.6836592505097666 0 1 754.7516864334821 -94.68359375000004 0 E 1078.75 157.0625 1126 172
+0 2 2 "0s" 0 0 0 192 0 0  1078.75 157.0625 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 7 30%    
+2 1491
+"PRIMITIVE_TEXT217"
+""
+1 1154.69340129836 118.0386993784344 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+193 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 1154.69340129836 118.0386993784344 1321 133
+0 2 2 "0s" 0 0 0 192 0 0  1154.69340129836 118.0386993784344 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 43 Уровень загазованности
+6 1499
+"RECTANGLE112"
+""
+1 386 120 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+194 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"QT671.QFAIL:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"QT671.QFAIL:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:BB672.QVALUE}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1.089230769230769 0 0.6932773109243702 1121.327247452206 -25.13133534663875 1 E 386 120 486 154
+2 1500
+"PRIMITIVE_TEXT189"
+""
+1 1078.75 157.0625 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+195 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9247787610619469 0 1 550.9104281873999 -94.68359375000004 0 E 1078.75 157.0625 1192 172
+0 2 2 "0s" 0 0 0 192 0 0  1078.75 157.0625 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 28 Недостоверен    
+6 1501
+"RECTANGLE113"
+""
+1 386 120 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+196 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"QT672.MAX2:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"QT672.MAX2:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"TN_YELLOW\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:HL2-10.QVALUE}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_YELLOW}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 0.5793509615384602 0 0.7148437500000019 1189.370528846154 29.68170871177334 1 E 386 120 486 154
+2 1502
+"PRIMITIVE_TEXT190"
+""
+1 1431.758305144514 120.6591763521186 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+197 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.07468814646337 0 0.9169098656291166 -110.5136706306788 9.999567606224264 0 E 1431.758305144514 120.6591763521186 1463 136
+0 2 2 "0s" 0 0 0 192 0 0  1431.758305144514 120.6591763521186 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 3 10%
+6 1503
+"RECTANGLE114"
+""
+1 386 120 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+198 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"QT672.MAX3:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"QT672.MAX3:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:HL2-30.QVALUE}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 0.5793509615384623 0 0.7148437500000019 1254.09638206759 29.68170871177334 1 E 386 120 486 154
+2 1504
+"PRIMITIVE_TEXT191"
+""
+1 1078.75 157.0625 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+199 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.6845785002567669 0 1 753.7655411225978 -36.86501694302532 0 E 1078.75 157.0625 1126 172
+0 2 2 "0s" 0 0 0 192 0 0  1078.75 157.0625 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 7 30%    
+6 1505
+"RECTANGLE115"
+""
+1 386 120 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+200 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"QT671.QFAIL:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"QT671.QFAIL:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:BB672.QVALUE}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1.089230769230769 0 0.6932773109243702 1121.327247452206 32.63631086513485 1 E 386 120 486 154
+2 1506
+"PRIMITIVE_TEXT192"
+""
+1 1078.75 157.0625 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+201 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9247787610619469 0 1 550.9104281874006 -36.86501694302532 0 E 1078.75 157.0625 1192 172
+0 2 2 "0s" 0 0 0 192 0 0  1078.75 157.0625 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 28 Недостоверен    
+1 4787 36 "" 24
+0
+4 1516
+"LINE526"
+""
+1 1149 155.3581438228789 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+202 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E  1149 155.3581438228789 1663.999999999998 155.3581438228789
+4 1759
+"LINE527"
+""
+1 815 689.3720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+203 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  814.9999999999998 689.3720327117674 943.8506954344248 689.3720327117674
+4 1760
+"LINE528"
+""
+1 618 671.8720327117674 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+204 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  617.9999999999998 671.8720327117673 712 671.8720327117673
+6 1991
+"RECTANGLE127"
+""
+1 386 120 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+205 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"QT671.MAX2:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"QT671.MAX2:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"TN_YELLOW\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:BB671.QVALUE}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_YELLOW}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 0.5793509615384607 0 0.7148437500000017 1189.370528846154 -28.08593750000026 1 E 386 120 486 154
+2 1992
+"PRIMITIVE_TEXT218"
+""
+1 1428.967548076923 62.34765624999996 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+206 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 1428.967548076923 62.34765624999996 1460 77
+0 2 2 "0s" 0 0 0 192 0 0  1428.967548076923 62.34765624999996 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,75,0,0,0,0,0
+0 1
+LANG:10027 3 10%
+1 4791 37 "" 24
+0
+1 4795 38 "" 24
+0
+1 4688 14 "" 50
+0
+7 2235
+"ELLIPSE42"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "TN_GREEN" E E
+ E E
+211 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:IVK3_TPU_SENSOR1.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"System1:IVK3_TPU_SENSOR1.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, int iNewValue)
+{
+  if (iNewValue == 1)
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+}
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:SET_W_TPU_SS1.}
+// DPConfig {:_online.._value}
+// DPType {int}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {equal}
+// Operant1 {1}
+// Color1 {TN_GREEN}
+// Operator2 {else}
+// Operant2 {}
+// Color2 {TN_GREY}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 2 1 2 1 E 1 0 1 -398.2167981084606 144.1586428951522 1 E 1226.553056549678 404.9632987655969 10 10
+7 2236
+"ELLIPSE43"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "TN_GREEN" E E
+ E E
+212 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:IVK3_TPU_SENSOR2.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"System1:IVK3_TPU_SENSOR2.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, int iNewValue)
+{
+  if (iNewValue == 1)
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+}
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:SET_W_TPU_SS1.}
+// DPConfig {:_online.._value}
+// DPType {int}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {equal}
+// Operant1 {1}
+// Color1 {TN_GREEN}
+// Operator2 {else}
+// Operant2 {}
+// Color2 {TN_GREY}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 2 1 2 1 E 0.9523809523809523 0 0.9523809523809523 -339.809509701333 165.8812585274455 1 E 1226.553056549678 452.5403128935383 10.5 10.5
+7 2237
+"ELLIPSE44"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "TN_GREEN" E E
+ E E
+213 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:IVK3_TPU_SENSOR3.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"System1:IVK3_TPU_SENSOR3.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, int iNewValue)
+{
+  if (iNewValue == 1)
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+}
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:SET_W_TPU_SS1.}
+// DPConfig {:_online.._value}
+// DPType {int}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {equal}
+// Operant1 {1}
+// Color1 {TN_GREEN}
+// Operator2 {else}
+// Operant2 {}
+// Color2 {TN_GREY}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 2 1 2 1 E 0.8333333333333273 0 0.8333333333333334 566.0000000000001 578.5832422823149 1 E 30 20 12 12
+7 2238
+"ELLIPSE45"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "TN_GREEN" E E
+ E E
+214 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:IVK3_TPU_SENSOR4.:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            \"System1:IVK3_TPU_SENSOR4.:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, int iNewValue)
+{
+  if (iNewValue == 1)
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+}
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:SET_W_TPU_SS1.}
+// DPConfig {:_online.._value}
+// DPType {int}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {equal}
+// Operant1 {1}
+// Color1 {TN_GREEN}
+// Operator2 {else}
+// Operant2 {}
+// Color2 {TN_GREY}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 2 1 2 1 E 0.8333333333333273 0 0.8333333333333334 567.0000000000001 531.3333333333335 1 E 30 20 12 12
+1 4804 44 "" 8
+0
+1 4799 43 "" 8
+0
+1 4814 46 "" 8
+0
+1 4809 45 "" 8
+0
+1 4662 11 "" 18
+0
+1 4819 51 "" 24
+0
+1 4826 52 "" 24
+0
+1 4833 53 "" 24
+0
+1 4840 54 "" 24
+0
+1 4847 55 "" 24
+0
+1 4665 13 "" 22
+0
+1 4704 15 "" 22
+0
+1 4856 68 "" 23
+0
+1 4879 69 "" 23
+0
+10 3318
+"POLYGON13"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+246 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 0.8888888888888792 0 1.000000000000007 -637.8467006491669 376.8720327117652 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+4 3940
+"LINE529"
+""
+1 1126.366305557891 376.8720327117676 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+270 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  1126.36630555789 376.8720327117675 1280 376.8720327117675
+4 3941
+"LINE530"
+""
+1 1126.366305557891 260.7931932282921 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+271 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  1126.36630555789 260.7931932282921 1126.36630555789 376.8720327117675
+10 3942
+"POLYGON14"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+272 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E -0.8888888888888792 0 -1.000000000000007 2657.183152778929 689.8720327117696 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+4 3943
+"LINE531"
+""
+1 1029.366305557891 689.9999999999999 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+273 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  1029.36630555789 689.9999999999999 1029.36630555789 804.5579301476644
+4 3944
+"LINE532"
+""
+1 1029.366305557891 804.5579301476645 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+274 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 2 1 1 E  1029.36630555789 804.5579301476644 1280 804.5579301476644
+2 3945
+"PRIMITIVE_TEXT236"
+""
+1 1301.384480723146 769.3622780195318 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+275 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 1274 769.3622780195318 1328 791
+0 2 2 "0s" 0 0 0 193 0 0  1301.384480723146 769.3622780195318 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,75,0,0,0,0,0
+0 1
+LANG:10027 8 c РСУ
+10 3946
+"POLYGON15"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+276 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 0.8888888888888792 0 1.000000000000007 -292.6336944420932 490.5579301476622 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+2 3947
+"PRIMITIVE_TEXT237"
+""
+1 1304.271034878147 229.6101635588361 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+277 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 1273 229.6101635588361 1335 252
+0 2 2 "0s" 0 0 0 193 0 0  1304.271034878147 229.6101635588361 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,75,0,0,0,0,0
+0 1
+LANG:10027 9 в БИЛ
+2 3948
+"PRIMITIVE_TEXT238"
+""
+1 1301.596940127191 388.270063209134 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+278 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 5 2 1 1 E U  0 E 1280 388.270063209134 1324 410
+0 2 2 "0s" 0 0 0 193 0 0  1301.596940127191 388.270063209134 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,75,0,0,0,0,0
+0 1
+LANG:10027 7 к РД
+1 4902 80 "" 23
+0
+1 4925 81 "" 23
+0
+10 3993
+"POLYGON16"
+""
+1 1701 317 E E E 1 E 1 E N {0,0,0} E N "TN_BLACK" E E
+ E E
+281 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 2 1 1 E 0.8888888888888792 0 1.000000000000007 -293.7941355102473 375.3720327117654 1 E 3 1701 317
+1701 308
+1692 313
+ 1
+1 4737 23 "" 22
+0
+2 4312
+"PRIMITIVE_TEXT239"
+""
+1 673 121 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+282 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 673 121 689 136
+0 2 2 "0s" 0 0 0 192 0 0  673 121 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 2 45
+2 4313
+"PRIMITIVE_TEXT240"
+""
+1 843 121 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+283 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 843 121 859 136
+0 2 2 "0s" 0 0 0 192 0 0  843 121 1
+1
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 1
+LANG:10027 2 46
+9 4632
+"ARC12"
+""
+1 1089 133 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+284 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.6707070707066681 0 -0.4666666666666751 -18.72376395489823 123.0666666666679 1 E 1089 133 15 15
+ 0 1074 133 1108 133 1
+9 4633
+"ARC13"
+""
+1 1089 133 E E E 1 E 1 E N {0,0,0} E N {0,0,0} E E
+ E E
+285 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.6707070707066681 0 -0.4666666666666751 142.2762360451018 122.0666666666679 1 E 1089 133 15 15
+ 0 1074 133 1108 133 1
+0
+LAYER, 1 
+1
+LANG:10027 0 
+1 4634 1 "" 1
+0
+1 4639 2 "" 20
+0
+1 4649 9 "" 20
+0
+1 4658 10 "" 1
+0
+1 4733 20 "" 1
+0
+1 4854 56 "" 1
+0
+0
+LAYER, 2 
+1
+LANG:10027 0 
+1 4642 2 "" 25
+0
+1 4652 9 "" 25
+0
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+1 4637 1 "" 7
+0
+1 4647 2 "" 18
+0
+1 4657 9 "" 18
+0
+1 4661 10 "" 7
+0
+1 4736 20 "" 7
+0
+1 4790 36 "" 33
+0
+1 4794 37 "" 28
+0
+1 4798 38 "" 28
+0
+1 4825 51 "" 31
+0
+1 4832 52 "" 31
+0
+1 4839 53 "" 31
+0
+1 4846 54 "" 31
+0
+1 4853 55 "" 31
+0
+1 4687 13 "" 18
+0
+1 4726 15 "" 18
+0
+1 4855 56 "" 7
+0
+1 4759 23 "" 18
+0
+0
+3 1 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/KTPRS.pnl" 479.3571428571428 408.5 T 5 0.7435897435897436 0 0.7435897435897436 76.22779304029314 10.12820512820507
+1
+"$DP""TS657"
+3 2 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/AGT.pnl" 228 279 T 6 1 0 1 -51.12500000000003 -67.00000000000001
+2
+"$DP""H501"
+"$NAME""H501"
+3 9 "PANEL_REF9" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/AGT.pnl" 228 279 T 80 1 0 1 -51.12500000000003 262.8720327117674
+2
+"$DP""H402"
+"$NAME""H402"
+3 10 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/KTPRS.pnl" 479.3571428571428 408.5 T 85 0.7631578947368422 0 0.7435897435897436 64.69548872180475 499.500237839972
+1
+"$DP""TS658"
+3 11 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/valve414_3.pnl" 884 86 T 96 3.06161699786841e-017 -0.6666666666666663 0.5000000000000044 4.082155997157842e-017 672.1532993508168 718.8720327117671
+0
+3 13 "PANEL_REF13" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1.pnl" 921 176 T 98 1 0 1 -164.0565987016407 36.27203271176774
+2
+"$DP""MS303"
+"$NAME""43"
+3 14 "PANEL_REF14" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/REG.pnl" 1237 186 T 99 1 0 1 -338.0000000000021 31.87203271176754
+3
+"$DP""PP301"
+"$FLOW""PID-PP301"
+"$NAME""PP4"
+3 15 "PANEL_REF15" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1.pnl" 921 176 T 100 1 0 1 75.0126646403223 36.8720327117675
+2
+"$DP""MS302"
+"$NAME""44"
+3 18 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects_parts/tpu_4.pnl" 704 373 T 118 -1.83697019872103e-016 1 -1 -1.83697019872103e-016 1020.666666666665 -217.6279672882325
+1
+"$DP""System1:IVK3_TPU_DRIVE_STATE."
+3 20 "PANEL_REF20" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/KTPRS.pnl" 812 905 T 128 0.749999072132028 0 0.7366737508709917 234.8409911019801 96.17958654294978
+1
+"$DP""LS301"
+3 23 "PANEL_REF23" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1.pnl" 921 176 T 147 1 0 1 -26.30659870164004 465.3720327117674
+2
+"$DP""MS301"
+"$NAME""42"
+3 28 "PANEL_REF28" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/valve414_3.pnl" 884 86 T 177 3.06161699786841e-017 -0.6666666666666663 0.5000000000000044 4.082155997157842e-017 834.153299350818 718.8720327117671
+0
+3 29 "PANEL_REF29" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Level.pnl" 177 666 T 179 1 0 1 -65.00000000000196 -9.127967288232696
+1
+"$DP""LT402"
+3 30 "PANEL_REF30" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Level.pnl" 176 423 T 180 1 0 1 -65.00000000000196 -9.127967288232696
+1
+"$DP""LT504"
+3 31 "PANEL_REF31" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Level.pnl" 169 75 T 181 1 0 1 -65.00000000000196 -9.127967288232696
+1
+"$DP""LT502"
+3 36 "PANEL_REF115" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/UTS_HORN.pnl" 329 974 T 185 1 0 1 1266.36718426318 -790.1173272246302
+1
+"$DP""BB673_DO"
+3 37 "PANEL_REF37" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/UTS_GAS_10.pnl" 593 159 T 207 0.9848801560758043 0 1 612.7845009085218 9.67093093347725
+1
+"$DP""BB672_DO"
+3 38 "PANEL_REF38" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/UTS_GAS_30.pnl" 524.2684824902724 159.1678224900143 T 208 0.9848801560758043 0 1 869.6301079516489 9.503108443462992
+1
+"$DP""BB671_DO"
+3 43 "PANEL_REF153" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_414.pnl" 587.2600165204036 20.34585461208866 T 215 1 0 1 137.1566501462631 291.4482354441943
+2
+"$DP""TT302_TPU"
+"$NAME""TT302"
+3 44 "PANEL_REF154" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_414.pnl" 587.2600165204036 20.34585461208866 T 216 1 0 1 137.1566501462631 334.4482354441942
+2
+"$DP""PT302_TPU"
+"$NAME""PT302"
+3 45 "PANEL_REF155" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_414.pnl" 587.2600165204036 20.34585461208866 T 217 1 0 1 137.156650146263 431.1328421297661
+2
+"$DP""TT301_TPU"
+"$NAME""TT301"
+3 46 "PANEL_REF156" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_414.pnl" 587.2600165204036 20.34585461208866 T 218 1 0 1 137.1566501462631 474.3709373678615
+2
+"$DP""PT301_TPU"
+"$NAME""PT301"
+3 51 "PANEL_REF51" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_new.pnl" 567.681514913658 168.6077845275252 T 223 1 0 1 -387 -90
+2
+"$DP""LT502"
+"$NAME""LT502"
+3 52 "PANEL_REF52" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_new.pnl" 567.681514913658 168.6077845275252 T 224 1 0 1 -387 264.2642481842422
+2
+"$DP""LT504"
+"$NAME""LT504"
+3 53 "PANEL_REF53" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_new.pnl" 567.681514913658 168.6077845275252 T 225 1 0 1 759.8294380206301 -101.7357518157577
+2
+"$DP""QT671"
+"$NAME""QT671"
+3 54 "PANEL_REF54" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_new.pnl" 567.681514913658 168.6077845275252 T 226 1 0 1 761.8294380206301 -45.83555178244066
+2
+"$DP""QT672"
+"$NAME""QT672"
+3 55 "PANEL_REF55" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/OIP_new.pnl" 567.681514913658 168.6077845275252 T 227 1 0 1 -387 502.2642481842422
+2
+"$DP""LT402"
+"$NAME""LT402"
+3 56 "PANEL_REF56" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/KTPR.pnl" 578.4999999999986 769.1585101452215 T 227 0.7708333333333866 0 0.7433954106157709 155.0788179649969 192.3696036671999
+1
+"$DP""LS302"
+3 68 "PANEL_REF68" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1_URD.pnl" 1210.58328823566 496.2187662517612 T 245 1 0 1 -33.22012960985876 -281.677185420113
+2
+"$DP""MS_47"
+"$NAME""48"
+3 69 "PANEL_REF69" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1_URD.pnl" 1252.363158625801 340.125954153949 T 246 1 0 1 -153.8591638405562 302.0808526177584
+2
+"$DP""MS_45"
+"$NAME""47"
+3 80 "PANEL_REF80" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1_URD.pnl" 1210.58328823566 496.2187662517612 T 279 1 0 1 -112.9055413377294 261.1739379558435
+2
+"$DP""MS_46"
+"$NAME""50"
+3 81 "PANEL_REF81" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/NK_VLV_H1_URD.pnl" 1252.363158625801 340.125954153949 T 280 1 0 1 -75 -10.75392144218154
+2
+"$DP""MS_48"
+"$NAME""49"
+0

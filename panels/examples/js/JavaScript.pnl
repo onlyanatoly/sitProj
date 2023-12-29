@@ -1,0 +1,254 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 722 864 N "white" 0
+"main()
+{
+  // Generate Random values every 4 seconds
+  while ( 1 )
+  {
+    delay(4);
+    float randomNumber;
+    randomNumber = rand() / 100;
+    dpSet(\"ExampleDP_Rpt1.\", randomNumber);
+  }
+
+}
+" 0
+ E E E E 1 -1 -1 0  20 10
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+2 0 0
+""
+NC
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+29 1
+"WebView_ewo1"
+""
+1 14.72185098563317 25.3451851851852 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"webInspector" "bool FALSE"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  14.72185098563317 25.3451851851852 700.5265619779474 609.925925925926
+11 WebView.ewo
+0
+"main()
+{
+  WebView_ewo1.loadSnippet(\"/data/html/dpSetExample.html\");
+}
+" 0
+6 10
+"RECTANGLE4"
+""
+1 10 40 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.5923728813559322 0 1.03015873015873 3.076271186440678 -32.2063492063492 0 E 10 40 1190 670
+6 12
+"RECTANGLE5"
+""
+1 10 40 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.5923728813559322 0 0.2920634920634919 3.076271186440678 653.3174603174604 0 E 10 40 1190 670
+13 13
+"PUSH_BUTTON1"
+""
+1 242.335251798561 783.18193512441 E E E 1 E 1 E N "white" E N "blue" E E
+ E E
+12 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+0  200.105035971223 766.8212290502794 514.8834532374101 820.1620111731844
+
+T 
+3
+LANG:10027 12 Change color
+LANG:10001 12 Change color
+LANG:10000 12 Change color
+"main(mapping event)
+{
+  string backgroundColor;
+
+  getValue(this, \"backCol\", backgroundColor);
+  setValue(this, \"backCol\", (backgroundColor == \"red\" ? \"blue\" : \"red\"));
+
+  WebView_ewo1.execJsFunction(\"toggleColor\", backgroundColor);
+}
+" 0
+ E E E
+2 14
+"PRIMITIVE_TEXT2"
+""
+1 40 510 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.4547883014162716 0 0.4854524762421606 81.84045473249391 439.8027926034803 0 E 40 510 280 570
+0 2 2 "0s" 0 0 0 64 0 0  40 510 1
+3
+LANG:10027 31 Arial,-1,23,5,75,0,0,0,0,0,Bold
+LANG:10001 31 Arial,-1,23,5,75,0,0,0,0,0,Bold
+LANG:10000 31 Arial,-1,23,5,75,0,0,0,0,0,Bold
+0 3
+LANG:10027 7 Control
+LANG:10001 7 Control
+LANG:10000 7 Control
+2 16
+"PRIMITIVE_TEXT3"
+""
+1 40 510 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 2.030264126961251 0 0.4854524762421606 19.8341647354484 481.1510806919171 0 E 40 510 280 570
+0 2 2 "0s" 0 0 0 64 0 0  40 510 1
+3
+LANG:10027 34 Arial,-1,23,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,23,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,23,5,50,0,0,0,0,0,Regular
+0 3
+LANG:10027 48 Change color of the JavaScript button at the top
+LANG:10001 48 Change color of the JavaScript button at the top
+LANG:10000 48 Change color of the JavaScript button at the top
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+1 1 "SHAPE_GROUP1" 3
+2 0 
+1 10 
+
+"minimumSize" "-1 650"
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignNone"
+"" ""
+1 2 "SHAPE_GROUP2" 3
+4 0 
+13 16 14 12 
+
+"minimumSize" "600 170"
+"layoutAlignment" "AlignNone"
+"" ""
+4 3 "LAYOUT_GROUP3" -1
+0 2 
+
+2 1 
+"G 2" "1 0 1 1"
+"G 1" "0 0 1 1"
+"" ""
+0 2 0 0
+0

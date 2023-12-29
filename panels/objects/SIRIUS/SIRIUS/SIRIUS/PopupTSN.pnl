@@ -1,0 +1,2312 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 690 459 N {80,80,80} 2
+"$SET4"
+"$UTM_Switch_SiriusTSN"
+E E E E E 1 -1 -1 0  2.000000000000014 14.34684990295946
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+6 1
+"RECTANGLE139"
+""
+1 20 34 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.694126179949863 0 1.272171717171717 219.1976790536372 -20.07050505050503 1 E 20 34 272 364
+6 2
+"RECTANGLE21"
+""
+1 336 386 E E E 1 E 1 E N {0,0,0} E N "_3DFace" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.7 0 1 -545.2 11.18333333333336 1 E 336 386 466 432
+4 7
+"LINE453"
+""
+1 137.5000000000002 397.1833333333333 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  137.5000000000002 397.1833333333333 137.5000000000002 302.0516944093694
+4 10
+"LINE458"
+""
+1 137.5000000000002 155.6420053965493 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  137.5000000000002 155.6420053965493 137.5000000000002 84.18333333333337
+2 11
+"PRIMITIVE_TEXT49"
+""
+1 306.5149114861428 9.327033139252187 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.5135059158361804 0 1 -79.13976459706589 7.183333333333351 0 E 306.5149114861428 9.327033139252187 490.5149114861428 32.32703313925219
+0 2 2 "0s" 0 0 0 64 0 0  306.5149114861428 9.327033139252187 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 19 Яйчейка № 
+2 12
+"PRIMITIVE_TEXT50"
+""
+1 174.7425442569288 16.34684990295946 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.Nomer\") );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$UTM_Switch_SiriusTSN+\".Internal_variables.Nomer\"}
+// DPConfig {:_online.._value}
+// DPType {int}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 174.7425442569288 16.34684990295946 194 34
+0 2 2 "0s" 0 0 0 192 0 0  174.7425442569288 16.34684990295946 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 2 ##
+2 13
+"PRIMITIVE_TEXT52"
+""
+1 136.5000000000002 420.2152109789956 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.Object_OUT\") );
+}
+
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$UTM_Switch_SiriusTSN+\".Internal_variables.Object_OUT\"}
+// DPConfig {_da_common.._comment}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {FALSE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 130 413 144 428
+0 2 2 "0s" 0 0 0 201 0 0  136.5000000000002 420.2152109789956 1
+1
+LANG:10027 47 Arial,-1,13,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 2 ##
+6 14
+"RECTANGLE22"
+""
+1 336 386 E E E 1 E 1 E N {0,0,0} E N "_3DFace" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1 0 0.566301753025019 -264.4999999999998 -163.4590239734749 1 E 336 386 466 432
+2 15
+"PRIMITIVE_TEXT53"
+""
+1 136.5000000000007 68.19027065942007 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.Object_IN\") );
+}
+
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$UTM_Switch_SiriusTSN+\".Internal_variables.Object_IN\"}
+// DPConfig {:_online.._value}
+// DPType {string}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 130 61 144 76
+0 2 2 "0s" 0 0 0 201 0 0  136.5000000000007 68.19027065942007 1
+1
+LANG:10027 47 Arial,-1,13,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 2 ##
+1 160 1 "" 6
+0
+1 165 2 "" 6
+0
+1 170 3 "" 6
+0
+1 175 4 "" 6
+0
+1 180 5 "" 6
+0
+1 185 6 "" 6
+0
+2 39
+"PRIMITIVE_TEXT241"
+""
+1 294.25 61.1833333333333 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+   setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI1\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 61.1833333333333 294.25 82
+0 2 2 "0s" 0 0 0 194 0 0  294.25 61.1833333333333 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 40
+"PRIMITIVE_TEXT242"
+""
+1 294.25 89.90878787878785 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI2\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 89.90878787878785 294.25 111
+0 2 2 "0s" 0 0 0 194 0 0  294.25 89.90878787878785 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 41
+"PRIMITIVE_TEXT243"
+""
+1 294.25 118.8842424242423 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI3\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 118.8842424242423 294.25 140
+0 2 2 "0s" 0 0 0 194 0 0  294.25 118.8842424242423 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 42
+"PRIMITIVE_TEXT244"
+""
+1 294.25 148.1409469696969 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI4\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 148.1409469696969 294.25 169
+0 2 2 "0s" 0 0 0 194 0 0  294.25 148.1409469696969 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 43
+"PRIMITIVE_TEXT245"
+""
+1 294.25 177.0851515151514 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI5\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 177.0851515151514 294.25 198
+0 2 2 "0s" 0 0 0 194 0 0  294.25 177.0851515151514 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 44
+"PRIMITIVE_TEXT246"
+""
+1 294.25 205.873106060606 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI6\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 205.873106060606 294.25 227
+0 2 2 "0s" 0 0 0 194 0 0  294.25 205.873106060606 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 45
+"PRIMITIVE_TEXT247"
+""
+1 294.25 234.7548106060606 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI7\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 234.7548106060606 294.25 256
+0 2 2 "0s" 0 0 0 194 0 0  294.25 234.7548106060606 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 46
+"PRIMITIVE_TEXT248"
+""
+1 499.5053514506411 11.78292583977993 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.040101326317135 0 1 -152.6354813261274 18.32383244503311 0 E 499.5053514506411 11.78292583977993 699 29
+0 2 2 "0s" 0 0 0 192 0 0  499.5053514506411 11.78292583977993 1
+1
+LANG:10027 41 Arial,-1,16,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 46 Текущие параметры ячейки
+1 190 7 "" 6
+0
+1 195 8 "" 6
+0
+1 200 9 "" 6
+0
+1 205 10 "" 6
+0
+13 55
+"PUSH_BUTTON6"
+""
+1 -424.645833333333 307.354278299744 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ "main()
+{
+	symb_actionAtRightClick2($SET4, $SET4);
+}
+
+symb_actionAtRightClick2(string DPT, string DPE)
+{
+  // check user
+  // depending on DPT & user generate Popup
+  // open correct panel
+
+  bool bBuildTrendPopup;
+  dyn_string popup;
+  int answer;
+
+  //
+  //  build POPUP:
+  //
+  //  Trends & Trend
+  //  Information&Simulation
+  //  Options
+  //  Properties
+  //
+  //
+  //
+  //   Trend-Popup
+  bBuildTrendPopup = symb_isDptTrendable2(DPT);
+  if (bBuildTrendPopup)
+    dynAppend(popup, makeDynString(\"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trends\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),     // OPERATOR
+                                   \"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trendbuffer\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),// Operator
+                                   \"SEPARATOR\"));
+  //  Information&Simulation
+  //
+  switch (DPT)
+  {
+   case \"SLIDE_VALVE_HAND1\": dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+
+                                         \"SEPARATOR\"));break;
+   //default: dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+                                //         \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"simulation\")+\" , 1,\" +(getUserPermission(4)?\"1\":\"0\"),  // PARA
+                                  //       \"SEPARATOR\"));break;
+  }
+  //
+  //  DPT-specific Options
+  //
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"UTM_AI\":               // no special options
+   case \"COUNTER1\":             // no special options
+   case \"BIT_CONDITION\":        // no special options
+   case \"DRIVE1\":              // no special options
+   case \"DRIVE2\":              // no special options
+   case \"PUMP1\":               // no special options
+   case \"PUMP2\":               // no special options
+   case \"SETPOINT\":             // no special options
+   case \"SLIDE_VALVE1\":        // no special options
+   case \"SLIDE_VALVE2\":        // no special options
+   case \"SLIDE_VALVE_HAND1\":   // no special options
+   case \"ANALOG2\":              // no special options
+   case \"ANALOG1\":   break;     // no special options
+   //default:                      dynAppend(popup, makeDynString(\"PUSH_BUTTON, EXTEND1 , 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+  //                                                        \"PUSH_BUTTON, EXTEND2 , 1,\" +(getUserPermission(3)?\"1\":\"0\"),  // OPERATOR ALL
+   //                                                       \"SEPARATOR\"));
+        break;
+  }
+  //  DPT_CHANGE END
+  //
+  //  Properties
+  //
+    dynAppend(popup, makeDynString( \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"properties\")+\", 3,\"  +(getUserPermission(4)?\"1\":\"0\")));  // PARA
+
+  //
+  // build subpopups
+  //
+  if (bBuildTrendPopup)                            // Trend
+  {
+     symb_buildPopUpTrend(popup,1000,getCatStr(\"STD_Symbols\",\"trends\"));
+     symb_buildPopUpTrendbuffer(popup);
+  }
+  //
+  //  show popup
+  //
+  //
+
+  if (dynlen(popup) > 0)
+  {
+     popupMenu(popup, answer);
+     symb_EvaluatePopup2(popup, answer, DPE, DPT);
+  }
+
+}
+
+symb_EvaluatePopup2(dyn_string popup, int answer, string DPE, string DPT)
+{
+   //
+   //   !!! actual only working with STD_objects !!!
+   //
+   string sObjectPath = \"objects_parts/STD_OBJECTS/\";
+   string PANEL, path;
+
+   switch (answer)
+   {
+   case 0:  break;   // ESCAPE
+   case 1:           // Simulation
+             symb_checkDPE(DPE,DPT);
+             PANEL = sObjectPath+DPT+\"_sim.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_sim.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"SIM:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+  //           break;
+   case 2:           // Informaton
+             PANEL = sObjectPath+DPT+\"_info.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_info.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"INFO:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+             break;
+   case 3:           // Properties
+                PANEL = sObjectPath+DPT+\"_prop.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_prop.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dp:\"+dpSubStr(DPE, DPSUB_SYS_DP)));
+                else
+                       ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"PARA:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_prop.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+              break;
+   default:
+               symb_EvaluatePopupOtherActions(popup, answer, DPE, DPT);
+  }
+}
+
+
+bool symb_isDptTrendable2(string DPT)
+{
+  bool ret = false;
+
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"WH_SC1\":
+   case \"COUNTER1\":
+   case \"ANALOG2\":
+   case \"ANALOG1\": ret = TRUE; break;
+   case \"BIT_CONDITION\":
+   case \"DRIVE1\":
+   case \"DRIVE2\":
+   case \"PUMP1\":
+   case \"PUMP2\":
+   case \"SETPOINT\":
+   case \"SLIDE_VALVE1\":
+   case \"SLIDE_VALVE2\":
+   case \"SLIDE_VALVE_HAND1\":
+   default:      break;
+  }
+  //  DPT_CHANGE END
+  return ret;
+}" 0
+ E
+36 0 0 0 0 0
+E E E
+8
+1
+LANG:10027 14 Счетчик
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0  24.06249999999994 297.0335235827629 86.06249999999994 364.0335235827629
+
+B 
+4294967295
+"55.png"
+1
+LANG:10027 0 
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnRelativ(\"objects/IM/SET4.pnl\",
+      \"Счетчик\",
+      makeDynString(\"$SET4:\" + $SET4, \"$UTM_Switch_Sirius:\" + $UTM_Switch_SiriusTSN),
+      0, 0);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativ}
+// File {objects/IM/SET4.pnl}
+// Panel {Счетчик}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$SET4:$SET4}
+// PanelPara2 {$UTM_Switch_SiriusTSN:$UTM_Switch_SiriusTSN}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ E E E
+2 56
+"PRIMITIVE_TEXT249"
+""
+1 294.25 263.4636940602279 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI8\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 263.4636940602279 294.25 284
+0 2 2 "0s" 0 0 0 194 0 0  294.25 263.4636940602279 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 57
+"PRIMITIVE_TEXT250"
+""
+1 294.25 292.4869696969696 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI9\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 292.4869696969696 294.25 313
+0 2 2 "0s" 0 0 0 194 0 0  294.25 292.4869696969696 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 58
+"PRIMITIVE_TEXT251"
+""
+1 294.25 321.7374242424242 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI10\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 321.7374242424242 294.25 343
+0 2 2 "0s" 0 0 0 194 0 0  294.25 321.7374242424242 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+1 210 11 "" 6
+0
+2 61
+"PRIMITIVE_TEXT252"
+""
+1 294.25 350.4878787878787 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+40 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI11\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 264 350.4878787878787 294.25 371
+0 2 2 "0s" 0 0 0 194 0 0  294.25 350.4878787878787 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 76
+"PRIMITIVE_TEXT262"
+""
+1 30.21941893133004 283.5152405667521 E E E 1 E 1 E N {200,150,100} E N "_Window" E E
+ E E
+55 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 30.21941893133004 283.5152405667521 78 298
+0 2 2 "0s" 0 0 0 192 0 0  30.21941893133004 283.5152405667521 1
+1
+LANG:10027 41 Arial,-1,12,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 14 Счетчик
+1 215 13 "" 6
+0
+1 220 14 "" 6
+0
+2 115
+"PRIMITIVE_TEXT269"
+""
+1 293.4178879661292 382.1374242424242 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+59 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI12\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 263 382.1374242424242 293.4178879661292 403
+0 2 2 "0s" 0 0 0 194 0 0  293.4178879661292 382.1374242424242 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 116
+"PRIMITIVE_TEXT270"
+""
+1 293.4178879661292 410.8878787878787 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+60 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI13\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 263 410.8878787878787 293.4178879661292 432
+0 2 2 "0s" 0 0 0 194 0 0  293.4178879661292 410.8878787878787 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+1 225 15 "" 6
+0
+1 230 16 "" 6
+0
+1 235 17 "" 6
+0
+1 240 18 "" 6
+0
+1 245 19 "" 6
+0
+1 250 20 "" 6
+0
+2 133
+"PRIMITIVE_TEXT271"
+""
+1 502.1234346596506 60.60833333333326 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+74 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+   setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI14\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 60.60833333333326 502.1234346596506 82
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 60.60833333333326 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 134
+"PRIMITIVE_TEXT272"
+""
+1 502.1234346596506 89.3337878787878 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+75 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI15\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 89.3337878787878 502.1234346596506 110
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 89.3337878787878 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 135
+"PRIMITIVE_TEXT273"
+""
+1 502.1234346596506 118.3092424242423 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+76 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI16\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 118.3092424242423 502.1234346596506 139
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 118.3092424242423 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 136
+"PRIMITIVE_TEXT274"
+""
+1 502.1234346596506 147.565946969697 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+77 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI17\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 147.565946969697 502.1234346596506 169
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 147.565946969697 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 137
+"PRIMITIVE_TEXT275"
+""
+1 502.1234346596506 176.5101515151515 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+78 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI18\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 176.5101515151515 502.1234346596506 198
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 176.5101515151515 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 138
+"PRIMITIVE_TEXT276"
+""
+1 502.1234346596506 205.2981060606061 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+79 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI19\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 205.2981060606061 502.1234346596506 226
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 205.2981060606061 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 139
+"PRIMITIVE_TEXT277"
+""
+1 502.1234346596506 234.1798106060606 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+80 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI20\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 234.1798106060606 502.1234346596506 255
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 234.1798106060606 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+1 255 21 "" 6
+0
+1 260 22 "" 6
+0
+1 265 23 "" 6
+0
+1 270 24 "" 6
+0
+2 148
+"PRIMITIVE_TEXT278"
+""
+1 502.1234346596506 262.8886940602278 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+81 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI21\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 262.8886940602278 502.1234346596506 284
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 262.8886940602278 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 149
+"PRIMITIVE_TEXT279"
+""
+1 502.1234346596506 291.9119696969694 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+82 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI22\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 291.9119696969694 502.1234346596506 313
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 291.9119696969694 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 150
+"PRIMITIVE_TEXT280"
+""
+1 502.1234346596506 321.162424242424 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+83 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI23\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 321.162424242424 502.1234346596506 342
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 321.162424242424 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+1 275 25 "" 6
+0
+2 153
+"PRIMITIVE_TEXT281"
+""
+1 502.1234346596506 349.9128787878786 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+84 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI24\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 472 349.9128787878786 502.1234346596506 371
+0 2 2 "0s" 0 0 0 194 0 0  502.1234346596506 349.9128787878786 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+1 280 26 "" 6
+0
+1 285 27 "" 6
+0
+2 158
+"PRIMITIVE_TEXT282"
+""
+1 501.2913226257798 381.562424242424 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+85 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI25\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 471 381.562424242424 501.2913226257798 403
+0 2 2 "0s" 0 0 0 194 0 0  501.2913226257798 381.562424242424 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+2 159
+"PRIMITIVE_TEXT283"
+""
+1 501.2913226257798 410.3128787878786 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+86 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+     setValue(\"\", \"text\", dpGetDescription( $UTM_Switch_SiriusTSN+\".Internal_variables.AI.AI26\", -2) );
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 471 410.3128787878786 501.2913226257798 431
+0 2 2 "0s" 0 0 0 194 0 0  501.2913226257798 410.3128787878786 1
+1
+LANG:10027 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+0 1
+LANG:10027 3 ###
+1 290 28 "" 12
+0
+0
+LAYER, 1 
+1
+LANG:10027 0 
+1 162 1 "0" 0
+0
+1 167 2 "0" 0
+0
+1 172 3 "0" 0
+0
+1 177 4 "0" 0
+0
+1 182 5 "0" 0
+0
+1 187 6 "0" 0
+0
+1 192 7 "0" 0
+0
+1 197 8 "0" 0
+0
+1 202 9 "0" 0
+0
+1 207 10 "0" 0
+0
+1 212 11 "0" 0
+0
+1 217 13 "0" 0
+0
+1 222 14 "0" 0
+0
+1 227 15 "0" 0
+0
+1 232 16 "0" 0
+0
+1 237 17 "0" 0
+0
+1 242 18 "0" 0
+0
+1 247 19 "0" 0
+0
+1 252 20 "0" 0
+0
+1 257 21 "0" 0
+0
+1 262 22 "0" 0
+0
+1 267 23 "0" 0
+0
+1 272 24 "0" 0
+0
+1 277 25 "0" 0
+0
+1 282 26 "0" 0
+0
+1 287 27 "0" 0
+0
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+3 1 "PANEL_REF9" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI1\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI1\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 550 112.595500288971 T 1 1.652453880960668 0 1 -604.6971806474064 -59.795500288971
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI1\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI1\""
+3 2 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI2\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI2\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 2 1.652453880960668 0 1 -584.8677340758784 -59.92933603160799
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI2\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI2\""
+3 3 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI3\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI3\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 3 1.652453880960668 0 1 -584.8677340758784 -31.06266936494132
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI3\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI3\""
+3 4 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI4\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI4\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 4 1.652453880960668 0 1 -584.8677340758784 -2.196002698274654
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI4\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI4\""
+3 5 "PANEL_REF13" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI5\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI5\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 5 1.652453880960668 0 1 -584.8677340758784 26.67066396839198
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI5\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI5\""
+3 6 "PANEL_REF14" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI6\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI6\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 6 1.652453880960668 0 1 -584.8677340758784 55.53733063505867
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI6\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI6\""
+3 7 "PANEL_REF15" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI8\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI8\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 7 1.652453880960668 0 1 -584.8677340758784 113.270663968392
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI8\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI8\""
+3 8 "PANEL_REF16" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI9\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI9\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 8 1.652453880960668 0 1 -584.8677340758784 142.1373306350587
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI9\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI9\""
+3 9 "PANEL_REF17" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI10\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI10\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 9 1.652453880960668 0 1 -584.8677340758784 169.8706639683919
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI10\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI10\""
+3 10 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI11\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI11\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 10 1.66422406774141 0 1 -591.1942094705272 199.8706639683919
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI11\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI11\""
+3 11 "PANEL_REF20" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI7\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI7\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 11 1.652453880960668 0 1 -584.8677340758784 84.40399730172533
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI7\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI7\""
+3 13 "PANEL_REF26" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI10\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI10\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 57 1.652453880960668 0 1 -584.8677340758784 230.2706639683919
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI12\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI12\""
+3 14 "PANEL_REF27" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI11\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI11\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 58 1.66422406774141 0 1 -591.1942094705272 260.2706639683919
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI13\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI13\""
+3 15 "PANEL_REF28" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI14\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI14\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 550 112.595500288971 T 61 1.652453880960668 0 1 -396.8237459877558 -60.37050028897096
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI14\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI14\""
+3 16 "PANEL_REF29" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI15\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI15\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 62 1.652453880960668 0 1 -376.9942994162278 -60.50433603160798
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI15\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI15\""
+3 17 "PANEL_REF30" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI16\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI16\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 63 1.652453880960668 0 1 -376.9942994162278 -31.6376693649413
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI16\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI16\""
+3 18 "PANEL_REF31" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI17\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI17\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 64 1.652453880960668 0 1 -376.9942994162278 -2.771002698274657
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI17\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI17\""
+3 19 "PANEL_REF32" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI18\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI18\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 65 1.652453880960668 0 1 -376.9942994162278 26.09566396839194
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI18\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI18\""
+3 20 "PANEL_REF33" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI19\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI19\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 66 1.652453880960668 0 1 -376.9942994162278 54.96233063505864
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI19\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI19\""
+3 21 "PANEL_REF34" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI21\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI21\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 67 1.652453880960668 0 1 -376.9942994162278 112.695663968392
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI21\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI21\""
+3 22 "PANEL_REF35" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI22\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI22\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 68 1.652453880960668 0 1 -376.9942994162278 141.5623306350588
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI22\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI22\""
+3 23 "PANEL_REF36" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI23\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI23\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 69 1.652453880960668 0 1 -376.9942994162278 169.295663968392
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI23\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI23\""
+3 24 "PANEL_REF37" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI24\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI24\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 70 1.66422406774141 0 1 -383.3207748108766 199.295663968392
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI24\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI24\""
+3 25 "PANEL_REF38" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI20\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI20\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 71 1.652453880960668 0 1 -376.9942994162278 83.82899730172528
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI20\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI20\""
+3 26 "PANEL_REF39" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI25\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI25\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 72 1.652453880960668 0 1 -376.9942994162278 229.695663968392
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI25\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI25\""
+3 27 "PANEL_REF40" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI26\"+\":_original.._active\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusTSN+\".Analog_parametrs.AI26\"+\":_original.._active\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/STD_VALUES/value_SET4-2.pnl" 538 142.729336031608 T 73 1.66422406774141 0 1 -383.3207748108766 259.6956639683918
+4
+"$SET4""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI26\""
+"$b_IBit""FALSE"
+"$b_ShowInfo""TRUE"
+"$dpe_value""$UTM_Switch_SiriusTSN+\".Analog_parametrs.AI26\""
+3 28 "PANEL_REF41" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIRIUS/TSN.pnl" 430.0857864376271 166.0771331474368 T 87 1 0 1 -300 -0.2399722572973246
+2
+"$SET4""$SET4"
+"$UTM_Switch_SiriusTSN""$UTM_Switch_SiriusTSN"
+0

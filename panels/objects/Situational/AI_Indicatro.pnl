@@ -1,0 +1,169 @@
+V 14
+3
+LANG:10027 12 Столб_1
+LANG:10001 12 AI_situation
+LANG:10000 16 Messwertbalken_1
+PANEL,-1 -1 297 241 N "fon_static" 2
+"$b_IBit"
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+6 34
+"RECTANGLE1"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum;
+int     miNum2;
+bool isSlider;
+bool isPoint;
+bool bShowAlarm;
+
+int aiType;
+
+main()
+{
+ msDPE=$dpe_value;
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=$b_IBit;
+ miNum=1;
+ miNum2=1;
+ isSlider = false;
+ aiType = 0;
+ isPoint = false;
+ bShowAlarm = true;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ E 3 1 1 0 1 E 0.8666666666666653 0 6.205128205128204 55.33333333333339 -41.55128205128202 1 E 10 10 40 43
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+6 8
+"s1"
+""
+1 18 213 E E E 1 E 0 E N "fon_open" E N "fon_open" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E -1 1 1 0 1 E 0.3 0 1 66.60000000000001 2.500000000000005 1 E 18 19 48 217
+10 9
+"p3"
+""
+1 18 117 E E E 1 E 1 E N "3_grey" E N "_Transparent" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 0 1 E 0.3 0 2.030927835051545 66.59999999999999 -18.11855670103077 0 E 3 18 117
+48 117
+48 20
+ 0
+10 10
+"p2"
+""
+1 18 115 E E E 1 E 1 E N "cont_static" E N "_Transparent" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 0 1 E 0.3 0 2.010204081632652 66.60000000000001 -16.19387755102034 0 E 3 18 117
+18 19
+48 19
+ 0
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

@@ -1,0 +1,152 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 387 350 N "fon_static" 0
+E E E E E 1 -1 -1 0  160 90
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 6
+"RECTANGLE1"
+""
+1 100 50 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9411764705882353 0 1.123809523809524 5.882352941176472 -32.19047619047619 1 E 100 50 270 260
+10 7
+"POLYGON1"
+""
+1 100 260 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E U  1 E 3 100 260
+140 260
+120 300
+ 1
+10 8
+"POLYGON2"
+""
+1 100 260 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 40 0 1 E 3 100 260
+140 260
+120 300
+ 1
+10 9
+"POLYGON3"
+""
+1 100 260 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 80 0 1 E 3 100 260
+140 260
+120 300
+ 1
+10 10
+"POLYGON4"
+""
+1 100 260 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 120 0 1 E 3 100 260
+140 260
+120 300
+ 1
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

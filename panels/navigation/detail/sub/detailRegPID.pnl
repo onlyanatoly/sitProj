@@ -1,0 +1,847 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 309 238 N "fon_static" 1
+"$dpe_value"
+E E E E E 1 -1 -1 0  7.5 38
+""0  1
+E "langString getUnit()
+{
+  return dpGetUnit($dpe_value+\".OUT\");
+}
+
+langString getSignalUnit()
+{
+  return getUnit();
+}
+
+langString getAiUnit()
+{
+  return dpGetUnit($dpe_value+\".aiOUT\");
+}" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+2 1
+"PRIMITIVE_TEXT2"
+""
+1 10 12 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 10 12 129 35
+0 2 2 "0s" 0 0 0 192 0 0  10 12 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 18 Max задание
+LANG:10001 14 Уставки
+2 2
+"PRIMITIVE_TEXT3"
+""
+1 9.5 40.87393162393175 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 9.5 40.87393162393175 123 64
+0 2 2 "0s" 0 0 0 192 0 0  9.5 40.87393162393175 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 18 Min задание
+LANG:10001 14 Уставки
+2 3
+"PRIMITIVE_TEXT4"
+""
+1 9.5 67.87393162393175 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 9.5 67.87393162393175 123 91
+0 2 2 "0s" 0 0 0 192 0 0  9.5 67.87393162393175 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 18 Max уставка
+LANG:10001 14 Уставки
+2 4
+"PRIMITIVE_TEXT5"
+""
+1 9.5 95.8739316239318 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 9.5 95.8739316239318 118 119
+0 2 2 "0s" 0 0 0 192 0 0  9.5 95.8739316239318 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 18 Min уставка
+LANG:10001 14 Уставки
+14 5
+"HighHigh"
+""
+1 156.0722222222223 124.0731707317073 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  137 7 214.1666666666666 40
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".maxSP:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".maxSP:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "#uses \"AlertHandl.ctl\"
+main()
+{
+  dpSetWait( $dpe_value+\".maxSP\", this.text);
+  setRegAlertHandle();
+}" 0
+
+14 6
+"High"
+""
+1 156.0722222222223 153.0101365436732 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  137 35.93696581196588 214.1666666666666 68.93696581196588
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".minSP:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".minSP:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "#uses \"AlertHandl.ctl\"
+main()
+{
+  dpSetWait( $dpe_value+\".minSP\", this.text);
+  setRegAlertHandle();
+}" 0
+
+14 7
+"Low"
+""
+1 156.0722222222223 180.0101365436732 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  137 62.93696581196588 214.1666666666666 95.93696581196591
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".maxOP:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".maxOP:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "main()
+{
+  dpSet( $dpe_value+\".maxOP\", this.text);
+}
+" 0
+
+14 8
+"LowLow"
+""
+1 156.0722222222223 208.0101365436732 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  137 90.93696581196591 214.1666666666666 123.9369658119659
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".minOP:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".minOP:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "main()
+{
+  dpSet( $dpe_value+\".minOP\", this.text);
+}
+" 0
+
+2 9
+"HighHighUnit"
+""
+1 224.5 12 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(getUnit());
+}" 0
+ E 0 1 3 2 1 E U  0 E 224.5 12 241 35
+0 2 2 "0s" 0 0 0 192 0 0  224.5 12 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 #
+LANG:10001 14 Уставки
+2 10
+"HighUnit"
+""
+1 224.5 40.93696581196588 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(getUnit());
+}" 0
+ E 0 1 3 2 1 E U  0 E 224.5 40.93696581196588 241 64
+0 2 2 "0s" 0 0 0 192 0 0  224.5 40.93696581196588 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 #
+LANG:10001 14 Уставки
+2 11
+"LowUnit"
+""
+1 224.5 67.93696581196588 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(getAiUnit());
+}" 0
+ E 0 1 3 2 1 E U  0 E 224.5 67.93696581196588 241 91
+0 2 2 "0s" 0 0 0 192 0 0  224.5 67.93696581196588 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 #
+LANG:10001 14 Уставки
+2 12
+"LowLowUnit"
+""
+1 224.5 95.93696581196591 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text(getAiUnit());
+}" 0
+ E 0 1 3 2 1 E U  0 E 224.5 95.93696581196591 241 119
+0 2 2 "0s" 0 0 0 192 0 0  224.5 95.93696581196591 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 #
+LANG:10001 14 Уставки
+2 13
+"PRIMITIVE_TEXT6"
+""
+1 9.583333333333314 133.9054487179488 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 9.583333333333314 133.9054487179488 29 157
+0 2 2 "0s" 0 0 0 192 0 0  9.583333333333314 133.9054487179488 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 P:
+LANG:10001 14 Уставки
+2 14
+"PRIMITIVE_TEXT7"
+""
+1 9.583333333333314 160.9054487179488 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 9.583333333333314 160.9054487179488 25 184
+0 2 2 "0s" 0 0 0 192 0 0  9.583333333333314 160.9054487179488 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 I:
+LANG:10001 14 Уставки
+2 15
+"PRIMITIVE_TEXT8"
+""
+1 9.583333333333314 188.9054487179489 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 9.583333333333314 188.9054487179489 32 212
+0 2 2 "0s" 0 0 0 192 0 0  9.583333333333314 188.9054487179489 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 D:
+LANG:10001 14 Уставки
+2 19
+"PRIMITIVE_TEXT9"
+""
+1 117.5833333333333 161.9054487179488 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 117.5833333333333 161.9054487179488 128 185
+0 2 2 "0s" 0 0 0 192 0 0  117.5833333333333 161.9054487179488 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 c
+LANG:10001 14 Уставки
+2 20
+"PRIMITIVE_TEXT10"
+""
+1 117.5833333333333 188.9054487179488 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 117.5833333333333 188.9054487179488 128 212
+0 2 2 "0s" 0 0 0 192 0 0  117.5833333333333 188.9054487179488 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 c
+LANG:10001 14 Уставки
+14 21
+"TEXT_FIELD1"
+""
+1 48.07222222222231 247.0731707317073 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  29 130 106.1666666666666 163
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".coefP:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".coefP:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "main()
+{
+  dpSet( $dpe_value+\".coefP\", this.text);
+}
+" 0
+
+14 22
+"TEXT_FIELD2"
+""
+1 48.15555555555561 276.0416536376903 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  29.0833333333333 158.968482905983 106.2499999999999 191.968482905983
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".coefI:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".coefI:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "main()
+{
+  dpSet( $dpe_value+\".coefI\", this.text);
+}
+" 0
+
+14 23
+"TEXT_FIELD3"
+""
+1 48.19722222222225 305.0258950906817 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  29.12499999999994 187.9527243589744 106.2916666666665 220.9527243589744
+3 "0.0f" 1 0 0 1 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".coefD:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".coefD:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:Temp3.CV}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ "main()
+{
+  dpSet( $dpe_value+\".coefD\", this.text);
+}
+" 0
+
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

@@ -1,0 +1,561 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1206 1011 N "6_darkwhite" 33
+"$SPdpe1"
+"$SPdpe2"
+"$SPdpe3"
+"$SPdpe4"
+"$SPdpe5"
+"$SPdpe6"
+"$SPdpe7"
+"$SPdpe8"
+"$SPdpe9"
+"$Tdpe1"
+"$Tdpe2"
+"$Tdpe3"
+"$Tdpe4"
+"$Tdpe5"
+"$Tdpe6"
+"$Tdpe7"
+"$Tdpe8"
+"$Tdpe9"
+"$b_isDetail"
+"$dpeMode1"
+"$dpeMode2"
+"$dpeMode3"
+"$dpeMode4"
+"$dpeMode5"
+"$dpeMode6"
+"$dpeMode7"
+"$dpeMode8"
+"$dpeMode9"
+"$dpeSection1"
+"$dpeSection2"
+"$dpeStation1"
+"$dpeStation2"
+"$i_ramp"
+E E E E E 1 -1 -1 0  60 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 37 0 "" 32
+0
+1 51 1 "" 14
+0
+1 64 2 "" 1
+0
+13 36
+"PUSH_BUTTON2"
+""
+1 930 330 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+15 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  928 328 982 352
+
+T 
+2
+LANG:10027 12 PUSH_BUTTON1
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  dyn_string aiNames;
+  aiNames = makeDynString(\"Temp1\", \"Temp2\", \"Temp3\", \"Temp4\", \"Temp5\", \"Temp6\");
+  if (dynlen(aiNames)>1) {
+    for ( int i= 1;i<=dynlen(aiNames);  i++)
+  	{
+      dpSet(aiNames[i]+\".OUT\", getRandom());
+  	}
+  }
+
+
+}
+
+float getRandom() {
+  float rez;
+  float r;
+  r = (float) secureRandom();
+  if (r<=100) {
+    rez = r;
+  } else if (r<=1000) {
+    rez = r/10;
+  } else if (r<=10000) {
+    rez = r/100;
+  } else if (r<=100000) {
+    rez = r/1000;
+  }
+
+  return rez;
+}" 0
+ E E E
+1 70 4 "" 12
+0
+1 106 5 "" 48
+0
+1 153 7 "" 12
+0
+1 189 9 "" 155
+0
+1 247 10 "" 3
+0
+1 298 11 "" 48
+0
+1 311 12 "0" 155
+0
+1 654 13 "" 48
+0
+1 701 16 "" 2
+0
+1 703 17 "" 2
+0
+1 705 18 "" 2
+0
+1 707 19 "" 2
+0
+1 709 20 "" 155
+0
+1 767 23 "" 2
+0
+1 769 24 "" 2
+0
+1 771 25 "" 2
+0
+1 773 26 "" 2
+0
+1 775 27 "" 2
+0
+1 777 28 "" 1
+0
+1 779 28 "" 3
+31 "transform" 0 0 1.677350427350429 0 1.098901098901099 -661.558526864084 218.3905168905168
+0
+1 784 29 "" 7
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382513 2.700062395888381e-13
+0
+1 785 29 "" 11
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 3.836930773104541e-13
+0
+1 786 29 "" 12
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382513 2.700062395888381e-13
+0
+1 787 29 "" 13
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 3.836930773104541e-13
+0
+1 788 29 "" 14
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382513 2.700062395888381e-13
+0
+1 789 29 "" 15
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 3.836930773104541e-13
+0
+1 790 29 "" 16
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 2.700062395888381e-13
+0
+1 791 29 "" 17
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382513 3.836930773104541e-13
+0
+1 792 29 "" 18
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 3.836930773104541e-13
+0
+1 793 29 "" 20
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 3.836930773104541e-13
+0
+1 794 29 "" 21
+31 "transform" 0 0 1 0 0.9999999999999997 103.9890710382514 3.836930773104541e-13
+0
+1 795 30 "" 7
+0
+1 806 31 "" 24
+0
+1 819 32 "" 1
+0
+1 821 32 "" 3
+31 "transform" 0 0 1.506410256410257 0 1 -489.0191228524569 260.8703703703704
+0
+1 826 33 "" 32
+0
+1 827 33 "" 14
+31 "transform" 0 0 3.020964890123765 0 0.4014854963364434 -1616.129303097935 508.1251594268766
+0
+1 840 34 "" 32
+0
+1 841 34 "" 14
+31 "transform" 0 0 2.602677443798936 0 0.4013755777030504 -1139.427857296546 530.7331898669906
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 41 0 "" 8
+0
+1 54 1 "" 8
+0
+1 96 4 "" 8
+0
+1 68 2 "0" 1
+0
+1 140 5 "0" 1
+0
+1 179 7 "" 8
+0
+1 231 9 "0" 1
+0
+1 284 10 "0" 1
+0
+1 306 11 "" 8
+0
+1 567 12 "0.0" 1
+0
+1 688 13 "0" 1
+0
+1 751 20 "0" 1
+0
+1 781 28 "0" 1
+0
+1 823 32 "0" 1
+0
+1 830 33 "" 8
+0
+1 844 34 "" 8
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 103 4 "" 61
+0
+1 186 7 "" 61
+0
+1 148 5 "" 79
+0
+1 241 9 "" 114
+0
+1 296 10 "" 87
+0
+1 63 1 "" 29
+0
+1 50 0 "" 29
+0
+1 621 12 "0" 114
+0
+1 696 13 "" 79
+0
+1 761 20 "" 114
+0
+1 783 28 "" 5
+0
+1 825 32 "" 5
+0
+1 839 33 "" 29
+31 "transform" 0 0 3.021489262575255 0 0.4014854963364445 -1616.604618564467 508.1251594268761
+0
+1 853 34 "" 29
+31 "transform" 0 0 2.602677443798936 0 0.4013755777030514 -1139.427857296547 530.7331898669898
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 297 10 "" 88
+0
+1 152 5 "" 49
+0
+1 246 9 "" 68
+0
+1 309 11 "" 14
+0
+1 648 12 "0" 68
+0
+1 700 13 "" 49
+0
+1 766 20 "" 68
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF9" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 392 304.6486704270749 T 10 1 0 1 -402 -274.6486704270749
+4
+"$b_IBit""TRUE"
+"$b_isDetail""$b_isDetail"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""Temp1"
+3 1 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h.pnl" 35.14102564102558 239 T 12 1 0 1 264.8589743589744 -229
+4
+"$b_IBit""TRUE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""Temp1"
+"$i_PozTypeText""1"
+3 2 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 682 108 T 13 U 
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""DI1"
+3 4 "PANEL_REF13" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar3B.pnl" 675.1896186385078 400 T 16 1 0 1 115.9203933530003 -244.4940170940172
+3
+"$dpe1""Temp1"
+"$dpe2""Temp2"
+"$dpe3""Temp3"
+3 5 "PANEL_REF14" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar4B.pnl" 410.1191539343879 333.6166666666667 T 16 1 0 1 -248.5062824479979 16.38333333333333
+4
+"$dpe1""OO1_GTO_FIRE1_HR3_1_T"
+"$dpe2""OO1_GTO_FIRE1_HR3_2_T"
+"$dpe3""OO1_GTO_FIRE1_HR3_3_T"
+"$dpe4""OO1_GTO_FIRE1_HR3_4_T"
+3 7 "PANEL_REF16" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar3B.pnl" 675.1896186385078 400 T 18 1 0 1 127.8103813614923 -23.21452991452986
+3
+"$dpe1""Temp4"
+"$dpe2""Temp5"
+"$dpe3""Temp6"
+3 9 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 210.5551282051283 661 T 19 1 0 1 271.4448717948717 -334.8999999999999
+5
+"$dpe1""OO1_GTO_FIRE1_HR3_5_T"
+"$dpe2""OO1_GTO_FIRE1_HR3_6_T"
+"$dpe3""OO1_GTO_FIRE1_HR3_7_T"
+"$dpe4""OO1_GTO_FIRE1_HR3_8_T"
+"$dpe5""OO1_GTO_FIRE1_HR3_9_T"
+3 10 "PANEL_REF19" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar6B.pnl" 693.0583956574317 650.1131661814165 T 20 U 
+6
+"$dpe1""Temp1"
+"$dpe2""Temp2"
+"$dpe3""Temp3"
+"$dpe4""Temp4"
+"$dpe5""Temp5"
+"$dpe6""Temp6"
+3 11 "PANEL_REF21" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Regulator.pnl" 0.9999999999998295 645.985815754066 T 26 1 0 1 99.00000000000017 64.01418424593396
+1
+"$dpe_value""Reg1"
+3 12 "PANEL_REF25" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"pnlTest/sub/POA_GTO_section.pnl" 400 740 T 43 1 0 1 100 30
+41
+"$Pdpe1""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe2""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe3""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe4""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe5""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe6""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe7""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe8""OO1_GTO_FIRE1_HR3_1_T"
+"$Pdpe9""OO1_GTO_FIRE1_HR3_1_T"
+"$SPdpe1""$SPdpe1"
+"$SPdpe2""$SPdpe2"
+"$SPdpe3""$SPdpe3"
+"$SPdpe4""$SPdpe4"
+"$SPdpe5""$SPdpe5"
+"$SPdpe6""$SPdpe6"
+"$SPdpe7""$SPdpe7"
+"$SPdpe8""$SPdpe8"
+"$SPdpe9""$SPdpe9"
+"$Tdpe1""$Tdpe1"
+"$Tdpe2""$Tdpe2"
+"$Tdpe3""$Tdpe3"
+"$Tdpe4""$Tdpe4"
+"$Tdpe5""$Tdpe5"
+"$Tdpe6""$Tdpe6"
+"$Tdpe7""$Tdpe7"
+"$Tdpe8""$Tdpe8"
+"$Tdpe9""$Tdpe9"
+"$dpeMode1""$dpeMode1"
+"$dpeMode2""$dpeMode2"
+"$dpeMode3""$dpeMode3"
+"$dpeMode4""$dpeMode4"
+"$dpeMode5""$dpeMode5"
+"$dpeMode6""$dpeMode6"
+"$dpeMode7""$dpeMode7"
+"$dpeMode8""$dpeMode8"
+"$dpeMode9""$dpeMode9"
+"$dpeSection1""$dpeSection1"
+"$dpeSection2""$dpeSection2"
+"$dpeStation1""$dpeStation1"
+"$dpeStation2""$dpeStation2"
+"$i_ramp""$i_ramp"
+3 13 "PANEL_REF26" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar4B.pnl" 453 303.1078380861863 T 44 1 0 1 -273 276.8921619138137
+4
+"$dpe1""OO1_GTO_FIRE1_HR3_1_T"
+"$dpe2""OO1_GTO_FIRE1_HR3_2_T"
+"$dpe3""OO1_GTO_FIRE1_HR3_3_T"
+"$dpe4""OO1_GTO_FIRE1_HR3_4_T"
+3 16 "PANEL_REF29" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 47 1 0 1 -77.32827057593809 423.8326598335561
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST1"
+3 17 "PANEL_REF30" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 48 1 0 1 -128.4782705759382 493.6826598335562
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST2"
+3 18 "PANEL_REF31" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 49 1 0 1 -77.32827057593809 544.9326598335562
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST3"
+3 19 "PANEL_REF32" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 50 1 0 1 -12.47827057593813 493.2826598335561
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST4"
+3 20 "PANEL_REF33" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 434 487.3394478966669 T 51 1 0 1 -224 412.6605521033331
+5
+"$dpe1""OO1_GTO_FIRE1_HR3_5_T"
+"$dpe2""OO1_GTO_FIRE1_HR3_6_T"
+"$dpe3""OO1_GTO_FIRE1_HR3_7_T"
+"$dpe4""OO1_GTO_FIRE1_HR3_8_T"
+"$dpe5""OO1_GTO_FIRE1_HR3_9_T"
+3 23 "PANEL_REF36" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 54 1 0 1 -48.56884705062541 748.4510500230756
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST5"
+3 24 "PANEL_REF37" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 55 1 0 1 -99.7188470506255 787.8510500230756
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST6"
+3 25 "PANEL_REF38" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 56 1 0 1 -72.51884705062551 859.8510500230756
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST7"
+3 26 "PANEL_REF39" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 57 1 0 1 -7.718847050625499 859.4510500230756
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST8"
+3 27 "PANEL_REF40" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 58 1 0 1 21.88115294937451 787.0510500230755
+1
+"$dpeMode""OO1_GTO_FIRE1_HR3.MODE.ST9"
+3 28 "PANEL_REF41" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 980 570 T 59 1 0 1 0 -110
+2
+"$b_isDetail""False"
+"$dpe_value""Temp1"
+3 29 "PANEL_REF143" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 198.4607054973818 465 T 60 0.8522167487684729 0 0.863013698630137 330.8684628027239 408.6986301369864
+0
+3 30 "PANEL_REF42" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 858.5728361538112 614.1027673832749 T 61 1 0 1 81.42716384618882 45.89723261672509
+0
+3 31 "PANEL_REF43" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor_chain.pnl" 950 950 T 62 1 0 1 -30 -110
+0
+3 32 "PANEL_REF44" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 980 570 T 63 1 0 1 0 -140
+2
+"$b_isDetail""False"
+"$dpe_value""Temp1"
+3 33 "PANEL_REF45" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 392 304.6486704270749 T 64 1 0 1 310.25 276.3588387304342
+4
+"$b_IBit""TRUE"
+"$b_isDetail""$b_isDetail"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""Temp1"
+3 34 "PANEL_REF46" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 392 304.6486704270749 T 65 1 0 1 265 405.3513295729251
+4
+"$b_IBit""TRUE"
+"$b_isDetail""$b_isDetail"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""Temp1"
+0

@@ -1,0 +1,319 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 191 80 N "_3DFace" 2
+"$dpe"
+"$dpe_value"
+"main()
+{
+  initializePanel();
+}" 0
+ E E E E 1 -1 -1 0  39.810243261886 19.89978278780616
+""0  1
+E "/////////////////////////////////////////////////////////////////////////////
+//
+//  WinCC OA Open Library
+//
+//  Author:     DMC, Inc. http://www.dmcinfo.com
+//
+//  File:       fpBarGraph.pnl
+//
+//  Revisions:  06/19/17 - Leon Grossman (leon.grossman@dmcinfo.com) :
+//                         Created
+//              10/13/18 - Oliver Reed (oliver.reed@dmcinfo.com) :
+//                         Changed from pnl to xml
+//              02/22/19 - Adapted to fit new Component Class
+//
+//  Description: Bar Graph Face Plate
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#uses \"OpenLibrary/Classes/Components/Component\"
+#uses \"OpenLibrary/Enums/DirectionType\"
+#uses \"OpenLibrary/Classes/Implementations/DisplayBehaviors/Common/DynamicSize\"
+
+
+private string dp = $dpe;
+
+private ComponentClass BarGraph = ComponentClass(getShape(\"barGraph\"));
+
+
+public void initializePanel()
+{
+  BarGraph.addDisplayBehavior(new DynamicSizeDisplayBehaviorClass(dp, getShape(\"barGraphOutline\"), DirectionType::Horizontal));
+}" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "141.585"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 1
+"barGraphOutline"
+""
+1 61 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6971830985915494 0 0.205128205128205 -2.528169014084511 3.333333333333357 1 E 61 130 203 169
+7 3
+"s2"
+""
+1 20 220 E E E 1 E 1 E N "_Transparent" E N "cont_static" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 0.189756738113978 -0.9999999999999716 1 E 39.81024326188602 34.99999999999998 4 4
+6 2
+"barGraph"
+""
+1 115 73 E E E 1 E 1 E N "_Transparent" E N "fon_open" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9166666666666667 0 0.3333333333333334 -65.41666666666667 5.666666666666661 1 E 115 73 223 97
+2 4
+"value"
+""
+1 185.6428571428571 51.34627594627609 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue) );
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.9722148556187842 -120.0238095238095 -9.433486573304805 0 E 185.4761904761905 50.88559218559222 210 63
+0 2 2 "0s" 0 0 0 192 0 0  185.4761904761905 50.88559218559222 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 5
+"tag"
+""
+1 65.61904761904754 49.6176647990054 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagName($dpe_value));
+}
+" 0
+ E 0 1 1 0 1 E U  0 E 65.45238095238093 50.10313488447555 101.0681937431548 61.66666666666668
+0 2 2 "0s" 0 0 0 192 0 0  65.45238095238093 50.10313488447555 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 TTxxxx
+LANG:10001 6 TTxxxx
+LANG:10000 4 Text
+2 6
+"unit"
+""
+1 185.4761904761905 63.99310134310112 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit($dpe_value+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E 1 0 0.9850299401197603 -93.50000000000001 -23.07185628742513 0 E 185.4761904761905 64.09523809523809 197 76
+0 2 2 "0s" 0 0 0 192 0 0  185.4761904761905 64.09523809523809 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 7 0 "" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SIM:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_value+\".SIM:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 101.0277777777778 86.88333333333324 T 3 1 0 1 -53.36306471306477 -35.0764417868886
+0
+0

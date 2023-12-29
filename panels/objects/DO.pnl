@@ -1,0 +1,3251 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 162 397 N "_3DFace" 1
+"$DP"
+E E E E E 1 -1 -1 0  78 39
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 4
+"RECTANGLE1"
+""
+1 80 40 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 1 1 E 1 0 1 -19.00000000000001 1 1 E 80 40 154 379
+2 5
+"PRIMITIVE_TEXT1"
+""
+1 63.35294117647061 46 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 63.35294117647061 46 133.3529411764706 61
+0 2 2 "0s" 0 0 0 65 0 0  63.35294117647061 46 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0
+0 2
+LANG:10027 7 SIEMENS
+LANG:10001 7 SIEMENS
+2 6
+"PRIMITIVE_TEXT2"
+""
+1 61 361 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 61 361 135 380
+0 2 2 "0s" 0 0 0 65 0 0  61 361 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 DO
+LANG:10001 2 DO
+6 7
+"RECTANGLE2"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".ModFault:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".ModFault:_online.._value\",
+                 $DP+\".ModFault:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+   setValue(\"\", \"backCol\", \"TN_GREEN\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.ModFault}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.ModFault}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 35.45098039215688 44.71148459383754 1 E 240 130 290 180
+2 8
+"PRIMITIVE_TEXT3"
+""
+1 71.64425770308122 72.46498599439776 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 71.64425770308122 72.46498599439776 85 84
+0 2 2 "0s" 0 0 0 192 0 0  71.64425770308122 72.46498599439776 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 SF
+LANG:10001 2 SF
+6 9
+"RECTANGLE3"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT1:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT1:_online.._value\",
+                 $DP+\".PV_OUT1:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT1}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT1}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2280112044817926 0 0.2156862745098039 27.15231092436978 85.81792717086837 1 E 240 130 290 180
+6 10
+"RECTANGLE4"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT2:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT2:_online.._value\",
+                 $DP+\".PV_OUT2:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT2}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT2}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2156862745098039 30.29838527077499 100.1036414565827 1 E 240 130 290 180
+6 11
+"RECTANGLE5"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT3:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT3:_online.._value\",
+                 $DP+\".PV_OUT3:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT3}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT3}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2156862745098039 30.29838527077499 114.3893557422969 1 E 240 130 290 180
+6 12
+"RECTANGLE6"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT4:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT4:_online.._value\",
+                 $DP+\".PV_OUT4:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT4}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT4}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2174836601307189 30.29838527077499 128.4390289449113 1 E 240 130 290 180
+6 13
+"RECTANGLE7"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT5:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT5:_online.._value\",
+                 $DP+\".PV_OUT5:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT5}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT5}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2156862745098039 30.29838527077499 142.9607843137255 1 E 240 130 290 180
+6 14
+"RECTANGLE8"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT6:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT6:_online.._value\",
+                 $DP+\".PV_OUT6:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT6}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT6}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2156862745098039 30.29838527077499 157.2464985994398 1 E 240 130 290 180
+6 15
+"RECTANGLE9"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT7:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT7:_online.._value\",
+                 $DP+\".PV_OUT7:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT7}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT7}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2316236978451507 30.29838527077499 169.6956967911349 1 E 240 130 290 180
+6 16
+"RECTANGLE10"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT8:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT8:_online.._value\",
+                 $DP+\".PV_OUT8:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT8}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT8}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2174836601307189 0 0.2156862745098039 30.29838527077499 185.8179271708684 1 E 240 130 290 180
+2 17
+"PRIMITIVE_TEXT5"
+""
+1 66.26841736694676 112.8385854341737 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.26841736694676 112.8385854341737 74 125
+0 2 2 "0s" 0 0 0 192 0 0  66.26841736694676 112.8385854341737 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 1
+LANG:10001 1 1
+2 18
+"PRIMITIVE_TEXT6"
+""
+1 66.33984593837532 127 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.33984593837532 127 74 139
+0 2 2 "0s" 0 0 0 192 0 0  66.33984593837532 127 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 2
+LANG:10001 1 2
+2 19
+"PRIMITIVE_TEXT7"
+""
+1 66.43984593837531 141 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.43984593837531 141 74 153
+0 2 2 "0s" 0 0 0 192 0 0  66.43984593837531 141 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 3
+LANG:10001 1 3
+2 20
+"PRIMITIVE_TEXT8"
+""
+1 66.46768207282905 155.7778361344538 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.46768207282905 155.7778361344538 74 168
+0 2 2 "0s" 0 0 0 192 0 0  66.46768207282905 155.7778361344538 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 4
+LANG:10001 1 4
+2 21
+"PRIMITIVE_TEXT10"
+""
+1 66.44488795518204 169.8235294117647 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.44488795518204 169.8235294117647 74 182
+0 2 2 "0s" 0 0 0 192 0 0  66.44488795518204 169.8235294117647 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 5
+LANG:10001 1 5
+2 22
+"PRIMITIVE_TEXT11"
+""
+1 66.37713585434169 184.5845588235296 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.37713585434169 184.5845588235296 74 197
+0 2 2 "0s" 0 0 0 192 0 0  66.37713585434169 184.5845588235296 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 6
+LANG:10001 1 6
+2 23
+"PRIMITIVE_TEXT12"
+""
+1 66.1625350140056 198.8235294117647 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.1625350140056 198.8235294117647 74 211
+0 2 2 "0s" 0 0 0 192 0 0  66.1625350140056 198.8235294117647 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 7
+LANG:10001 1 7
+2 24
+"PRIMITIVE_TEXT13"
+""
+1 66.49478291316522 213.0663515406163 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.49478291316522 213.0663515406163 74 225
+0 2 2 "0s" 0 0 0 192 0 0  66.49478291316522 213.0663515406163 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 8
+LANG:10001 1 8
+6 25
+"RECTANGLE11"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT9:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT9:_online.._value\",
+                 $DP+\".PV_OUT9:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT9}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT9}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2299112978524743 0 0.2156862745098039 26.81151844070964 208.9429271708684 1 E 240 130 290 180
+6 26
+"RECTANGLE12"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT10:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT10:_online.._value\",
+                 $DP+\".PV_OUT10:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT10}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT10}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2156862745098039 24.98801120448179 223.2286414565827 1 E 240 130 290 180
+6 27
+"RECTANGLE13"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT11:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT11:_online.._value\",
+                 $DP+\".PV_OUT11:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT11}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT11}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2174836601307189 24.98801120448179 237.0790587068161 1 E 240 130 290 180
+6 28
+"RECTANGLE14"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT12:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT12:_online.._value\",
+                 $DP+\".PV_OUT12:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT12}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT12}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2174836601307189 24.98801120448179 251.5640289449112 1 E 240 130 290 180
+6 29
+"RECTANGLE15"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT13:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT13:_online.._value\",
+                 $DP+\".PV_OUT13:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT13}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT13}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2156862745098039 24.98801120448179 266.0857843137255 1 E 240 130 290 180
+6 30
+"RECTANGLE16"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT14:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT14:_online.._value\",
+                 $DP+\".PV_OUT14:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT14}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT14}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2156862745098039 24.98801120448179 280.3714985994398 1 E 240 130 290 180
+6 31
+"RECTANGLE17"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT15:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT15:_online.._value\",
+                 $DP+\".PV_OUT15:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT15}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT15}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2174836601307189 24.98801120448179 294.409564659197 1 E 240 130 290 180
+6 32
+"RECTANGLE18"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT16:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT16:_online.._value\",
+                 $DP+\".PV_OUT16:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT16}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT16}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2372549019607843 0 0.2156862745098039 24.98801120448179 308.9429271708685 1 E 240 130 290 180
+2 33
+"PRIMITIVE_TEXT14"
+""
+1 66.36841736694674 235.9635854341737 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.36841736694674 235.9635854341737 74 248
+0 2 2 "0s" 0 0 0 192 0 0  66.36841736694674 235.9635854341737 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 9
+LANG:10001 1 9
+2 34
+"PRIMITIVE_TEXT15"
+""
+1 66.4398459383753 250.1250000000001 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.4398459383753 250.1250000000001 80 262
+0 2 2 "0s" 0 0 0 192 0 0  66.4398459383753 250.1250000000001 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 10
+LANG:10001 2 10
+2 35
+"PRIMITIVE_TEXT16"
+""
+1 66.3398459383753 265 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.3398459383753 265 80 277
+0 2 2 "0s" 0 0 0 192 0 0  66.3398459383753 265 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 11
+LANG:10001 2 11
+2 36
+"PRIMITIVE_TEXT17"
+""
+1 66.16768207282904 278.9028361344538 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.16768207282904 278.9028361344538 80 291
+0 2 2 "0s" 0 0 0 192 0 0  66.16768207282904 278.9028361344538 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 12
+LANG:10001 2 12
+2 37
+"PRIMITIVE_TEXT18"
+""
+1 65.34488795518202 292.9485294117646 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 65.34488795518202 292.9485294117646 79 305
+0 2 2 "0s" 0 0 0 192 0 0  65.34488795518202 292.9485294117646 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 13
+LANG:10001 2 13
+2 38
+"PRIMITIVE_TEXT19"
+""
+1 66.47713585434167 307.7095588235296 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 66.47713585434167 307.7095588235296 80 320
+0 2 2 "0s" 0 0 0 192 0 0  66.47713585434167 307.7095588235296 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 14
+LANG:10001 2 14
+2 39
+"PRIMITIVE_TEXT20"
+""
+1 65.86253501400559 321.9485294117646 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 65.86253501400559 321.9485294117646 79 334
+0 2 2 "0s" 0 0 0 192 0 0  65.86253501400559 321.9485294117646 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 15
+LANG:10001 2 15
+2 40
+"PRIMITIVE_TEXT21"
+""
+1 65.3947829131652 336.1913515406162 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 65.3947829131652 336.1913515406162 79 348
+0 2 2 "0s" 0 0 0 192 0 0  65.3947829131652 336.1913515406162 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 16
+LANG:10001 2 16
+6 41
+"RECTANGLE19"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+40 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT17:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT17:_online.._value\",
+                 $DP+\".PV_OUT17:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT17}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT17}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2280112044817926 0 0.2156862745098039 63.93942577030812 85.92996476760641 1 E 240 130 290 180
+6 42
+"RECTANGLE20"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+41 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT18:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT18:_online.._value\",
+                 $DP+\".PV_OUT18:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT18}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT18}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.31939775910359 100.2156790533207 1 E 240 130 290 180
+6 43
+"RECTANGLE21"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT19:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT19:_online.._value\",
+                 $DP+\".PV_OUT19:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT19}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT19}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.217483660130719 67.31939775910359 114.1805716168602 1 E 240 130 290 180
+6 44
+"RECTANGLE22"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT20:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT20:_online.._value\",
+                 $DP+\".PV_OUT20:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT20}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT20}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2174836601307189 67.31939775910359 128.5510665416493 1 E 240 130 290 180
+6 45
+"RECTANGLE23"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT21:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT21:_online.._value\",
+                 $DP+\".PV_OUT21:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT21}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT21}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.31939775910359 143.0728219104635 1 E 240 130 290 180
+6 46
+"RECTANGLE24"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+45 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT22:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT22:_online.._value\",
+                 $DP+\".PV_OUT22:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT22}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT22}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.31939775910359 157.3585361961779 1 E 240 130 290 180
+6 47
+"RECTANGLE25"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+46 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT23:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT23:_online.._value\",
+                 $DP+\".PV_OUT23:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT23}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT23}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2123217230247215 67.31939775910359 172.753838604941 1 E 240 130 290 180
+6 48
+"RECTANGLE26"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+47 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT24:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT24:_online.._value\",
+                 $DP+\".PV_OUT24:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT24}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT24}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.31939775910359 185.9299647676064 1 E 240 130 290 180
+2 49
+"PRIMITIVE_TEXT22"
+""
+1 103.0555322128851 112.9506230309117 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+48 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.0555322128851 112.9506230309117 117 125
+0 2 2 "0s" 0 0 0 192 0 0  103.0555322128851 112.9506230309117 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 17
+LANG:10001 2 17
+2 50
+"PRIMITIVE_TEXT23"
+""
+1 103.1269607843137 127.112037596738 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+49 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.1269607843137 127.112037596738 117 139
+0 2 2 "0s" 0 0 0 192 0 0  103.1269607843137 127.112037596738 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 18
+LANG:10001 2 18
+2 51
+"PRIMITIVE_TEXT24"
+""
+1 103.2269607843137 141.1120375967381 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+50 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.2269607843137 141.1120375967381 117 153
+0 2 2 "0s" 0 0 0 192 0 0  103.2269607843137 141.1120375967381 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 19
+LANG:10001 2 19
+2 52
+"PRIMITIVE_TEXT25"
+""
+1 103.2547969187674 155.8898737311919 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+51 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.2547969187674 155.8898737311919 117 168
+0 2 2 "0s" 0 0 0 192 0 0  103.2547969187674 155.8898737311919 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 20
+LANG:10001 2 20
+2 53
+"PRIMITIVE_TEXT26"
+""
+1 103.2320028011204 169.9355670085027 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.2320028011204 169.9355670085027 117 182
+0 2 2 "0s" 0 0 0 192 0 0  103.2320028011204 169.9355670085027 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 21
+LANG:10001 2 21
+2 54
+"PRIMITIVE_TEXT27"
+""
+1 103.16425070028 183.6965964202676 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.16425070028 183.6965964202676 117 196
+0 2 2 "0s" 0 0 0 192 0 0  103.16425070028 183.6965964202676 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 22
+LANG:10001 2 22
+2 55
+"PRIMITIVE_TEXT28"
+""
+1 103.3496498599439 198.9355670085027 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+54 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.3496498599439 198.9355670085027 117 211
+0 2 2 "0s" 0 0 0 192 0 0  103.3496498599439 198.9355670085027 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 23
+LANG:10001 2 23
+2 56
+"PRIMITIVE_TEXT29"
+""
+1 103.2818977591036 213.1783891373543 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+55 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.2818977591036 213.1783891373543 117 225
+0 2 2 "0s" 0 0 0 192 0 0  103.2818977591036 213.1783891373543 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 24
+LANG:10001 2 24
+6 57
+"RECTANGLE27"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+56 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT25:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT25:_online.._value\",
+                 $DP+\".PV_OUT25:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT25}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT25}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2199066253350031 0 0.2156862745098039 66.23490991959927 209.0549647676064 1 E 240 130 290 180
+6 58
+"RECTANGLE28"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+57 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT26:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT26:_online.._value\",
+                 $DP+\".PV_OUT26:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT26}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT26}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.5943977591036 223.3406790533207 1 E 240 130 290 180
+6 59
+"RECTANGLE29"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+58 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT27:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT27:_online.._value\",
+                 $DP+\".PV_OUT27:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT27}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT27}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2174836601307189 67.5943977591036 237.1817598371592 1 E 240 130 290 180
+6 60
+"RECTANGLE30"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+59 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT28:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT28:_online.._value\",
+                 $DP+\".PV_OUT28:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT28}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT28}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2174836601307189 67.5943977591036 250.6760665416493 1 E 240 130 290 180
+6 61
+"RECTANGLE31"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+60 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT29:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT29:_online.._value\",
+                 $DP+\".PV_OUT29:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT29}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT29}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.5943977591036 265.1978219104636 1 E 240 130 290 180
+6 62
+"RECTANGLE32"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+61 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT30:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT30:_online.._value\",
+                 $DP+\".PV_OUT30:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT30}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT30}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2174836601307189 67.5943977591036 279.1625656644793 1 E 240 130 290 180
+6 63
+"RECTANGLE33"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+62 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT31:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT31:_online.._value\",
+                 $DP+\".PV_OUT31:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT31}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT31}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2174836601307189 67.5943977591036 293.5216022559351 1 E 240 130 290 180
+6 64
+"RECTANGLE34"
+""
+1 240 130 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+63 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( $DP+\".PV_OUT32:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 $DP+\".PV_OUT32:_online.._value\",
+                 $DP+\".PV_OUT32:_online.._invalid\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bool boNewValue, string dpInvalid, bool boInvalid)
+{
+  if (boInvalid)
+    setValue(\"\", \"backCol\", \"_invalid\");
+  else if (!boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {_mp_MOD_DIAG32.PV_OUT32}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {_mp_MOD_DIAG32.PV_OUT32}
+// DPEConfigInvalid {:_online.._invalid}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+
+" 0
+ E 0 1 1 2 1 E 0.2156862745098039 0 0.2156862745098039 67.5943977591036 308.0549647676065 1 E 240 130 290 180
+2 65
+"PRIMITIVE_TEXT30"
+""
+1 108.3334060261631 246.0756230309117 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+64 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 0.9000495114238362 0 1 10.90689902017853 1 0 E 103.5555322128851 235.0756230309117 117 247
+0 2 2 "0s" 0 0 0 192 0 0  103.5555322128851 235.0756230309117 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 25
+LANG:10001 2 25
+2 66
+"PRIMITIVE_TEXT31"
+""
+1 103.2269607843137 250.2370375967382 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+65 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.2269607843137 250.2370375967382 117 262
+0 2 2 "0s" 0 0 0 192 0 0  103.2269607843137 250.2370375967382 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 26
+LANG:10001 2 26
+2 67
+"PRIMITIVE_TEXT32"
+""
+1 103.3269607843137 265.1120375967381 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+66 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.3269607843137 265.1120375967381 117 277
+0 2 2 "0s" 0 0 0 192 0 0  103.3269607843137 265.1120375967381 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 27
+LANG:10001 2 27
+2 68
+"PRIMITIVE_TEXT33"
+""
+1 103.3547969187674 278.0148737311918 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+67 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.3547969187674 278.0148737311918 117 290
+0 2 2 "0s" 0 0 0 192 0 0  103.3547969187674 278.0148737311918 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 28
+LANG:10001 2 28
+2 69
+"PRIMITIVE_TEXT34"
+""
+1 103.3320028011203 292.0605670085027 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+68 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.3320028011203 292.0605670085027 117 304
+0 2 2 "0s" 0 0 0 192 0 0  103.3320028011203 292.0605670085027 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 29
+LANG:10001 2 29
+2 70
+"PRIMITIVE_TEXT35"
+""
+1 103.26425070028 306.8215964202677 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+69 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.26425070028 306.8215964202677 117 319
+0 2 2 "0s" 0 0 0 192 0 0  103.26425070028 306.8215964202677 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 30
+LANG:10001 2 30
+2 71
+"PRIMITIVE_TEXT36"
+""
+1 103.4496498599439 321.0605670085027 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+70 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.4496498599439 321.0605670085027 117 333
+0 2 2 "0s" 0 0 0 192 0 0  103.4496498599439 321.0605670085027 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 31
+LANG:10001 2 31
+2 72
+"PRIMITIVE_TEXT37"
+""
+1 103.2 335 E E E 1 E 1 E N "cont_text" E N "white" E E
+ E E
+71 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 103.2 335 117 347
+0 2 2 "0s" 0 0 0 192 0 0  103.2 335 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 32
+LANG:10001 2 32
+2 74
+"PRIMITIVE_TEXT38"
+""
+1 61 382.1937716262977 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+73 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", $DP);  
+}" 0
+ E 0 1 1 2 1 E U  0 E 61 382.1937716262977 135 401.1937716262977
+0 2 2 "0s" 0 0 0 65 0 0  61 382.1937716262977 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 AI
+LANG:10001 2 AI
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 73
+"RECTANGLE35"
+""
+1 20 40 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+72 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"mousePressedCB" "  main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  sdOpenPopup(\"\", \"objects_panels/MOD_DI32_DIAG_P.pnl\", \"Окно дигнастики модуля \" +$DP, 0, 0, 2, makeDynString(\"$DP:\" + $DP),false);
+}"
+"antiAliased" "0"
+E E 0 0 1 2 1 E 3.64 0 6.723875432525952 -11.19999999999999 -227.9550173010381 1 E 20 40 40 90
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

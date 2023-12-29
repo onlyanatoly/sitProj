@@ -1,0 +1,42 @@
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+OO1_FTA1_StAirCompressor	SIT_DI	12123
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	3	0x8300000000300109	10.02.2022 05:19:17.242
+ASC (1)/0	OO1_FTA1_StAirCompressor.SIM	SIT_DI	0	0x8300000000000101	09.02.2022 10:16:31.583
+UI (1)/0	OO1_FTA1_StAirCompressor.SHOW	SIT_DI	0	0x8300000000100101	09.02.2022 10:18:26.276
+ASC (1)/0	OO1_FTA1_StAirCompressor.CV	SIT_DI	1	0x8300000000000101	09.02.2022 10:16:31.599
+ASC (1)/0	OO1_FTA1_StAirCompressor.SIMV	SIT_DI	3	0x8300000000000101	09.02.2022 10:16:31.599
+ASC (1)/0	OO1_FTA1_StAirCompressor.isHH	SIT_DI	1	0x8300000000000101	09.02.2022 10:16:31.599
+ASC (1)/0	OO1_FTA1_StAirCompressor.isH	SIT_DI	1	0x8300000000000101	09.02.2022 10:16:31.599
+ASC (1)/0	OO1_FTA1_StAirCompressor.HH	SIT_DI	3	0x8300000000000101	09.02.2022 10:16:31.599
+ASC (1)/0	OO1_FTA1_StAirCompressor.H	SIT_DI	2	0x8300000000000101	09.02.2022 10:16:31.614
+EV (2)/0	OO1_FTA1_StAirCompressor.invalid	SIT_DI	0	0x8300000000000101	09.02.2022 10:16:31.646
+
+# PvssRangeCheck
+Manager/User	ElementName	TypeName	_pv_range.._type	_pv_range.._ignor_inv	_pv_range.._neg	_pv_range.._min	_pv_range.._max	_pv_range.._incl_min	_pv_range.._incl_max	_pv_range.._set	_pv_range.._match
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	7	0	0	-1	2	1	1		
+
+# AlertValue
+Manager/User	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI		13					""		lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	1	5									 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000																			lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0	0	""	"*"	
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	2	5									Sit_H.	lt:2 LANG:10027 "Предупредительная сигнализация" LANG:10001 "Предупредительная сигнализация" 				0	01.01.1970 00:00:00.000																			lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0	0	""	"2"	
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	3	5									Sit_HH.	lt:2 LANG:10027 "Критическая сигнализация" LANG:10001 "Критическая сигнализация" 				0	01.01.1970 00:00:00.000																			lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0	0	""	"3"	
+ASC (1)/0	OO1_FTA1_StAirCompressor.SIM	SIT_DI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	OO1_FTA1_StAirCompressor.invalid	SIT_DI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+
+# DpFunction
+Manager/User	ElementName	TypeName	_dp_fct.._type	_dp_fct.._param	_dp_fct.._fct	_dp_fct.._global	_dp_fct.._old_new_compare	_dp_fct.._stat_type	_dp_fct.._interval	_dp_fct.._time	_dp_fct.._day_of_week	_dp_fct.._day	_dp_fct.._month	_dp_fct.._delay	_dp_fct.._read_archive	_dp_fct.._inv_func	_dp_fct.._inv_limit	_dp_fct.._def_func	_dp_fct.._def_limit	_dp_fct.._user1_func	_dp_fct.._user1_limit	_dp_fct.._user2_func	_dp_fct.._user2_limit	_dp_fct.._user3_func	_dp_fct.._user3_limit	_dp_fct.._user4_func	_dp_fct.._user4_limit	_dp_fct.._user5_func	_dp_fct.._user5_limit	_dp_fct.._user6_func	_dp_fct.._user6_limit	_dp_fct.._user7_func	_dp_fct.._user7_limit	_dp_fct.._user8_func	_dp_fct.._user8_limit	_dp_fct.._interm_res	_dp_fct.._interm_res_cyc
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	60	OO1_FTA1_StAirCompressor.SIM:_original.._value, OO1_FTA1_StAirCompressor.CV:_original.._value, OO1_FTA1_StAirCompressor.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	OO1_FTA1_StAirCompressor.SHOW	SIT_DI	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	OO1_FTA1_StAirCompressor.invalid	SIT_DI	60	OO1_FTA1_StAirCompressor.CV:_original.._invalid	"p1"		0
+
+# DbArchiveInfo
+Manager/User	ElementName	TypeName	DetailNr	_archive.._type	_archive.._archive	_archive.._class	_archive.._interv	_archive.._interv_type	_archive.._std_type	_archive.._std_tol	_archive.._std_time	_archive.._round_val	_archive.._round_inv
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI		45	1
+ASC (1)/0	OO1_FTA1_StAirCompressor.OUT	SIT_DI	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0

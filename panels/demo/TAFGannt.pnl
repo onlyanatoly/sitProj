@@ -1,0 +1,517 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1796 1107 N "fon_static" 0
+E E E E E 1 -1 -1 0  270 250
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+23 1
+"TREND1"
+""
+1 243.0000000000001 42.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  241.0000000000001 40.5 1725 1084.5
+5 "main()
+{
+    //Variable Definitions and Declarations
+  time tStart = makeTime(2019,11,2,0,0,0,0);
+  time tEnd = makeTime(2019,11,26,0,0,0,0);
+  int deltaHour = 60*60;
+  int deltaDay = 60*60*24;
+  //time t = getCurrentTime();
+  time t = tStart;
+  int i =0;
+  const bit64 INVALID = \"1000001100000000000000000000000000000000000100000000000100100001\";
+  //Trend Visible Area Configuration
+  //this.scrollPercent(50);
+  this.visibleTimeRange(0,tStart-1*deltaDay,tEnd+deltaDay);
+  //this.manageLegend(false);
+  //this.legendDTV(false);
+  this.linkAreas(0, 1);
+  this.linkAreas(0, 2);
+  //Dynamically added the Event Curves ProductionLine, PreProduction, ProductionEvents
+  for (i=0; i<3; i++)
+  {
+    this.addCurve(i,\"PreProductionArea\"+i);
+    this.addCurve(i,\"ProductionLineArea\"+i);
+    this.addCurve(i,\"ProductionLine2Area\"+i);
+    if (i==2)
+    {
+      this.addCurve(i,\"ProductionLine3Area\"+i);
+      this.addCurve(i,\"ProductionLine4Area\"+i);
+    }
+    this.addCurve(i,\"ProductionEventsArea\"+i);
+    this.curveType(\"ProductionLineArea\"+i,4);
+    this.curveType(\"ProductionLine2Area\"+i,4);
+    this.curveType(\"PreProductionArea\"+i,4);
+    this.curveType(\"ProductionEventsArea\"+i,4);
+    if (i==2)
+    {
+      this.curveType(\"ProductionLine3Area\"+i,4);
+      this.curveType(\"ProductionLine4Area\"+i,4);
+      this.curveLegendVisibility(\"ProductionLine3Area\"+i,false);
+      this.curveLegendVisibility(\"ProductionLine4Area\"+i,false);
+    }
+    this.curveLegendVisibility(\"PreProductionArea\"+i,false);
+    this.curveLegendVisibility(\"ProductionLineArea\"+i,false);
+    this.curveLegendVisibility(\"ProductionLine2Area\"+i,false);
+    this.curveLegendVisibility(\"ProductionEventsArea\"+i,false);
+
+
+    //Display Height/Area of the Event Curves
+    this.curveMin(\"ProductionLineArea\"+i,50.0);
+    this.curveMax(\"ProductionLineArea\"+i,90.0);
+    this.curveMin(\"ProductionLine2Area\"+i,10.0);
+    this.curveMax(\"ProductionLine2Area\"+i,50.0);
+    if (i==2)
+    {
+      this.curveMin(\"ProductionLine3Area\"+i,50.0);
+      this.curveMax(\"ProductionLine3Area\"+i,90.0);
+      this.curveMin(\"ProductionLine4Area\"+i,10.0);
+      this.curveMax(\"ProductionLine4Area\"+i,50.0);
+    }
+    this.curveMin(\"PreProductionArea\"+i,0.0);
+    this.curveMax(\"PreProductionArea\"+i,100.0);
+    this.curveMin(\"ProductionEventsArea\"+i,10.0);
+    this.curveMax(\"ProductionEventsArea\"+i,90.0);
+
+    //Design Settings: Colors, Line Types, Fillings, etc.
+    this.backCol(\"fon_static\");
+    this.curveFillType(\"ProductionLineArea\"+i, \"[solid]\");
+    this.curveLineType(\"ProductionLineArea\"+i, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+    if (i==2)
+    {
+      this.curveFillType(\"ProductionLine3Area\"+i, \"[solid]\");
+      this.curveLineType(\"ProductionLine3Area\"+i, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+      this.curveFillType(\"ProductionLine4Area\"+i, \"[solid]\");
+      this.curveLineType(\"ProductionLine4Area\"+i, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+    }
+
+    if (i==0)
+    {
+      this.curveColor(\"ProductionLineArea\"+i,\"SiemensNaturalBlueLight\");
+      this.curveFillColor(\"ProductionLineArea\"+i, \"SiemensNaturalBlueLight\");
+    }
+    else if (i==1)
+    {
+      this.curveColor(\"ProductionLineArea\"+i,\"_ETM\");
+      this.curveFillColor(\"ProductionLineArea\"+i, \"_ETM\");
+    }
+    else if (i==2)
+    {
+      this.curveColor(\"ProductionLineArea\"+i,\"cyan\");
+      this.curveFillColor(\"ProductionLineArea\"+i, \"cyan\");
+      this.curveColor(\"ProductionLine3Area\"+i,\"SiemensNaturalRedDark\");
+      this.curveFillColor(\"ProductionLine3Area\"+i, \"SiemensNaturalRedDark\");
+    }
+
+    this.curveFillType(\"ProductionLine2Area\"+i, \"[solid]\");
+    this.curveLineType(\"ProductionLine2Area\"+i, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+    if (i==0)
+    {
+      this.curveColor(\"ProductionLine2Area\"+i,\"Red\");
+      this.curveFillColor(\"ProductionLine2Area\"+i, \"Red\");
+    }
+    else if (i==1)
+    {
+      this.curveColor(\"ProductionLine2Area\"+i,\"SiemensNaturalGreenLight\");
+      this.curveFillColor(\"ProductionLine2Area\"+i, \"SiemensNaturalGreenLight\");
+    }
+    else if (i==2)
+    {
+      this.curveColor(\"ProductionLine2Area\"+i,\"Red\");
+      this.curveFillColor(\"ProductionLine2Area\"+i, \"Red\");
+      this.curveColor(\"ProductionLine4Area\"+i,\"SiemensNaturalGreenLight\");
+      this.curveFillColor(\"ProductionLine4Area\"+i, \"SiemensNaturalGreenLight\");
+    }
+
+    this.curveFillType(\"PreProductionArea\"+i, \"[hatch,[parallel,10,right]]\");
+    this.curveLineType(\"PreProductionArea\"+i, \"[none,oneColor,JoinMiter,CapButt,3]\");
+    //this.curveColor(\"PreProductionArea\"+i,\"Blue\");
+    this.curveFillColor(\"PreProductionArea\"+i, \"Blue\");
+
+    this.curveFillType(\"ProductionEventsArea\"+i, \"[solid]\");
+    this.curveLineType(\"ProductionEventsArea\"+i, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+    this.curveColor(\"ProductionEventsArea\"+i,\"Black\");
+    this.curveFillColor(\"ProductionEventsArea\"+i, \"Black\");
+
+    //mandatory for displaying the Event Curves!
+    this.curveFilled(\"ProductionLineArea\"+i,1);
+    this.curveFilled(\"ProductionLine2Area\"+i,1);
+    this.curveFilled(\"PreProductionArea\"+i,1);
+    this.curveFilled(\"ProductionEventsArea\"+i,1);
+    if (i==2)
+    {
+      this.curveFilled(\"ProductionLine3Area\"+i,1);
+      this.curveFilled(\"ProductionLine4Area\"+i,1);
+    }
+
+    //---DATE------------------------------------
+    //Pre-Production
+    //this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1, \\\"text\\\":\\\"РЦ1-блендер 22 тонны\\\",\\\"alignment\\\":\\\"AlignLeft\\\"}\", t-deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\", t-deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":0}\", t-deltaDay+12*deltaHour,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\", t+2*deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":0}\", t+3*deltaDay+12*deltaHour,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\", t+6*deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":0}\", t+8*deltaDay+12*deltaHour,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\", t+12*deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":0}\", t+13*deltaDay+12*deltaHour,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\", t+17*deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":0}\", t+19*deltaDay+12*deltaHour,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\", t+21*deltaDay,0);
+    this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":0}\", t+23*deltaDay,0);
+    if (i==0)
+    {
+      this.curveValue(\"PreProductionArea\"+i, 1.0, t+9*deltaDay, INVALID); //Sets the current value invalid. Design can be changed by using the Config Entry \"trendStatusPattern\"
+      this.curveValue(\"PreProductionArea\"+i, \"{\\\"value\\\":1}\",  t+11*deltaDay, 0);
+    }
+
+    //ProductionEventsArea
+    if (i==0)
+    {
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+12*deltaHour, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+2*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+6*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+9*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+11*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+13*deltaDay, 0);
+    }
+    else if (i==1)
+    {
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+8*deltaHour, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+23*deltaHour, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+4*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+6.2*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+8*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+12*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+17*deltaDay, 0);
+    }
+    else if (i==2)
+    {
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+2*deltaHour, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\",t+4*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+10*deltaDay, 0);
+    this.curveValue(\"ProductionEventsArea\"+i, \"{\\\"value\\\":0, \\\"alignment\\\":\\\"AlignBottom|AlignHCenter\\\"}\", t+18*deltaDay, 0);
+    }
+
+
+    if (i==0)
+    {
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":1}\", t, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":0}\", tEnd-10*deltaDay, 0);
+
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":1}\", t, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":0}\", tEnd-10*deltaDay, 0);
+    }
+    else if (i==1)
+    {
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":1}\", t, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":0}\", tEnd-6*deltaDay, 0);
+
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":1}\", t, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":0}\", tEnd-6*deltaDay, 0);
+    }
+    else if (i==2)
+    {
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":1}\", t, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":0}\", t+1*deltaDay, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":1}\", t+4*deltaDay, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":0}\", t+5*deltaDay, 0);
+      this.curveValue(\"ProductionLine3Area\"+i, \"{\\\"value\\\":1}\", t+8*deltaDay, 0);
+      this.curveValue(\"ProductionLine3Area\"+i, \"{\\\"value\\\":0}\", t+11*deltaDay, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":1}\", t+11*deltaDay, 0);
+      this.curveValue(\"ProductionLineArea\"+i, \"{\\\"value\\\":0}\", t+15*deltaDay, 0);
+      this.curveValue(\"ProductionLine3Area\"+i, \"{\\\"value\\\":1}\", t+15*deltaDay, 0);
+      this.curveValue(\"ProductionLine3Area\"+i, \"{\\\"value\\\":0}\", t+19*deltaDay, 0);
+
+
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":1}\", t, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":0}\", t+1*deltaDay, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":1}\", t+4*deltaDay, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":0}\", t+5*deltaDay, 0);
+      this.curveValue(\"ProductionLine4Area\"+i, \"{\\\"value\\\":1}\", t+8*deltaDay, 0);
+      this.curveValue(\"ProductionLine4Area\"+i, \"{\\\"value\\\":0}\", t+11*deltaDay, 0);
+      this.curveValue(\"ProductionLine4Area\"+i, \"{\\\"value\\\":1}\", t+11*deltaDay, 0);
+      this.curveValue(\"ProductionLine4Area\"+i, \"{\\\"value\\\":0}\", t+15*deltaDay, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":1}\", t+15*deltaDay, 0);
+      this.curveValue(\"ProductionLine2Area\"+i, \"{\\\"value\\\":0}\", t+19*deltaDay, 0);
+    }
+
+
+  }
+
+
+    this.curveLegendVisibility(\"ProductionLineArea0\",true);
+    this.curveLegendVisibility(\"ProductionLineArea1\",true);
+    this.curveLegendVisibility(\"ProductionLineArea2\",true);
+    this.curveLegendVisibility(\"ProductionLine3Area2\",true);
+  this.curveLegendName(\"ProductionLineArea0\", \"TITAN 5000 Варка\");
+  this.curveLegendName(\"ProductionLineArea1\", \"REN 555 Варка\");
+  this.curveLegendName(\"ProductionLineArea2\", \"TITAN 5000 Канистра\");
+  this.curveLegendName(\"ProductionLine3Area2\", \"REN 5000 Канистра\");
+   this.curveLegendShowDate(\"ProductionLineArea0\",false);
+
+    mapping m2;
+  m2[1]=\"\";
+  m2[0]=\"\";
+  this.curveValuesTexts(\"ProductionLineArea0\", m2);
+  this.curveValuesTexts(\"ProductionLineArea1\", m2);
+  this.curveValuesTexts(\"ProductionLineArea2\", m2);
+  this.curveValuesTexts(\"ProductionLine3Area2\", m2);
+  this.manageCommands(FALSE);
+  this.legendFont(\"Arial Black,-1,14,5,87,0,0,0,0,0\");
+}" 0
+ E E 3 1479 N {0,0,0} 0 0 1 0 1 0 0 1 0 "%x" "" 0 1 1 0 
+E 1479 N {0,0,0} 0 0 1 0 1 0 0 0 
+E 1479 N {0,0,0} 0 0 1 0 1 0 0 0 
+E 1 1 1 0 90 0 20 1728000
+2
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  2
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  2
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+2 3
+"PRIMITIVE_TEXT1"
+""
+1 27 119.4999999999999 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 27 119.4999999999999 241 141.5
+0 2 2 "0s" 0 0 0 192 0 0  27 119.4999999999999 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 36 РЦ1 - блендер 22 тонны
+LANG:10001 36 РЦ1 - блендер 22 тонны
+2 4
+"PRIMITIVE_TEXT2"
+""
+1 33.99999999999997 415.4999999999999 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 33.99999999999997 415.4999999999999 234 437.5
+0 2 2 "0s" 0 0 0 192 0 0  33.99999999999997 415.4999999999999 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 34 РЦ3 - блендер 10 тонн
+LANG:10001 36 РЦ1 - блендер 22 тонны
+2 5
+"PRIMITIVE_TEXT3"
+""
+1 82.00000000000006 757.5 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 82.00000000000006 757.5 234 779.5
+0 2 2 "0s" 0 0 0 192 0 0  82.00000000000006 757.5 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 27 Линия розлива 1
+LANG:10001 36 РЦ1 - блендер 22 тонны
+4 6
+"LINE1"
+""
+1 253 747.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  253 747.5 26 747.5
+4 7
+"LINE2"
+""
+1 246 407.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  246 407.5 18.99999999999999 407.5
+4 8
+"LINE3"
+""
+1 245 107.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  245 107.5 17.99999999999999 107.5
+30 10
+"FRAME1"
+""
+1 50 12 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+9 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.714469472352964 0 3.323170731707317 -268.0643153235378 -39.87804878048787 0 E 50 12 351 341
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+2 11
+"PRIMITIVE_TEXT5"
+""
+1 689 17.49999999999994 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 689 17.49999999999994 853 39
+0 2 2 "0s" 0 0 0 192 0 0  689 17.49999999999994 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 31 Диаграмма Гантта
+LANG:10001 36 РЦ1 - блендер 22 тонны
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

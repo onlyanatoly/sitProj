@@ -1,0 +1,315 @@
+V 14
+3
+LANG:10027 12 Столб_1
+LANG:10001 12 AI_situation
+LANG:10000 16 Messwertbalken_1
+PANEL,-1 -1 101 54 N "fon_static" 2
+"$b_isDetail"
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+6 32
+"p1"
+""
+1 140 80 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setColor();
+}
+
+void EP_setColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setColorCB\",
+            $dpe_value+\".OUT:_alert_hdl.._act_state_color\",
+            $dpe_value+\".CV:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid) {
+      if (value) {// ремонт
+        setValue(\"\", \"visible\",0);
+      } else {
+        setValue(\"\", \"backCol\", \"fon_nan\");
+        setValue(\"\", \"visible\",1);
+      }
+
+    } else {
+      if (value) {// ремонт
+        setValue(\"\", \"visible\",0);
+      } else {
+        if (sNewColor==\"\") {
+          sNewColor=\"fon_static\";
+        }
+        setValue(\"\", \"backCol\", sNewColor);
+        if (sNewColor==\"\")
+           setValue(\"\", \"visible\",0);
+        else {
+           setValue(\"\", \"visible\",1);
+           dpSet($dpe_value+\".SHOW\", 1);//тег и значение автоматически включаются при превышении предупредительных и предаварийных значениях аналогового параметра
+         }
+      }
+    }
+}
+
+// SimpleCtrlScript {EP_setColor}
+// DP {System1:Temp1.OUT}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setColor}
+" 0
+ E 0 1 3 2 1 E 0.7488888888888889 0 0.7265384615384702 -84.41111111111104 -31.77628205128302 1 E 140 80 230 110
+2 16
+"value"
+""
+1 20 30 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".CV:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0) {
+    setValue(\"\", \"color\", \"fon_nan\");
+  }
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", strltrim(dpValToString(dp, fNewValue, TRUE), \" \") );
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E U  0 E 20 30 85.43333333333339 43
+0 2 2 "10s" 10 0 0 66 0 0  20 30 1
+3
+LANG:10027 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 10 ##########
+LANG:10001 4 Text
+LANG:10000 4 Text
+2 22
+"tag"
+""
+1 7.224358974358961 9.546581196580743 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignTrailing|AlignTop"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  //EP_textFieldIn();
+  //setValue(\"\", \"text\", dpGetAlias($dpe_value+\".\"));
+  setValue(\"\", \"text\", $dpe_value);
+  if (!$b_isDetail){
+   setValue(\"\", \"visible\", true);
+ }else
+  {setValue(\"\", \"visible\", false);
+ }
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 7.224358974358961 9.546581196580743 102.1999999999999 22.54658119658075
+0 2 2 "10s" 10 0 0 65 0 0  7.224358974358961 9.546581196580743 1
+3
+LANG:10027 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 14 ##############
+LANG:10001 14 ##############
+LANG:10000 4 Text
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+1 33 0 "" 1
+0
+1 34 0 "" 2
+31 "transform" 0 0 U 
+0
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+6 29
+"RECTANGLE1"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "main(mapping event)
+{
+  openFrontAndDetailPanel($dpe_value);
+}
+" 0
+ 3 1 1 0 1 E 2.202222222222221 0 1.122222222222226 -0.2555555555554179 -0.1126068376070037 1 E 10 10 40 43
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+3 0 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SIM:_online.._value\"))
+  {
+    DebugN(\"4\");
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_value+\".SIM:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 101.0277777777778 86.88333333333324 T 25 1 0 1 -94.09444444444441 -66.13846153846158
+0
+0

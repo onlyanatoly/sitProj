@@ -1,0 +1,3087 @@
+V 14
+3
+LANG:10027 41 Конфигурируемый тренд
+LANG:10001 8 VT-Trend
+LANG:10000 8 VT-Trend
+PANEL,-1 -1 837 560 N "_3DFace" 2
+"$DP"
+"$SHOWLEGEND"
+"// Variable trend ////////////////////////////////////////////////
+
+
+dyn_string stepCurve;
+shape      trendTrend, trendComprTrend;
+mapping    mConnectData;
+bool       bShowLegend = false;
+bool       bvtMixComprAndCurrentValues = true;
+int        iOldUiNumber;
+string     sOldPanelName;
+string     sOldTrendData;
+
+void main()
+{
+  if(isDollarDefined(\"$SHOWLEGEND\"))
+  {
+    bShowLegend  = $SHOWLEGEND;//= getDollarValue(\"$SHOWLEGEND\");
+  }
+
+  string svtMixComprAndCurrentValues;
+  paCfgReadValue(PROJ_PATH+\"config/config\", \"ui\", \"vtMixComprAndCurrentValues\", svtMixComprAndCurrentValues);
+
+  if ( svtMixComprAndCurrentValues != \"\" )
+  {
+    bvtMixComprAndCurrentValues = (((int) svtMixComprAndCurrentValues) > 0);
+  }
+
+  // IM 117336
+  addGlobal(\"VTExporting\", BOOL_VAR);
+  VTExporting = FALSE;
+
+// using panal global variables !!
+  TrendName=\"\";
+  TrendType=0;
+  exportDP = makeDynString();
+
+  ValuesPerTrend=900; // Number of values to display in trend
+  g_busyThread = -1;
+
+  //DebugN(stepCurve);
+  dynClear(stepCurve);
+
+  addGlobal(\"FileName\", STRING_VAR);
+
+  dpConnect(\"work\",\"_VarTrendOpen.UiNumber:_online.._value\",
+                   \"_VarTrendOpen.PanelName:_online.._value\",
+                   \"_VarTrendOpen.TrendData:_online.._value\");
+
+  dpGet(\"_VarTrendOpen.UiNumber:_online.._value\",UiNumber,
+        \"_VarTrendOpen.PanelName:_online.._value\",PanelName);
+
+  if (UiNumber!=myUiNumber() || !acIsMyTrendPanel(PanelName))
+  {
+    if (isDollarDefined(\"$DP\"))
+      ChildPanelOnCentralModal(\"vision/trend/VT_assistent.pnl\",
+                               \"Trend-Para\",
+                               makeDynString(\"$DP:\"+$DP));
+    else
+      ChildPanelOnCentralModal(\"vision/trend/VT_assistent.pnl\",
+                               \"Trend-Para\",
+                               makeDynString(\"\"));
+  }
+}
+
+
+void refillData(dyn_anytype &da, anytype atAppend)
+{
+ int k;
+ dyn_anytype dsValue = da;
+ int max = dynlen(da);
+ if (max == 9)
+   max = 8;
+ for (k=1; k<=max; k++)
+   if (dynlen( da) < 9)
+     dynAppend(dsValue, atAppend);
+   else
+     dynInsertAt(dsValue, atAppend, 9);
+ da = dsValue;
+}
+
+
+bool acIsMyTrendPanel(string PanelName)
+{
+  bool b;
+  if (substr(PanelName, 0, strlen(\"seperateTrend_\"))==\"seperateTrend_\") // workaround for IM 89023
+    b=(PanelName==\"seperateTrend_\"  + myModuleName() + \": \"+myPanelName());
+  else
+    b=   (strpos(PanelName,\":\")<0 && PanelName == myModuleName()) || (strpos(PanelName,\":\")>0 && substr(PanelName,0, strlen(myModuleName()))==myModuleName());
+ // DebugN( myModuleName(), myPanelName(), PanelName, substr(PanelName,0, strlen(myModuleName())), b  );
+ return    (b) ;
+}
+
+void work(string dp1, int    UiNumber,
+     string dp2, string PanelName,
+     string dp3, string TrendData)
+{
+  int             i,j,k,l,m,StartHour=0,CurrentHour,groupIndex=1,curveIndex=1,
+                  WeekDay,err,acpos,level;
+  bool            isAcType;
+  time            tDiff,tCurrent=getCurrentTime(),timeInterval,DayBegin;
+  float           min,max,f;
+  float           fMaxFloat=(maxFLOAT()/2)-1e+304, fMinFloat=(minFLOAT()/2)+1e+304;  //workaround for IM 93674 UI hangs if ranges are set from max to min float
+
+  string          curve,pseudoname,tName,s,typ;
+  dyn_int         diEvt,seconds;
+  dyn_bool        Scale;
+  dyn_time        dtTime=makeDynTime();
+  dyn_float       dfValues=makeDynFloat();
+  dyn_string      curves,ds,ScaleData, format, // DP, name, unit, are defined in scopelib
+                  Compression,ColorStyle,LineStyle,
+                  FillStyle,CurveScale,sIntervals;
+  dyn_bit64       dBit64;
+  dyn_dyn_time    ddt;
+  dyn_dyn_float   ddf, dff;
+  dyn_dyn_string  groups;
+  dyn_dyn_anytype dda;
+  dyn_dyn_bit64   ddBit64;
+
+
+  // fneun 130701 neu fuer Vergleichstrend ---
+  shape           trend;
+  string    sTemp, sCurveC;
+  int     iTemp;
+  time     tOffset;
+  time            tZeroTime = 0;
+  // ---
+
+  //IM87356
+  int iScrollPercent;
+  bool bforceScrollPercentOpen=FALSE;
+
+  //20080926 - ETM - #89353
+  bool DTV_trend, DTV_comptrend;
+
+  // 20151116 - IM 114574 - show an error if too much data was read
+  dyn_errClass deC_error;
+  string s_errorText;
+  bool b_showError;
+
+  // TI 14238 decode moduleName if necessary
+  if (UiNumber!=myUiNumber() || !acIsMyTrendPanel(PanelName))
+  {
+     return;
+  }
+
+  // IM 116151  do not refresh on redundancy switch
+  if ( UiNumber == iOldUiNumber &&
+       PanelName == sOldPanelName &&
+       TrendData  == sOldTrendData)
+  {
+      return;
+  }
+
+  iOldUiNumber  = UiNumber;
+  sOldPanelName = PanelName;
+  sOldTrendData = TrendData;
+
+
+  if (isDollarDefined(\"$OpenStandardVarTrend\") && (bool)getDollarValue(\"$OpenStandardVarTrend\")==true)
+  {
+    //20080926 - ETM - #89353: getting the information if value and time shall be shown at the legend
+    getMultiValue(\"Trend\",\"legendDTV\",DTV_trend,
+                \"Comptrend\",\"legendDTV\",DTV_comptrend);
+
+    //clear mapping
+    if (mappinglen(mConnectData) > 0)
+    {
+      dyn_string dsMapping = mappingKeys(mConnectData);
+      for ( i=dynlen( dsMapping); i>=1 ; i--)
+        disconnectCurve( mConnectData[dsMapping[i]], dsMapping[i]);
+    }
+
+
+    removeSymbol(myModuleName(),myPanelName(),\"VT_trend_symbols\");
+    addSymbol(myModuleName(),myPanelName(),\"vision/trend/VT_trend_symbols.pnl\",\"VT_trend_symbols\", 0, \"LAYOUT_GROUP5\", makeDynString());
+
+    //20080926 - ETM - #89353: setting the information if value and time shall be shown at the legend
+    setMultiValue(\"Trend\",\"legendDTV\",DTV_trend,
+                \"Comptrend\",\"legendDTV\",DTV_comptrend);
+  }
+
+  //dynClear(stepCurve);
+
+  // WOKL 29.3.07 IM 79797
+  exportDP = makeDynString();
+
+  // _VarTrendOpen is not up-to-date
+
+// Trendwidgets initialisieren ------
+  DP=makeDynString();
+  name=makeDynString();
+  unit=makeDynString();
+  format=makeDynString();
+
+  if (mappinglen(mConnectData) > 0)
+  {
+    dyn_string dsMapping = mappingKeys(mConnectData);
+    for ( i=dynlen( dsMapping); i>=1 ; i--)
+      disconnectCurve( mConnectData[dsMapping[i]], dsMapping[i]);
+  }
+
+
+  for (m=1;m<=2;m++) // fneun 130701 neu fuer Vergleichstrend: 1 = Originaltrend, 2 = Vergleichstrend
+  {
+    if (m==1)
+    {
+      trend = getShape(\"Trend\");
+      trendTrend = trend;
+    }
+    else
+    {
+      trend =getShape(\"Comptrend\");
+      trendComprTrend = trend;
+    }
+
+    trend.visible=false;
+    Border2.visible(true);
+    message1.visible(true);
+    for (i=1;i<=16;i++)
+    {
+      // Curve name
+      //IM 89342
+      curve=\"Curve\"+i;
+      trend.disconnectDirectly(curve);
+      trend.curveRemoveData(curve,tCurrent);
+      trend.removeCurve(curve);
+      setValue(trend,\"addCurve\",0,curve);
+      trend.curveLegendVisibility(curve)=false;
+      trend.curveScaleVisibility(curve)=false;
+      trend.curveVisible(curve)=false;
+    }
+    if (m==2)
+    {
+      for (i=1;i<=16;i++)
+      {
+        // Curve name
+        //IM 89342
+        curve=\"Curve\"+i+\"C\";
+        trend.disconnectDirectly(curve);
+        trend.curveRemoveData(curve,tCurrent);
+        trend.removeCurve(curve);
+        setValue(trend,\"addCurve\",1,curve);
+        trend.curveLegendVisibility(curve)=false;
+        trend.curveScaleVisibility(curve)=false;
+        trend.curveVisible(curve)=false;
+      }
+    }
+    trend.trendRun();
+  } // for m
+
+// Trendwidgets initialisieren ------
+
+  acGetTypes(actypes);
+
+  // Splitting TrendData
+  splitFromString(TrendData,dda);
+  // No trend data to display
+  if (dynlen(dda)<1)
+  {
+    //std_stopBusy();
+    ewoShowBusy.visible(false);
+    ewoShowBusy.stop();
+    return;
+  }
+
+
+  // fneun 130701 neu fuer Vergleichstrend ---
+  // Offset laden und Entscheidung, ob Vergleichstrend oder normal
+  if (dynlen(dda[9]) == 9)
+  {
+    DebugN(\" Trend data mismatch  -> do nothing...\");
+    //std_stopBusy();
+    ewoShowBusy.visible(false);
+    ewoShowBusy.stop();
+    return;
+  }
+  tOffset=dda[9][17];
+  isComp=(tOffset!=tZeroTime);
+
+  if (isComp)
+  {
+    trend=getShape(\"Comptrend\");
+    setValue(\"cmd_export\",\"enabled\",\"false\");
+  }
+  else
+  {
+    trend=getShape(\"Trend\");
+    setValue(\"cmd_export\",\"enabled\",\"true\");
+  }
+  // ---
+
+
+  ewoShowBusy.visible(true);
+  ewoShowBusy.start();
+  // Begin of the workday
+  dpGet(\"_Config.StartHour:_online.._value\",StartHour);
+  // No trend data to display
+  if (dynlen(dda[1])<1)
+  {
+    trend.visible=true;
+    Border2.visible(false);
+    message1.visible(false);
+    //std_stopBusy();
+    ewoShowBusy.visible(false);
+    ewoShowBusy.stop();
+    return;
+  }
+
+  // Calculating start and end time
+  CurrentHour=hour(tCurrent);
+  DayBegin=makeTime(year(tCurrent),month(tCurrent),day(tCurrent),StartHour);
+  WeekDay=weekDay(tCurrent);
+  // last workday
+  if (CurrentHour<StartHour)
+  {
+    DayBegin-=86400;
+    WeekDay--; if (WeekDay<1) WeekDay=7;
+  }
+  trend.manageLegend=bShowLegend;
+  TrendName=dda[1][1];
+  dpGet(TrendName+\".TrendName:_online.._value\",tName);
+  trendName.text=tName;
+  TrendType=dda[2][1];
+
+  // Calculating start and end time
+  switch (TrendType)
+  {
+    case 1: // Today open
+            StartTime=DayBegin; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval;
+            i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    case 2: // Yesterday closed
+            StartTime=DayBegin-86400; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=DayBegin; if (EndTime>tCurrent) EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            tDiff=0;
+            break;
+    case 3: // Any day closed
+            StartTime=dda[8][1]; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=StartTime+86400; if (EndTime>tCurrent) EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            tDiff=0;
+            break;
+    case 4: // This week open
+            StartTime=DayBegin-(WeekDay-1)*86400; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval; i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    case 5: // Last week closed
+            StartTime=DayBegin-(7+WeekDay-1)*86400; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=StartTime+7*86400; if (EndTime>tCurrent) EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            tDiff=0;
+            break;
+    case 6: // Any time interval closed
+            StartTime=dda[8][1]; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=dda[9][1]; if (EndTime>tCurrent) EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            tDiff=0;
+            break;
+    case 7: // Last 24 hours open
+            StartTime=tCurrent-86400; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval; i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    case 8: // Three days open
+            StartTime=DayBegin-2*86400; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval; i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    case 9: // time interval open
+            StartTime=dda[8][1]; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval; i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    // IM 117993 - add new timeranges \\\"1 hour open\\\" and \\\"8 hours open\\\"
+    // use the difference of 3599 seconds to avoid problems with case 9
+    case 10: // Last 1 hour open
+            StartTime=tCurrent-3599; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval; i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    case 11: // Last 8 hours open
+            StartTime=tCurrent-28800; if (StartTime>tCurrent) StartTime=tCurrent;
+            EndTime=tCurrent;
+            timeInterval=EndTime-StartTime;
+            i=timeInterval; i/=5; tDiff=i;
+            bforceScrollPercentOpen = TRUE;
+            break;
+    default: break;
+  }
+
+  DP=dda[3];
+
+  // Setting all curves with data
+  for (i=1; i<=dynlen(DP); i++)
+  {
+    if (strpos(DP[i],\"$\")>=0)
+    {
+      DP[i]=\"\"; continue;
+    }
+
+    Compression[i]=(dynlen(dda[4])>3)?dda[4][i]:0;
+    ColorStyle[i]=dda[5][i];
+    LineStyle[i]=dda[6][i];
+    FillStyle[i]=dda[7][i];
+    CurveScale[i]=dda[10][i];
+    Scale[i]=dda[11][i];
+    // decoding dpe name (C?)
+    if (strpos(DP[i],\"C?\")>0)
+    {
+      decodeLevel(DP[i],timeInterval);
+      // Deactivating curve if invalid DPE
+      if (DP[i]==\"\")
+      {
+        Compression[i]=false;
+        ColorStyle[i]=\"\";
+        LineStyle[i]=\"\";
+        FillStyle[i]=\"\";
+        CurveScale[i]=\"\";
+        Scale[i]=false;
+        name[i]=\"\";
+        unit[i]=\"\";
+        format[i]=\"\";
+        setMultiValue(\"TrendCurveLine\"+i,\"visible\",0,
+                      \"TrendCurveText\"+i,\"visible\",0);
+      }
+    }
+
+    string dpe, detail;
+    if (useRDBArchive() && sf_isValidStatFuncDpe(DP[i])) //alang 20.10.09 new stat. func.
+    {
+      dpe = sf_getDpeFromStatFunc(DP[i]);
+      detail = sf_getStatFuncFromDpe(DP[i]);
+    }
+    else
+    {
+      dpe = DP[i];
+      detail = \"\";
+    }
+
+    // defining name for pseudo-legend
+    if (DP[i]== \"\")
+      continue;
+
+    if (useRDBGroups() || !useRDBArchive())
+    {
+      acpos=dynContains(actypes, dpTypeName(dpe));
+      if (acpos<1)
+      {
+        acGetRefACType(DP[i],typ);
+        acpos=dynContains(actypes,typ);
+      }
+      else
+        typ=dpTypeName(dpe);
+
+      name[i] = dpGetComment(DP[i]);
+      pseudoname = \"\";
+      if (name[i]==\"\" && acpos<1)
+      {
+        name[i]=DP[i];
+      }
+      if (name[i]==\"\" && acpos>0)
+      {
+        name[i] = acDpGetComment(DP[i]);
+        if (name[i] == \"\")
+          name[i] = DP[i];
+      }
+      pseudoname=name[i];
+      if (acpos>0)
+      {
+        ds=strsplit(DP[i],\".\");
+        strreplace(ds[dynlen(ds)-1],\"C\",\"\");
+        level=ds[dynlen(ds)-1];
+        if (level>0)
+        {
+          acGetIntervals(typ, seconds, sIntervals);
+          pseudoname+=\" \"+sIntervals[level]+\" \"+acGetFunctionName(ds[dynlen(ds)]);
+        }
+      }
+    }
+    else
+    {
+      if (!isDPeRDBCompressed(DP[i]))
+      {
+        acpos=dynContains(actypes, dpTypeName(dpe));
+        if (acpos<1)
+        {
+          acGetRefACType(DP[i],typ);
+          acpos=dynContains(actypes,typ);
+        }
+        else
+          typ=dpTypeName(dpe);
+
+        name[i] = dpGetComment(DP[i]);
+        pseudoname = \"\";
+        if (name[i]==\"\" && acpos<1)
+        {
+          name[i]=DP[i];
+        }
+        if (name[i]==\"\" && acpos>0)
+        {
+          name[i] = acDpGetComment(DP[i]);
+          if (name[i] == \"\")
+            name[i] = DP[i];
+        }
+        pseudoname=name[i];
+        if (acpos>0)
+        {
+          ds=strsplit(DP[i],\".\");
+          strreplace(ds[dynlen(ds)-1],\"C\",\"\");
+          level=ds[dynlen(ds)-1];
+          if (level>0)
+          {
+            acGetIntervals(typ, seconds, sIntervals);
+            pseudoname+=\" \"+sIntervals[level]+\" \"+acGetFunctionName(ds[dynlen(ds)]);
+          }
+        }
+      }
+      else
+        pseudoname = DP[i];
+    }
+    //TFS 22868: CurvLine and Text is never shown --> According to layout management would these texts be shown during resize of the panel.
+    setMultiValue(\"TrendCurveLine\"+i,\"visible\",0,
+                  \"TrendCurveLine\"+i,\"foreCol\",ColorStyle[i],
+                  \"TrendCurveLine\"+i,\"border\",LineStyle[i],
+                  \"TrendCurveText\"+i,\"visible\",0,
+                  \"TrendCurveText\"+i,\"text\", pseudoname);
+  }
+
+  for (i=1; i<=dynlen(DP); i++)
+  {
+    //setting the time-format for the legend
+    setValue(\"Trend\",\"curveLegendShowDate\",\"Curve\" + i,1,
+                     \"curveLegendShowMilli\",\"Curve\" + i,1);
+  }
+
+  // Clearing all curves without data
+  for (i=dynlen(DP)+1; i<=16; i++)
+  {
+    DP[i]=\"\";
+    Compression[i]=false;
+    ColorStyle[i]=\"\";
+    LineStyle[i]=\"\";
+    FillStyle[i]=\"\";
+    CurveScale[i]=\"\";
+    Scale[i]=false;
+    name[i]=\"\";
+    unit[i]=\"\";
+    format[i] = \"\";
+    // Deactivating all curves without data
+    setMultiValue(\"TrendCurveLine\"+i,\"visible\",0,
+                  \"TrendCurveText\"+i,\"visible\",0);
+  }
+
+  // IM 103702, 103711
+  // Time interval to visualise
+  if (timeInterval+tDiff<=0)
+    trend.timeInterval=3600;
+  else
+    trend.timeInterval=timeInterval+tDiff;
+  trend.timeBegin=StartTime-tDiff;
+
+  //IM87356
+  if (bforceScrollPercentOpen)
+  {
+    //Workaround: Set scrollPercent once more, to force a trend jump to current Time at open trends
+    int iScrollPercent = trend.scrollPercent;
+    trend.scrollPercent = iScrollPercent;
+  }
+  //End-IM87356
+  // IM 103702, 103711
+
+  // Interpretation of all curves
+  // 20110721 - ETM: setting the offset is made at the end of the work-function
+  for (m=1;m<=2;m++) // fneun 130701 neu fuer Vergleichstrend: 1 = Originaltrend, 2 = Vergleichstrend
+  {
+    // fneun 130701 neu fuer Vergleichstrend: Wenn KEIN Vergleichstrend, dann die zweite Schleife (m) nicht ausführen
+    if (m==2 && !isComp)
+      continue;
+
+    for (i=1;i<=16;i++)
+    {
+      // Curve name
+      curve=\"Curve\"+i+((m==2)?\"C\":\"\");  // fneun 13070 geaendert fuer Vergleichstrend
+
+      trend.disconnectDirectly(curve);
+
+      // no DP
+      if (DP[i]==\"\")
+        continue;
+
+      string dpe, detail;
+      if (useRDBArchive() && sf_isValidStatFuncDpe(DP[i])) //alang 20.10.09 new stat. func.
+      {
+        dpe = sf_getDpeFromStatFunc(DP[i]);
+        detail = sf_getStatFuncFromDpe(DP[i]);
+      }
+      else
+      {
+        dpe = DP[i];
+        detail = \"\";
+      }
+
+      trend.curveVisible(curve)=true;
+      trend.curveLegendVisibility(curve)=true;
+
+      if (useRDBGroups() || !useRDBArchive())
+      {
+       	if (isComp)
+          sTemp=((m==1)?getCatStr(\"ac\",\"legendIdentOrig\"):getCatStr(\"ac\",\"legendIdentComp\")); // fneun 13070 neu fuer Vergleichstrend
+
+        if(useRDBArchive() && sf_isValidStatFuncDpe(DP[i]))
+        {
+          //_offline._1min_sum
+          string detail = dpSubStr(DP[i], DPSUB_CONF_DET);
+          //_1min_sum
+          strreplace(detail, \":_offline.\", \"\");
+          trend.curveLegendName(curve)=sTemp+name[i] + \" (\" + detail + \")\";
+        }
+        else
+          trend.curveLegendName(curve)=sTemp+name[i]; // fneun 13070 geaendert fuer Vergleichstrend
+      }
+      else
+      {
+        if(!isDPeRDBCompressed(DP[i]))
+        {
+       	  if (isComp)
+            sTemp=((m==1)?getCatStr(\"ac\",\"legendIdentOrig\"):getCatStr(\"ac\",\"legendIdentComp\")); // fneun 13070 neu fuer Vergleichstrend
+
+          trend.curveLegendName(curve)=sTemp+name[i]; // fneun 13070 geaendert fuer Vergleichstrend
+        }
+        else
+        {
+          trend.curveLegendName(curve) = DP[i];
+        }
+      }
+
+      trend.curveColor(curve)=ColorStyle[i];
+      // FillStyle
+      ds=strsplit(FillStyle[i],\":\");
+      trend.curveType(curve)=ds[1];
+      trend.pointType(curve) = (int)ds[2] - 1;
+      trend.refValue(curve)=(dynlen(ds)>3)?ds[4]:false;
+      trend.curvePattern(curve)=LineStyle[i];
+      // Setting curve unit
+      if (useRDBGroups() || !useRDBArchive())
+      {
+        if (dynContains(actypes,dpTypeName(dpe)))     // Aenderung Stoklasek 31.07.01  TI 11004
+        {
+          unit[i]=acDpGetUnit(DP[i]);
+          format[i]=acDpGetFormat(DP[i]);
+        }
+        else
+        {
+          acGetRefACType(DP[i],typ);
+          acGetRefACType(DP[i],typ);
+          if (dynContains(actypes,typ))
+          {
+            unit[i]=acDpGetUnit(DP[i]);
+            format[i]=acDpGetFormat(DP[i]);
+          }
+          else
+          {
+            unit[i]=dpGetUnit(DP[i]);
+            format[i]= dpGetFormat(DP[i]);
+          }
+       	}
+       	trend.curveLegendUnit(curve)=unit[i];
+        if (dpElementType(dpe) == DPEL_FLOAT && format[i] == \"\")
+          format[i] = \"%12.3f\";
+
+        trend.curveLegendFormat(curve) = format[i];
+      }
+      else
+      {
+        if (!isDPeRDBCompressed(DP[i]))
+        {
+          if (dynContains(actypes,dpTypeName(dpe)))     // Aenderung Stoklasek 31.07.01  TI 11004
+          {
+            unit[i]=acDpGetUnit(DP[i]);
+            format[i]=acDpGetFormat(DP[i]);
+          }
+          else
+          {
+            acGetRefACType(DP[i],typ);
+            if (dynContains(actypes,typ))
+            {
+              unit[i]=acDpGetUnit(DP[i]);
+              format[i]=acDpGetFormat(DP[i]);
+            }
+            else
+            {
+              unit[i]=dpGetUnit(DP[i]);
+              format[i]=dpGetFormat(DP[i]);
+            }
+       	  }
+       	  trend.curveLegendUnit(curve)=unit[i];
+          if (dpElementType(dpe) == DPEL_FLOAT && format[i] == \"\")
+            format[i] = \"%12.3f\";
+
+          trend.curveLegendFormat(curve) = format[i];
+        }
+        else
+        {
+          dyn_string buff;
+          string unit;
+          string format;
+       	  string tempDp;
+       	  int j = 0;
+
+          buff = strsplit(DP[i], \".\");
+          for (j = 1; j <= dynlen(buff) - 2; j++)
+          {
+            tempDp += buff[j] + \".\";
+            //remove the last point
+            if ( (j == dynlen(buff) - 2) && (dynlen(buff) - 2 > 1) )
+              tempDp = strrtrim (tempDp, \".\");
+       	  }
+          unit = dpGetUnit(tempDp + \":_original.._value\");
+          format = dpGetFormat(tempDp + \":_original.._value\");
+       	  trend.curveLegendUnit(curve) = unit;
+          if (dpElementType(  tempDp ) == DPEL_FLOAT && format == \"\")
+            format = \"%12.3f\";
+          trend.curveLegendFormat(curve) = format;
+        }
+      }
+
+      // Building curve groups depending on scale definition
+      if (strpos(CurveScale[i],\"AUTO:\")>-1 && strlen(CurveScale[i])==6)
+      {
+        ds=strsplit(CurveScale[i],\":\"); l=ds[2];
+        // curve related to another
+        if   (l>0) groupIndex=l;
+        // ground curve of the group
+        else groupIndex=i;
+        if (groupIndex>dynlen(groups))
+        {
+          groups[groupIndex]=makeDynString(\"\");
+        }
+        groups[groupIndex][dynlen(groups[groupIndex])+1]=i;
+      }
+      else
+      {
+        groupIndex=i;
+        if (groupIndex>dynlen(groups))
+          groups[groupIndex]=makeDynString(\"\");
+
+        groups[groupIndex][1]=i;
+      }
+
+      dfValues=makeDynFloat();
+      dtTime=makeDynTime();
+      dBit64=makeDynAnytype();
+
+      // Historische Daten lesen
+      // Original verdoppelt (Offset) fuer Vergleichstrend fneun 130701
+      if( m == 1 ) // Normaltrend
+      {
+        // call the dpGetPeriod function only for closed timeranges
+        if (TrendType!=1 && TrendType!=4 && TrendType!=7 && TrendType!=8 && TrendType!=9 && TrendType!=10 && TrendType!=11)
+        {
+          ddt[i]=makeDynTime();
+          ddf[i]=makeDynFloat();
+          ddBit64[i]=makeDynAnytype();
+
+          if (useRDBGroups() || !useRDBArchive())
+          {
+            if (useRDBArchive() && sf_isValidStatFuncDpe(DP[i]))
+            {
+              err=dpGetPeriod(StartTime,EndTime,1,
+                              DP[i],
+                              dfValues,dtTime);
+
+              // 20151116 - IM 114574 - show an error if too much data was read
+              deC_error = getLastError();
+              if(dynlen(deC_error) > 0)
+              {
+                b_showError = 1;
+              }
+
+
+              //for stat.Functions fake statusBits
+              bit64 csStatus = 0;
+              for (int csCount = 1; csCount <= dynlen(dfValues); csCount++)
+                dBit64[csCount] = csStatus;
+            }
+            else
+            {
+              err=dpGetPeriod(StartTime,EndTime,1,
+                              DP[i]+\":_offline.._value\",
+                              dfValues,dtTime,
+                              DP[i]+\":_offline.._status64\",
+                              dBit64,dtTime);
+
+              // 20151116 - IM 114574 - show an error if too much data was read
+              // 20151116 - IM 114574 - show an error if too much data was read
+              deC_error = getLastError();
+              if(dynlen(deC_error) > 0)
+              {
+                b_showError = 1;
+              }
+            }
+          }
+          else
+          {
+            err=dpGetPeriod(StartTime,EndTime,1,
+                            DP[i]+\":_offline.._value\",
+                            dfValues,dtTime,
+                            DP[i]+\":_offline.._status64\",
+                            dBit64,dtTime);
+
+            // 20151116 - IM 114574 - show an error if too much data was read
+            deC_error = getLastError();
+            if(dynlen(deC_error) > 0)
+            {
+              b_showError = 1;
+            }
+          }
+        }
+        ddf[i]=dfValues;
+        ddt[i]=dtTime;
+        ddBit64[i]=dBit64;
+      }
+      else // Vergleichstrend
+      {
+        // call the dpGetPeriod function only for closed timeranges
+        if (TrendType!=1 && TrendType!=4 && TrendType!=7 && TrendType!=8 && TrendType!=9 && TrendType!=10 && TrendType!=11)
+        {
+          ddt[16+i]=makeDynTime();
+          ddf[16+i]=makeDynFloat();
+          ddBit64[16+i]=makeDynAnytype();
+
+          if (useRDBGroups() || !useRDBArchive())
+          {
+            err=dpGetPeriod((StartTime-tOffset),(EndTime-tOffset),1,
+                            DP[i]+\":_offline.._value\",
+                            dfValues,dtTime,
+                            DP[i]+\":_offline.._status64\",
+                            dBit64,dtTime);
+
+            // 20151116 - IM 114574 - show an error if too much data was read
+            deC_error = getLastError();
+            if(dynlen(deC_error) > 0)
+            {
+              b_showError = 1;
+            }
+          }
+          else
+          {
+            err=dpGetPeriod((StartTime-tOffset),(EndTime-tOffset),1,
+                            DP[i]+\":_offline.._value\",
+                            dfValues,dtTime,
+                            DP[i]+\":_offline.._status64\",
+                            dBit64,dtTime);
+
+            // 20151116 - IM 114574 - show an error if too much data was read
+            deC_error = getLastError();
+            if(dynlen(deC_error) > 0)
+            {
+              b_showError = 1;
+            }
+          }
+        }
+        ddf[16+i]=dfValues;
+        ddt[16+i]=dtTime;
+        ddBit64[16+i]=dBit64;
+      }
+
+      if (DP[i] != \"\")
+        exportDP[i] = DP[i];
+
+      // Connecting DPs if trend type is open
+      // IM 117993 - add new timeranges \\\"1 hour open\\\" and \\\"8 hours open\\\"
+      if (TrendType==1 || TrendType==4 || TrendType==7 || TrendType==8 || TrendType==9 || TrendType==10 || TrendType==11)
+      {
+        // TI 9919 replace history of .C1.AVG_WT0 with .value
+
+        if ( bvtMixComprAndCurrentValues && strpos(DP[i], \"C1.AVG_WT0\") > 0)
+        {
+          string tempDP;
+          tempDP = DP[i];
+          strreplace(tempDP, \"C1.AVG_WT0\", \"value\");
+          if (dpExistsDPE(tempDP))
+          {
+            connectCurve(curve, tempDP);
+          }
+        }
+
+       	if (useRDBGroups() || !useRDBArchive())
+        {
+          if (useRDBArchive() && sf_isValidStatFuncDpe(DP[i])) //alang 20.10.09 new stat. func.
+          {
+            trend.connectDirectly(curve,sf_convert2QueryFormat(DP[i]));
+          }
+          else
+          {
+            trend.connectDirectly(curve,DP[i]+\":_offline.._value\");  // use regular dp for connectDirectly
+          }
+        }
+        else
+        {
+          if (!isDPeRDBCompressed(DP[i]))
+          {
+            trend.connectDirectly(curve,DP[i]+\":_offline.._value\");  // use regular dp for connectDirectly
+          }
+          else
+          {
+            getComprStepValuesInInterval(60, \"fillTrendWithRDBComprSteps\", DP[i]);
+            dynAppend(stepCurve, DP[i] + \"@\" + curve);
+          }
+        }
+        // end TI 9919
+        trend.manageCommands()=true;
+      }
+      else
+      {
+        int  iIdx = i, iL;
+        time tA = StartTime, tE = EndTime;
+        if ( m == 2 )
+        {
+          iIdx += 16;
+          tA -= tOffset;
+          tE -= tOffset;
+        }
+
+        iL = dynlen(ddt[iIdx]);
+        if ( iL > 0 && ddt[iIdx][iL] < tE )
+        {
+          trend.curveValue(curve, ddf[iIdx][iL], getCurrentTime(), ddBit64[iIdx][iL]);
+        }
+        // end   TI 11468
+
+        trend.manageCommands()=false;
+        trend.disconnectDirectly(curve);
+      }
+    } //for i
+
+    // 20151116 - IM 114574 - show an error if too much data was read
+    if(b_showError == 1)
+    {
+      s_errorText = getCatStr(\"var_trend\",\"tooMuchData\");
+      ChildPanelOnCentralModal(\"vision/MessageWarning\",getCatStr(\"sc\",\"Attention\"),makeDynString(\"$1:\" + s_errorText));
+    }
+  } //for m
+
+  // Calculating scales
+
+  for (m=1;m<=2;m++) //fneun 130701 fuer Vergleichstrend: 1 = Originaltrend, 2 = Vergleichstrend
+  {
+    if (m==2 && !isComp) continue; // fneun 130701 fuer Vergleichstrend: Wenn KEIN Vergleichstrend, dann die zweite Schleife (m) nicht ausführen
+
+    for (i=1;i<=dynlen(groups);i++)
+    {
+      if (dynlen(groups[i])<1) continue;
+
+      for (j=1;j<=dynlen(groups[i]);j++)
+      {
+        // ground curve of the group
+        if (j==1)
+        {
+          // all values for AUTO or missing pv_range
+          iTemp=(groups[i][j]); iTemp+=(m-1)*16;	// fneun 130701 geaendert fuer Vergleichstrend
+          dfValues=ddf[iTemp];					// fneun 130701 geaendert fuer Vergleichstrend
+          dBit64 = ddBit64[iTemp];
+          // reading _pv_range of ground curve
+
+          if (strpos(CurveScale[groups[i][j]],\"FIX:PVSS\")>-1)
+          {
+            min = 0;
+            max = 0;
+            dpGet(DP[groups[i][j]]+\":_pv_range.._min\",min,
+                  DP[groups[i][j]]+\":_pv_range.._max\",max);
+
+            if ( max == 0 && min == 0)
+            {
+              string tempDP= DP[groups[i][j]];
+              dyn_string ds = strsplit(tempDP,\".\");
+              int k;
+              if (dynlen(ds)>0)
+                tempDP = ds[1];
+
+              for ( k=2; k<=dynlen(ds) -2; k++)
+              {
+                tempDP = tempDP+\".\"+ds[k];
+              }
+              tempDP = tempDP+\".\" +\"value\";
+              if (dpExistsDPE(tempDP))
+              {
+                dpGet(tempDP+\":_pv_range.._min\",min,
+                      tempDP+\":_pv_range.._max\",max);
+              }
+            }
+          }
+          // setting fixed values of ground curve
+          else if (strpos(CurveScale[groups[i][j]],\"FIX:\")>-1)
+          {
+            ds=strsplit(CurveScale[groups[i][j]],\":\");
+            if (dynlen(ds)==1)
+            {
+              // fixed min and max not found -> using _pv_range.._min and max
+              min = 0;
+              max = 0;
+              dpGet(DP[groups[i][j]]+\":_pv_range.._min\",min,
+                    DP[groups[i][j]]+\":_pv_range.._max\",max);
+
+              if ( max == 0 && min == 0)
+              {
+                string tempDP= DP[groups[i][j]];
+                dyn_string ds = strsplit(tempDP,\".\");
+                int k;
+
+                if (dynlen(ds)>0)
+                  tempDP = ds[1];
+
+                for ( k=2; k<=dynlen(ds) -2; k++)
+                {
+                  tempDP = tempDP+\".\"+ds[k];
+                }
+                tempDP = tempDP+\".\" +\"value\";
+
+                if (dpExistsDPE(tempDP))
+                  dpGet(tempDP+\":_pv_range.._min\",min,
+                        tempDP+\":_pv_range.._max\",max);
+              }
+            }
+            else if (dynlen(ds)==2)
+            {
+              min=ds[2];
+              // fixed max not found -> using _pv_range.._max
+              dpGet(DP[groups[i][j]]+\":_pv_range.._max\",max);
+
+              if ( max == 0 && min == 0)
+              {
+                string tempDP= DP[groups[i][j]];
+                dyn_string ds = strsplit(tempDP,\".\");
+                int k;
+
+                if (dynlen(ds)>0)
+                  tempDP = ds[1];
+
+                for ( k=2; k<=dynlen(ds) -2; k++)
+                {
+                  tempDP = tempDP+\".\"+ds[k];
+                }
+
+                tempDP = tempDP+\".\" +\"value\";
+                if (dpExistsDPE(tempDP))
+                  dpGet(tempDP+\":_pv_range.._min\",min,
+                        tempDP+\":_pv_range.._max\",max);
+              }
+            }
+            else if (dynlen(ds)==3)
+            {
+              // fixed min and max ok
+              min=ds[2];
+              max=ds[3];
+            }
+          }
+          else
+          {
+            min=0;
+            max=0;
+          }
+        }
+        else
+        // further curves
+        {
+          dyn_float df;
+          iTemp=(groups[i][j]);  iTemp+=(m-1)*16;	// fneun 130701 geaendert fuer Vergleichstrend
+          df = ddf[iTemp];
+          dynAppend(dfValues,df);           // fneun 130701 geaendert fuer Vergleichstrend
+        }
+      }
+
+      // in case of autoscale the values min and max are set to 0
+      if ((min>=max || CurveScale[groups[i][1]]==\"AUTO:\") && dynlen(dfValues)>0)
+      {
+        min=0;
+        max=0;
+      }
+
+      // if one value only
+      if (min==max && min<0) max=0;
+      else if (min==max && min>0) min=0;
+
+
+      for (j=1;j<=dynlen(groups[i]);j++)
+      {
+        curve=\"Curve\"+groups[i][j]+((m==2)?\"C\":\"\"); // fneun 130701 geaendert fuer Vergleichstrend
+
+        if ( dynlen(strsplit(CurveScale[groups[i][j]], \":\")) > 1 )
+        {
+          if ( strsplit(CurveScale[groups[i][j]], \":\")[2] != \"\" && strsplit(CurveScale[groups[i][j]], \":\")[1] != \"FIX\" )
+          {
+            trend.linkCurves(\"Curve\"+strsplit(CurveScale[groups[i][j]], \":\")[2], curve);
+          }
+        }
+
+        //workaround for IM 93674 UI hangs if ranges are set from max to min float
+        if (max > fMaxFloat)
+          max = fMaxFloat;
+        if (min <= fMinFloat)
+          min = fMinFloat;
+
+        if (min==0 && max==0 ) // && CurveScale[groups[i][j]]==\"AUTO:\")
+        {
+          trend.curveAutoscale(curve)=1;
+        }
+        else
+        {
+          trend.curveAutoscale(curve)=0;
+          if ( trend.curveMax(curve) < min)
+          {
+            trend.curveMax(curve)=max;
+            trend.curveMin(curve)=min;
+          }
+          else if ( max > min)
+          {
+            trend.curveMin(curve)=min;
+            trend.curveMax(curve)=max;
+          }
+          else
+          {
+            trend.curveMin(curve)=min-0.01;
+            trend.curveMax(curve)=max;
+          }
+        }
+        // IM 117993 - add new timeranges \\\"1 hour open\\\" = TrendType 10 and \\\"8 hours open\\\" = TrendType 11
+        if (!(TrendType==1 || TrendType==4 || TrendType==7 || TrendType==8 || TrendType==9 || TrendType==10 || TrendType==11))
+        {
+          // Reading historical data
+          iTemp=(groups[i][j]); iTemp+=(m-1)*16;	//  fneun 130701 geaendert fuer Vergleichstrend // Ti14799 behoben
+          trend.curveValues(curve,ddf[iTemp],ddt[iTemp], ddBit64[iTemp]);
+        }
+
+        //dfranken 24.10.2012 Scale should be visible for all variants.
+        trend.curveScaleVisibility(curve)=(Scale[groups[i][j]]);
+      } // for j
+    } // for i
+  } // for m
+
+  // 20110721 - ETM: setting the offset is made at the end of the work-function
+  if (isComp) trend.timeOffset(1)=tOffset; // fneun 130701 fuer Vergleichstrend: Offset einstellen (Vergleichskurve ist in der Vergangenheit)
+
+  trend.visible=true;
+  Border2.visible(false);
+  message1.visible(false);
+  ewoShowBusy.visible(false);
+  ewoShowBusy.stop();
+
+}
+
+//////////////////////////////////////////////////////////////////
+// Trimming dyn_string on left and right
+//////////////////////////////////////////////////////////////////
+void vtTrimDynString(dyn_string &ds)
+{
+  int i;
+
+  for (i=1;i<=dynlen(ds);i++) ds[i]=strrtrim(strltrim(ds[i]));
+}
+
+//////////////////////////////////////////////////////////////////
+// Decoding C?
+//////////////////////////////////////////////////////////////////
+void decodeLevel(string &dpe,int interval)
+{
+  int            i,acpos,level=0,max=0,number,pos;
+  float          div=0,olddiv=-1;
+  string         fct,type;
+  dyn_int        seconds;
+  dyn_string     ds,sIntervals,functions,dps;
+
+  ds=strsplit(dpe,\".\");
+  type=dpTypeName(ds[1]);
+  // AC-type?
+  if (dynContains(actypes,type)<1)
+  {
+    // not an AC-type
+    // AC-reference?
+    acGetRefACType(dpe,type);
+    if (type==\"\")
+      // neither AC-type nor reference
+      return;
+    else
+    {
+      fct=ds[dynlen(ds)];
+      acGetIntervals(type, seconds, sIntervals);
+    }
+  }
+  // AC-type
+  else
+  {
+    fct=ds[3];
+    acGetIntervals(type, seconds, sIntervals);
+  }
+
+  for (i=1;i<=dynlen(seconds);i++)
+  {
+    acGetFunctions(type, \"C\"+i, functions);
+    number=interval/seconds[i];
+    if (number>=ValuesPerTrend)
+      div=number/ValuesPerTrend;
+    else
+    if (number>0)
+      div=ValuesPerTrend/number;
+    else
+      div=9999;
+    if ( (olddiv<0 || div<olddiv) && dynContains(functions,fct) )
+    {
+      level=i; olddiv=div;
+    }
+  }
+  if (level<1)
+  {
+    dpe=\"\";
+    return;
+  }
+
+  // (+1 / -1 not defined) or
+  // (C?+1 and last level) or (c?-1 and first level) ==> return
+  if (strpos(dpe,\"C?+1\")<1 && strpos(dpe,\"C?-1\")<1)
+  {
+    strreplace(dpe,\"?\",level);
+    return;
+  }
+
+  // C?+1
+  if (strpos(dpe,\"C?+1\")>0)
+  {
+    for (i=level+1;i<=dynlen(seconds);i++)
+    {
+      acGetFunctions(type, \"C\"+i, functions);
+      if (dynContains(functions,fct))
+      {
+        level=i; break;
+      }
+    }
+    strreplace(dpe,\"?+1\",level);
+    return;
+  }
+
+  // C?-1
+  if (strpos(dpe,\"C?-1\")>0)
+  {
+    for (i=level-1;i>0;i--)
+    {
+      acGetFunctions(type, \"C\"+i, functions);
+      if (dynContains(functions,fct))
+      {
+        level=i; break;
+      }
+    }
+    strreplace(dpe,\"?-1\",level);
+    return;
+  }
+}
+
+
+void fillTrendWithRDBComprSteps(string dp, float value, time ts)
+{
+	int i = 0;
+	dyn_string sc;
+
+	//DebugN(getCurrentTime(), \" \", dp, \" \", value, \" \", ts);
+	//DebugN(stepCurve);
+	for (i = 1; i <= dynlen(stepCurve); i++)//, DP[i] + \"@\" + curve);
+	{
+		sc = strsplit(stepCurve[i], \"@\");
+		if (sc[1] == dp)
+		{
+			trendTrend.curveVal(sc[2], value, ts);
+			trendComprTrend.curveVal(sc[2], value, ts);
+			trendTrend.trendRefresh();
+			trendComprTrend.trendRefresh();
+			break;
+		}
+	}
+}
+
+//
+//  Stoklasek 08.07.2004 - new functions: connectdirecty always on history, new Data in case of replacement with mConnectData
+//
+//  because of connectDirectly has to be done before first curveVal, it's necessary to start Treads with 1 sec delay !!
+//
+//
+
+void connectCurve(string curve, string dp)
+{
+  mConnectData[dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._value\"] = curve;
+  startThread(\"delayedConnect\", makeDynString(\"setConnectVals\", dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._value\", dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._stime\"));
+
+}
+
+void delayedConnect(dyn_string params)
+{
+  delay(1);
+  dpConnect(params[1], params[2], params[3]);
+
+}
+
+void disconnectCurve(string curve, string dp)
+{
+  if( mappingHasKey(mConnectData, dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._value\"))
+  {
+    dpDisconnect(\"setConnectVals\", dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._value\", dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._stime\");
+    mappingRemove(mConnectData,   dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._value\") ;
+  }
+  else
+    DebugN(\"Trend-Error: Mapping Key not found:\", curve, dp, \"searchkey:\"+ dpSubStr(dp, DPSUB_SYS_DP_EL)+\":_online.._value\", mConnectData);
+}
+
+void setConnectVals(string dp, anytype val, string dp2, time t)
+{
+  shape trend;
+  string curve = mConnectData[dp];
+  if (cmd_export.enabled	== TRUE)   // redgular Trend
+       trend = trendTrend ;
+  else
+      trend = trendComprTrend ;
+  trend.curveVal(curve, val, t);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+" 0
+ E E E E 1 -1 -1 0  232 97
+""0  1
+E "//#uses \"CtrlRDBArchive\" //16.02.2012 IM106252 rheiss: loaded in useRDBArchive.ctl when useRDBArchive=1
+//#uses \"CtrlRDBCompr\"
+#uses \"sfp_statfuncpara.ctl\"
+
+
+int         g_busyThread;  // id of thread, which shows business
+int         ValuesPerTrend;
+dyn_string  actypes;
+int    UiNumber;
+string PanelName;
+
+bool isComp;
+int TrendType;
+
+string TrendName;
+time StartTime, EndTime;
+dyn_string DP, exportDP, name, unit;
+
+void closePanel()
+{
+  // IM 117336
+  removeGlobal(\"VTExporting\");
+  
+  removeGlobal(\"isComp\");			// fneun 130701 neu fuer Vergleichstrend
+  removeGlobal(\"StartTimeComp\");	// dito
+  removeGlobal(\"CompOffset\");		// dito
+  
+  removeGlobal(\"TrendType\");
+  removeGlobal(\"TrendName\");
+  removeGlobal(\"FileName\");
+  removeGlobal(\"StartTime\");
+  removeGlobal(\"EndTime\");
+  removeGlobal(\"DP\");
+  removeGlobal(\"name\");
+  removeGlobal(\"unit\");
+//  removeGlobal(\"ddt\");
+//  removeGlobal(\"ddf\");
+  dpSet(\"_VarTrendOpen.UiNumber:_original.._value\",0,
+        \"_VarTrendOpen.PanelName:_original.._value\",\"\",
+        \"_VarTrendOpen.TrendData:_original.._value\",\"\");
+  PanelOff();
+}
+
+
+
+" 0
+ 4
+"CBRef" "1"
+"EClose" "main()
+{
+  closePanel();
+}" 0
+
+"dpi" "120"
+"pdpi" "120"
+2 1 0 0 0 0 0
+""
+NC
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+1 106 1 "" 0
+0
+2 17
+"TrendCurveText5"
+""
+1 62 682 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 917 113 932
+0 2 2 "0s" 0 0 0 192 0 0  72 917 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve5
+LANG:10001 6 Curve5
+LANG:10000 6 Curve5
+2 18
+"TrendCurveText4"
+""
+1 62 662 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 897 113 912
+0 2 2 "0s" 0 0 0 192 0 0  72 897 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve4
+LANG:10001 6 Curve4
+LANG:10000 6 Curve4
+2 19
+"TrendCurveText3"
+""
+1 62 642 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 877 113 892
+0 2 2 "0s" 0 0 0 192 0 0  72 877 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve3
+LANG:10001 6 Curve3
+LANG:10000 6 Curve3
+2 20
+"TrendCurveText2"
+""
+1 62 622 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 857 113 872
+0 2 2 "0s" 0 0 0 192 0 0  72 857 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve2
+LANG:10001 6 Curve2
+LANG:10000 6 Curve2
+2 21
+"TrendCurveText1"
+""
+1 62 602 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 837 113 852
+0 2 2 "0s" 0 0 0 192 0 0  72 837 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve1
+LANG:10001 6 Curve1
+LANG:10000 6 Curve1
+2 22
+"TrendCurveText6"
+""
+1 62 702 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 937 113 952
+0 2 2 "0s" 0 0 0 192 0 0  72 937 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve6
+LANG:10001 6 Curve6
+LANG:10000 6 Curve6
+2 42
+"TrendCurveText7"
+""
+1 634 1353 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 956 113 971
+0 2 2 "0s" 0 0 0 192 0 0  72 956 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve7
+LANG:10001 6 Curve7
+LANG:10000 6 Curve7
+2 43
+"TrendCurveText8"
+""
+1 634 1390 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 72 976 113 991
+0 2 2 "0s" 0 0 0 192 0 0  72 976 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve8
+LANG:10001 6 Curve8
+LANG:10000 6 Curve8
+4 48
+"TrendCurveLine1"
+""
+1 1200 2035 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 845 40 845
+4 49
+"TrendCurveLine2"
+""
+1 1230 2695 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 865 40 865
+4 50
+"TrendCurveLine3"
+""
+1 1230 2715 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 885 40 885
+4 51
+"TrendCurveLine4"
+""
+1 1230 2733 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 903 40 903
+4 52
+"TrendCurveLine5"
+""
+1 1230 2755 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 925 40 925
+4 53
+"TrendCurveLine6"
+""
+1 1230 2775 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 945 40 945
+4 54
+"TrendCurveLine7"
+""
+1 1230 2794 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 964 40 964
+4 55
+"TrendCurveLine8"
+""
+1 1230 2814 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  62 984 40 984
+2 58
+"message1"
+""
+1 1203.5 701.5 E E E 1 E 1 E N "Dunkelgrau" E N "_Transparent" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 1 0 1 E 0.9966329966330325 0 0.975609756097561 -369.5875420875678 -35.01219512195121 0 E 716.5 491.5 865 512
+0 0 0 "0s" 0 0 0 192 0 0  716.5 491.5 1
+3
+LANG:10027 26 arial,-1,18,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,18,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,18,5,50,0,0,0,0,0
+0 3
+LANG:10027 29 Чтение данных ...
+LANG:10001 16 Reading data ...
+LANG:10000 28 Die Daten werden gelesen ...
+6 59
+"Border2"
+""
+1 840 620 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"maximumSize" "140 -1"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 1 0 1 E 0.9928571428571429 0 0.9157894736842105 -87.85714285714289 -61.39473684210526 2  0 2  "59.xpm" 13160660 E 440 120 580 500
+2 74
+"trendName"
+""
+1 180 7 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+7
+"minimumSize" "-1 26"
+"maximumSize" "-1 26"
+"sizePolicy" "Expanding Fixed"
+"layoutAlignment" "AlignLeading|AlignVCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 1 0 1 E 1 0 1.4 -26 4.899999999999999 0 E 182 9 184 24
+0 2 0 "0s" 0 0 0 192 0 0  182 9 1
+3
+LANG:10027 26 Arial,-1,13,5,69,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,69,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,69,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+2 77
+"TrendCurveText13"
+""
+1 541 682 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 917 600 932
+0 2 2 "0s" 0 0 0 192 0 0  552 917 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve13
+LANG:10001 6 Curve5
+LANG:10000 7 Curve13
+2 78
+"TrendCurveText12"
+""
+1 541 662 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 897 600 912
+0 2 2 "0s" 0 0 0 192 0 0  552 897 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve12
+LANG:10001 6 Curve4
+LANG:10000 7 Curve12
+2 79
+"TrendCurveText11"
+""
+1 541 642 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 877 599 892
+0 2 2 "0s" 0 0 0 192 0 0  552 877 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve11
+LANG:10001 6 Curve3
+LANG:10000 7 Curve11
+2 80
+"TrendCurveText10"
+""
+1 541 622 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 857 600 872
+0 2 2 "0s" 0 0 0 192 0 0  552 857 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve10
+LANG:10001 6 Curve2
+LANG:10000 7 Curve10
+2 81
+"TrendCurveText9"
+""
+1 541 602 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 837 593 852
+0 2 2 "0s" 0 0 0 192 0 0  552 837 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 6 Curve9
+LANG:10001 6 Curve1
+LANG:10000 6 Curve9
+2 82
+"TrendCurveText14"
+""
+1 541 702 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 937 600 952
+0 2 2 "0s" 0 0 0 192 0 0  552 937 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve14
+LANG:10001 6 Curve6
+LANG:10000 7 Curve14
+2 83
+"TrendCurveText15"
+""
+1 1206 1353 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+40 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 956 600 971
+0 2 2 "0s" 0 0 0 192 0 0  552 956 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve15
+LANG:10001 6 Curve7
+LANG:10000 7 Curve15
+2 84
+"TrendCurveText16"
+""
+1 1206 1390 E E E 1 E 0 E N {0,0,0} E N "_Transparent" E E
+ E E
+41 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 552 976 600 991
+0 2 2 "0s" 0 0 0 192 0 0  552 976 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 7 Curve16
+LANG:10001 6 Curve8
+LANG:10000 7 Curve16
+4 85
+"TrendCurveLine9"
+""
+1 1680 2035 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 845 520 845
+4 86
+"TrendCurveLine10"
+""
+1 1710 2695 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 865 520 865
+4 87
+"TrendCurveLine11"
+""
+1 1710 2715 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 885 520 885
+4 88
+"TrendCurveLine12"
+""
+1 1710 2733 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+45 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 903 520 903
+4 89
+"TrendCurveLine13"
+""
+1 1710 2755 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+46 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 925 520 925
+4 90
+"TrendCurveLine14"
+""
+1 1710 2775 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+47 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 945 520 945
+4 91
+"TrendCurveLine15"
+""
+1 1710 2794 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+48 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 964 520 964
+4 92
+"TrendCurveLine16"
+""
+1 1710 2814 E E E 1 E 0 E N "_3DText" E N "_Transparent" E E
+ E E
+49 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 2 1 1 1 1 E  542 984 520 984
+13 2
+"cmd_print"
+""
+1 413.6414141414143 520.2499999999997 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  413.5 520.5 509.4999999999968 551.5000000000009
+
+T 
+3
+LANG:10027 12 Печать
+LANG:10001 5 Print
+LANG:10000 7 Drucken
+"main()
+{
+  bool b1,b2;
+  shape trend; // fneun 130701 neu fuer Vergleichstrend
+  
+  if (isComp) // fneun 130701 neu fuer Vergleichstrend
+    trend=getShape(\"Comptrend\");
+  else
+    trend=getShape(\"Trend\");
+  
+  b1 = trend.manageLegend;
+  b2 = trend.manageCommands;
+  //trend.manageLegend = false;
+  trend.manageCommands = false;
+
+  cmd_print.visible=false;
+  cmd_properties.visible=false;
+  cmd_legend.visible=false;
+  cmd_toolbar.visible=false;
+  cmd_export.visible=false;
+  cmd_close.visible=false;
+  cmd_help.visible=false;
+  busySize.visible=false;
+  Polyline1.visible=false;
+  Polyline2.visible=false;
+  Clock1.backCol=\"_Window\";
+
+  //printRootPanel(myModuleName(), \"F_BMP, [100,100,100], PrintImg -b %s\");
+
+  printPanel(myModuleName(),myPanelName(), \"F_BMP, [100,100,100], PrintImg -b -l %s\");
+
+  trend.manageLegend = b1;
+  trend.manageCommands = b2;
+
+  cmd_print.visible=true;
+  cmd_properties.visible=true;
+  cmd_legend.visible=true;
+  cmd_toolbar.visible=true;
+  cmd_export.visible=true;
+  cmd_close.visible=true;
+  cmd_help.visible=true;
+  busySize.visible=true;
+  Polyline1.visible=true;
+  Polyline2.visible=true;
+  Clock1.backCol=\"_3DFace\";
+}
+
+" 0
+ E E E
+13 38
+"cmd_properties"
+""
+1 629.9343434343428 1285.250000000025 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  620.5 520.5 716.4999999999965 551.5000000000009
+
+T 
+3
+LANG:10027 18 Настройки
+LANG:10001 10 Properties
+LANG:10000 13 Eigenschaften
+"main()
+{
+   ChildPanelOnCentral( \"vision/trend/VT_assistent.pnl\",
+                        \"Trend-Para\",
+                        makeDynString(\"$DP:\"+trendName.text));
+}
+" 0
+ E E E
+13 4
+"cmd_legend"
+""
+1 205.6414141414143 520.2499999999997 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  205.5 520.5 301.4999999999968 551.5000000000009
+
+T 
+3
+LANG:10027 14 Легенда
+LANG:10001 6 Legend
+LANG:10000 7 Legende
+"main() 
+{ 
+  int open; 
+  bool DTV_trend, DTV_comptrend; 
+
+  if (isComp)   // fneun 130701 Unterscheidung neu fuer Vergleichstrend 
+  { 
+    getValue(\"Comptrend\",\"manageLegend\",open,
+             \"legendDTV\",DTV_comptrend); 
+    setValue(\"Comptrend\",\"manageLegend\",!open,
+             \"legendDTV\",DTV_comptrend); 
+  } 
+  else 
+  { 
+    getValue(\"Trend\",\"manageLegend\",open,
+             \"legendDTV\",DTV_trend); 
+    setValue(\"Trend\",\"manageLegend\",!open,
+             \"legendDTV\",DTV_trend); 
+  } 
+}  
+
+" 0
+ E E E
+13 60
+"cmd_toolbar"
+""
+1 578.2070707070786 1285.250000000025 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  305.5 520.5 409.500000000003 551.5000000000009
+
+T 
+3
+LANG:10027 26 Прокрутк.врем.
+LANG:10001 7 Toolbar
+LANG:10000 15 Funktionsleiste
+"main()
+{
+  int open;
+	
+  if (isComp)  //fneun 130701 Unterscheidung neu fuer Vergleichstrend
+  {
+    getValue(\"Comptrend\",\"manageCommands\",open);
+    setValue(\"Comptrend\",\"manageCommands\",!open);  
+  }
+  else
+  {
+    getValue(\"Trend\",\"manageCommands\",open);
+    setValue(\"Trend\",\"manageCommands\",!open);  
+  }
+
+}
+" 0
+ E E E
+13 46
+"cmd_export"
+""
+1 783.5000000000023 1285.250000000025 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  513.5 520.5 616.5000000000011 551.5000000000009
+
+T 
+3
+LANG:10027 21 Экспорт в CSV
+LANG:10001 13 Export to CSV
+LANG:10000 11 Datenexport
+"int           g_busyThread;  // id of thread, which shows business
+file          fd;
+string        fname;
+
+main()
+{
+  int            i,j,k,l,idx=0,pos;
+  time           beg,end;
+  string         s,s1,s2;
+  dyn_int        di,de;
+  dyn_time       dt;
+  dyn_float      df;
+  dyn_string     ds,ds1,ds2,ds3,records,recs;
+  dyn_dyn_int    dde;
+  dyn_dyn_time   ddt;
+  dyn_dyn_float  ddf;
+  dyn_dyn_string dds;
+  string         sDpeValueFormat;
+
+  if(dynlen(exportDP) <= 0)
+  {
+    ChildPanelOnCentralModalReturn(\"vision/MessageInfo1\",
+                                   getCatStr(\"ac\",\"export\"),
+                                   makeDynString(getCatStr(\"var_trend\",\"noValidDP\")),df,ds);
+    return;
+  }
+
+  ds=makeDynString();
+
+  g_busyThread = -1;
+  ChildPanelOnCentralModalReturn(\"vision/trend/VT_trendsave.pnl\",
+                                 getCatStr(\"ac\",\"export\"),
+                                 makeDynString(),df,ds);
+
+  if ( dynlen(df) < 1 || df[1] == 0 )
+    return;
+
+  fname=ds[1];
+  if (strrtrim(strltrim(fname))==\"\")
+    return;
+
+  //Kontrolle ob alle DP's ein Archive config haben
+  ds=makeDynString();
+  for (i=1;i<=dynlen(exportDP);i++)
+  {
+    string sDPE = exportDP[i];
+    dyn_string dsSplit = strsplit(sDPE, \".\");
+
+    bool bHasAnArchive = false;
+
+    for (int j=dynlen(dsSplit); j>0 && !bHasAnArchive; j--) //check also if parent nodes have an archive
+    {
+      sDPE = \"\";
+      for (int k=1; k<=j; k++)
+      {
+        if (k>1)
+          sDPE+=\".\";
+        sDPE+=dsSplit[k];
+      }
+      if (strpos(sDPE, \".\")<0)
+          sDPE+=\".\";
+
+      int aType;
+      dpGet(dpSubStr(sDPE, DPSUB_SYS_DP_EL)+\":_archive.._type\", aType);
+
+      if (aType != DPCONFIG_NONE)
+        bHasAnArchive = TRUE;
+    }
+    if (!bHasAnArchive)
+      dynAppend(ds, exportDP[i]);
+  }
+
+
+  //dfranken 23.10.2012 BT1019. ds[1] is reserved for filename. Invalid
+  if (dynlen(ds)>=2)
+  {
+    ChildPanelOnCentralModalReturn(\"vision/MessageInfo1\",
+                                   getCatStr(\"ac\",\"export\"),
+                                   makeDynString(getCatStr(\"ac\",\"acNotDefined\")),df,ds);
+  }
+
+  ds=makeDynString();
+
+
+  // IM 117336
+  VTExporting = TRUE;
+
+  ChildPanelOnCentral(\"vision/trend/VT_info.pnl\",\"Export-Info\",makeDynString());
+  setButtons(false);
+  //std_startBusy();
+  ewoShowBusy.visible(true);
+  ewoShowBusy.start();
+
+
+  time tSart, tE;
+  getValue(\"Trend\", \"visibleTimeRange\", 0, tSart, end);
+  if (end>getCurrentTime())
+  {
+    // Reading historical data if trend type is open
+    if (TrendType==1 || TrendType==4 || TrendType==7 || TrendType==8)
+      end=getCurrentTime();
+    else
+      end=EndTime;
+  }
+
+
+  for (i=1;i<=dynlen(exportDP);i++)
+  {
+    if (!checkExporting()) return;
+    if (exportDP[i]!=\"\")
+    {
+      if (useRDBGroups() || !useRDBArchive())
+      {
+        //DebugN(2296, \"export\", exportDP, i, exportDP[i]);
+        dpGetPeriod(tSart,end,0,
+                    exportDP[i] + \":_offline.._value\",
+                    df,dt,de);
+      }
+      else //if (!isDPeRDBCompressed(exportDP[i]))
+      {
+        //DebugN(2303, \"export\", exportDP, i, exportDP[i]);
+        dpGetPeriod(tSart,end,0,
+                    exportDP[i] + \":_offline.._value\",
+                    df,dt,de);
+
+//      }
+//      else
+//      {
+//        int z = 0;
+//        dpGetPeriodRDBCompr(StartTime, end, 0,
+//                            exportDP[i],
+//                            df, dt);
+//        //We have no de
+//        for (z = 1; z <= dynlen(df); z++)
+//          de[z] = EVENT;
+      }
+      ddf[i]=df;
+      ddt[i]=dt;
+      dde[i]=de;
+    }
+  }
+  j=1;
+  di=makeDynInt();
+  ds1=makeDynString(\"DPE\");
+  ds2=makeDynString(\"Comment\");
+  ds3=makeDynString(\"Unit\");
+  for (i=1;i<=dynlen(exportDP);i++)
+  {
+    if (!checkExporting()) return;
+    if (exportDP[i]==\"\")
+      continue;
+    else
+    {
+      j++;
+      di[j-1]=i;
+      ds1[j]=exportDP[i];
+      ds2[j]=name[i];
+      ds3[j]=unit[i];
+    }
+  }
+  records[1]=ds1; strreplace(records[1],\" | \",\";\");
+  records[2]=ds2; strreplace(records[2],\" | \",\";\");
+  records[3]=ds3; strreplace(records[3],\" | \",\";\");
+  idx=1; ds=makeDynString();
+
+
+  for (j=1;j<=dynlen(ddt[idx]);j++)
+  {
+    if (!checkExporting())
+      return;
+    if (ddt[idx][j]==0 || dde[idx][j]!=EVENT)
+      continue;
+
+//    if (useRDBGroups() || !useRDBArchive() || !isDPeRDBCompressed(ds1[idx+1]))
+//IM 95846 : Warum im obigen Fall keine Formatierung ?
+    {
+
+      int elType = dpElementType (ds1[idx+1]);
+      string sDefaultTypeFormat;
+
+      switch ( elType )
+      {
+        case DPEL_INT:
+        case DPEL_CHAR:
+        case DPEL_BOOL:
+          sDefaultTypeFormat = \"%d\";
+          break;
+        case DPEL_LONG:
+          sDefaultTypeFormat = \"%ld\";
+          break;
+        case DPEL_ULONG:
+          sDefaultTypeFormat = \"%lu\";
+          break;
+        case DPEL_UINT:
+          sDefaultTypeFormat = \"%u\";
+          break;
+        default:
+          sDefaultTypeFormat = \"%f\";
+          break;
+      }
+      if(patternMatch(\"*.C?.*\",ds1[idx+1]))//acDpGetFormat() funktioniert nur fuer DPE der Form *.C?.* IM 95846
+        sDpeValueFormat = acDpGetFormat(ds1[idx+1]);  //Get the format of the DPE (if DPE is compressed get format form root DPE if no format for compressed DPE is defined on common config)
+      if( sDpeValueFormat != \"\" )
+        sprintf(s2, sDpeValueFormat, ddf[idx][j]);   //If format for the DPE or the root DPE of an compressed DPE is parametrised adopt these format to the exported values
+      else
+        sprintf(s2, sDefaultTypeFormat, ddf[idx][j]);   //If no format for the DPE or the root DPE of an compressed DPE is parametrised use default format
+    }
+
+    s1=ddt[idx][j];
+    s=s1+\";\"+s2;
+    dynAppend(recs,s);
+    dynAppend(ds,s1);
+
+  }
+
+
+  for (i=2;i<=dynlen(di);i++)
+  {
+    if (!checkExporting()) return;
+    idx=di[i];
+    for (j=1;j<=dynlen(ddt[idx]);j++)
+    {
+      if (ddt[idx][j]==0 || dde[idx][j]!=EVENT) continue;
+
+//      if (useRDBGroups() || !useRDBArchive() || isDPeRDBCompressed(ds1[idx+1]))  //warum ist isDPeRDBCompressed(...) nicht negiert, wie 15 Zeilen oberhalb???
+//IM 95846 : Warum im obigen Fall keine Formatierung ?
+      {
+        int elType = dpElementType (ds1[idx+1]);
+        string sDefaultTypeFormat;
+
+        switch ( elType )
+        {
+          case DPEL_INT:
+          case DPEL_CHAR:
+          case DPEL_BOOL:
+            sDefaultTypeFormat = \"%d\";
+            break;
+          case DPEL_UINT:
+            sDefaultTypeFormat = \"%u\";
+            break;
+          case DPEL_LONG:
+            sDefaultTypeFormat = \"%ld\";
+            break;
+          case DPEL_ULONG:
+            sDefaultTypeFormat = \"%lu\";
+            break;
+          default:
+            sDefaultTypeFormat = \"%f\";
+            break;
+        }
+        if(patternMatch(\"*.C?.*\",ds1[idx+1]))//acDpGetFormat() funktioniert nur fuer DPE der Form *.C?.* IM 95846
+          sDpeValueFormat = acDpGetFormat(ds1[idx+1]);   //Get the format of the DPE (if DPE is compressed get format form root DPE if no format for compressed DPE is defined on common config)
+
+        if( sDpeValueFormat != \"\" )
+          sprintf(s2, sDpeValueFormat, ddf[idx][j]);   //If format for the DPE or the root DPE of an compressed DPE is parametrised adopt these format to the exported values
+        else
+          sprintf(s2, sDefaultTypeFormat, ddf[idx][j]);   //If no format for the DPE or the root DPE of an compressed DPE is parametrised use default format
+      }
+
+      s1=ddt[idx][j];
+      pos=dynContains(ds,s1);
+      if (pos>0)
+      {
+        ds3=strsplit(recs[pos],\";\");
+        ds3[idx+1]=s2;
+        recs[pos]=ds3;
+        strreplace(recs[pos],\"|\",\";\");
+      }
+      else
+      {
+        s=s1;
+        for (k=1;k<=i;k++) s+=\";\";
+        s+=s2;
+        dynAppend(recs,s);
+        dynAppend(ds,s1);
+      }
+    }
+  }
+
+  dynSortAsc(recs);
+  dynAppend(records,recs);
+  if (!checkExporting()) return;
+
+  fd=fopen(fname,\"w\");
+  for (i=1;i<=dynlen(records);i++)
+  {
+    if (!checkExporting()) return;
+    fputs(records[i]+\"\\n\",fd);
+  }
+  fflush(fd);
+  fclose(fd);
+
+  //std_stopBusy();
+  ewoShowBusy.visible(false);
+  ewoShowBusy.stop();
+  PanelOffPanel(\"Export-Info\");
+  setButtons(true);
+}
+
+//////////////////////////////////////////////////////
+setButtons(bool ena)
+{
+  cmd_print.enabled=ena;
+  cmd_properties.enabled=ena;
+  cmd_legend.enabled=ena;
+  cmd_toolbar.enabled=ena;
+  cmd_export.enabled=ena;
+  cmd_close.enabled=ena;
+  cmd_help.enabled=ena;
+}
+
+//////////////////////////////////////////////////////
+bool checkExporting()
+{
+  // IM 117336
+  if ( VTExporting ) return TRUE;
+
+  if (access(fname,F_OK)==0)
+  {
+    fflush(fd);
+    fclose(fd);
+    if (_UNIX)
+      system(\"rm \"+fname);
+    else
+      system(\"cmd rm \"+fname);
+  }
+  //std_stopBusy();
+  ewoShowBusy.visible(false);
+  ewoShowBusy.stop();
+  PanelOffPanel(\"Export-Info\");
+  setButtons(true);
+  return(false);
+}
+
+
+
+
+
+
+
+
+
+" 0
+ E E E
+13 1
+"cmd_close"
+""
+1 720.6414141414149 520.2499999999997 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 52 Закрыть без выполн. операции
+LANG:10001 26 Close panel without action
+LANG:10000 41 Panel schließen, ohne Aktion auszulösen
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  720.5 520.5 816.4999999999968 551.5000000000009
+
+T 
+3
+LANG:10027 14 Закрыть
+LANG:10001 5 Close
+LANG:10000 10 Schließen
+"main()
+{
+  closePanel();
+}" 0
+ E E E
+13 31
+"cmd_help"
+""
+1 851.8636363636072 1208.750000000023 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  13.5 520.5 109.4999999999968 551.5000000000009
+
+T 
+3
+LANG:10027 14 Справка
+LANG:10001 4 Help
+LANG:10000 5 Hilfe
+"main()
+{
+  std_help(\"VT_trend\");
+}
+" 0
+ E E E
+15 56
+"Clock1"
+""
+1 16.7012987012987 17 E E E 1 E 1 E N "_WindowText" E N "_3DFace" E E
+ E E
+24 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignLeading|AlignTop"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  15 15 146 40
+E 1 1 "%X" "%x"
+1 1 0 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 
+32 98
+"SPACER2"
+""
+1 115 522 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+51 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"transparentForMouse" ""
+"sizePolicy" "Expanding Ignored"
+"layoutAlignment" "AlignNone"
+ 115 522 159.9999999999935 549 1
+1 104 0 "" 0
+0
+29 103
+"ewoShowBusy"
+""
+1 -90.125 455.7874999999999 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+6
+"effectType" "enum 2"
+"color1" "color STD_value_bad"
+"minimumSize" "32 28"
+"maximumSize" "32 28"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignVCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  168 522.5 199 549.5
+19 AttentionEffect.ewo
+0
+E0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+3 0 "VT_trend_symbols" 6
+"layoutAlignment" "AlignNone"
+"" ""
+"vision/trend/VT_trend_symbols.pnl" 0 0 T 50 0.9076751946607339 0 0.7384868421052567 10 55
+0
+3 1 "PANEL_REF1" 5
+"sizePolicy" "Preferred Fixed"
+"layoutAlignment" "AlignNone"
+"" ""
+"objects_parts/STD_OBJECTS/ButtonBarBackground.pnl" 125 675 T 50 1.675350701402806 0 1 -209.4188376753507 -163
+0
+4 2 "LAYOUT_GROUP1" 13
+2 0 
+74 56 
+
+"S 74" "1 0 1 1"
+"S 56" "0 0 1 1"
+"" ""
+0 1 1 15 15 15 0 0
+4 4 "LAYOUT_GROUP3" 5
+9 0 
+31 98 4 60 2 46 38 1 103 
+
+"S 31" "0 0 1 1"
+"S 98" "1 0 1 1"
+"S 4" "3 0 1 1"
+"S 60" "4 0 1 1"
+"S 2" "5 0 1 1"
+"S 46" "6 0 1 1"
+"S 38" "7 0 1 1"
+"S 1" "8 0 1 1"
+"S 103" "2 0 1 1"
+"" ""
+0 1 1 15 15 10 10 0
+4 5 "LAYOUT_GROUP4" 15
+0 2 
+
+4 1 
+"G 4" "0 0 1 1"
+"G 1" "0 0 1 2"
+"" ""
+0 3 0 0
+4 6 "LAYOUT_GROUP5" 12
+0 1 
+
+0 
+"G 0" "0 0 1 1"
+"" ""
+0 2 1 10 10 0 0 0
+4 8 "LAYOUT_GROUP9" 12
+2 0 
+59 58 
+
+"S 59" "0 0 1 1"
+"S 58" "1 0 1 1"
+"" ""
+0 2 0 0
+4 12 "LAYOUT_GROUP14" 13
+0 2 
+
+6 8 
+"G 6" "1 0 1 3"
+"G 8" "0 1 2 1"
+"" ""
+0 3 0 0
+4 13 "LAYOUT_GROUP15" 14
+0 2 
+
+12 2 
+"G 12" "1 0 1 1"
+"G 2" "0 0 1 1"
+"" ""
+0 2 0 0
+4 14 "LAYOUT_GROUP16" 15
+0 1 
+
+13 
+"G 13" "0 0 1 1"
+"" ""
+0 2 0 0
+4 15 "LAYOUT_GROUP17" -1
+0 2 
+
+14 5 
+"G 14" "0 0 1 1"
+"G 5" "1 0 1 1"
+"" ""
+0 2 0 0
+0

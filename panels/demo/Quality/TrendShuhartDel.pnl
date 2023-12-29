@@ -1,0 +1,224 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 592 428 N "fon_static" 0
+E E E E E 1 -1 -1 0  59.34084170588952 34.99999580821236
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+2 2
+"title"
+""
+1 362 323 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignVCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.5779612888490869 0 1.323167169169162 -179.8817006341618 -412.6146673333308 0 E 362 323 690 343
+0 2 2 "0s" 0 0 0 65 0 0  362 323 1
+3
+LANG:10027 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10001 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10000 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+0 3
+LANG:10027 25 Карта Шухарта
+LANG:10001 22 Production line status
+LANG:10000 22 Production line status
+30 3
+"FRAME1"
+""
+1 50 12 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+2 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.897802805686298 0 1.272374899335428 -84.23098199020444 -12.60746577404553 0 E 50 12 351 341
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+23 7
+"TREND2"
+""
+1 28.18436335150949 43.87800603003012 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  26.18436335150949 41.87800603003012 560.1843633515095 405.8780060300301
+5 "main()
+{
+     //Variable Definitions and Declarations
+  /*time tStart = makeTime(2019,11,2,0,0,0,0);
+  time tEnd = makeTime(2019,11,26,0,0,0,0);
+  int deltaHour = 60*60;
+  int deltaDay = 60*60*24;
+  //time t = getCurrentTime();
+
+  int i =0;
+  const bit64 INVALID = \"1000001100000000000000000000000000000000000100000000000100100001\";*/
+  //Trend Visible Area Configuration
+  //this.scrollPercent(50);
+   time t = getCurrentTime();
+  this.visibleTimeRange(0,t-2*60,t+2*60);
+  //this.manageCommands(false);
+  //this.manageLegend(false);
+
+  this.connectDirectly(\"Param\", \"1Param.:_original.._value\");
+  this.linkCurves(\"Param\", \"curve1\");
+  this.curveMarking(\"Param\",1,99,99,\"black\",\"[dashed,oneColor,JoinMiter,CapButt,1]\");
+  this.curveMarking(\"Param\",2,100,100,\"black\", \"[solid,oneColor,JoinMiter,CapButt,1]\");
+  this.curveMarking(\"Param\",3,101,101,\"black\", \"[dashed,oneColor,JoinMiter,CapButt,1]\");
+  test();
+}
+
+
+void test()
+{
+
+  time t;
+  float f1;
+    while ( 1 )
+  {
+    float iVal = (rand() * 2.99999 / 32767.0) + 1;   // random from 1 to 3 value generation
+    int iTime = (int)(rand() * 5.9999 / 32767.0) + 1;    // random from 1 to 6 seconds time interval generation
+    float val = 99 + iVal;
+    // Operation state happens 5 times more often then other states
+    if (val>101)
+    {
+      t = getCurrentTime();
+      //TREND2.curveColor(\"curve1\",\"red\");
+      TREND2.curveVals(\"curve1\",val, t);
+    }
+    else
+    {
+
+      time t2 = getCurrentTime();
+      //TREND2.curveColor(\"curve1\",\"11_transparent\");
+      TREND2.curveRemoveInterval(\"curve1\",t+2, t2);
+      t = t2;
+    }
+    DebugN(\"val = \"+val);
+    dpSet(\"1Param.:_original.._value\", val);
+    delay(iTime);
+  }
+
+
+}
+" 0
+ E E 1 529 N {0,0,0} 0 0 1 0 1 0 2 0 "Param" "System1:1Param." 2 2 0 100 1 "3 2 0.0" "%x" 0 1 2 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 7 1Param.
+LANG:10001 7 1Param.
+2
+LANG:10027 0 
+LANG:10001 0 
+1 "" ""  0 97 104 0 1 1 0 1 N "1_darkgrey"
+0 0 0 0 0 0 0 0
+0 "curve1" "" 4 0 0 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 "" ""  0 0.12 104 0 2 1 0 1 N "Red"
+0 0 0 0 0 0 0 0
+1 0 "%x" "" 0 1 0 0 
+E 1 0 1 0 90 1 20 7200
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

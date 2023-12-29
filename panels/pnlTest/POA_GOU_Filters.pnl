@@ -1,0 +1,2125 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 786 N "fon_static" 1
+"$b_isDetail"
+E E E E E 1 -1 -1 0  735.3333333333335 187.7537499999999
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+4 2421
+"LINE115"
+""
+1 798.7662201122703 364.6086438996026 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+221 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  798.7662201122703 364.6086438996026 798.7662201122703 538.5000000000001
+4 2420
+"LINE114"
+""
+1 578.0995534456035 364.2857142857144 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+220 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  578.0995534456035 364.2857142857144 578.0995534456035 539.5000000000002
+4 766
+"LINE82"
+""
+1 1371 541 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+131 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1371 541 1458 541
+4 750
+"LINE80"
+""
+1 1154 539 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+128 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1154 539 1241 539
+4 734
+"LINE78"
+""
+1 929.9999999999999 540 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+124 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  929.9999999999999 540 1020 540
+4 166
+"LINE32"
+""
+1 465 110 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  465 110 465 217.3833333333334
+4 167
+"LINE33"
+""
+1 715.9999999999999 110 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  715.9999999999999 110 715.9999999999999 217.3833333333334
+4 164
+"LINE31"
+""
+1 213 110 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  213 110 213 217.3833333333334
+4 47
+"LINE14"
+""
+1 229 230.6921403797846 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  229 230.6921403797846 229.0000000000002 382.9999999999999
+4 48
+"LINE29"
+""
+1 480.576960046209 218.3833333333334 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  480.576960046209 218.3833333333334 480.576960046209 380
+4 49
+"LINE30"
+""
+1 733.2811938913588 221.5469370771851 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  733.2811938913588 221.5469370771851 733.2811938913591 382.1428571428571
+4 165
+"LINE12"
+""
+1 40.00000000000003 110 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  40.00000000000003 110 1245.615384615387 110
+4 168
+"LINE34"
+""
+1 229.0000000000003 383 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  229.0000000000003 383 1566.406588003933 383
+4 169
+"LINE35"
+""
+1 907 383 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  907 383 907.0000000000002 520
+4 170
+"LINE36"
+""
+1 1124.913307112422 384.0000000000001 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1124.913307112422 384.0000000000001 1124.913307112422 520
+4 171
+"LINE37"
+""
+1 1345.659947558177 383 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1345.659947558177 383 1345.659947558177 521.0654205607476
+4 172
+"LINE38"
+""
+1 1566.406588003933 383 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1566.406588003933 383 1566.406588003933 518.0654205607475
+4 174
+"LINE40"
+""
+1 1124.913307112422 598.1666666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1124.913307112422 598.1666666666667 1124.913307112422 739.6081081081081
+1 2422 4 "" 67
+0
+1 2430 5 "" 67
+0
+1 2438 6 "" 67
+0
+1 2446 7 "" 48
+0
+1 2460 8 "" 48
+0
+1 2474 9 "" 48
+0
+1 2488 10 "" 1
+0
+1 2489 23 "" 34
+0
+1 2498 24 "" 34
+0
+1 2507 25 "" 34
+0
+1 2516 31 "" 155
+0
+1 2574 32 "" 155
+0
+1 2632 33 "" 155
+0
+1 2690 38 "" 48
+0
+1 2701 42 "" 48
+0
+1 2712 43 "" 48
+0
+1 2723 44 "" 48
+0
+4 633
+"LINE46"
+""
+1 1163.746640445755 624.2927927927931 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+84 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1163.746640445755 624.2927927927931 1163.746640445756 681.0495495495496
+4 693
+"LINE52"
+""
+1 1106.284555243334 596.1666666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+96 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1106.284555243334 596.1666666666667 1086.079973779089 625.1666666666665
+4 696
+"LINE55"
+""
+1 1143.542058981511 596.1666666666671 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+99 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1143.542058981511 596.1666666666671 1163.746640445755 625.1666666666669
+4 697
+"LINE56"
+""
+1 904.1666666666667 598.1666666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+100 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  904.1666666666667 598.1666666666667 904.1666666666667 739.6081081081084
+4 698
+"LINE57"
+""
+1 865.3333333333335 624.292792792793 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+101 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  865.3333333333335 624.292792792793 865.3333333333337 758.1666666666667
+4 699
+"LINE58"
+""
+1 942.9999999999998 624.2927927927932 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+102 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  942.9999999999998 624.2927927927932 943 681.0495495495497
+4 700
+"LINE59"
+""
+1 885.5379147975782 596.166666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+103 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  885.5379147975782 596.166666666667 865.3333333333334 625.1666666666667
+4 701
+"LINE60"
+""
+1 922.7954185357553 596.1666666666673 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+104 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  922.7954185357553 596.1666666666673 943.0000000000001 625.1666666666671
+4 707
+"LINE66"
+""
+1 1345.659947558177 598.1666666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+110 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1345.659947558177 598.1666666666667 1345.659947558177 739.6081081081084
+4 709
+"LINE68"
+""
+1 1384.49328089151 624.2927927927932 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+112 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1384.49328089151 624.2927927927932 1384.493280891511 681.0495495495497
+4 710
+"LINE69"
+""
+1 1327.031195689089 596.166666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+113 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1327.031195689089 596.166666666667 1306.826614224844 625.1666666666667
+4 711
+"LINE70"
+""
+1 1364.288699427266 596.1666666666673 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+114 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1364.288699427266 596.1666666666673 1384.49328089151 625.1666666666671
+4 712
+"LINE71"
+""
+1 1566.406588003933 598.1666666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+115 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1566.406588003933 598.1666666666667 1566.406588003933 739.6081081081084
+4 714
+"LINE73"
+""
+1 1605.239921337266 624.2927927927932 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+117 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1605.239921337266 624.2927927927932 1605.239921337266 681.0495495495497
+4 715
+"LINE74"
+""
+1 1547.777836134844 596.166666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+118 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1547.777836134844 596.166666666667 1527.5732546706 625.1666666666667
+4 716
+"LINE75"
+""
+1 1585.035339873021 596.1666666666673 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+119 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1585.035339873021 596.1666666666673 1605.239921337266 625.1666666666671
+1 2734 45 "" 34
+0
+1 2743 46 "" 34
+0
+1 2752 47 "" 34
+0
+1 2761 48 "" 34
+0
+1 2770 49 "" 34
+0
+1 2779 50 "" 34
+0
+1 2788 51 "" 34
+0
+1 2797 52 "" 34
+0
+1 2806 53 "" 14
+0
+4 749
+"LINE79"
+""
+1 1020 363.9999999999999 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+126 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1020 363.9999999999999 1020 540
+1 2820 54 "" 48
+0
+4 751
+"LINE81"
+""
+1 1241 364.9999999999998 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+129 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1241 364.9999999999998 1241 539
+1 2834 55 "" 48
+0
+4 767
+"LINE83"
+""
+1 1458 365.3658542274054 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+132 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1458 365.3658542274054 1458 541
+1 2848 56 "" 48
+0
+4 782
+"LINE84"
+""
+1 1597 537 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+134 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1597 537 1684 537
+4 783
+"LINE85"
+""
+1 1684 364.5210901154829 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+135 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1684 364.5210901154829 1684 537
+1 2862 57 "" 48
+0
+6 798
+"RECTANGLE23"
+""
+1 1110 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+136 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "5"
+E E 0 3 3 2 1 E 0.6363636363636364 0 1 147.6363636363637 538.1666666666667 1 E 1110 220 1220 230
+4 799
+"LINE86"
+""
+1 1086.079973779089 624.2927927927926 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+137 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1086.079973779089 624.2927927927926 1086.079973779089 758.1666666666664
+6 800
+"RECTANGLE24"
+""
+1 1110 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+138 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "5"
+E E 0 3 3 2 1 E 0.6363636363636364 0 1 368.3830040821194 538.1666666666663 1 E 1110 220 1220 230
+4 801
+"LINE87"
+""
+1 1306.826614224844 624.2927927927929 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+139 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1306.826614224844 624.2927927927929 1306.826614224844 758.1666666666665
+6 802
+"RECTANGLE25"
+""
+1 1110 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+140 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "5"
+E E 0 3 3 2 1 E 0.6363636363636364 0 1 589.1296445278745 538.1666666666665 1 E 1110 220 1220 230
+4 803
+"LINE88"
+""
+1 1527.5732546706 624.2927927927929 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+141 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1527.5732546706 624.2927927927929 1527.5732546706 758.1666666666665
+6 804
+"RECTANGLE26"
+""
+1 1110 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+142 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "5"
+E E 0 3 3 2 1 E 0.6363636363636364 0 1 809.8762849736299 538.1666666666665 1 E 1110 220 1220 230
+1 2876 58 "" 14
+0
+1 2890 59 "" 14
+0
+1 2904 60 "" 14
+0
+1 2918 61 "" 34
+0
+1 2927 62 "" 34
+0
+1 2936 63 "" 34
+0
+1 2945 64 "" 34
+0
+1 2954 69 "" 14
+0
+1 2968 70 "" 14
+0
+1 2982 71 "" 14
+0
+1 2996 72 "" 14
+0
+1 3010 73 "" 1
+0
+1 3015 74 "" 1
+0
+1 3020 75 "" 1
+0
+1 3025 76 "" 1
+0
+4 2050
+"LINE94"
+""
+1 980 112 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+182 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  980 112 980 219.3833333333334
+4 2051
+"LINE95"
+""
+1 1245.615384615387 112 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+183 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1245.615384615387 112 1245.615384615387 219.3833333333334
+4 2052
+"LINE96"
+""
+1 995.576960046209 220.3833333333334 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+184 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  995.576960046209 220.3833333333334 995.576960046209 382
+4 2053
+"LINE97"
+""
+1 1262.896578506746 221.404079934328 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+185 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1262.896578506746 221.404079934328 1262.896578506746 382
+1 3030 77 "" 67
+0
+1 3038 78 "" 67
+0
+1 3046 79 "" 48
+0
+1 3060 80 "" 48
+0
+1 3074 81 "" 34
+0
+1 3083 82 "" 34
+0
+1 3092 83 "" 155
+0
+1 3150 84 "" 155
+0
+4 2232
+"LINE98"
+""
+1 711.7662201122703 538.5000000000001 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+202 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  711.7662201122703 538.5000000000001 798.7662201122703 538.5000000000001
+4 2233
+"LINE99"
+""
+1 487.7662201122703 539.5000000000001 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+203 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  487.7662201122703 539.5000000000001 578.0995534456034 539.5000000000001
+4 2234
+"LINE100"
+""
+1 464.7662201122703 382.5000000000001 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+204 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  464.7662201122703 382.5000000000001 464.7662201122705 519.5000000000001
+4 2235
+"LINE101"
+""
+1 682.6795272246923 383.5000000000002 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+205 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  682.6795272246923 383.5000000000002 682.6795272246923 519.5000000000002
+4 2236
+"LINE102"
+""
+1 682.6795272246923 597.6666666666669 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+206 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  682.6795272246923 597.6666666666669 682.6795272246923 739.1081081081082
+1 3208 85 "" 48
+0
+1 3219 86 "" 48
+0
+4 2253
+"LINE103"
+""
+1 721.5128605580253 623.7927927927932 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+207 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  721.5128605580253 623.7927927927932 721.5128605580262 680.5495495495497
+4 2254
+"LINE104"
+""
+1 664.0507753556042 595.6666666666669 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+208 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  664.0507753556042 595.6666666666669 643.8461938913592 624.6666666666666
+4 2255
+"LINE105"
+""
+1 701.3082790937813 595.6666666666672 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+209 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  701.3082790937813 595.6666666666672 721.5128605580253 624.666666666667
+4 2256
+"LINE106"
+""
+1 461.932886778937 597.6666666666669 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+210 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  461.932886778937 597.6666666666669 461.932886778937 739.1081081081085
+4 2257
+"LINE107"
+""
+1 423.0995534456038 623.7927927927931 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+211 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  423.0995534456038 623.7927927927931 423.099553445604 757.6666666666669
+4 2258
+"LINE108"
+""
+1 500.76622011227 623.7927927927933 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+212 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  500.76622011227 623.7927927927933 500.7662201122703 680.5495495495499
+4 2259
+"LINE109"
+""
+1 443.3041349098485 595.6666666666671 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+213 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  443.3041349098485 595.6666666666671 423.0995534456036 624.6666666666669
+4 2260
+"LINE110"
+""
+1 480.5616386480256 595.6666666666674 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+214 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  480.5616386480256 595.6666666666674 500.7662201122704 624.6666666666672
+1 3230 87 "" 34
+0
+1 3239 88 "" 34
+0
+1 3248 89 "" 34
+0
+1 3257 90 "" 34
+0
+1 3266 91 "" 14
+0
+1 3280 92 "" 48
+0
+1 3294 93 "" 48
+0
+6 2306
+"RECTANGLE27"
+""
+1 1110 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+215 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "5"
+E E 0 3 3 2 1 E 0.6363636363636364 0 1 -294.597416251366 537.6666666666669 1 E 1110 220 1220 230
+4 2307
+"LINE111"
+""
+1 643.8461938913592 623.7927927927927 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+216 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  643.8461938913592 623.7927927927927 643.8461938913592 757.6666666666665
+6 2308
+"RECTANGLE28"
+""
+1 1110 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+217 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "5"
+E E 0 3 3 2 1 E 0.6363636363636364 0 1 -73.85077580561034 537.6666666666664 1 E 1110 220 1220 230
+4 2309
+"LINE112"
+""
+1 864.5928343371141 625.1666666666667 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+218 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  864.5928343371141 625.1666666666667 864.5928343371141 757.6666666666667
+1 3308 94 "" 14
+0
+1 3322 95 "" 34
+0
+1 3331 96 "" 34
+0
+1 3340 97 "" 14
+0
+1 3354 98 "" 14
+0
+1 3368 99 "" 1
+0
+1 3373 100 "" 1
+0
+4 2419
+"LINE113"
+""
+1 578.0995534456033 364.2857142857143 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+219 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  578.0995534456033 364.2857142857143 1780.5 364.2857142857143
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 2427 4 "1" 1
+0
+1 2435 5 "1" 1
+0
+1 2443 6 "1" 1
+0
+1 2455 7 "" 8
+0
+1 2469 8 "" 8
+0
+1 2483 9 "" 8
+0
+1 2495 23 "1" 1
+0
+1 2504 24 "1" 1
+0
+1 2513 25 "1" 1
+0
+1 2558 31 "0" 1
+0
+1 2616 32 "0" 1
+0
+1 2674 33 "0" 1
+0
+1 2698 38 "1" 1
+0
+1 2709 42 "1" 1
+0
+1 2720 43 "1" 1
+0
+1 2731 44 "1" 1
+0
+1 2740 45 "1" 1
+0
+1 2749 46 "1" 1
+0
+1 2758 47 "1" 1
+0
+1 2767 48 "1" 1
+0
+1 2776 49 "1" 1
+0
+1 2785 50 "1" 1
+0
+1 2794 51 "1" 1
+0
+1 2803 52 "1" 1
+0
+1 2809 53 "" 33
+0
+1 2829 54 "" 8
+0
+1 2843 55 "" 8
+0
+1 2857 56 "" 8
+0
+1 2871 57 "" 8
+0
+1 2879 58 "" 33
+0
+1 2893 59 "" 33
+0
+1 2907 60 "" 33
+0
+1 2924 61 "1" 1
+0
+1 2933 62 "1" 1
+0
+1 2942 63 "1" 1
+0
+1 2951 64 "1" 1
+0
+1 2958 69 "" 3
+0
+1 2972 70 "" 3
+0
+1 2986 71 "" 3
+0
+1 3000 72 "" 3
+0
+1 3035 77 "1" 1
+0
+1 3043 78 "1" 1
+0
+1 3055 79 "" 8
+0
+1 3069 80 "" 8
+0
+1 3080 81 "1" 1
+0
+1 3089 82 "1" 1
+0
+1 3134 83 "0" 1
+0
+1 3192 84 "0" 1
+0
+1 3216 85 "1" 1
+0
+1 3227 86 "1" 1
+0
+1 3236 87 "1" 1
+0
+1 3245 88 "1" 1
+0
+1 3254 89 "1" 1
+0
+1 3263 90 "1" 1
+0
+1 3269 91 "" 33
+0
+1 3289 92 "" 8
+0
+1 3303 93 "" 8
+0
+1 3311 94 "" 33
+0
+1 3328 95 "1" 1
+0
+1 3337 96 "1" 1
+0
+1 3344 97 "" 3
+0
+1 3358 98 "" 3
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 2568 31 "" 114
+0
+1 2626 32 "" 114
+0
+1 2684 33 "" 114
+0
+1 2819 53 "" 29
+0
+1 2889 58 "" 29
+0
+1 2903 59 "" 29
+0
+1 2917 60 "" 29
+0
+1 2967 69 "" 29
+0
+1 2981 70 "" 29
+0
+1 2995 71 "" 29
+0
+1 3009 72 "" 29
+0
+1 3144 83 "" 114
+0
+1 3202 84 "" 114
+0
+1 3279 91 "" 29
+0
+1 3321 94 "" 29
+0
+1 3353 97 "" 29
+0
+1 3367 98 "" 29
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 2429 4 "" 14
+0
+1 2437 5 "" 14
+0
+1 2445 6 "" 14
+0
+1 2458 7 "" 14
+0
+1 2472 8 "" 14
+0
+1 2486 9 "" 14
+0
+1 2497 23 "" 14
+0
+1 2506 24 "" 14
+0
+1 2515 25 "" 14
+0
+1 2573 31 "" 68
+0
+1 2631 32 "" 68
+0
+1 2689 33 "" 68
+0
+1 2700 38 "" 14
+0
+1 2711 42 "" 14
+0
+1 2722 43 "" 14
+0
+1 2733 44 "" 14
+0
+1 2742 45 "" 14
+0
+1 2751 46 "" 14
+0
+1 2760 47 "" 14
+0
+1 2769 48 "" 14
+0
+1 2778 49 "" 14
+0
+1 2787 50 "" 14
+0
+1 2796 51 "" 14
+0
+1 2805 52 "" 14
+0
+1 2832 54 "" 14
+0
+1 2846 55 "" 14
+0
+1 2860 56 "" 14
+0
+1 2874 57 "" 14
+0
+1 2926 61 "" 14
+0
+1 2935 62 "" 14
+0
+1 2944 63 "" 14
+0
+1 2953 64 "" 14
+0
+1 3037 77 "" 14
+0
+1 3045 78 "" 14
+0
+1 3058 79 "" 14
+0
+1 3072 80 "" 14
+0
+1 3082 81 "" 14
+0
+1 3091 82 "" 14
+0
+1 3149 83 "" 68
+0
+1 3207 84 "" 68
+0
+1 3218 85 "" 14
+0
+1 3229 86 "" 14
+0
+1 3238 87 "" 14
+0
+1 3247 88 "" 14
+0
+1 3256 89 "" 14
+0
+1 3265 90 "" 14
+0
+1 3292 92 "" 14
+0
+1 3306 93 "" 14
+0
+1 3330 95 "" 14
+0
+1 3339 96 "" 14
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 4 "PANEL_REF202" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 29 1 0 1 -724.5523721640482 17.3663395301174
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""GOU_MTA101H"
+3 5 "PANEL_REF203" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 30 1 0 1 -472.319038830715 17.36633953011737
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""GOU_MTA101G"
+3 6 "PANEL_REF204" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 31 1 0 1 -220.0857054973818 17.3663395301174
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""GOU_MTA101F"
+3 7 "PANEL_REF205" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 32 1 0 1 -237.8516666666667 120.2460452533301
+1
+"$dpe_value""GOU_CV101H"
+3 8 "PANEL_REF206" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 33 1 0 1 14.61666666666684 120.2460452533301
+1
+"$dpe_value""GOU_CV101G"
+3 9 "PANEL_REF207" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 34 1 0 1 266.9247005294807 120.2460452533301
+1
+"$dpe_value""GOU_CV101F"
+3 10 "PANEL_REF219" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 410 60 T 35 1 0 1 40 0
+1
+"$text""\"Газоочистная установка №5. Вытяжные вентиляторы и фильтры\""
+3 23 "PANEL_REF232" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 47 1 0 1 -246.9200146462281 -173.211073988633
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131D"
+3 24 "PANEL_REF233" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 48 1 0 1 4.696652020438762 -173.211073988633
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131D"
+3 25 "PANEL_REF234" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 49 1 0 1 255.2436743028406 -173.211073988633
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131D"
+3 31 "PANEL_REF255" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 140 550 T 59 1 0 1 -34.99999999999991 -274.3361858706825
+5
+"$dpe1""GOU_IT101H"
+"$dpe2""GOU_TT101H"
+"$dpe3""GOU_TT102H"
+"$dpe4""GOU_VT101H"
+"$dpe5""GOU_VT102H"
+3 32 "PANEL_REF256" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 140 550 T 60 1 0 1 217.4683333333336 -274.3361858706825
+5
+"$dpe1""GOU_IT101G"
+"$dpe2""GOU_TT101G"
+"$dpe3""GOU_TT102G"
+"$dpe4""GOU_VT101G"
+"$dpe5""GOU_VT102G"
+3 33 "PANEL_REF257" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 140 550 T 61 1 0 1 469.7763671961475 -274.3361858706825
+5
+"$dpe1""GOU_IT101F"
+"$dpe2""GOU_TT101F"
+"$dpe3""GOU_TT102F"
+"$dpe4""GOU_VT101F"
+"$dpe5""GOU_VT102F"
+3 38 "PANEL_REF215" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 66 1.374631268436574 0 1.271073943661973 -913.8977384464049 332.0138212803947
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101D"
+3 42 "PANEL_REF258" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 70 1.374631268436574 0 1.271073943661973 -693.1510980006494 332.0138212803946
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101C"
+3 43 "PANEL_REF259" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 71 1.374631268436574 0 1.271073943661973 -472.4044575548944 332.0138212803946
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101B"
+3 44 "PANEL_REF260" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 72 1.374631268436574 0 1.271073943661973 -251.6578171091387 332.0138212803946
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101A"
+3 45 "PANEL_REF261" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 73 1 0 1 -31 68.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV111D"
+3 46 "PANEL_REF262" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 74 1 0 1 9 14.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113D"
+3 47 "PANEL_REF269" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 90 1 0 1 190 68.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV111C"
+3 48 "PANEL_REF270" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 91 1 0 1 230 14.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113C"
+3 49 "PANEL_REF271" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 92 1 0 1 410 69.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV111B"
+3 50 "PANEL_REF272" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 93 1 0 1 450 15.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113B"
+3 51 "PANEL_REF273" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 94 1 0 1 631 68.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV111A"
+3 52 "PANEL_REF274" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 95 1 0 1 671 14.16666666666674
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113A"
+3 53 "REF_GOU_FT154_Nm" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 120 1 0 1 842.7684569250475 227.1291473099936
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT101D_Nm"
+3 54 "PANEL_REF275" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 125 1 0 1 554.199973779089 217.8771490839198
+1
+"$dpe_value""GOU_CV101D"
+3 55 "PANEL_REF276" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 127 1 0 1 774.6633071124221 217.8771490839198
+1
+"$dpe_value""GOU_CV101C"
+3 56 "PANEL_REF277" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 130 1 0 1 991.6633071124221 217.8771490839198
+1
+"$dpe_value""GOU_CV101B"
+3 57 "PANEL_REF278" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 133 1 0 1 1217.663307112422 217.8771490839198
+1
+"$dpe_value""GOU_CV101A"
+3 58 "PANEL_REF279" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 144 1 0 1 1063.515097370803 227.1291473099936
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT101C_Nm"
+3 59 "PANEL_REF280" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 145 1 0 1 1282.792266448856 227.1291473099936
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT101B_Nm"
+3 60 "PANEL_REF281" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 146 1 0 1 1505.008378262314 227.1291473099936
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT101A_Nm"
+3 61 "PANEL_REF282" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 147 1 0 1 522.3951043674554 225.6160753906919
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV104D"
+3 62 "PANEL_REF283" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 148 1 0 1 751.3951043674547 224.7392003906919
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV104C"
+3 63 "PANEL_REF284" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 149 1 0 1 968.8883852589659 226.6160753906918
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV104B"
+3 64 "PANEL_REF285" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 150 1 0 1 1194.395104367455 222.7392003906919
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV104A"
+3 69 "PANEL_REF290" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 463.3333333333342 393.2116534512065 T 154 1 0 1 396.6666666666658 19.78834654879347
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT101D"
+3 70 "PANEL_REF291" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 463.3333333333342 393.2116534512065 T 155 1 0 1 619.4133071124213 19.78834654879347
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT101C"
+3 71 "PANEL_REF292" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 463.3333333333342 393.2116534512065 T 156 1 0 1 840.8385189867478 22.23759846211749
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT101B"
+3 72 "PANEL_REF293" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 463.3333333333342 393.2116534512065 T 157 1 0 1 1060.906588003932 19.78834654879347
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT101A"
+3 73 "PANEL_REF294" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Rele.pnl" 821.0491772721851 371.4272950163401 T 159 1 0 1 182.9508227278155 159.9627378783967
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL105D"
+3 74 "PANEL_REF295" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Rele.pnl" 821.0491772721851 371.4272950163401 T 160 1 0 1 400.8641298402368 159.9627378783966
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL105C"
+3 75 "PANEL_REF296" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Rele.pnl" 821.0491772721851 371.4272950163401 T 161 1 0 1 621.6107702859917 158.0365011294834
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL105B"
+3 76 "PANEL_REF297" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Rele.pnl" 821.0491772721851 371.4272950163401 T 162 1 0 1 842.950822727815 159.9627378783966
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL105A"
+3 77 "PANEL_REF306" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 174 1 0 1 42.68096116928501 19.36633953011737
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""GOU_MTA101G"
+3 78 "PANEL_REF307" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 175 1 0 1 309.5296791180054 19.3663395301174
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""GOU_MTA101F"
+3 79 "PANEL_REF308" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 176 1 0 1 529.6166666666668 122.2460452533301
+1
+"$dpe_value""GOU_CV101G"
+3 80 "PANEL_REF309" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 177 1 0 1 796.5400851448679 122.2460452533301
+1
+"$dpe_value""GOU_CV101F"
+3 81 "PANEL_REF310" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 178 1 0 1 519.6966520204387 -171.211073988633
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131D"
+3 82 "PANEL_REF311" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 179 1 0 1 784.8590589182279 -171.211073988633
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131D"
+3 83 "PANEL_REF312" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 140 550 T 180 1 0 1 732.4683333333336 -272.3361858706825
+5
+"$dpe1""GOU_IT101G"
+"$dpe2""GOU_TT101G"
+"$dpe3""GOU_TT102G"
+"$dpe4""GOU_VT101G"
+"$dpe5""GOU_VT102G"
+3 84 "PANEL_REF313" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 140 550 T 181 1 0 1 999.3917518115347 -272.3361858706825
+5
+"$dpe1""GOU_IT101F"
+"$dpe2""GOU_TT101F"
+"$dpe3""GOU_TT102F"
+"$dpe4""GOU_VT101F"
+"$dpe5""GOU_VT102F"
+3 85 "PANEL_REF314" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 186 1.374631268436574 0 1.271073943661973 -1356.131518334135 331.5138212803948
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101D"
+3 86 "PANEL_REF315" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 187 1.374631268436574 0 1.271073943661973 -1135.384877888379 331.5138212803947
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101C"
+3 87 "PANEL_REF316" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 188 1 0 1 -473.2337798877297 67.66666666666686
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV111D"
+3 88 "PANEL_REF317" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 189 1 0 1 -433.2337798877297 13.66666666666686
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113D"
+3 89 "PANEL_REF318" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 190 1 0 1 -252.2337798877297 67.66666666666686
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV111C"
+3 90 "PANEL_REF319" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 880 600 T 191 1 0 1 -212.2337798877297 13.66666666666686
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113C"
+3 91 "PANEL_REF320" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 192 1 0 1 400.5346770373178 226.6291473099936
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT101D_Nm"
+3 92 "PANEL_REF321" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 193 1 0 1 111.9661938913592 217.37714908392
+1
+"$dpe_value""GOU_CV101D"
+3 93 "PANEL_REF322" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 194 1 0 1 332.4295272246924 217.37714908392
+1
+"$dpe_value""GOU_CV101C"
+3 94 "PANEL_REF323" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 195 1 0 1 621.2813174830733 226.6291473099936
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT101C_Nm"
+3 95 "PANEL_REF324" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 196 1 0 1 80.16132447972564 225.116075390692
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV104D"
+3 96 "PANEL_REF325" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 197 1 0 1 309.161324479725 224.239200390692
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV104C"
+3 97 "PANEL_REF326" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 463.3333333333342 393.2116534512065 T 198 1 0 1 -45.56711322106395 19.28834654879358
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT101D"
+3 98 "PANEL_REF327" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 463.3333333333342 393.2116534512065 T 199 1 0 1 177.1795272246916 19.28834654879358
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT101C"
+3 99 "PANEL_REF328" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Rele.pnl" 821.0491772721851 371.4272950163401 T 200 1 0 1 -259.2829571599142 159.4627378783968
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL105D"
+3 100 "PANEL_REF329" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Rele.pnl" 821.0491772721851 371.4272950163401 T 201 1 0 1 -41.36965004749294 159.4627378783967
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL105C"
+0

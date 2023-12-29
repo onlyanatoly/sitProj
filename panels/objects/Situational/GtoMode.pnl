@@ -1,0 +1,270 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 138 97 N "_3DFace" 1
+"$dpeMode"
+E E E E E 1 -1 -1 0  63.80000000000004 48.48547008547011
+""0  1
+E "int MODE_OFF = 0;
+int MODE_MEST = 1;
+int MODE_AUTO = 2;
+int MODE_CENTR = 3;
+int MODE_REZERV = 4;
+
+string getColor(int value)
+{
+  string color;
+  switch(value)
+  {
+    case (MODE_OFF):
+    {
+      //color = \"fon_alarm\";
+      color = \"fon_warn\";
+      break;
+    }
+    case (MODE_MEST):
+    {
+      color = \"fon_static\";
+      break;
+    }
+    case (MODE_AUTO):
+    {
+      color = \"fon_static\";
+      break;
+    }
+    case (MODE_CENTR):
+    {
+      color = \"fon_static\";
+      break;
+    }
+    case (MODE_REZERV):
+    {
+      color = \"fon_warn\";
+      break;
+    }
+    default:
+    {
+      color = \"fon_nan\";
+      break;
+    }
+  }
+  return color;
+}
+
+string getModeText(int value)
+{
+  string text;
+  switch(value)
+  {
+    case (MODE_OFF):
+    {
+      text = \"Ц\";
+      break;
+    }
+    case (MODE_MEST):
+    {
+      text = \"М\";
+      break;
+    }
+    case (MODE_AUTO):
+    {
+      text = \"А\";
+      break;
+    }
+    case (MODE_CENTR):
+    {
+      text = \"Ц\";
+      break;
+    }
+    case (MODE_REZERV):
+    {
+      text = \"Р\";
+      break;
+    }
+    default:
+    {
+      text = \"\";
+      break;
+    }
+  }
+  return text;
+}
+" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "96.0236"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 2
+"RECTANGLE1"
+""
+1 50 20 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpeMode+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            $dpeMode+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, int iNewValue)
+{
+    setValue(\"\", \"backCol\", getColor(iNewValue));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:OO1_GTO_FIRE1_ER_SECTION.}
+// DPConfig {:_online.._value}
+// DPType {int}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {less}
+// Operant1 {0}
+// Color1 {10_red}
+// Operator2 {else}
+// Operant2 {}
+// Color2 {10_red}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 0.671875 0 0.9230769230769231 22.65625 16.53846153846154 1 E 50 20 66 33
+2 1
+"mode"
+""
+1 60.25 34.12500000000001 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  EP_textFieldIn();
+  /*if ($dpeMode!=\"\")
+  {
+    EP_textFieldIn();
+  }
+  else
+  {
+    this.visible(false);
+  }*/
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpeMode+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpeMode+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", getModeText(fNewValue) );
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 56 34.61047008547011 64 47
+0 2 2 "0s" 0 0 0 193 0 0  60.0833333333334 34.61047008547011 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 1 R
+LANG:10001 1 R
+LANG:10000 4 Text
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

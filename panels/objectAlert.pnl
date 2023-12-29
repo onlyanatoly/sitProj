@@ -1,0 +1,376 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 194 158 N "_3DFace" 1
+"$DP"
+E E E E E 1 -1 -1 0  10 34
+""0  1
+E "dyn_float limits_old;" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+30 63
+"FRAME5"
+""
+1 10 34 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+62 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 2 1 E 0.6592013566726578 0 1.293103448275862 3.407986433273422 -43.96551724137931 0 E 10 34 281 151
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0 2
+LANG:10027 14 Уставки
+LANG:10001 14 Уставки
+14 80
+"MAX1"
+""
+1 95 131.0731707317073 E E E 1 E 1 E N "_WindowText" E N "Yellow" E E
+ E E
+79 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  68 48 172 76
+2 "0.0f" 1 0 0 2 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  float buff;
+  dpGet( $DP+\".PV:_alert_hdl.3._u_limit\", buff);  
+  setValue(\"\", \"text\", buff);
+  limits_old[3]=buff;
+}
+" 0
+ E
+14 82
+"MAX2"
+""
+1 93.33333333333334 132.0731707317073 E E E 1 E 1 E N "_WindowText" E N "Red" E E
+ E E
+81 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  68 15 172 43
+2 "0.0f" 1 0 0 2 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{ 
+  float buff;
+  dpGet( $DP+\".PV:_alert_hdl.4._u_limit\", buff);  
+  setValue(\"\", \"text\", buff);
+  limits_old[4]=buff;
+}
+" 0
+ E
+14 85
+"MIN2"
+""
+1 93.33333333333334 230.5731707317073 E E E 1 E 1 E N "_WindowText" E N "Red" E E
+ E E
+84 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  68 114 172 142
+2 "0.0f" 1 0 0 2 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  float buff;
+  dpGet( $DP+\".PV:_alert_hdl.1._u_limit\", buff);  
+  setValue(\"\", \"text\", buff);
+  limits_old[1]=buff;
+}
+" 0
+ E
+14 86
+"MIN1"
+""
+1 95 227.5731707317073 E E E 1 E 1 E N "_WindowText" E N "Yellow" E E
+ E E
+85 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  68 81 172 109
+2 "0.0f" 1 0 0 2 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  float buff;
+  dpGet( $DP+\".PV:_alert_hdl.2._u_limit\", buff);  
+  setValue(\"\", \"text\", buff);
+  limits_old[2]=buff;
+}
+" 0
+ E
+13 87
+"PUSH_BUTTON3"
+""
+1 155 29.53658536585365 E E E 1 E 0 E N "_ButtonText" E N "_Button" E E
+ E E
+86 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+2
+"sizePolicy" "Minimum Fixed"
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0  13 162.5365853658537 107 195.5365853658537
+
+T 
+2
+LANG:10027 16 Изменить
+LANG:10001 16 Изменить
+"main(mapping event)
+{
+float LRANGE,HRANGE;
+dyn_float limits;
+dyn_string alerttext;
+dyn_string alertclass;
+dyn_bool limitsincl;
+int rc;
+dyn_errClass err;
+
+
+getValue(\"MAX2\",\"text\",limits[4]);
+getValue(\"MAX1\",\"text\",limits[3]);
+getValue(\"MIN1\",\"text\",limits[2]);
+getValue(\"MIN2\",\"text\",limits[1]);
+rc = dpSetWait(
+                
+                $DP+\".PV:_alert_hdl.1._u_limit\", limits[1],
+                $DP+\".PV:_alert_hdl.2._u_limit\", limits[2],
+                $DP+\".PV:_alert_hdl.3._u_limit\", limits[3],
+                $DP+\".PV:_alert_hdl.4._u_limit\", limits[4]
+                );
+err = getLastError();
+
+if(dynlen(err)>0)
+
+{
+
+throwError(err);
+
+}
+
+DebugN(\"done\", rc);
+}
+
+
+
+" 0
+ E E E
+2 89
+"PRIMITIVE_TEXT2"
+""
+1 20 22.07317073170732 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+88 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20 22.07317073170732 66 37
+0 2 2 "0s" 0 0 0 192 0 0  20 22.07317073170732 1
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0 2
+LANG:10027 9 МАКС2
+LANG:10001 9 МАКС2
+2 90
+"PRIMITIVE_TEXT3"
+""
+1 20 55.07317073170729 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+89 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20 55.07317073170729 66 70
+0 2 2 "0s" 0 0 0 192 0 0  20 55.07317073170729 1
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0 2
+LANG:10027 9 МАКС1
+LANG:10001 9 МАКС1
+2 91
+"PRIMITIVE_TEXT4"
+""
+1 20 88.07317073170731 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+90 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20 88.07317073170731 58 103
+0 2 2 "0s" 0 0 0 192 0 0  20 88.07317073170731 1
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0 2
+LANG:10027 7 МИН1
+LANG:10001 7 МИН1
+2 92
+"PRIMITIVE_TEXT5"
+""
+1 20 121.0731707317073 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+91 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 20 121.0731707317073 58 136
+0 2 2 "0s" 0 0 0 192 0 0  20 121.0731707317073 1
+2
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+0 2
+LANG:10027 7 МИН2
+LANG:10001 7 МИН2
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

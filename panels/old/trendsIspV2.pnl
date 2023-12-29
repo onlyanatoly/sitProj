@@ -1,0 +1,373 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 559 296 N "_3DFace" 1
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 40
+""0  1
+E "/**
+  Изначально нужно выставить настройки для скрытых полей: colorForZero, colorForOne, letterForZero, letterForOne
+  */
+
+#uses \"Situational_util.ctl\"
+
+string curveForZero = \"curve1\";
+string curveForOne = \"curve2\";
+
+void begin()
+{
+  //langString lmin = min.text();
+  //int imin = lmin.text();
+  int imin = min.value;
+  time tEndtime = getCurrentTime();
+  string sEndtime = tEndtime;
+  time tBegtime = tEndtime-(imin * 60);
+  string sBegtime = tBegtime;
+  //string dpStr = getDpFromFullName(dp);
+  buildTrend(tBegtime, tEndtime, colorForZero.text(), colorForOne.text(), letterForZero.text(), letterForOne.text());
+  dpConnect(\"work\",$dpe_value+\".\"+dpeTail.text);
+  //закрываем последний
+  //myTrend.curveValue(oldcurv, 0, getCurrentTime(), 0);
+}
+
+void buildTrend(time tBegtime, time tEndtime, string scolorForZero, string scolorForOne, string sletterForZero, string sletterForOne)
+{
+  myTrend.scrollPercent(0);
+  myTrend.visibleTimeRange(0,tBegtime,tEndtime);
+  //Dynamically added the Event Curves TagVal1, PreProduction, TagVal2
+  myTrend.addCurve(0,curveForZero);
+  myTrend.addCurve(0,curveForOne);
+
+  myTrend.curveType(curveForZero,4);
+  myTrend.curveType(curveForOne,4);
+
+  myTrend.curveLegendName(curveForZero, sletterForZero);
+  myTrend.curveLegendName(curveForOne, sletterForOne);
+
+  //Display Height/Area of the Event Curves
+  myTrend.curveMin(curveForZero,0.0);
+  myTrend.curveMax(curveForZero,100.0);
+  myTrend.curveMin(curveForOne,0.0);
+  myTrend.curveMax(curveForOne,100.0);
+
+  //Design Settings: Colors, Line Types, Fillings, etc.
+  myTrend.backCol(\"white\");
+  myTrend.curveFillType(curveForZero, \"[solid]\");
+  myTrend.curveLineType(curveForZero, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+
+  myTrend.curveFillType(curveForOne, \"[solid]\");
+  myTrend.curveLineType(curveForOne, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+
+  myTrend.curveColor(curveForZero, scolorForZero);
+  myTrend.curveColor(curveForOne, scolorForOne);
+
+  myTrend.curveFillColor(curveForZero, scolorForZero);
+  myTrend.curveFillColor(curveForOne, scolorForOne);
+
+  //mandatory for displaying the Event Curves!
+  myTrend.curveFilled(curveForZero,1);
+  myTrend.curveFilled(curveForOne,1);
+  myTrend.maxRulerCount(0, 0);
+}
+
+void reloadTrend(string dpStr, string sBegtime, string sEndtime, string sletterForZero, string sletterForOne)
+{
+  int i;
+  string sql = \"SELECT '_original.._value', '_original.._stime' FROM '\"+dpStr+\"' TIMERANGE(\\\"\"+sBegtime+\"\\\",\\\"\"+sEndtime+\"\\\",1,1)\";
+  dyn_dyn_anytype tab;
+  string curv, oldcurv, yvalue;
+  time ttime;
+  dpQuery(sql,tab);
+  for(i=2;i<=dynlen(tab);i++)
+  {
+    if (tab[i][2]==1)
+    {
+      curv=curveForZero;
+      yvalue = \"{\\\"value\\\":1, \\\"text\\\":\\\"\"+sletterForOne+\"\\\", \\\"alignment\\\":\\\"AlignVCenter\\\"}\";
+    }
+    else if (tab[i][2]==0)
+    {
+      curv=curveForOne;
+      yvalue = \"{\\\"value\\\":1, \\\"text\\\":\\\"\"+sletterForZero+\"\\\", \\\"alignment\\\":\\\"AlignVCenter\\\"}\";
+    }
+
+    if (i==2)
+    {//самый первый
+      myTrend.curveValue(curv, yvalue, tab[i][3], 0);
+    }
+    else
+    {
+      myTrend.curveValue(oldcurv, 0, tab[i][3], 0);
+      myTrend.curveValue(curv, yvalue, tab[i][3], 0);
+    }
+    oldcurv = curv;
+  }
+}
+
+void changeInterval(int interval)
+{
+  myTrend.visibleTimeRange(0,tBegtime,tEndtime);
+}
+
+void work(string dp, int value)
+{
+  int imin = min.value;
+  time tEndtime = getCurrentTime();
+  string sEndtime = tEndtime;
+  time tBegtime = tEndtime-(imin * 60);
+  myTrend.visibleTimeRange(0,tBegtime,tEndtime);
+  string sBegtime = tBegtime;
+  string dpStr = getDpFromFullName(dp);
+  reloadTrend(dpStr, sBegtime, sEndtime, letterForZero.text(), letterForOne.text());
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+23 1
+"myTrend"
+""
+1 35 21.50000000000001 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  13 11.5 516 47.5
+5 "main()
+{
+  begin();
+}" 0
+ E E 1 498 N {0,0,0} 0 0 1 0 1 0 1 0 "#1_1" "" 0 2 0 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+0 "" ""  1 0 0 1 0 1 N "Red"
+0 0 0 0 0 0 0 0
+0 
+E 1 0 0 0 90 0 20 7200
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+2 2
+"colorForOne"
+""
+1 18 102 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 18 102 90 117
+0 2 2 "0s" 0 0 0 192 0 0  18 102 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 colorForOne
+LANG:10001 11 colorForOne
+2 3
+"colorForZero"
+""
+1 17 83 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 17 83 92 98
+0 2 2 "0s" 0 0 0 192 0 0  17 83 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 12 colorForZero
+LANG:10001 11 colorForOne
+2 4
+"letterForZero"
+""
+1 114 83 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 114 83 191 98
+0 2 2 "0s" 0 0 0 192 0 0  114 83 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 13 letterForZero
+LANG:10001 11 colorForOne
+2 5
+"letterForOne"
+""
+1 113 99 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 113 99 187 114
+0 2 2 "0s" 0 0 0 192 0 0  113 99 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 12 letterForOne
+LANG:10001 11 colorForOne
+2 7
+"dpeTail"
+""
+1 198 99 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 198 99 242 114
+0 2 2 "0s" 0 0 0 192 0 0  198 99 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 7 dpeTail
+LANG:10001 11 colorForOne
+21 11
+"min"
+""
+1 220 73 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  218 68 272 92
+0
+
+E
+"main()
+{
+  work(\"System1:\"+$dpe_value+\".\"+dpeTail.text(), 10);
+}" 0
+
+E
+
+N 0 100 1 0 1 1
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

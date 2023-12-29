@@ -1,0 +1,510 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 1437 930 N "_3DFace" 0
+"main()
+{
+  // Create working DPE if they are missing
+  if ( !dpExists(\"demoInt0\") )
+    dpCreate(\"demoInt0\", \"ExampleDP_Int\");
+
+  if ( !dpExists(\"demoInt1\") )
+    dpCreate(\"demoInt1\", \"ExampleDP_Int\");
+
+  if ( !dpExists(\"demoInt2\") )
+    dpCreate(\"demoInt2\", \"ExampleDP_Int\");
+
+  if ( !dpExists(\"demoInt3\") )
+    dpCreate(\"demoInt3\", \"ExampleDP_Int\");
+
+  if ( !dpExists(\"demoInt4\") )
+    dpCreate(\"demoInt4\", \"ExampleDP_Int\");
+
+  if ( !dpExists(\"demoInt5\") )
+    dpCreate(\"demoInt5\", \"ExampleDP_Int\");
+
+  if ( !dpExists(\"demoInt6\") )
+    dpCreate(\"demoInt6\", \"ExampleDP_Int\");
+
+
+  if ( !dpExists(\"demoFloat1\") )
+    dpCreate(\"demoFloat1\", \"ExampleDP_Float\");
+
+  if ( !dpExists(\"demoFloat2\") )
+    dpCreate(\"demoFloat2\", \"ExampleDP_Float\");
+
+  // Initialize a trend
+  initTrend(\"TREND\");
+
+  // Connect freshly created DPE to curves
+  TREND.connectDirectly(\"section\", \"demoInt0.:_original.._value\");
+  TREND.connectDirectly(\"pump1\", \"demoInt1.:_original.._value\");
+  TREND.connectDirectly(\"pump4\", \"demoInt4.:_original.._value\");
+  TREND.connectDirectly(\"pump2\", \"demoInt2.:_original.._value\");
+  TREND.connectDirectly(\"pump5\", \"demoInt5.:_original.._value\");
+  TREND.connectDirectly(\"pump3\", \"demoInt3.:_original.._value\");
+  TREND.connectDirectly(\"pump6\", \"demoInt6.:_original.._value\");
+
+
+}
+" 0
+ E E E E 1 -1 -1 0  28.11320754716979 10.00000000000006
+""0  1
+E "const int FP=1;   // Operation state
+const int US=2;   // Unplanned Stop state
+
+const int MT=6;   // Maintenance state
+const int NOC=8;  // Not Occupied state
+const int PS=9;   // Planned Stop state
+const int RP=10;  // Reduced operability state
+const int RP2=11;  // Reduced operability state
+mapping m;
+mapping m2;
+/*
+  @author Bernhard Reichl
+  Simulate random values within the random intervals
+  @param dpe Is the datapoint element for which the value is simulated
+*/
+pumpSimulation(string dpe)
+{
+  while ( 1 )
+  {
+    int iVal = (int)(rand() * 10.99999 / 32767.0) + 1;   // random from 1 to 10 value generation
+    int iTime = (int)(rand() * 14.9999 / 32767.0) + 1;    // random from 1 to 15 seconds time interval generation
+
+    // Operation state happens 5 times more often then other states
+    if ( iVal <= 5 )
+      iVal = MT;
+    DebugN(\"pumpSimulation dpe = [\"+dpe + \"] iVal [\"+iVal+\"]\");
+
+    dpSet(dpe, iVal);
+    delay(iTime);
+  }
+}
+
+pumpSimulation2(string dpe)
+{
+  while ( 1 )
+  {
+    int iVal = (int)(rand() * 2.99999 / 32767.0) + 1;   // random from 1 to 10 value generation
+    int iTime = (int)(rand() * 14.9999 / 32767.0) + 1;    // random from 1 to 15 seconds time interval generation
+
+    // Operation state happens 5 times more often then other states
+    if ( iVal >= 3 )
+      iVal = FP;
+    DebugN(\"pumpSimulation2 dpe = [\"+dpe + \"] iVal [\"+iVal+\"]\");
+    dpSet(dpe, iVal);
+    delay(iTime);
+  }
+}
+
+/*
+  @author Bernhard Reichl, Grygorii Sokhrannyi
+  A call-back function which reads states of the additional areas and set state for the main area
+  @params
+    - dpe1, v1 Is the datapoint elemnent and its value, corresponds to pump 1
+    - dpe2, v2 Is the datapoint elemnent and its value, corresponds to pump 2
+    - dpe3, v3 Is the datapoint elemnent and its value, corresponds to pump 3
+*/
+calcSectionCB(string dpe1, int v1, string dpe2, int v2, string dpe3, int v3)
+{
+  int iState;   // state index
+  float fVal, fVal1, fVal2, fVal3;   // value generated for states
+
+  // Generate state value for pump 1
+  if ( v1 == FP )
+    fVal1 = 100.0;
+  else if ( v1 == NOC )
+    fVal1 = 0.0;
+  else if ( (v1 == US) || (v1 == PS) || (v1 == MT) )
+    fVal1 = 0.0;
+  else if( v1 == RP )
+    fVal1 = 50.0;
+  else
+    fVal1 = 0.0;
+
+  // Generate state value for pump 2
+  if ( v2 == FP )
+    fVal2 = 100.0;
+  else if ( v2 == NOC )
+    fVal2 = 0.0;
+  else if ( (v2 == US) || (v2 == PS) || (v2 == MT) )
+    fVal2 = 0.0;
+  else if( v2 == RP )
+    fVal2 = 50.0;
+  else
+    fVal2 = 0.0;
+
+  // Generate state value for pump 3
+  if ( v3 == FP )
+    fVal3 = 100.0;
+  else if ( v3 == NOC )
+    fVal3 = 0.0;
+  else if ( (v3 == US) || (v3 == PS) || (v3 == MT) )
+    fVal3 = 0.0;
+  else if( v3 == RP )
+    fVal3 = 50.0;
+  else
+    fVal3 = 0.0;
+
+  // State value of mail line
+  fVal = (fVal1 + fVal2 + fVal3) / 3.0;
+
+  // If all additional areas are in the same state then the main line goes to this state, otherwise it is in Reduced Operartion
+  if ( (v1 == FP) && (v2 == FP) && (v3 == FP) )  // full productive
+    iState = FP;
+  else if ( (v1 == NOC) && (v2 == NOC) && (v3 == NOC) )  // all pumps not in operation
+    iState = NOC;
+  else if ( (v1 == MT) && (v2 == MT) && (v3 == MT) )  // maintenance
+    iState = MT;
+  else if ( (v1 == PS) && (v2 == PS) && (v3 == PS) )  // planned stop
+    iState = PS;
+  else if ( (v1 == US) && (v2 == US) && (v3 == US) )  // unplanned stop
+    iState = US;
+  else if ( ((v1 == US) || (v1 == PS)) && ((v2 == US) || (v2 == PS)) && ((v3 == US) || (v3 == PS)) )  // mixed unplanned stop
+    iState = US;
+  else if ( ((v1 == US) || (v1 == MT)) && ((v2 == US) || (v2 == MT)) && ((v3 == US) || (v3 == MT)) )  // mixed unplanned stop
+    iState = US;
+  else if ( ((v1 == PS) || (v1 == MT)) && ((v2 == PS) || (v2 == MT)) && ((v3 == PS) || (v3 == MT)) )  // mixed maintenance
+    iState = MT;
+  else if ( ((v1 == PS) || (v1 == NOC)) && ((v2 == PS) || (v2 == NOC)) && ((v3 == PS) || (v3 == NOC)) )  // mixed planned stop
+    iState = PS;
+  else
+    iState = RP;
+
+  // Set state and value for the main area
+  dpSet(\"demoInt0.\", iState, \"demoFloat1.\",fVal);
+}
+
+/*
+  @author Bernhard Reichl, Grygorii Sokhrannyi
+  A function which initialize a given trend.
+  @param trendName Is trend name
+*/
+initTrend(string trendName)
+{
+  shape sTrend = getShape(trendName);
+  // Set how many minutes in the past and in future will be visible on the time axes of trend
+  int iTimeInterval = 1;
+
+  // Trend areas labels
+  sTrend.areaLabel(0, \"поставка\");   // main area
+  sTrend.areaLabel(1, \"РЦ1 - блендер 22 тонны\");    // additional area
+  sTrend.areaLabel(2, \"Линия розлива 1\");   // additional area
+  sTrend.areaLabel(3, \"Линия розлива 2\");   // additional area
+
+  // Define trend periods and their colors
+  m[FP] = makeMapping(\"text\", \"Full productive\", \"color\", \"SiemensNaturalGreenLight\");
+  m[US] = makeMapping(\"text\", \"Unplanned Stop\", \"color\", \"Red\");
+  m[MT] = makeMapping(\"text\", \"Maintenance\", \"color\", \"SiemensPetrol\");
+  m[PS] = makeMapping(\"text\", \"Planned Stop\", \"color\", \"SiemensNaturalBlueDark\");
+  m[NOC] = makeMapping(\"text\", \"Not Occupied\", \"color\", \"SiemensNaturalGrayLight\");
+  m[RP] = makeMapping(\"text\", \"Reduced operability\", \"color\", \"SiemensNaturalGreenDark\");
+  m[RP2] = makeMapping(\"text\", \"Отсутствует\", \"color\", \"11_transparent\");
+
+
+  m2[FP] =\"Full productive\";
+  m2[US] =\"Unplanned Stop\";
+  m2[MT] =\"Maintenance\";
+  m2[PS] = \"Planned Stop\";
+  m2[NOC] = \"Not Occupied\";
+  m2[RP] = \"Reduced operability\";
+
+  // Define additional areas properties
+  sTrend.curveValuesProperties(\"pump1\", m);
+  sTrend.curveValuesProperties(\"pump2\", m);
+  sTrend.curveValuesProperties(\"pump3\", m);
+  sTrend.curveValuesProperties(\"pump4\", m);
+  sTrend.curveValuesProperties(\"pump5\", m);
+  sTrend.curveValuesProperties(\"pump6\", m);
+  sTrend.curveMax(\"pump1\", 95);
+  sTrend.curveMin(\"pump1\", 45);
+  sTrend.curveMax(\"pump4\", 45);
+  sTrend.curveMin(\"pump4\", 5);
+  sTrend.curveMax(\"pump2\", 95);
+  sTrend.curveMin(\"pump2\", 45);
+  sTrend.curveMax(\"pump5\", 45);
+  sTrend.curveMin(\"pump5\", 5);
+  sTrend.curveMax(\"pump3\", 95);
+  sTrend.curveMin(\"pump3\", 45);
+  sTrend.curveMax(\"pump6\", 45);
+  sTrend.curveMin(\"pump6\", 5);
+
+  sTrend.curveValuesTexts(\"pump1\", m2);
+  sTrend.curveValuesTexts(\"pump2\", m2);
+  sTrend.curveValuesTexts(\"pump3\", m2);
+  sTrend.curveValuesTexts(\"pump4\", m2);
+  sTrend.curveValuesTexts(\"pump5\", m2);
+  sTrend.curveValuesTexts(\"pump6\", m2);
+
+  // Define main area property
+  sTrend.curveValuesProperties(\"section\", m);
+  sTrend.curveMax(\"section\", 5);
+  sTrend.curveMin(\"section\", 15);
+
+  // Link additional areas to main one
+  sTrend.linkAreas(0, 1);
+  sTrend.linkAreas(0, 2);
+  sTrend.linkAreas(0, 3);
+
+  dyn_int sizes;
+  sizes = makeDynInt(30, 100, 100, 100);
+  sTrend.areaSizes(sizes);
+
+
+  // Start trend periods simulation
+  startThread(\"pumpSimulation\", \"demoInt1.\" );
+  startThread(\"pumpSimulation\", \"demoInt2.\");
+  startThread(\"pumpSimulation\", \"demoInt3.\");
+
+  startThread(\"pumpSimulation2\", \"demoInt4.\");
+  startThread(\"pumpSimulation2\", \"demoInt5.\");
+  startThread(\"pumpSimulation2\", \"demoInt6.\");
+
+  // Define trend time axes format
+  sTrend.timeFormat(0, 1, \"%H:%M\", \"\");
+
+  // Simulate working values
+  //dpConnect(\"calcSectionCB\", \"demoInt1.\", \"demoInt2.\", \"demoInt3.\");
+
+  // Set trend time axes format
+  time tNow = getCurrentTime();
+  time tStart = makeTime(year(tNow),month(tNow),day(tNow),hour(tNow),minute(tNow));
+  time tEnd = makeTime(year(tNow),month(tNow),day(tNow),hour(tNow),minute(tNow) + iTimeInterval);
+  //time tStart = makeTime(2019,5,1,0,0);
+  //time tEnd = makeTime(2020,5,1,0,0);
+  sTrend.visibleTimeRange(0, tStart, tEnd);
+
+  // Refresh the trend
+  sTrend.trendRefresh();
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+23 9
+"TREND"
+""
+1 43.36322869955163 123.1284916201115 E E E 1 E 1 E N "WF_Text" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,22,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,22,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,22,5,50,0,0,0,0,0
+0  13 47.99999999999996 1282 822
+5 E E E 4 1264 N {0,0,0} 0 0 1 0 1 0 1 0 "section" "" 0 4 1 0 0 E
+E
+1 0 0 3 2
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+1 "" ""  1 0 0 1 0 1 N "blue"
+0 0 0 0 0 0 0 0
+1 1 "%x" "" 0 1 1 0 
+E 1264 N {0,0,0} 0 0 1 0 1 0 2 0 "pump1" "" 0 4 1 0 0 E
+E
+1 0 0 3 2
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+0 "" ""  1 0 0 1 0 1 N "Red"
+0 0 0 0 0 0 0 0
+0 "pump4" "" 0 4 1 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+0 "" ""  1 0 0 1 0 1 N "blue"
+0 0 0 0 0 0 0 0
+0 
+E 1264 N {0,0,0} 0 0 1 0 1 0 2 0 "pump2" "" 0 4 1 0 0 E
+E
+1 0 0 3 2
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+0 "" ""  1 0 0 1 0 1 N "violett"
+0 0 0 0 0 0 0 0
+0 "pump5" "" 0 4 1 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+0 "" ""  1 0 0 1 0 1 N "blue"
+0 0 0 0 0 0 0 0
+0 
+E 1264 N {0,0,0} 0 0 1 0 1 0 2 0 "pump3" "" 7 4 2 0 0 E
+E
+1 0 0 3 2
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+0 "" ""  1 0 0 1 0 1 N "WF_Text"
+0 0 0 0 0 0 0 0
+0 "pump6" "" 0 4 1 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+0 "" ""  1 0 0 1 0 1 N "blue"
+0 0 0 0 0 0 0 0
+0 
+E 1 0 0 0 20 0 20 439200
+3
+LANG:10027 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+0  3
+LANG:10027 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+0  3
+LANG:10027 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+2 16
+"PRIMITIVE_TEXT3"
+""
+1 362 323 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignVCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9476272262007501 0 1.340928913905947 149.0480790184055 -412.6204752975517 0 E 362 323 690 343
+0 2 2 "0s" 0 0 0 65 0 0  362 323 1
+3
+LANG:10027 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10001 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10000 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+0 3
+LANG:10027 31 Диаграмма Гантта
+LANG:10001 23 Real time status update
+LANG:10000 23 Real time status update
+30 17
+"FRAME1"
+""
+1 10 2 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+11 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.943632567849687 0 2.288659793814433 -19.43632567849686 -2.577319587628866 0 E 10 2 490 391
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

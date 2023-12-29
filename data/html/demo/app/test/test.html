@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<div style="width:100%;text-align:center;font-size:20px;font-weight:bold;">Hello WinCC OA</div>
+<div id="jquery-version" style="width:100%;text-align:center;font-size:20px;font-weight:bold;"></div>
+<div id="tester" style="width:800px;height:600px;"></div>
+<script>
+//向id 为jquery-version 的div 添加 jQuery 的版本号
+$("#jquery-version").append("jQuery version is:"+$.fn.jquery);
+//日期/月份个位数 补0
+function add0(m){return m<10?'0'+m:m }
+//时间戳 转换时间
+function formatTime(tStamp)
+{
+    let time = new Date(tStamp);
+    let y = time.getFullYear();
+    let m = time.getMonth()+1;
+    let d = time.getDate();
+    let h = time.getHours();
+    let mm = time.getMinutes();
+    let s = time.getSeconds();
+    return y+'-'+add0(m)+'-'+add0(d)+' '+add0(h)+':'+add0(mm)+':'+add0(s);
+}
+//定义X 轴数据数组
+let arrayX=[];
+//定义Y 轴数据数组
+let arrayY=[];
+//使用oaJsApi.dpQuery()方法查询node001.value01在某一时间段数据
+oaJsApi.dpConnect(['System1:_MemoryCheck.AvailKB:_original.._value',
+    'System1:_MemoryCheck.UsedKB:_original.._value'], false, {
+    success: function(data) {
+        for(let i=1;i<data.length;i++)
+        {
+            //将时间数据放入arrayX
+            arrayX.push(formatTime(data[i][2]));
+            //将值数据放入arrayY
+            arrayY.push(data[i][1]);
+        }
+        //打印测试
+        console.log(arrayX,arrayY);
+    },
+    error: function() {
+        console.error(arguments);
+    }
+});
+//定义一个data数据类型放入 arrayX,arrayY
+let data = [
+    {
+        x: arrayX,
+        y: arrayY,
+        type: 'scatter'
+    }
+];
+//使用jQuery加载plotly.js库
+$.when(
+    $.getScript("plotly-2.25.2.min.js")
+).done(
+    function () {
+        //调用Plotly 生成图表
+        Plotly.newPlot('tester', data);
+    }
+)
+</script>

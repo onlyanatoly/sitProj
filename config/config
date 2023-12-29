@@ -1,0 +1,35 @@
+[general]
+pvss_path = "C:/Siemens/Automation/WinCC_OA/3.18"
+
+
+#proj_path = "C:\WinCC_OA_Proj\lib319-master"
+proj_path = "C:\WinCC_OA_Proj\SitProj"
+proj_version = "3.18"
+
+langs = "ru_RU.utf8"
+
+langs = "en_US.utf8"
+
+useNGA = 1
+dataHost="gkscomp194"
+dataport=4897
+eventHost="gkscomp194"
+eventport=4998
+[ui]
+versionControl ="git"
+defaultPanelFormat = “XML”
+#LoadAllCtrlLibs=1
+#LoadCtrlLibs = "Situational_util,AlertHandl,Situational_bar,Situational_pnl,aes"
+activeIconTheme = ""
+
+httpServer = "https://localhost:6655"
+[opc]
+server = "WINCC_OA" "WINCC_OA.OPC.1"
+
+[webClient]
+
+httpsPort = 2222
+
+[ctrl]
+#LoadAllCtrlLibs=1
+#LoadCtrlLibs = "Situational_util,AlertHandl,Situational_bar,Situational_pnl,aes,sdSymbolDynamics"

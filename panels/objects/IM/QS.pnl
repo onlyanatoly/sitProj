@@ -1,0 +1,679 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 400 400 N {80,80,80} 1
+"$QF"
+E E E E E 1 -1 -1 0  130.8957202758729 121.1335035609081
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+4 7
+"LINE399"
+""
+1 57 115 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$QF+\".Alarm_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  57 115.1236302078977 57 149.1236302078977
+4 8
+"LINE402"
+""
+1 57 58.12363020789769 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$QF+\".Alarm_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  57 58.12363020789769 57 92.12363020789769
+4 10
+"LINE400"
+""
+1 57 114.9999999999998 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $QF+\".Alarm_Off\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$QF+\".Alarm_Off\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $QF+\".Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$QF+\".Alarm_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  57 114.9999999999998 43 92.12363020789769
+4 12
+"LINE403"
+""
+1 57.09246750772121 115.8566230860815 E E E 1 E 1 E N {190,190,190} E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+  EP_setForeColor();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $QF+\".Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\", 
+            $QF+\".Alarm_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$QF+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$QF+\".Alarm_Off\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E 0 2 3 2 1 E  57 116.1236302078977 57 92.12363020789769
+6 13
+"RECTANGLE113"
+""
+1 117 287 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $QF+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.6811594202898551 0 0.9374999999999999 -31.52898550724638 -146.4388697921023 1 E 117 287 140 311
+2 14
+"PRIMITIVE_TEXT2"
+""
+1 6 8 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $QF+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $QF+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.693958333333332 0 1.15 45.79041666666669 112.9236302078977 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,19,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+6 16
+"RECTANGLE12"
+""
+1 134 98 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ "main()
+{
+	symb_actionAtRightClick2($QF, $QF);
+}
+
+symb_actionAtRightClick2(string DPT, string DPE)
+{
+  // check user
+  // depending on DPT & user generate Popup
+  // open correct panel
+
+  bool bBuildTrendPopup;
+  dyn_string popup;
+  int answer;
+
+  //
+  //  build POPUP:
+  //
+  //  Trends & Trend
+  //  Information&Simulation
+  //  Options
+  //  Properties
+  //
+  //
+  //
+  //   Trend-Popup
+  bBuildTrendPopup = symb_isDptTrendable2(DPT);
+  if (bBuildTrendPopup)
+    dynAppend(popup, makeDynString(\"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trends\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),     // OPERATOR
+                                   \"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trendbuffer\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),// Operator
+                                   \"SEPARATOR\"));
+  //  Information&Simulation
+  //
+  switch (DPT)
+  {
+   case \"SLIDE_VALVE_HAND1\": dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+
+                                         \"SEPARATOR\"));break;
+   //default: dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+                                //         \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"simulation\")+\" , 1,\" +(getUserPermission(4)?\"1\":\"0\"),  // PARA
+                                  //       \"SEPARATOR\"));break;
+  }
+  //
+  //  DPT-specific Options
+  //
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"UTM_AI\":               // no special options
+   case \"COUNTER1\":             // no special options
+   case \"BIT_CONDITION\":        // no special options
+   case \"DRIVE1\":              // no special options
+   case \"DRIVE2\":              // no special options
+   case \"PUMP1\":               // no special options
+   case \"PUMP2\":               // no special options
+   case \"SETPOINT\":             // no special options
+   case \"SLIDE_VALVE1\":        // no special options
+   case \"SLIDE_VALVE2\":        // no special options
+   case \"SLIDE_VALVE_HAND1\":   // no special options
+   case \"ANALOG2\":              // no special options
+   case \"ANALOG1\":   break;     // no special options
+   //default:                      dynAppend(popup, makeDynString(\"PUSH_BUTTON, EXTEND1 , 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+  //                                                        \"PUSH_BUTTON, EXTEND2 , 1,\" +(getUserPermission(3)?\"1\":\"0\"),  // OPERATOR ALL
+   //                                                       \"SEPARATOR\"));
+        break;
+  }
+  //  DPT_CHANGE END
+  //
+  //  Properties
+  //
+    dynAppend(popup, makeDynString( \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"properties\")+\", 3,\"  +(getUserPermission(4)?\"1\":\"0\")));  // PARA
+
+  //
+  // build subpopups
+  //
+  if (bBuildTrendPopup)                            // Trend
+  {
+     symb_buildPopUpTrend(popup,1000,getCatStr(\"STD_Symbols\",\"trends\"));
+     symb_buildPopUpTrendbuffer(popup);
+  }
+  //
+  //  show popup
+  //
+  //
+
+  if (dynlen(popup) > 0)
+  {
+     popupMenu(popup, answer);
+     symb_EvaluatePopup2(popup, answer, DPE, DPT);
+  }
+
+}
+
+symb_EvaluatePopup2(dyn_string popup, int answer, string DPE, string DPT)
+{
+   //
+   //   !!! actual only working with STD_objects !!!
+   //
+   string sObjectPath = \"objects_parts/STD_OBJECTS/\";
+   string PANEL, path;
+
+   switch (answer)
+   {
+   case 0:  break;   // ESCAPE
+   case 1:           // Simulation
+             symb_checkDPE(DPE,DPT);
+             PANEL = sObjectPath+DPT+\"_sim.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_sim.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"SIM:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+  //           break;
+   case 2:           // Informaton
+             PANEL = sObjectPath+DPT+\"_info.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_info.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"INFO:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+             break;
+   case 3:           // Properties
+                PANEL = sObjectPath+DPT+\"_prop.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_prop.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dp:\"+dpSubStr(DPE, DPSUB_SYS_DP)));
+                else
+                       ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"PARA:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_prop.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+              break;
+   default:
+               symb_EvaluatePopupOtherActions(popup, answer, DPE, DPT);
+  }
+}
+
+
+bool symb_isDptTrendable2(string DPT)
+{
+  bool ret = false;
+
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"WH_SC1\":
+   case \"COUNTER1\":
+   case \"ANALOG2\":
+   case \"ANALOG1\": ret = TRUE; break;
+   case \"BIT_CONDITION\":
+   case \"DRIVE1\":
+   case \"DRIVE2\":
+   case \"PUMP1\":
+   case \"PUMP2\":
+   case \"SETPOINT\":
+   case \"SLIDE_VALVE1\":
+   case \"SLIDE_VALVE2\":
+   case \"SLIDE_VALVE_HAND1\":
+   default:      break;
+  }
+  //  DPT_CHANGE END
+  return ret;
+}" 0
+ E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.740988372093024 0 2.083333333333331 -58.22369186046523 -143.7930364587687 1 E 134 98 177 140
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+1 0 "SHAPE_GROUP2" -1
+2 0 
+13 14 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

@@ -1,0 +1,103 @@
+V 14
+3
+LANG:10027 18 (БезИмени)
+LANG:10000 8 (NoName)
+LANG:10001 8 (NoName)
+PANEL,-1 -1 403 452 N "_3DFace" 1
+"$dpe"
+E E E E E 1 -1 -1 0  26 82
+""0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 6 Layer1
+0
+LAYER, 1 
+1
+LANG:10027 6 Layer2
+6 0
+"fraErrorframe"
+""
+1 26 82 E E E 1 E 0 E N {255,0,0} E N "_Transparent" E "// SimpleCtrlScriptStart {invalid}
+main(int iType)
+{
+  std_quittScript( $dpe , iType);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$dpe}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"//Function t_alert_EventInitialize()
+main()
+{
+
+if (dpExists($dpe))
+  {
+	  dpConnect(\"setColorAlert\",$dpe+\":_alert_hdl.._act_state_color\");
+	  if ( dynlen(getLastError()) ) 
+    {  
+	    dyn_errClass err = getLastError(); 
+			this.visible	= TRUE;
+			this.foreCol  = \"STD_dp_not_existing\";
+	    errorDialog(err); 
+	    return; 
+    }
+	}
+
+}
+
+setColorAlert(string dp, string sColor)
+{
+		this.visible = (sColor != \"\");														// visible if color not Alert
+    this.foreCol = sColor ;																	// setBackCol alertColor
+}
+//Function t_alert_EventInitialize()" 0
+ E 0 4 1 0 1 E U  0 E 10 10 103 35
+0
+LAYER, 2 
+1
+LANG:10027 6 Layer3
+0
+LAYER, 3 
+1
+LANG:10027 6 Layer4
+0
+LAYER, 4 
+1
+LANG:10027 6 Layer5
+0
+LAYER, 5 
+1
+LANG:10027 6 Layer6
+0
+LAYER, 6 
+1
+LANG:10027 6 Layer7
+0
+LAYER, 7 
+1
+LANG:10027 6 Layer8
+0
+0

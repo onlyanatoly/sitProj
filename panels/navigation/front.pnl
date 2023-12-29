@@ -1,0 +1,242 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 868 317 N "fon_static" 2
+"$dpNav"
+"$dpNavNoScreen"
+"main()
+{
+  setValue(FRONT_MODULE_SUB, \"ModuleName\", ptms_BuildModuleName(FRONT_MODULE_SUB,ptnavi_GetScreenName()));
+  dpConnect(\"setElement\", true, $dpNav+\".element\");
+}
+" 0
+ E E E E 1 -1 -1 0  60 182.8125
+""0  1
+E "/** текущие ВФ на панели навигации и соответсвующие reference панели*/
+dyn_string navigationVF;
+dyn_string referenceVF;
+string FRONT_SUB_AI_PNL = \"navigation/front/frontAI.pnl\";
+string FRONT_SUB_DI_PNL = \"navigation/front/frontDI.pnl\";
+string FRONT_SUB_REG_PNL = \"navigation/front/frontReg.pnl\";
+string FRONT_SUB_PUMP_PNL = \"navigation/front/frontPump.pnl\";
+string FRONT_MODULE_SUB = \"frontModuleSub\";
+
+void setElement(string dpe, string element)
+{
+  dyn_string dollars,values;
+  string dpType, pnlName=\"\";
+  int iType;
+  if (element!=\"\")
+  {
+    setValue(\"tag\", \"text\", element);
+    setValue(\"name\", \"text\", dpGetComment(element+\".\"));
+    dpType=dpTypeName(element);
+    if (dpType == \"SIT_AI\")
+    {
+      pnlName = FRONT_SUB_AI_PNL;
+      iType = 0;
+    }
+    else if (dpType == \"SIT_DI\")
+    {
+      pnlName = FRONT_SUB_DI_PNL;
+      iType = 1;
+    }
+    else if (dpType == \"SIT_REG\")
+    {
+      pnlName = FRONT_SUB_REG_PNL;
+      iType = 2;
+    }
+    else if (dpType == \"SIT_PUMP\")
+    {
+      pnlName = FRONT_SUB_PUMP_PNL;
+      iType = 4;
+    }
+    if (pnlName!=\"\")
+    {
+      RootPanelOnModule( pnlName, \"\", ptms_BuildModuleName(FRONT_MODULE_SUB,ptnavi_GetScreenName()), makeDynString(\"$dpe_value:\"+element, \"$i_type:\"+iType));
+    }
+  }
+}
+
+/**
+  Закрытие панели
+*/
+void closeBtnClicked()
+{
+  dpSet($dpNav+\".monitorNumber\",0);
+}
+
+" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+13 1006
+"closeBtn"
+"WF"
+1 519 526.265625 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 27 Удалить фильтр
+LANG:10001 13 Delete filter
+LANG:10000 15 Filter löschen
+
+2
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  810 26.265625 839 55.265625
+
+P 
+4294967295
+"pictures/cns/delete_20.png"
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+"main()
+{
+  closeBtnClicked();
+}" 0
+ E E E
+2 1259
+"tag"
+""
+1 402 30 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 17.14285714285714 0 1 -6451.42857142857 -4 0 E 381 17 423 44
+0 2 2 "0s" 0 0 0 201 0 0  402 30 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 TAG
+LANG:10001 3 TAG
+2 1260
+"name"
+""
+1 410 61 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 12.41379310344827 0 1 -4649.65517241379 -4 0 E 381 48 439 75
+0 2 2 "0s" 0 0 0 201 0 0  410 61 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 4 Name
+LANG:10001 3 TAG
+1 1318 22 "" 1
+0
+29 1317
+"frontModuleSub"
+""
+1 25.54184960660133 76.76912689273809 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  26.19667910190363 77.00000000000023 849.9999999999999 300.0000000000001
+15 Canvas.Canvas.1
+0
+E0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 22 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button_screen_2.pnl" 99.705882352941 197.625 T 41 1 0 1 -14 -86.12499999999997
+2
+"$dpNav""$dpNav"
+"$dpNavNoScreen""$dpNavNoScreen"
+0

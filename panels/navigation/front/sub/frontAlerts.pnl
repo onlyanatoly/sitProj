@@ -1,0 +1,217 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 597 193 N "fon_static" 2
+"$dpe_value"
+"$i_type"
+"#uses \"Situational_util.ctl\"
+
+main()
+{
+  if ($i_type == 4)
+  {//насос
+    dpConnect(\"work\",$dpe_value+\".ERR:_alert_hdl.._act_prior\",$dpe_value+\".SIM:_alert_hdl.._act_prior\",$dpe_value+\".invalid:_alert_hdl.._act_prior\",
+            $dpe_value+\".ERR:_alert_hdl.._ack_possible\",$dpe_value+\".SIM:_alert_hdl.._ack_possible\",$dpe_value+\".invalid:_alert_hdl.._ack_possible\");
+  }
+  else
+  {
+    dpConnect(\"work\",$dpe_value+\".OUT:_alert_hdl.._act_prior\",$dpe_value+\".SIM:_alert_hdl.._act_prior\",$dpe_value+\".invalid:_alert_hdl.._act_prior\",
+            $dpe_value+\".OUT:_alert_hdl.._ack_possible\",$dpe_value+\".SIM:_alert_hdl.._ack_possible\",$dpe_value+\".invalid:_alert_hdl.._ack_possible\");
+  }
+
+}
+
+/**
+  Установка параметров для панели
+  @param dpName название dp
+  @param refName название ссылки
+  @param i_prior приоритет
+  @param s_alerttext сообщение
+  @param b_isAckn квитирована или нет
+*/
+void setAlert(string dpName, string refName, int i_prior, string s_alerttext, bool b_isAckn)
+{
+  bool isAlarm, isWarn, isImit, isNan;
+  if (i_prior==ALERT_PRIOR_HH || i_prior==ALERT_PRIOR_LL)
+  {
+    isAlarm = true;
+  }
+  else if (i_prior==ALERT_PRIOR_H || i_prior==ALERT_PRIOR_L)
+  {
+    isWarn = true;
+  }
+  else if (i_prior==ALERT_PRIOR_SIM)
+  {
+    isImit = true;
+  }
+  else if (i_prior==ALERT_PRIOR_NAN || i_prior==ALERT_PRIOR_ISPERR)
+  {
+    isNan = true;
+  }
+  setValue(refName+\".PANEL_REF_ALARM\", \"visible\", isAlarm);
+  setValue(refName+\".PANEL_REF_WARN\", \"visible\", isWarn);
+  setValue(refName+\".PANEL_REF_IMIT\", \"visible\", isImit);
+  setValue(refName+\".PANEL_REF_NAN\", \"visible\", isNan);
+  setValue(refName+\".alertText\", \"text\", s_alerttext);
+  setValue(refName+\".PANEL_REF_ACKN\", \"visible\", b_isAckn);
+  setValue(refName+\".btnAckn\", \"visible\", !b_isAckn);
+  setValue(refName+\".dpText\", \"text\", dpName);
+}
+
+/**
+  Обработка сигнализации
+*/
+void work(string dpOut, int priorOut, string dpSim, int priorSim, string dpInvalid, int priorInvalid,
+          string dpOutackPoss, bool ackPossOut, string dpSimackPoss, bool ackPossSim, string dpInvalidackPoss, bool ackPossInvalid)
+{
+  int i=0;
+  string outText;
+  string nanText = \"Данные недостоверны\";
+  string simText = \"Режим симуляции включен\";
+  string dpOutName = getDpFromFullName(dpOut);
+  string dpSimName = getDpFromFullName(dpSim);
+  string dpNanName = getDpFromFullName(dpInvalid);
+  dyn_dyn_anytype dynms;
+
+  for (i=1; i<=4; i++)
+  {
+    setValue(\"PANEL_REF_ALERT\"+i, \"visible\", false);
+  }
+  if (priorOut!=0)
+  {
+    if ($i_type == 4)//
+    {//насос
+      if (priorOut==ALERT_PRIOR_HH)
+      {
+        outText = \"Ошибка\";
+      }
+      else if (priorOut==ALERT_PRIOR_ISPERR)
+      {
+        outText = \"Ошибка запуска\";
+      }
+    }
+    else if ($i_type == 1)
+    {//DI
+      outText = \"Сигнализация активна\";
+    }
+    else
+    {
+      float curVal;
+      dpGet(dpOutName, curVal);
+      if (priorOut==ALERT_PRIOR_HH)
+      {
+        outText = \"HIHI\";
+      }
+      else if (priorOut==ALERT_PRIOR_H)
+      {
+        outText = \"HI\";
+      }
+      else if (priorOut==ALERT_PRIOR_L)
+      {
+        outText = \"LO\";
+      }
+      else if (priorOut==ALERT_PRIOR_LL)
+      {
+        outText = \"LOLO\";
+      }
+      outText = outText + \" - Текущее значение = \"+curVal+dpGetUnit(dpOutName);
+    }
+    dyn_anytype ms = makeDynAnytype(priorOut, outText, !ackPossOut, dpOutName);
+    dynms.append(ms);
+  }
+  if (priorSim==ALERT_PRIOR_SIM)
+  {
+    dyn_anytype ms = makeDynAnytype(priorSim, simText, !ackPossSim, dpSimName);
+    dynms.append(ms);
+  }
+  if (priorInvalid==ALERT_PRIOR_NAN)
+  {
+    dyn_anytype ms = makeDynAnytype(priorInvalid, nanText,!ackPossInvalid, dpNanName);
+    dynms.append(ms);
+  }
+  for (i=1; i<=dynlen(dynms); i++)
+  {
+    setValue(\"PANEL_REF_ALERT\"+i, \"visible\", true);
+    setAlert( dynms[i][4], \"PANEL_REF_ALERT\"+i, dynms[i][1], dynms[i][2], dynms[i][3]);
+  }
+}
+" 0
+ E E E E 1 -1 -1 0  18.75 73.5
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1 0 "" 27
+0
+1 19 1 "" 27
+0
+1 37 2 "" 27
+0
+1 55 3 "" 27
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF_ALERT1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"navigation/front/sub/alertRow.pnl" 138.9100863289689 196 T 6 1 0 1 -58.91008632896887 -136
+0
+3 1 "PANEL_REF_ALERT2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"navigation/front/sub/alertRow.pnl" 138.9100863289689 196 T 7 1 0 1 -58.91008632896887 -96
+0
+3 2 "PANEL_REF_ALERT3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"navigation/front/sub/alertRow.pnl" 138.9100863289689 196 T 8 1 0 1 -58.91008632896887 -56
+0
+3 3 "PANEL_REF_ALERT4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"navigation/front/sub/alertRow.pnl" 138.9100863289689 196 T 9 1 0 1 -58.91008632896887 -16
+0
+0

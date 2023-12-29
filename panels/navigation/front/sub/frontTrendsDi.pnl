@@ -1,0 +1,380 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 564 201 N "white" 1
+"$dpe_value"
+"main()
+{
+  for (int i = 1; i<=dynlen(dyninterval);i++)
+  {
+    setValue(\"btnInterval\"+i, \"text\", dyninterval[i]);
+  }
+  selectInterval(1);
+}" 0
+ E E E E 1 -1 -1 0  18.75 73.5
+""0  1
+E "dyn_int dyninterval= makeDynInt(5, 15, 30);
+
+void selectInterval(int type)
+{
+  string color;
+  time begin;
+  time end;
+  int interval;
+  for (int i=1; i<=dynlen(dyninterval);i++)
+  {
+    if (i==type)
+    {
+      color = \"fon_btn_clicked\";
+      interval = dyninterval[i];
+    }
+    else
+    {
+      color = \"fon_static\";
+    }
+    setValue(\"btnInterval\"+i, \"backCol\", color);
+  }
+
+  end = getCurrentTime();
+  begin = end - interval * 60;
+  setValue(\"trend\", \"timeInterval\", end-begin);
+  setValue(\"trend\", \"timeBegin\", begin);
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 93
+"RECTANGLE2"
+""
+1 98.52623047450606 13.52995391705069 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.9111503838744508 0 1 -18.24598224404275 -3 1 E 98.52623047450606 13.52995391705069 605 180.4700460829493
+13 74
+"btnInterval1"
+""
+1 8 18 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+10 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  6 8 60 42
+
+T 
+2
+LANG:10027 6 МИН
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  selectInterval(1);
+}" 0
+ E E E
+2 76
+"PRIMITIVE_TEXT1"
+""
+1 20 40 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 20 40 48 55
+0 2 2 "0s" 0 0 0 192 0 0  20 40 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 6 МИН
+LANG:10001 6 МИН
+13 77
+"btnInterval2"
+""
+1 9 81.5 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+13 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  7 71.5 61 105.5
+
+T 
+2
+LANG:10027 6 МИН
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  selectInterval(2);
+}" 0
+ E E E
+2 78
+"PRIMITIVE_TEXT2"
+""
+1 21 103.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 21 103.5 49 119
+0 2 2 "0s" 0 0 0 192 0 0  21 103.5 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 6 МИН
+LANG:10001 6 МИН
+13 79
+"btnInterval3"
+""
+1 10 141 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+15 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  8 131 62 165
+
+T 
+2
+LANG:10027 6 МИН
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  selectInterval(3);
+}" 0
+ E E E
+2 80
+"PRIMITIVE_TEXT3"
+""
+1 22 163 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 22 163 50 178
+0 2 2 "0s" 0 0 0 192 0 0  22 163 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 6 МИН
+LANG:10001 6 МИН
+23 106
+"trend"
+""
+1 114.9406946194636 13.55722512974492 E E E 1 E 1 E N "_Transparent" E N "_Window" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  69.52623047450606 8.52995391705069 534 180
+5 "main()
+{
+  float fMin, fMax;
+  time curt;
+  string trendName = \"trend\";
+  string curveName = \"curve1\";
+    dpGet($dpe_value+\".OUT:_pv_range.._min\", fMin, $dpe_value+\".OUT:_pv_range.._max\", fMax);
+    setValue(trendName, \"connectDirectly\", curveName, $dpe_value+\".OUT:_original.._value\");
+    setValue(trendName, \"manageLegend\", false);
+    setValue(trendName, \"maxRulerCount\", 0,0);
+    setValue(trendName, \"backCol\", \"_Transparent\");
+    setValue(trendName, \"manageCommands\", false);
+    setValue(trendName, \"timeScaleVisibility\", 0, false, 0);
+    setValue (trendName, \"curveMinMax\", curveName, fMin, fMax);
+    curt = getCurrentTime();
+    curt = curt - 5*60;//убираем на 5 минуты назад
+    setValue(trendName, \"timeBegin\", curt);
+}
+" 0
+ E E 1 459 N {0,0,0} 0 0 1 0 1 0 1 0 "curve1" "" 0 1 0 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 3 °C
+LANG:10001 3 °C
+0 "" ""  0 -1 2 0 2 1 0 1 N "black"
+0 0 0 0 0 0 0 0
+1 1 "%H:%M:%S" "%x" 0 1 0 0 
+E 1 1 1 0 1 0 20 180
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+2 109
+"PRIMITIVE_TEXT4"
+""
+1 544 111 E E E 1 E 1 E N "_WindowText" E N "cont_text" E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 544 111 555 131
+0 2 2 "0s" 0 0 0 192 0 0  544 111 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 0
+LANG:10001 1 0
+2 110
+"PRIMITIVE_TEXT5"
+""
+1 544 59 E E E 1 E 1 E N "_WindowText" E N "cont_text" E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 544 59 555 79
+0 2 2 "0s" 0 0 0 192 0 0  544 59 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 1 1
+LANG:10001 1 0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

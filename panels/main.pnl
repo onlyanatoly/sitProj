@@ -1,0 +1,821 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1045 690 N "_3DFace" 0
+E E E E E 1 -1 -1 0  90 148
+""0  1
+E "
+void setValGTO(bool avar)
+{
+    if (avar)
+    {
+      setValueToDp(\"OO1_GTO_FIRE*_*.MODE.*\", 0);
+      //OO1_GTO_FIRE*_*.OUT
+      setValueToDp(\"OO1_GTO_FIRE*_*.OUT\", 95);
+      setValueToDp(\"OO1_GTO_FIRE*_*.SHOW\", 1);
+    setValueToDp(\"OO1_GTO_FIRE*_*.OUT:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+    }
+    else
+    {
+      setValueToDp(\"OO1_GTO_FIRE*_*.MODE.*\", 3);
+      setValueToDp(\"OO1_GTO_FIRE*_*.OUT\", 26);
+      setValueToDp(\"OO1_GTO_FIRE*_*.SHOW\", 0);
+    }
+}
+
+void setValTTAO(bool avar)
+{
+  setValueToDp(\"OO1_TTA_*.STD_PV\", 50);
+
+  if (avar)
+  {
+    setValueToDp(\"OO1_TTA_B321-ZT01.OUT\", 95);
+    setValueToDp(\"OO1_TTA_B321-WT01.OUT\", 85);
+    setValueToDp(\"OO1_TTA_B321-WT02.OUT\", 93);
+
+    setValueToDp(\"OO1_TTA_B*-ZS*.OUT\", 3);
+    setValueToDp(\"OO1_TTA_B*-PS*.OUT\", 3);
+
+    setValueToDp(\"OO1_TTA_B*-M0*.ERROR\", 3);
+    setValueToDp(\"OO1_TTA_B*-M0*.DIR1\", 0);
+    setValueToDp(\"OO1_TTA_B*-M0*.DIR2\", 1);
+
+    setValueToDp(\"OO1_TTA_B*-FC0*.ERROR\", 3);
+    setValueToDp(\"OO1_TTA_B*-FC0*.DIR1\", 0);
+    setValueToDp(\"OO1_TTA_B*-FC0*.DIR2\", 1);
+
+    setValueToDp(\"OO1_TTA_*.SHOW\", 1);
+    setValueToDp(\"OO1_TTA_*.OUT:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+  }
+  else
+  {
+    setValueToDp(\"OO1_TTA_B321-ZT01.OUT\", 45);
+    setValueToDp(\"OO1_TTA_B321-WT01.OUT\", 55);
+    setValueToDp(\"OO1_TTA_B321-WT02.OUT\", 33);
+
+    setValueToDp(\"OO1_TTA_B*-ZS*.OUT\", 1);
+    setValueToDp(\"OO1_TTA_B*-PS*.OUT\", 1);
+
+    setValueToDp(\"OO1_TTA_B*-M0*.ERROR\", 0);
+    setValueToDp(\"OO1_TTA_B*-M0*.DIR1\", 0);
+    setValueToDp(\"OO1_TTA_B*-M0*.DIR2\", 1);
+
+    setValueToDp(\"OO1_TTA_B*-FC0*.ERROR\", 0);
+    setValueToDp(\"OO1_TTA_B*-FC0*.DIR1\", 0);
+    setValueToDp(\"OO1_TTA_B*-FC0*.DIR2\", 1);
+
+    setValueToDp(\"OO1_TTA_*.SHOW\", 0);
+
+  }
+}
+
+void setValFTA1(bool avar)
+{
+  if (avar)
+  {
+    setValueToDp(\"OO1_FTA1_St*.OUT\", 3);
+    setValueToDp(\"CRAN.STATE\", 0);
+    setValueToDp(\"TELEGKA.STATE\", 0);
+    setValueToDp(\"TELEGKA_LEFT.STATE\", 0);
+    setValueToDp(\"OO1_FTA1_CokeLevel.OUT\", 4);
+    setValueToDp(\"OO1_FTA1_DustLevel.OUT\", 3);
+    setValueToDp(\"OO1_FTA1_TaftCool.OUT\", 12);
+    setValueToDp(\"OO1_FTA1_FillingPipeH.OUT\", 5);
+    setValueToDp(\"OO1_FTA1_ElRoom.OUT\", 95);
+    setValueToDp(\"OO1_FTA1_Cabin.OUT\", 18);
+    setValueToDp(\"OO1_FTA1_Ambient.OUT\", 84);
+
+    setValueToDp(\"OO1_FTA1_*.SHOW\", 1);
+    setValueToDp(\"OO1_FTA1_*.OUT:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+
+  }
+  else
+  {
+    setValueToDp(\"OO1_FTA1_St*.OUT\", 1);
+    setValueToDp(\"CRAN.STATE\", 1);
+    setValueToDp(\"TELEGKA.STATE\", 1);
+    setValueToDp(\"TELEGKA_LEFT.STATE\", 1);
+    setValueToDp(\"OO1_FTA1_CokeLevel.OUT\", 2);
+    setValueToDp(\"OO1_FTA1_DustLevel.OUT\", 2);
+    setValueToDp(\"OO1_FTA1_TaftCool.OUT\", 48);
+    setValueToDp(\"OO1_FTA1_FillingPipeH.OUT\", 59);
+    setValueToDp(\"OO1_FTA1_ElRoom.OUT\", 23);
+    setValueToDp(\"OO1_FTA1_Cabin.OUT\", 28);
+    setValueToDp(\"OO1_FTA1_Ambient.OUT\", 58);
+
+    setValueToDp(\"OO1_FTA1_*.SHOW\", 0);
+  }
+}
+
+void setValGOU(bool avar)
+{
+  setValueToDp(\"GOU_*.STD_PV\", 50);
+
+  if (avar)
+  {
+
+    setValueToDp(\"GOU_AT165.OUT\", 95);
+    setValueToDp(\"GOU_FT150_Am.OUT\", 95);
+    setValueToDp(\"GOU_FT150_Nm.OUT\", 15);
+    setValueToDp(\"GOU_FT154_Am.OUT\", 95);
+    setValueToDp(\"GOU_FT154_Nm.OUT\", 5);
+    setValueToDp(\"GOU_FT165_Am.OUT\", 95);
+    setValueToDp(\"GOU_FT165_Nm.OUT\", 15);
+    setValueToDp(\"GOU_PIT149.OUT\", 85);
+    setValueToDp(\"GOU_PT165.OUT\", 15);
+    setValueToDp(\"GOU_TT148.OUT\", 95);
+    setValueToDp(\"GOU_TT149.OUT\", 92);
+    setValueToDp(\"GOU_TT150.OUT\", 95);
+    setValueToDp(\"GOU_TT153A.OUT\", 15);
+    setValueToDp(\"GOU_TT153B.OUT\", 95);
+    setValueToDp(\"GOU_TT154.OUT\", 5);
+    setValueToDp(\"GOU_TT155A.OUT\", 5);
+    setValueToDp(\"GOU_TT155B.OUT\", 95);
+    setValueToDp(\"GOU_TT161.OUT\", 15);
+    setValueToDp(\"GOU_TT162.OUT\", 15);
+    setValueToDp(\"GOU_TT163.OUT\", 85);
+    setValueToDp(\"GOU_TT165.OUT\", 85);
+    setValueToDp(\"GOU_XT165_Avrg.OUT\", 15);
+    setValueToDp(\"GOU_XT165_Peak.OUT\", 95);
+    setValueToDp(\"GOU_CV*.REG\", 6);//регуляторы
+
+    setValueToDp(\"GOU_MTA*.ERR\", 2);
+    setValueToDp(\"GOU_CRX*.ERR\", 2);
+    setValueToDp(\"GOU_DRX*.ERR\", 2);
+    setValueToDp(\"GOU_FT101*.ERR\", 2);
+    setValueToDp(\"GOU_KTT*.ERR\", 2);
+    setValueToDp(\"GOU_PSL*.OUT\", 2);
+
+
+    setValueToDp(\"GOU_UV*.ERR\", 2); //краны
+    setValueToDp(\"GOU_ZSH*.ERR\", 2); //краны
+
+    setValueToDp(\"GOU_*.SHOW\", 1);
+    setValueToDp(\"GOU_*.OUT:_alert_hdl.._ack\", DPATTR_ACKTYPE_MULTIPLE);
+
+
+  }
+  else
+  {
+
+    setValueToDp(\"GOU_AT165.OUT\", 45);
+    setValueToDp(\"GOU_FT150_Am.OUT\", 45);
+    setValueToDp(\"GOU_FT150_Nm.OUT\", 45);
+    setValueToDp(\"GOU_FT154_Am.OUT\", 45);
+    setValueToDp(\"GOU_FT154_Nm.OUT\", 45);
+    setValueToDp(\"GOU_FT165_Am.OUT\", 45);
+    setValueToDp(\"GOU_FT165_Nm.OUT\", 45);
+    setValueToDp(\"GOU_PIT149.OUT\", 45);
+    setValueToDp(\"GOU_PT165.OUT\", 45);
+    setValueToDp(\"GOU_TT148.OUT\", 45);
+    setValueToDp(\"GOU_TT149.OUT\", 45);
+    setValueToDp(\"GOU_TT150.OUT\", 45);
+    setValueToDp(\"GOU_TT153A.OUT\", 45);
+    setValueToDp(\"GOU_TT153B.OUT\", 45);
+    setValueToDp(\"GOU_TT154.OUT\", 45);
+    setValueToDp(\"GOU_TT155A.OUT\", 45);
+    setValueToDp(\"GOU_TT155B.OUT\", 45);
+    setValueToDp(\"GOU_TT161.OUT\", 45);
+    setValueToDp(\"GOU_TT162.OUT\", 45);
+    setValueToDp(\"GOU_TT163.OUT\", 45);
+    setValueToDp(\"GOU_TT165.OUT\", 45);
+    setValueToDp(\"GOU_XT165_Avrg.OUT\", 45);
+    setValueToDp(\"GOU_XT165_Peak.OUT\", 85);
+    setValueToDp(\"GOU_CV*.REG\", 0);//регуляторы
+
+    setValueToDp(\"GOU_MTA*.ERR\", 0);
+    setValueToDp(\"GOU_CRX*.ERR\", 0);
+    setValueToDp(\"GOU_DRX*.ERR\", 0);
+    setValueToDp(\"GOU_FT101*.ERR\", 0);
+    setValueToDp(\"GOU_KTT*.ERR\", 0);
+    setValueToDp(\"GOU_PSL*.OUT\", 0);
+
+    setValueToDp(\"GOU_UV*.ERR\", 0); //краны
+    setValueToDp(\"GOU_ZSH*.ERR\", 0); //краны
+
+    setValueToDp(\"GOU_*.SHOW\", 0);
+
+
+    setValueToDp(\"GOU_UV131D.STATE\", 1);
+    setValueToDp(\"GOU_UV131A.STATE\", 1);
+    setValueToDp(\"GOU_ZSH101C.STATE\", 1);
+    setValueToDp(\"GOU_CRX182.STATE\", 1);
+    setValueToDp(\"GOU_DRX182.STATE\", 1);
+    setValueToDp(\"GOU_MTA191.STATE\", 1);
+
+  }
+}
+
+
+void setValueToDp(string filter, float val)
+{
+  string s;
+  dyn_string names;
+  names = dpNames(filter);
+
+  for (int i = 1; i <= dynlen(names); i++)
+  {
+    dpSet(names[i], val);
+  }
+}
+" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+13 13
+"PUSH_BUTTON1"
+""
+1 60 45 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+7 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  58 26 212 90
+
+T 
+2
+LANG:10027 8 dpSet CV
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  string s;
+  dyn_string names;
+  setValueToDp(\"PT*.CV\", 2, \"0.\");
+  setValueToDp(\"PDT*.CV\", 2, \"0.\");
+  setValueToDp(\"TT*.CV\", 2, \"\");
+  setValueToDp(\"AT*.CV\", 2, \"1.\");
+  setValueToDp(\"LT*.CV\", 2, \"\");
+}
+
+void setValueToDp(string filter, int substrlen, string beg)
+{
+  string s;
+  dyn_string names;
+  names = dpNames(filter);
+  for(int i=1; i<=dynlen(names);i++)
+  {
+    rand();
+    s = rand();
+    float val = (float) (beg+substr(s,1,substrlen));
+    dpSet(names[i], val);
+  }
+}" 0
+ E E E
+13 33
+"PUSH_BUTTON2"
+""
+1 244 45 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+9 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  242 26 396 90
+
+T 
+2
+LANG:10027 14 dpSet pvRange
+
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  string s;
+  dyn_string names;
+  setValueToDp(\"PT*.OUT\", 0, 1);
+  setValueToDp(\"PDT*.OUT\", 0, 1);
+  setValueToDp(\"TT*.CV\", -10, 20);
+  setValueToDp(\"AT*.CV\", 0, 5);
+  setValueToDp(\"LT*.CV\", 0, 10);
+}
+
+void setValueToDp(string filter, int min, int max)
+{
+  string s;
+  dyn_string names;
+  names = dpNames(filter);
+  for(int i=1; i<=dynlen(names);i++)
+  {
+    dpSet(names[i]+\":_pv_range.._incl_min\", 1);
+    dpSet(names[i]+\":_pv_range.._incl_max\", 1);
+    dpSet(names[i]+\":_pv_range.._min\", min);
+    dpSet(names[i]+\":_pv_range.._max\", max);
+  }
+}" 0
+ E E E
+13 77
+"PUSH_BUTTON4"
+""
+1 450.0000000000001 45 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+22 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  448.0000000000001 26 598 90
+
+T 
+2
+LANG:10027 11 dpSet show
+
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  string s;
+  dyn_string names;
+  bool value = false;
+  setValueToDp(\"PT*.SHOW\", value);
+  setValueToDp(\"PDT*.SHOW\", value);
+  setValueToDp(\"TT*.SHOW\", value);
+  setValueToDp(\"AT*.SHOW\", value);
+  setValueToDp(\"LT*.SHOW\",value);
+  setValueToDp(\"FT*.SHOW\",value);
+  setValueToDp(\"KP*.SHOW\",value);
+}
+
+void setValueToDp(string filter, bool value)
+{
+  string s;
+  dyn_string names;
+  names = dpNames(filter);
+  for(int i=1; i<=dynlen(names);i++)
+  {
+    dpSet(names[i], value);
+  }
+}" 0
+ E E E
+13 120
+"PUSH_BUTTON5"
+""
+1 625.0000000000001 45 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+23 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  623.0000000000001 26 773 90
+
+T 
+2
+LANG:10027 9 dpSet val
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  bool value = true;
+  if (value) {
+    dpSet(\"FIRE.OUT\", 2);
+    dpSet(\"PT20.SIM\", true);
+    dpSet(\"PT20.SIMV\", 4.3);
+    dpSet(\"PT19.OUT\", 0.86);
+    dpSet(\"AT24_1.OUT\", 1.79);
+    dpSet(\"PDT5_1.OUT\", 0.01);
+    dpSet(\"FT21.OUT\", 46);
+    dpSet(\"TT15.OUT\", 38);
+    dpSet(\"TT7_1.OUT\", 78);
+    dpSet(\"TT2.OUT\", 98);
+
+  } else {
+    dpSet(\"FIRE.OUT\", 0);
+    dpSet(\"PT20.SIM\", false);
+    dpSet(\"PT20.CV\", 0.9);
+    dpSet(\"PT19.OUT\", 0.4);
+    dpSet(\"AT24_1.OUT\", 2.79);
+    dpSet(\"PDT5_1.OUT\", 0.7);
+    dpSet(\"FT21.OUT\", 3);
+    dpSet(\"TT7_1.OUT\", 3);
+    dpSet(\"TT2.OUT\", 3);
+    dpSet(\"TT15.OUT\", 3);
+  }
+}
+
+void setValueToDp(string filter, bool value)
+{
+}" 0
+ E E E
+13 216
+"PUSH_BUTTON6"
+""
+1 49.7803729896232 170.5013397675344 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+32 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  47.7803729896232 146.5013397675344 210 220.5013397675344
+
+T 
+2
+LANG:10027 18 setVAl 
+OO1_FTA1 0
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValFTA1(0);
+}" 0
+ E E E
+13 312
+"PUSH_BUTTON7"
+""
+1 39.8901864948116 268.5 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+33 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  37.8901864948116 244.5 211.8901864948116 318.5
+
+T 
+2
+LANG:10027 12 setVAl GOU 0
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValGOU(0);
+}" 0
+ E E E
+13 313
+"PUSH_BUTTON8"
+""
+1 40 370 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+34 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  38 346 212 420
+
+T 
+2
+LANG:10027 25 setVAl TTAO 
+green feed 0
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValTTAO(0);
+}
+" 0
+ E E E
+13 314
+"PUSH_BUTTON9"
+""
+1 273.9450932474058 268.5 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+35 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  271.9450932474058 244.5 445.9450932474058 318.5
+
+T 
+2
+LANG:10027 12 setVAl GOU 1
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValGOU(1);
+}" 0
+ E E E
+13 315
+"PUSH_BUTTON10"
+""
+1 274.0549067525942 370 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+36 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  272.0549067525942 346 446.0549067525942 420
+
+T 
+2
+LANG:10027 25 setVAl TTAO 
+green feed 1
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValTTAO(1);
+}
+" 0
+ E E E
+13 316
+"PUSH_BUTTON11"
+""
+1 273.9176398711087 170.5013397675344 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+37 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  271.9176398711087 146.5013397675344 434.1372668814855 220.5013397675344
+
+T 
+2
+LANG:10027 18 setVAl 
+OO1_FTA1 1
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValFTA1(1);
+}" 0
+ E E E
+13 317
+"PUSH_BUTTON12"
+""
+1 790.9999999999999 45 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+38 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  788.9999999999999 26 1023 90
+
+T 
+2
+LANG:10027 18 create SIT_INTEGER
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{//OO1_GTO_FIRE1_ER_SECTION
+  int i, j;
+  string temp;
+  dyn_int dynFire = makeDynInt(1,2,3,4);
+  dyn_string dynRamp = makeDynString(\"ER\", \"TPR\", \"HR1\", \"HR2\", \"HR3\", \"ZPR\", \"BR\");
+  for(i=1; i<=dynlen(dynFire); i++)
+  {
+    for(j=1; j<=dynlen(dynRamp); j++)
+    {
+      temp = \"OO1_GTO_FIRE\"+dynFire[i]+\"_\"+dynRamp[j]+\"_SECTION\";
+      create(temp);
+      temp = \"OO1_GTO_FIRE\"+dynFire[i]+\"_\"+dynRamp[j]+\"_STATION\";
+      create(temp);
+    }
+  }
+}
+
+void create(string name)
+{
+  if (!dpExists(name))
+  {
+    dpCreate(name,\"SIT_INTEGER\");
+  }
+}" 0
+ E E E
+13 318
+"PUSH_BUTTON13"
+""
+1 790.9999999999999 135.7506698837672 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+39 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  788.9999999999999 116.7506698837672 1023 180.7506698837672
+
+T 
+2
+LANG:10027 15 create SIT_RAMP
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{//OO1_GTO_FIRE1_ER_SECTION
+  int i, j;
+  string temp;
+  dyn_int dynFire = makeDynInt(1,2,3,4);
+  dyn_string dynRamp = makeDynString(\"ER\", \"TPR\", \"HR1\", \"HR2\", \"HR3\", \"ZPR\", \"BR\");
+  for(i=1; i<=dynlen(dynFire); i++)
+  {
+    for(j=1; j<=dynlen(dynRamp); j++)
+    {
+      temp = \"OO1_GTO_FIRE\"+dynFire[i]+\"_\"+dynRamp[j];
+      create(temp);
+    }
+  }
+}
+
+void create(string name)
+{
+  if (!dpExists(name))
+  {
+    dpCreate(name,\"SIT_RAMP\");
+  }
+}" 0
+ E E E
+13 319
+"PUSH_BUTTON14"
+""
+1 40 473 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+40 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  38 449 212 523
+
+T 
+2
+LANG:10027 11 setValGTO 0
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValGTO(0);
+}
+" 0
+ E E E
+13 320
+"PUSH_BUTTON15"
+""
+1 273.9862733118514 473 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+41 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  271.9862733118514 449 445.9862733118514 523
+
+T 
+2
+LANG:10027 11 setValGTO 1
+LANG:10001 12 PUSH_BUTTON6
+"main(mapping event)
+{
+  setValGTO(1);
+}
+" 0
+ E E E
+29 321
+"Pdf_ewo1"
+""
+1 640 360 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  640 360 850 480
+7 Pdf.ewo
+0
+E0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

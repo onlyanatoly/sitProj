@@ -1,0 +1,209 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 593 423 N "fon_static" 0
+E E E E E 1 -1 -1 0  59.34084170588952 34.99999580821236
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+2 2
+"title"
+""
+1 362 323 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignVCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.7255733325152353 0 1.323167169169162 -231.6129240326923 -412.6146673333308 0 E 362 323 690 343
+0 2 2 "0s" 0 0 0 65 0 0  362 323 1
+3
+LANG:10027 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10001 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10000 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+0 3
+LANG:10027 35 Загрузка мощностей
+LANG:10001 22 Production line status
+LANG:10000 22 Production line status
+30 3
+"FRAME1"
+""
+1 50 12 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+2 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.897802805686298 0 1.272374899335428 -84.23098199020444 -12.60746577404553 0 E 50 12 351 341
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+29 4
+"Chart_ewo2"
+""
+1 22.186254461985 43.87800603003004 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 16 values chart-ewo
+LANG:10001 16 values chart-ewo
+LANG:10000 15 Werte Chart-Ewo
+
+29
+"holeSize" "float 0.2"
+"chartType" "enum 0"
+"legendPosition" "enum 3"
+"frameShape" "enum 1"
+"startAngle" "float 0"
+"axesColor" "color {255,255,0}"
+"showGrid" "bool TRUE"
+"seriesSpacing" "int 20"
+"defaultItemPen" "pen [none,oneColor,JoinBevel,CapProjecting,1]"
+"defaultItemBrush" "fill [solid]"
+"orientation" "enum 1"
+"selectionBrush" "fill [gradient,[linear,pad,0,0,0.639,0.602,0,{0,0,0},1,{255,255,255}]]"
+"animateValueChange" "bool TRUE"
+"shownValueText" "enum 2"
+"valueTextPosition" "enum 3"
+"gridColor" "color {230,230,230}"
+"stopAngle" "float 360"
+"explosionOffset" "uint 0"
+"animateHoverItem" "bool TRUE"
+"holeFactor" "float 0.5"
+"itemsSelectable" "bool TRUE"
+"axesFont" "font Noto Sans,-1,24,5,50,0,0,0,0,0"
+"legendFont" "font Noto Sans,-1,16,5,50,0,0,0,0,0,Regular"
+"axesLabelFont" "font Luxi Serif,-1,17,5,50,2,0,0,0,0"
+"segmentSpacing" "int 10"
+"plotFillType" "fill [solid]"
+"defaultFillType" "fill [solid]"
+"plotColor" "color {230,230,230}"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 32 DejaVu Sans,-1,15,5,50,0,0,0,0,0
+LANG:10001 32 DejaVu Sans,-1,15,5,50,0,0,0,0,0
+LANG:10000 32 DejaVu Sans,-1,16,5,50,0,0,0,0,0
+0  22.186254461985 43.87800603003004 570 410
+9 Chart.ewo
+1
+0 "itemSelected" "(int series, int idx)"
+"  if ( (series >= 0) && (idx >= 0) )
+    status.text = \"ser:\" + (string)series + \" item:\" + (string)idx + \" value:\" + this.getItemValue(series,idx);
+  else
+    status.text = \"\";"
+"dyn_string colors = makeDynString(\"gannt1\", \"gannt2\", \"gannt3\",
+                                  \"gannt4\", \"gannt5\", \"gannt6\",
+                                  \"gannt7\", \"gannt8\", \"gannt1\",
+                                  \"gannt2\");
+
+main()
+{
+  Chart_ewo2.updatesEnabled = false;
+  //setVisiblity(button);
+  VisibilitySeries1.state(0, true);
+
+
+      Chart_ewo2.chartType = \"Donut\";
+      Chart_ewo2.shownValueText = \"Percent\";
+
+      initRadar();
+
+  Chart_ewo2.updatesEnabled = true;
+}
+
+initRadar()
+{
+  Chart_ewo2.removeAxes();
+
+  dyn_float values;
+  dyn_string labels;
+
+  for (int i = 1; i <= 4; i++)
+  {
+    values[i] = rand();
+    labels[i] = \"Система № \" + (string)i;
+    Chart_ewo2.addAxis(0, 32768, \"axis of\\nvalue \" + (string)i);
+  }
+
+  Chart_ewo2.setSeries(0, values, labels);
+
+  for (int i = 1; i <= 4; i++)
+  {
+    Chart_ewo2.setItemFillColor(0, i-1, colors[i]);
+  }
+
+
+}
+" 0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

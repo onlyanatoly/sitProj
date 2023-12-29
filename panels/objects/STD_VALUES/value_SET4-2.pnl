@@ -1,0 +1,242 @@
+V 14
+3
+LANG:10027 18 значение 1
+LANG:10000 6 Wert 1
+LANG:10001 7 value 1
+PANEL,-1 -1 244 100 N "STD_panel_back" 3
+"$b_IBit"
+"$b_ShowInfo"
+"$dpe_value"
+E E E E E 1 -1 -1 0  10 10
+"objects_parampanels/STD_VALUES/value_1_para.pnl"0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+1
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 6 Layer1
+2 6
+"PRIMITIVE_TEXT2"
+""
+1 7.500000000000021 17.49999999999999 E E E 1 E 1 E N "White" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 42 Значение не достоверно
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_value+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$SET4}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 7.500000000000021 17.49999999999999 19 35
+0 2 2 "0s" 0 0 0 192 0 0  7.500000000000021 17.49999999999999 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+2 13
+"PRIMITIVE_TEXT5"
+""
+1 82 18 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 42 Значение не достоверно
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+ string sUnit=dpGetUnit($dpe_value);
+ setValue(\"\",\"text\",sUnit);
+}" 0
+ E 0 1 3 2 1 E U  0 E 82 18 93.75 36.5
+0 2 2 "0s" 0 0 0 192 0 0  82 18 1
+1
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+0
+LAYER, 1 
+1
+LANG:10027 6 Layer2
+1 14 0 "" 0
+0
+14 3
+"Value"
+""
+1 20 16 E E E 1 E 1 E N "STD_value_ok" E N "_Transparent" E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+std_quittScript($dpe_value, iType);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$dpe_value}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 31 Текущее значение
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"transparentForMouse" ""
+"transparentForMouseInGedi" ""
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 47 Arial,-1,16,5,75,0,0,0,0,0,Полужирный
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+0  18 14 82 42
+2 "0s" 0 0 0 2 0 -1  E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setForeColor();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $dpe_value+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"foreCol\", \"STD_on\");
+  else
+    setValue(\"\", \"foreCol\", \"White\");
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$SET4}
+// DPConfig {:_online.._bad}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {STD_on}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {White}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+" 0
+ E
+1 15 1 "" 0
+0
+0
+LAYER, 2 
+1
+LANG:10027 6 Layer3
+0
+LAYER, 3 
+1
+LANG:10027 6 Layer4
+0
+LAYER, 4 
+1
+LANG:10027 6 Layer5
+0
+LAYER, 5 
+1
+LANG:10027 6 Layer6
+0
+LAYER, 6 
+1
+LANG:10027 6 Layer7
+0
+LAYER, 7 
+1
+LANG:10027 6 Layer8
+0
+3 0 "PANEL_REF0" -1
+"sizePolicy" "Expanding Fixed"
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects_parts/STD_VALUES/value_main.pnl" 10 10 T 4 1.766666666666667 0 0.6333333333333334 5.333333333333337 12.66666666666666
+4
+"$b_IBit""$b_IBit"
+"$b_ShowAlert""0"
+"$b_ShowInfo""$b_ShowInfo"
+"$dpe_value""$dpe_value"
+3 1 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_PARTS/ELEMENT_VALUE_ERRORFRAME.pnl" 36 123 T 11 0.6666666666666667 0 1.04 5.666666666666664 -38.04
+1
+"$dpe""$dpe_value"
+0

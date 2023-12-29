@@ -1,0 +1,638 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 312 261 N "_3DFace" 1
+"$UTM_Swith"
+E E E E E 1 -1 -1 0  70 130
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+6 13
+"RECTANGLE8"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N {80,80,80} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Opnd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Opnd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 5 3 2 1 E 1 0 1 -21.5 -100 1 E 70 130 110 170
+6 1
+"RECTANGLE1"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N {200,150,100} E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 5 3 2 1 E 1 0 1 -21.5 -100 1 E 70 130 110 170
+6 6
+"RECTANGLE3"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N "_Transparent" E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $UTM_Swith+\".Alarm.Alarm_Disconnect\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$UTM_Swith+\".Alarm.Alarm_Disconnect\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Alarm.Alarm_Disconnect\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\", 
+            $UTM_Swith+\".Alarm.Alarm_Disconnect\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"backCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$UTM_Swith+\".Alarm.Alarm_Disconnect\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 5 3 2 1 E 1 0 1 -21.5 -100 1 E 70 130 110 170
+6 8
+"RECTANGLE5"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N "White" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Clsd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 5 3 2 1 E 1 0 1 -21.5 -100 1 E 70 130 110 170
+6 11
+"RECTANGLE7"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N "White" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Opnd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Opnd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 5 3 2 1 E 1 0 1 -21.5 -100 1 E 70 130 110 170
+4 2
+"LINE1"
+""
+1 88.5 30 E E E 1 E 1 E N "Red" E N {255,255,255} E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Fault.Fault\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Fault.Fault\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Fault.Fault\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E  88.5 30 48.5 70
+6 4
+"Border3"
+""
+1 465 452 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Hand_Mode\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Hand_Mode\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Hand_Mode\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 1 0 1 E 0.859375 0 0.8125 -327.109375 -287.25 2  1 4  "pictures/Indicators/operation_mode_manual_green_up.wmf" 4294967295 E 465 420 497 452
+6 5
+"RECTANGLE2"
+""
+1 465 452 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Hand_Mode\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Hand_Mode\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Hand_Mode\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 1 0 1 E 0.859375 0 0.8125 -327.109375 -287.25 2  1 4  "pictures/Indicators/32_machine_locked.gif" 4294967295 E 465 420 497 452
+2 9
+"PRIMITIVE_TEXT1"
+""
+1 6 8 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Clsd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1 0 1.6 52.5 21.2 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,29,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+2 12
+"PRIMITIVE_TEXT2"
+""
+1 6 8 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Swith+\".Opnd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Swith+\".Opnd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1 0 1.6 52.5 21.2 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,29,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

@@ -1,0 +1,358 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 323 241 N "_3DFace" 0
+E E E E E 1 -1 -1 0  20 20
+""0  1
+E E 3
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+2 7
+"Text1"
+""
+1 78 125 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 80 127 131 141
+0 2 0 "0s" 0 0 0 192 0 0  80 127 1
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0 3
+LANG:10027 14 процент
+LANG:10001 7 Percent
+LANG:10000 7 Prozent
+13 0
+"Button1"
+""
+1 20 20 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  18 18 142 52
+
+T 
+3
+LANG:10027 27 Откр.индикатор
+LANG:10001 8 Open bar
+LANG:10000 14 Öffne Anzeige
+"main()
+{
+  closeProgressBar();
+  openProgressBar(\"test\", \"copy.gif\", txtLine1.text,txtLine2.text, txtLine3.text, 2);
+
+}
+
+
+" 0
+ E E E
+13 1
+"Button2"
+""
+1 20 190 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  18 188 142 222
+
+T 
+3
+LANG:10027 27 Закр.индикатор
+LANG:10001 9 Close bar
+LANG:10000 17 Schließe Anzeige
+"main()
+{
+
+  closeProgressBar();
+
+}
+
+
+" 0
+ E E E
+13 2
+"Button3"
+""
+1 150 20 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  148 18 292 52
+
+T 
+3
+LANG:10027 35 Откр.бегущ.индикат.
+LANG:10001 15 Open bar slider
+LANG:10000 20 Öffne perm. Anzeige
+"main()
+{
+  closeProgressBar();
+
+  openProgressBar(\"test\", \"delay.gif\", txtLine1.text,txtLine2.text, txtLine3.text, 1);
+
+}
+
+
+" 0
+ E E E
+21 3
+"spbPercent"
+""
+1 20 122 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  18 120 72 146
+0
+
+E
+"
+main()
+{
+int i = this.text;
+
+showProgressBar(\"\",\"\",\"\",i);
+
+
+}
+" 0
+
+E
+
+N 0 100 1 0 1 1
+14 4
+"txtLine3"
+""
+1 20 145 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E "main()
+{
+string s = this.text;
+
+showProgressBar(\"\",\"\",s, -1);
+  
+}" 0
+ E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  18 143 302 169
+3 "0s" 0 0 0 0 0 -1  E "main()
+{
+  this.text = \"Zeile 3\";
+
+}" 0
+ "main()
+{
+string s = this.text;
+
+showProgressBar(\"\",\"\",s, -1);
+
+
+}
+
+" 0
+
+14 5
+"txtLine2"
+""
+1 20 96 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+6 0 0 0 0 0
+E "main()
+{
+string s = this.text;
+
+showProgressBar(\"\",s,\"\", -1);
+  
+}" 0
+ E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  18 94 302 120
+3 "0s" 0 0 0 0 0 -1  E "main()
+{
+  this.text = \"Zeile 2\";
+
+}" 0
+ "main()
+{
+string s = this.text;
+
+showProgressBar(\"\",s,\"\", -1);
+
+
+}
+
+" 0
+
+14 6
+"txtLine1"
+""
+1 20 70 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+7 0 0 0 0 0
+E "main()
+{
+string s = this.text;
+
+showProgressBar(s,\"\",\"\", -1);
+  
+}" 0
+ E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10001 32 Courier New,-1,12,5,40,0,0,0,0,0
+LANG:10000 32 Courier New,-1,12,5,40,0,0,0,0,0
+0  18 68 302 94
+3 "0s" 0 0 0 0 0 -1  E "main()
+{
+  this.text = \"Zeile 1\";
+
+}" 0
+ "main()
+{
+string s = this.text;
+
+showProgressBar(s,\"\",\"\", -1);
+
+
+}
+" 0
+
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

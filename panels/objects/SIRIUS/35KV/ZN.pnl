@@ -1,0 +1,382 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 378 404 N "_3DFace" 1
+"$UTM_Switch_Sirius"
+E E E E E 1 -1 -1 0  170 90
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+4 1
+"LINE1"
+""
+1 133.5522467445535 51.29589177743779 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  133.5522467445535 51.29589177743779 133.4780773121228 45.15023413921622
+4 4
+"LINE4"
+""
+1 141.4763866043938 45.15023413921622 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  141.4763866043938 45.15023413921622 125.5437970805079 45.15023413921622
+4 5
+"LINE5"
+""
+1 139.0069921797966 41.12570521602013 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  139.0069921797966 41.12570521602013 128.0020299818486 41.12570521602012
+4 6
+"LINE6"
+""
+1 136.7353371821417 37.15594477490831 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  136.7353371821417 37.15594477490831 130.2643232055299 37.15594477490831
+7 9
+"ELLIPSE1"
+""
+1 139.5 140.5 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N "Black" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 1 1 E -0.9998899718527611 0.01483388648614682 -0.01483388648614682 -0.9998899718527611 275.1484820021773 191.2109351045602 1 E 139.5 140.5 1.5 1.5
+4 12
+"LINE10"
+""
+1 133.5959327210889 92.29586850347329 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  133.5959327210889 92.29586850347329 133.51110817243 77.29642432078616
+4 13
+"LINE11"
+""
+1 133.6522350500283 77.29627394837242 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".ZN_Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 2 3 2 1 E  133.6522350500283 77.29627394837242 133.4116525722667 51.79599447101765
+4 14
+"LINE12"
+""
+1 135.7952817987568 77.26301139999386 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  135.7952817987568 77.26301139999386 131.2957769254194 77.32976388918149
+4 16
+"LINE14"
+""
+1 142.5659216454162 74.10800329442714 E E E 1 E 1 E N "STD_infoType_cmd_txt" E N {255,255,255} E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".ZN_Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 2 3 2 1 E  142.5756828913364 73.28628968436371 133.5596636877966 51.79583676336415
+6 20
+"RECTANGLE1"
+""
+1 130 134 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Clsd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E -0.001065511622813988 -0.9999994323423296 0.9999994323423296 -0.001065511622813988 -10.28198445539437 206.9492371803553 1 E 130 134 158 154
+2 21
+"PRIMITIVE_TEXT1"
+""
+1 128.9395001282159 55.10838524937455 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".ZN_Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Clsd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 128.9395001282159 55.10838524937455 138 70
+0 2 2 "0s" 0 0 0 192 0 0  128.9395001282159 55.10838524937455 1
+1
+LANG:10027 47 Arial,-1,13,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

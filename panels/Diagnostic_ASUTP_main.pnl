@@ -1,0 +1,4619 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 2145 844 N "_3DFace" 2
+"$DP"
+"$DP_DEVICE_NAME"
+E E E E E 1 -1 -1 0  247 56
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+4 6770
+"LINE483"
+""
+1 2881.098720828579 481.3461628911825 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+681 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  127.3407439780424 450.0803482160786 720.7246893970969 450.0803482160786
+4 1778
+"LINE426"
+""
+1 1253.606287938296 190.8760703123022 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+324 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  115.2315572826759 159.6102556371983 360.5302707935653 159.6102556371983
+6 1781
+"RECTANGLE351"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+327 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 9.771974193604409 0 2.439033733282267 -11509.52825813342 -439.5145682536959 0 E 1180 204 1230 254
+2 1782
+"PRIMITIVE_TEXT160"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+328 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.118539403450216 0 1 16.50334662832603 -9.795786888907324 0 E 550 20 805 47
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 40  Склад зеленых анодов 
+LANG:10001 35 Мнемосхема 1 уровня
+6 1783
+"RECTANGLE352"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+329 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.142094463870171 0 0.7225326375412807 -22.27130700503045 -52.69284493761743 1 E 200 170 310 250
+2 1784
+"PRIMITIVE_TEXT161"
+""
+1 651.0362756409481 136.9128184928287 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+330 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1 0 1.065360805205235 -382.0372187181368 -70.70021334315111 0 E 594 136.9128184928287 708 182
+0 2 2 "0s" 0 0 0 193 0 0  651.0362756409481 136.9128184928287 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 25 АРМ оператора
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 17 склада ОА
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 25 (Бригадира) _PC2
+LANG:10001 0 
+4 1787
+"LINE429"
+""
+1 495.5214267580495 144.9403144477028 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+333 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  131.8406171335328 113.6744997725989 210.207109578524 113.6744997725989
+6 1791
+"RECTANGLE354"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+337 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.127673998661138 0 0.298076337929596 152.2981076350534 97.30543888048393 1 E 200 170 310 250
+2 1792
+"PRIMITIVE_TEXT163"
+""
+1 818.6637752434532 201.7219785417887 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+338 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9873736668329798 0 0.4395079625329162 -364.7618981756074 62.47576563871275 0 E 806 201.7219785417887 832 231
+0 2 2 "0s" 0 0 0 193 0 0  818.6637752434532 201.7219785417887 2
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 ИБП
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 1811
+"RECTANGLE358"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+353 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.77794915472147 0 1.2 -6810.945911808188 36.45797024123225 0 E 1180 204 1230 254
+6 1908
+"RECTANGLE359"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+357 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.434569815455915 0 0.876927655435173 -2867.180129032733 249.263915121424 0 E 1180 204 1230 254
+6 2271
+"RECTANGLE363"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+369 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 -216.8478981253265 266.3100771112665 1 E 200 170 310 250
+2 2272
+"PRIMITIVE_TEXT169"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+370 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 -58.62240024558016 120.9764946132237 0 E 88 327.5623689453924 186 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 7 АРМ 
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 16 Trascar Server 1
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 2273
+"RECTANGLE364"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+371 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.221979733376715 0 0.4693167396358379 56.85218518443127 269.6560167522864 1 E 200 170 310 250
+2 2274
+"PRIMITIVE_TEXT170"
+""
+1 276.4472706042753 327.9876332052769 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+372 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0699462890625 0 0.6919987190283372 72.67328589099242 125.6558631817837 0 E 227 327.9876332052769 325 373
+0 2 2 "0s" 0 0 0 193 0 0  276.4472706042753 327.9876332052769 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 7 АРМ 
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 16 Trascar Server 2
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 2276
+"RECTANGLE365"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+374 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.967115933705703 0 0.9889976350302756 -3494.162711009581 139.5024526950561 0 E 1180 204 1230 254
+4 2280
+"LINE444"
+""
+1 7811.06995648112 902.6562609570639 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+378 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  21.48935843953814 871.39044628196 1700 871.39044628196
+4 2281
+"LINE445"
+""
+1 1511.454044282372 -878.3930423326879 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+379 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 2 2 1 2 1 E  615.8417910771261 6.941777944813676 615.8417910771261 849.3725357155846
+2 2398
+"PRIMITIVE_TEXT174"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+415 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -521.9040476583764 827 0 E 550 20 676 41
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,18,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 27 Заводская сеть
+LANG:10001 35 Мнемосхема 1 уровня
+6 2866
+"RECTANGLE383"
+""
+1 1470 350 E E E 1 E 1 E N "fon_static" E N "fon_static" E E
+ E E
+447 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6666419987754231 0 1.26 -524.3811590021708 15.38034821607856 1 E 1470 350 1490 340
+2 2875
+"PRIMITIVE_TEXT179"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+456 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -560.7564618785518 585.5426879172339 0 E 550 20 598 35
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 9  ШС2.1 
+LANG:10001 35 Мнемосхема 1 уровня
+2 2876
+"PRIMITIVE_TEXT180"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+457 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -560.7564618785518 541.6963051454752 0 E 550 20 587 35
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 7  ШС3 
+LANG:10001 35 Мнемосхема 1 уровня
+2 2877
+"PRIMITIVE_TEXT181"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+458 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -560.7564618785518 454.0035396019579 0 E 550 20 629 35
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 17  Шкаф СТ01 
+LANG:10001 35 Мнемосхема 1 уровня
+2 2878
+"PRIMITIVE_TEXT182"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+459 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -560.7564618785518 497.8499223737166 0 E 550 20 629 35
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 17  Шкаф СТ02 
+LANG:10001 35 Мнемосхема 1 уровня
+2 2879
+"PRIMITIVE_TEXT183"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+460 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -560.7564618785517 410.1571568301993 0 E 550 20 624 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 17  Шкаф ТКШ1
+LANG:10001 35 Мнемосхема 1 уровня
+1 9517 87 "" 1
+0
+1 9522 88 "" 1
+0
+6 4032
+"RECTANGLE406"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+493 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 3.516107271960264 -2032.354938241324 -56.4655722531943 0 E 1180 204 1230 254
+2 4033
+"PRIMITIVE_TEXT185"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+494 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.032426565902216 0 1 -408.6163960548105 642.8203112266996 0 E 550 20 640 49
+0 2 2 "0s" 0 0 0 192 0 0  550 20 2
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 12  АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 27 прорезки пазов
+LANG:10001 0 
+1 9536 89 "" 1
+0
+1 9541 90 "" 1
+0
+6 4053
+"RECTANGLE407"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+497 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 3.255267730521321 0 3.516107271960264 -3591.286784519074 -56.4655722531943 0 E 1180 204 1230 254
+2 4054
+"PRIMITIVE_TEXT186"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+498 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1 -304.9458071381169 642.8203112266996 0 E 550 20 705 49
+0 2 2 "0s" 0 0 0 192 0 0  550 20 2
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 44 АСУТП кранов-штабелеров
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 17 склада ОА
+LANG:10001 0 
+1 9555 91 "" 1
+0
+1 9560 92 "" 1
+0
+6 4074
+"RECTANGLE408"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+503 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 3.516107271960264 -1776.815776278778 -56.4655722531943 0 E 1180 204 1230 254
+2 4075
+"PRIMITIVE_TEXT187"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+504 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.032426565902216 0 1 -153.0772340922649 642.8203112266996 0 E 550 20 642 49
+0 2 2 "0s" 0 0 0 192 0 0  550 20 2
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 23  АСУТП ТТиАО 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 12 Transcar SPA
+LANG:10001 0 
+1 9574 97 "" 1
+0
+1 9579 98 "" 1
+0
+6 4137
+"RECTANGLE411"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+521 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 4.132513496494257 -1559.5342953015 -213.0327532848286 0 E 1180 204 1230 254
+2 4138
+"PRIMITIVE_TEXT190"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+522 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.032426565902216 0 1 64.20424688501373 611.9999999999999 0 E 550 20 624 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 ТТиАО 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 12 Transcar SPA
+LANG:10001 0 
+1 9593 99 "" 1
+0
+1 9598 100 "" 1
+0
+6 4158
+"RECTANGLE412"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+523 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.745004391281848 0 4.132513496494257 -2516.355401276672 -213.0327532848286 0 E 1180 204 1230 254
+2 4159
+"PRIMITIVE_TEXT191"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+524 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.111111111111114 167.8748358017074 609.9999999999998 0 E 550 20 663 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 33 кранов-штабелеров
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 17 склада ЗА
+LANG:10001 0 
+1 9612 101 "" 1
+0
+1 9617 102 "" 1
+0
+6 4179
+"RECTANGLE413"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+525 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 4.142478157689283 -1234.708908637436 -215.0655441686137 0 E 1180 204 1230 254
+2 4180
+"PRIMITIVE_TEXT192"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+526 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.032426565902216 0 1 389.0296335490776 612 0 E 550 20 638 81
+0 2 2 "0s" 0 0 0 192 0 0  550 20 4
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 ТТиАО 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №1
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 8 TRANSCAR
+LANG:10001 0 
+1 9631 103 "" 1
+0
+1 9636 104 "" 1
+0
+6 4200
+"RECTANGLE414"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+527 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 4.142478157689283 -1141.933133200956 -215.0655441686137 0 E 1180 204 1230 254
+2 4201
+"PRIMITIVE_TEXT193"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+528 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1 490.6751314269595 610 0 E 550 20 638 81
+0 2 2 "0s" 0 0 0 192 0 0  550 20 4
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 ТТиАО 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №2
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 8 TRANSCAR
+LANG:10001 0 
+1 9650 105 "" 1
+0
+1 9655 106 "" 1
+0
+6 4221
+"RECTANGLE415"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+529 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 4.142478157689283 -1049.157357764475 -215.0655441686137 0 E 1180 204 1230 254
+2 4222
+"PRIMITIVE_TEXT194"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+530 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.066666666666667 585.4759979022516 610.8000000000001 0 E 550 20 638 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 7 ГТО 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №1
+LANG:10001 0 
+1 9669 107 "" 1
+0
+1 9674 108 "" 1
+0
+6 4242
+"RECTANGLE416"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+535 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8555155087296 0 4.142478157689283 -956.3815823279963 -215.0655441686137 0 E 1180 204 1230 254
+2 4243
+"PRIMITIVE_TEXT195"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+536 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.066666666666667 678.2517733387301 610.6666666666666 0 E 550 20 638 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 7 ГТО 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №2
+LANG:10001 0 
+1 9688 110 "" 1
+0
+6 4263
+"RECTANGLE417"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+537 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.106094680363399 0 4.142478157689283 -1159.289229419398 -215.0655441686137 0 E 1180 204 1230 254
+2 4264
+"PRIMITIVE_TEXT196"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+538 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.066666666666667 771.0275487752115 610.8 0 E 550 20 650 97
+0 2 2 "0s" 0 0 0 192 0 0  550 20 5
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 30 технологических
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 13 кранов 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №1
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 9 NKM NOELL
+LANG:10001 0 
+1 9702 111 "" 32
+0
+6 4297
+"RECTANGLE418"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+540 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.434569815455915 0 0.876927655435173 -2867.180129032733 293.1102978931826 0 E 1180 204 1230 254
+1 9734 112 "" 32
+0
+6 4330
+"RECTANGLE419"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+542 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.434569815455915 0 0.876927655435173 -2867.180129032733 336.9566806649413 0 E 1180 204 1230 254
+1 9766 113 "" 32
+0
+6 4363
+"RECTANGLE420"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+544 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.434569815455915 0 0.876927655435173 -2867.180129032733 380.8030634366999 0 E 1180 204 1230 254
+1 9798 114 "" 32
+0
+6 4396
+"RECTANGLE421"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+546 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.434569815455915 0 0.876927655435173 -2867.180129032733 424.6494462084586 0 E 1180 204 1230 254
+1 9830 115 "" 32
+0
+4 4461
+"LINE471"
+""
+1 10101.86206818487 297.4093981292851 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+549 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 2 1 2 1 E  -34.11590715202942 266.1435834541812 2150 266.1435834541812
+2 4462
+"PRIMITIVE_TEXT197"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+550 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -561.4016634267992 261.2579702412323 0 E 550 20 621 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 16  Шкаф СТ01
+LANG:10001 35 Мнемосхема 1 уровня
+6 4463
+"RECTANGLE422"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+551 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 -215.578869093671 215.5704379508853 1 E 200 170 310 250
+2 4464
+"PRIMITIVE_TEXT198"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+552 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 1.180513728886302 -57.35337121392469 -87.21482754042619 0 E 99 327.5623689453924 175 357
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 Сервер
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 11 ASC Server1
+LANG:10001 25 ПСП (основной)
+6 4465
+"RECTANGLE423"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+553 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 -74.21641088203398 214.0175088904396 1 E 200 170 310 250
+2 4466
+"PRIMITIVE_TEXT199"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+554 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 84.00908699771236 68.68392639239687 0 E 101 327.5623689453924 173 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 АРМ
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 11 ASC Client1
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 4467
+"RECTANGLE424"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+555 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.77794915472147 0 1.2 -6522.048454072112 36.45797024123225 0 E 1180 204 1230 254
+2 4468
+"PRIMITIVE_TEXT200"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+556 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -272.5042056907249 261.2579702412323 0 E 550 20 621 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 16  Шкаф СТ02
+LANG:10001 35 Мнемосхема 1 уровня
+6 4469
+"RECTANGLE425"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+557 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 73.31858864240331 215.5704379508853 1 E 200 170 310 250
+2 4470
+"PRIMITIVE_TEXT201"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+558 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 1.180513728886302 231.5440865221495 -87.21482754042619 0 E 99 327.5623689453924 175 357
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 Сервер
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 11 ASC Server2
+LANG:10001 25 ПСП (основной)
+6 4471
+"RECTANGLE426"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+559 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 214.6810468540403 214.0175088904396 1 E 200 170 310 250
+2 4472
+"PRIMITIVE_TEXT202"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+560 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 372.9065447337866 68.68392639239687 0 E 101 327.5623689453924 173 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 АРМ
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 11 ASC Client2
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 4476
+"RECTANGLE429"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+564 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.967115933705703 0 1.018583201445522 -3205.265253273506 133.4669971463458 0 E 1180 204 1230 254
+4 4935
+"LINE472"
+""
+1 1827.553910207514 -877.9417631422637 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+565 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 2 2 1 2 1 E  931.9416570022677 6.940361349796976 931.9416570022677 848.9403613497969
+2 4936
+"PRIMITIVE_TEXT203"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+566 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 -506.3853832021184 -11.79578688890733 0 E 550 20 853 47
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 46  Склад обожжённых анодов 
+LANG:10001 35 Мнемосхема 1 уровня
+1 9862 121 "" 1
+0
+6 4956
+"RECTANGLE409"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+571 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.8 0 3.516107271960264 -583.9999999999997 -55.83400586010986 0 E 1180 204 1230 254
+1 9876 123 "" 1
+0
+6 4977
+"RECTANGLE410"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+573 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.773565376917854 0 3.516107271960264 -462.8071447630678 -55.83400586010998 0 E 1180 204 1230 254
+2 4978
+"PRIMITIVE_TEXT189"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+574 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.081810126967755 1075.125055365798 641.9792953343642 0 E 550 20 628 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 10 АСУТП
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 16 ГОУ №5.ОО
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 19 Корпус №1,2
+LANG:10001 0 
+2 4979
+"PRIMITIVE_TEXT204"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+575 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 435.8491331457399 -13.79578688890733 0 E 550 20 938 47
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 56  Отделение обжига.Корпус №1,№2 
+LANG:10001 35 Мнемосхема 1 уровня
+2 4980
+"PRIMITIVE_TEXT205"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+576 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 1090.297951582867 -15.40835609195903 0 E 550 20 923 47
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 59  Административно-бытовой корпус
+LANG:10001 35 Мнемосхема 1 уровня
+4 4981
+"LINE473"
+""
+1 2552.278919871911 -610.3826330801764 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+577 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 2 2 1 2 1 E  1656.666666666666 6.941777944813676 1656.666666666666 594.3501340367727
+6 4982
+"RECTANGLE430"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+578 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.77794915472147 0 1.2 -6197.439484761998 36.17907470498942 0 E 1180 204 1230 254
+2 4986
+"PRIMITIVE_TEXT207"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+582 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 52.10476361939231 260.9790747049893 0 E 550 20 782 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 64 Коммутационный центр (пом.6) Стойка 
+LANG:10001 35 Мнемосхема 1 уровня
+6 4987
+"RECTANGLE433"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+583 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 397.9275579525192 215.2915424146425 1 E 200 170 310 250
+2 4988
+"PRIMITIVE_TEXT208"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+584 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 1.180513728886302 556.1530558322655 -87.49372307666897 0 E 87 327.5623689453924 187 357
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 25 АРМ оператора
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 ASC Client 3
+LANG:10001 25 ПСП (основной)
+6 4989
+"RECTANGLE434"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+585 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 539.2900161641563 213.7386133541968 1 E 200 170 310 250
+2 4990
+"PRIMITIVE_TEXT209"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+586 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 697.5155140439026 68.40503085615404 0 E 87 327.5623689453924 187 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 25 АРМ оператора
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 ASC Client 4
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 5012
+"RECTANGLE436"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+591 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 8.770652236500363 0 0.9590328271608013 -9377.902250895446 -143.5943380988435 0 E 1180 204 1230 254
+6 5051
+"RECTANGLE437"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+599 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 2.592443630199285 0 0.3749999999999998 596.3424746382201 41.24999999999996 1 E 200 170 310 250
+2 5052
+"PRIMITIVE_TEXT213"
+""
+1 651.0362756409481 136.9128184928287 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+600 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 2.269902982818401 0 0.9417445758322894 -220.2912414757419 -21.32959958816014 0 E 528 136.9128184928287 774 166
+0 2 2 "0s" 0 0 0 193 0 0  651.0362756409481 136.9128184928287 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 58 АРМ старшего диспетчера ПОА (_PC1)
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5053
+"RECTANGLE438"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+601 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.720602781022817 0 0.3111069273299045 775.1520896604247 7.132218395206413 1 E 200 170 310 250
+2 5054
+"PRIMITIVE_TEXT214"
+""
+1 656.2797619047606 209.1079284276912 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+602 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.50653280919713 0 0.4587213218948567 225.1988054996408 -33.79186483231639 0 E 576 209.1079284276912 736 238
+0 2 2 "0s" 0 0 0 193 0 0  656.2797619047606 209.1079284276912 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 35 Сервер АСОДУ ПОА _PC1
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5057
+"RECTANGLE439"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+605 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.127673998661138 0 0.298076337929596 757.4346039400713 9.868642169271215 1 E 200 170 310 250
+2 5058
+"PRIMITIVE_TEXT215"
+""
+1 818.6637752434532 201.7219785417887 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+606 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9873736668329798 0 0.4395079625329162 240.3745981294105 -24.96103107249998 0 E 806 201.7219785417887 832 231
+0 2 2 "0s" 0 0 0 193 0 0  818.6637752434532 201.7219785417887 2
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 ИБП
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5059
+"RECTANGLE440"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+607 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 2.592443630199285 0 0.3749999999999997 596.34247463822 76.25000000000009 1 E 200 170 310 250
+2 5060
+"PRIMITIVE_TEXT216"
+""
+1 651.0362756409481 136.9128184928287 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+608 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 2.269902982818402 0 0.5529304576627342 -220.2912414757409 66.90403720023754 0 E 519 136.9128184928287 783 166
+0 2 2 "0s" 0 0 0 193 0 0  651.0362756409481 136.9128184928287 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 61 АРМ оператора ОО(мастер-смены)(_PC2)
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5061
+"RECTANGLE441"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+609 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.127673998661138 0 0.298076337929596 751.5321105306587 61.3256234732529 1 E 200 170 310 250
+2 5062
+"PRIMITIVE_TEXT217"
+""
+1 818.6637752434532 201.7219785417887 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+610 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9873736668329798 0 0.4395079625329162 234.4721047199979 26.49595023148176 0 E 806 201.7219785417887 832 231
+0 2 2 "0s" 0 0 0 193 0 0  818.6637752434532 201.7219785417887 2
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 ИБП
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5063
+"RECTANGLE442"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+611 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 8.77065223650035 0 1.559032827160802 -9377.902250895431 -218.0426967408036 0 E 1180 204 1230 254
+6 5066
+"RECTANGLE444"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+614 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 3.099777113621552 0 1.2 -2711.286396924822 28.48649165814845 0 E 1180 204 1230 254
+2 5067
+"PRIMITIVE_TEXT219"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+615 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 378.0148429586666 253.2864916581485 0 E 550 20 622 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 12 ШС151100.1
+LANG:10001 35 Мнемосхема 1 уровня
+6 5075
+"RECTANGLE449"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+623 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 8.131068733495191 0 1.2 -8357.2091381422 104.7523063332525 0 E 1180 204 1230 254
+2 5076
+"PRIMITIVE_TEXT223"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+624 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 669.0162131921775 329.5523063332525 0 E 550 20 655 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 25 Стойка FivesSolios 
+LANG:10001 35 Мнемосхема 1 уровня
+6 5077
+"RECTANGLE450"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+625 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1014.839007525306 283.8647740429055 1 E 200 170 310 250
+2 5078
+"PRIMITIVE_TEXT224"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+626 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 1.180513728886302 1173.064505405052 -18.92049144840604 0 E 93 327.5623689453924 181 357
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 Сервер
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 22 управления A
+LANG:10001 25 ПСП (основной)
+6 5079
+"RECTANGLE451"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+627 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1143.41386084069 283.8647740429055 1 E 200 170 310 250
+2 5080
+"PRIMITIVE_TEXT225"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+628 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 1301.639358720437 138.5311915448627 0 E 94 327.5623689453924 180 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 Сервер
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 22 управления B
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 5082
+"RECTANGLE453"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+630 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1271.988714156074 283.8647740429055 1 E 200 170 310 250
+2 5083
+"PRIMITIVE_TEXT226"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+631 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 1430.21421203582 138.5311915448627 0 E 94 327.5623689453924 180 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 12 Сервер
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 22 управления C
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 5571
+"RECTANGLE459"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+642 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.867369118903071 0 2.408953873334952 -5686.043592923497 -81.87428382707787 0 E 1180 204 1230 254
+2 5572
+"PRIMITIVE_TEXT232"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+643 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 669.0162131921802 389.5523063332524 0 E 550 20 821 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 71  Коммутационный центр пом.207 (Стойка №1)
+LANG:10001 35 Мнемосхема 1 уровня
+6 5573
+"RECTANGLE460"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+644 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1014.839007525308 343.8647740429054 1 E 200 170 310 250
+2 5574
+"PRIMITIVE_TEXT233"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+645 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 1.180513728886302 1173.064505405055 41.07950855159396 0 E 101 327.5623689453924 173 357
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 17 Сервер №1
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5575
+"RECTANGLE461"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+646 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1156.201465736945 342.3118449824598 1 E 200 170 310 250
+2 5576
+"PRIMITIVE_TEXT234"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+647 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 1314.426963616692 196.978262484417 0 E 89 327.5623689453924 185 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 АРМ
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 23 Оператора №1
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+6 5582
+"RECTANGLE465"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+653 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1156.20146573694 402.3118449824598 1 E 200 170 310 250
+2 5583
+"PRIMITIVE_TEXT237"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+654 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 1314.426963616686 256.978262484417 0 E 89 327.5623689453924 185 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 АРМ
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 23 Оператора №2
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+4 5584
+"LINE474"
+""
+1 1256.142523998811 96.8670279837591 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+655 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  360.5302707935653 129.0176651326582 360.5302707935653 159.6102556371983
+6 1785
+"RECTANGLE353"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+331 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.130751682041468 0 0.7538860522046413 121.0860496090658 -57.72096617338056 1 E 200 170 310 250
+2 1786
+"PRIMITIVE_TEXT162"
+""
+1 656.2797619047606 209.1079284276912 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+332 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9900684381305334 0 1.111590826322839 -240.334150316084 -156.8897497465445 0 E 609 209.1079284276912 703 238
+0 2 2 "0s" 0 0 0 193 0 0  656.2797619047606 209.1079284276912 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 23 Сервер АСОДУ
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 11 ПОА _PC1
+LANG:10001 25 ПСП (основной)
+6 5585
+"RECTANGLE466"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+657 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.434569815455915 0 0.8708537583446773 -1143.625498971497 121.7299133772556 0 E 1180 204 1230 254
+2 5586
+"PRIMITIVE_TEXT238"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+658 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 0.9930736622880463 1162.798168182684 281.508754158385 0 E 550 20 615 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11  ШС241400
+LANG:10001 35 Мнемосхема 1 уровня
+1 9890 149 "" 32
+0
+1 9922 150 "" 32
+0
+4 5651
+"LINE475"
+""
+1 1010.843810487922 96.86702798375912 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+660 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  115.2315572826762 129.0176651326582 115.2315572826762 159.6102556371983
+1 9485 18 "" 32
+0
+6 5652
+"RECTANGLE467"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+661 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.127673998661138 0 0.298076337929596 1560.684179914799 7.060785923123042 1 E 200 170 310 250
+2 5653
+"PRIMITIVE_TEXT239"
+""
+1 818.6637752434532 201.7219785417887 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+662 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9873736668329798 0 0.4395079625329162 1043.624174104139 -27.76888731864814 0 E 806 201.7219785417887 832 231
+0 2 2 "0s" 0 0 0 193 0 0  818.6637752434532 201.7219785417887 2
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 6 ИБП
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 56 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0,Полужирный
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 25 ПСП (основной)
+6 5654
+"RECTANGLE468"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+663 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.582092519214436 0 1.11952905989924 -4930.20250600637 -194.792284311404 0 E 1180 204 1230 254
+2 5655
+"PRIMITIVE_TEXT240"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+664 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 0.9930736622880463 1090.297951582867 15.71631798685613 0 E 550 20 820 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 73  Чистка,обеспыливание спец.одежды пом.163
+LANG:10001 35 Мнемосхема 1 уровня
+2 5657
+"PRIMITIVE_TEXT242"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+666 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.128607802745646 985.1250553657987 641.1369371703623 0 E 550 20 638 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 21 АСУТП ТТиАО
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №1
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 9 NKM NOELL
+LANG:10001 0 
+1 9954 152 "" 1
+0
+4 6213
+"LINE476"
+""
+1 11554.02866745318 229.9146733429178 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+668 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 2 1 2 1 E  -432.9784807354741 198.6488586678139 2150 198.6488586678139
+1 9968 153 "" 1
+0
+2 6229
+"PRIMITIVE_TEXT243"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+671 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.000588678285967 0 1 -258.4285577921839 182 0 E 550 20 728 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 51 АСУТП системы безопасности 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 19 зон работы
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 40 кранов-штабелеров СОА
+LANG:10001 0 
+2 6230
+"PRIMITIVE_TEXT244"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+672 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9713987864186853 0 1 109.3970012695483 184.2710898887366 0 E 550 20 728 65
+0 2 2 "0s" 0 0 0 192 0 0  550 20 3
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 51 АСУТП системы безопасности 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 19 зон работы
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 40 кранов-штабелеров СЗА
+LANG:10001 0 
+6 6231
+"RECTANGLE469"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+673 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.329023978368244 0 1.2 -5998.248294474529 -44.80000000000004 0 E 1180 204 1230 254
+6 6232
+"RECTANGLE470"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+674 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.497505985128135 0 1.2 -5855.357043925254 -44.8000000000001 0 E 1180 204 1230 254
+4 6765
+"LINE478"
+""
+1 324.1090523604614 531.265814675104 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+676 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  129.3415494028515 500.0000000000001 171.3103463399677 500.0000000000001
+4 6767
+"LINE480"
+""
+1 2367.250985284905 569.0389284346999 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+678 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  127.3407439780417 537.773113759596 610.0000000000002 537.773113759596
+4 6768
+"LINE481"
+""
+1 1487.889072636424 -228.8923588942478 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+679 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  592.2768194311774 119.0241566679431 592.2768194311774 450.0803482160786
+4 6769
+"LINE482"
+""
+1 883.5383607127854 150.2899713430471 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+680 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  512.2768194311789 119.0241566679431 592.2768194311775 119.0241566679431
+4 6766
+"LINE479"
+""
+1 1357.861252390702 134.162533890246 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+677 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  462.2489991854558 340.9790747049893 462.2489991854558 537.773113759596
+6 6771
+"RECTANGLE471"
+""
+1 1470 350 E E E 1 E 1 E N "fon_static" E N "fon_static" E E
+ E E
+682 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6666419987754231 0 1.26 -815.3198118476586 14.84992237371646 1 E 1470 350 1490 340
+4 6764
+"LINE477"
+""
+1 1066.922599545214 173.859390365628 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+675 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  171.3103463399676 340.9790747049894 171.3103463399676 500.0000000000002
+4 6773
+"LINE485"
+""
+1 2692.104833906314 612.8853112064584 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+684 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  127.3407439780422 581.6194965313545 679.9999999999998 581.6194965313545
+4 6774
+"LINE486"
+""
+1 2459.94573380558 656.7316939782171 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+685 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  127.3407439780425 625.4658793031132 629.9740049994281 625.4658793031132
+6 6775
+"RECTANGLE472"
+""
+1 1470 350 E E E 1 E 1 E N "fon_static" E N "fon_static" E E
+ E E
+686 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6666419987754231 0 1.26 -783.0889084097826 187.3296521447041 1 E 1470 350 1490 340
+4 6772
+"LINE484"
+""
+1 1099.15350298309 496.6830966496544 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+683 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  203.5412497778437 581.6194965313545 203.5412497778437 662.439807758054
+4 6776
+"LINE487"
+""
+1 1354.692664945637 589.9932854351256 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+687 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  459.0804117403901 626.2861905298126 459.0804117403901 660.8203112266995
+4 6777
+"LINE488"
+""
+1 804.9588292100782 261.2658146751039 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+688 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  556.4511989184108 229.9999999999999 610.0000000000001 229.9999999999999
+4 6779
+"LINE490"
+""
+1 6316.154361222185 626.7316939782174 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+690 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  680.0000000000007 595.4658793031135 1894.487089993949 595.4658793031135
+4 6780
+"LINE491"
+""
+1 1575.612253205246 567.0679328691166 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+691 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  679.9999999999997 581.6194965313545 679.9999999999997 595.4658793031134
+4 6781
+"LINE492"
+""
+1 1591.976246537512 559.1729742084268 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+692 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  696.3639933322653 595.4658793031135 696.3639933322653 630
+4 6782
+"LINE493"
+""
+1 1685.612253205247 559.1729742084268 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+693 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  789.9999999999999 595.4658793031135 789.9999999999999 630
+4 6783
+"LINE494"
+""
+1 1525.586258204675 563.9380126347505 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+694 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  629.9740049994278 595.4658793031135 629.9740049994278 625.4658793031132
+4 6784
+"LINE495"
+""
+1 862.1331051001594 626.7316939782173 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+695 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  629.9740049994281 595.4658793031134 679.9999999999998 595.4658793031134
+4 6785
+"LINE496"
+""
+1 1811.554876306328 -137.0547646334801 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+696 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  915.9426231010815 238.3005734337101 915.9426231010815 595.4658793031135
+4 6786
+"LINE497"
+""
+1 945.8257895993482 269.566388108814 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+697 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  907.7346966122566 238.3005734337101 915.9426231010815 238.3005734337101
+4 6787
+"LINE498"
+""
+1 1616.336942602343 228.3130342293801 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+698 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  720.7246893970968 341.9501662375468 720.7246893970968 450.0803482160786
+6 6788
+"RECTANGLE473"
+""
+1 1470 350 E E E 1 E 1 E N "fon_static" E N "fon_static" E E
+ E E
+699 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6666419987754231 0 1.26 -376.6301581876261 14.84992237371646 1 E 1470 350 1490 340
+4 6778
+"LINE489"
+""
+1 1505.612253205247 -93.44765649065096 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+689 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  610.0000000000001 229.9999999999999 610.0000000000001 537.773113759596
+1 9982 154 "" 1
+0
+2 6803
+"PRIMITIVE_TEXT245"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+701 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9713987864186853 0 1 923.0484082451551 185.8628965547864 0 E 550 20 664 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 32 ШУ корпуса обжига
+LANG:10001 35 Мнемосхема 1 уровня
+6 6804
+"RECTANGLE474"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+702 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 3.987640487278813 0 1.2 -3253.804792651399 -43.20819333395019 0 E 1180 204 1230 254
+4 7331
+"LINE499"
+""
+1 1923.93278605896 559.1729742084271 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+703 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1028.320532853713 595.4658793031138 1028.320532853713 630
+4 7332
+"LINE500"
+""
+1 1989.538362841671 560.4704334858136 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+704 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1093.963054818212 595 1093.963054818212 630
+4 7333
+"LINE501"
+""
+1 2082.35108345994 562.3193466648004 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+705 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1186.738830254693 597 1186.738830254693 630
+4 7334
+"LINE502"
+""
+1 2208.887696110301 559.1729742084269 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+706 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1313.275442905055 595.4658793031135 1313.275442905055 630
+4 7335
+"LINE503"
+""
+1 2295.612253205245 559.1729742084274 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+707 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1399.999999999999 595.4658793031139 1399.999999999999 630
+4 7336
+"LINE504"
+""
+1 2355.591859850373 559.1729742084274 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+708 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1459.979606645126 595.4658793031139 1459.979606645126 630
+4 7337
+"LINE505"
+""
+1 2465.612253205246 526.2594112580783 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+709 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1570 595.4658793031136 1570 661.3185442864509
+4 7338
+"LINE506"
+""
+1 2034.33823689631 31.22656516533622 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+710 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1138.725983691063 170 1138.725983691063 302.0483586419599
+4 7339
+"LINE507"
+""
+1 1274.477639287675 333.3141733170639 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+711 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  1101.439452829687 302.0483586419599 1138.725983691063 302.0483586419599
+4 7340
+"LINE508"
+""
+1 1847.105943761578 410.8181210083565 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+712 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  1070 379.5523063332524 1237.451967382125 379.5523063332524
+4 7341
+"LINE509"
+""
+1 1956.329021742188 470.8181210083563 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+713 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  1040 439.5523063332523 1237.451967382126 439.5523063332523
+4 7342
+"LINE510"
+""
+1 2161.459788410358 530.8181210083565 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+714 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  983.6573010592256 499.5523063332524 1237.45196738212 499.5523063332524
+4 7343
+"LINE511"
+""
+1 1879.269554264472 151.7942845063808 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+715 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  983.6573010592255 329.9910779058328 983.6573010592255 499.5523063332524
+4 7344
+"LINE512"
+""
+1 1935.612253205246 214.8500178431073 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+716 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1040 329.9910779058328 1040 439.5523063332523
+4 7345
+"LINE513"
+""
+1 1965.612253205247 277.924049760511 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+717 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1070 330 1070 379.5523063332524
+6 7346
+"RECTANGLE475"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+718 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 5.867369118903071 0 1.2 -5775.013720030342 -41.20819333395019 0 E 1180 204 1230 254
+2 7347
+"PRIMITIVE_TEXT246"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+719 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 580.0460860853361 183.5918066660498 0 E 550 20 847 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 76  Коммутационный центр пом.207 (Стойка №1/№2)
+LANG:10001 35 Мнемосхема 1 уровня
+6 7348
+"RECTANGLE476"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+720 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 925.8688804184644 137.9042743757028 1 E 200 170 310 250
+2 7349
+"PRIMITIVE_TEXT247"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+721 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 1.180513728886302 1084.094378298211 -164.8809911156087 0 E 73 327.5623689453924 201 357
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 30 АРМ Оператора №1
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 27 мазутного узла
+LANG:10001 25 ПСП (основной)
+6 7350
+"RECTANGLE477"
+""
+1 200 170 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+722 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.168862302867128 0 0.4746325428843939 1067.231338630101 136.3513453152572 1 E 200 170 310 250
+2 7351
+"PRIMITIVE_TEXT248"
+""
+1 136.6320750914162 327.5623689453924 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+723 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignHCenter|AlignBottom"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.0234375 0 0.6998367710898549 1225.456836509848 -8.982237182785596 0 E 73 327.5623689453924 201 373
+0 2 2 "0s" 0 0 0 193 0 0  136.6320750914162 327.5623689453924 3
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 30 АРМ Оператора №2
+LANG:10001 25 АРМ оператора
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 27 мазутного узла
+LANG:10001 25 ПСП (основной)
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,75,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+4 7356
+"LINE514"
+""
+1 2119.541020854829 199.6840982847447 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+728 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1223.928767649582 256.5624100968013 1223.928767649582 310.6843515624427
+4 7357
+"LINE515"
+""
+1 1669.884100461729 341.9501662375467 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+729 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  1101.439452829686 310.6843515624427 1223.928767649582 310.6843515624427
+4 7358
+"LINE516"
+""
+1 2426.432676532528 193.2551505325557 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+730 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1530.820423327282 260 1530.820423327282 323.5103384915222
+4 7359
+"LINE517"
+""
+1 3094.097464128842 354.7761531666263 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+731 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+}
+
+" 0
+ E 0 4 1 2 1 E  1101.439452829687 323.5103384915222 1530.820423327281 323.5103384915222
+4 7876
+"LINE518"
+""
+1 2790.099343199195 -442.0944974747074 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+732 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1894.487089993949 89.56809690300338 1894.487089993949 595.4658793031138
+4 7877
+"LINE519"
+""
+1 2685.643381858127 78.0186484098748 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+733 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1790.031128652881 342.9281927439474 1790.031128652881 594.9999999999998
+2 8394
+"PRIMITIVE_TEXT249"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+734 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.033519553072626 0 1 861.2303438715599 447.9993772728067 0 E 550 20 634 33
+0 2 2 "0s" 0 0 0 192 0 0  550 20 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 21   (Стойка №2)
+LANG:10001 35 Мнемосхема 1 уровня
+4 8911
+"LINE520"
+""
+1 2539.617657262133 525.8125580886029 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+735 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1644.005404056886 595.5971897195216 1644.005404056886 662
+1 9996 158 "" 1
+0
+6 8931
+"RECTANGLE478"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+738 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.175855451448341 0 4.142478157689283 -1136.302205281459 -214.9322108352805 0 E 1180 204 1230 254
+2 8932
+"PRIMITIVE_TEXT250"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+739 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.066666666666667 876.332282793381 610.8000000000001 0 E 550 20 650 97
+0 2 2 "0s" 0 0 0 192 0 0  550 20 5
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 11 АСУТП 
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 30 технологических
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 13 кранов 
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 22 ОО корпус №2
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 9 NKM NOELL
+LANG:10001 0 
+1 10010 159 "" 1
+0
+6 9482
+"RECTANGLE479"
+""
+1 1180 204 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+741 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.226434623082134 0 3.516107271960264 -908.5145863910247 -55.83400586010998 0 E 1180 204 1230 254
+2 9483
+"PRIMITIVE_TEXT251"
+""
+1 550 20 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+742 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.012545519405477 0 1.081810126967755 1163.803324211691 641.9792953343643 0 E 550 20 656 81
+0 2 2 "0s" 0 0 0 192 0 0  550 20 4
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 10 АСУТП
+LANG:10001 35 Мнемосхема 1 уровня
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 31 насосной станции
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 31 охлаждения газов
+LANG:10001 0 
+2
+LANG:10027 50 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 21 в газоходах
+LANG:10001 0 
+4 9484
+"LINE521"
+""
+1 2624.77913647173 525.2644357083868 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+743 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 4 1 2 1 E  1729.166883266483 595.0490673393055 1729.166883266483 661.4518776197839
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 18 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 166 0.5762711864406773 0 0.7091810193124467 -98.37972184951782 -23.20160415086393
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+1 54 "SHAPE_GROUP52" -1
+2 0 
+1783 1784 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 55 "SHAPE_GROUP53" -1
+2 0 
+1785 1786 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 56 "SHAPE_GROUP54" -1
+2 0 
+1791 1792 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 68 "SHAPE_GROUP57" -1
+2 0 
+2271 2272 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 69 "SHAPE_GROUP58" -1
+2 0 
+2273 2274 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 87 "PANEL_REF65" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 491 0.6160909767831958 0 0.9024583415906272 -14.65653241449948 393.4444026494964
+0
+3 88 "PANEL_REF66" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 492 0.5062062918845947 0 0.3989771239030706 -308.4195232459651 670.1554235059008
+1
+"$DP""$DP"
+3 89 "PANEL_REF67" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 495 0.6160909767831958 0 0.9024583415906272 78.11924302198071 393.4444026494962
+0
+3 90 "PANEL_REF68" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 496 0.5062062918845947 0 0.3989771239030706 -219.3989712977922 670.1554235059008
+1
+"$DP""$DP"
+3 91 "PANEL_REF69" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 499 0.6160909767831958 0 0.9024583415906272 240.8826295480458 393.4444026494964
+0
+3 92 "PANEL_REF70" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 500 0.5062062918845947 0 0.3989771239030706 -52.88036128341986 670.1554235059008
+1
+"$DP""$DP"
+3 97 "PANEL_REF75" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 511 0.6160909767831958 0 0.9024583415906272 458.1641105253242 393.4444026494964
+0
+3 98 "PANEL_REF76" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 512 0.5062062918845947 0 0.3989771239030706 164.4011196938586 670.1554235059008
+1
+"$DP""$DP"
+3 99 "PANEL_REF77" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 513 0.6160909767831958 0 0.9024583415906272 550.9398859618044 393.4444026494962
+0
+3 100 "PANEL_REF78" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 514 0.5062062918845947 0 0.3989771239030706 253.4216716420316 670.1554235059008
+1
+"$DP""$DP"
+3 101 "PANEL_REF79" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 515 0.6160909767831958 0 0.9024583415906272 782.9894971893881 393.9426357092478
+0
+3 102 "PANEL_REF80" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 516 0.5062062918845947 0 0.3989771239030706 489.2265063579225 670.6536565656522
+1
+"$DP""$DP"
+3 103 "PANEL_REF81" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 517 0.6160909767831958 0 0.9024583415906272 875.7652726258683 393.9426357092477
+0
+3 104 "PANEL_REF82" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 518 0.5062062918845947 0 0.3989771239030706 583.3336082251019 670.7869898989854
+1
+"$DP""$DP"
+3 105 "PANEL_REF83" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 519 0.6160909767831958 0 0.9024583415906272 968.5410480623488 393.9426357092477
+0
+3 106 "PANEL_REF84" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 520 0.5062062918845947 0 0.3989771239030706 676.1093836615831 670.7869898989856
+1
+"$DP""$DP"
+3 107 "PANEL_REF85" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/IVK_IMC_07.pnl" 298.1648724213143 330.7897708374026 T 531 0.6160909767831958 0 0.9024583415906272 1061.316823498828 393.9426357092477
+0
+3 108 "PANEL_REF86" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 532 0.5062062918845947 0 0.3989771239030706 767.3190241397774 670.7869898989854
+1
+"$DP""$DP"
+3 110 "PANEL_REF88" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 534 0.5062062918845947 0 0.3989771239030706 858.8740500561224 670.7869898989854
+1
+"$DP""$DP"
+3 111 "PANEL_REF89" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 539 0.5680342013163587 0 0.3668197809603602 -112.1702577223497 388.1182045002247
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+3 112 "PANEL_REF90" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 541 0.5680342013163587 0 0.3668197809603602 -112.1702577223497 431.9645872719834
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+3 113 "PANEL_REF91" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 543 0.5680342013163587 0 0.3668197809603602 -112.1702577223497 475.8109700437419
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+3 114 "PANEL_REF92" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 545 0.5680342013163587 0 0.3668197809603602 -112.1702577223497 519.6573528155006
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+3 115 "PANEL_REF93" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 547 0.5680342013163587 0 0.3668197809603602 -112.1702577223497 563.5037355872594
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+1 116 "SHAPE_GROUP59" -1
+2 0 
+4463 4464 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 117 "SHAPE_GROUP60" -1
+2 0 
+4465 4466 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 118 "SHAPE_GROUP61" -1
+2 0 
+4469 4470 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 119 "SHAPE_GROUP62" -1
+2 0 
+4471 4472 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 121 "PANEL_REF72" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 568 0.5062062918845947 0 0.3989771239030706 1075.353887091942 670.7869898989852
+1
+"$DP""$DP"
+3 123 "PANEL_REF74" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 570 0.5062062918845947 0 0.3989771239030706 1163.709687829836 670.7869898989854
+1
+"$DP""$DP"
+1 125 "SHAPE_GROUP64" -1
+2 0 
+4987 4988 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 126 "SHAPE_GROUP65" -1
+2 0 
+4989 4990 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 130 "SHAPE_GROUP66" -1
+2 0 
+5051 5052 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 131 "SHAPE_GROUP67" -1
+2 0 
+5053 5054 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 132 "SHAPE_GROUP68" -1
+2 0 
+5057 5058 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 133 "SHAPE_GROUP69" -1
+2 0 
+5059 5060 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 134 "SHAPE_GROUP70" -1
+2 0 
+5061 5062 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 138 "SHAPE_GROUP75" -1
+2 0 
+5077 5078 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 139 "SHAPE_GROUP76" -1
+2 0 
+5079 5080 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 140 "SHAPE_GROUP77" -1
+2 0 
+5082 5083 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 145 "SHAPE_GROUP82" -1
+2 0 
+5573 5574 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 146 "SHAPE_GROUP83" -1
+2 0 
+5575 5576 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 148 "SHAPE_GROUP85" -1
+2 0 
+5582 5583 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 149 "PANEL_REF96" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 656 0.5680342013163587 0 0.3642790632780039 1611.384372338886 259.6224510550655
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+3 150 "PANEL_REF97" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/U_EDS_1.pnl" 242 161.1826923076925 T 659 0.7616485582718058 0 0.5861780474644385 783.3925724995024 196.0636505581342
+1
+"$DP_DEVICE_NAME""$DP_DEVICE_NAME"
+1 151 "SHAPE_GROUP86" -1
+2 0 
+5652 5653 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 152 "PANEL_REF98" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 667 0.5062062918845947 0 0.3989771239030706 5.325248974533856 109.2240933622387
+1
+"$DP""$DP"
+3 153 "PANEL_REF99" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 669 0.5062062918845947 0 0.3989771239030706 355.4493678384736 109.3094200193209
+1
+"$DP""$DP"
+3 154 "PANEL_REF100" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 700 0.5062062918845947 0 0.3989771239030706 1099.867056757657 110.9012266853708
+1
+"$DP""$DP"
+1 155 "SHAPE_GROUP87" -1
+2 0 
+7348 7349 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 156 "SHAPE_GROUP88" -1
+2 0 
+7350 7351 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 158 "PANEL_REF102" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 737 0.5062062918845947 0 0.3989771239030706 967.4228296818725 670.7869898989853
+1
+"$DP""$DP"
+3 159 "PANEL_REF103" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/CPU.pnl" 928.737850120448 233.0000000000005 T 740 0.5062062918845947 0 0.3989771239030706 1257.132895493738 670.7869898989853
+1
+"$DP""$DP"
+0

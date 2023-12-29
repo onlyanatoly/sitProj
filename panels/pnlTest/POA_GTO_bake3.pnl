@@ -1,0 +1,500 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 2092 1188 N "fon_static" 0
+"main()
+{
+  dyn_string parameterFire1ER, parameterFire2ER;
+  int i, j;
+  string sectionPanel = \"pnlTest/sub/POA_GTO_section.pnl\";
+
+  dyn_string moduleFire = makeDynString(\"module1ER\", \"module2ER\", \"module2ER\", \"module2ER\",
+                                        \"module1HR1\", \"module2HR1\", \"module3HR1\", \"module4HR1\",
+                                        \"module1HR2\", \"module2HR2\", \"module3HR2\", \"module4HR2\",
+                                        \"module1HR3\", \"module2HR3\", \"module3HR3\", \"module4HR3\",
+                                        \"module1BR\", \"module2BR\", \"module3BR\", \"module4BR\"
+                                        );
+
+  for(i=1; i<=dynlen(moduleFire);i++)
+  //for(i=1; i<=2;i++)
+  {
+    setValue(moduleFire[i], \"ModuleName\", ptms_BuildModuleName(moduleFire[i],ptnavi_GetScreenName()));
+  }
+
+/*
+  string moduleFire1ER = \"module1ER\";
+  string moduleFire2ER = \"module2ER\";
+  string moduleFire3ER = \"module3ER\";
+  string moduleFire4ER = \"module4ER\";
+
+  string moduleFire1HR1 = \"module1HR1\";
+  string moduleFire2HR1 = \"module2HR1\";
+  string moduleFire3HR1 = \"module3HR1\";
+  string moduleFire4HR1 = \"module4HR1\";
+
+  string moduleFire1HR1 = \"module1HR2\";
+  string moduleFire2HR1 = \"module2HR2\";
+  string moduleFire3HR1 = \"module3HR2\";
+  string moduleFire4HR1 = \"module4HR2\";
+
+  string moduleFire1HR1 = \"module1HR3\";
+  string moduleFire2HR1 = \"module2HR3\";
+  string moduleFire3HR1 = \"module3HR3\";
+  string moduleFire4HR1 = \"module4HR3\";
+
+  string moduleFire1BR = \"module1BR\";
+  string moduleFire2BR = \"module2BR\";
+  string moduleFire3BR = \"module3BR\";
+  string moduleFire4BR = \"module4BR\";
+
+  setValue(moduleFire1ER, \"ModuleName\", ptms_BuildModuleName(moduleFire1ER,ptnavi_GetScreenName()));
+  setValue(moduleFire2ER, \"ModuleName\", ptms_BuildModuleName(moduleFire2ER,ptnavi_GetScreenName()));
+*/
+  dynAppend(parameterFire1ER, \"$i_ramp:0\");
+  fillDyn(parameterFire1ER, 1, \"ER\");
+  fillDynStatSect(parameterFire1ER, 1, \"ER\", 1);
+  fillDynStatSect(parameterFire1ER, 1, \"TPR\", 2);
+
+  dynAppend(parameterFire2ER, \"$i_ramp:0\");
+  fillDyn(parameterFire2ER, 2, \"ER\");
+  fillDynStatSect(parameterFire2ER, 2, \"ER\", 1);
+  fillDynStatSect(parameterFire2ER, 2, \"TPR\", 2);
+
+
+  RootPanelOnModule( sectionPanel, \"\",
+                     ptms_BuildModuleName(moduleFire[1],ptnavi_GetScreenName()),
+                     parameterFire1ER);
+  RootPanelOnModule( sectionPanel, \"\",
+                     ptms_BuildModuleName(moduleFire[2],ptnavi_GetScreenName()),
+                     parameterFire2ER);
+/*
+  RootPanelOnModule( sectionPanel, \"\",
+                     ptms_BuildModuleName(moduleFire1ER,ptnavi_GetScreenName()),
+                     parameterFire1ER);
+  RootPanelOnModule( sectionPanel, \"\",
+                     ptms_BuildModuleName(moduleFire2ER,ptnavi_GetScreenName()),
+                     parameterFire2ER);
+*/
+}
+
+void fillDyn(dyn_string &dyn, int fire, string ramp)
+{
+  int i;
+  for(i=1; i<=9; i++)
+  {
+    dynAppend(dyn, \"$Tdpe\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\"_\"+i+\"_T\");
+    dynAppend(dyn, \"$Pdpe\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\"_\"+i+\"_P\");
+    dynAppend(dyn, \"$SPdpe\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\"_\"+i+\"_SP\");
+  }
+}
+
+void fillDynStatSect(dyn_string &dyn, int fire, string ramp, int j)
+{
+  int i;
+  dynAppend(dyn, \"$dpeStation\"+j+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\".STATION\");
+  dynAppend(dyn, \"$dpeSection\"+j+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\".SECTION\");
+  for(i=1; i<=9; i++)
+  {
+    dynAppend(dyn, \"$dpeMode\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\".MODE.ST\"+i);
+  }
+}" 0
+ E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 652 99 "" 1
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 -22.66429450261802 -637.1507478632476
+22 "textType" 0 0 "0s" 0 0 0 1 0 0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 63 Отделение обжига №1. Просмотр печи
+LANG:10001 63 Отделение обжига №1. Просмотр печи
+
+0
+29 639
+"module1ER"
+""
+1 70.00317809314761 97.86678859596429 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+269 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  69.9630338180977 98.3312977323933 330.0000000000001 546.9999999999999
+15 Canvas.Canvas.1
+0
+E29 640
+"module2ER"
+""
+1 69.99329783019533 633.7855221189935 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+270 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  69.9630338180977 634.1166990322473 266 954
+15 Canvas.Canvas.1
+0
+E29 642
+"EMBEDDED_MODULE1"
+""
+1 329.9943332284682 97.70113972976759 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+271 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  329.9815169090488 98.16564886619659 413 546.8343511338032
+15 Canvas.Canvas.1
+0
+E29 644
+"EMBEDDED_MODULE2"
+""
+1 413.0035747739437 97.53549086357094 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+273 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  412.9907584545244 97.99999999999994 496.0092415454756 546.6687022676066
+15 Canvas.Canvas.1
+0
+E29 645
+"module1HR1"
+""
+1 496.0262819568366 97.53549086357094 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+274 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  495.9861376817866 97.99999999999994 756.0231038636889 546.6687022676066
+15 Canvas.Canvas.1
+0
+E29 646
+"module1HR2"
+""
+1 756.0447650477877 97.36984199737424 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+275 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  756.0046207727378 97.83435113380324 1016.04158695464 546.5030534014098
+15 Canvas.Canvas.1
+0
+E29 647
+"module1HR3"
+""
+1 1016 98 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+276 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1015.95985572495 98.464509136429 1275.996821906852 547.1332114040356
+15 Canvas.Canvas.1
+0
+E29 648
+"EMBEDDED_MODULE3"
+""
+1 1276.00198572737 97.68492099868712 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+277 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1275.989169407951 98.14943013511612 1359.007652498902 546.8181324027228
+15 Canvas.Canvas.1
+0
+E29 649
+"EMBEDDED_MODULE4"
+""
+1 1359.011227272846 97.51927213249047 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+278 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1358.998410953426 97.98378126891947 1442.016894044377 546.6524835365261
+15 Canvas.Canvas.1
+0
+E29 650
+"EMBEDDED_MODULE5"
+""
+1 1442.028519159714 97.59398720004856 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+279 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1441.988374884664 98.05849633647756 1702.025341066566 546.7271986040842
+15 Canvas.Canvas.1
+0
+E29 651
+"EMBEDDED_MODULE6"
+""
+1 1702.024692329416 97.39098080007278 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+280 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1702.011876009996 97.85548993650178 1785.030359100947 546.5241922041084
+15 Canvas.Canvas.1
+0
+E0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 99 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 210 1 0 1 661.3990741919457 11.49989316239294
+0
+0

@@ -1,0 +1,315 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 400 400 N "_3DFace" 1
+"$DI"
+E E E E E 1 -1 -1 0  71 91
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+7 1
+"ELLIPSE315"
+""
+1 292.5 136.5 E E E 1 E 1 E N {0,0,0} E N {190,190,190} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $DI+\".DI\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$DI+\".DI\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ "main()
+{
+	symb_actionAtRightClick2($DI, $DI);
+}
+
+symb_actionAtRightClick2(string DPT, string DPE)
+{
+  // check user
+  // depending on DPT & user generate Popup
+  // open correct panel
+
+  bool bBuildTrendPopup;
+  dyn_string popup;
+  int answer;
+
+  //
+  //  build POPUP:
+  //
+  //  Trends & Trend
+  //  Information&Simulation
+  //  Options
+  //  Properties
+  //
+  //
+  //
+  //   Trend-Popup
+  bBuildTrendPopup = symb_isDptTrendable2(DPT);
+  if (bBuildTrendPopup)
+    dynAppend(popup, makeDynString(\"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trends\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),     // OPERATOR
+                                   \"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trendbuffer\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),// Operator
+                                   \"SEPARATOR\"));
+  //  Information&Simulation
+  //
+  switch (DPT)
+  {
+   case \"SLIDE_VALVE_HAND1\": dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+
+                                         \"SEPARATOR\"));break;
+   //default: dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+                                //         \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"simulation\")+\" , 1,\" +(getUserPermission(4)?\"1\":\"0\"),  // PARA
+                                  //       \"SEPARATOR\"));break;
+  }
+  //
+  //  DPT-specific Options
+  //
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"UTM_AI\":               // no special options
+   case \"COUNTER1\":             // no special options
+   case \"BIT_CONDITION\":        // no special options
+   case \"DRIVE1\":              // no special options
+   case \"DRIVE2\":              // no special options
+   case \"PUMP1\":               // no special options
+   case \"PUMP2\":               // no special options
+   case \"SETPOINT\":             // no special options
+   case \"SLIDE_VALVE1\":        // no special options
+   case \"SLIDE_VALVE2\":        // no special options
+   case \"SLIDE_VALVE_HAND1\":   // no special options
+   case \"ANALOG2\":              // no special options
+   case \"ANALOG1\":   break;     // no special options
+   //default:                      dynAppend(popup, makeDynString(\"PUSH_BUTTON, EXTEND1 , 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+  //                                                        \"PUSH_BUTTON, EXTEND2 , 1,\" +(getUserPermission(3)?\"1\":\"0\"),  // OPERATOR ALL
+   //                                                       \"SEPARATOR\"));
+        break;
+  }
+  //  DPT_CHANGE END
+  //
+  //  Properties
+  //
+    dynAppend(popup, makeDynString( \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"properties\")+\", 3,\"  +(getUserPermission(4)?\"1\":\"0\")));  // PARA
+
+  //
+  // build subpopups
+  //
+  if (bBuildTrendPopup)                            // Trend
+  {
+     symb_buildPopUpTrend(popup,1000,getCatStr(\"STD_Symbols\",\"trends\"));
+     symb_buildPopUpTrendbuffer(popup);
+  }
+  //
+  //  show popup
+  //
+  //
+
+  if (dynlen(popup) > 0)
+  {
+     popupMenu(popup, answer);
+     symb_EvaluatePopup2(popup, answer, DPE, DPT);
+  }
+
+}
+
+symb_EvaluatePopup2(dyn_string popup, int answer, string DPE, string DPT)
+{
+   //
+   //   !!! actual only working with STD_objects !!!
+   //
+   string sObjectPath = \"objects_parts/STD_OBJECTS/\";
+   string PANEL, path;
+
+   switch (answer)
+   {
+   case 0:  break;   // ESCAPE
+   case 1:           // Simulation
+             symb_checkDPE(DPE,DPT);
+             PANEL = sObjectPath+DPT+\"_sim.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_sim.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"SIM:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+  //           break;
+   case 2:           // Informaton
+             PANEL = sObjectPath+DPT+\"_info.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_info.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"INFO:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+             break;
+   case 3:           // Properties
+                PANEL = sObjectPath+DPT+\"_prop.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_prop.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dp:\"+dpSubStr(DPE, DPSUB_SYS_DP)));
+                else
+                       ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"PARA:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_prop.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+              break;
+   default:
+               symb_EvaluatePopupOtherActions(popup, answer, DPE, DPT);
+  }
+}
+
+
+bool symb_isDptTrendable2(string DPT)
+{
+  bool ret = false;
+
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"WH_SC1\":
+   case \"COUNTER1\":
+   case \"ANALOG2\":
+   case \"ANALOG1\": ret = TRUE; break;
+   case \"BIT_CONDITION\":
+   case \"DRIVE1\":
+   case \"DRIVE2\":
+   case \"PUMP1\":
+   case \"PUMP2\":
+   case \"SETPOINT\":
+   case \"SLIDE_VALVE1\":
+   case \"SLIDE_VALVE2\":
+   case \"SLIDE_VALVE_HAND1\":
+   default:      break;
+  }
+  //  DPT_CHANGE END
+  return ret;
+}" 0
+ E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $DI+\".DI:_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            $DI+\".DI:_alert_hdl.._act_state_color\",
+            $DI+\".DI:_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid)
+{
+  setValue(\"\", \"backCol\", ( boInvalid ? \"_invalid\" : sNewColor));
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:ES_RU_BKNS_OS_Alarm.DI}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {System1:ES_RU_BKNS_OS_Alarm.DI}
+// DPEConfigInvalid {:_online.._invalid}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -211.5 -35.5 1 E 292.5 136.5 8.5 8.5
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

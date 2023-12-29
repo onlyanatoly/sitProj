@@ -1,0 +1,812 @@
+V 14
+3
+LANG:10027 48 Пример редактора значений
+LANG:10001 19 Example valueEditor
+LANG:10000 20 Beispiel-valueEditor
+PANEL,-1 -1 500 366 N "_3DFace" 0
+E E E E E 1 -1 -1 0  20 70
+"refFileName"0  1
+E E 3
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+NC
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+2 21
+"Text1"
+""
+1 20 52 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 22 52 85 67
+0 2 2 "0s" 0 0 0 192 0 0  22 52 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 17 Значение:
+LANG:10001 6 Value:
+LANG:10000 5 Wert:
+2 30
+"Text4"
+""
+1 20 10 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 20 10 190 25
+0 0 0 "0s" 0 0 0 192 0 0  20 10 1
+3
+LANG:10027 26 Arial,-1,13,5,69,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,69,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,69,0,0,0,0,0
+0 3
+LANG:10027 44 Тест редактора значений
+LANG:10001 17 Value editor test
+LANG:10000 15 Werteditor-Test
+2 38
+"Text5"
+""
+1 20 82 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 22 82 85 97
+0 2 2 "0s" 0 0 0 192 0 0  22 82 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 15 Минимум:
+LANG:10001 8 Minimum:
+LANG:10000 8 Minimum:
+2 39
+"Text6"
+""
+1 270 82 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 272 82 341 97
+0 2 2 "0s" 0 0 0 192 0 0  272 82 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 17 Максимум:
+LANG:10001 8 Maximum:
+LANG:10000 8 Maximum:
+2 40
+"Text7"
+""
+1 20 172 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 22 172 80 187
+0 2 2 "0s" 0 0 0 192 0 0  22 172 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 15 Функция:
+LANG:10001 13 Workfunction:
+LANG:10000 13 Workfunction:
+2 42
+"Text8"
+""
+1 20 112 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 22 112 76 127
+0 2 2 "0s" 0 0 0 192 0 0  22 112 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 13 Цифр до
+LANG:10001 13 Digits before
+LANG:10000 11 Ziffern vor
+2 43
+"Text9"
+""
+1 177 112 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 179 112 213 127
+0 2 2 "0s" 0 0 0 192 0 0  179 112 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 9 посл.
+LANG:10001 5 after
+LANG:10000 4 nach
+2 44
+"Text10"
+""
+1 270 112 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 272 112 320 127
+0 2 2 "0s" 0 0 0 192 0 0  272 112 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 14 запятой
+LANG:10001 13 decimal point
+LANG:10000 5 Komma
+6 48
+"Border1"
+""
+1 10 140 E E E 1 E 1 E N "_WindowText" E N "_Transparent" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 10 40 490 140
+6 49
+"Border2"
+""
+1 11 137 E E E 1 E 1 E N "_Window" E N "_Transparent" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 11 41 491 141
+6 50
+"Border3"
+""
+1 10 240 E E E 1 E 1 E N "_WindowText" E N "_Transparent" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 10 160 490 240
+6 51
+"Border4"
+""
+1 11 241 E E E 1 E 1 E N "_Window" E N "_Transparent" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 11 161 491 241
+6 52
+"Border5"
+""
+1 10 320 E E E 1 E 1 E N "_WindowText" E N "_Transparent" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 10 250 490 320
+6 53
+"Border6"
+""
+1 11 321 E E E 1 E 1 E N "_Window" E N "_Transparent" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 11 251 491 321
+2 54
+"Text11"
+""
+1 20 262 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 22 262 89 277
+0 2 2 "0s" 0 0 0 192 0 0  22 262 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 17 Позиция X:
+LANG:10001 11 X position:
+LANG:10000 11 X-Position:
+2 55
+"Text12"
+""
+1 20 292 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 22 292 90 307
+0 2 2 "0s" 0 0 0 192 0 0  22 292 1
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0 3
+LANG:10027 17 Позиция Y:
+LANG:10001 11 Y position:
+LANG:10000 11 Y-Position:
+13 0
+"cmdClose"
+""
+1 389 328 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  388 328 482 358
+
+T 
+3
+LANG:10027 14 Закрыть
+LANG:10001 5 Close
+LANG:10000 10 Schließen
+"// SimpleCtrlScriptStart {valid}
+// SimpleCtrlScript {PanelOff}
+// SimpleCtrlScriptEnd
+main()
+{
+  PanelOff();
+}
+" 0
+ E E E
+13 20
+"cmdValueEditor"
+""
+1 280 327 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  278 327 372 357
+
+T 
+3
+LANG:10027 22 Редакт.знач.
+LANG:10001 11 valueEditor
+LANG:10000 11 valueEditor
+"main()
+{
+  int        posx = spbX.text, posy = spbY.text,
+             iL = spbBefore.text, iR = spbAfter.text;
+  bool       enteron = chkEnteron.state(0);
+  float      f = value.text, mi = min.text, ma = max.text;
+  string     s, wo = work.text, sFormat;
+  dyn_float  df;
+  dyn_string ds;
+
+  if ( iR < 1 )
+    sFormat = \"%\" + iL + \"d\";
+  else
+    sFormat = \"%\" + iL + \".\" + iR + \"f\";
+
+  ve(\"ExampleDP_Arg1.:_original.._value\", wo, sFormat, 
+     f, enteron, \"Wert\", posx, posy, mi, ma);
+}
+" 0
+ E E E
+14 26
+"value"
+""
+1 108 49 E E E 1 E 1 E N "_3DText" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E "main()
+{
+   float wert;
+   string s;
+   getValue(\"\",\"text\",s);
+   sscanf(s,\"%f\",wert);
+wert = this.text;
+   dpSetWait(\"ExampleDP_Arg1.\"+\":_original.._value\",wert);  
+}" 0
+ E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 48 262 75
+3 "0s" 0 0 0 0 0 -1  E "// SimpleCtrlScriptStart {invalid}
+// SimpleCtrlScript {textFieldIn}
+// dp {ExampleDP_Arg1.}
+// typ {float}
+// vork {6}
+// nachk {2}
+// ausr {0}
+// forstr {%-9.2f}
+// SimpleCtrlScriptEnd
+main()
+{
+  if(dpConnect(\"work\",\"ExampleDP_Arg1.\"+\":_online.._value\")==-1)
+  setValue(\"\",\"backCol\",\"_dpdoesnotexist\",\"foreCol\",\"_dpdoesnotexist\");
+}
+work(string dp,float wert)
+{
+  string str;
+
+  sprintf(str,\"%f\",wert);
+  setValue(\"\",\"text\",str);
+}
+" 0
+ "// SimpleCtrlScriptStart {invalid}
+// SimpleCtrlScript {textFieldOut}
+// dp {ExampleDP_Arg1.}
+// typ {float}
+// SimpleCtrlScriptEnd
+main()
+{
+   float wert;
+   string s;
+   getValue(\"\",\"text\",s);
+   sscanf(s,\"%f\",wert);
+wert = this.text;
+   dpSetWait(\"ExampleDP_Arg1.\"+\":_original.._value\",wert);
+}
+" 0
+
+20 35
+"chkEnteron"
+""
+1 110 210 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 208 342 232
+1
+T 
+3
+LANG:10027 38 С кнопкой "Применить"
+LANG:10001 12 With 'Apply'
+LANG:10000 23 Mit 'Übernehmen'-Taste
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+1
+E E
+EE14 36
+"min"
+""
+1 109 79 E E E 1 E 1 E N "_3DText" E N "_Window" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 78 262 105
+3 "0s" 0 0 0 0 0 -1  E "main()
+{
+  this.text = 0.0;
+}" 0
+ E
+14 37
+"max"
+""
+1 348 79 E E E 1 E 1 E N "_3DText" E N "_Window" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  348 78 482 105
+3 "0s" 0 0 0 0 0 -1  E "main()
+{
+  this.text = 0.0;
+}
+" 0
+ E
+14 41
+"work"
+""
+1 103 169 E E E 1 E 1 E N "_3DText" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 168 482 195
+3 "0s" 0 0 0 0 0 -1  E "main()
+{
+  this.text = \"ve_work\";
+}" 0
+ E
+21 46
+"spbBefore"
+""
+1 110 110 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 108 172 135
+0
+
+E
+E
+E
+
+N 1 20 1 6 1 1
+21 47
+"spbAfter"
+""
+1 210 110 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  208 108 262 135
+0
+
+E
+E
+E
+
+N 0 10 1 2 1 1
+21 56
+"spbX"
+""
+1 110 260 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 258 202 285
+0
+
+E
+E
+E
+
+N 0 1000 1 0 1 1
+21 57
+"spbY"
+""
+1 110 290 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  108 288 202 315
+0
+
+E
+E
+E
+
+N 0 1000 1 0 1 1
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

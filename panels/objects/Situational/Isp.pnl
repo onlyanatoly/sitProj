@@ -1,0 +1,221 @@
+V 14
+3
+LANG:10027 12 Столб_1
+LANG:10001 3 Isp
+LANG:10000 16 Messwertbalken_1
+PANEL,-1 -1 249 199 N "fon_static" 2
+"$dpe_val"
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 3
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+6 34
+"Elem3"
+""
+1 160 60 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.4 0 1.343034188034189 16 -30.58205128205134 1 E 160 60 170 70
+2 22
+"tag"
+""
+1 70.36086691086695 91.9538461538459 E E E 1 E 1 E N "cont_static" E N "_Transparent" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  //EP_textFieldIn();
+  setValue(\"\", \"text\", dpGetAlias($dpe_value+\".\"));
+}
+" 0
+ E 0 1 1 0 1 E U  0 E 70.36086691086695 91.9538461538459 95.49999999999994 104.9538461538459
+0 2 2 "10s" 10 0 0 66 0 0  70.36086691086695 91.9538461538459 1
+3
+LANG:10027 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 1 #
+LANG:10001 3 XXX
+LANG:10000 4 Text
+10 32
+"Elem1"
+""
+1 140 70 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.5 0 1.443034188034187 -158 -52.0123931623931 1 E 3 140 70
+140 90
+160 80
+ 1
+9 35
+"Elem4"
+""
+1 150 70 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 1 1 E 1.01561124061124 0 0.9215514575228845 -70.69664594664603 -13.07826014626006 1 E 150 70 20 20
+ 0 170 70 140 70 1
+10 36
+"Elem2"
+""
+1 140 70 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -1.5 2.6508107991544e-16 -1.224646799147353e-16 -1.443034188034187 322.0000000000001 178.8730769230768 1 E 3 140 70
+140 90
+160 80
+ 1
+6 48
+"refBorder"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_IspMech\"
+
+string mse;
+dyn_string elementNames;
+
+main()
+{
+  elementNames = makeDynString(\"Elem1\", \"Elem2\", \"Elem3\", \"Elem4\");
+  mse = $dpe_val;
+  elementsFunct();
+}
+" 0
+ E 3 1 1 0 1 E 0.4000000000000001 0 0.2424242424242425 70.00000000000006 73.4257575757576 1 E 10 10 40 43
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+1 49 1 "" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+6 14
+"alarmBorder"
+""
+1 120 100 E E E 1 E 1 E N "fon_nan" E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 4 3 2 1 E 1.672898860398857 0 0.7021310541310537 -154.7478632478628 -48.2244301994301 0 E 120 100 180 250
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+3 1 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 152 96.25 T 30 1.16 0 1.314516129032257 -19.27940170940184 -77.5221774193547
+0
+0

@@ -1,0 +1,215 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 146 76 N "_3DFace" 2
+"$dpNav"
+"$dpNavNoScreen"
+"main()
+{
+  int monitor;
+  dpGet($dpNav + \".monitorNumber\", monitor);
+  dpConnect(\"setActiveMonitor\", $dpNav + \".monitorNumber\");
+}
+" 0
+ E E E E 1 -1 -1 0  80 100
+""0  1
+E "/**
+  Выделение активного монитора
+  @param val номер монитора
+*/
+void setActiveMonitor(string dpe, int val)
+{
+  string color;
+  setValue(\"screen\", \"text\",val);
+  for (int i=1; i<=4; i++)
+  {
+    if (i==val) {
+      color = \"fon_static\";
+    } else {
+      color = \"fon_btn\";
+    }
+    setValue(\"SCREEN_\"+i, \"backCol\", color);
+  }
+}
+
+/**
+  Установка выбранного монитора
+  @param screen
+*/
+void setMonitorNumber(int screen)
+{
+  int navMonitorNumber, curScreen;
+  string elem;
+  dpGet($dpNavNoScreen + screen + \".monitorNumber\", navMonitorNumber);
+  //if (navMonitorNumber!=screen)
+  //{
+    curScreen=substr($dpNav, strlen($dpNav)-1, 1);
+    dpGet($dpNavNoScreen+curScreen+\".element\", elem);
+    dpSet($dpNavNoScreen + screen + \".element\", elem);
+    dpSet($dpNav + \".monitorNumber\", 0);
+    dpSet($dpNavNoScreen + screen + \".monitorNumber\", screen);
+  //}
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 1
+"SCREEN_2"
+""
+1 80 100 E E E 1 E 1 E N "cont_static" E N "fon_btn" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "main(mapping event)
+{
+  setMonitorNumber(2);
+}
+" 0
+ 0 1 3 2 1 E 1 0 1 -60 -90 1 E 80 100 100 120
+6 3
+"SCREEN_1"
+""
+1 80 100 E E E 1 E 1 E N "cont_static" E N "fon_btn" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "main(mapping event)
+{
+  setMonitorNumber(1);
+}
+" 0
+ 0 1 3 2 1 E 1 0 1 -40 -90 1 E 80 100 100 120
+6 4
+"SCREEN_3"
+""
+1 80 100 E E E 1 E 1 E N "cont_static" E N "fon_btn" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "main(mapping event)
+{
+  setMonitorNumber(3);
+}
+" 0
+ 0 1 3 2 1 E 1 0 1 -40 -70 1 E 80 100 100 120
+6 5
+"SCREEN_4"
+""
+1 80 100 E E E 1 E 1 E N "cont_static" E N "fon_btn" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "main(mapping event)
+{
+  setMonitorNumber(4);
+}
+" 0
+ 0 1 3 2 1 E 1 0 1 -60 -70 1 E 80 100 100 120
+2 6
+"screen"
+""
+1 60 10 E E E 1 E 0 E N "_WindowText" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.6470588235294118 0 1 31.17647058823529 0 0 E 60 10 90 30
+0 2 2 "0d" 0 0 0 64 0 0  60 10 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

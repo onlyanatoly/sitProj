@@ -1,0 +1,538 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 400 396 N "_3DFace" 1
+"$UTM_ZN"
+E E E E E 1 -1 -1 0  170 90
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+4 1
+"LINE1"
+""
+1 151 99.99999999999997 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  151 99.99999999999997 157.1372108864704 99.93115758160479
+4 4
+"LINE4"
+""
+1 157.1372108864704 107.9306836312849 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  157.1372108864704 107.9306836312849 157.1372108864704 91.99809410739898
+4 5
+"LINE5"
+""
+1 161.1643686935725 105.4655787908024 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  161.1643686935725 105.4655787908024 161.1643686935725 94.46061659285441
+4 6
+"LINE6"
+""
+1 165.1365473560224 103.1981549085596 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  165.1365473560224 103.1981549085596 165.1365473560224 96.72714093194784
+7 9
+"ELLIPSE1"
+""
+1 139.5 140.5 E E E 1 E 1 E N {200,150,100} E N "Black" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 1 1 E -0.01376848367903311 -0.999905209936012 0.999905209936012 -0.01376848367903311 10.93416366231141 241.4470737745631 1 E 139.5 140.5 1.5 1.5
+7 11
+"ELLIPSE2"
+""
+1 139.5 140.5 E E E 1 E 1 E N {200,150,100} E N "Black" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 1 1 E -0.01376848367903311 -0.999905209936012 0.999905209936012 -0.01376848367903311 -27.99454995135596 241.4774063245826 1 E 139.5 140.5 1.5 1.5
+4 12
+"LINE10"
+""
+1 110 99.99999999999999 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  110 99.99999999999999 124.9995260496801 99.93115758160478
+4 13
+"LINE11"
+""
+1 124.9995260496801 100.0722845393149 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+  EP_setInvalid();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setInvalid()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Clsd\"+\":_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setInvalidCB\",
+            $UTM_ZN+\".Clsd\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_ZN+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setInvalid}
+// DP {$UTM_ZN+\".Clsd\"}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+" 0
+ E 0 2 3 2 1 E  124.9995260496801 100.0722845393149 150.5000473950319 99.85887304228989
+4 14
+"LINE12"
+""
+1 125.0305051379579 102.2153655131584 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  125.0305051379579 102.2153655131584 124.9685469614023 97.71579206844636
+4 16
+"LINE14"
+""
+1 127.1400786091321 109.9881804444126 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+  EP_setInvalid();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Opnd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Opnd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+void EP_setInvalid()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Opnd\"+\":_online.._invalid\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setInvalidCB\",
+            $UTM_ZN+\".Opnd\"+\":_online.._invalid\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setInvalidCB(string dp, bool boInvalid)
+{
+  setValue(\"\", \"color\", (boInvalid ? \"_invalid\" : \"\"));
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_ZN+\".Opnd\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+// SimpleCtrlScript {EP_setInvalid}
+// DP {$UTM_ZN+\".Opnd\"}
+// DPConfig {:_online.._invalid}
+// DPType {bool}
+// Attribut {color}
+// SimpleCtrlScriptEnd {EP_setInvalid}
+" 0
+ E 0 2 3 2 1 E  128 110 150.500047395032 100.0068842418395
+6 18
+"RECTANGLE1"
+""
+1 130 134 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Opnd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  if( !dpExists( $UTM_ZN+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Opnd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_ZN+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -4.500000000000028 -44 1 E 130 134 158 154
+2 19
+"PRIMITIVE_TEXT1"
+""
+1 134.5 92.25 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Opnd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  if( !dpExists( $UTM_ZN+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Opnd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_ZN+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 134.5 92.25 144 107
+0 2 2 "0s" 0 0 0 192 0 0  134.5 92.25 1
+1
+LANG:10027 47 Arial,-1,13,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+4 17
+"LINE15"
+""
+1 166.9999999999999 109 E E E 1 E 1 E N "Red" E N {255,255,255} E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_ZN+\".Fault\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_ZN+\".Fault\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_ZN+\".Fault\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 2 3 2 1 E  166.9999999999999 109 112 91
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

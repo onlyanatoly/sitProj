@@ -1,0 +1,57 @@
+# ascii dump of database
+
+# DpType
+TypeName
+SIT_REG.SIT_REG	1#1
+	OUT	22#2
+	REP	23#3
+	SIM	23#4
+	SHOW	23#5
+	REG	21#6
+	MEST	23#7
+	SIMV	22#8
+	CV	22#9
+	SP	22#10
+	OP	22#11
+	aiOUT	22#12
+	maxOP	22#13
+	minOP	22#14
+	maxSP	22#15
+	minSP	22#16
+	coefP	22#17
+	coefI	22#18
+	coefD	22#19
+	invalid	23#20
+
+# Datapoint/DpId
+DpName	TypeName	ID
+1018MS01	SIT_REG	13092
+
+# Aliases/Comments
+AliasId	AliasName	CommentName
+1018MS01.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	1018MS01.OUT	SIT_REG	100	0x8300000000300101	26.05.2022 12:36:32.382
+UI (2)/0	1018MS01.SHOW	SIT_REG	1	0x8300000000200101	23.08.2022 06:20:08.774
+UI (2)/0	1018MS01.REG	SIT_REG	6	0x8300000000200101	23.08.2022 06:20:08.772
+
+# PvssRangeCheck
+Manager/User	StampSec	StampMSec	ElementName	TypeName	_pv_range.._type	_pv_range.._ignor_inv	_pv_range.._neg	_pv_range.._min	_pv_range.._max	_pv_range.._incl_min	_pv_range.._incl_max	_pv_range.._set	_pv_range.._match
+ASC (1)/0	1653562223	708	1018MS01.OUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	1653562223	723	1018MS01.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+_dt_SIT_REG	_DynamicDatapoints	12018
+_ds_SIT_REG	_DynamicDptSettings	12148
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	_dt_SIT_REG.Leaf	_DynamicDatapoints	"_mp_SIT_REG.OUT:_dp_fct", "_mp_SIT_REG.OUT:_pv_range", "_mp_SIT_REG.aiOUT:_pv_range", "_mp_SIT_REG.SIM:_alert_hdl", "_mp_SIT_REG.invalid:_dp_fct", "_mp_SIT_REG.invalid:_alert_hdl", "_mp_SIT_REG.OUT:_alert_hdl", "_mp_SIT_REG.REG:_archive", "_mp_SIT_REG.SHOW:_dp_fct"	0x8300000000000101	31.05.2021 11:45:03.790
+UI (1)/0	_dt_SIT_REG.DynamicAttribute	_DynamicDatapoints	"_da_none", "_da_none", "_da_none", "_da_none", "_da_none", "_da_none", "_da_none", "_da_none", "_da_none"	0x8300000000000101	31.05.2021 11:45:03.790
+UI (1)/0	_ds_SIT_REG.symbols	_DynamicDptSettings		0x8300000000000101	11.02.2022 07:05:23.650
+UI (1)/0	_ds_SIT_REG.symboldefault	_DynamicDptSettings	""	0x8300000000000101	11.02.2022 07:05:23.650
+UI (1)/0	_ds_SIT_REG.trendElements	_DynamicDptSettings		0x8300000000000101	11.02.2022 07:05:23.650

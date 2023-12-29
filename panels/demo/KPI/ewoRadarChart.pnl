@@ -1,0 +1,211 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 473 449 N "_3DFace" 0
+"main()
+{
+  // Draw random spider chart each 4 seconds
+  int iDelay = 4;
+
+  // Add axis
+  CHART.addAxis(0.0, 100.0, \"Зола %\");
+  CHART.addAxis(0.0, 100.0, \"Fe %\");
+  CHART.addAxis(0.0, 100.0, \"Si %\");
+  CHART.addAxis(0.0, 100.0, \"Na %\");
+  CHART.addAxis(0.0, 100.0, \"Ca %\");
+
+  // Create chart serieses
+  CHART.setSeries(0, 0);
+  CHART.setSeries(1, 0);
+  CHART.setSeries(2, 0);
+
+  // Set chart series names
+  CHART.setSeriesName(0, \"ИЛ 1\");
+  CHART.setSeriesName(1, \"ИЛ 2\");
+  CHART.setSeriesName(2, \"ИЛ 3\");
+
+  // Set colors
+  CHART.setSeriesFillColor(0, \"graph_1\");
+  CHART.setSeriesFillColor(1, \"graph_2\");
+  CHART.setSeriesFillColor(2, \"graph_3\");
+
+  // Generate random Chart
+  dyn_dyn_float seriesValues;
+  while ( 1 )
+  {
+    for (int series = 1; series <= 3; ++series)
+    {
+      for (int i = 1; i <= 5; i++)
+      {
+        // Generate series value
+        seriesValues[series][i] = rand() * 100.0 / 32767.0;
+      }
+
+      // Set series value
+      CHART.setSeries(series - 1, seriesValues[series]);
+    }
+
+    delay(iDelay);
+  }
+
+}
+" 0
+ E E E E 1 -1 -1 0  30 30
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+29 5
+"CHART"
+""
+1 -40.8490566037736 59.99999999999999 E E E 1 E 1 E N "WF_Text" E N "_Transparent" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+29
+"chartType" "enum 2"
+"legendPosition" "enum 3"
+"seriesSpacing" "int 10"
+"frameShape" "enum 0"
+"shownValueText" "enum 2"
+"defaultItemBrush" "fill [solid]"
+"selectionBrush" "fill [gradient,[linear,pad,-0.446,0.988,1,1,0.00336,{255,0,0},1,{255,255,255}]]"
+"selectable" "bool FALSE"
+"valueTextPosition" "enum 3"
+"axesColor" "color WF_Text"
+"gridColor" "color WF_Text"
+"orientation" "enum 0"
+"defaultItemPen" "pen [solid,oneColor,JoinBevel,CapProjecting,1]"
+"midLineWidth" "int 1"
+"inputMethodHints" "enum 1"
+"showGrid" "bool TRUE"
+"animateValueChange" "bool TRUE"
+"legendFont" "font Arial,-1,17,5,50,0,0,0,0,0,Regular"
+"styleSheet" "string "
+"defaultFillType" "fill [solid]"
+"axesFont" "font Arial,-1,17,5,50,0,0,0,0,0,Regular"
+"axesLabelFont" "font Arial,-1,17,5,50,0,0,0,0,0,Regular"
+"segmentSpacing" "int 10"
+"tabletTracking" "bool TRUE"
+"startAngle" "float 18"
+"holeFactor" "float 2"
+"minimumSize" "140 -1"
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,17,5,50,0,0,0,0,0,Regular
+0  19.99999999999997 59.99999999999999 449.9999999999999 440.0000000000001
+9 Chart.ewo
+0
+E30 9
+"FRAME1"
+""
+1 11 4 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+9 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.8104693140794224 0 1.013636363636364 2.084837545126354 -6.054545454545469 0 E 11 4 566 445
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+2 10
+"PRIMITIVE_TEXT1"
+""
+1 21.99999999999999 18 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 21.99999999999999 18 398 65
+0 2 2 "0s" 0 0 0 192 0 0  21.99999999999999 18 2
+2
+LANG:10027 41 Arial,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 72 Физико-химические показатели качества 
+LANG:10001 101 Физико-химические показатели качества "зеленых" анодов
+2
+LANG:10027 41 Arial,-1,20,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 29 "зеленых" анодов
+LANG:10001 0 
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

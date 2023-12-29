@@ -1,0 +1,218 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 559 60 N "_3DFace" 6
+"$colors"
+"$dpe_tail"
+"$dpe_value"
+"$letters"
+"$min"
+"$values"
+E E E E E 1 -1 -1 0  0 40
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+23 1
+"myTrend"
+""
+1 35 21.50000000000001 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  13 11.5 516 47.5
+5 "#uses \"Situational_util.ctl\"
+
+string curveForZero = \"curve1\";
+string curveForOne = \"curve2\";
+
+
+string delimeter = \",\";
+dyn_string dynCurve;
+dyn_string colors;
+dyn_string letters;
+dyn_string values;
+
+main()
+{
+  values = strsplit($values, delimeter);
+  colors = strsplit($colors, delimeter);
+  letters = strsplit($letters, delimeter);
+
+  for (int i=1; i<=dynlen(values); i++)
+  {
+    dynCurve[i] = \"curve\"+i;
+  }
+  int min = $min;
+  time tEndtime = getCurrentTime();
+  string sEndtime = tEndtime;
+  time tBegtime = tEndtime-(min * 60);
+  string sBegtime = tBegtime;
+  //string dpStr = getDpFromFullName(dp);
+  //buildTrend(tBegtime, tEndtime, $colorForZero, $colorForOne, $letterForZero, $letterForOne);
+  buildTrend(tBegtime, tEndtime);
+  dpConnect(\"work\",$dpe_value+\".\"+$dpe_tail);
+  //закрываем последний
+  //this.curveValue(oldcurv, 0, getCurrentTime(), 0);
+}
+
+//void buildTrend(time tBegtime, time tEndtime, string colorForZero, string colorForOne, string letterForZero, string letterForOne)
+void buildTrend(time tBegtime, time tEndtime)
+{
+  this.scrollPercent(0);
+  this.visibleTimeRange(0,tBegtime,tEndtime);
+  this.backCol(\"white\");
+  this.maxRulerCount(0, 0);
+
+  for (int i=1; i<=dynlen(values); i++)
+  {
+    this.addCurve(0,\"curve\"+i);
+    this.curveType(\"curve\"+i,4);
+    this.curveLegendName(\"curve\"+i, letters[i]);
+    this.curveMin(\"curve\"+i,0.0);
+    this.curveMax(\"curve\"+i,100.0);
+    this.curveFillType(\"curve\"+i, \"[solid]\");
+    this.curveLineType(\"curve\"+i, \"[solid,oneColor,JoinMiter,CapButt,3]\");
+    this.curveColor(\"curve\"+i, colors[i]);
+    this.curveFillColor(\"curve\"+i, colors[i]);
+    this.curveFilled(\"curve\"+i,1);
+  }
+}
+
+//void reloadTrend(string dpStr, string sBegtime, string sEndtime, string letterForZero, string letterForOne)
+void reloadTrend(string dpStr, string sBegtime, string sEndtime)
+{
+  int i;
+  string sql = \"SELECT '_original.._value', '_original.._stime' FROM '\"+dpStr+\"' TIMERANGE(\\\"\"+sBegtime+\"\\\",\\\"\"+sEndtime+\"\\\",1,1)\";
+  dyn_dyn_anytype tab;
+  string curv, oldcurv, yvalue;
+  time ttime;
+  dpQuery(sql,tab);
+  for(i=2;i<=dynlen(tab);i++)
+  {
+    for (int j=1; j<=dynlen(values);j++)
+    {
+      if (tab[i][2]==values[j])
+      {
+        curv=dynCurve[j];
+        yvalue = \"{\\\"value\\\":1, \\\"text\\\":\\\"\"+letters[j]+\"\\\", \\\"alignment\\\":\\\"AlignVCenter\\\"}\";
+      }
+    }
+
+    /*
+    if (tab[i][2]==1)
+    {
+      curv=curveForZero;
+      yvalue = \"{\\\"value\\\":1, \\\"text\\\":\\\"\"+letterForOne+\"\\\", \\\"alignment\\\":\\\"AlignVCenter\\\"}\";
+    }
+    else if (tab[i][2]==0)
+    {
+      curv=curveForOne;
+      yvalue = \"{\\\"value\\\":1, \\\"text\\\":\\\"\"+letterForZero+\"\\\", \\\"alignment\\\":\\\"AlignVCenter\\\"}\";
+    }
+    */
+    if (i==2)
+    {//самый первый
+      this.curveValue(curv, yvalue, tab[i][3], 0);
+    }
+    else
+    {
+      this.curveValue(oldcurv, 0, tab[i][3], 0);
+      this.curveValue(curv, yvalue, tab[i][3], 0);
+    }
+    oldcurv = curv;
+  }
+}
+
+void work(string dp, int value)
+{
+  int min = $min;
+  time tEndtime = getCurrentTime();
+  string sEndtime = tEndtime;
+  time tBegtime = tEndtime-(min * 60);
+  string sBegtime = tBegtime;
+  string dpStr = getDpFromFullName(dp);
+  reloadTrend(dpStr, sBegtime, sEndtime);
+}
+" 0
+ E E 1 498 N {0,0,0} 0 0 1 0 1 0 1 0 "#1_1" "" 0 2 0 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+0 "" ""  1 0 0 1 0 1 N "Red"
+0 0 0 0 0 0 0 0
+0 
+E 1 0 0 0 90 0 20 7200
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

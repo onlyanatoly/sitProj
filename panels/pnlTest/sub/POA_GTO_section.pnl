@@ -1,0 +1,750 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 229 411 N "fon_static" 41
+"$Pdpe1"
+"$Pdpe2"
+"$Pdpe3"
+"$Pdpe4"
+"$Pdpe5"
+"$Pdpe6"
+"$Pdpe7"
+"$Pdpe8"
+"$Pdpe9"
+"$SPdpe1"
+"$SPdpe2"
+"$SPdpe3"
+"$SPdpe4"
+"$SPdpe5"
+"$SPdpe6"
+"$SPdpe7"
+"$SPdpe8"
+"$SPdpe9"
+"$Tdpe1"
+"$Tdpe2"
+"$Tdpe3"
+"$Tdpe4"
+"$Tdpe5"
+"$Tdpe6"
+"$Tdpe7"
+"$Tdpe8"
+"$Tdpe9"
+"$dpeMode1"
+"$dpeMode2"
+"$dpeMode3"
+"$dpeMode4"
+"$dpeMode5"
+"$dpeMode6"
+"$dpeMode7"
+"$dpeMode8"
+"$dpeMode9"
+"$dpeSection1"
+"$dpeSection2"
+"$dpeStation1"
+"$dpeStation2"
+"$i_ramp"
+E E E E E 1 -1 -1 0  117.0188470506255 303.1001676504266
+""0  1
+E "dyn_string namesER = makeDynString(\"T\", \"P\", \"Засл\");
+dyn_string namesHR = makeDynString(\"T\", \"P\");
+dyn_string namesBR = makeDynString(\"T\", \"P\", \"Прод\");
+
+void setCbNames()
+{
+  int type;
+  type = $i_ramp;
+  dyn_string names = namesER;
+  if (type==1) {
+    names = namesHR;
+  } else if (type==2) {
+    names = namesBR;
+  }
+  setValue(\"cbbox\", \"items\", names);
+}
+
+void setVisibleObject()
+{
+  bool visible;
+  int i;
+  for(i=1; i<=3; i++)
+  {
+    if (i == cbbox.selectedPos)
+    {
+      visible = true;
+    }
+    else
+    {
+      visible=false;
+    }
+    setValue(\"PANEL_REF_\"+i+\"_1\", \"visible\", visible);
+    setValue(\"PANEL_REF_\"+i+\"_2\", \"visible\", visible);
+  }
+}
+
+void setFillForBoxPicture()
+{
+  string sfill = \"\";
+  if ($i_ramp==0)
+  {
+    sfill=\"[pattern,[fit,any,ER.png]]\";
+  }
+  else if ($i_ramp==1)
+  {
+    sfill=\"[pattern,[fit,any,HR.png]]\";
+  }
+  else if ($i_ramp==2)
+  {
+    sfill=\"[pattern,[fit,any,BR.png]]\";
+  }
+
+  if (sfill!=\"\")
+  {
+    boxPicture.fill(sfill);
+  }
+}
+" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "96.0236"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 539 0 "" 3
+0
+1 644 2 "" 3
+0
+1 796 5 "" 3
+0
+1 860 10 "" 2
+0
+1 864 13 "" 2
+0
+1 866 14 "" 2
+0
+1 868 15 "" 2
+0
+1 870 16 "" 2
+0
+6 537
+"se1box"
+""
+1 80 40 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+    if ($dpeSection1==\"\")
+  {
+    this.visible(false);
+  }
+}" 0
+ E 0 2 3 2 1 E 1.333194234728895 0 0.8515363898494761 50.58362388469456 -23.19560906408927 1 E 80 40 100 60
+6 538
+"se2box"
+""
+1 80 40 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+22 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  if ($dpeSection2==\"\")
+  {
+    this.visible(false);
+  }
+}" 0
+ E 0 2 3 2 1 E 1.333194234728895 0 0.8515363898494761 50.58362388469456 0.1032001316384203 1 E 80 40 100 60
+6 535
+"st2box"
+""
+1 80 40 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+    if ($dpeStation2==\"\")
+  {
+    this.visible(false);
+  }
+}" 0
+ E 0 1 3 2 1 E 1.333194234728895 0 0.8515363898494761 -42.95553877831164 0.4319219610488716 1 E 80 40 100 60
+6 534
+"st1box"
+""
+1 80 40 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  if ($dpeStation1==\"\")
+  {
+    this.visible(false);
+  }
+}" 0
+ E 0 1 3 2 1 E 1.333194234728895 0 0.8515363898494761 -42.55757035003435 -23.67524923167581 1 E 80 40 100 60
+22 212
+"cbbox"
+""
+1 92.3951818805766 58.12366193762798 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignCenter"
+2
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0  90 53 156 80
+3
+2
+LANG:10027 1 T
+LANG:10001 3 ???
+
+0
+2
+LANG:10027 1 P
+LANG:10001 3 ???
+
+0
+2
+LANG:10027 8 Засл
+LANG:10001 3 ???
+
+0
+
+"main()
+{
+  setVisibleObject();
+}" 0
+
+"main()
+{
+  setVisibleObject();
+}" 0
+
+E
+ 0 0
+1 597 1 "" 3
+0
+1 702 3 "" 3
+0
+1 749 4 "" 3
+0
+2 529
+"Station1"
+""
+1 102 28.81089743589742 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  if ($dpeStation1!=\"\")
+  {
+    EP_textFieldIn();
+  }
+  else
+  {
+    this.visible(false);
+  }
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpeStation1+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpeStation1+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+" 0
+ E 0 1 1 0 1 E 0.994921070693205 0 1.057332069856346 -25.04695950583389 -18.06495724955952 0 E 94 29.29636752136752 110 41
+0 2 2 "0s" 0 0 0 193 0 0  101.8333333333334 29.29636752136752 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 3 St1
+LANG:10001 8 Station1
+LANG:10000 4 Text
+6 530
+"boxPicture"
+""
+1 110 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setFillForBoxPicture();
+}" 0
+ E 0 1 3 2 1 E 0.994921070693205 0 1.057332069856346 -16.29165408373369 -0.1871143362602297 1 E 110 10 170 50
+2 531
+"Section1"
+""
+1 196.4166666666667 29.5145299145299 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  if ($dpeSection1!=\"\")
+  {
+    EP_textFieldIn();
+  }
+  else
+  {
+    this.visible(false);
+  }
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpeSection1+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpeSection1+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}" 0
+ E 0 1 1 0 1 E 0.994921070693205 0 1.057332069856346 -25.04695950583389 -18.06495724955952 0 E 186 30 206 42
+0 2 2 "0s" 0 0 0 193 0 0  196.2500000000001 30 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 3 Se1
+LANG:10001 8 Section1
+LANG:10000 4 Text
+2 532
+"Station2"
+""
+1 102.1166666666667 51.40000000000001 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  if ($dpeStation2!=\"\")
+  {
+    EP_textFieldIn();
+  }
+  else
+  {
+    this.visible(false);
+  }
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpeStation2+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpeStation2+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}" 0
+ E 0 1 1 0 1 E 0.994921070693205 0 1.057332069856346 -25.04695950583389 -18.06495724955952 0 E 94 51.8854700854701 110 64
+0 2 2 "0s" 0 0 0 193 0 0  101.9500000000001 51.8854700854701 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 3 St2
+LANG:10001 8 Station1
+LANG:10000 4 Text
+2 533
+"PRIMITIVE_TEXT1"
+""
+1 196.4166666666667 51.4 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  if ($dpeSection2!=\"\")
+  {
+    EP_textFieldIn();
+  }
+  else
+  {
+    this.visible(false);
+  }
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpeSection2+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpeSection2+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}" 0
+ E 0 1 1 0 1 E 0.994921070693205 0 1.057332069856346 -25.04695950583389 -18.06495724955952 0 E 186 51.8854700854701 206 64
+0 2 2 "0s" 0 0 0 193 0 0  196.2500000000001 51.8854700854701 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 3 Se2
+LANG:10001 8 Section1
+LANG:10000 4 Text
+1 854 6 "" 2
+0
+1 856 7 "" 2
+0
+1 858 9 "" 2
+0
+1 862 12 "" 2
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 580 0 "0" 1
+0
+1 685 2 "0" 1
+0
+1 837 5 "0" 1
+0
+1 630 1 "0" 1
+0
+1 735 3 "0" 1
+0
+1 782 4 "0" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 590 0 "" 114
+0
+1 695 2 "" 114
+0
+1 847 5 "" 114
+0
+1 638 1 "" 48
+0
+1 743 3 "" 48
+0
+1 790 4 "" 48
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 595 0 "" 155
+0
+1 700 2 "" 155
+0
+1 852 5 "" 155
+0
+1 643 1 "" 49
+0
+1 748 3 "" 49
+0
+1 795 4 "" 49
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF_1_2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 434 487.3394478966669 T 6 1 0 1 -317.5 -158.7955288219312
+5
+"$dpe1""$Tdpe5"
+"$dpe2""$Tdpe6"
+"$dpe3""$Tdpe7"
+"$dpe4""$Tdpe8"
+"$dpe5""$Tdpe9"
+3 1 "PANEL_REF_1_1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar4B.pnl" 453 303.1078380861863 T 7 1 0 1 -337.7405764746873 -145.7955288219312
+4
+"$dpe1""$Tdpe1"
+"$dpe2""$Tdpe2"
+"$dpe3""$Tdpe3"
+"$dpe4""$Tdpe4"
+3 2 "PANEL_REF_2_2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 434 487.3394478966669 T 8 1 0 1 -317.5 -158.7955288219312
+5
+"$dpe1""$Pdpe5"
+"$dpe2""$Pdpe6"
+"$dpe3""$Pdpe7"
+"$dpe4""$Pdpe8"
+"$dpe5""$Pdpe9"
+3 3 "PANEL_REF_2_1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar4B.pnl" 453 303.1078380861863 T 9 1 0 1 -337.7405764746873 -145.7955288219312
+4
+"$dpe1""$Pdpe1"
+"$dpe2""$Pdpe2"
+"$dpe3""$Pdpe3"
+"$dpe4""$Pdpe4"
+3 4 "PANEL_REF_3_1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar4B.pnl" 453 303.1078380861863 T 10 1 0 1 -337.7405764746873 -145.7955288219312
+4
+"$dpe1""$SPdpe1"
+"$dpe2""$SPdpe2"
+"$dpe3""$SPdpe3"
+"$dpe4""$SPdpe4"
+3 5 "PANEL_REF_3_2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar5B.pnl" 434 487.3394478966669 T 11 1 0 1 -317.5 -158.7955288219312
+5
+"$dpe1""$SPdpe5"
+"$dpe2""$SPdpe6"
+"$dpe3""$SPdpe7"
+"$dpe4""$SPdpe8"
+"$dpe5""$SPdpe9"
+3 6 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 26 1 0 1 -142.0688470506254 1.14496909781119
+1
+"$dpeMode""$dpeMode1"
+3 7 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 27 1 0 1 -193.2188470506255 70.99496909781121
+1
+"$dpeMode""$dpeMode2"
+3 9 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 29 1 0 1 -142.0688470506254 122.2449690978112
+1
+"$dpeMode""$dpeMode4"
+3 10 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 30 1 0 1 -142.0688470506254 176.9949690978112
+1
+"$dpeMode""$dpeMode5"
+3 12 "PANEL_REF7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 32 1 0 1 -77.21884705062544 70.5949690978112
+1
+"$dpeMode""$dpeMode3"
+3 13 "PANEL_REF8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 33 1 0 1 -193.2188470506255 216.3949690978112
+1
+"$dpeMode""$dpeMode6"
+3 14 "PANEL_REF9" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 34 1 0 1 -166.0188470506255 288.3949690978112
+1
+"$dpeMode""$dpeMode7"
+3 15 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 35 1 0 1 -101.2188470506255 287.9949690978112
+1
+"$dpeMode""$dpeMode8"
+3 16 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/GtoMode.pnl" 252.5188470506255 100.7592930652566 T 36 1 0 1 -71.61884705062549 215.5949690978112
+1
+"$dpeMode""$dpeMode9"
+0

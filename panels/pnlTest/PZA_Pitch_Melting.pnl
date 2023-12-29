@@ -1,0 +1,6190 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 804 N "_3DFace" 0
+E E E E E 1 -1 -1 0  68 88
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "141.585"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+4 10802
+"LINE1017"
+""
+1 907.4596990552689 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1394 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  907.4596990552689 100.3005216501753 907.4596990552689 227.3005216501753
+4 11392
+"LINE1060"
+""
+1 1517.574090119741 207.3052729806132 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1458 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1517.574090119741 207.3052729806132 1517.574090119741 464.0008076785468
+4 11375
+"LINE1050"
+""
+1 1701.632562703621 251.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1441 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1701.632562703621 251.3005216501753 1753.800446834403 251.3005216501753
+4 11361
+"LINE1045"
+""
+1 1449.459699055269 264.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1435 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1449.459699055269 264.3005216501753 1509.459699055269 264.3005216501753
+4 10911
+"LINE1042"
+""
+1 1176.646937304159 277.4494187939124 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1431 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1176.646937304159 277.4494187939124 1236.646937304159 277.4494187939124
+4 10833
+"LINE1030"
+""
+1 1663.147234591512 320.4942549195468 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1409 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1663.147234591512 320.4942549195468 1663.147234591512 494.4389848468356
+4 10832
+"LINE1029"
+""
+1 1403.994273468032 323.3005216501749 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1408 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1403.994273468032 323.3005216501749 1403.994273468032 497.2452515774636
+4 9675
+"LINE971"
+""
+1 710 670 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1314 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  710 670 710 731.6904937057114
+4 9674
+"LINE970"
+""
+1 438.1455837824259 632.7496759449911 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1313 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  438.1455837824259 632.7496759449911 438.1455837824259 744.6904937057105
+4 10809
+"LINE1024"
+""
+1 160 260 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1401 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  160 260 160 343.4684392708961
+4 10808
+"LINE1023"
+""
+1 385.8836271336048 301.7800192191054 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1400 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  385.8836271336048 301.7800192191054 385.8836271336048 380.2675208843241
+4 10807
+"LINE1022"
+""
+1 662.4711651924107 340.161395478518 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1399 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  662.4711651924107 340.161395478518 662.4711651924107 418.6488971437367
+4 10378
+"LINE1004"
+""
+1 1303.108991049357 264.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1378 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1303.108991049357 264.3005216501753 1364.56714988195 264.3005216501753
+4 10769
+"LINE1011"
+""
+1 1566.07317410713 251.3005216501754 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1388 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1566.07317410713 251.3005216501754 1627.531332939723 251.3005216501754
+4 10765
+"LINE1007"
+""
+1 1257.459699055269 220.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1381 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1257.459699055269 220.3005216501753 1257.459699055269 472.7847824621083
+4 10288
+"LINE995"
+""
+1 1036.07317410713 270.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1357 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1036.07317410713 270.3005216501753 1097.531332939723 270.3005216501753
+4 9983
+"LINE993"
+""
+1 907.4596990552689 227.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1354 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  907.4596990552689 227.3005216501753 1036.07317410713 227.3005216501753
+4 9982
+"LINE992"
+""
+1 980.0940429767059 227.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1353 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  980.0940429767059 227.3005216501753 980.0940429767059 470.2728866138191
+4 9968
+"LINE987"
+""
+1 1134.605393424105 327.4942549195469 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1347 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1134.605393424105 327.4942549195469 1134.605393424105 501.4389848468356
+4 9966
+"LINE985"
+""
+1 1027.07317410713 537.3005216501754 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1345 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1027.07317410713 537.3005216501754 1027.07317410713 711.2452515774639
+4 9964
+"LINE983"
+""
+1 953.7208039294408 511.2452515774635 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1343 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  953.7208039294408 511.2452515774635 953.7208039294408 711.2452515774639
+4 9505
+"LINE969"
+""
+1 202.2825021089879 593.6827983754006 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1307 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  202.2825021089879 593.6827983754006 202.2825021089879 760
+4 6769
+"LINE226"
+""
+1 2005.912957518113 86.54892676767766 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+462 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  2005.912957518113 86.54892676767766 2005.912957518113 157.5244633838389
+10 744
+"POLYGON65"
+""
+1 120 90 E E E 1 E 1 E N "cont_text" E N "cont_static" E E
+ E E
+227 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.16875 -2.066591473561159e-17 3.896603451832487e-17 0.3181818181818182 1983.662957518113 67.94578598484918 1 E 7 120 90
+120 170
+140 170
+140 90
+150 90
+130 60
+110 90
+ 1
+1 13380 47 "" 1
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 152.8357054973818 -637.1507478632476
+20 "primitiveText" 0 0 1
+2
+LANG:10027 79 Газоочистная установка №5 для печей обжига
+LANG:10001 3 GOU
+
+22 "textType" 0 0 "0s" 0 0 0 1 0 0 
+0
+10 8810
+"POLYGON76"
+""
+1 400 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+932 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 2.212720278575487 0 1.797312141004718 -772.6169462377842 -69.4932241071817 1 E 5 400 230
+400 310
+420 340
+440 310
+440 230
+ 1
+6 8844
+"RECTANGLE4"
+""
+1 220 800 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+962 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.5573080516666028 0 0.2159674410461278 20.18509810560238 358.0205789452139 1 E 220 800 270 850
+4 8845
+"LINE345"
+""
+1 170.6582720555853 536.1937178082696 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+963 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  170.6582720555853 536.1937178082696 181.0430944550394 536.1937178082693
+4 8846
+"LINE346"
+""
+1 181.0430944550394 528.0699036033317 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+964 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  181.0430944550394 528.0699036033317 181.0430944550394 544.3175320132071
+6 9164
+"RECTANGLE309"
+""
+1 1020 320 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1153 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3277609449949594 0 0.8923179875039622 -315.5309796926407 -46.96269397165329 1 E 1020 320 1460 344
+1 13381 96 "" 2
+0
+10 9169
+"POLYGON279"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1154 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 14.27847120853789 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9170
+"POLYGON282"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1155 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 32.30532318326061 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9171
+"POLYGON283"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1156 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 50.33217515798313 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9172
+"POLYGON284"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1157 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 68.3590271327059 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9173
+"POLYGON285"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1158 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 86.38587910742861 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9174
+"POLYGON286"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1159 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 104.4127310821514 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9175
+"POLYGON287"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1160 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 122.439583056874 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9176
+"POLYGON288"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1161 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 140.4664350315966 266.6613603963764 1 E 3 10 10
+50 10
+30 40
+ 1
+6 9217
+"RECTANGLE310"
+""
+1 1020 320 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1204 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3277609449949598 0 0.8923179875039622 -85.53097969264121 -0.6898668170387481 1 E 1020 320 1460 344
+1 13382 102 "" 2
+0
+10 9220
+"POLYGON297"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1205 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 244.2784712085379 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9221
+"POLYGON298"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1206 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 262.3053231832606 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9222
+"POLYGON299"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1207 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 280.3321751579832 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9223
+"POLYGON300"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1208 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 298.3590271327058 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9224
+"POLYGON301"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1209 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 316.3858791074287 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9225
+"POLYGON302"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1210 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 334.4127310821514 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9226
+"POLYGON303"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1211 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 352.4395830568741 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9227
+"POLYGON304"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1212 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 370.4664350315967 312.9341875509909 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9236
+"POLYGON313"
+""
+1 400 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1222 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 2.212720278575487 0 1.797312141004718 -541.4489715004921 -31.98321934235653 1 E 5 400 230
+400 310
+420 340
+440 310
+440 230
+ 1
+6 9241
+"RECTANGLE311"
+""
+1 220 800 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1223 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.5573080516666028 0 0.2159674410461278 251.3530728428944 395.530583710039 1 E 220 800 270 850
+4 9242
+"LINE479"
+""
+1 401.8262467928774 573.7037225730944 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1224 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  401.8262467928774 573.7037225730944 412.2110691923316 573.7037225730944
+4 9243
+"LINE480"
+""
+1 412.2110691923316 565.5799083681568 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1225 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  412.2110691923316 565.5799083681568 412.2110691923316 581.8275367780319
+6 9255
+"RECTANGLE312"
+""
+1 1020 320 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1230 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3277609449949593 0 0.8923179875039622 187.8294246804527 33.20400777715511 1 E 1020 320 1460 344
+1 13383 107 "" 2
+0
+10 9258
+"POLYGON314"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1231 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 517.6388755816313 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9259
+"POLYGON315"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1232 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 535.665727556354 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9260
+"POLYGON316"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1233 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 553.6925795310766 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9261
+"POLYGON317"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1234 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 571.7194315057992 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9262
+"POLYGON318"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1235 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 589.746283480522 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9263
+"POLYGON319"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1236 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 607.7731354552448 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9264
+"POLYGON320"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1237 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 625.7999874299675 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9265
+"POLYGON321"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1238 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 643.82683940469 346.8280621451846 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9274
+"POLYGON330"
+""
+1 400 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1247 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 2.212720278575487 0 1.797312141004718 -269.5811292955568 5.267104712652255 1 E 5 400 230
+400 310
+420 340
+440 310
+440 230
+ 1
+6 9279
+"RECTANGLE313"
+""
+1 220 800 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1248 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.5573080516666028 0 0.2159674410461278 523.2209150478297 432.7809077650477 1 E 220 800 270 850
+4 9280
+"LINE482"
+""
+1 673.6940889978126 610.9540466281032 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1249 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  673.6940889978126 610.9540466281032 684.0789113972668 610.954046628103
+4 9281
+"LINE483"
+""
+1 684.0789113972668 602.8302324231655 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1250 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  684.0789113972668 602.8302324231655 684.0789113972668 619.0778608330407
+6 9293
+"RECTANGLE314"
+""
+1 1020 320 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1252 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3277609449949602 0 0.8923179875039622 -242.9882235435677 286.7254106740382 1 E 1020 320 1460 344
+10 9294
+"POLYGON331"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1253 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 86.8212273576119 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9295
+"POLYGON332"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1254 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 104.8480793323346 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9296
+"POLYGON333"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1255 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 122.8749313070573 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9297
+"POLYGON334"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1256 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 140.9017832817797 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9298
+"POLYGON335"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1257 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 158.9286352565025 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9299
+"POLYGON336"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1258 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 176.9554872312256 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9300
+"POLYGON337"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1259 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 194.982339205948 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9301
+"POLYGON338"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1260 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 213.0091911806707 600.3494650420678 1 E 3 10 10
+50 10
+30 40
+ 1
+1 13384 114 "" 9
+0
+1 13390 115 "" 9
+0
+4 9405
+"LINE963"
+""
+1 102.2082039304315 488.2192988711056 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1269 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  102.2082039304315 488.2192988711056 210.8326539695914 488.2192988711056
+10 9406
+"POLYGON539"
+""
+1 850 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1270 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.7617797671282697 0 0.6151100458456316 -552.9223957998805 359.046189243523 1 E 3 850 230
+860 210
+870 230
+ 1
+10 9407
+"POLYGON540"
+""
+1 850 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1271 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.7617797671282697 0 0.6151100458456316 -444.2979457607206 359.046189243523 1 E 3 850 230
+860 210
+870 230
+ 1
+4 9414
+"LINE964"
+""
+1 333.5211978073326 525.183544369106 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1272 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  333.5211978073326 525.183544369106 442.1456478464925 525.183544369106
+10 9415
+"POLYGON541"
+""
+1 850 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1273 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.7617797671282697 0 0.6151100458456316 -321.6094019229795 396.0104347415233 1 E 3 850 230
+860 210
+870 230
+ 1
+10 9416
+"POLYGON542"
+""
+1 850 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1274 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.7617797671282697 0 0.6151100458456316 -212.9849518838196 396.0104347415233 1 E 3 850 230
+860 210
+870 230
+ 1
+4 9417
+"LINE965"
+""
+1 606.3775071391661 562.4338684241147 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1275 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  606.3775071391661 562.4338684241147 715.0019571783261 562.4338684241147
+10 9418
+"POLYGON543"
+""
+1 850 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1276 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.7617797671282697 0 0.6151100458456316 -48.75309259114589 433.2607587965321 1 E 3 850 230
+860 210
+870 230
+ 1
+10 9419
+"POLYGON544"
+""
+1 850 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1277 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.7617797671282697 0 0.6151100458456316 59.871357448014 433.2607587965321 1 E 3 850 230
+860 210
+870 230
+ 1
+1 13396 121 "" 34
+0
+1 13405 123 "" 34
+0
+1 13414 124 "" 34
+0
+6 9456
+"RECTANGLE315"
+""
+1 1020 320 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1282 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3277609449949602 0 0.8923179875039622 -8.412763758810478 325.7922882436288 1 E 1020 320 1460 344
+10 9457
+"POLYGON545"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1283 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 321.3966871423692 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9458
+"POLYGON546"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1284 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 339.4235391170918 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9459
+"POLYGON547"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1285 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 357.4503910918145 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9460
+"POLYGON548"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1286 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 375.4772430665369 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9461
+"POLYGON549"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1287 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 393.5040950412597 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9462
+"POLYGON550"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1288 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 411.5309470159825 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9463
+"POLYGON551"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1289 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 429.5577989907049 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9464
+"POLYGON552"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1290 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 447.5846509654277 639.4163426116583 1 E 3 10 10
+50 10
+30 40
+ 1
+4 9465
+"LINE966"
+""
+1 156.7255707639201 541.5924712780223 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1291 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  156.7255707639201 541.5924712780223 156.7255707639201 572.6795566145956
+4 9466
+"LINE967"
+""
+1 387.8935455012122 579.1029085992477 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1292 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  387.8935455012122 579.1029085992477 387.8935455012122 610.1899939358207
+6 9467
+"RECTANGLE316"
+""
+1 1020 320 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1293 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3277609449949602 0 0.8923179875039622 263.4550784461246 363.0426122986377 1 E 1020 320 1460 344
+10 9468
+"POLYGON553"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1294 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 593.2645293473041 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9469
+"POLYGON554"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1295 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 611.291381322027 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9470
+"POLYGON555"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1296 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 629.3182332967496 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9471
+"POLYGON556"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1297 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 647.3450852714719 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9472
+"POLYGON557"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1298 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 665.3719372461948 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9473
+"POLYGON558"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1299 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 683.3987892209176 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9474
+"POLYGON559"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1300 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 701.42564119564 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+10 9475
+"POLYGON560"
+""
+1 10 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1301 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 2 1 1 E 0.450671299368067 0 -0.6666666666666672 719.4524931703628 676.666666666667 1 E 3 10 10
+50 10
+30 40
+ 1
+4 9476
+"LINE968"
+""
+1 659.7613877061473 616.3532326542563 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1302 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  659.7613877061473 616.3532326542563 659.7613877061473 647.4403179908295
+1 13423 127 "" 34
+0
+1 13432 128 "" 34
+0
+1 13441 129 "" 34
+0
+6 9504
+"RECTANGLE5"
+""
+1 80 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1306 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.4351193860594636 0 1.600968666346858 1054.108307003105 -80.82540497491624 1 E 80 130 290 230
+6 9506
+"RECTANGLE317"
+""
+1 80 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1308 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.1451803781448819 0 0.4009686663468583 1107.747023467302 235.2714616597695 1 E 80 130 290 230
+6 9670
+"RECTANGLE318"
+""
+1 80 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1309 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.4351193860594636 0 1.600968666346858 1323.497187047032 -85.0191382442882 1 E 80 130 290 230
+6 9671
+"RECTANGLE319"
+""
+1 80 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1310 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.1451803781448819 0 0.4009686663468583 1377.135903511229 231.0777283903975 1 E 80 130 290 230
+6 9672
+"RECTANGLE320"
+""
+1 80 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1311 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.4351193860594636 0 1.600968666346858 1582.650148170512 -87.82540497491624 1 E 80 130 290 230
+6 9673
+"RECTANGLE321"
+""
+1 80 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1312 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 0.1451803781448819 0 0.4009686663468583 1636.288864634709 228.2714616597694 1 E 80 130 290 230
+4 9676
+"LINE431"
+""
+1 709.9999999999999 731.6904937057114 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1315 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  709.9999999999999 731.6904937057114 1759 731.6904937057114
+4 9677
+"LINE972"
+""
+1 1759 80 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1316 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1759 80 1759 731.6904937057113
+4 9678
+"LINE973"
+""
+1 1663.147234591514 80.30052165017531 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1317 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1663.147234591514 80.30052165017531 1759 80.30052165017531
+4 9679
+"LINE974"
+""
+1 1663.147234591514 80.30052165017531 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1318 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1663.147234591514 80.30052165017531 1663.147234591514 120.300521650175
+4 9680
+"LINE975"
+""
+1 1403.994273468033 70.30052165017531 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1319 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1403.994273468033 70.30052165017531 1403.994273468033 123.1067883808034
+4 9681
+"LINE976"
+""
+1 1134.605393424106 58.8992725283083 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1320 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1134.605393424106 58.8992725283083 1134.605393424106 127.3005216501753
+4 9684
+"LINE979"
+""
+1 1770 70.0000000000001 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1323 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1770 70.0000000000001 1770 744.6904937057104
+4 9685
+"LINE980"
+""
+1 1786 58.89927252830832 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1324 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1786 58.89927252830832 1786 760.3005216501753
+4 9686
+"LINE981"
+""
+1 438.1455837824258 744.6904937057105 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1325 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  438.1455837824258 744.6904937057105 1770 744.6904937057105
+4 9687
+"LINE982"
+""
+1 202.2825021089877 760 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1326 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  202.2825021089877 760 1786 760
+1 13450 130 "" 34
+0
+1 13459 131 "" 34
+0
+1 13468 132 "" 34
+0
+1 13477 133 "" 34
+0
+1 13486 134 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 4.859487350138363e-14 -0.5837469451889774
+0
+1 13488 136 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 4.859487350138368e-14 -0.5837469451892474
+0
+1 13489 137 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 5.033422243878478e-13 -0.5837469451893469
+0
+1 13490 138 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 2.759685489446157e-13 -0.5837469451891621
+0
+1 13491 139 "" 34
+0
+1 13500 140 "" 34
+0
+1 13509 141 "" 7
+31 "transform" 0 0 -1 0 1 1933.290162449966 9.094947017729281e-13
+0
+1 13510 141 "" 1
+31 "transform" 0 0 -1 0 1 1933.290162449965 -5.684341886080801e-14
+0
+1 13511 141 "" 3
+31 "transform" 0 0 -1 0 1 1933.290162449966 5.684341886080801e-14
+0
+1 13512 141 "" 4
+31 "transform" 0 0 1 0 1 17.33333333333348 0
+0
+1 13513 141 "" 5
+31 "transform" 0 0 -1 0 1 1933.290162449966 1.13686837721616e-13
+0
+1 13514 141 "" 6
+31 "transform" 0 0 -1 0 1 1933.290162449966 -1.70530256582424e-13
+0
+1 13515 141 "" 8
+31 "transform" 0 0 -1 0 1 1933.290162449966 -5.684341886080807e-13
+0
+1 13518 142 "" 34
+0
+1 13527 143 "" 34
+0
+1 13536 144 "" 34
+0
+1 13545 145 "" 34
+0
+1 13554 146 "" 34
+0
+4 9965
+"LINE984"
+""
+1 955.56174789165 537.3013167578499 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1344 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  955.56174789165 537.3013167578499 1027.07317410713 537.3013167578499
+4 9967
+"LINE986"
+""
+1 953.7208039294408 711.2452515774639 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1346 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  953.7208039294408 711.2452515774639 1027.07317410713 711.2452515774639
+4 9969
+"LINE988"
+""
+1 1149.849333129317 314.8376227285457 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1348 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1149.849333129317 314.8376227285457 1185.025518218162 314.8376227285457
+4 9970
+"LINE989"
+""
+1 1185.025518218162 314.8376227285457 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1349 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1185.025518218162 314.8376227285457 1185.025518218162 723.3005216501756
+4 9971
+"LINE990"
+""
+1 984.8969890182848 723.3005216501756 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1350 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  984.8969890182848 723.3005216501756 1185.863365442824 723.3005216501756
+4 9972
+"LINE991"
+""
+1 984.8969890182848 711.2452515774639 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1351 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  984.8969890182848 711.2452515774639 984.8969890182848 723.3005216501756
+1 13563 147 "" 34
+0
+1 13572 148 "" 34
+0
+1 13581 149 "" 34
+0
+4 10287
+"LINE994"
+""
+1 1036.07317410713 227.3005216501752 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1356 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1036.07317410713 227.3005216501752 1036.07317410713 303.4494187939123
+4 10289
+"LINE996"
+""
+1 1305.495515997496 533.3005216501754 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1364 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1305.495515997496 533.3005216501754 1305.495515997496 707.2452515774639
+4 10290
+"LINE997"
+""
+1 1232.143145819807 507.2452515774635 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1365 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1232.143145819807 507.2452515774635 1232.143145819807 707.2452515774639
+1 13590 150 "" 7
+31 "transform" 0 0 -1 0 1 2490.134846230699 3.410605131648481e-13
+0
+1 13591 150 "" 1
+31 "transform" 0 0 -1 0 1 2490.134846230699 2.27373675443232e-13
+0
+1 13592 150 "" 3
+31 "transform" 0 0 -1 0 1 2490.1348462307 0
+0
+1 13593 150 "" 4
+31 "transform" 0 0 1 0 1 17.33333333333348 0
+0
+1 13594 150 "" 5
+31 "transform" 0 0 -1 0 1 2490.134846230698 5.684341886080801e-14
+0
+1 13595 150 "" 6
+31 "transform" 0 0 -1 0 1 2490.134846230698 -1.13686837721616e-13
+0
+1 13596 150 "" 8
+31 "transform" 0 0 -1 0 1 2490.134846230696 -2.273736754432336e-13
+0
+1 13599 151 "" 34
+0
+1 13608 152 "" 34
+0
+1 13617 153 "" 34
+0
+1 13626 154 "" 34
+0
+1 13635 155 "" 34
+0
+4 10328
+"LINE998"
+""
+1 1233.984089782016 533.3013167578499 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1366 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1233.984089782016 533.3013167578499 1305.495515997496 533.3013167578499
+4 10329
+"LINE999"
+""
+1 1232.143145819807 707.2452515774639 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1367 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1232.143145819807 707.2452515774639 1305.495515997496 707.2452515774639
+4 10330
+"LINE1000"
+""
+1 1263.319330908651 707.2452515774639 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1368 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1263.319330908651 707.2452515774639 1263.319330908651 719.3005216501756
+4 10379
+"LINE1005"
+""
+1 1195.953674830089 220.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1379 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1195.953674830089 220.3005216501753 1303.108991049357 220.3005216501753
+1 13644 156 "" 34
+0
+1 13653 157 "" 34
+0
+1 13662 158 "" 34
+0
+4 10398
+"LINE1006"
+""
+1 1303.108991049357 220.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1380 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1303.108991049357 220.3005216501753 1303.108991049357 300.3005216501753
+4 10766
+"LINE1008"
+""
+1 1419.238213173245 315.2520883328321 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1382 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1419.238213173245 315.2520883328321 1454.495515997496 315.2520883328321
+4 10767
+"LINE1009"
+""
+1 1454.495515997496 315.2520883328321 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1383 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1454.495515997496 315.2520883328321 1454.495515997496 719.1067883808037
+4 10768
+"LINE1010"
+""
+1 1263.319330908651 719.3005216501756 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1384 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1263.319330908651 719.3005216501756 1454.495515997496 719.3005216501756
+4 10770
+"LINE1012"
+""
+1 1458.917857887862 207.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1389 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1458.917857887862 207.3005216501753 1566.07317410713 207.3005216501753
+1 13671 159 "" 34
+0
+1 13680 160 "" 34
+0
+1 13689 161 "" 34
+0
+4 10789
+"LINE1013"
+""
+1 1566.07317410713 207.3005216501751 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1390 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1566.07317410713 207.3005216501751 1566.07317410713 301.3005216501753
+4 10799
+"LINE1014"
+""
+1 1403.994273468033 70.30052165017531 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1391 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1403.994273468033 70.30052165017531 1770 70.30052165017531
+4 10800
+"LINE1015"
+""
+1 1134.605393424106 58.89927252830832 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1392 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1134.605393424106 58.89927252830832 1786 58.89927252830832
+4 10801
+"LINE1016"
+""
+1 1195.953674830089 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1393 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1195.953674830089 100.3005216501753 1195.953674830089 220.3005216501753
+4 10803
+"LINE1018"
+""
+1 1458.917857887862 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1395 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1458.917857887862 100.3005216501753 1458.917857887862 207.3005216501754
+4 10804
+"LINE1019"
+""
+1 1412.937983330592 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1396 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1412.937983330592 100.3005216501753 1458.917857887862 100.3005216501753
+4 10805
+"LINE1020"
+""
+1 1139.072791891215 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1397 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1139.072791891215 100.3005216501753 1399.526875000925 100.3005216501753
+4 10806
+"LINE1021"
+""
+1 822.9999999999999 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1398 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  822.9999999999999 100.3005216501753 1129.262468802094 100.3005216501753
+4 10810
+"LINE1025"
+""
+1 393.0000000000003 285.3211615098149 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1402 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  393.0000000000003 285.3211615098149 532.471165192411 285.3211615098149
+4 10811
+"LINE1026"
+""
+1 532.4711651924111 285.3211615098149 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1403 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  532.4711651924111 285.3211615098149 532.4711651924111 309.0393651721902
+4 10812
+"LINE1027"
+""
+1 162.8993384084445 239.0483343552004 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1404 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  162.8993384084445 239.0483343552004 257.7986101895798 239.0483343552004
+4 10813
+"LINE1028"
+""
+1 257.7986101895798 239.0483343552004 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1405 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  257.7986101895798 239.0483343552004 257.7986101895798 275.1454905779962
+4 10834
+"LINE1031"
+""
+1 1570 530 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1416 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1570 530 1570 703.9447299272886
+4 10835
+"LINE1032"
+""
+1 1495.647629822311 503.9447299272882 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1417 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1495.647629822311 503.9447299272882 1495.647629822311 703.9447299272886
+1 13698 162 "" 7
+31 "transform" 0 0 -1 0 1 3014.831349771951 2.273736754432321e-13
+0
+1 13699 162 "" 1
+31 "transform" 0 0 -1 0 1 3014.831349771951 -5.6843418860808e-13
+0
+1 13700 162 "" 3
+31 "transform" 0 0 -1 0 1 3014.831349771951 5.684341886080801e-14
+0
+1 13701 162 "" 4
+31 "transform" 0 0 1 0 1 17.33333333333348 0
+0
+1 13702 162 "" 5
+31 "transform" 0 0 -1 0 1 3014.83134977195 1.13686837721616e-13
+0
+1 13703 162 "" 6
+31 "transform" 0 0 -1 0 1 3014.83134977195 -5.684341886080801e-14
+0
+1 13704 162 "" 8
+31 "transform" 0 0 -1 0 1 3014.831349771949 -1.136868377216186e-13
+0
+1 13707 163 "" 34
+0
+1 13716 164 "" 34
+0
+1 13725 165 "" 34
+0
+1 13734 166 "" 34
+0
+1 13743 167 "" 34
+0
+4 10873
+"LINE1033"
+""
+1 1497 530 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1418 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1497 530 1570 530
+4 10874
+"LINE1034"
+""
+1 1495.647629822311 703.9447299272886 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1419 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1495.647629822311 703.9447299272886 1570 703.9447299272886
+4 10875
+"LINE1035"
+""
+1 1528.823814911155 703.9447299272887 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1420 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1528.823814911155 703.9447299272887 1528.823814911155 721.1383310639826
+4 10893
+"LINE1036"
+""
+1 1528.823814911155 721.1383310639829 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1421 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1528.823814911155 721.1383310639829 1712.297546279931 721.1383310639829
+4 10894
+"LINE1037"
+""
+1 1678.391174296725 315.4458216022039 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1422 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1678.391174296725 315.4458216022039 1714.459699055269 315.4458216022039
+4 10895
+"LINE1038"
+""
+1 1714.459699055269 315.445821602204 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1423 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1714.459699055269 315.445821602204 1714.459699055269 721.1383310639829
+1 13753 169 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 -4.061524773850804e-13 -0.5837469451889774
+0
+1 13754 170 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 2.759685489446157e-13 -0.5837469451888069
+0
+4 10899
+"LINE1039"
+""
+1 1036.07317410713 303.4494187939122 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1427 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1036.07317410713 303.4494187939122 1117.459699055269 303.4494187939122
+4 10900
+"LINE1040"
+""
+1 1155.26041235602 303.4494187939123 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1428 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1155.26041235602 303.4494187939123 1236.646937304159 303.4494187939123
+4 10901
+"LINE1041"
+""
+1 1236.646937304159 277.4494187939124 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1429 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1236.646937304159 277.4494187939124 1236.646937304159 303.4494187939124
+1 13755 171 "" 34
+0
+4 11350
+"LINE1043"
+""
+1 1303.108991049357 300.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1432 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1303.108991049357 300.3005216501753 1384.495515997496 300.3005216501753
+4 11351
+"LINE1044"
+""
+1 1423.632747203108 301.4494187939124 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1433 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1423.632747203108 301.4494187939124 1509.459699055269 301.4494187939124
+1 13764 172 "" 34
+0
+4 11362
+"LINE1046"
+""
+1 1509.459699055269 264.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1436 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1509.459699055269 264.3005216501753 1509.459699055269 301.4494187939124
+4 11363
+"LINE1047"
+""
+1 1566.09226175889 301.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1437 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1566.09226175889 301.3005216501753 1643.459699055269 301.3005216501753
+4 11364
+"LINE1048"
+""
+1 1685.433009538023 301.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1438 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1685.433009538023 301.3005216501753 1753.800446834403 301.3005216501753
+1 13773 173 "" 34
+0
+4 11374
+"LINE1049"
+""
+1 1753.800446834403 251.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1440 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1753.800446834403 251.3005216501753 1753.800446834403 301.3005216501752
+7 11376
+"ELLIPSE529"
+""
+1 600 450 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+1442 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 1040 -250 1 E 600 450 20 20
+4 11377
+"LINE420"
+""
+1 1650 190.6666666666665 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1443 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1650 190.6666666666665 1640 199.9999999999998
+4 11378
+"LINE421"
+""
+1 1640 200 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1444 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1640 200 1650 210
+4 11379
+"LINE371"
+""
+1 1609.815894812281 190.6666666666665 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1445 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1609.815894812281 190.6666666666665 1650 190.6666666666665
+4 11380
+"LINE372"
+""
+1 1609.815894812281 210 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1446 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1609.815894812281 210 1650 210
+7 11381
+"ELLIPSE530"
+""
+1 600 450 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+1447 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 780 -250 1 E 600 450 20 20
+4 11382
+"LINE1051"
+""
+1 1390 190.6666666666664 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1448 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1390 190.6666666666664 1380 199.9999999999996
+4 11383
+"LINE1052"
+""
+1 1380 199.9999999999999 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1449 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1380 199.9999999999999 1390 209.9999999999999
+4 11384
+"LINE1053"
+""
+1 1349.815894812281 190.6666666666664 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1450 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1349.815894812281 190.6666666666664 1390 190.6666666666664
+4 11385
+"LINE1054"
+""
+1 1349.815894812281 209.9999999999999 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1451 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1349.815894812281 209.9999999999999 1390 209.9999999999999
+7 11386
+"ELLIPSE531"
+""
+1 600 450 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+1452 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 509.9999999999999 -240 1 E 600 450 20 20
+4 11387
+"LINE1055"
+""
+1 1120 200.6666666666665 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1453 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1120 200.6666666666665 1110 209.9999999999997
+4 11388
+"LINE1056"
+""
+1 1110 210 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1454 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1110 210 1120 220
+4 11389
+"LINE1057"
+""
+1 1079.815894812281 200.6666666666665 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1455 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1079.815894812281 200.6666666666665 1120 200.6666666666665
+4 11390
+"LINE1058"
+""
+1 1079.815894812281 220 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1456 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  1079.815894812281 220 1120 220
+10 11849
+"POLYGON561"
+""
+1 400 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1460 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 2.764805842546026 0 1.580194805194806 -374.3601998709125 -237.266233766234 1 E 5 400 230
+400 310
+420 340
+440 310
+440 230
+ 1
+4 11864
+"LINE1061"
+""
+1 822.9999999999999 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1461 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  822.9999999999999 100.3005216501753 822.9999999999999 126.1785714285714
+1 13782 175 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 -6.335261528283125e-13 -0.5837469451892474
+0
+4 12336
+"LINE1062"
+""
+1 782.3908555313102 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1463 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  782.3908555313102 100.3005216501753 782.3908555313102 126.1785714285714
+4 12338
+"LINE1063"
+""
+1 224 100.3005216501753 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1464 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  224 100.3005216501753 782.3908555313103 100.3005216501753
+4 12339
+"LINE1064"
+""
+1 786.8582539984184 300.0000000000001 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1465 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  786.8582539984184 300.0000000000001 786.8582539984184 427.0000000000001
+1 13783 177 "" 34
+0
+1 13792 178 "" 2
+31 "transform" 0 0 1 8.673617379884035e-18 -8.673617379884012e-18 0.9999999999999997 -2.924656396634644e-13 -0.5837469451889916
+0
+1 13793 179 "" 34
+0
+4 12825
+"LINE1065"
+""
+1 122.4002685303015 162.3563663212244 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1469 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  122.4002685303015 162.3563663212244 122.4002685303015 228.8726634233818
+6 12826
+"RECTANGLE82"
+""
+1 1330 40 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1470 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 1 1 3 2 1 E 0.591216061169074 0 0.1720203316327446 -755.5555823057733 143.1191867346902 1 E 1330 40 1640 180
+2 12827
+"PRIMITIVE_TEXT68"
+""
+1 57.56749675673764 151.7127326424488 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1471 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 57.56749675673764 151.7127326424488 187 173
+0 2 2 "0s" 0 0 0 192 0 0  57.56749675673764 151.7127326424488 1
+2
+LANG:10027 38 Noto Sans,-1,16,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 2
+LANG:10027 27 Дробление пека
+LANG:10001 25 Силос огарков
+6 12828
+"RECTANGLE322"
+""
+1 1330 40 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1472 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 1 1 3 2 1 E 0.6348311613953913 0 0.1720203316327446 -818.3991490974222 81.54516198750629 1 E 1330 40 1640 180
+2 12829
+"PRIMITIVE_TEXT69"
+""
+1 26.48832496363434 89.95331400627424 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1473 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 26.48832496363434 89.95331400627424 222 111
+0 2 2 "0s" 0 0 0 192 0 0  26.48832496363434 89.95331400627424 1
+2
+LANG:10027 38 Noto Sans,-1,16,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 2
+LANG:10027 41 Термальный окислитель
+LANG:10001 25 Силос огарков
+7 12830
+"ELLIPSE532"
+""
+1 600 450 E E E 1 E 1 E N "fon_open" E N "fon_static" E E
+ E E
+1474 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 0.9054054054054054 0 1 183.4098752270231 37.04456926922313 1 E 651.4652124358253 234.5892857142857 18.5 15.410714
+4 12831
+"LINE1066"
+""
+1 785 262.3005216501754 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1475 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  785 262.3005216501754 775 271.6338549835086
+4 12832
+"LINE1067"
+""
+1 775 271.6338549835089 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1476 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  775 271.6338549835089 785 281.6338549835089
+4 12833
+"LINE1068"
+""
+1 730 262.3005216501754 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1477 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  730 262.3005216501754 784.9999999999999 262.3005216501754
+4 12834
+"LINE1069"
+""
+1 730 281.6338549835089 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1478 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  730 281.6338549835089 784.9999999999999 281.6338549835089
+1 13802 180 "" 2
+31 "transform" 0 0 -0.9999999999999997 1.353084311261909e-16 2.515349040166365e-16 1 2359.900991316136 -7.548461608356009e-13
+0
+1 13803 181 "" 2
+31 "transform" 0 0 -0.9999999999999997 1.353084311261909e-16 2.515349040166365e-16 1 2897.165292425479 -8.685329985572169e-13
+0
+1 13487 135 "" 2
+31 "transform" 0 0 -0.9999999999999997 1.353084311261909e-16 2.515349040166365e-16 1 3417.093658541025 -6.411593231139849e-13
+0
+1 13804 182 "" 9
+0
+1 13810 183 "" 9
+0
+1 13816 184 "" 9
+0
+1 13752 168 "" 2
+31 "transform" 0 0 0.9999999999999997 1.353084311261909e-16 -2.550043509685901e-16 1 0.7061943221110596 -1.181171802291661e-12
+0
+6 13339
+"RECTANGLE344"
+""
+1 1330 40 E E E 1 E 1 E N "cont_static" E N "cont_static" E E
+ E E
+1483 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+
+main()
+{
+ msDPE=\"1028BW01\";
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=0;
+ miNum=1;
+ isSlider = false;
+ aiType = 0;
+ bShowAlarm = true;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ E 0 2 3 2 1 E 0.2725581221463286 0 0.517384774457963 255.9409207714481 469.3046090216815 1 E 1330 40 1640 180
+2 13340
+"PRIMITIVE_TEXT187"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1484 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 392.5069821346381 384.9838684241149 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+4 13341
+"LINE1071"
+""
+1 598.5271152574261 562.4338684241152 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1485 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  598.5271152574261 562.4338684241152 615.5069821346382 562.4338684241152
+4 13342
+"LINE1072"
+""
+1 598.527115257426 490.5413827839263 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1486 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  598.527115257426 490.5413827839263 615.5069821346381 490.5413827839263
+4 13343
+"LINE1073"
+""
+1 598.527115257426 418.6488971437374 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1487 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  598.527115257426 418.6488971437374 615.5069821346381 418.6488971437374
+2 13344
+"PRIMITIVE_TEXT188"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1488 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\",\"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp1, float fNewValueMax,string dp2, float fNewValueMin)
+{ float mid;
+  mid = (fNewValueMax-fNewValueMin)/2.0;
+  setValue(\"\", \"text\", mid );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 392.5069821346381 313.0913827839261 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13345
+"PRIMITIVE_TEXT189"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1489 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._max\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 392.2010296650773 241.8340748447323 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13346
+"PRIMITIVE_TEXT108"
+""
+1 704.9362410914271 504.7221241408316 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1490 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit(\"1028BW01\"+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 705.1471911719424 504.5665685852761 717 517
+0 2 2 "0s" 0 0 0 192 0 0  705.1471911719424 504.5665685852761 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+2 13347
+"PRIMITIVE_TEXT109"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1491 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"1028BW01\"+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"1028BW01\"+\".OUT\",
+            \"1028BW01\"+\".OUT:_online.._invalid\",
+            \"1028BW01\"+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 508.9362410914271 327.0260076878401 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13348
+"PRIMITIVE_TEXT110"
+""
+1 195.9999999999999 153.4863247863248 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1492 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"
+
+main()
+{
+  setValue(\"\", \"text\", getTagName(\"1028BW01\"));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 508.9362410914271 326.7214190126267 0 E 196.2109500805153 153.971794871795 229 166
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 153.971794871795 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 Lxxxxx
+LANG:10001 6 Lxxxxx
+LANG:10000 4 Text
+6 13349
+"RECTANGLE345"
+""
+1 1330 40 E E E 1 E 1 E N "cont_static" E N "cont_static" E E
+ E E
+1493 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+
+main()
+{
+ msDPE=\"1028BW01\";
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=0;
+ miNum=1;
+ isSlider = false;
+ aiType = 0;
+ bShowAlarm = true;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ E 0 2 3 2 1 E 0.2725581221463286 0 0.517384774457963 -15.9153885603854 432.0542849666726 1 E 1330 40 1640 180
+2 13350
+"PRIMITIVE_TEXT190"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1494 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 120.6391399297028 347.7335443691061 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+4 13351
+"LINE1074"
+""
+1 326.6592730524908 525.1835443691064 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1495 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  326.6592730524908 525.1835443691064 343.6391399297029 525.1835443691064
+4 13352
+"LINE1075"
+""
+1 326.6592730524907 453.2910587289175 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1496 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  326.6592730524907 453.2910587289175 343.6391399297028 453.2910587289175
+4 13353
+"LINE1076"
+""
+1 326.6592730524907 381.3985730887286 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1497 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  326.6592730524907 381.3985730887286 343.6391399297028 381.3985730887286
+2 13354
+"PRIMITIVE_TEXT191"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1498 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\",\"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp1, float fNewValueMax,string dp2, float fNewValueMin)
+{ float mid;
+  mid = (fNewValueMax-fNewValueMin)/2.0;
+  setValue(\"\", \"text\", mid );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 120.6391399297028 275.8410587289173 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13355
+"PRIMITIVE_TEXT192"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1499 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._max\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 120.333187460142 204.5837507897235 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13356
+"PRIMITIVE_TEXT193"
+""
+1 434.0841921641493 475.6887342978802 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1500 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit(\"1028BW01\"+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 434.2951422446646 475.5331787423247 446 488
+0 2 2 "0s" 0 0 0 192 0 0  434.2951422446646 475.5331787423247 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+2 13357
+"PRIMITIVE_TEXT194"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1501 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"1028BW01\"+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"1028BW01\"+\".OUT\",
+            \"1028BW01\"+\".OUT:_online.._invalid\",
+            \"1028BW01\"+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 238.0841921641493 297.9926178448887 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13358
+"PRIMITIVE_TEXT195"
+""
+1 195.9999999999999 153.4863247863248 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1502 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"
+
+main()
+{
+  setValue(\"\", \"text\", getTagName(\"1028BW01\"));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 238.0841921641493 297.6880291696753 0 E 196.2109500805153 153.971794871795 229 166
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 153.971794871795 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 Lxxxxx
+LANG:10001 6 Lxxxxx
+LANG:10000 4 Text
+2 13359
+"PRIMITIVE_TEXT196"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1503 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 -110.2228823380285 309.5883619032861 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+4 13360
+"LINE1077"
+""
+1 95.7972507847595 487.0383619032863 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1504 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  95.7972507847595 487.0383619032863 112.7771176619716 487.0383619032863
+4 13361
+"LINE1078"
+""
+1 95.79725078475944 415.1458762630974 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1505 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  95.79725078475944 415.1458762630974 112.7771176619715 415.1458762630974
+4 13362
+"LINE1079"
+""
+1 95.79725078475938 343.2533906229085 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1506 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  95.79725078475938 343.2533906229085 112.7771176619715 343.2533906229085
+2 13363
+"PRIMITIVE_TEXT197"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1507 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\",\"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp1, float fNewValueMax,string dp2, float fNewValueMin)
+{ float mid;
+  mid = (fNewValueMax-fNewValueMin)/2.0;
+  setValue(\"\", \"text\", mid );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 -110.2228823380285 237.6958762630972 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13364
+"PRIMITIVE_TEXT198"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1508 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._max\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 -110.5288348075893 166.4385683239034 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+6 13365
+"RECTANGLE346"
+""
+1 1330 40 E E E 1 E 1 E N "cont_static" E N "cont_static" E E
+ E E
+1509 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+
+main()
+{
+ msDPE=\"1028BW01\";
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=0;
+ miNum=1;
+ isSlider = false;
+ aiType = 0;
+ bShowAlarm = true;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ E 0 2 3 2 1 E 0.2725581221463286 0 0.517384774457963 -246.0153439845488 394.5442802018474 1 E 1330 40 1640 180
+2 13366
+"PRIMITIVE_TEXT199"
+""
+1 202.9799763354301 445.0403763083708 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1510 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit(\"1028BW01\"+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 203.1909264159455 444.8848207528154 215 457
+0 2 2 "0s" 0 0 0 192 0 0  203.1909264159455 444.8848207528154 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+2 13367
+"PRIMITIVE_TEXT200"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1511 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"1028BW01\"+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"1028BW01\"+\".OUT\",
+            \"1028BW01\"+\".OUT:_online.._invalid\",
+            \"1028BW01\"+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 6.979976335430138 267.3442598553794 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13368
+"PRIMITIVE_TEXT201"
+""
+1 195.9999999999999 153.4863247863248 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1512 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"
+
+main()
+{
+  setValue(\"\", \"text\", getTagName(\"1028BW01\"));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 6.979976335430138 267.039671180166 0 E 196.2109500805153 153.971794871795 229 166
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 153.971794871795 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 Lxxxxx
+LANG:10001 6 Lxxxxx
+LANG:10000 4 Text
+6 13369
+"RECTANGLE347"
+""
+1 1330 40 E E E 1 E 1 E N "cont_static" E N "cont_static" E E
+ E E
+1513 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+
+main()
+{
+ msDPE=\"1028BW01\";
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=0;
+ miNum=1;
+ isSlider = false;
+ aiType = 0;
+ bShowAlarm = true;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ E 0 2 3 2 1 E 0.3567491409736804 0 0.517384774457963 257.085779652503 159.4648964417225 1 E 1330 40 1640 180
+4 13370
+"LINE1080"
+""
+1 731.562137147498 252.5941558441559 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1514 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  731.562137147498 252.5941558441559 840.0000000000001 252.5941558441559
+2 13371
+"PRIMITIVE_TEXT202"
+""
+1 844.1543708493389 209.9609925482459 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1515 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit(\"1028BW01\"+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 844.3653209298542 209.8054369926905 856 222
+0 2 2 "0s" 0 0 0 192 0 0  844.3653209298542 209.8054369926905 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+2 13372
+"PRIMITIVE_TEXT203"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1516 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"1028BW01\"+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"1028BW01\"+\".OUT\",
+            \"1028BW01\"+\".OUT:_online.._invalid\",
+            \"1028BW01\"+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 648.1543708493389 32.26487609525449 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13373
+"PRIMITIVE_TEXT204"
+""
+1 195.9999999999999 153.4863247863248 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1517 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"
+
+main()
+{
+  setValue(\"\", \"text\", getTagName(\"1028BW01\"));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 648.1543708493389 31.96028742004106 0 E 196.2109500805153 153.971794871795 229 166
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 153.971794871795 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 Lxxxxx
+LANG:10001 6 Lxxxxx
+LANG:10000 4 Text
+2 13374
+"PRIMITIVE_TEXT205"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1518 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 508.5621371474979 75.14415584415573 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+4 13375
+"LINE1081"
+""
+1 714.5822702702859 252.5941558441559 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1519 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  714.5822702702859 252.5941558441559 731.562137147498 252.5941558441559
+4 13376
+"LINE1082"
+""
+1 714.9457801766816 186.1005216501756 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1520 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  714.9457801766816 186.1005216501756 731.9256470538937 186.1005216501756
+4 13377
+"LINE1083"
+""
+1 714.5822702702858 126.1785714285713 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+1521 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  714.5822702702858 126.1785714285713 731.5621371474979 126.1785714285713
+2 13378
+"PRIMITIVE_TEXT206"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1522 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\",\"System1:1028BW01.OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp1, float fNewValueMax,string dp2, float fNewValueMin)
+{ float mid;
+  mid = (fNewValueMax-fNewValueMin)/2.0;
+  setValue(\"\", \"text\", mid );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 508.9256470538937 8.650521650175307 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 13379
+"PRIMITIVE_TEXT207"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1523 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:1028BW01.OUT:_pv_range.._max\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:1028BW01.OUT:_pv_range.._max\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, FALSE) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:1028BW01.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 508.2561846779372 -50.63625087043377 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+1 13822 185 "" 9
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 13388 114 "0" 1
+0
+1 13394 115 "0" 1
+0
+1 13402 121 "1" 1
+0
+1 13411 123 "1" 1
+0
+1 13420 124 "1" 1
+0
+1 13429 127 "1" 1
+0
+1 13438 128 "1" 1
+0
+1 13447 129 "1" 1
+0
+1 13456 130 "1" 1
+0
+1 13465 131 "1" 1
+0
+1 13474 132 "1" 1
+0
+1 13483 133 "1" 1
+0
+1 13497 139 "1" 1
+0
+1 13506 140 "1" 1
+0
+1 13516 141 "0" 1
+31 "transform" 0 0 -0.9999999999999999 0 1 1933.290162449966 1.70530256582424e-13
+0
+1 13517 141 "0" 2
+31 "transform" 0 0 1 0 1 -35.87553251298608 -2.842170943040401e-14
+0
+1 13524 142 "1" 1
+0
+1 13533 143 "1" 1
+0
+1 13542 144 "1" 1
+0
+1 13551 145 "1" 1
+0
+1 13560 146 "1" 1
+0
+1 13569 147 "1" 1
+0
+1 13578 148 "1" 1
+0
+1 13587 149 "1" 1
+0
+1 13597 150 "0" 1
+31 "transform" 0 0 -0.9999999999999999 0 1 2490.1348462307 2.27373675443232e-13
+0
+1 13598 150 "0" 2
+31 "transform" 0 0 1 0 1 -35.87553251298552 -1.4210854715202e-13
+0
+1 13605 151 "1" 1
+0
+1 13614 152 "1" 1
+0
+1 13623 153 "1" 1
+0
+1 13632 154 "1" 1
+0
+1 13641 155 "1" 1
+0
+1 13650 156 "1" 1
+0
+1 13659 157 "1" 1
+0
+1 13668 158 "1" 1
+0
+1 13677 159 "1" 1
+0
+1 13686 160 "1" 1
+0
+1 13695 161 "1" 1
+0
+1 13705 162 "0" 1
+31 "transform" 0 0 -0.9999999999999999 0 1 3014.831349771951 6.252776074688881e-13
+0
+1 13706 162 "0" 2
+31 "transform" 0 0 1 0 1 -35.87553251298619 -1.4210854715202e-13
+0
+1 13713 163 "1" 1
+0
+1 13722 164 "1" 1
+0
+1 13731 165 "1" 1
+0
+1 13740 166 "1" 1
+0
+1 13749 167 "1" 1
+0
+1 13761 171 "1" 1
+0
+1 13770 172 "1" 1
+0
+1 13779 173 "1" 1
+0
+1 13789 177 "1" 1
+0
+1 13799 179 "1" 1
+0
+1 13808 182 "0" 1
+0
+1 13814 183 "0" 1
+0
+1 13820 184 "0" 1
+0
+1 13826 185 "0" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 13404 121 "" 14
+0
+1 13413 123 "" 14
+0
+1 13422 124 "" 14
+0
+1 13431 127 "" 14
+0
+1 13440 128 "" 14
+0
+1 13449 129 "" 14
+0
+1 13458 130 "" 14
+0
+1 13467 131 "" 14
+0
+1 13476 132 "" 14
+0
+1 13485 133 "" 14
+0
+1 13499 139 "" 14
+0
+1 13508 140 "" 14
+0
+1 13526 142 "" 14
+0
+1 13535 143 "" 14
+0
+1 13544 144 "" 14
+0
+1 13553 145 "" 14
+0
+1 13562 146 "" 14
+0
+1 13571 147 "" 14
+0
+1 13580 148 "" 14
+0
+1 13589 149 "" 14
+0
+1 13607 151 "" 14
+0
+1 13616 152 "" 14
+0
+1 13625 153 "" 14
+0
+1 13634 154 "" 14
+0
+1 13643 155 "" 14
+0
+1 13652 156 "" 14
+0
+1 13661 157 "" 14
+0
+1 13670 158 "" 14
+0
+1 13679 159 "" 14
+0
+1 13688 160 "" 14
+0
+1 13697 161 "" 14
+0
+1 13715 163 "" 14
+0
+1 13724 164 "" 14
+0
+1 13733 165 "" 14
+0
+1 13742 166 "" 14
+0
+1 13751 167 "" 14
+0
+1 13763 171 "" 14
+0
+1 13772 172 "" 14
+0
+1 13781 173 "" 14
+0
+1 13791 177 "" 14
+0
+1 13801 179 "" 14
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 47 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 489 1 0 1 672.9973262342329 8.599145299145331
+1
+"$text""\"Плавление пека\""
+3 96 "PANEL_REF194" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1148 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 284.4949054576073 -7.504696247719096
+0
+1 100 "SHAPE_GROUP767" -1
+8 0 
+9169 9170 9171 9172 9173 9174 9175 9176 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 102 "PANEL_REF381" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1202 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 419.8932471168856 38.76813090689541
+0
+1 104 "SHAPE_GROUP769" -1
+8 0 
+9220 9221 9222 9223 9224 9225 9226 9227 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 107 "PANEL_REF384" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1227 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 694.565802119717 72.66200550108937
+0
+1 109 "SHAPE_GROUP771" -1
+8 0 
+9258 9259 9260 9261 9262 9263 9264 9265 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 112 "SHAPE_GROUP773" -1
+8 0 
+9294 9295 9296 9297 9298 9299 9300 9301 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 114 "PANEL_REF476" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIdown.pnl" 272.570216382327 559.8591505883794 T 1262 1 0 1 211.3134107512777 -90.59162970405512
+2
+"$b_isDetail""FALSE"
+"$dpe_value""220T002_LSH001"
+3 115 "PANEL_REF477" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIdown.pnl" 272.570216382327 559.8591505883794 T 1263 1 0 1 487.9009488100836 -52.21025344464278
+2
+"$b_isDetail""FALSE"
+"$dpe_value""220T003_LSH001"
+3 121 "PANEL_REF526" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1278 1 0 1 -388.5253930193262 -221.1865114547621
+2
+"$b_isDetail""FALSE"
+"$dpe_value""212V002"
+3 123 "PANEL_REF480" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1280 1 0 1 -111.9378549605202 -182.8051351953497
+2
+"$b_isDetail""FALSE"
+"$dpe_value""212V003"
+3 124 "PANEL_REF481" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1281 1 0 1 -614.9736719027479 -257.5654640151834
+2
+"$b_isDetail""FALSE"
+"$dpe_value""212V001"
+1 125 "SHAPE_GROUP774" -1
+8 0 
+9457 9458 9459 9460 9461 9462 9463 9464 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 126 "SHAPE_GROUP775" -1
+8 0 
+9468 9469 9470 9471 9472 9473 9474 9475 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 127 "PANEL_REF482" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1303 1 0 1 -569.9065419659412 48.22876603631424
+2
+"$b_isDetail""FALSE"
+"$dpe_value""212V004"
+3 128 "PANEL_REF483" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1304 1 0 1 -335.3310821811843 87.2956436059047
+2
+"$b_isDetail""FALSE"
+"$dpe_value""212V005"
+3 129 "PANEL_REF484" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1305 1 0 1 -63.46323997624918 124.5459676609134
+2
+"$b_isDetail""FALSE"
+"$dpe_value""212V006"
+3 130 "PANEL_REF569" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1327 1 0 1 360.4730207927037 -218.153510688911
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R812"
+3 131 "PANEL_REF570" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1328 1 0 1 360.4730207927037 -162.1535106889112
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R813"
+3 132 "PANEL_REF571" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1329 1.000512295081967 0 1 629.6421955476644 -222.153510688911
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R832"
+3 133 "PANEL_REF572" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1330 1 0 1 630.0148619601107 -166.153510688911
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R833"
+3 134 "PANEL_REF567" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1331 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 1566.088910395338 261.451638851552
+0
+3 135 "PANEL_REF534" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1332 -0.553158862393527 6.774242302502241e-17 -5.471301682608501e-17 -0.4467656867611 1950.133349463185 883.2329679912892
+0
+3 136 "PANEL_REF573" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1333 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 1296.700030351412 -119.6151213820643
+0
+3 137 "PANEL_REF574" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1334 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 1566.088910395339 -123.8088546514363
+0
+3 138 "PANEL_REF575" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1335 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 1825.241871518819 -126.6151213820646
+0
+3 139 "PANEL_REF576" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1336 1 0 1 889.0148619601107 -225.1535106889111
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R852"
+3 140 "PANEL_REF577" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1337 1 0 1 889.0148619601107 -169.1535106889112
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R853"
+3 141 "PANEL_REF408" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Pump_V.pnl" 323.5715887045201 511.3128285568463 T 1337 1 0 1 688.6578176344876 4.987693093329426
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221P001"
+3 142 "PANEL_REF578" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1338 1 0 1 205.6283370119715 -134.153510688911
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R805"
+3 143 "PANEL_REF579" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1339 1 0 1 179.7357878386535 9.791219238377295
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R803"
+3 144 "PANEL_REF580" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1340 1 0 1 179.7357878386535 65.79121923837729
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R801"
+3 145 "PANEL_REF581" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1341 1 0 1 252.5551629048418 9.545967660913703
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R804"
+3 146 "PANEL_REF582" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1342 1 0 1 252.5551629048418 65.5459676609137
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R802"
+3 147 "PANEL_REF438" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1352 1 0 1 627.0468535700533 -99.75277872360888
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R806"
+3 148 "PANEL_REF583" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1355 1 0 1 687.0468535700533 -99.75277872360888
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R807"
+3 149 "PANEL_REF584" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1355 1 0 0.9999999999999999 746.4691954604198 -55.75277872360887
+2
+"$b_isDetail""TRUE"
+"$dpe_value""1007MA01"
+3 150 "PANEL_REF585" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Pump_V.pnl" 323.5715887045201 511.3128285568463 T 1358 1 0 1 967.0801595248539 0.9876930933294545
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221P002"
+3 151 "PANEL_REF586" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1359 1 0 1 484.0506789023379 -138.1535106889109
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R825"
+3 152 "PANEL_REF587" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1360 1 0 1 458.1581297290199 5.791219238377323
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R823"
+3 153 "PANEL_REF588" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1361 1 0 1 458.1581297290199 61.79121923837732
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R821"
+3 154 "PANEL_REF589" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1362 1 0 1 530.5551629048419 5.545967660913618
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R824"
+3 155 "PANEL_REF590" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1363 1 0 1 530.5551629048419 61.54596766091362
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R822"
+3 156 "PANEL_REF594" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1375 1 0 1 904.5050124026468 -104.7527787236089
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R826"
+3 157 "PANEL_REF595" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1376 1 0 1 964.5050124026469 -104.7527787236089
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R827"
+3 158 "PANEL_REF596" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1377 1 0 1 1013.96317123524 -61.75277872360888
+2
+"$b_isDetail""TRUE"
+"$dpe_value""1007MA01"
+3 159 "PANEL_REF597" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1385 1 0 1 1167.46919546042 -117.7527787236089
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R846"
+3 160 "PANEL_REF598" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1386 1 0 1 1227.46919546042 -117.7527787236089
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R847"
+3 161 "PANEL_REF599" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1387 1 0 1 1276.927354293013 -74.75277872360891
+2
+"$b_isDetail""TRUE"
+"$dpe_value""1007MA01"
+3 162 "PANEL_REF602" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Pump_V.pnl" 323.5715887045201 511.3128285568463 T 1410 1 0 1 1229.42841129548 -2.312828556846256
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221P003"
+3 163 "PANEL_REF603" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1411 1 0 1 743.5551629048418 -141.4540323390863
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R845"
+3 164 "PANEL_REF604" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1412 1 0 1 721.5551629048419 2.545967660913619
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R843"
+3 165 "PANEL_REF605" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1413 1 0 1 721.5551629048418 58.54596766091372
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R841"
+3 166 "PANEL_REF606" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1414 1 0 1 795.5551629048417 2.545967660913619
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R844"
+3 167 "PANEL_REF607" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1415 1 0 1 795.5551629048417 58.54596766091372
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221R842"
+3 168 "PANEL_REF608" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1424 -0.553158862393527 6.774242302502241e-17 -5.471301682608501e-17 -0.4467656867611 469.5171512463377 262.562035394415
+0
+3 169 "PANEL_REF609" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1425 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 1296.700030351411 260.0843569677602
+0
+3 170 "PANEL_REF610" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1426 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 1825.241871518818 253.08435696776
+0
+3 171 "PANEL_REF611" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1430 1 0 0.9999999999999999 892.6564337093093 -48.60388157987177
+2
+"$b_isDetail""TRUE"
+"$dpe_value""1007MA01"
+3 172 "PANEL_REF612" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1434 1 0 0.9999999999999999 1158.034805119695 -61.75277872360881
+2
+"$b_isDetail""TRUE"
+"$dpe_value""1007MA01"
+3 173 "PANEL_REF613" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Valve.pnl" 263.9905035948491 278.0533003737842 T 1439 1 0 0.9821428571428571 1418.009496405151 -69.0880628671095
+2
+"$b_isDetail""TRUE"
+"$dpe_value""1007MA01"
+3 175 "PANEL_REF615" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1462 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 985.0946369273056 -120.7370716036681
+0
+3 177 "PANEL_REF617" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 727.4448370951582 527.4540323390863 T 1466 1 0 1 13.62679678929632 -225.1535106889112
+2
+"$b_isDetail""FALSE"
+"$dpe_value""222R001"
+3 178 "PANEL_REF618" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1467 3.38712115125112e-17 0.553158862393527 -0.4467656867611 2.73565084130425e-17 948.9528909257241 185.6453721209247
+0
+3 179 "PANEL_REF619" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 701.079581686885 411.0317648430594 T 1468 1 0 1 -179.079581686885 -359.0317648430594
+2
+"$b_isDetail""FALSE"
+"$dpe_value""222R401"
+3 180 "PANEL_REF620" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1479 -0.553158862393527 6.774242302502241e-17 -5.471301682608501e-17 -0.4467656867611 1421.537015850741 885.3951585774819
+0
+3 181 "PANEL_REF621" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 417.3047181860624 342.7992157925984 T 1480 -0.553158862393527 6.774242302502241e-17 -5.471301682608501e-17 -0.4467656867611 1690.169166405412 881.3951585774819
+0
+3 182 "PANEL_REF622" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIdown.pnl" 272.570216382327 559.8591505883794 T 1481 1 0 1 936.0351770417793 -343.5586289382043
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221X001_LSHH001"
+3 183 "PANEL_REF623" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIdown.pnl" 272.570216382327 559.8591505883794 T 1482 1 0 1 1205.424057085707 -347.7523622075763
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221X002_LSHH001"
+3 184 "PANEL_REF624" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIdown.pnl" 272.570216382327 559.8591505883794 T 1483 1 0 1 1464.577018209186 -350.5586289382044
+2
+"$b_isDetail""FALSE"
+"$dpe_value""221X003_LSHH001"
+3 185 "PANEL_REF625" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIdown.pnl" 272.570216382327 559.8591505883794 T 1524 1 0 1 -15.13486813214405 -126.9705822644765
+2
+"$b_isDetail""FALSE"
+"$dpe_value""220T001_LSH001"
+0

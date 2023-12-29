@@ -1,0 +1,181 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1708 1044 N "fon_static" 0
+E E E E E 1 -1 -1 0  322 122
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+25 87
+"TABLE1"
+""
+1 330 140 E E E 1 E 1 E N "_WindowText" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  328 138 1572 822
+"main()
+{
+   /* dyn_anytype x,y;
+  x[1]=\"abcd\";
+  x[2]=\"[100,0,0]\";
+  x[3]=\"_3DFace\";
+  y[1]=\"test\";
+  y[2]=\"[0,100,0]\";
+  y[3]=\"_3DText\";
+  setValue(\"TABLE1\",\"appendLine\",1,\"Column1\",x,\"Column2\",y);
+  */
+   /*TABLE1.appendLine(1, \"Time\", \"18.10.2019 18:00:00\");
+   TABLE1.appendLine(2, \"Time\", \"18.10.2019 19:00:00\");
+   TABLE1.appendLine(3, \"Time\", \"18.10.2019 20:00:00\");
+   TABLE1.appendLine(4, \"Time\", \"18.10.2019 20:30:00\");
+   TABLE1.appendLine(5, \"Time\", \"18.10.2019 21:28:00\");
+   TABLE1.appendLine(6, \"Time\", \"18.10.2019 23:14:00\");*/
+
+
+   TABLE1.appendLine(\"Time\", \"18.10.2019 18:00:00\",\"System\", \"Система 1\",\"Log\", \"Сообщение №1\");
+   TABLE1.appendLine(\"Time\", \"18.10.2019 19:00:00\",\"System\", \"Система 2\",\"Log\", \"Сообщение №2\");
+   TABLE1.appendLine( \"Time\", \"18.10.2019 20:00:00\",\"System\", \"Система 5\",\"Log\", \"Сообщение №3\");
+   TABLE1.appendLine( \"Time\", \"18.10.2019 20:30:00\",\"System\", \"Система 2\",\"Log\", \"Сообщение №4\");
+   TABLE1.appendLine(\"Time\", \"18.10.2019 21:28:00\",\"System\", \"Система 1\",\"Log\", \"Сообщение №5\");
+   TABLE1.appendLine(\"Time\", \"18.10.2019 23:14:00\",\"System\", \"Система 3\",\"Log\", \"Сообщение №6\");
+
+
+
+}" 0
+E 1 0 1 3 0 "Time" 6 1 0 "[0s,,,AlignHCenter]" 2
+LANG:10027 10 Время
+LANG:10001 2 #1
+E
+2
+LANG:10027 0 
+LANG:10001 0 
+
+200 "System" 6 1 0 "s" 2
+LANG:10027 14 Система
+LANG:10001 2 #2
+E
+2
+LANG:10027 0 
+LANG:10001 0 
+
+200 "Log" 6 1 1 "s" 2
+LANG:10027 29 Текст сообщения
+LANG:10001 2 #3
+E
+2
+LANG:10027 0 
+LANG:10001 0 
+
+500 
+30 30 10 0
+2
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 0 2 1 1 7
+1 0
+13 88
+"PUSH_BUTTON1"
+""
+1 1283 845 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+6 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  1281 829 1415 883
+
+T 
+2
+LANG:10027 12 Печать
+LANG:10001 12 PUSH_BUTTON1
+E E E E
+13 89
+"PUSH_BUTTON2"
+""
+1 1439 843 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+7 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 50 MS Shell Dlg 2,-1,16,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0  1437 827 1571 881
+
+T 
+2
+LANG:10027 10 Выход
+LANG:10001 12 PUSH_BUTTON1
+E E E E
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

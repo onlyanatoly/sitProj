@@ -1,0 +1,592 @@
+V 14
+3
+LANG:10027 12 Столб_1
+LANG:10001 9 Regulator
+LANG:10000 16 Messwertbalken_1
+PANEL,-1 -1 188 141 N "fon_static" 1
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E "dyn_string elementNames = makeDynString(\"Elem1\", \"Elem2\", \"Elem3\", \"Elem4\", \"slider1\", \"s1\", \"s1back\");
+
+void fillElementsForecolor(string s_newcolor)
+{
+  for ( int i= 1;i<=dynlen(elementNames);  i++)
+  {
+    setValue(elementNames[i], \"foreCol\", s_newcolor);
+  }
+}
+
+void fillElementsColor(string s_newcolor)
+{
+  for ( int i= 1;i<=dynlen(elementNames);  i++)
+  {
+    setValue(elementNames[i], \"fill\", \"[solid]\");
+    setValue(elementNames[i], \"backCol\", s_newcolor);
+  }
+}
+
+void fillElementsColorMest(bool isMest, float val)
+{
+  string value;
+  string color;
+  string m1 = \"[pattern,[tile,any,mest1.png]]\";
+  string m2 = \"[pattern,[tile,any,mest2.png]]\";
+  if (isMest)
+  {
+    /*if (val<0.9)
+    {
+      value = m2;
+    }
+    else
+    {
+      value = m1;
+    }
+    for ( int i= 1;i<=dynlen(elementNames);  i++)
+    {
+      setValue(elementNames[i], \"fill\", value);
+    }
+    setValue(\"s1\", \"fill\", m1);
+    setValue(\"s1back\", \"fill\", m2);
+    fillElementsForecolor(\"cont_mest\");*/
+    for ( int i= 1;i<=dynlen(elementNames);  i++)
+    {
+      setValue(elementNames[i], \"fill\", \"[solid]\");
+    }
+    fillElementsForecolor(\"cont_mest\");
+  }
+  else
+  {
+    for ( int i= 1;i<=dynlen(elementNames);  i++)
+    {
+      setValue(elementNames[i], \"fill\", \"[solid]\");
+    }
+    //fillElementsForecolor(\"fon_open\");
+    //fillElementsForecolor(\"cont_dist\");
+  }
+}
+
+void tagvalVisible(bool b_visible)
+{
+  bool val;
+  if (b_visible)
+  {
+    dpGet($dpe_value+\".SHOW\", val);
+    if (val)
+    {
+      setValue(\"tag\", \"visible\", b_visible);
+      setValue(\"value\", \"visible\", b_visible);
+    }
+  }
+  else
+  {
+    setValue(\"tag\", \"visible\", b_visible);
+    setValue(\"value\", \"visible\", b_visible);
+  }
+}
+
+void alarmBorderVisible(bool b_visible, string s_color)
+{
+  setValue(\"alarmBorder\", \"visible\", b_visible);
+  setValue(\"alarmBorder\", \"color\", s_color);
+}
+
+void s1Visible(bool b_visible)
+{
+  setValue(\"s1\", \"visible\", b_visible);
+}
+
+void fillElements()
+{
+  bool isInvalid, isRep, isShow, isMest;
+  int regim;
+  float fNewValue;
+  dpGet($dpe_value+\".OUT\", fNewValue, $dpe_value+\".invalid\",isInvalid, $dpe_value+\".REP\", isRep, $dpe_value+\".SHOW\", isShow, $dpe_value+\".REG\", regim, $dpe_value+\".MEST\", isMest);
+  if (isRep) {//если ремонт
+    fillElementsColor(\"fon_rem\");
+    fillElementsForecolor(\"fon_static\");
+    alarmBorderVisible(false, \"fon_nan\");
+    tagvalVisible(false);
+    s1Visible(false);
+  } else if (isInvalid) {//неисправность
+    fillElementsColor(\"fon_nan\");
+    fillElementsForecolor(\"fon_nan\");
+    alarmBorderVisible(true, \"fon_nan\");
+    tagvalVisible(true);
+    s1Visible(false);
+  } else {
+    alarmBorderVisible(false, \"fon_nan\");
+    if (isShow) {
+      tagvalVisible(true);
+    } else {
+      tagvalVisible(false);
+    }
+    s1Visible(true);
+    if (fNewValue < 0.9) {
+      fillElementsColor(\"fon_open\");
+    } else if (fNewValue > 99.1) {
+      fillElementsColor(\"cont_static\");
+    } else {
+      fillElementsColor(\"cont_static\");
+      setValue(\"s1\", \"backCol\", \"cont_static\");
+      setValue(\"s1back\", \"backCol\", \"fon_open\");
+    }
+    if (regim == 0) {//автоматический режим
+      fillElementsForecolor(\"fon_open\");
+    } else if (regim == 6) {//ошибка какая-то
+      alarmBorderVisible(true, \"fon_alarm\");
+    }
+    fillElementsColorMest(isMest, fNewValue);
+  }
+}
+" 0
+ 4
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+6 48
+"Elem3"
+""
+1 160 60 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.2986031927023944 0 0.937478420447888 52.48047320410485 -7.190156098018804 1 E 160 60 170 70
+9 35
+"Elem4"
+""
+1 150 70 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 1 1 E 0.7301945739445734 0 0.6986490036725689 -7.133077570577488 1.066578289928689 1 E 150 70 20 20
+ 0 170 70 140 70 1
+6 40
+"s1back"
+""
+1 181.0344827586207 40.15924719507781 E E E 1 E 1 E N "cont_static" E N "fon_open" E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E -1.473026341317628e-17 0.1125000000000018 -4.514523945267952 -1.163478042928615e-15 259.5809578107181 57.13114773600079 1 E 110 30 190 40
+10 45
+"slider1"
+""
+1 60 30 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.2375 0 0.2375 64.79166666666667 72.33333333333331 1 E 3 60 30
+50 50
+70 50
+ 1
+10 49
+"Elem1"
+""
+1 140 70 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.119761972633978 0 1.00728144026677 -77.41191562143662 -22.14918188800829 1 E 3 140 70
+140 90
+160 80
+ 1
+10 50
+"Elem2"
+""
+1 140 70 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -1.119761972633979 1.850345987494854e-16 -9.142086103954186e-17 -1.00728144026677 280.9119156214366 139.015848554675 1 E 3 140 70
+140 90
+160 80
+ 1
+2 55
+"tag"
+""
+1 188.1666666666666 24.3529914529915 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagName($dpe_value));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.9750000000000003 -86.91666666666666 -0.4249999999999972 0 E 174 24.83846153846165 202 37
+0 2 2 "0s" 0 0 0 193 0 0  188 24.83846153846165 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 Xxxxx
+LANG:10001 5 Xxxxx
+LANG:10000 4 Text
+2 56
+"value"
+""
+1 78 67 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue)+getTagUnit(dp));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E U  0 E 63 67.36153846153834 77.8333333333334 79
+0 2 2 "0s" 0 0 0 194 0 0  77.8333333333334 67.36153846153834 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 3 xxx
+LANG:10001 3 xxx
+LANG:10000 4 Text
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+6 8
+"s1"
+""
+1 45.57549857549816 218.8589743589745 E E E 1 E 0 E N "fon_open" E N "fon_static" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "fon_open"
+"antiAliased" "0"
+"
+main()
+{
+  EP_setFillElements();
+  setScale();
+}
+
+void EP_setFillElements()
+{
+
+  dpConnect(\"EP_setFillElementCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".invalid\",
+            $dpe_value+\".REP\",
+            $dpe_value+\".SHOW\",
+            $dpe_value+\".REG\",
+            $dpe_value+\".MEST\");
+
+}
+
+
+void EP_setFillElementCB(string dp1, float fNewValue1, string dp2, bool boNewValue2, string dp3, int iNewValue3, string dp4, int boNewValue4, string dp5, bool iNewValue5, string dp6, int iNewValue6)
+{
+    fillElements();
+}
+
+void setScale()
+{
+   dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_online.._value\"))
+  {
+    setValue(\"s1\", \"backCol\", \"fon_nan\");
+    setValue(\"s1back\", \"backCol\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"setScaleCB\",
+            $dpe_value+\".OUT:_online.._value\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+  {
+    setValue(\"s1\", \"backCol\", \"fon_nan\");
+    setValue(\"s1back\", \"backCol\", \"fon_nan\");
+  }
+}
+
+void setScaleCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool isRep)
+{
+    fillElements();
+}
+" 0
+ E -1 1 1 0 1 E -3.947008885078988e-16 0.2666666666666666 -0.2280062598620177 -6.65349396774175e-16 128.4773583900579 65.2061477360011 1 E 18 19 48 217
+1 57 1 "" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+6 14
+"alarmBorder"
+""
+1 120 100 E E E 1 E 1 E N "fon_nan" E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 4 3 2 1 E 1.507722222222223 0 0.4333333333333334 -126.39 -21.33333333333335 0 E 120 100 180 250
+6 29
+"refBorder"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+//bool isPoint;
+int sliderX;
+int sliderY;
+int s1BackSizeX;
+int s1BackSizeY;
+bool isOutAi;
+int aiType;
+int pointX, pointY;
+int s1BackSizeX, s1BackSizeY;
+
+main()
+{
+ msDPE=$dpe_value;
+ //msCol=$s_Col;
+ msCol=\"cont_static\";
+ miDirection=2;
+ mbIBit=true;
+ miNum=1;
+ miNum2=1;
+ aiType = 0;
+ isSlider = true;
+ isOutAi = false;
+ getValue(\"s1back\", \"size\", s1BackSizeX, s1BackSizeY);
+ getValue(\"slider1\", \"position\", sliderX, sliderY);
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_Regulator();
+}
+
+" 0
+ "main(mapping event)
+{
+  openFrontAndDetailPanel($dpe_value);
+}" 0
+ 3 1 1 0 1 E 3.015444444444446 0 1.96969696969697 24.38222222222224 2.303030303030283 1 E 10 10 40 43
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+3 1 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SIM:_online.._value\"))
+  {
+    setValue(\"imitFigRef.imitFig2\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_value+\".SIM:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"imitFigRef.imitFig2\", \"fon_nan\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+    fillElements();
+}
+"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 152 96.25 T 30 1.16 0 1.314516129032257 -65.51666666666665 -91.23027639922796
+0
+0

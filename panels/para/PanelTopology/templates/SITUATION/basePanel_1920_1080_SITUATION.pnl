@@ -1,0 +1,212 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1920 1060 N "_3DFace" 0
+"#uses \"Situational_pnl\"
+
+main()
+{
+  initialConfigs();
+}" 0
+ E E E E 1 -1 -1 0  0 0
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+29 6
+"topModule"
+""
+1 6.984550376135099 3.180634537280127 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  8.500000000000185 3.250000000000142 1915 70.24999999999986
+15 Canvas.Canvas.1
+0
+E29 1
+"mainModule"
+""
+1 6.981370833257997 68.97711825123319 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  8.500000000000185 69.99999999999996 1919 1058
+15 Canvas.Canvas.1
+0
+E29 2
+"navigateModule"
+""
+1 1287 868 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1287 868 1926 1060
+15 Canvas.Canvas.1
+0
+E29 3
+"detailModule"
+""
+1 9.098648250414328 867.8012213605638 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  9 868 648 1060
+15 Canvas.Canvas.1
+0
+E29 5
+"frontModule"
+""
+1 647.6055506886923 867.8012213605635 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  648 868 1287 1060
+15 Canvas.Canvas.1
+0
+E0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

@@ -1,0 +1,81 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 973 600 N "_3DFace" 0
+E E E E E 1 -1 -1 0  134.1193790484123 30.65472655134995
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "96.0236"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+2 482
+"PRIMITIVE_TEXT1"
+""
+1 310 150 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+76 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 4 3 2 1 E 1.870967741935484 0 0.6666666666666666 -383.5 50.00000000000003 0 E 310 150 620 210
+0 2 2 "0s" 0 0 0 64 0 0  310 150 1
+2
+LANG:10027 41 Arial,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 36 MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0
+0 2
+LANG:10027 61 НЕ ВЫБРАНА СХЕМА ДЛЯ ОТОБРАЖЕНИЯ!
+LANG:10001 61 НЕ ВЫБРАНА СХЕМА ДЛЯ ОТОБРАЖЕНИЯ!
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

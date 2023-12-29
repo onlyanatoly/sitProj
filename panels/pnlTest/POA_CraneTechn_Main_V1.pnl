@@ -1,0 +1,1587 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 786 N "fon_static" 0
+E E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 152
+"RECTANGLE18"
+""
+1 550 80 E E E 1 E 1 E N "cont_static" E N "_Transparent" E E
+ E E
+357 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 1 1 3 2 1 E 1.045454545454545 0 1.063333333333333 -69.99999999999994 -5.066666666666663 1 E 550 80 1540 680
+10 71
+"POLYGON10"
+""
+1 470 460 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+306 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.5234375000000001 0 1 909.3210227272727 -158.75 1 E 8 39.50610583446382 458.75
+39.50610583446382 428.75
+550 430
+550 480
+530 480.0000000000001
+530 440
+58.61058344640401 438.75
+58.61058344640401 458.75
+ 1
+6 43
+"RECTANGLE8"
+""
+1 149.3333333333334 331 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+278 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1 0 1 -5.833333333333339 -1 1 E 149.3333333333334 331 170 360
+6 41
+"RECTANGLE6"
+""
+1 160 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+276 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.364665047741345 0 1 -218.3464076386151 0 1 E 160 220 755.8560606060606 270
+6 42
+"RECTANGLE7"
+""
+1 160 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+277 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.354913353591091 0 0.6 -216.7861365745745 98 1 E 160 220 755.8560606060606 270
+1 153 99 "" 1
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 152.8357054973817 -637.1507478632476
+20 "primitiveText" 0 0 1
+2
+LANG:10027 81 Кран технологический №1 отделения обжига №1
+LANG:10001 5 Crane
+
+0
+10 28
+"POLYGON2"
+""
+1 130 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+263 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.816666666666667 0 1 12.8333333333333 -70 1 E 8 130 230
+130 400
+190 400
+190 350
+150 350
+150 280
+160 280
+160 230
+ 1
+10 29
+"POLYGON3"
+""
+1 130 230 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+264 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.9090909090909087 1.327732333470614e-16 -2.715816136644436e-16 1 1498.068181818182 -70 1 E 8 130 230
+130 400
+80.5 400
+80.5 350
+110.5 350
+110.5 280
+95.5 280
+95.49999999999989 230
+ 1
+6 31
+"RECTANGLE3"
+""
+1 144.6666666666667 210 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+266 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.514285714285713 0 1 -87.39999999999981 0 1 E 144.6666666666667 210 168 280
+4 35
+"LINE1"
+""
+1 149.3333333333334 210 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+270 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  149.3333333333334 210 149.3333333333334 281
+4 36
+"LINE2"
+""
+1 132 270 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+271 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  132 270 166.6666666666667 270
+7 34
+"ELLIPSE2"
+""
+1 145 245 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+269 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 4 0 1 E 145 245 5 5
+6 37
+"RECTANGLE5"
+""
+1 144.6666666666667 210 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+272 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.514285714285713 0 1 1344.122727272727 0 1 E 144.6666666666667 210 168 280
+4 38
+"LINE3"
+""
+1 1580.856060606061 210 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+273 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1580.856060606061 210 1580.856060606061 280
+4 39
+"LINE4"
+""
+1 1150 270 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+274 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1150 270 1184.666666666667 270
+7 40
+"ELLIPSE3"
+""
+1 145 245 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+275 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 1435.522727272727 0 1 E 145 245 5 5
+6 54
+"RECTANGLE9"
+""
+1 149.3333333333334 331 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+289 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1 0 1 1430.70652173913 -1 1 E 149.3333333333334 331 170 360
+6 55
+"RECTANGLE10"
+""
+1 190 270 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+290 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6 0 1 76 0 1 E 190 270 290 300
+4 56
+"LINE14"
+""
+1 222.5 299.0000000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+291 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  222.5 299.0000000000001 222.5 430.2500000000001
+4 57
+"LINE15"
+""
+1 224 432.7884615384613 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+292 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  224 432.7884615384613 235.5 439.3884615384613
+4 58
+"LINE16"
+""
+1 235.5 439.3884615384613 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+293 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  235.5 439.3884615384613 235.5 459.1884615384614
+4 59
+"LINE17"
+""
+1 235.5 459.1884615384614 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+294 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  235.5 459.1884615384614 229.75 465.7884615384613
+4 60
+"LINE18"
+""
+1 218.25 465.7884615384613 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+295 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  218.25 465.7884615384613 229.75 465.7884615384613
+4 61
+"LINE19"
+""
+1 212.5 452.5884615384614 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+296 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  212.5 452.5884615384614 218.25 465.7884615384613
+6 62
+"RECTANGLE11"
+""
+1 480 310 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+297 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1 0 1.153846153846155 269.4818305335976 -56.62062937063031 1 E 480 310 490 440
+10 63
+"POLYGON5"
+""
+1 430 470 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+298 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 458.7116477272727 -167.5000000000001 1 E 6 430 470
+430 520
+460 570
+470 570
+490 520
+490 470
+ 1
+6 64
+"RECTANGLE12"
+""
+1 460 560 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+299 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.143790849673203 0 1 385.6113351384691 -157.9347826086957 1 E 460 560 480 610
+10 65
+"POLYGON6"
+""
+1 510.0000000000001 540 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+300 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1.333333333333333 0 1 510 -160 1 E 5 510.0000000000001 540
+530 570
+530 580
+540 580
+540 540
+ 1
+6 66
+"RECTANGLE13"
+""
+1 510.0000000000001 530 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+301 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.333333333333333 0 1 510 -160 1 E 510.0000000000001 530 540 540
+10 67
+"POLYGON7"
+""
+1 510.0000000000001 460.0000000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+302 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.66666666666667 0 1 876.5217391304332 -140.4347826086956 1 E 4 510.0000000000001 460.0000000000001
+540 460.0000000000001
+530 510.0000000000001
+520 510.0000000000001
+ 1
+10 68
+"POLYGON8"
+""
+1 500.0000000000001 500.0000000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+303 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 680 -160 1 E 6 500.0000000000001 500.0000000000001
+510.0000000000001 530
+520 530
+530 500.0000000000001
+530 460.0000000000001
+500.0000000000001 460.0000000000001
+ 1
+6 69
+"RECTANGLE14"
+""
+1 460 560 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+304 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.7000000000000005 0 0.6199999999999996 893.9999999999999 72.80000000000027 1 E 460 560 480 610
+10 70
+"POLYGON9"
+""
+1 390 460 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+305 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 449.9616477272727 -158.7500000000001 1 E 9 299.5201828063249 459.821678321678
+300.0383522727273 428.7500000000001
+400 430
+460 430
+460 460
+440 460
+440 440
+310.0383522727273 438.7500000000001
+309.5201828063249 459.821678321678
+ 1
+1 154 100 "" 1
+31 "transform" 0 0 1 0 1 0 1.4210854715202e-14
+0
+1 155 100 "" 2
+31 "transform" 0 0 1 0 1 -2.426682692307632 -2.131628207280301e-14
+20 "primitiveText" 0 0 1
+3
+LANG:10027 27 Тележка вперед
+LANG:10001 20 Tool trolley forward
+LANG:10000 4 Text
+
+0
+1 156 101 "" 1
+0
+1 157 101 "" 2
+20 "primitiveText" 0 0 1
+3
+LANG:10027 25 Тележка назад
+LANG:10001 21 Tool trolley backward
+LANG:10000 4 Text
+
+0
+1 158 102 "" 1
+31 "transform" 0 0 1 7.395570986446986e-32 -2.465190328815662e-32 1 -2.842170943040401e-14 -1.401298464324817e-45
+0
+1 159 102 "" 2
+31 "transform" 0 0 1 0 1 1.13686837721616e-13 -7.499999999999981
+20 "primitiveText" 0 0 2
+3
+LANG:10027 17 Ход крана
+LANG:10001 6 ######
+LANG:10000 4 Text
+2
+LANG:10027 10 влево
+LANG:10001 0 
+
+0
+1 160 103 "" 1
+31 "transform" 0 0 1 0 1 -5.684341886080801e-14 -1.833333333333333
+0
+1 161 103 "" 2
+31 "transform" 0 0 1 0 1 1.13686837721616e-13 -9.233333333333348
+20 "primitiveText" 0 0 2
+3
+LANG:10027 17 Ход крана
+LANG:10001 18 Crane travel right
+LANG:10000 4 Text
+2
+LANG:10027 12 вправо
+LANG:10001 0 
+
+0
+1 164 105 "" 1
+31 "transform" 0 0 1 4.930380657631324e-32 -4.930380657631324e-32 1 -2.842170943040401e-14 38.3481934731935
+0
+1 165 105 "" 2
+31 "transform" 0 0 1 0 1 -16.62619463869454 28.84819347319361
+20 "primitiveText" 0 0 2
+3
+LANG:10027 30 Вспомогательная
+LANG:10001 6 ######
+LANG:10000 4 Text
+2
+LANG:10027 25 тележка назад
+LANG:10001 0 
+
+0
+1 162 104 "" 1
+31 "transform" 0 0 1 0 1 0 36.51486013986023
+0
+1 163 104 "" 2
+31 "transform" 0 0 1 0 1 18.66666666666674 27.11486013986024
+20 "primitiveText" 0 0 2
+3
+LANG:10027 30 Вспомогательная
+LANG:10001 18 Crane travel right
+LANG:10000 4 Text
+2
+LANG:10027 27 тележка вперед
+LANG:10001 0 
+
+0
+1 166 106 "" 1
+31 "transform" 0 0 1 0 1 -2.842170943040401e-14 5.772057109557238
+0
+1 167 106 "" 2
+31 "transform" 0 0 1 0 1 -2.426682692307831 5.772057109557267
+20 "primitiveText" 0 0 1
+3
+LANG:10027 10 Спуск
+LANG:10001 4 Down
+LANG:10000 4 Text
+
+0
+1 168 107 "" 1
+0
+1 169 107 "" 2
+20 "primitiveText" 0 0 1
+3
+LANG:10027 12 Подъем
+LANG:10001 2 Up
+LANG:10000 4 Text
+
+0
+1 170 108 "" 1
+31 "transform" 0 0 1 0 1 2.945913461538339 -8.063723776223071
+0
+1 171 108 "" 2
+31 "transform" 0 0 1 0 1 2.557692307692482 -20.73039044288964
+20 "primitiveText" 0 0 2
+3
+LANG:10027 21 Спуск трубы
+LANG:10001 4 Down
+LANG:10000 4 Text
+2
+LANG:10027 14 вытяжки
+LANG:10001 0 
+
+0
+1 172 109 "" 1
+31 "transform" 0 0 1 0 1 2.945913461538566 -7.17224650349624
+0
+1 173 109 "" 2
+20 "primitiveText" 0 0 2
+3
+LANG:10027 23 Подъем трубы
+LANG:10001 2 Up
+LANG:10000 4 Text
+2
+LANG:10027 14 вытяжки
+LANG:10001 0 
+
+31 "transform" 0 0 1 0 1 2.945913461538396 -7.172246503496126
+0
+6 96
+"RECTANGLE15"
+""
+1 750 280 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+321 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1 0 1.116666666666667 -150 -42.66666666666667 1 E 750 280 760 430
+10 95
+"POLYGON11"
+""
+1 670 450 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+320 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.6000000000000002 0 0.5 166.9999999999997 238.571678321678 1 E 8 670 450
+690 450
+690 420
+770 420
+770 450
+790 450
+790 400
+670 400
+ 1
+1 174 110 "" 1
+31 "transform" 0 0 1 0 1 0 3.772057109557082
+0
+1 175 110 "" 2
+31 "transform" 0 0 1 0 1 -2.426682692307745 3.772057109557082
+20 "primitiveText" 0 0 1
+3
+LANG:10027 21 Спуск Анода
+LANG:10001 20 Tool trolley forward
+LANG:10000 4 Text
+
+0
+1 176 111 "" 1
+31 "transform" 0 0 1 0 1 0 3.761028554778278
+0
+1 177 111 "" 2
+31 "transform" 0 0 1 0 1 1.13686837721616e-13 3.761028554778392
+20 "primitiveText" 0 0 1
+3
+LANG:10027 23 Подъем Анода
+LANG:10001 21 Tool trolley backward
+LANG:10000 4 Text
+
+0
+1 178 114 "" 1
+31 "transform" 0 0 1 0 1 -2.842170943040401e-14 14.30037878787914
+0
+1 179 114 "" 2
+31 "transform" 0 0 1 0 1 -2.426682692308086 14.30037878787923
+20 "primitiveText" 0 0 1
+3
+LANG:10027 21 Спуск трубы
+LANG:10001 4 Down
+LANG:10000 4 Text
+
+0
+1 180 115 "" 1
+0
+1 181 115 "" 2
+20 "primitiveText" 0 0 1
+3
+LANG:10027 23 Подъем трубы
+LANG:10001 2 Up
+LANG:10000 4 Text
+
+0
+1 182 118 "" 1
+31 "transform" 0 0 1 0 1 -2.842170943040401e-14 5.684341886080801e-14
+0
+1 183 118 "" 2
+31 "transform" 0 0 1 0 1 0.07331730769236833 -18.74999999999986
+20 "primitiveText" 0 0 2
+3
+LANG:10027 21 Спуск трубы
+LANG:10001 4 Down
+LANG:10000 4 Text
+2
+LANG:10027 24 пылеудаления
+LANG:10001 0 
+
+0
+1 184 119 "" 1
+0
+1 185 119 "" 2
+31 "transform" 0 0 1 0 1 2.273736754432321e-13 0
+20 "primitiveText" 0 0 2
+3
+LANG:10027 23 Подъем трубы
+LANG:10001 2 Up
+LANG:10000 4 Text
+2
+LANG:10027 24 пылеудаления
+LANG:10001 0 
+
+0
+1 186 120 "" 1
+31 "transform" 0 0 1 7.395570986446986e-32 -2.465190328815662e-32 1 -2.842170943040401e-14 -117.9018065268068
+0
+1 187 120 "" 2
+31 "transform" 0 0 1 0 1 -1.626194638694543 -127.4018065268066
+20 "primitiveText" 0 0 2
+3
+LANG:10027 14 Закрыть
+LANG:10001 6 ######
+LANG:10000 4 Text
+2
+LANG:10027 14 Вентиль
+LANG:10001 0 
+
+0
+1 188 121 "" 1
+31 "transform" 0 0 1 4.930380657631324e-32 -4.930380657631324e-32 1 -2.8421709430404e-14 -141.1738636363636
+0
+1 189 121 "" 2
+31 "transform" 0 0 1 0 1 -19.12619463869466 -148.1738636363636
+20 "primitiveText" 0 0 2
+3
+LANG:10027 27 Закрыть клапан
+LANG:10001 6 ######
+LANG:10000 4 Text
+2
+LANG:10027 24 пылесборника
+LANG:10001 0 
+
+0
+1 190 122 "" 1
+31 "transform" 0 0 1 0 1 0 36.51486013986023
+0
+1 191 122 "" 2
+31 "transform" 0 0 1 0 1 -2.583333333333258 29.03076923076927
+20 "primitiveText" 0 0 2
+3
+LANG:10027 14 Открыть
+LANG:10001 18 Crane travel right
+LANG:10000 4 Text
+2
+LANG:10027 14 Вентиль
+LANG:10001 0 
+
+0
+1 192 123 "" 1
+31 "transform" 0 0 1 0 1 0 36.51486013986035
+0
+1 193 123 "" 2
+31 "transform" 0 0 1 0 1 18.66666666666652 27.1148601398603
+20 "primitiveText" 0 0 2
+3
+LANG:10027 27 Открыть клапан
+LANG:10001 18 Crane travel right
+LANG:10000 4 Text
+2
+LANG:10027 24 пылесборника
+LANG:10001 0 
+
+0
+6 137
+"RECTANGLE16"
+""
+1 190 270 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+344 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6 0 1 1306 0.05278200060803329 1 E 190 270 290 300
+4 138
+"LINE24"
+""
+1 1452.5 413.6153846153847 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+345 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1452.5 413.6153846153847 1452.5 426.6153846153847
+4 139
+"LINE25"
+""
+1 1453.230769230769 427.3562937062935 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+346 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  1453.230769230769 427.3562937062935 1464.730769230769 433.9562937062934
+4 140
+"LINE26"
+""
+1 1464.730769230769 433.9562937062934 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+347 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  1464.730769230769 433.9562937062934 1464.730769230769 453.7562937062935
+4 141
+"LINE27"
+""
+1 1464.730769230769 453.7562937062935 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+348 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  1464.730769230769 453.7562937062935 1458.980769230769 460.3562937062935
+4 142
+"LINE28"
+""
+1 1447.480769230769 460.3562937062935 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+349 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  1447.480769230769 460.3562937062935 1458.980769230769 460.3562937062935
+4 143
+"LINE29"
+""
+1 1441.730769230769 447.1562937062935 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+350 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 3 3 2 1 E  1441.730769230769 447.1562937062935 1447.480769230769 460.3562937062935
+7 144
+"ELLIPSE4"
+""
+1 1456.5 426.5000000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+351 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 -3.75 -29.13461538461536 1 E 1456.5 426.5000000000001 16.5 16.5
+4 145
+"LINE30"
+""
+1 1436.25 300.0000000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+352 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1436.25 300.0000000000001 1436.25 396
+4 146
+"LINE31"
+""
+1 1469.25 300.0000000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+353 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1469.25 300.0000000000001 1469.25 395
+1 194 124 "" 1
+31 "transform" 0 0 1 0 1 -3.694822225952521e-13 19.68499417249458
+0
+1 195 124 "" 2
+31 "transform" 0 0 1 0 1 -2.426682692307973 19.68499417249467
+20 "primitiveText" 0 0 1
+3
+LANG:10027 27 Спуск дымохода
+LANG:10001 4 Down
+LANG:10000 4 Text
+
+0
+1 196 125 "" 1
+0
+1 197 125 "" 2
+20 "primitiveText" 0 0 1
+3
+LANG:10027 29 Подъем дымохода
+LANG:10001 2 Up
+LANG:10000 4 Text
+
+0
+1 198 126 "" 1
+31 "transform" 0 0 1 0 1 690.5857054973817 -639.9007478632476
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,13,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 14 Тележка
+LANG:10001 14 Тележка
+
+0
+1 199 127 "" 14
+0
+1 213 128 "" 14
+0
+1 227 129 "" 14
+0
+1 241 130 "" 1
+0
+1 247 131 "" 1
+0
+1 253 132 "" 1
+0
+1 259 133 "" 1
+0
+1 265 134 "" 1
+0
+1 271 135 "" 1
+0
+1 277 136 "" 1
+0
+1 283 137 "" 1
+0
+1 289 138 "" 1
+0
+1 295 139 "" 1
+0
+1 301 140 "" 1
+0
+1 307 141 "" 1
+0
+1 313 142 "" 1
+0
+1 319 143 "" 14
+0
+1 333 144 "" 32
+0
+1 347 147 "" 1
+31 "transform" 0 0 2.009843045843046 0 1 -1216.911744909467 -8.268717509952157
+0
+1 348 147 "" 3
+31 "transform" 0 0 1 0 1 61.5373106060606 -8.768717509952161
+0
+1 349 147 "" 6
+31 "transform" 0 0 2.009843045843048 0 0.9999999999999997 -1216.911744909471 -8.143717509952062
+0
+1 352 148 "" 1
+31 "transform" 0 0 2.009843045843048 0 1 -1218.044097319352 11.29184254402887
+0
+1 353 148 "" 3
+31 "transform" 0 0 0.9999999999999998 0 1 62.49999999999932 10.79184254402894
+0
+1 354 148 "" 6
+31 "transform" 0 0 2.009843045843049 0 1.000000000000001 -1218.044097319356 11.41684254402884
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 203 127 "" 3
+0
+1 217 128 "" 3
+0
+1 231 129 "" 3
+0
+1 245 130 "0" 1
+0
+1 251 131 "0" 1
+0
+1 257 132 "0" 1
+0
+1 263 133 "0" 1
+0
+1 269 134 "0" 1
+0
+1 275 135 "0" 1
+0
+1 281 136 "0" 1
+0
+1 287 137 "0" 1
+0
+1 293 138 "0" 1
+0
+1 299 139 "0" 1
+0
+1 305 140 "0" 1
+0
+1 311 141 "0" 1
+0
+1 317 142 "0" 1
+0
+1 323 143 "" 3
+0
+1 337 144 "" 8
+0
+1 350 147 "0" 1
+31 "transform" 0 0 1 0 1 0 -8.268717509952154
+0
+1 351 147 "0" 2
+31 "transform" 0 0 1 0 1 0 -8.268717509952154
+0
+1 355 148 "0" 1
+31 "transform" 0 0 1 0 1 -2 11.29184254402895
+0
+1 356 148 "0" 2
+31 "transform" 0 0 1 0 1 -2 11.29184254402895
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 212 127 "" 29
+0
+1 226 128 "" 29
+0
+1 240 129 "" 29
+0
+1 332 143 "" 29
+0
+1 346 144 "" 29
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 99 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 210 1 0 1 185.6642945026198 10.74989316239294
+0
+3 100 "PANEL_REF115" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 309 1 0 1 78.59254807692309 -13.5
+1
+"$dpe_value""TELEGKA"
+3 101 "PANEL_REF116" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 310 1 0 1 27.66947115384619 5.730769230769226
+1
+"$dpe_value""TELEGKA"
+3 102 "PANEL_REF117" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Left.pnl" 457.9280303030303 145.309090909091 T 311 1 0 1 -137.5757575757576 42.25218531468519
+1
+"$dpe_value""CRAN"
+3 103 "PANEL_REF119" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Right.pnl" 333.3333333333333 133.8333333333333 T 313 1 0 1 83.89618298368305 54.31923076923076
+1
+"$dpe_value""TELEGKA_LEFT"
+3 104 "PANEL_REF120" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Right.pnl" 333.3333333333333 133.8333333333333 T 314 1 0 1 -78.38146853146839 379.7358974358975
+1
+"$dpe_value""CRAN"
+3 105 "PANEL_REF121" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Left.pnl" 457.9280303030303 145.309090909091 T 315 1 0 1 -299.8534090909089 367.6688519813519
+1
+"$dpe_value""TELEGKA_LEFT"
+3 106 "PANEL_REF122" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 316 1 0 1 -350.0380827505826 368.2499999999998
+1
+"$dpe_value""TELEGKA"
+3 107 "PANEL_REF123" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 317 1 0 1 -403.1020614801866 415.3298805361305
+1
+"$dpe_value""TELEGKA"
+3 108 "PANEL_REF124" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 318 1 0 1 177.4782247643665 382.2524475524467
+1
+"$dpe_value""TELEGKA"
+3 109 "PANEL_REF125" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 319 1 0 1 128.1642460347624 423.3212995337988
+1
+"$dpe_value""TELEGKA"
+3 110 "PANEL_REF126" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 322 1 0 1 28.59254807692309 370.25
+1
+"$dpe_value""TELEGKA"
+3 111 "PANEL_REF127" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 323 1 0 1 -20.72143065268097 411.3188519813521
+1
+"$dpe_value""TELEGKA"
+3 114 "PANEL_REF130" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 326 1 0 1 351.5157342657347 359.7216783216778
+1
+"$dpe_value""TELEGKA"
+3 115 "PANEL_REF131" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 327 1 0 1 300.3582823426574 416.0657196969695
+1
+"$dpe_value""TELEGKA"
+3 118 "PANEL_REF134" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 334 1 0 1 650.4449883449887 374.022057109557
+1
+"$dpe_value""TELEGKA"
+3 119 "PANEL_REF135" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 335 1 0 1 601.1310096153846 415.0909090909091
+1
+"$dpe_value""TELEGKA"
+3 120 "PANEL_REF140" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Left.pnl" 457.9280303030303 145.309090909091 T 340 1 0 1 402.0719696969697 524.690909090909
+1
+"$dpe_value""CRAN"
+3 121 "PANEL_REF141" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Left.pnl" 457.9280303030303 145.309090909091 T 341 1 0 1 702.0719696969697 544.690909090909
+1
+"$dpe_value""CRAN"
+3 122 "PANEL_REF142" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Right.pnl" 333.3333333333333 133.8333333333333 T 342 1 0 1 628.802331002331 379.7358974358974
+1
+"$dpe_value""TELEGKA_LEFT"
+3 123 "PANEL_REF143" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Right.pnl" 333.3333333333333 133.8333333333333 T 343 1 0 1 930.3685314685315 378.4858974358975
+1
+"$dpe_value""TELEGKA_LEFT"
+3 124 "PANEL_REF144" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Up.pnl" 565.1574519230769 116 T 355 1 0 1 869.977272727273 354.3370629370625
+1
+"$dpe_value""TELEGKA"
+3 125 "PANEL_REF145" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Arrow_Down.pnl" 617.4266826923078 154.9090909090909 T 356 1 0 1 820.6632939976689 416.0657196969697
+1
+"$dpe_value""TELEGKA"
+3 126 "PANEL_REF146" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 358 1 0 1 -272.6976689976676 96.20064102564049
+0
+3 127 "PANEL_REF136" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 359 0.9807692307692302 0 0.9831782038376958 -1279.692159576287 -103.6084243620945
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""OO1_FTA1_ElRoom"
+3 128 "PANEL_REF137" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 360 0.9807692307692287 0 0.997025784173438 -1198.529963542639 -106.3044859658469
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""OO1_FTA1_Cabin"
+3 129 "PANEL_REF147" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 361 0.9807692307692293 0 0.997025784173438 -1117.367767508993 -106.3044859658469
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""OO1_FTA1_Ambient"
+3 130 "PANEL_REF148" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 362 1 0 1 177.705252039627 -78.98830128205134
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StAnodeHoist"
+3 131 "PANEL_REF149" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 363 1 0 1 -8.472348484848396 -246.1676113360325
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StCraneTravel"
+3 132 "PANEL_REF150" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 364 1 0 1 303.2052520396269 -249.1676113360325
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StTrolleyTravel"
+3 133 "PANEL_REF154" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 368 1 0 1 327.705252039627 -78.98830128205134
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StSuctionPipe"
+3 134 "PANEL_REF155" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 369 1 0 1 465.205252039627 -78.98830128205134
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StFillingPipe"
+3 135 "PANEL_REF156" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 370 1 0 1 755.2052520396269 -78.98830128205134
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StDustPipe"
+3 136 "PANEL_REF157" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 371 1 0 1 1001.455252039627 -78.98830128205134
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StFlueWallHoist"
+3 137 "PANEL_REF158" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 372 1 0 1 -135.9723484848484 -54.91761133603251
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StAuxHoist"
+3 138 "PANEL_REF159" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 373 1 0 1 -137.2223484848484 7.582388663967492
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StAuxTrolley"
+3 139 "PANEL_REF160" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 374 1 0 1 477.1753787878788 -277.1628864258313
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StExhauster"
+3 140 "PANEL_REF161" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 375 1 0 1 477.1753787878788 -213.6760443205682
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StAirCompressor"
+3 141 "PANEL_REF162" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 376 1 0 1 550.3638548951049 -277.1628864258313
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StCoolers"
+3 142 "PANEL_REF163" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 467.5 455 T 377 1 0 1 550.3638548951049 -213.6760443205682
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_StFilterBags"
+3 143 "PANEL_REF164" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 378 0.9807692307692293 0 0.997025784173438 -291.5579450373881 -40.05448596584695
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""OO1_FTA1_TaftCool"
+3 144 "PANEL_REF165" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 958.75 38.75 T 379 1 0 1 10 1.711949504325958
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""OO1_FTA1_FillingPipeH"
+3 147 "PANEL_REF170" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_text_dyn.pnl" 1305.223324592075 99.8492521367524 T 383 1 0 1 -44.29794580419593 80.19123931623938
+3
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_CokeLevel"
+"$iType""1"
+3 148 "PANEL_REF171" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_text_dyn.pnl" 1305.223324592075 99.8492521367524 T 384 1 0 1 -42.22332459207246 124.1175213675214
+3
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_FTA1_DustLevel"
+"$iType""2"
+0

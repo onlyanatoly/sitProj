@@ -1,0 +1,791 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 857 302 N "fon_static" 0
+"main()
+{
+  dpConnect(\"checkPanelNumber\", true, \"NAVIGATION.panelNumber\");
+}
+" 0
+ E E E E 1 -1 -1 0  60 182.8125
+""0  1
+E "/** текущие ВФ на панели навигации и соответсвующие reference панели*/
+dyn_string navigationVF;
+dyn_string referenceVF;
+
+void registerWork(bool isRegister)
+{
+  if (dynlen(navigationVF)>0)
+  {
+    dyn_errClass err;
+    if (isRegister) {
+      dpConnect(\"doSignal\", navigationVF);
+    } else {
+      dpDisconnect(\"doSignal\", navigationVF);
+    }
+    err = getLastError();
+    if(dynlen(err) > 0)
+    {
+      if (isRegister) {
+        DebugN(\"Произошла ошибка при регистрации работы doSignal: \", err);
+      } else {
+        DebugN(\"Произошла ошибка при разрегистрации работы doSignal: \", err);
+      }
+    }
+  }
+}
+
+void doSignal(dyn_string dpL, dyn_int val)
+{
+  int i;
+  for(i=1; i<=dynlen(val); i++)
+  {
+    if (val[i]!=0)
+    {
+      setValue(referenceVF[i]+\".signCnt\", \"text\", val[i]);
+      setValue(referenceVF[i], \"visible\", true);
+    }
+    else
+    {
+      setValue(referenceVF[i], \"visible\", false);
+    }
+  }
+}
+
+/**
+  Установка опций для панелей ссылок
+  @param ref
+  @param vf
+  @param name
+  @param panelNumber
+*/
+void setPanelRefOption(string ref, string vf, string name, string panelNumber)
+{
+  setValue(ref+\".btnText\", \"text\", name);
+  setValue(ref+\".panelNumber\", \"text\", panelNumber);
+  dynAppend(navigationVF, vf+\".sign_alarm_cnt\");
+  dynAppend(referenceVF, ref+\".PANEL_REF_ALARM\");
+  dynAppend(navigationVF, vf+\".sign_warn_cnt\");
+  dynAppend(referenceVF, ref+\".PANEL_REF_WARN\");
+  dynAppend(navigationVF, vf+\".sign_imit_cnt\");
+  dynAppend(referenceVF, ref+\".PANEL_REF_IMIT\");
+  dynAppend(navigationVF, vf+\".sign_nan_cnt\");
+  dynAppend(referenceVF, ref+\".PANEL_REF_NAN\");
+}
+
+/**
+  Закрытие панели навигации
+*/
+void closeBtnClicked()
+{
+  dpSet(\"NAVIGATION.monitorNumber\",0);
+}
+
+/**
+  Перемещение панели навигации по мониторам
+  @param dpe
+  @param navMonitorNumber
+*/
+/*void checkMonitorNumber(string dpe, int navMonitorNumber)
+{
+  DebugN(\"checkMonitorNumber navMonitorNumber = \"+navMonitorNumber);
+  //string strMonitorNumber = navMonitorNumber;
+  string pnl = \"navigation.pnl\";
+  if (ptnavi_GetScreenName()!=navMonitorNumber)
+  {
+    //PanelOffPanel(pnl);
+    //setValue(ptms_BuildModuleName(\"navigateModule\",navMonitorNumber), \"visible\", false);
+    //DebugN(myModuleName());
+    //ModuleOff(myModuleName());
+    //moduleLower(myModuleName());
+  }
+  //moduleRaise(ptms_BuildModuleName(\"navigateModule\",navMonitorNumber));
+  //RootPanelOnModule( pnl, \"\",ptms_BuildModuleName(\"navigateModule\",navMonitorNumber), makeDynString());
+
+  //ModuleOnWithPanel(\"newModule\",0,0,0,0,0,0,\"\",\"moduleOff.pnl\",\"test\", makeDynString());
+
+}*/
+
+/**
+  Нахождение текщуей панели и отрисовка в модуле
+  @param dpe
+  @param navPanelNumber
+*/
+void checkPanelNumber(string dpe, int navPanelNumber)
+{
+  updateNavigation(navPanelNumber);
+  int navMonitorNumber;
+  string curVF, filename, strMonitorNumber;
+  dpGet(\"NAVIGATION.monitorNumber\", navMonitorNumber);
+  curVF = getVF(navPanelNumber);
+  dpGet(curVF+\".fileName\", filename);
+  RootPanelOnModule( filename, \"\",ptms_BuildModuleName(\"mainModule\",navMonitorNumber), makeDynString());
+}
+
+/**
+  Перемещение на уровень выше
+*/
+void upBtnClicked()
+{
+  int panelNumber, parentNumber;
+  string curVF;
+  getValue(\"PANEL_REF_MAIN.panelNumber\", \"text\", panelNumber);
+  curVF = getVF(panelNumber);
+  dpGet(curVF+\".parentNumber\", parentNumber);
+  dpSet(\"NAVIGATION.panelNumber\",parentNumber);//делаем активным форму уровня выше
+  dpSet(\"NAVIGATION_\"+ptnavi_GetScreenName()+\".panelNumber\",parentNumber);
+  //updateNavigation(parentNumber);//только переход в панели навегации, а не активная форма
+}
+
+/**
+  Перемещение на 1 уровень
+*/
+void l1BtnClicked()
+{
+  dyn_string vfNames;
+  int i, level, panelNumber;
+  vfNames = dpNames(\"*\",\"SIT_VF\");
+  for(i=1;i<=dynlen(vfNames);i++) {
+    dpGet(vfNames[i]+\".level\", level);
+    if(level==1) {
+      dpGet(vfNames[i]+\".panelNumber\", panelNumber);
+      dpSet(\"NAVIGATION.panelNumber\",panelNumber);//делаем активным форму 1 уровня
+      dpSet(\"NAVIGATION_\"+ptnavi_GetScreenName()+\".panelNumber\",panelNumber);
+      //updateNavigation(panelNumber);//только переход в панели навегации, а не активная форма 1 уровня
+      break;
+    }
+  }
+}
+
+/**
+  Задание свойства visible для элементов \"ур.I\"
+  @param isVisible
+*/
+void l1Visibility(bool isVisible)
+{
+    setValue(\"l1_btn\", \"visible\", isVisible);
+    setValue(\"l1_btn_sub\", \"visible\", isVisible);
+    setValue(\"l1_text\", \"visible\", isVisible);
+}
+
+/**
+  Задание свойства visible для элементов \"на уровень выше\"
+  @param isVisible
+*/
+void upBtnVisibility(bool isVisible)
+{
+    setValue(\"up_btn\", \"visible\", isVisible);
+    setValue(\"up_btn_sub\", \"visible\", isVisible);
+    setValue(\"up_text\", \"visible\", isVisible);
+}
+
+/**
+  Отрисовка кнопок и наименований в панели навигации
+  @param numberVF
+*/
+void updateNavigation(int numberVF) {
+  dyn_string vfNames;
+  string vfMain, name;
+  int child, level, numb, i, parent;
+  vfMain = getVF(numberVF);//получаем текущего
+  vfNames = getVFChild(numberVF);//получаем детей
+  dpGet(vfMain+\".name\", name);
+  dpGet(vfMain+\".level\", level);
+  if (level<4)
+  {
+    registerWork(false);
+    dynClear(navigationVF);
+    dynClear(referenceVF);
+    setPanelRefOption(\"PANEL_REF_MAIN\", vfMain, name, numberVF);
+    setChildReference(vfNames);
+    setNeighborsReference(vfMain);
+    for (i=1; i<=16;i++) {
+      setValue(\"PANEL_REF\"+i+\".button\", \"backCol\", \"fon_btn\");
+    }
+  }
+  else//4 уровень
+  {
+    dpGet(vfMain+\".parentNumber\", parent);
+    updateNavigation(parent);
+    for (i=1; i<=16;i++) {
+      getValue(\"PANEL_REF\"+i+\".panelNumber\", \"text\", numb);
+      if (numb==numberVF)
+      {
+        setValue(\"PANEL_REF\"+i+\".button\", \"backCol\", \"fon_btn_clicked\");
+      }
+      else
+      {
+        setValue(\"PANEL_REF\"+i+\".button\", \"backCol\", \"fon_btn\");
+      }
+    }
+  }
+  if (level==1)
+  {
+    upBtnVisibility(false);
+    l1Visibility(false);
+  }
+  else
+  {
+    upBtnVisibility(true);
+    l1Visibility(true);
+  }
+  registerWork(true);
+}
+
+/**
+  Установка соседних кнопок для основной кнопки в панели навигации
+  @param vfMain
+*/
+void setNeighborsReference(string vfMain){
+  int forward, backward;
+  string vfforward, vfbackward, nameforward, namebackward;
+  dpGet(vfMain+\".backwardPanel\", backward);
+  dpGet(vfMain+\".forwardPanel\", forward);
+  if (backward!=0) {
+    vfbackward = getVF(backward);
+    dpGet(vfbackward+\".name\", namebackward);
+    setPanelRefOption(\"PANEL_REF_BACK\", vfbackward, namebackward, backward);
+    //setValue(\"PANEL_REF_BACK.btnText\", \"text\", namebackward);
+    //setValue(\"PANEL_REF_BACK.panelNumber\", \"text\", backward);
+    setValue(\"PANEL_REF_BACK\", \"visible\", true);
+  }else {
+    setValue(\"PANEL_REF_BACK\", \"visible\", false);
+  }
+
+  if (forward!=0) {
+    vfforward = getVF(forward);
+    dpGet(vfforward+\".name\", nameforward);
+    setPanelRefOption(\"PANEL_REF_FORWARD\", vfforward, nameforward, forward);
+    //setValue(\"PANEL_REF_FORWARD.btnText\", \"text\", nameforward);
+    //setValue(\"PANEL_REF_FORWARD.panelNumber\", \"text\", forward);
+    setValue(\"PANEL_REF_FORWARD\", \"visible\", true);
+  }else {
+    setValue(\"PANEL_REF_FORWARD\", \"visible\", false);
+  }
+}
+
+/**
+  Установка дочерних кнопок в панели навигации
+  @param vfNames
+*/
+void setChildReference(dyn_string vfNames){
+  int i=1;
+  int size = dynlen(vfNames);
+  bool visibility;
+  string name;
+  int numb;
+  for (i=1; i<=16;i++) {
+    if (i>size) {
+      visibility=false;
+    } else {
+      visibility=true;
+      dpGet(vfNames[i]+\".name\", name);
+      dpGet(vfNames[i]+\".panelNumber\", numb);
+      setPanelRefOption(\"PANEL_REF\"+i, vfNames[i], name, numb);
+      //setValue(\"PANEL_REF\"+i+\".btnText\", \"text\", name);
+      //setValue(\"PANEL_REF\"+i+\".panelNumber\", \"text\", numb);
+      //dynAppend(navigationVF, vfNames[i]);
+    }
+    setValue(\"PANEL_REF\"+i, \"visible\", visibility);
+  }
+}
+
+/**
+  Получение дочерней ВФ
+  @param parentVF
+  @return массив наименований дочерних элементов
+*/
+dyn_string getVFChild(int parentVF)
+{
+  dyn_string vfNames;
+  dyn_string vfResult;
+  int i, parentNumber;
+  vfNames = dpNames(\"*\",\"SIT_VF\");
+  for(i=1;i<=dynlen(vfNames);i++) {
+    dpGet(vfNames[i]+\".parentNumber\", parentNumber);
+    if(parentNumber==parentVF) {
+      dynAppend(vfResult, vfNames[i]);
+    }
+  }
+  return vfResult;
+}
+
+/**
+  Получение ВФ
+  @param numberVF
+  @return наименование ВФ
+*/
+string getVF(int numberVF)
+{
+  dyn_string vfNames;
+  string vfResult;
+  int i, panelNumber;
+  vfNames = dpNames(\"*\",\"SIT_VF\");
+  for(i=1;i<=dynlen(vfNames);i++) {
+    dpGet(vfNames[i]+\".panelNumber\", panelNumber);
+    if(panelNumber==numberVF) {
+      vfResult = vfNames[i];
+      break;
+    }
+  }
+  return vfResult;
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 242
+"RECTANGLE2"
+""
+1 70 240 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+20 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 3 3 2 1 E 1.231250000000001 0 0.4909090909090906 265.8124999999998 -96.28693181818169 1 E 70 240 230 350
+6 217
+"RECTANGLE1"
+""
+1 70 240 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 3 3 2 1 E 4.731250000000001 0 1.805681818181819 -267.1875000000002 -356.4573863636364 1 E 70 240 230 350
+1 1007 0 "" 2
+0
+1 1020 1 "" 2
+0
+1 1033 2 "" 2
+0
+1 1046 3 "" 2
+0
+1 1059 4 "" 2
+0
+1 1072 5 "" 2
+0
+1 1085 6 "" 2
+0
+1 1098 7 "" 2
+0
+1 1111 8 "" 2
+0
+1 1124 9 "" 2
+0
+1 1137 10 "" 2
+0
+1 1150 11 "" 2
+0
+1 1163 12 "" 2
+0
+1 1176 13 "" 2
+0
+1 1189 14 "" 2
+0
+1 1202 15 "" 2
+0
+1 1215 16 "" 2
+0
+1 1228 21 "" 1
+0
+1 1233 22 "" 2
+0
+1 1246 23 "" 2
+0
+6 495
+"up_btn_sub"
+""
+1 40 160 E E E 1 E 1 E N "cont_static" E N "fon_btn" E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "10"
+E "main(mapping event)
+{
+}
+" 0
+ 0 1 3 2 1 E 0.58 0 0.6104166666666663 43.80000000000001 -69.66666666666659 1 E 40 160 190 220
+2 497
+"up_text"
+""
+1 78 31 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 78 31 147 64
+0 2 2 "0s" 0 0 0 192 0 0  78 31 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 19 На уровень
+LANG:10001 19 На уровень
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 10 выше ^
+LANG:10001 10 выше ^
+6 498
+"up_btn"
+""
+1 40 160 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "10"
+E "main(mapping event)
+{
+  upBtnClicked();
+}" 0
+ 0 1 3 2 1 E 0.58 0 0.6104166666666663 43.80000000000001 -69.66666666666659 1 E 40 160 190 220
+6 751
+"l1_btn_sub"
+""
+1 40 160 E E E 1 E 1 E N "cont_static" E N "fon_btn" E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "10"
+E "main(mapping event)
+{
+}
+" 0
+ 0 1 3 2 1 E 0.2866666666666666 0 0.3744791666666653 742.5333333333333 -30.38541666666636 1 E 40 160 190 220
+2 752
+"l1_text"
+""
+1 765 32.53125000000009 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1 0 0.5195996663886561 0 14.66722268557139 0 E 765 32.53125000000009 792 66
+0 2 2 "0s" 0 0 0 192 0 0  765 32.53125000000009 2
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 7 I ур.
+LANG:10001 19 На уровень
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 10 выше ^
+6 753
+"l1_btn"
+""
+1 40 160 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "10"
+E "main(mapping event)
+{
+  l1BtnClicked();
+}" 0
+ 0 1 3 2 1 E 0.2866666666666666 0 0.3744791666666655 742.5333333333333 -30.38541666666639 1 E 40 160 190 220
+13 1006
+"closeBtn"
+"WF"
+1 519 526.265625 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 27 Удалить фильтр
+LANG:10001 13 Delete filter
+LANG:10000 15 Filter löschen
+
+2
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  810 26.265625 839 55.265625
+
+P 
+4294967295
+"pictures/cns/delete_20.png"
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+"main()
+{
+  closeBtnClicked();
+}" 0
+ E E E
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1019 0 "" 13
+0
+1 1032 1 "" 13
+0
+1 1045 2 "" 13
+0
+1 1058 3 "" 13
+0
+1 1071 4 "" 13
+0
+1 1084 5 "" 13
+0
+1 1097 6 "" 13
+0
+1 1110 7 "" 13
+0
+1 1123 8 "" 13
+0
+1 1136 9 "" 13
+0
+1 1149 10 "" 13
+0
+1 1162 11 "" 13
+0
+1 1175 12 "" 13
+0
+1 1188 13 "" 13
+0
+1 1201 14 "" 13
+0
+1 1214 15 "" 13
+0
+1 1227 16 "" 13
+0
+1 1245 22 "" 13
+0
+1 1258 23 "" 13
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF_MAIN" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 0 1 0 1 287 -127.2812499999999
+0
+3 1 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 3 1 0 1 -2 -73.09374999999999
+0
+3 2 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 4 1 0 1 185.0000000000001 -73.09374999999999
+0
+3 3 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 5 1 0 1 372.0000000000001 -73.09374999999999
+0
+3 4 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 6 1 0 1 559.0000000000002 -73.09374999999999
+0
+3 5 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 7 1 0 1 -2.000000000000057 -24.90625000000001
+0
+3 6 "PANEL_REF6" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 8 1 0 1 185 -24.90624999999998
+0
+3 7 "PANEL_REF7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 9 1 0 1 372 -24.90624999999998
+0
+3 8 "PANEL_REF8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 10 1 0 1 559 -24.90624999999998
+0
+3 9 "PANEL_REF9" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 11 1 0 1 -2.000000000000057 23.28124999999996
+0
+3 10 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 12 1 0 1 185 23.28124999999996
+0
+3 11 "PANEL_REF11" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 13 1 0 1 372 23.28124999999996
+0
+3 12 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 14 1 0 1 559 23.28124999999996
+0
+3 13 "PANEL_REF13" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 15 1 0 1 -2.000000000000057 71.46874999999993
+0
+3 14 "PANEL_REF14" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 16 1 0 1 185 71.46874999999993
+0
+3 15 "PANEL_REF15" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 18 1 0 1 372 71.46874999999993
+0
+3 16 "PANEL_REF16" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 19 1 0 1 559 71.46874999999993
+0
+3 21 "PANEL_REF_SCREEN" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button_screen.pnl" 96 118.625 T 26 1 0 1 -12.00000000000017 -2.842170943040401e-14
+1
+"$dpNav""NAVIGATION"
+3 22 "PANEL_REF_BACK" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 29 1 0 1 88 -127.2812499999999
+0
+3 23 "PANEL_REF_FORWARD" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button.pnl" 60 182.8125 T 30 1 0 1 484 -127.3749999999999
+0
+1 25 "SHAPE_GROUP3" -1
+3 0 
+751 752 753 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 26 "SHAPE_GROUP5" -1
+3 0 
+495 497 498 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

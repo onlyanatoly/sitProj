@@ -1,0 +1,111 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 786 N "fon_static" 1
+"$text"
+E E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1 99 "" 1
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 386.8357054973817 -636.1507478632476
+20 "primitiveText" 0 0 1
+2
+LANG:10027 47 Мазутный узел. Вентиляция
+LANG:10001 21 Fuel Oil. Ventilation
+
+0
+1 2 100 "" 67
+0
+1 10 101 "" 67
+0
+1 18 102 "" 67
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 7 100 "1" 1
+0
+1 15 101 "1" 1
+0
+1 23 102 "1" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 9 100 "" 14
+0
+1 17 101 "" 14
+0
+1 25 102 "" 14
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 99 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 210 1 0 1 185.6642945026198 10.74989316239294
+1
+"$text""$text"
+3 100 "PANEL_REF113" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Vent.pnl" 76.25 174.125 T 258 U 
+1
+"$dpe_value""BT1"
+3 101 "PANEL_REF114" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Vent.pnl" 76.25 174.125 T 259 1 0 1 146.6 -2.842170943040401e-14
+1
+"$dpe_value""BT2"
+3 102 "PANEL_REF115" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Vent.pnl" 76.25 174.125 T 260 1 0 1 539.0999999999999 -2.842170943040401e-14
+1
+"$dpe_value""BA1"
+0

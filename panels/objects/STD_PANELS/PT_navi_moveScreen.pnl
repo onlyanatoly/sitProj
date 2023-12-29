@@ -1,0 +1,156 @@
+V 14
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+PANEL,-1 -1 120 86 N "_3DFace" 0
+E E E E E 1 -1 -1 0  29 9
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+13 2
+"PUSH_BUTTON3"
+""
+1 10 10 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 23 Выбор экрана
+LANG:10000 44 Verschiebe Fenster auf beliebigen Bildschirm
+LANG:10001 25 Move window to any screen
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:10001 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  8 8 72 72
+
+P 
+4294967295
+"pictures/Screen.png"
+3
+LANG:10027 12 PUSH_BUTTON3
+LANG:10000 12 PUSH_BUTTON3
+LANG:10001 12 PUSH_BUTTON3
+"main()
+{
+  dyn_float df;
+  dyn_string ds;
+  ChildPanelOnCentralModalReturn(\"para/msc/msc_ScreenSelection.pnl\", getCatStr(\"mscError\", \"screenSel\"),
+                                 makeDynString(), df, ds);
+  
+  if(df[1] == 1)
+  {
+    msc_movePanel(ds[1], ds[2]);
+  }
+}" 0
+ E E E
+13 3
+"PUSH_BUTTON4"
+""
+1 64 32 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 66 Переместить окно на следующий экран
+LANG:10000 43 Verschiebe Fenster auf nächsten Bildschirm
+LANG:10001 26 Move window to next screen
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:10001 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  56 30 68 50
+
+P 
+4294967295
+"pictures/right_en.gif"
+3
+LANG:10027 12 PUSH_BUTTON4
+LANG:10000 12 PUSH_BUTTON4
+LANG:10001 12 PUSH_BUTTON4
+"main()
+{
+  msc_moveToNextScreen(ptnavi_GetScreenName());
+}" 0
+ E E E
+13 4
+"PUSH_BUTTON5"
+""
+1 13 32 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+4 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 68 Переместить окно на предыдущий экран
+LANG:10000 41 Verschiebe Fenster auf vorigen Bildschirm
+LANG:10001 30 Move window to previous screen
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:10001 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  12 30 24 50
+
+P 
+4294967295
+"pictures/left_en.gif"
+3
+LANG:10027 12 PUSH_BUTTON5
+LANG:10000 12 PUSH_BUTTON5
+LANG:10001 12 PUSH_BUTTON5
+"main()
+{
+  msc_moveToPrevScreen(ptnavi_GetScreenName());
+}" 0
+ E E E
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

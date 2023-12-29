@@ -1,0 +1,512 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 236 222 N "_3DFace" 1
+"$DP"
+E E E E E 1 -1 -1 0  30 20
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 1
+"RECTANGLE1"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  1 E 30 20 64 159
+6 2
+"RECTANGLE2"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.581395348837209 0 1 16.55813953488374 0 1 E 30 20 59 159
+6 3
+"RECTANGLE3"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 0.6551724137931034 0 1 89.54482758620691 0 1 E 30 20 59 159
+6 4
+"RECTANGLE4"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 0.6551724137931034 0 1 108.5448275862069 0 1 E 30 20 59 159
+6 5
+"RECTANGLE5"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 0.6551724137931034 0 1 127.5448275862069 0 1 E 30 20 59 159
+6 6
+"RECTANGLE6"
+""
+1 30 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 0.6551724137931034 0 1 146.5448275862069 0 1 E 30 20 59 159
+2 7
+"PRIMITIVE_TEXT1"
+""
+1 39 22 E E E 1 E 1 E N "white" E N "_Window" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 39 22 55 35
+0 2 2 "0s" 0 0 0 192 0 0  39 22 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 PS
+LANG:10001 2 PS
+2 8
+"PRIMITIVE_TEXT2"
+""
+1 69 22 E E E 1 E 1 E N "white" E N "cont_text" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 69 22 93 35
+0 2 2 "0s" 0 0 0 192 0 0  69 22 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,12,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 CPU
+LANG:10001 3 CPU
+6 9
+"RECTANGLE7"
+""
+1 210 100 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( \"System1:CPU_LED.LEDS0:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 \"System1:CPU_LED.LEDS0:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bit32 NewValue)
+{
+  bool boNewValue = getBit(NewValue,26);
+  if (boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_RED\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:CPU_LED.LEDS0_20}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_RED}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 1 2 1 E 0.7857142857142857 0 0.7857142857142857 -95 -38.57142857142857 0 E 210 100 224 114
+6 10
+"RECTANGLE8"
+""
+1 210 100 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 0.7857142857142857 0 0.7857142857142857 -75 -38.57142857142857 0 E 210 100 224 114
+6 11
+"RECTANGLE9"
+""
+1 210 100 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( \"System1:CPU_LED.LEDS0:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 \"System1:CPU_LED.LEDS0:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bit32 NewValue)
+{
+  bool boNewValue = getBit(NewValue,28);
+  if (boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREEN\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:CPU_LED.LEDS0_27}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_YELLOW}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 1 2 1 E 0.7857142857142857 0 0.7857142857142857 -95 51.42857142857143 0 E 210 100 224 114
+6 12
+"RECTANGLE10"
+""
+1 210 100 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( \"System1:CPU_LED.LEDS0:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 \"System1:CPU_LED.LEDS0:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bit32 NewValue)
+{
+  bool boNewValue = getBit(NewValue,28);
+  if (boNewValue)
+    setValue(\"\", \"backCol\", \"TN_YELLOW\");
+  else
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:CPU_LED.LEDS0_21}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_GREY}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_YELLOW}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 1 2 1 E 0.7857142857142857 0 0.7857142857142857 -95 63.82857142857144 0 E 210 100 224 114
+6 15
+"RECTANGLE11"
+""
+1 210 100 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  int rc;
+
+  if( !dpExists( \"System1:CPU_LED.LEDS0:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  rc = dpConnect(\"EP_setBackColorCB\", 
+                 \"System1:CPU_LED.LEDS0:_online.._value\");
+
+  if ( sdGetLastError() < 0 || rc != 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+}
+
+
+void EP_setBackColorCB(string dpSource, bit32 NewValue)
+{
+  bool boNewValue = getBit(NewValue,22);
+  if (boNewValue)
+    setValue(\"\", \"backCol\", \"TN_GREY\");
+  else
+    setValue(\"\", \"backCol\", \"TN_YELLOW\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {System1:CPU_LED.LEDS0_27}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {TN_YELLOW}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {TN_GREEN}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 1 1 2 1 E 0.7857142857142857 0 0.7857142857142857 -75 35.42857142857143 0 E 210 100 224 114
+6 17
+"RECTANGLE35"
+""
+1 20 40 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"mousePressedCB" "  main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  sdOpenPopup(\"\", \"/CPU_DIAG.pnl\", \"Окно дигнастики модуля \" +$DP, 0, 0, 2, makeDynString(\"$DP:\" + $DP),false);
+}"
+"antiAliased" "0"
+E E 0 0 1 2 1 E 8.000000000000002 0 2.779999999999999 -129.9999999999999 -91.1999999999998 1 E 20 40 40 90
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

@@ -1,0 +1,336 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 591 214 N "white" 1
+"$dpe_value"
+"main()
+{
+
+  setValue(\"PANEL_REF_TRENDREG.ptColors\", \"text\", \"fon_static,white\");
+  setValue(\"PANEL_REF_TRENDREG.ptLetters\", \"text\", \"Авто.,Ручн.\");
+  setValue(\"PANEL_REF_TRENDREG.ptValues\", \"text\", \"0,1\");
+  setValue(\"PANEL_REF_TRENDREG.dpeTail\", \"text\", \"REG\");
+
+  for (int i = 1; i<=dynlen(dyninterval);i++)
+  {
+    setValue(\"btnInterval\"+i, \"text\", dyninterval[i]);
+  }
+  selectInterval(1);
+}" 0
+ E E E E 1 -1 -1 0  18.75 73.5
+""0  1
+E "dyn_int dyninterval= makeDynInt(5, 10, 30);
+
+void selectInterval(int type)
+{
+  string color;
+  time begin;
+  time end;
+  int interval;
+  for (int i=1; i<=dynlen(dyninterval);i++)
+  {
+    if (i==type)
+    {
+      color = \"fon_btn_clicked\";
+      interval = dyninterval[i];
+    }
+    else
+    {
+      color = \"fon_static\";
+    }
+    setValue(\"btnInterval\"+i, \"backCol\", color);
+  }
+
+  end = getCurrentTime();
+  begin = end - interval * 60;
+  setValue(\"PANEL_REF_TREND.trendAI\", \"timeInterval\", end-begin);
+  setValue(\"PANEL_REF_TREND.trendAI\", \"timeBegin\", begin);
+
+  setValue(\"PANEL_REF_TRENDREG.min\", \"value\", interval);
+  PANEL_REF_TRENDREG.work(\"\",0);
+
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 93
+"RECTANGLE2"
+""
+1 98.52623047450606 13.52995391705069 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.8440195628018137 0 1 -11.63183549509727 26 1 E 98.52623047450606 13.52995391705069 605 180.4700460829493
+13 74
+"btnInterval1"
+""
+1 8 47 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+10 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  6 37 60 71
+
+T 
+2
+LANG:10027 6 МИН
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  selectInterval(1);
+}" 0
+ E E E
+2 76
+"PRIMITIVE_TEXT1"
+""
+1 20 69 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 20 69 48 84
+0 2 2 "0s" 0 0 0 192 0 0  20 69 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 6 МИН
+LANG:10001 6 МИН
+13 77
+"btnInterval2"
+""
+1 9 110.5 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+13 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  7 100.5 61 134.5
+
+T 
+2
+LANG:10027 6 МИН
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  selectInterval(2);
+}" 0
+ E E E
+2 78
+"PRIMITIVE_TEXT2"
+""
+1 21 132.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 21 132.5 49 148
+0 2 2 "0s" 0 0 0 192 0 0  21 132.5 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 6 МИН
+LANG:10001 6 МИН
+13 79
+"btnInterval3"
+""
+1 10 170 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+15 0 0 0 0 0
+E E E
+1
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  8 160 62 194
+
+T 
+2
+LANG:10027 6 МИН
+LANG:10001 12 PUSH_BUTTON1
+"main(mapping event)
+{
+  selectInterval(3);
+}" 0
+ E E E
+2 80
+"PRIMITIVE_TEXT3"
+""
+1 22 192 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 22 192 50 207
+0 2 2 "0s" 0 0 0 192 0 0  22 192 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 6 МИН
+LANG:10001 6 МИН
+1 108 0 "" 27
+0
+1 109 0 "" 32
+31 "transform" 0 0 1 0 1.306245746801032 0 -12.21142756112489
+0
+1 110 0 "" 33
+31 "transform" 0 0 1 0 1.279030429265178 0.1790978841085007 -57.0387396538146
+0
+1 111 0 "" 34
+31 "transform" 0 0 1 0 1.185693109982365 0 -23.70671382257301
+0
+1 112 0 "" 35
+31 "transform" 0 0 1 0 1.207058696252414 0 -27.5233756938976
+0
+2 107
+"PRIMITIVE_TEXT4"
+""
+1 501 15 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 501 15 554 35
+0 2 2 "0s" 0 0 0 192 0 0  501 15 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 10 Режим
+LANG:10001 6 МИН
+1 121 1 "" 3
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 113 0 "" 8
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 120 0 "" 29
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF_TREND" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorV3.pnl" 58 10 T 28 0.9104510579457573 0 0.7617408173001426 -3.162118659012158 29.68674988073253
+2
+"$b_IBit""TRUE"
+"$dpe_value""$dpe_value"
+3 1 "PANEL_REF_TRENDREG" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"navigation/front/sub/trendsIspV2.pnl" 61.13115237253032 35.44500872559701 T 33 0.8354085122794983 0 1 8.530539630870965 0
+1
+"$dpe_value""$dpe_value"
+0

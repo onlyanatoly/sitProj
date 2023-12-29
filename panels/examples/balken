@@ -1,0 +1,518 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 702 440 N "_3DFace" 0
+E E E E E 1 -1 -1 0  -8 -22
+""0  1
+E E 3
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+6 6
+"Border1"
+""
+1 20 221 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 20 155 685 221
+6 7
+"Border2"
+""
+1 20 288 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 20 221 685 288
+6 8
+"Border3"
+""
+1 20 355 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 20 288 685 355
+6 9
+"Border4"
+""
+1 20 421 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 20 355 685 421
+6 10
+"Border5"
+""
+1 20 88 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 20 88 685 155
+4 11
+"Line1"
+""
+1 220 88 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E  220 88 220 421
+2 12
+"Text1"
+""
+1 236 104 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 236 104 518 137
+0 2 2 "0s" 0 0 0 192 0 0  236 104 2
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 76 X/Y Столбцы: отдельные столбцы могут иметь 
+LANG:10001 29 X/Y Bar: Individual bars can 
+LANG:10000 36 X/Y Balken: einzelne Balken können 
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 64 различную ширину и различные цвета
+LANG:10001 30 have different width and color
+LANG:10000 39 unterschiedliche Breite und Farbe haben
+2 13
+"Text2"
+""
+1 236 170 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 236 171 592 186
+0 2 2 "0s" 0 0 0 192 0 0  236 171 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 94 X/Y Массив столбцов: столбцы имеют одинаковую ширину
+LANG:10001 39 X/Y Bar array: Bars have the same width
+LANG:10000 45 X/Y Balken Array: Balken haben gleiche Breite
+2 14
+"Text3"
+""
+1 236 237 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 236 238 610 253
+0 2 2 "0s" 0 0 0 192 0 0  236 238 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 98 X/Y Массив элементов: элементы имеют одинаковую ширину
+LANG:10001 47 X/Y Element array: Elements have the same width
+LANG:10000 48 X/Y Element Array: Elemente haben gleiche Breite
+2 15
+"Text4"
+""
+1 243 370 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 243 371 525 386
+0 2 2 "0s" 0 0 0 192 0 0  243 371 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 73 X/Y Линия: значения X/Y, соединенные линией
+LANG:10001 38 X/Y Line: X/Y values connected by line
+LANG:10000 42 X/Y Linie: X/Y Werte durch Linie verbunden
+2 16
+"Text5"
+""
+1 243 304 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 243 305 523 320
+0 2 2 "0s" 0 0 0 192 0 0  243 305 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 78 Кривая: метка времени для каждого значения
+LANG:10001 33 Trend curve: Time stamp per value
+LANG:10000 33 Trend Kurve: Zeitstempel pro Wert
+2 18
+"Text6"
+""
+1 52 42 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 52 42 209 62
+0 2 2 "0s" 0 0 0 192 0 0  52 42 1
+3
+LANG:10027 26 arial,-1,18,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,18,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,18,5,50,0,0,0,0,0
+0 3
+LANG:10027 31 Столбчатый тренд
+LANG:10001 9 Bar trend
+LANG:10000 12 Balken Trend
+6 19
+"Border6"
+""
+1 20 87 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 1 1 E U  0 E 20 20 685 87
+13 0
+"Button1"
+""
+1 52 104 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  52 104 186 146
+
+T 
+3
+LANG:10027 20 Столбчатый
+LANG:10001 3 Bar
+LANG:10000 6 Balken
+"main()
+{
+  RootPanelOn(\"examples/balken1\",\"Balken\",makeDynString());
+}
+" 0
+ E E E
+13 1
+"Button3"
+""
+1 52 171 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  52 171 186 213
+
+T 
+3
+LANG:10027 26 Равноширинный
+LANG:10001 9 Bar field
+LANG:10000 11 Balken-Feld
+"main()
+{
+  RootPanelOn(\"examples/balken2\",\"Balken_Feld\",makeDynString());
+}
+" 0
+ E E E
+13 2
+"Button5"
+""
+1 52 238 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  52 238 186 279
+
+T 
+3
+LANG:10027 20 Элементный
+LANG:10001 13 Element field
+LANG:10000 12 Element-Feld
+"main()
+{
+  RootPanelOn(\"examples/balken3\",\"Element-Feld\",makeDynString());
+}
+" 0
+ E E E
+13 3
+"Button7"
+""
+1 52 371 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  52 371 186 411
+
+T 
+3
+LANG:10027 12 Кривая
+LANG:10001 5 Curve
+LANG:10000 5 Kurve
+"main()
+{
+  RootPanelOn(\"examples/balken5\",\"Kurve\",makeDynString());
+}
+" 0
+ E E E
+13 4
+"Button9"
+""
+1 52 305 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  52 305 186 347
+
+T 
+3
+LANG:10027 31 Элементн.по врем.
+LANG:10001 18 Time element field
+LANG:10000 16 Zeitelement-Feld
+"main()
+{
+  RootPanelOn(\"examples/balken4\",\"Zeitelement-Feld\",makeDynString());
+}
+" 0
+ E E E
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

@@ -1,0 +1,62 @@
+# ascii dump of database
+
+# DpType
+TypeName
+Test_AI.Test_AI	1#1
+	PV	22#2
+	HH	22#3
+	H	22#4
+	L	22#5
+	LL	22#6
+	SIM	23#7
+	REP	23#8
+	SHOW	23#9
+	STD_PV	22#10
+
+# Datapoint/DpId
+DpName	TypeName	ID
+Temp1	Test_AI	11838
+Temp2	Test_AI	11840
+Temp3	Test_AI	11841
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	Temp1.PV	Test_AI	45	0x8300000000000101	04.07.2019 10:12:02.525
+UI (1)/0	Temp1.HH	Test_AI	90	0x8300000000000101	01.07.2019 13:32:52.709
+ASC (1)/0	Temp1.H	Test_AI	80	0x8300000000000101	01.07.2019 13:20:27.685
+UI (1)/0	Temp1.L	Test_AI	20	0x8300000000000101	01.07.2019 13:33:48.124
+UI (1)/0	Temp1.LL	Test_AI	10	0x8300000000300101	01.07.2019 13:32:43.650
+UI (1)/0	Temp1.SIM	Test_AI	0	0x8300000000100101	04.07.2019 08:00:22.118
+UI (1)/0	Temp1.REP	Test_AI	0	0x8300000000100101	04.07.2019 10:12:23.042
+UI (1)/0	Temp1.SHOW	Test_AI	1	0x8300000000300101	04.07.2019 10:12:15.747
+UI (1)/0	Temp1.STD_PV	Test_AI	50	0x8300000000000101	05.07.2019 13:20:16.499
+UI (1)/0	Temp2.PV	Test_AI	45	0x8300000000000101	04.07.2019 10:12:02.525
+UI (1)/0	Temp2.HH	Test_AI	90	0x8300000000000101	01.07.2019 13:32:52.709
+ASC (1)/0	Temp2.H	Test_AI	80	0x8300000000000101	01.07.2019 13:20:27.685
+UI (1)/0	Temp2.L	Test_AI	20	0x8300000000000101	01.07.2019 13:33:48.124
+UI (1)/0	Temp2.LL	Test_AI	10	0x8300000000300101	01.07.2019 13:32:43.650
+UI (1)/0	Temp2.SIM	Test_AI	0	0x8300000000100101	04.07.2019 08:00:22.118
+UI (1)/0	Temp2.REP	Test_AI	0	0x8300000000100101	04.07.2019 10:12:23.042
+UI (1)/0	Temp2.SHOW	Test_AI	1	0x8300000000300101	04.07.2019 10:12:15.747
+UI (1)/0	Temp2.STD_PV	Test_AI	50	0x8300000000000101	05.07.2019 13:20:16.499
+UI (1)/0	Temp3.PV	Test_AI	45	0x8300000000000101	04.07.2019 10:12:02.525
+UI (1)/0	Temp3.HH	Test_AI	90	0x8300000000000101	01.07.2019 13:32:52.709
+ASC (1)/0	Temp3.H	Test_AI	80	0x8300000000000101	01.07.2019 13:20:27.685
+UI (1)/0	Temp3.L	Test_AI	20	0x8300000000000101	01.07.2019 13:33:48.124
+UI (1)/0	Temp3.LL	Test_AI	10	0x8300000000300101	01.07.2019 13:32:43.650
+UI (1)/0	Temp3.SIM	Test_AI	0	0x8300000000100101	04.07.2019 08:00:22.118
+UI (1)/0	Temp3.REP	Test_AI	0	0x8300000000100101	04.07.2019 10:12:23.042
+UI (1)/0	Temp3.SHOW	Test_AI	1	0x8300000000300101	04.07.2019 10:12:15.747
+UI (1)/0	Temp3.STD_PV	Test_AI	50	0x8300000000000101	05.07.2019 13:20:16.499
+
+# PvssRangeCheck
+Manager/User	ElementName	TypeName	_pv_range.._type	_pv_range.._ignor_inv	_pv_range.._neg	_pv_range.._min	_pv_range.._max	_pv_range.._incl_min	_pv_range.._incl_max	_pv_range.._set	_pv_range.._match
+UI (1)/0	Temp1.PV	Test_AI	7	0	0	0	100	1	1		
+UI (1)/0	Temp2.PV	Test_AI	7	0	0	0	100	1	1		
+UI (1)/0	Temp3.PV	Test_AI	7	0	0	0	100	1	1		
+
+# GeneralConfig
+Manager/User	ElementName	TypeName	_general.._type	_general.._time_01	_general.._time_02	_general.._time_03	_general.._time_04	_general.._time_05	_general.._bool_01	_general.._bool_02	_general.._bool_03	_general.._bool_04	_general.._bool_05	_general.._int_01	_general.._int_02	_general.._int_03	_general.._int_04	_general.._int_05	_general.._unsigned_01	_general.._unsigned_02	_general.._unsigned_03	_general.._unsigned_04	_general.._unsigned_05	_general.._float_01	_general.._float_02	_general.._float_03	_general.._float_04	_general.._float_05	_general.._string_01	_general.._string_02	_general.._string_03	_general.._string_04	_general.._string_05	_general.._bit32_01	_general.._bit32_02	_general.._bit32_03	_general.._bit32_04	_general.._bit32_05	_general.._char_01	_general.._char_02	_general.._char_03	_general.._char_04	_general.._char_05	_general.._dpid_01	_general.._dpid_02	_general.._dpid_03	_general.._dpid_04	_general.._dpid_05	_general.._langString_01	_general.._langString_02	_general.._langString_03	_general.._langString_04	_general.._langString_05	_general.._blob_01	_general.._blob_02	_general.._blob_03	_general.._blob_04	_general.._blob_05	_general.._long_01	_general.._long_02	_general.._long_03	_general.._long_04	_general.._long_05	_general.._ulong_01	_general.._ulong_02	_general.._ulong_03	_general.._ulong_04	_general.._ulong_05	_general.._bit64_01	_general.._bit64_02	_general.._bit64_03	_general.._bit64_04	_general.._bit64_05
+UI (1)/0	Temp1.PV	Test_AI	55	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"T"	""	""	""	""	0x0	0x0	0x0	0x0	0x0	\0	\0	\0	\0	\0	 	 	 	 	 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	""	""	""	""	""	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+UI (1)/0	Temp2.PV	Test_AI	55	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"T"	""	""	""	""	0x0	0x0	0x0	0x0	0x0	\0	\0	\0	\0	\0	 	 	 	 	 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	""	""	""	""	""	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+UI (1)/0	Temp3.PV	Test_AI	55	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	01.01.1970 00:00:00.000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	"T"	""	""	""	""	0x0	0x0	0x0	0x0	0x0	\0	\0	\0	\0	\0	 	 	 	 	 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	lt:2 LANG:10001 "" LANG:10027 "" 	""	""	""	""	""	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

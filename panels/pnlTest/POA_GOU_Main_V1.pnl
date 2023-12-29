@@ -1,0 +1,2208 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 786 N "fon_static" 1
+"$text"
+E E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+4 1606
+"LINE72"
+""
+1 839.0208111566408 485.8921971489713 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+538 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  839.0208111566408 485.8921971489713 1319 485.8921971489713
+4 1607
+"LINE73"
+""
+1 1174.559436780084 414.6722893735816 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+539 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1174.559436780084 414.6722893735816 1174.559436780084 485.9999999999998
+4 1608
+"LINE74"
+""
+1 1274.959436780084 414.2722893735813 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+540 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1274.959436780084 414.2722893735813 1274.959436780084 485.5999999999995
+4 1609
+"LINE75"
+""
+1 1317.359436780084 468.2722893735816 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+541 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1317.359436780084 468.2722893735816 1317.359436780084 485.9999999999999
+4 1610
+"LINE76"
+""
+1 1225.759436780084 468.6722893735816 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+542 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1225.759436780084 468.6722893735816 1225.759436780084 486.3999999999999
+4 828
+"LINE69"
+""
+1 1108 695 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+530 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1108 695 1108 711
+4 1604
+"LINE70"
+""
+1 47.03025218920743 147.2762352186116 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+536 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  47.03025218920743 147.2762352186116 72.71428571428572 147.2762352186116
+4 764
+"LINE13"
+""
+1 37.46026776473116 643.9747584826735 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+466 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  37.46026776473116 643.9747584826735 598.0000000000001 643.9747584826735
+10 777
+"POLYGON1"
+""
+1 550 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+479 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 0.6666666666666654 0 0.5666666666666667 -104.6442834138479 562.7077539966557 1 E 8 550 130
+570 140
+610 140
+610 130
+610 160
+610 150
+570 150
+550 160
+ 1
+4 827
+"LINE68"
+""
+1 1248.887477823307 693.4 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+529 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1248.887477823307 693.4 1248.887477823307 709.4
+4 805
+"LINE47"
+""
+1 1178.887477823307 615 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+507 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1178.887477823307 615 1178.887477823307 631
+4 825
+"LINE66"
+""
+1 1178.887477823307 694.2 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+527 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1178.887477823307 694.2 1178.887477823307 710.2
+4 826
+"LINE67"
+""
+1 1248.887477823307 615 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+528 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1248.887477823307 615 1248.887477823307 631
+4 761
+"LINE12"
+""
+1 173 147.87729501634 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+463 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  173 147.87729501634 654.9999999999999 147.87729501634
+4 768
+"LINE14"
+""
+1 710.1491772721852 148.2286161709926 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+470 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  710.1491772721852 148.2286161709926 710.1491772721853 232
+4 769
+"LINE15"
+""
+1 50 310.8229157982601 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+471 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  50 310.8229157982601 321.0473500928472 310.8229157982601
+4 770
+"LINE16"
+""
+1 322.1491772721852 496.6 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+472 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  322.1491772721852 496.6 322.1491772721852 642.6000000000001
+4 771
+"LINE17"
+""
+1 321.0473500928472 310.8229157982601 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+473 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  321.0473500928472 310.8229157982601 321.0473500928472 456.8229157982602
+4 772
+"LINE18"
+""
+1 362.1491772721852 232 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+474 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  362.1491772721852 232 362.1491772721852 642.2000000000002
+4 779
+"LINE21"
+""
+1 655.3333333333336 69.56194950432592 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+481 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  655.3333333333336 69.56194950432592 970.3333333333336 69.56194950432592
+4 780
+"LINE22"
+""
+1 363.1495105999574 477.280974752163 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+482 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  363.1495105999574 477.280974752163 541 477.280974752163
+4 781
+"LINE23"
+""
+1 362.1491772721851 232 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+483 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  362.1491772721851 232 1051 232
+4 782
+"LINE24"
+""
+1 598.8158439388517 420 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+484 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  598.8158439388517 420 598.8158439388518 641.9999999999998
+4 783
+"LINE25"
+""
+1 415 417.9476414188296 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+485 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  415 417.9476414188296 745.9999999999998 417.9476414188296
+4 784
+"LINE26"
+""
+1 413.5196855904456 238 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+486 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  413.5196855904456 238 413.5196855904456 418
+4 785
+"LINE27"
+""
+1 413.5196855904455 149 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+487 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  413.5196855904455 149 413.5196855904455 226
+4 787
+"LINE29"
+""
+1 847.7491772721855 141.3225778539994 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+489 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  847.7491772721855 141.3225778539994 847.7491772721855 232
+4 788
+"LINE30"
+""
+1 986.8158439388517 141.8952828376592 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+490 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  986.8158439388517 141.8952828376592 986.8158439388518 232
+4 789
+"LINE31"
+""
+1 655.3333333333335 69.00000000000004 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+491 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  655.3333333333335 69.00000000000004 655.3333333333336 146
+4 790
+"LINE32"
+""
+1 693.4355643398399 69.77579015127756 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+492 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  693.4355643398399 69.77579015127756 693.43556433984 98
+4 791
+"LINE33"
+""
+1 832.7688976731736 69.77579015127755 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+493 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  832.7688976731736 69.77579015127755 832.7688976731737 97.99999999999997
+4 792
+"LINE34"
+""
+1 970.1022310065068 70.10912348461089 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+494 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  970.1022310065068 70.10912348461089 970.1022310065069 98.33333333333331
+4 793
+"LINE35"
+""
+1 1053.43556433984 234.4424568179442 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+495 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1053.43556433984 234.4424568179442 1053.43556433984 278.3333333333334
+4 794
+"LINE36"
+""
+1 770 632.8952828376591 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+496 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  770 632.8952828376591 1047 632.8952828376591
+4 795
+"LINE37"
+""
+1 839.0208111566399 331.9999999999994 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+497 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  839.0208111566399 331.9999999999994 839.0208111566399 633.7843942979432
+4 796
+"LINE38"
+""
+1 911.4341772721851 331.9999999999995 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+498 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  911.4341772721851 331.9999999999995 911.4341772721851 633.7843942979433
+4 797
+"LINE39"
+""
+1 978.3541444899735 331.9999999999995 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+499 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  978.3541444899735 331.9999999999995 978.3541444899735 633.7843942979433
+4 798
+"LINE40"
+""
+1 1047.687477823307 331.9999999999994 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+500 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1047.687477823307 331.9999999999994 1047.687477823307 633.7843942979432
+4 799
+"LINE41"
+""
+1 832.7688976731733 234 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+501 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  832.7688976731733 234 832.7688976731735 278.0056227069156
+4 800
+"LINE42"
+""
+1 912.350843938852 235.3333333333333 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+502 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  912.350843938852 235.3333333333333 912.3508439388521 279.3389560402489
+4 801
+"LINE43"
+""
+1 977.7675106055185 234 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+503 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  977.7675106055185 234 977.7675106055186 278.0056227069156
+4 802
+"LINE44"
+""
+1 834 259.5619495043256 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+504 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  834 259.5619495043256 1108 259.5619495043256
+4 803
+"LINE45"
+""
+1 1108 259.5619495043256 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+505 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1108 259.5619495043256 1108 632
+4 804
+"LINE46"
+""
+1 1110 614.8952828376589 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+506 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1110 614.8952828376589 1248 614.8952828376589
+4 808
+"LINE49"
+""
+1 1177.524973511472 346 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+510 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1177.524973511472 346 1177.524973511472 377
+4 809
+"LINE50"
+""
+1 1275.524973511472 347.3333333333333 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+511 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1275.524973511472 347.3333333333333 1275.524973511472 378.3333333333334
+4 810
+"LINE51"
+""
+1 1224.858306844805 346.0000000000001 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+512 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1224.858306844805 346.0000000000001 1224.858306844805 437.6666666666667
+4 811
+"LINE52"
+""
+1 1314.858306844805 347 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+513 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1314.858306844805 347 1314.858306844805 437
+4 812
+"LINE53"
+""
+1 1254.279718390043 210.0000000000001 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+514 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1254.279718390043 210.0000000000001 1254.279718390043 340
+4 813
+"LINE54"
+""
+1 1415.858306844805 278 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+515 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1415.858306844805 278 1415.858306844805 448
+4 814
+"LINE55"
+""
+1 1612.766144287793 301.87729501634 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+516 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1612.766144287793 301.87729501634 1612.766144287793 445.9999999999999
+4 815
+"LINE56"
+""
+1 1416.666666666666 449.5619495043256 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+517 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1416.666666666666 449.5619495043256 1613 449.5619495043256
+4 816
+"LINE57"
+""
+1 1418 615.0056227069156 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+518 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1418 615.0056227069156 1606.932810954459 615.0056227069156
+4 817
+"LINE58"
+""
+1 1415.858306844805 615.0056227069156 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+519 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1415.858306844805 615.0056227069156 1415.858306844805 712.0056227069156
+4 818
+"LINE59"
+""
+1 1606.932810954459 615.0056227069156 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+520 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1606.932810954459 615.0056227069156 1606.932810954459 712.0056227069156
+4 819
+"LINE60"
+""
+1 1512.46640547723 450 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+521 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1512.46640547723 450 1512.46640547723 615.0056227069156
+4 820
+"LINE61"
+""
+1 1659.858306844805 491.0056227069156 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+522 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1659.858306844805 491.0056227069156 1749 491.0056227069156
+4 821
+"LINE62"
+""
+1 1659.858306844805 491.0056227069156 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+523 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1659.858306844805 491.0056227069156 1659.858306844805 588.0056227069156
+4 822
+"LINE63"
+""
+1 1748.932810954459 490.3389560402489 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+524 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1748.932810954459 490.3389560402489 1748.932810954459 587.3389560402489
+4 823
+"LINE64"
+""
+1 1717.584966895902 374 E E E 1 E 1 E N "Gou" E N {255,255,255} E E
+ E E
+525 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1717.584966895902 374 1717.584966895902 492.1722893735823
+4 824
+"LINE65"
+""
+1 1690.666666666667 371.3333333333333 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+526 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1690.666666666667 371.3333333333333 1740.666666666667 371.3333333333333
+1 1611 99 "" 1
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 152.8357054973818 -637.1507478632476
+20 "primitiveText" 0 0 1
+2
+LANG:10027 79 Газоочистная установка №5 для печей обжига
+LANG:10001 3 GOU
+
+0
+1 1612 100 "" 32
+0
+1 1625 101 "" 32
+0
+1 1639 102 "" 14
+0
+1 1653 103 "" 32
+0
+1 1667 104 "" 32
+0
+1 1681 108 "" 48
+0
+1 1709 110 "" 34
+0
+1 1718 111 "" 34
+0
+1 1727 112 "" 34
+0
+1 1736 113 "" 32
+0
+1 1749 114 "" 14
+0
+1 1763 115 "" 14
+0
+1 1777 116 "" 14
+0
+1 1791 119 "" 14
+0
+1 1805 120 "" 14
+0
+1 1819 121 "" 48
+0
+1 1832 122 "" 48
+0
+1 1847 123 "" 34
+0
+1 1872 125 "" 32
+0
+1 1858 124 "" 32
+0
+1 1886 126 "" 14
+0
+1 1900 127 "" 14
+0
+1 1914 128 "" 14
+0
+1 1928 129 "" 67
+0
+1 1936 130 "" 67
+0
+1 1944 131 "" 67
+0
+1 1952 132 "" 48
+0
+1 1966 133 "" 48
+0
+1 1980 134 "" 48
+0
+1 1994 135 "" 34
+0
+1 2003 136 "" 34
+0
+1 2012 137 "" 34
+0
+1 2021 138 "" 34
+0
+1 2030 139 "" 14
+0
+1 2044 140 "" 14
+0
+1 2058 141 "" 14
+0
+1 2072 142 "" 48
+0
+1 2083 143 "" 48
+0
+1 2094 144 "" 48
+0
+1 2105 145 "" 48
+0
+1 2116 146 "" 34
+0
+1 2125 147 "" 34
+0
+1 2134 148 "" 34
+0
+1 2143 149 "" 34
+0
+1 2152 150 "" 34
+0
+1 2161 151 "" 74
+0
+1 2170 152 "" 74
+0
+1 2179 153 "" 74
+0
+1 2188 154 "" 79
+0
+1 2198 155 "" 79
+0
+1 2208 156 "" 79
+0
+1 2218 158 "" 34
+0
+1 2227 159 "" 34
+0
+1 2236 160 "" 34
+0
+1 2245 161 "" 34
+0
+1 2254 163 "" 81
+0
+1 2263 164 "" 81
+0
+1 2272 165 "" 81
+0
+1 2281 166 "" 81
+0
+6 756
+"RECTANGLE2"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+458 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.7357623246564302 0 0.7142857142857143 110.7559906364811 68.54396168300669 2  1 0  "pictures/Tanks/tank_v_tapered_3d.wmf" 4294967295 E 1500 70 1610 210
+6 758
+"RECTANGLE4"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+460 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.3636363636363636 0 1.855176303473802 200.2946318176397 255.4129762705015 2  1 0  "pictures/Tanks/tank_v_3d.wmf" 4294967295 E 1500 70 1610 210
+6 759
+"RECTANGLE5"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+461 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.2687926276867322 0 0.4461145594070948 998.2438694243613 224.6492758578434 2  1 0  "pictures/Tanks/tank_v_foot_3d.wmf" 4294967295 E 1500 70 1610 210
+6 760
+"RECTANGLE6"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+462 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.2687926276867322 0 0.4461145594070948 1193.210536091028 224.6492758578434 2  1 0  "pictures/Tanks/tank_v_foot_3d.wmf" 4294967295 E 1500 70 1610 210
+6 762
+"RECTANGLE7"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+464 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.2747802066164989 0 2.102997691739819 -393.3961326525633 -86.62951526536204 2  1 0  "pictures/Tanks/oiltank_profile_3d.wmf" 4294967295 E 1500 70 1610 210
+6 763
+"RECTANGLE8"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+465 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E -0.07672295713087202 -8.181460218257596e-17 7.203887502935368e-18 -0.5122131315841947 131.7658598431202 705.8549192108937 2  1 0  "pictures/Tanks/tank_v_3d.wmf" 4294967295 E 1500 70 1610 210
+6 765
+"RECTANGLE9"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+467 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E -0.07672295713087202 -8.181460218257596e-17 7.203887502935368e-18 -0.5122131315841947 140.2053851275162 705.8549192108937 2  1 0  "pictures/Tanks/tank_v_3d.wmf" 4294967295 E 1500 70 1610 210
+6 766
+"RECTANGLE10"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+468 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E -0.07672295713087202 -8.181460218257596e-17 7.203887502935368e-18 -0.5122131315841947 148.6449104119121 705.8549192108937 2  1 0  "pictures/Tanks/tank_v_3d.wmf" 4294967295 E 1500 70 1610 210
+6 767
+"RECTANGLE11"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+469 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E -0.07672295713087202 -8.181460218257596e-17 7.203887502935368e-18 -0.5122131315841947 157.084435696308 705.8549192108937 2  1 0  "pictures/Tanks/tank_v_3d.wmf" 4294967295 E 1500 70 1610 210
+1 1695 109 "" 48
+0
+10 778
+"POLYGON2"
+""
+1 550 130 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+480 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E -1.224646799147351e-16 0.6666666666666654 -0.5666666666666667 -1.04094977927525e-16 495.6863522571123 -79.02270498365931 1 E 8 550 130
+570 140
+610 140
+610 130
+610 160
+610 150
+570 150
+550 160
+ 1
+6 807
+"RECTANGLE14"
+""
+1 1500 70 E E E 1 E 1 E N "_Transparent" E N "fon_static" E E
+ E E
+509 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 2.104005120181054 0 0.06946201775951626 -2016.448243491497 334.1342159440645 2  1 0  "pictures/Tanks/tank_v_3d.wmf" 4294967295 E 1500 70 1610 210
+1 2290 168 "" 14
+0
+1 2304 169 "" 14
+0
+1 2318 170 "" 14
+0
+1 2332 171 "" 14
+0
+1 2346 172 "" 1
+0
+1 2352 173 "" 1
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1618 100 "" 3
+0
+1 1629 101 "" 8
+0
+1 1643 102 "" 3
+0
+1 1657 103 "" 8
+0
+1 1671 104 "" 8
+0
+1 1690 108 "" 8
+0
+1 1715 110 "1" 1
+0
+1 1724 111 "1" 1
+0
+1 1733 112 "1" 1
+0
+1 1742 113 "" 3
+0
+1 1753 114 "" 3
+0
+1 1767 115 "" 3
+0
+1 1781 116 "" 3
+0
+1 1795 119 "" 3
+0
+1 1809 120 "" 3
+0
+1 1827 121 "" 8
+0
+1 1844 122 "1" 1
+0
+1 1855 123 "1" 1
+0
+1 1876 125 "" 8
+0
+1 1862 124 "" 8
+0
+1 1890 126 "" 3
+0
+1 1904 127 "" 3
+0
+1 1918 128 "" 3
+0
+1 1933 129 "1" 1
+0
+1 1941 130 "1" 1
+0
+1 1949 131 "1" 1
+0
+1 1961 132 "" 8
+0
+1 1975 133 "" 8
+0
+1 1989 134 "" 8
+0
+1 2000 135 "1" 1
+0
+1 2009 136 "1" 1
+0
+1 2018 137 "1" 1
+0
+1 2027 138 "1" 1
+0
+1 2034 139 "" 3
+0
+1 2048 140 "" 3
+0
+1 2062 141 "" 3
+0
+1 2080 142 "1" 1
+0
+1 2091 143 "1" 1
+0
+1 2102 144 "1" 1
+0
+1 2113 145 "1" 1
+0
+1 2122 146 "1" 1
+0
+1 2131 147 "1" 1
+0
+1 2140 148 "1" 1
+0
+1 2149 149 "1" 1
+0
+1 2158 150 "1" 1
+0
+1 2167 151 "1" 1
+0
+1 2176 152 "1" 1
+0
+1 2185 153 "1" 1
+0
+1 2195 154 "1" 1
+0
+1 2205 155 "1" 1
+0
+1 2215 156 "1" 1
+0
+1 2224 158 "1" 1
+0
+1 2233 159 "1" 1
+0
+1 2242 160 "1" 1
+0
+1 2251 161 "1" 1
+0
+1 2260 163 "1" 1
+0
+1 2269 164 "1" 1
+0
+1 2278 165 "1" 1
+0
+1 2287 166 "1" 1
+0
+1 1704 109 "" 8
+0
+1 2293 168 "" 33
+0
+1 2307 169 "" 33
+0
+1 2321 170 "" 33
+0
+1 2335 171 "" 33
+0
+1 2350 172 "0" 1
+0
+1 2356 173 "0" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1624 100 "" 29
+0
+1 1638 101 "" 29
+0
+1 1652 102 "" 29
+0
+1 1666 103 "" 29
+0
+1 1680 104 "" 29
+0
+1 1748 113 "" 29
+0
+1 1762 114 "" 29
+0
+1 1776 115 "" 29
+0
+1 1790 116 "" 29
+0
+1 1804 119 "" 29
+0
+1 1818 120 "" 29
+0
+1 1885 125 "" 29
+0
+1 1871 124 "" 29
+0
+1 1899 126 "" 29
+0
+1 1913 127 "" 29
+0
+1 1927 128 "" 29
+0
+1 2043 139 "" 29
+0
+1 2057 140 "" 29
+0
+1 2071 141 "" 29
+0
+1 2303 168 "" 29
+0
+1 2317 169 "" 29
+0
+1 2331 170 "" 29
+0
+1 2345 171 "" 29
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1693 108 "" 14
+0
+1 1717 110 "" 14
+0
+1 1726 111 "" 14
+0
+1 1735 112 "" 14
+0
+1 1830 121 "" 14
+0
+1 1846 122 "" 14
+0
+1 1857 123 "" 14
+0
+1 1935 129 "" 14
+0
+1 1943 130 "" 14
+0
+1 1951 131 "" 14
+0
+1 1964 132 "" 14
+0
+1 1978 133 "" 14
+0
+1 1992 134 "" 14
+0
+1 2002 135 "" 14
+0
+1 2011 136 "" 14
+0
+1 2020 137 "" 14
+0
+1 2029 138 "" 14
+0
+1 2082 142 "" 14
+0
+1 2093 143 "" 14
+0
+1 2104 144 "" 14
+0
+1 2115 145 "" 14
+0
+1 2124 146 "" 14
+0
+1 2133 147 "" 14
+0
+1 2142 148 "" 14
+0
+1 2151 149 "" 14
+0
+1 2160 150 "" 14
+0
+1 2169 151 "" 14
+0
+1 2178 152 "" 14
+0
+1 2187 153 "" 14
+0
+1 2197 154 "" 14
+0
+1 2207 155 "" 14
+0
+1 2217 156 "" 14
+0
+1 2226 158 "" 14
+0
+1 2235 159 "" 14
+0
+1 2244 160 "" 14
+0
+1 2253 161 "" 14
+0
+1 2262 163 "" 14
+0
+1 2271 164 "" 14
+0
+1 2280 165 "" 14
+0
+1 2289 166 "" 14
+0
+1 1707 109 "" 14
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 99 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 210 1 0 1 340.3990741919457 9.499893162392937
+1
+"$text""$text"
+3 100 "PANEL_REF115" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Press.pnl" 198.3488461538462 509.7482469911045 T 384 1.006592869465209 0 0.997025784173438 -278.7237513678706 -391.0436480242913
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_PT165"
+3 101 "PANEL_REF165" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 958.75 38.75 T 385 1 0 1 -943.0773517193973 78.99794995090861
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_AT165"
+3 102 "PANEL_REF136" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 386 0.9807692307692302 0 0.9831782038376958 -1089.122415754493 39.92757608448804
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT165"
+3 103 "PANEL_REF166" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 958.75 38.75 T 387 1 0 1 -901.3933246499146 -70.19704440633382
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_XT165_Peak"
+3 104 "PANEL_REF167" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 958.75 38.75 T 388 1 0 1 -827.7368370142389 -69.69704440633382
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_XT165_Avrg"
+3 108 "PANEL_REF175" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 396 1 0 1 -104.7998631239938 166.1377774335934
+1
+"$dpe_value""GOU_CV159"
+3 109 "PANEL_REF176" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 397 1 0 1 -52.80082272781493 -10.30322865574709
+1
+"$dpe_value""GOU_CV155"
+3 110 "PANEL_REF177" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 398 1 0 1 -26.48790115543372 162.4114897642742
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV140"
+3 111 "PANEL_REF180" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 401 1 0 1 -138.872664553381 155.6118418096272
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV156"
+3 112 "PANEL_REF181" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 402 1 0 1 -98.12869019440645 219.3480011626755
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV158"
+3 113 "PANEL_REF182" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Press.pnl" 198.3488461538462 509.7482469911045 T 402 1.006592869465209 0 0.997025784173438 -271.6089090126815 -47.67451224853355
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_PIT149"
+3 114 "PANEL_REF183" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 403 0.9807692307692302 0 0.9831782038376958 -1068.539390414162 383.296711860246
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT150"
+3 115 "PANEL_REF184" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 404 0.9807692307692302 0 0.9831782038376958 -1262.851006836864 525.8540467969019
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT148"
+3 116 "PANEL_REF185" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 405 0.9807692307692302 0 0.9831782038376958 -1195.501006836864 525.8540467969019
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT149"
+3 119 "PANEL_REF188" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 408 0.9807692307692302 0 0.9831782038376958 -866.1723185152861 525.8540467969018
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT153A"
+3 120 "PANEL_REF189" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 409 0.9807692307692302 0 0.9831782038376958 -798.0223185152859 525.8540467969018
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT153B"
+3 121 "PANEL_REF190" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Regulator.pnl" 324.9046855904454 604.8131339202145 T 410 1 0 1 -19.76833333333366 -19.34084454663218
+1
+"$dpe_value""GOU_CV152"
+3 122 "PANEL_REF191" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Heater.pnl" 490.6978819311749 266.721056102853 T 410 1 0 1 -68.1330055228882 168.3164632538202
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_KTT140"
+3 123 "PANEL_REF192" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveGou.pnl" 795.2821827950734 283.140780693247 T 411 1 0 1 -283.7996721895549 144.5804589803159
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_MTA140"
+3 124 "PANEL_REF193" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 958.75 38.75 T 412 1 0 1 -594.7619810762211 145.9606283496731
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT154_Nm"
+3 125 "PANEL_REF194" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 958.75 38.75 T 413 1 0 1 -662.5647773165821 145.9606283496731
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT154_Am"
+3 126 "PANEL_REF195" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 414 0.9807692307692302 0 0.9831782038376958 -744.1361601668791 106.8902544832527
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT154"
+3 127 "PANEL_REF196" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 415 0.9807692307692302 0 0.9831782038376958 -712.2621276974442 232.1502264397348
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT155A"
+3 128 "PANEL_REF197" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 416 0.9807692307692302 0 0.9831782038376958 -645.4871517926831 232.0766066877243
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT155B"
+3 129 "PANEL_REF202" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 421 1 0 1 -241.503194891863 -79.85787031860502
+1
+"$dpe_value""GOU_MTA101H"
+3 130 "PANEL_REF203" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 422 1 0 1 -104.2698615585299 -81.85787031860505
+1
+"$dpe_value""GOU_MTA101G"
+3 131 "PANEL_REF204" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentVertical.pnl" 812.319038830715 105.1003271365493 T 423 1 0 1 32.96347177480334 -83.05636545354247
+1
+"$dpe_value""GOU_MTA101F"
+3 132 "PANEL_REF205" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 424 1 0 1 244.1975106055185 0.8044441002599285
+1
+"$dpe_value""GOU_CV101H"
+3 133 "PANEL_REF206" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 425 1 0 1 382.665843938852 0.8044441002599854
+1
+"$dpe_value""GOU_CV101G"
+3 134 "PANEL_REF207" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/RegulatorVertical.pnl" 371.315 143.8728509160801 T 426 1 0 1 519.9738778016658 0.8044441002599854
+1
+"$dpe_value""GOU_CV101F"
+3 135 "PANEL_REF208" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 878.4993934813933 596.5266199755491 T 426 1 0 1 122.2564176752466 -114.5209972686335
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_ZSH101A"
+3 136 "PANEL_REF209" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 878.4993934813933 596.5266199755491 T 427 1 0 1 53.08419545302437 -115.8543306019668
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_ZSH101B"
+3 137 "PANEL_REF210" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 878.4993934813933 596.5266199755491 T 428 1 0 1 -14.08802676919792 -115.8543306019668
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_ZSH101C"
+3 138 "PANEL_REF211" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ValveVertical.pnl" 878.4993934813933 596.5266199755491 T 429 1 0 1 -85.2602489914201 -115.8543306019668
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_ZSH101D"
+3 139 "PANEL_REF212" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 430 0.9807692307692302 0 0.9831782038376958 -604.2361601668796 523.4540467969019
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT161"
+3 140 "PANEL_REF213" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 431 0.9807692307692302 0 0.9831782038376958 -538.0861601668796 523.4540467969019
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT162"
+3 141 "PANEL_REF214" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v_Temp.pnl" 1182.902043401923 102.9999999999999 T 432 0.9807692307692302 0 0.9831782038376958 -471.9361601668795 523.4540467969019
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_TT163"
+3 142 "PANEL_REF215" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 432 1 0 1 -483.8125221766936 137.7731201541773
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101D"
+3 143 "PANEL_REF216" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 433 1 0 1 -411.149156061148 136.4397868208439
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101C"
+3 144 "PANEL_REF217" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 434 1 0 1 -345.7324893944814 135.1064534875106
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101B"
+3 145 "PANEL_REF218" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Filter.pnl" 1267 121.6541748621629 T 435 1 0 1 -276.5881447735429 135.1064534875106
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_FT101A"
+3 146 "PANEL_REF219" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 436 1 0 1 793.6713098055934 -41.66711230562635
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_MTA102"
+3 147 "PANEL_REF220" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 437 1 0 1 715.0103409695073 75.78892601136701
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131D"
+3 148 "PANEL_REF221" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 438 1 0 1 765.0103409695073 135.788926011367
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131C"
+3 149 "PANEL_REF222" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 439 1 0 1 815.0103409695073 75.78892601136701
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131B"
+3 150 "PANEL_REF223" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/CraneVertical.pnl" 405.9896590304927 277.211073988633 T 440 1 0 1 855.0103409695073 135.788926011367
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV131A"
+3 151 "PANEL_REF224" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Compressor.pnl" 952.5849668959024 673.8132856863924 T 441 1 0 1 98.1344290431399 11.14048004236194
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_CRX181"
+3 152 "PANEL_REF225" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Compressor.pnl" 952.5849668959024 673.8132856863924 T 442 1 0 1 168.7666324411942 11.14048004236198
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_CRX182"
+3 153 "PANEL_REF226" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Compressor.pnl" 952.5849668959024 673.8132856863924 T 443 1 0 1 239.3988358392484 11.14048004236198
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_CRX183"
+3 154 "PANEL_REF227" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AirDryer.pnl" 1271.154233417401 645.3788157268668 T 444 1 0 1 -220.4348374783588 -40.19886337380785
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_DRX181"
+3 155 "PANEL_REF228" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AirDryer.pnl" 1271.154233417401 645.3788157268668 T 445 1 0 1 -149.8026340803044 -41.53219670714122
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_DRX182"
+3 156 "PANEL_REF229" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AirDryer.pnl" 1271.154233417401 645.3788157268668 T 446 1 0 1 -79.17043068225018 -41.53219670714122
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_DRX183"
+3 158 "PANEL_REF231" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 448 1 0 1 1014.527915321914 134.4114897642742
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV113"
+3 159 "PANEL_REF232" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 449 1 0 1 1105.494581988581 134.4114897642742
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV114"
+3 160 "PANEL_REF233" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 450 1 0 1 1014.527915321914 300.0781564309408
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV195"
+3 161 "PANEL_REF234" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 400.6048956325453 266.2607996093081 T 451 1 0 1 1105.494581988581 300.0781564309409
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_UV196"
+3 163 "PANEL_REF237" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentV2Vertical.pnl" 1530 587.5021066684013 T 454 1 0 1 -238.9338557122073 55.39665341759496
+1
+"$dpe_value""GOU_MTA195"
+3 164 "PANEL_REF238" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentV2Vertical.pnl" 1530 587.5021066684013 T 455 1 0 1 -52.33385571220697 52.72998675092822
+1
+"$dpe_value""GOU_MTA196"
+3 165 "PANEL_REF239" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentV2Vertical.pnl" 1530 587.5021066684013 T 456 1 0 1 1.066144287792895 -73.16315062815241
+1
+"$dpe_value""GOU_MTA191"
+3 166 "PANEL_REF240" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/VentV2Vertical.pnl" 1530 587.5021066684013 T 457 1 0 1 90.33281095445955 -73.16315062815238
+1
+"$dpe_value""GOU_MTA192"
+1 167 "SHAPE_GROUP1" -1
+4 0 
+763 765 766 767 
+
+"layoutAlignment" "AlignNone"
+"" ""
+3 168 "PANEL_REF243" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 533 1 0 1 -51.33333333333335 -222
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT165_Am"
+3 169 "PANEL_REF244" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 534 1 0 1 -51.33333333333337 -278.884563763007
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT165_Nm"
+3 170 "PANEL_REF245" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 534 1 0 1 110.8814758488252 323.6167479073154
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT150_Am"
+3 171 "PANEL_REF246" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h_Flow.pnl" -5.792266448856481 298.0375193566731 T 535 1 0 1 110.2148091821586 379.5792285506423
+4
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""GOU_FT150_Nm"
+3 172 "PANEL_REF247" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 1277.510070825017 619.9288683209506 T 543 1 0 1 -75 0.5
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL184"
+3 173 "PANEL_REF248" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 1277.510070825017 619.9288683209506 T 544 1 0 1 490.5 -133.5
+2
+"$b_isDetail""FALSE"
+"$dpe_value""GOU_PSL191"
+0

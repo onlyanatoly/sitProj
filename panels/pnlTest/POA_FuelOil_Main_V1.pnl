@@ -1,0 +1,2349 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 786 N "fon_static" 4
+"$Name"
+"$b_isDetail"
+"$dpe_value"
+"$text"
+E E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+7 1479
+"ELLIPSE1"
+""
+1 1045 175 E E E 1 E 1 E N "cont_static" E N "_Transparent" E E
+ E E
+191 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 3 2 1 E 1 0 1 -1 -16 1 E 1045 175 75 75
+7 1480
+"ELLIPSE2"
+""
+1 1045 175 E E E 1 E 1 E N "cont_static" E N "_Transparent" E E
+ E E
+192 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 1 1 3 2 1 E 1 0 1 -658 159 1 E 1045 175 75 75
+4 886
+"LINE79"
+""
+1 1170 550 E E E 1 E 1 E N "Water" E N {255,255,255} E E
+ E E
+160 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1170 550 1499 550
+1 1722 59 "" 1
+0
+4 339
+"LINE53"
+""
+1 728.0321343004719 534.1982905982911 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+117 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  728.0321343004719 534.1982905982911 1119 534.1982905982911
+4 335
+"LINE49"
+""
+1 912.8211538461536 489.0000000000001 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+113 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  912.8211538461536 489.0000000000001 912.8211538461536 525
+4 318
+"LINE44"
+""
+1 809 391.4285714285714 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+104 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  809 391.4285714285714 809 456.4285714285716
+4 280
+"LINE33"
+""
+1 1456.000288136963 399.0000000000001 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+84 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1456.000288136963 399.0000000000001 1679 399.0000000000001
+1 1481 0 "" 32
+0
+4 83
+"LINE10"
+""
+1 121.1700000000001 174.4482905982909 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  121.1700000000001 174.4482905982909 1682 174.4482905982909
+1 1496 6 "" 2
+14 "backCol" 0 0 N "DieselFuel"
+14 "foreCol" 0 0 N "DieselFuel"
+0
+1 1487 1 "" 34
+0
+4 95
+"LINE11"
+""
+1 397.5469536019535 75.74999999999994 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  397.5469536019535 75.74999999999994 397.5469536019535 174.4482905982909
+1 1497 8 "" 32
+0
+1 1503 9 "" 32
+0
+4 108
+"LINE12"
+""
+1 397.5469536019536 75.74999999999994 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  397.5469536019536 75.74999999999994 1680 75.74999999999994
+1 1509 10 "" 9
+0
+4 112
+"LINE13"
+""
+1 283.9731972480769 398.6386752136752 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  283.9731972480769 398.6386752136752 283.9731972480769 474.6386752136752
+4 113
+"LINE14"
+""
+1 626.3244871794871 75.74999999999991 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  626.3244871794871 75.74999999999991 626.3244871794871 121.75
+4 114
+"LINE15"
+""
+1 626.3244871794871 121.75 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  626.3244871794871 121.75 723.6578205128203 121.75
+4 115
+"LINE16"
+""
+1 723.6578205128203 75.74999999999999 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  723.6578205128203 75.74999999999999 723.6578205128203 121.75
+1 1512 11 "" 32
+0
+1 1518 12 "" 9
+0
+4 126
+"LINE17"
+""
+1 760.9398717948717 174.9807692307691 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+40 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  760.9398717948717 174.9807692307691 760.9398717948717 220.9807692307692
+4 127
+"LINE18"
+""
+1 760.9398717948716 220.9807692307691 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+41 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  760.9398717948716 220.9807692307691 858.2732051282051 220.9807692307691
+4 128
+"LINE19"
+""
+1 858.2732051282049 174.9807692307692 E E E 1 E 1 E N "DieselFuel" E N {255,255,255} E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  858.2732051282049 174.9807692307692 858.2732051282049 220.9807692307691
+1 1522 13 "" 32
+0
+1 1528 14 "" 32
+0
+1 1540 16 "" 32
+0
+1 1534 15 "" 32
+0
+1 1546 17 "" 34
+0
+1 1555 18 "" 34
+0
+4 171
+"LINE20"
+""
+1 159.6060606060606 174.9807692307692 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+49 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  159.6060606060606 174.9807692307692 159.6060606060606 251.9807692307692
+4 172
+"LINE21"
+""
+1 159.6060606060601 251.9807692307692 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+50 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  159.6060606060601 251.9807692307692 1466 251.9807692307692
+4 173
+"LINE22"
+""
+1 1466 174.9807692307692 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+51 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1466 174.9807692307692 1466 251.9807692307692
+4 174
+"LINE23"
+""
+1 1317.111111111111 184 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1317.111111111111 184 1317.111111111111 251.9807692307692
+4 175
+"LINE24"
+""
+1 1317.111111111111 76.46004273504234 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1317.111111111111 76.46004273504234 1317.111111111111 165.9999999999999
+1 1564 19 "" 2
+14 "backCol" 0 0 N "DieselFuel"
+14 "foreCol" 0 0 N "DieselFuel"
+0
+1 1565 20 "" 2
+14 "backCol" 0 0 N "DieselFuel"
+14 "foreCol" 0 0 N "DieselFuel"
+0
+4 178
+"LINE25"
+""
+1 212.5336363636363 251.9807692307692 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+56 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  212.5336363636363 251.9807692307692 212.5336363636363 283
+1 1566 21 "" 2
+14 "backCol" 0 0 N "Emptying"
+14 "foreCol" 0 0 N "Emptying"
+0
+1 1567 22 "" 2
+14 "backCol" 0 0 N "Emptying"
+14 "foreCol" 0 0 N "Emptying"
+0
+1 1568 23 "" 2
+14 "backCol" 0 0 N "Emptying"
+14 "foreCol" 0 0 N "Emptying"
+0
+1 1569 24 "" 2
+14 "backCol" 0 0 N "Emptying"
+14 "foreCol" 0 0 N "Emptying"
+0
+4 184
+"LINE27"
+""
+1 529 320 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+62 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  529 320 1689 320
+1 1570 25 "" 9
+0
+1 1573 26 "" 32
+0
+1 1579 27 "" 34
+0
+1 1588 28 "" 2
+14 "foreCol" 0 0 N "FuelOil"
+14 "backCol" 0 0 N "FuelOil"
+0
+4 204
+"LINE28"
+""
+1 529.0000000000001 320 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+67 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  529.0000000000001 320 529.0000000000001 479.7777777777778
+1 1589 29 "" 32
+0
+1 1595 30 "" 32
+0
+1 1601 31 "" 32
+0
+4 223
+"LINE29"
+""
+1 118.2222222222222 479.7777777777779 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+71 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  118.2222222222222 479.7777777777779 1684 479.7777777777779
+1 1607 32 "" 34
+0
+1 1616 33 "" 32
+0
+1 1622 34 "" 32
+0
+4 246
+"LINE31"
+""
+1 117.9999999999999 398.6386752136753 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+76 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  117.9999999999999 398.6386752136753 283.9731972480768 398.6386752136753
+1 1628 35 "" 32
+0
+1 1634 36 "" 2
+14 "foreCol" 0 0 N "FuelOil"
+14 "backCol" 0 0 N "FuelOil"
+0
+1 1635 37 "" 2
+14 "foreCol" 0 0 N "FuelOil"
+14 "backCol" 0 0 N "FuelOil"
+0
+1 1636 38 "" 32
+0
+1 1642 39 "" 34
+0
+1 1651 40 "" 34
+0
+4 279
+"LINE32"
+""
+1 1456.000288136963 399.0000000000001 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+83 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1456.000288136963 399.0000000000001 1456.000288136963 475.198290598291
+1 1660 41 "" 2
+14 "foreCol" 0 0 N "FuelOil"
+14 "backCol" 0 0 N "FuelOil"
+0
+1 1661 42 "" 2
+14 "foreCol" 0 0 N "FuelOil"
+14 "backCol" 0 0 N "FuelOil"
+0
+1 1662 43 "" 32
+0
+1 1668 44 "" 32
+0
+4 295
+"LINE34"
+""
+1 729.0000000000002 391.9962606837606 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+89 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  729.0000000000002 391.9962606837606 1294.811666666666 391.9962606837606
+4 296
+"LINE35"
+""
+1 1294.811666666666 391.9962606837606 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+90 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1294.811666666666 391.9962606837606 1294.811666666666 471.9962606837605
+6 297
+"RECTANGLE2"
+""
+1 820 350 E E E 1 E 1 E N {0,0,0} E N "fon_static" E E
+ E E
+91 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.7943917378917373 0 1 437.5987749287754 -3.003739316239432 1 E 820 350 1000 440
+4 302
+"LINE36"
+""
+1 912.8211538461536 350 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+93 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  912.8211538461536 350 912.8211538461536 468
+1 1678 46 "" 32
+0
+4 309
+"LINE37"
+""
+1 669 350 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+95 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  669 350 912.8211538461536 350
+4 310
+"LINE38"
+""
+1 669 349.9999999999999 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+96 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  669 349.9999999999999 669 470.0000000000001
+4 312
+"LINE40"
+""
+1 691.3613553113554 366.9526709401705 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+98 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  691.3613553113554 366.9526709401705 691.3613553113554 467.9999999999999
+4 313
+"LINE41"
+""
+1 691.3613553113554 366.9526709401707 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+99 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  691.3613553113554 366.9526709401707 767.3613553113554 366.9526709401707
+4 314
+"LINE42"
+""
+1 767.3613553113554 366.9526709401706 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+100 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  767.3613553113554 366.9526709401706 767.3613553113554 390.0000000000001
+4 315
+"LINE43"
+""
+1 729 380 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+101 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  729 380 729 401.5760683760681
+1 1684 47 "" 2
+14 "foreCol" 0 0 N "Condensate"
+14 "backCol" 0 0 N "Condensate"
+0
+1 1685 48 "" 2
+14 "foreCol" 0 0 N "Vapor"
+14 "backCol" 0 0 N "Vapor"
+0
+1 1686 49 "" 2
+14 "foreCol" 0 0 N "Vapor"
+14 "backCol" 0 0 N "Vapor"
+0
+1 1687 50 "" 2
+31 "transform" 0 0 1 0 1 5.684341886080801e-14 0
+14 "backCol" 0 0 N "FuelOil"
+14 "foreCol" 0 0 N "FuelOil"
+0
+4 321
+"LINE45"
+""
+1 299 480 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+107 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  299 480 299 557
+4 322
+"LINE46"
+""
+1 669 490 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+108 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  669 490 669 679.9999999999999
+4 323
+"LINE47"
+""
+1 691.3613553113555 490 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+109 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  691.3613553113555 490 691.3613553113555 679.9999999999999
+4 324
+"LINE48"
+""
+1 298.9999999999997 556.9999999999999 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+110 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  298.9999999999997 556.9999999999999 638.9999999999999 556.9999999999999
+1 1692 52 "" 32
+0
+4 336
+"LINE50"
+""
+1 800.3928571428572 487.3538461538458 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+114 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  800.3928571428572 487.3538461538458 780.3928571428572 507.3538461538458
+4 337
+"LINE51"
+""
+1 819.5319902319903 487.3538461538458 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+115 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  819.5319902319903 487.3538461538458 839.5319902319903 507.3538461538458
+4 338
+"LINE52"
+""
+1 809.9624236874238 489.3538461538459 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+116 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  809.9624236874238 489.3538461538459 809.9624236874238 525.3538461538458
+4 340
+"LINE54"
+""
+1 1119 480.8017094017088 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+118 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1119 480.8017094017088 1119 534.1982905982911
+4 341
+"LINE55"
+""
+1 728.0321343004719 480.8017094017089 E E E 1 E 1 E N "FuelOil" E N {255,255,255} E E
+ E E
+119 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  728.0321343004719 480.8017094017089 728.0321343004719 534.1982905982911
+1 1674 45 "" 9
+0
+4 342
+"LINE56"
+""
+1 780.3928571428571 507.3538461538458 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+120 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  780.3928571428571 507.3538461538458 780.3928571428571 525
+4 343
+"LINE57"
+""
+1 839.5319902319903 507.3538461538458 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+121 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  839.5319902319903 507.3538461538458 839.5319902319903 525
+4 345
+"LINE59"
+""
+1 905.5714285714283 549 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+123 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  905.5714285714283 549 885.5714285714283 569
+4 346
+"LINE60"
+""
+1 924.7105616605614 549 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+124 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  924.7105616605614 549 944.7105616605614 569
+4 347
+"LINE61"
+""
+1 915.1409951159949 551.0000000000002 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+125 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  915.1409951159949 551.0000000000002 915.1409951159949 684.0000000000002
+4 348
+"LINE62"
+""
+1 885.5714285714282 569.0000000000005 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+126 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  885.5714285714282 569.0000000000005 885.5714285714282 684.0000000000005
+4 349
+"LINE63"
+""
+1 944.7105616605614 569 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+127 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  944.7105616605614 569 944.7105616605614 686
+1 1688 51 "" 9
+0
+4 350
+"LINE64"
+""
+1 639 556.9999999999998 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+128 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  639 556.9999999999998 639 686.1897435897437
+4 351
+"LINE65"
+""
+1 639 686.1897435897437 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+129 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  639 686.1897435897437 1439 686.1897435897437
+1 1704 54 "" 32
+0
+1 1710 55 "" 32
+0
+1 1716 58 "" 1
+0
+4 858
+"LINE66"
+""
+1 669 697 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+140 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  669 697 669 760
+4 859
+"LINE67"
+""
+1 669 760 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+141 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  669 760 1440 760
+4 860
+"LINE68"
+""
+1 691.3613553113555 730 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+142 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  691.3613553113555 730 1440 730
+4 861
+"LINE69"
+""
+1 691.3613553113555 696.1424145299142 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+143 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  691.3613553113555 696.1424145299142 691.3613553113555 729.9999999999999
+4 862
+"LINE70"
+""
+1 809.9624236874238 538.9999999999995 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+144 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  809.9624236874238 538.9999999999995 809.9624236874238 684
+4 863
+"LINE71"
+""
+1 780.3928571428571 539.9999999999991 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+145 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  780.3928571428571 539.9999999999991 780.3928571428571 685.9999999999991
+4 864
+"LINE72"
+""
+1 839.5319902319903 539 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+146 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  839.5319902319903 539 839.5319902319903 684.9999999999991
+1 1724 60 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1725 61 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1726 62 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1727 63 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1728 64 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1729 65 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+4 871
+"LINE73"
+""
+1 1065.680677655678 480.1769230769232 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+153 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1065.680677655678 480.1769230769232 1065.680677655678 525.0000000000002
+4 872
+"LINE74"
+""
+1 1065.680677655678 539.3923076923074 E E E 1 E 1 E N "Emptying" E N {255,255,255} E E
+ E E
+154 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1065.680677655678 539.3923076923074 1065.680677655678 685.9999999999991
+4 873
+"LINE75"
+""
+1 1247.611399248073 695 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+155 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1247.611399248073 695 1247.611399248073 730.1185363247866
+4 874
+"LINE76"
+""
+1 1247.611399248073 587.0000000000001 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+156 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1247.611399248073 587.0000000000001 1247.611399248073 678.0000000000001
+4 875
+"LINE77"
+""
+1 1247.611399248073 587.0000000000001 E E E 1 E 1 E N "Condensate" E N {255,255,255} E E
+ E E
+157 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1247.611399248073 587.0000000000001 1669 587.0000000000001
+6 611
+"RECTANGLE6"
+""
+1 80 130 E E E 1 E 1 E N "cont_text" E N "fon_static" E E
+ E E
+139 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.6285714285714296 0 0.6273418803418781 1442.841919423582 452.8378632478631 1 E 80 130 290 230
+1 1698 53 "" 32
+0
+1 1730 66 "" 34
+0
+4 887
+"LINE80"
+""
+1 1294.811666666666 487.0000000000002 E E E 1 E 1 E N "Vapor" E N {255,255,255} E E
+ E E
+161 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 5 3 2 1 E  1294.811666666666 487.0000000000002 1294.811666666666 550
+1 1739 67 "" 2
+14 "foreCol" 0 0 N "Water"
+14 "backCol" 0 0 N "Water"
+0
+1 1740 68 "" 2
+14 "foreCol" 0 0 N "Water"
+14 "backCol" 0 0 N "Water"
+0
+1 1741 69 "" 2
+14 "foreCol" 0 0 N "Condensate"
+14 "backCol" 0 0 N "Condensate"
+0
+1 1742 70 "" 2
+14 "foreCol" 0 0 N "Condensate"
+14 "backCol" 0 0 N "Condensate"
+0
+1 1743 71 "" 2
+14 "foreCol" 0 0 N "Vapor"
+14 "backCol" 0 0 N "Vapor"
+0
+1 1744 72 "" 2
+14 "foreCol" 0 0 N "Vapor"
+14 "backCol" 0 0 N "Vapor"
+0
+1 1745 73 "" 2
+14 "foreCol" 0 0 N "Condensate"
+14 "backCol" 0 0 N "Condensate"
+0
+1 1746 74 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1747 75 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1748 76 "" 2
+14 "foreCol" 0 0 N "Emptying"
+14 "backCol" 0 0 N "Emptying"
+0
+1 1749 77 "" 1
+0
+1 1755 79 "" 1
+20 "primitiveText" 0 0 1
+3
+LANG:10027 80 К горелкам 64-камерной печи отделения обжига
+LANG:10001 80 К горелкам 64-камерной печи отделения обжига
+LANG:10000 12 Rotated Text
+
+31 "transform" 0 0 1 0 1 -27.50000000000006 -361.487606837607
+0
+1 1756 80 "" 1
+31 "transform" 0 0 1 0 1 -42.94680275192133 -374.6262820512825
+20 "primitiveText" 0 0 1
+3
+LANG:10027 32 Из наружных сетей
+LANG:10001 32 Из наружных сетей
+LANG:10000 12 Rotated Text
+
+0
+1 1757 81 "" 1
+31 "transform" 0 0 1 0 1 -62.9468027519211 -383.6262820512825
+20 "primitiveText" 0 0 1
+3
+LANG:10027 25 В канализацию
+LANG:10001 25 В канализацию
+LANG:10000 12 Rotated Text
+
+0
+1 1758 82 "" 1
+31 "transform" 0 0 1 0 1 -655.0094871794857 -301.3880341880345
+18 "font" 0 0 3
+LANG:10027 34 Arial,-1,13,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,16,5,50,0,0,0,0,0
+LANG:10000 30 Noto Sans,-1,16,5,75,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 2
+3
+LANG:10027 21 Вода на охл.
+LANG:10001 20 Water for condensate
+LANG:10000 12 Rotated Text
+2
+LANG:10027 20 конденсата
+LANG:10001 0 
+
+0
+1 1759 83 "" 1
+31 "transform" 0 0 1 0 1 896.9905128205128 -284.0037393162394
+20 "primitiveText" 0 0 3
+2
+LANG:10027 15 Электро-
+LANG:10001 15 Электро-
+2
+LANG:10027 9 паро-
+LANG:10001 9 паро-
+2
+LANG:10027 18 генератор
+LANG:10001 18 генератор
+
+0
+1 1760 84 "" 1
+20 "primitiveText" 0 0 1
+2
+LANG:10027 10 Пожар
+LANG:10001 4 Fire
+
+0
+1 1761 85 "" 1
+20 "primitiveText" 0 0 2
+2
+LANG:10027 23 В переносную
+LANG:10001 23 В переносную
+2
+LANG:10027 14 емкость
+LANG:10001 14 емкость
+
+31 "transform" 0 0 1 0 1 -13.73782051282114 -4.865900350481525
+0
+1 1762 86 "" 1
+20 "primitiveText" 0 0 1
+2
+LANG:10027 2 Д
+LANG:10001 2 Д
+
+31 "transform" 0 0 1 0 1 70 33
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+0
+1 1763 87 "" 1
+31 "transform" 0 0 1 0 1 66 34
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 3 Т8
+LANG:10001 3 Т8
+
+0
+1 1764 88 "" 1
+31 "transform" 0 0 1 0 1 66 34
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 3 Т7
+LANG:10001 3 Т7
+
+0
+1 1765 89 "" 1
+31 "transform" 0 0 1 0 1 66 34
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 3 В1
+LANG:10001 3 В1
+
+0
+1 1766 90 "" 1
+31 "transform" 0 0 1 0 1 68.44985921749321 32.98194444444482
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т93
+LANG:10001 4 Т93
+
+0
+1 1767 91 "" 1
+31 "transform" 0 0 1 0 1 69.44985921749321 32.98194444444482
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т93
+LANG:10001 4 Т93
+
+0
+1 1768 92 "" 1
+31 "transform" 0 0 1 0 1 70.74329858151441 32.98194444444482
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т94
+LANG:10001 4 Т94
+
+0
+1 1769 93 "" 1
+31 "transform" 0 0 1 0 1 68.67208143971629 32.98194444444482
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т95
+LANG:10001 4 Т95
+
+0
+1 1770 94 "" 1
+31 "transform" 0 0 1 0 1 69.6901013334375 32.98194444444471
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т96
+LANG:10001 4 Т96
+
+0
+1 1771 95 "" 1
+31 "transform" 0 0 1 0 1 68.67208143971629 32.98194444444516
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т95
+LANG:10001 4 Т95
+
+0
+1 1772 96 "" 1
+31 "transform" 0 0 1 0 1 69.44985921749321 32.98194444444482
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т93
+LANG:10001 4 Т93
+
+0
+1 1773 97 "" 1
+31 "transform" 0 0 1 0 1 69.44985921749321 32.98194444444482
+18 "font" 0 0 2
+LANG:10027 34 Arial,-1,12,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 4 Т93
+LANG:10001 4 Т93
+
+0
+1 1774 98 "" 34
+0
+1 1778 99 "" 1
+20 "primitiveText" 0 0 1
+2
+LANG:10027 25 Мазутный узел
+LANG:10001 8 Fuel Oil
+
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 560.2959790209799 -642.6715811965814
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1484 0 "0" 1
+0
+1 1493 1 "1" 1
+0
+1 1500 8 "0" 1
+0
+1 1506 9 "0" 1
+0
+1 1515 11 "0" 1
+0
+1 1525 13 "0" 1
+0
+1 1531 14 "0" 1
+0
+1 1543 16 "0" 1
+0
+1 1537 15 "0" 1
+0
+1 1552 17 "1" 1
+0
+1 1561 18 "1" 1
+0
+1 1576 26 "0" 1
+0
+1 1585 27 "1" 1
+0
+1 1592 29 "0" 1
+0
+1 1598 30 "0" 1
+0
+1 1604 31 "0" 1
+0
+1 1613 32 "1" 1
+0
+1 1619 33 "0" 1
+0
+1 1625 34 "0" 1
+0
+1 1631 35 "0" 1
+0
+1 1639 38 "0" 1
+0
+1 1648 39 "1" 1
+0
+1 1657 40 "1" 1
+0
+1 1665 43 "0" 1
+0
+1 1671 44 "0" 1
+0
+1 1681 46 "0" 1
+0
+1 1695 52 "0" 1
+0
+1 1707 54 "0" 1
+0
+1 1713 55 "0" 1
+0
+1 1720 58 "0" 1
+0
+1 1701 53 "0" 1
+0
+1 1736 66 "1" 1
+0
+1 1753 77 "0" 1
+0
+1 1775 98 "" 8
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1486 0 "" 29
+0
+1 1502 8 "" 29
+0
+1 1508 9 "" 29
+0
+1 1517 11 "" 29
+31 "transform" 0 0 0.9999999999999999 0 0.9999999999999999 0 3.552713678800501e-15
+0
+1 1527 13 "" 29
+31 "transform" 0 0 0.9999999999999999 0 0.9999999999999999 4.547473508864641e-13 1.4210854715202e-14
+0
+1 1533 14 "" 29
+0
+1 1545 16 "" 29
+0
+1 1539 15 "" 29
+0
+1 1578 26 "" 29
+0
+1 1594 29 "" 29
+0
+1 1600 30 "" 29
+0
+1 1606 31 "" 29
+0
+1 1621 33 "" 29
+0
+1 1627 34 "" 29
+0
+1 1633 35 "" 29
+0
+1 1641 38 "" 29
+0
+1 1667 43 "" 29
+0
+1 1673 44 "" 29
+0
+1 1683 46 "" 29
+0
+1 1697 52 "" 29
+0
+1 1709 54 "" 29
+0
+1 1715 55 "" 29
+0
+1 1703 53 "" 29
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1495 1 "" 14
+0
+1 1554 17 "" 14
+0
+1 1563 18 "" 14
+0
+1 1587 27 "" 14
+0
+1 1615 32 "" 14
+0
+1 1650 39 "" 14
+0
+1 1659 40 "" 14
+0
+1 1738 66 "" 14
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 9 1 0 1 67.82145687645692 -101.3268842268838
+1
+"$dpe_value""PT20"
+3 1 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 13 1 0 1 -114.1795190426314 -122.8957264957262
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 6 "PANEL_REF15" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 27 1 0 1 -162.4171794871795 -86.5517094017091
+0
+3 8 "PANEL_REF17" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 30 1 0 1 378.1244871794873 -98.29658119658075
+1
+"$dpe_value""FT18"
+3 9 "PANEL_REF18" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 31 1 0 1 378.1244871794873 -139.629914529914
+1
+"$dpe_value""PT19"
+3 10 "PANEL_REF19" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Valve.pnl" 451.4262436461234 289.5576923076917 T 33 1 0 1 347.3244871794872 -156.9166666666667
+1
+"$Name""KP51"
+3 11 "PANEL_REF20" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 38 1 0 1 1011.478333333333 -204.2678418803419
+1
+"$dpe_value""FT21"
+3 12 "PANEL_REF21" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/DropPress.pnl" 866.25 238.75 T 39 1 0 1 69 -11
+1
+"$Name""$Name"
+3 13 "PANEL_REF22" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 43 1 0 1 725.2123992673992 -102.739010989011
+1
+"$dpe_value""PDT17_1"
+3 14 "PANEL_REF23" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 44 1 0 1 909.2783333333333 -103.4986111111112
+1
+"$dpe_value""AT24_1"
+3 15 "PANEL_REF24" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 45 1 0 1 1249.662948717949 -144.2452991452986
+1
+"$dpe_value""TT15"
+3 16 "PANEL_REF25" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 46 1 0 1 1249.662948717949 -102.9119658119654
+1
+"$dpe_value""PT17"
+3 17 "PANEL_REF26" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 47 1 0 1 1111.974327111215 -124.4341880341878
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 18 "PANEL_REF27" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 48 1 0 1 1111.974327111215 -223.664957264957
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 19 "PANEL_REF28" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 54 1 0 1 1408.41282051282 -86.5517094017091
+0
+3 20 "PANEL_REF29" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 55 1 0 1 1426.466017760898 -88.25
+0
+3 21 "PANEL_REF30" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 58 1 0 1 -283.0214541371597 56.49038461538458
+0
+3 22 "PANEL_REF31" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 59 1 0 1 -335.9490298947355 -17.35656282556079
+0
+3 23 "PANEL_REF32" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 60 1 0 1 821.5560206103146 -119.6449786324787
+0
+3 24 "PANEL_REF33" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 61 1 0 1 970.444909499204 -17.35656282556087
+0
+3 25 "PANEL_REF34" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Valve.pnl" 451.4262436461234 289.5576923076917 T 63 1 0 1 362.0459785760988 88.54093725635659
+1
+"$Name""KP10"
+3 26 "PANEL_REF35" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 64 1 0 1 907.2783333333333 45.14316239316227
+1
+"$dpe_value""FT13"
+3 27 "PANEL_REF36" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 65 1 0 1 1109.974327111215 21.59905691447622
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 28 "PANEL_REF37" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 66 1 0 1 1425.412820512821 156.0000000000001
+0
+3 29 "PANEL_REF38" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 68 1 0 1 441.6800427350428 103.7034188034193
+1
+"$dpe_value""TT7_1"
+3 30 "PANEL_REF39" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 69 1 0 1 441.6800427350428 149.2589743589749
+1
+"$dpe_value""PT7"
+3 31 "PANEL_REF40" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 70 1 0 1 441.6800427350428 193.7034188034193
+1
+"$dpe_value""FT6"
+3 32 "PANEL_REF41" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 73 1 0 1 24.47228370929167 179.8542735042738
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 33 "PANEL_REF42" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 74 1 0 1 214.8000000000001 202.4534188034193
+1
+"$dpe_value""PT8"
+3 34 "PANEL_REF43" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 75 1 0 1 67.82145687645695 199.2513888888888
+1
+"$dpe_value""PT10_2"
+3 35 "PANEL_REF44" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 77 1 0 1 67.82145687645695 121.5520483674676
+1
+"$dpe_value""PT10_1"
+3 36 "PANEL_REF45" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 78 1 0 1 -165.5871794871795 137.6386752136754
+0
+3 37 "PANEL_REF46" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 79 1 0 1 -167.5871794871798 218.777777777778
+0
+3 38 "PANEL_REF47" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 80 1 0 1 247.7440660614455 76.35375776917664
+1
+"$dpe_value""AT24_2"
+3 39 "PANEL_REF48" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 81 1 0 1 1109.974327111215 179.8542735042737
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 40 "PANEL_REF49" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 82 0.9999999999999998 0 1 1114.472283709292 99.85427350427378
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 41 "PANEL_REF50" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 85 1 0 1 1407.635042735043 138
+0
+3 42 "PANEL_REF51" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 86 1 0 1 1407.635042735043 218.7777777777779
+0
+3 43 "PANEL_REF52" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 87 1 0 1 1237.110822974148 154.8069444444444
+1
+"$dpe_value""TT2"
+3 44 "PANEL_REF53" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 88 1 0 1 1237.110822974148 199.2513888888889
+1
+"$dpe_value""PT4"
+3 45 "PANEL_REF54" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/DropPress.pnl" 866.25 238.75 T 92 1 0 1 67.32329059829078 290.4285714285716
+1
+"$Name""$Name"
+3 46 "PANEL_REF55" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 94 1 0 1 722.3552564102564 199.8072649572651
+1
+"$dpe_value""PDT5_1"
+3 47 "PANEL_REF56" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 102 1 0 1 195.8062648105594 174.1153388838408
+0
+3 48 "PANEL_REF57" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 103 1 0 1 173.444909499204 179.1626679436701
+0
+3 49 "PANEL_REF58" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowLeft.pnl" 253.7121794871794 240.875 T 105 1 0 1 765.1862973137972 130.8227748631938
+0
+3 50 "PANEL_REF59" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowUp.pnl" 204.2243589743589 144 T 106 1 0 1 304.3467094017093 245.4047008547011
+0
+3 51 "PANEL_REF60" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/DropPress.pnl" 866.25 238.75 T 111 1 0 1 171.3214285714284 361.25
+1
+"$Name""$Name"
+3 52 "PANEL_REF61" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 112 1 0 1 827.5338278388278 261.4534188034194
+1
+"$dpe_value""PDT5_2"
+3 53 "PANEL_REF62" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 133 1 0 1 1421.247575110901 315.8457264957266
+1
+"$dpe_value""TT29"
+3 54 "PANEL_REF63" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 134 1 0 1 1388.439813196476 436.0440170940175
+1
+"$dpe_value""LT31"
+3 55 "PANEL_REF64" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI.pnl" 90 220 T 135 1 0 1 1389.415454222117 485.6431623931629
+1
+"$dpe_value""TT30"
+3 58 "PANEL_REF67" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 193.4999999999999 305.9999999999999 T 138 1 0 1 1484.865454222117 436.6897435897438
+2
+"$b_isDetail""FALSE"
+"$dpe_value""LSH32"
+3 59 "PANEL_REF68" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Reservoir.pnl" 1161.495256410256 708.5905982905982 T 140 0.9119273504273505 0 1.162375719518576 460.5116753304885 -75.89602092250394
+0
+3 60 "PANEL_REF69" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 147 1 0 1 284.2717338217337 419
+0
+3 61 "PANEL_REF70" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 148 1 0 1 314.8374785050988 419
+0
+3 62 "PANEL_REF71" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 149 1 0 1 343.9768997311945 419
+0
+3 63 "PANEL_REF72" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 150 1 0 1 389.4503052503048 420.5149136577709
+0
+3 64 "PANEL_REF73" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 151 1 0 1 420.0160499336699 420.5149136577709
+0
+3 65 "PANEL_REF74" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 152 1 0 1 449.1554711597656 420.5149136577709
+0
+3 66 "PANEL_REF75" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Crane.pnl" 384.5277162907083 250.1457264957262 T 159 1 0 1 798.7577965298044 252.5694444444443
+2
+"$b_isDetail""$b_isDetail"
+"$dpe_value""$dpe_value"
+3 67 "PANEL_REF76" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 162 1 0 1 906.4128205128208 386
+0
+3 68 "PANEL_REF77" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 163 1 0 1 1204.776840735046 385.71708373211
+0
+3 69 "PANEL_REF78" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 164 1 0 1 1415.466017760898 423.0000000000001
+0
+3 70 "PANEL_REF79" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 165 1 0 1 1204.771717384934 423.0000000000001
+0
+3 71 "PANEL_REF80" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 166 1 0 1 799.25657616587 287.66266794367
+0
+3 72 "PANEL_REF81" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 167 1 0 1 1176.412820512821 596
+0
+3 73 "PANEL_REF82" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 168 1 0 1 1176.412820512821 566
+0
+3 74 "PANEL_REF83" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowRight.pnl" 243.5159623453802 143.9812068661811 T 169 1 0 1 1175.412820512821 522.1897435897437
+0
+3 75 "PANEL_REF84" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 170 1 0 1 570.1255871548817 271.7511294821317
+0
+3 76 "PANEL_REF85" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/ArrowDown.pnl" 475.5282661782662 211 T 171 1 0 1 -196.555090500796 287.6626679436699
+0
+3 77 "PANEL_REF86" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 193.4999999999999 305.9999999999999 T 172 1 0 1 76.84819724807622 -178.7499999999992
+2
+"$b_isDetail""FALSE"
+"$dpe_value""FIRE"
+3 79 "PANEL_REF88" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/LegendVertical.pnl" 130.9999999999988 576.7888888888896 T 184 1 0 1 24.00000000000006 11.19820221362068
+0
+3 80 "PANEL_REF89" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/LegendVertical.pnl" 130.9999999999988 576.7888888888896 T 185 1 0 1 1691 -50.18183760683792
+0
+3 81 "PANEL_REF91" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/LegendVertical.pnl" 130.9999999999988 576.7888888888896 T 187 1 0 1 1691 311.0271367521367
+0
+3 82 "PANEL_REF92" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/LegendVertical.pnl" 130.9999999999988 576.7888888888896 T 188 1 0 1 1719 181.599145299145
+0
+3 83 "PANEL_REF93" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 244.7839548238339 664.3102564102566 T 189 U 
+1
+"$text""$text"
+3 84 "PANEL_REF94" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 190 1 0 1 -27.49999999999849 -585.4008547008547
+1
+"$text""$text"
+3 85 "PANEL_REF95" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 193 1 0 1 81.78363636363706 -338.0354700854701
+1
+"$text""$text"
+3 86 "PANEL_REF96" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 194 1 0 1 1221.87512820513 2.189743589743557
+1
+"$text""$text"
+3 87 "PANEL_REF99" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 197 1 0 1 1222.125128205129 44.80015102994173
+1
+"$text""$text"
+3 88 "PANEL_REF101" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 199 1 0 1 1222.125128205129 76.80015102994184
+1
+"$text""$text"
+3 89 "PANEL_REF102" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 200 1 0 1 1252.310822974148 -135.2025641025635
+1
+"$text""$text"
+3 90 "PANEL_REF103" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 201 1 0 1 1481.532120888785 -203.4045940170942
+1
+"$text""$text"
+3 91 "PANEL_REF104" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 202 1 0 1 1480.532120888785 -282.1823717948722
+1
+"$text""$text"
+3 92 "PANEL_REF105" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 203 1 0 1 1479.238681524764 -363.4015922791183
+1
+"$text""$text"
+3 93 "PANEL_REF106" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 204 1 0 1 1481.309898666562 -506.7340811965813
+1
+"$text""$text"
+3 94 "PANEL_REF107" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 205 1 0 1 1480.291878772841 -606.6515922791183
+1
+"$text""$text"
+3 95 "PANEL_REF108" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 206 1 0 1 -36.20499999999814 -511.077564102564
+1
+"$text""$text"
+3 96 "PANEL_REF109" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 207 1 0 1 -39.37499999999906 -286.8871794871793
+1
+"$text""$text"
+3 97 "PANEL_REF110" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 208 1 0 1 -41.37499999999849 -205.7480769230767
+1
+"$text""$text"
+3 98 "PANEL_REF111" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_Indicatro.pnl" 192.5336363636364 560.7606837606836 T 209 1 0 0.4717492260061918 1204 393.2247393559315
+2
+"$b_IBit""TRUE"
+"$dpe_value""LT31"
+3 99 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 210 1 0 1 185.6642945026198 10.74989316239294
+1
+"$text""$text"
+0

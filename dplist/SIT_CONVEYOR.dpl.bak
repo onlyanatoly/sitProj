@@ -1,0 +1,14 @@
+# ascii dump of database
+
+# DpType
+TypeName
+SIT_CONVEYOR.SIT_CONVEYOR	1#1
+	DIR1	23#2
+	DIR2	23#3
+	LOCAL	23#4
+	DIST	23#5
+	SIM	23#6
+	SIMV	20#7
+	SHOW	23#8
+	ERROR	20#9
+	invalid	23#10

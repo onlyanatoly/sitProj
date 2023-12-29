@@ -1,0 +1,619 @@
+V 14
+3
+LANG:10027 12 Столб_1
+LANG:10001 12 AI_situation
+LANG:10000 16 Messwertbalken_1
+PANEL,-1 -1 585 250 N "fon_static" 2
+"$b_IBit"
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+23 27
+"trendAI"
+""
+1 71.85892278219836 17.59722222222214 E E E 1 E 1 E N "_Transparent" E N "_Window" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  27.52623047450606 12 480.5262304745061 215
+5 "main()
+{
+  float fMin, fMax;
+  time curt;
+  string trendName = \"trendAI\";
+  string curveName = \"curve1\";
+  string curveName2 = \"curve2\";
+    dpGet($dpe_value+\".OUT:_pv_range.._min\", fMin, $dpe_value+\".OUT:_pv_range.._max\", fMax);
+    setValue(trendName, \"connectDirectly\", curveName, $dpe_value+\".OUT:_original.._value\");
+    setValue(trendName, \"connectDirectly\", curveName2, $dpe_value+\".aiOUT:_original.._value\");
+    setValue(trendName, \"manageLegend\", false);
+    setValue(trendName, \"backCol\", \"_Transparent\");
+    setValue(trendName, \"manageCommands\", false);
+    setValue(trendName, \"timeScaleVisibility\", 0, false, 0);
+    setValue (trendName, \"curveMinMax\", curveName, fMin, fMax);
+    curt = getCurrentTime();
+    curt = curt - 5*60;//убираем на 5 минуты назад
+    setValue(trendName, \"timeBegin\", curt);
+}
+" 0
+ E E 1 448 N {0,0,0} 0 0 1 0 1 0 2 0 "curve1" "" 0 2 0 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 "" ""  0 0 100 0 2 1 0 1 N "black"
+0 0 0 0 0 0 0 0
+0 "curve2" "" 0 2 0 0 0 E
+E
+1 0 0 3 2
+2
+LANG:10027 0 
+LANG:10001 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 "" ""  0 0 100 0 2 1 0 1 N "blue"
+0 0 0 0 0 0 0 0
+1 1 "%H:%M:%S" "%x" 0 1 0 0 
+E 1 1 1 0 1 0 20 180
+2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  2
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  100 
+N {0,0,0} 0 0 1 0 1 150 1 5 5 1 2
+0
+2 32
+"maxRange"
+""
+1 496 6.000000000000004 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_pv_range.._max\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT:_pv_range.._max\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", fNewValue );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {Temp1.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 496 6.000000000000004 534 26
+0 2 2 "0s" 0 0 0 192 0 0  496 6.000000000000004 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 ###
+LANG:10001 3 ###
+2 33
+"minRange"
+""
+1 496 199 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists($dpe_value+\".OUT:_pv_range.._min\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT:_pv_range.._min\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", fNewValue );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {Temp1.OUT}
+// DPConfig {:_pv_range.._max}
+// DPType {float}
+// UseDPUnit {FALSE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 496 199 534 219
+0 2 2 "0s" 0 0 0 192 0 0  496 199 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 ###
+LANG:10001 3 ###
+2 34
+"PRIMITIVE_TEXT1"
+""
+1 496 96.15555555555555 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, true) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {Temp1.OUT}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 496 96.15555555555555 534 116
+0 2 2 "0s" 0 0 0 192 0 0  496 96.15555555555555 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 ###
+LANG:10001 3 ###
+2 35
+"PRIMITIVE_TEXT2"
+""
+1 496 128.1555555555556 E E E 1 E 1 E N "blue" E N "_Window" E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_textFieldIn();
+}
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".aiOUT:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".aiOUT:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue)
+{
+  setValue(\"\", \"text\", dpValToString(dp, fNewValue, true) );
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {Temp1.OUT}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 496 128.1555555555556 534 148
+0 2 2 "0s" 0 0 0 192 0 0  496 128.1555555555556 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,17,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 ###
+LANG:10001 3 ###
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+6 8
+"s1"
+""
+1 18 213 E E E 1 E 0 E N "fon_open" E N "fon_open" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setPositionUsatvkaLines();
+}
+
+
+float getMathCal(float fMin, float fMax, float fValue, int sizeY, int pozY)
+{
+  float fTemp, fNewScale;
+  if(fValue>=fMax) fValue=fMax;
+  if(fValue<=fMin) fValue=fMin;
+
+  fTemp = (sizeY * fValue)/(fMax - fMin);
+  fNewScale = pozY - fTemp;
+  return fNewScale;
+}
+
+void setPositionUsatvkaLines()
+{
+  float fMin, fMax, fTemp, fNewScale, fmaxSP, fmaxOP, fminSP, fminOP;
+  int sizeX, sizeY, pozX, pozY, tpozX, tpozY;
+  int delta = 2;//дополнительная погрешность для вверхнего предела
+  getValue(\"s1\", \"size\",sizeX, sizeY);
+  getValue(\"s1\", \"position\",pozX, pozY);
+  dpGet(  $dpe_value+\".OUT:_pv_range.._min\", fMin, $dpe_value+\".OUT:_pv_range.._max\", fMax);
+  dpGet($dpe_value+\".maxSP\", fmaxSP,
+        $dpe_value+\".maxOP\", fmaxOP,
+        $dpe_value+\".minOP\", fminOP,
+        $dpe_value+\".minSP\", fminSP);
+
+  getValue(\"lineHH\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fmaxSP, sizeY, pozY);
+  setValue(\"lineHH\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"lineH\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fmaxOP, sizeY, pozY);
+  setValue(\"lineH\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"lineL\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fminOP, sizeY, pozY);
+  setValue(\"lineL\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"lineLL\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fminSP, sizeY, pozY);
+  setValue(\"lineLL\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"trendAI\", \"size\",sizeX, sizeY);
+    sizeX = sizeX+10;
+    sizeY = 1;
+
+    setValue(\"lineHH\", \"size\",sizeX, sizeY);
+    setValue(\"lineH\", \"size\",sizeX, sizeY);
+    setValue(\"lineL\", \"size\",sizeX, sizeY);
+    setValue(\"lineLL\", \"size\",sizeX, sizeY);
+}
+
+" 0
+ E -1 1 1 0 1 E 0.3 0 1 475.1188034188034 -4.075213675213723 1 E 18 19 48 217
+10 9
+"p3"
+""
+1 18 117 E E E 1 E 1 E N "3_grey" E N "_Transparent" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 1 0 1 E 0.3 0 2.030927835051545 475.1188034188034 -25.46300114547536 0 E 3 18 117
+48 117
+48 20
+ 0
+10 10
+"p2"
+""
+1 18 115 E E E 1 E 1 E N "cont_static" E N "_Transparent" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 0 1 E 0.3 0 2.020408163265306 475.1188034188034 -24.23219954648525 0 E 3 18 117
+18 19
+48 19
+ 0
+4 3
+"lineHH"
+""
+1 496.4339227821984 40.15555555555557 E E E 1 E 1 E N "3_grey" E N "black" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  40.52623047450604 40.15555555555557 489.5262304745061 40.15555555555557
+4 18
+"lineH"
+""
+1 491.1377646937997 48 E E E 1 E 1 E N {0,0,255,100} E N "black" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  42 48 490 48
+4 19
+"lineL"
+""
+1 496.4339227821984 184.1555555555555 E E E 1 E 1 E N {0,0,255,100} E N "black" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  40.52623047450604 184.1555555555555 489.5262304745061 184.1555555555555
+4 20
+"lineLL"
+""
+1 496.4339227821984 191.1555555555556 E E E 1 E 1 E N "3_grey" E N "black" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  40.52623047450604 191.1555555555556 489.5262304745061 191.1555555555556
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+6 29
+"RECTANGLE1"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum;
+bool isSlider;
+bool bShowAlarm;
+bool isPoint;
+
+main()
+{
+ msDPE=$dpe_value;
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=$b_IBit;
+ miNum=1;
+ isSlider = false;
+ isPoint = false;
+ bShowAlarm = false;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ E 3 1 1 0 1 E 0.7300000000000008 0 0.3636363636363636 486.7 24.36363636363638 1 E 10 10 40 43
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

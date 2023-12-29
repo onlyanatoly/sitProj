@@ -1,0 +1,11 @@
+TcId;StartTimeStamp;EndTimeStamp;Duration;Method;Result;ReferenceValue;CurrentValue;LowerBound;UpperBound;Unit;ValueType;ErrMsg;KnownBug;Note;UserData;Location;StackTrace
+Situational_bar_;2022.04.11 15:00:13.049;2022.04.11 15:00:13.049;0;oaUnitInfo;Undefined;;;;;;;Прецедент 'Situational_bar_' выдал сообщение: ;;;;"C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl    Library: C:\Siemens\Automation\WinCC_OA\3.18\scripts\libs\classes\oaTest\OaTest.ctl
+    Line: 233";int OaTest::startAll() at OaTest.ctl:233 | void main() at C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl:53
+Situational_bar_;2022.04.11 15:00:13.051;2022.04.11 15:00:13.052;0.003;oaUnitAssertEqual;Fail;expectedValue;currentValue;;;;;"Прецедент 'Situational_bar_' провален, текущее значение (currentValue) НЕ эквивалентно ожидаемому значению (expectedValue), 
+  StackTrace: 
+	int TstSituationalBar::startTestCase(const string &tcId) at C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl:40
+	int OaTest::startSingle(const string &testCaseId) at OaTest.ctl:263
+	int OaTest::startAll() at OaTest.ctl:234
+	void main() at C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl:53, C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl    Library: C:\Siemens\Automation\WinCC_OA\3.18\scripts\libs\classes\oaTest\OaTest.ctl
+    Line: 350";;;;"C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl    Library: C:\Siemens\Automation\WinCC_OA\3.18\scripts\libs\classes\oaTest\OaTest.ctl
+    Line: 350";int TstSituationalBar::startTestCase(const string &tcId) at C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl:40 | int OaTest::startSingle(const string &testCaseId) at OaTest.ctl:263 | int OaTest::startAll() at OaTest.ctl:234 | void main() at C:\WinCC_OA_Proj\SitProj\scripts\tests\libs\Situational_bar.ctl:53

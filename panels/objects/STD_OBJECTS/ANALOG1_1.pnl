@@ -1,0 +1,129 @@
+V 14
+3
+LANG:10027 18 (БезИмени)
+LANG:10001 8 (NoName)
+LANG:10000 8 (NoName)
+PANEL,-1 -1 1066 497 N "_3DFace" 1
+"$dpe"
+E E E E E 1 -1 -1 0  140 120
+"DPT_ANALOG1"0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+1
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+6 69
+"Border1"
+""
+1 10 42 E E E 1 E 1 E N "STD_border_dark" E N "STD_object_background" E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  1 E 10 10 110 42
+1 70 19 "" 0
+0
+1 71 20 "" 7
+0
+1 72 21 "" 20
+0
+1 73 22 "" 0
+0
+1 74 23 "" 0
+1 "confirm" 1 1 "// SimpleCtrlScriptStart {invalid}
+main(int iType)
+{
+  std_quittScript( $dpe+ \".value\", iType);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$dpe+ \".value\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+ 
+0
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+3 19 "Group10" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/STD_PARTS/ELEMENT_VALUE.pnl" 16 16 T 34 1 0 1 300 150
+1
+"$dpe""$dpe+\".value\""
+3 20 "Group11" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/STD_PARTS/ELEMENT_DEFAULT.pnl" 110 10 T 35 1 0 1 0 10
+1
+"$dpe""$dpe+\".value\""
+3 21 "Group12" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/STD_PARTS/ELEMENT_INVALID.pnl" 110 26 T 36 1 0 1 0 10
+1
+"$dpe""$dpe+\".value\""
+3 22 "Group13" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/STD_PARTS/ELEMENT_VALUE_ERRORFRAME.pnl" 14 14 T 37 1 0 1 16 72
+1
+"$dpe""$dpe+\".value\""
+3 23 "Group15" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/STD_PARTS/ELEMENT_CLICKBOX.pnl" 40 130 T 38 0.6536312849162015 0 0.66 101.6679968076616 293.73
+2
+"$dpe""$dpe"
+"$dpt""ANALOG1"
+0

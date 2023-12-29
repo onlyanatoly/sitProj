@@ -1,0 +1,461 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 265 235 N "_3DFace" 4
+"$b_IBit"
+"$b_isDetail"
+"$b_isDuplAlert"
+"$dpe_value"
+E E E E E 1 -1 -1 0  92.46163331032895 39.90857142857146
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 18
+"RECTANGLE20"
+""
+1 124.2222222222222 179.5825000000001 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E U  1 E 124.2222222222222 179.5825000000001 141.812448418128 47.48605247822302
+2 1
+"unit"
+""
+1 170 80 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit($dpe_value+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E U  0 E 170.2109500805153 79.84444444444441 182 92
+0 2 2 "0s" 0 0 0 192 0 0  170.2109500805153 79.84444444444441 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+6 2
+"p1"
+""
+1 120 100 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"AlertHandl\"
+string lineColor = \"cont_static\";
+
+main()
+{
+  EP_setForeColor();
+  if ($b_isDuplAlert){
+    EP_setColorUstavka();
+  }
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $dpe_value+\".OUT:_alert_hdl.._act_state_color\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+    if (boInvalid) {
+      if (value) {// ремонт
+        setValue(\"\", \"visible\",0);
+      } else {
+        setValue(\"\", \"foreCol\", \"fon_nan\");
+        setValue(\"\", \"visible\",1);
+      }
+
+    } else {
+      if (value) {// ремонт
+        setValue(\"\", \"visible\",0);
+      } else {
+        setValue(\"\", \"foreCol\", sNewColor);
+        if (sNewColor==\"\")
+           setValue(\"\", \"visible\",0);
+        else {
+           setValue(\"\", \"visible\",1);
+           dpSet($dpe_value+\".SHOW\", 1);//тег и значение автоматически включаются при превышении предупредительных и предаварийных значениях аналогового параметра
+         }
+      }
+    }
+
+}
+
+void EP_setColorUstavka()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_alert_hdl.._act_prior\"))
+  {
+    return;
+  }
+
+  dpConnect(\"EP_setColorCBUstavka\",
+            $dpe_value+\".OUT:_alert_hdl.._act_prior\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+}
+
+void EP_setColorCBUstavka(string dpSource, int iPrior, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {//если ремонт или неисправен
+    visibleUstavkaLine(false);
+  } else {
+    visibleUstavkaLine(true);
+    if (iPrior == ALERT_PRIOR_HH) {
+      setValue(\"lineHH\", \"foreCol\", \"fon_alarm\");
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+    } else if (iPrior == ALERT_PRIOR_LL) {
+      setValue(\"lineLL\", \"foreCol\", \"fon_alarm\");
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+    } else if (iPrior == ALERT_PRIOR_L) {
+      setValue(\"lineL\", \"foreCol\", \"fon_warn\");
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+    } else if (iPrior == ALERT_PRIOR_H) {
+      setValue(\"lineH\", \"foreCol\", \"fon_warn\");
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+    } else {
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+    }
+  }
+}
+
+void visibleUstavkaLine(bool isVisible)
+{
+  setValue(\"lineHH\", \"visible\", isVisible);
+  setValue(\"lineH\", \"visible\", isVisible);
+  setValue(\"lineL\", \"visible\", isVisible);
+  setValue(\"lineLL\", \"visible\", isVisible);
+}
+
+" 0
+ E 0 5 3 2 1 E 1.072463768115943 0 0.9517540945896248 -27.85222989721646 -52.13380142518393 0 E 120 100 180 250
+2 3
+"value"
+""
+1 196.3776167471819 167.771794871795 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 -25.99999999999994 -97.44999999999997 0 E 196.2109500805153 168 221 180
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 168 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 4
+"tag"
+""
+1 195.9999999999999 153.4863247863248 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"
+
+main()
+{
+  setValue(\"\", \"text\", getTagName($dpe_value));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.975 -25.99999999999993 -99.39999999999996 0 E 196.2109500805153 153.971794871795 229 166
+0 2 2 "0s" 0 0 0 192 0 0  196.2109500805153 153.971794871795 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 Lxxxxx
+LANG:10001 6 Lxxxxx
+LANG:10000 4 Text
+6 14
+"RECTANGLE1"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+
+main()
+{
+ msDPE=$dpe_value;
+ //msCol=$s_Col;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=$b_IBit;
+ miNum=1;
+ isSlider = false;
+ aiType = 0;
+ bShowAlarm = true;
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ "main(mapping event)
+{
+  if (!$b_isDetail)
+  {
+    openFrontAndDetailPanel($dpe_value);
+  }
+}" 0
+ 3 1 1 0 1 E 2.144927536231886 0 4.326154975407386 79.39414691437781 -0.2199417202952958 1 E 10 10 40 43
+6 15
+"RECTANGLE19"
+""
+1 480 440.6560862785684 E E E 1 E 1 E N "cont_static" E N "cont_static" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"scale\", 1, $dpe_value/100);
+}" 0
+ E 0 1 3 2 1 E 1.759022619590587 0 1.016126519398285 -720.1086351812596 -267.5131685352453 1 E 480 310 490 440
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 16 0 "" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SIM:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_value+\".SIM:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 101.0277777777778 86.88333333333324 T 0 1 0 1 15.19444444444423 -38.76480222263149
+0
+0

@@ -1,0 +1,730 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 400 400 N "_3DFace" 1
+"$UTM_Switch_Sirius"
+E E E E E 1 -1 -1 0  11.99999999999989 80
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+6 1
+"RECTANGLE130"
+""
+1 642 52 E E E 1 E 1 E N {0,0,0} E N {8,169,255} E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_ZN\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_ZN\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_ZN\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.344177354940269 0 1.114285714285714 -848.9618618716523 -36.94285714285714 1 E 642 52 717 87
+2 3
+"PRIMITIVE_TEXT231"
+""
+1 31.2868312669729 33.72010150451339 E E E 1 E 1 E N "White" E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_ZN\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_ZN\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_ZN\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 31.2868312669729 33.72010150451339 97.52647035354796 47.27989849548658
+0 2 2 "0s" 0 0 0 192 0 0  31.2868312669729 33.72010150451339 1
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 18 Заземлено
+6 2
+"RECTANGLE131"
+""
+1 642 52 E E E 1 E 1 E N "Black" E N "Red" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtNaLinii\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtNaLinii\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtNaLinii\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 1.4 0 1.2 -886.8933491897395 -42.90000000000001 1 E 642 52 717 87
+2 4
+"PRIMITIVE_TEXT232"
+""
+1 64.28247419303426 39.66902496606936 E E E 1 E 1 E N "White" E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtNaLinii\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtNaLinii\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtNaLinii\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 14 25.00000000000001 114 56.00000000000001
+0 2 2 "0s" 0 0 0 201 0 0  64.28247419303426 39.66902496606936 2
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 21 Не включать
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 29 работа на линии!
+6 5
+"RECTANGLE133"
+""
+1 642 52 E E E 1 E 1 E N "Red" E N "White" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E 1.4 0 1.2 -886.8933491897395 -42.89999999999998 1 E 642 52 717 87
+2 6
+"PRIMITIVE_TEXT233"
+""
+1 64.28247419303415 39.66902496606946 E E E 1 E 1 E N "White" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 14 25.00000000000006 114 56.00000000000006
+0 2 2 "0s" 0 0 0 201 0 0  64.28247419303415 39.66902496606946 2
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 21 Не включать
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 29 работа на линии!
+2 7
+"PRIMITIVE_TEXT235"
+""
+1 64.18615707803923 40.50000000000006 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtLudi\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 17 26.00000000000006 111 57.00000000000006
+0 2 2 "0s" 0 0 0 201 0 0  64.18615707803923 40.50000000000006 2
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 21 Не включать
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 26 работают люди!
+6 8
+"RECTANGLE135"
+""
+1 642 52 E E E 1 E 1 E N "Red" E N "White" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E 1.4 0 1.36055982805561 -886.8933491897395 -54.05890804986491 1 E 642 52 717 87
+2 9
+"PRIMITIVE_TEXT236"
+""
+1 64.28247419303415 36.85922797509618 E E E 1 E 1 E N "White" E N "_Window" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 14 22.00000000000001 114 53.00000000000001
+0 2 2 "0s" 0 0 0 201 0 0  64.28247419303415 36.85922797509618 2
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 21 Не включать
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 29 работа на линии!
+2 10
+"PRIMITIVE_TEXT237"
+""
+1 64.18615707803923 33.69020300902675 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 22 19.00000000000001 106 50.00000000000001
+0 2 2 "0s" 0 0 0 201 0 0  64.18615707803923 33.69020300902675 2
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 19 Работа под
+1
+LANG:10027 47 Arial,-1,12,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 23 напряжением.
+2 11
+"PRIMITIVE_TEXT238"
+""
+1 64.03498443730797 54.19020300902675 E E E 1 E 1 E N "Red" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {valid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_Sirius+\".Internal_variables.Plakat_RbtPodNapr\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E U  0 E 15 49.00000000000001 113 60.00000000000001
+0 2 2 "0s" 0 0 0 201 0 0  64.03498443730797 54.19020300902675 1
+1
+LANG:10027 40 Arial,-1,9,5,50,0,0,0,0,0,Обычный
+0 1
+LANG:10027 38 повторно не включать
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+1 8 "SHAPE_GROUP122" -1
+4 0 
+8 9 10 11 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 9 "SHAPE_GROUP123" -1
+2 0 
+2 4 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 10 "SHAPE_GROUP124" -1
+3 0 
+5 6 7 
+
+"layoutAlignment" "AlignNone"
+"" ""
+1 11 "SHAPE_GROUP125" -1
+2 0 
+1 3 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

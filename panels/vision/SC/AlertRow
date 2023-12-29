@@ -1,0 +1,682 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 1052 155 N {255,255,255} 0
+E E E E E 1 -1 -1 0  60 60
+""0  1
+E E 4
+"CBRef" "0"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+2 5
+"Text1"
+""
+1 977 15 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 977 15 983 30
+0 2 2 "0s" 0 0 0 192 0 0  977 15 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 1 /
+LANG:10001 1 /
+LANG:10000 1 /
+2 14
+"ar_currentLine"
+""
+1 934 15 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 934 15 976 31
+0 2 2 "3d" 3 0 0 66 0 0  934 15 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 1 0
+LANG:10001 1 0
+LANG:10000 1 0
+2 15
+"as_lineCount"
+""
+1 984 15 E E E 1 E 1 E N "_3DText" E N "_Transparent" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 0 1 E U  0 E 984 15 1026 31
+0 2 2 "3d" 3 0 0 64 0 0  984 15 1
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 1 0
+LANG:10001 1 0
+LANG:10000 1 0
+13 3
+"Button1"
+""
+1 956 27 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  956 27 1006 51
+
+T 
+3
+LANG:10027 2 AS
+LANG:10001 2 AS
+LANG:10000 2 AS
+"main()
+{
+  ModuleOn(\"PVSS\", 20, 20, 1000, 800, 0, 0, \"\");
+  RootPanelOnModule(\"vision/SC/AlertScreen\", \"\", \"PVSS\", makeDynString());
+}" 0
+ E E E
+25 11
+"table"
+"AlertRow"
+1 18 24.00000000000001 E E E 1 E 1 E N "_3DText" E N "_3DFace" E "// SimpleCtrlScriptStart {valid}
+// SimpleCtrlScript {alertConfirm}
+// dp {dpid}
+// time {time}
+// count {count}
+// confirmable {ackable}
+// SimpleCtrlScriptEnd
+main()
+{
+   bool confirmable, valid, stopped;
+   int i, count, start, end;
+   string dpStr, k_dpStr;
+   time t;
+
+   getValue( \"\", \"stop\", stopped );
+   if ( !stopped )
+     setValue(\"\", \"stop\", true );
+   getValue( \"\", \"lineRangeVisible\", start, end );
+   setValue( \"\", \"sortPart\", start, end, \"time\", \"count\" );
+   for( i = start; i <= end; i++ )
+   {
+     setValue( \"\", \"currentCellCAC\", i, 0 );
+     getValue( \"\", \"valid\", valid );
+     if ( valid )
+     {
+        setValue( \"\", \"currentColumnCAC\", \"dpid\" );
+        getValue( \"\", \"cellValueCAC\", dpStr );
+        k_dpStr = dpSubStr(dpStr, DPSUB_DP_EL_CONF_DET);
+        if (dpSubStr(dpStr, DPSUB_CONF_DET) == dpSubStr(dpStr, DPSUB_CONF))
+          k_dpStr = k_dpStr + \".\";
+        k_dpStr+= \"._ack_state\";
+        setValue( \"\", \"currentColumnCAC\", \"time\" );
+        getValue( \"\", \"cellValueCAC\", t );
+        setValue( \"\", \"currentColumnCAC\", \"count\" );
+        getValue( \"\", \"cellValueCAC\", count );
+        setValue( \"\", \"currentColumnCAC\", \"ackable\" );
+        getValue( \"\", \"cellValueCAC\", confirmable );
+        if ( confirmable )
+          alertSet( t, count, k_dpStr, DPATTR_ACKTYPE_MULTIPLE );
+     }
+   }
+   if( !stopped )
+     setValue( \"\", \"stop\", false );
+   setValue( \"\", \"sortUndo\", 0 );
+}
+" 0
+
+ E E
+11 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  18 22.00000000000001 953 132
+"dyn_bool g_colVis;           // holds the flag wheter an optional column is visible or not
+string   g_connectId;        // holds id of current query
+dyn_int  g_counterConnectId; // holds numbers of Id's
+time     g_timeLastUpdate;   // holds time of the last update
+string   g_dpCommentFilter;  // store filter
+bool     g_showInternals;
+unsigned g_maxClosedLines;   // max num of lines to be queried by closed protocoll
+unsigned g_state;            // alert-state filter
+
+int      g_busyThread;    // id of thread, which shows busyness
+
+int      g_maxLines;      // num of max lines in open protocoll
+
+// TI 14075 (discarding pending values)
+int        g_discardThread;
+time       g_discardStart;
+bool       g_discarded;
+const time MINCB_TIME = 2;
+const time MAXCB_TIME = 5;
+
+//-------------------------------------------------------------------------
+
+main()
+{
+  as_init();
+}
+" 0
+E 0 0 1 22 1 "_abbr" 1 1 0 "s" 3
+LANG:10027 22 Кратк.обозн.
+LANG:10001 10 short sign
+LANG:10000 11 Kurzzeichen
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+24 "_prior" 1 1 0 "s" 3
+LANG:10027 18 Приоритет
+LANG:10001 8 priority
+LANG:10000 10 Priorität
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+24 "timeStr" 14 1 0 "s" 3
+LANG:10027 10 Время
+LANG:10001 4 time
+LANG:10000 4 Zeit
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+168 "dpElement" 14 0 0 "s" 3
+LANG:10027 17 Элемент DP
+LANG:10001 10 DP element
+LANG:10000 10 DP-Element
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+168 "dpComment" 16 1 0 "s" 3
+LANG:10027 24 Точка данных 
+LANG:10001 10 data point
+LANG:10000 10 Datenpunkt
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+192 "_text" 14 1 0 "s" 3
+LANG:10027 23 Текст аларма
+LANG:10001 10 alert text
+LANG:10000 9 Meldetext
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+168 "direction" 4 1 0 "s" 3
+LANG:10027 22 Направление
+LANG:10001 9 direction
+LANG:10000 8 Richtung
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "_value" 5 1 0 "s" 3
+LANG:10027 16 Значение
+LANG:10001 5 value
+LANG:10000 4 Wert
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+64 "ack" 3 1 0 "s" 3
+LANG:10027 24 Квитирование
+LANG:10001 15 acknowledgement
+LANG:10000 11 Quittierung
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+48 "commentStr" 4 0 0 "s" 3
+LANG:10027 22 комментарий
+LANG:10001 7 comment
+LANG:10000 9 Kommentar
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "_ack_time" 9 1 0 "s" 3
+LANG:10027 35 время квитирования
+LANG:10001 20 acknowledgement time
+LANG:10000 11 Quitt.-Zeit
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+112 "_partner" 4 0 0 "s" 3
+LANG:10027 27 время партнера
+LANG:10001 12 partner time
+LANG:10000 12 Partner-Zeit
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "_comment" 1 1 0 "s" 3
+LANG:10027 33 номер комментария
+LANG:10001 17 commentary number
+LANG:10000 16 Kommentar-Anzahl
+"main(int row)
+{
+  atime  ti; 
+  string sAlertDp; 
+  string sClass; 
+  bool   bArchiv;
+  string sWarningText;
+   
+
+  // Alert with a class which is not saving the alert should not be commented
+  getValue( \"\", \"cellValueRC\", row, \"time\", ti );
+  sAlertDp = dpSubStr( getAIdentifier( ti ), DPSUB_SYS_DP_EL_CONF_DET );
+  dpGet( sAlertDp + \"._class\", sClass );
+  dpGet( sClass + \":_alert_class.._archive\", bArchiv );
+
+  // Give a comment to a DP from another system is not allowed
+  if( dpSubStr( sAlertDp, DPSUB_SYS ) != getSystemName() )
+  {
+    sWarningText = getCatStr( \"sc\", \"noCommentSystem\" );
+    ChildPanelOnCentralModal(\"vision/messageWarning\", \"\",
+      makeDynString( \"$1:\" + sWarningText ));
+  }
+  else if( !bArchiv ) 
+  { 
+    // Alert will not be saved 
+    sWarningText = getCatStr( \"sc\", \"noComment\" );
+    strreplace ( sWarningText, \"§\", \"\\n\" );  
+    ChildPanelOnCentralModal(\"vision/messageWarning\", \"\", 
+      makeDynString( \"$1:\" + sWarningText )); 
+  }
+  else
+  {
+    // Alert will be saved and system is ok
+    as_commentAction(row, \"vision/SC/AS_detail\");
+  }
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+24 "_panel" 1 1 0 "s" 3
+LANG:10027 1 >
+LANG:10001 1 >
+LANG:10000 1 >
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+24 "detail" 1 1 0 "s" 3
+LANG:10027 3 ...
+LANG:10001 3 ...
+LANG:10000 3 ...
+"main(int row)
+{
+  as_detailAction(row, \"vision/SC/AS_detail\");
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+24 "ackable" 1 0 0 "s" 3
+LANG:10027 22 квитируемый
+LANG:10001 15 acknowledgeable
+LANG:10000 11 quittierbar
+E
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+24 "oldest_ack" 4 0 0 "s" 3
+LANG:10027 15 старейш.
+LANG:10001 6 oldest
+LANG:10000 8 älteste
+E
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "_ack_user" 4 0 0 "s" 3
+LANG:10027 24 Пользователь
+LANG:10001 4 User
+LANG:10000 4 User
+"main(int row, string col)
+{
+  as_cellAction(row, col);
+}" 0
+
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "partner" 4 0 0 "s" 3
+LANG:10027 14 партнер
+LANG:10001 7 partner
+LANG:10000 7 Partner
+E
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "dpid" 4 0 0 "s" 3
+LANG:10027 4 dpid
+LANG:10001 4 dpid
+LANG:10000 4 dpid
+E
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "count" 4 0 0 "s" 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+E
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+56 "time" 14 0 0 "s" 3
+LANG:10027 10 время
+LANG:10001 4 time
+LANG:10000 4 time
+E
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+168 
+26 26 "" 1 3
+LANG:10027 2 #1
+LANG:10001 0 
+LANG:10000 0 
+8 16
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 0 0 1 1 7
+1 0
+13 12
+"ar_up"
+""
+1 1009 18 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  1009 18 1039 35
+
+P 
+4294967295
+"pictures/up_en.gif"
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+"// up
+
+main()
+{
+  int line, count;
+  
+  getValue(\"table\", \"lineVisible\", line,
+                    \"lineCount\", count);
+
+  if ( line == -1 ) line = count - 1;  // -1 means last line
+
+  if ( line > 0  )
+    setMultiValue(\"table\", \"lineVisible\", line - 1,
+                  \"ar_currentLine\", \"text\", line);  // \"current line\" indicator is 1 based
+}" 0
+ E E E
+13 13
+"ar_down"
+""
+1 1009 33 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  1009 33 1039 50
+
+P 
+4294967295
+"pictures/down_en.gif"
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+"// down
+
+main()
+{
+  int lines, line;
+  
+  getValue(\"table\", \"lineCount\", lines,
+                    \"lineVisible\", line);
+
+  if ( line == -1 ) line = lines - 1;  // -1 means last line
+
+  if ( line < (lines - 1) )
+    setMultiValue(\"table\", \"lineVisible\", line + 1,
+                  \"ar_currentLine\", \"text\", line + 1 + 1);   // \"current line\" -indicator is 1 based
+}" 0
+ E E E
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+0

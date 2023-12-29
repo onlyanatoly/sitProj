@@ -1,0 +1,618 @@
+V 14
+3
+LANG:10027 12 Столб_1
+LANG:10001 12 AI_situation
+LANG:10000 16 Messwertbalken_1
+PANEL,-1 -1 398 241 N "fon_static" 4
+"$b_IBit"
+"$b_isDetail"
+"$b_isDuplAlert"
+"$dpe_value"
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E "#uses \"Situational_util\"" 0
+ 4
+"CBRef" "0"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 6 Layer1
+LANG:10001 6 Layer1
+7 32
+"p2"
+""
+1 176.6846656611362 170.5803418803416 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 0.3153343388637921 -3.580341880341643 1 E 177.0376068376068 118.0803418803417 2.5 52.5
+6 14
+"p1"
+""
+1 120 100 E E E 1 E 1 E N {0,0,0} E N "_Transparent" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"AlertHandl\"
+string lineColor = \"cont_static\";
+
+main()
+{
+  EP_setForeColor();
+  if ($b_isDuplAlert){
+    EP_setColorUstavka();
+  }
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $dpe_value+\".OUT:_alert_hdl.._act_state_color\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+    if (boInvalid) {
+      if (value) {// ремонт
+        setValue(\"\", \"visible\",0);
+      } else {
+        setValue(\"\", \"foreCol\", \"fon_nan\");
+        setValue(\"\", \"visible\",1);
+      }
+
+    } else {
+      if (value) {// ремонт
+        setValue(\"\", \"visible\",0);
+      } else {
+        setValue(\"\", \"foreCol\", sNewColor);
+        if (sNewColor==\"\")
+           setValue(\"\", \"visible\",0);
+        else {
+           setValue(\"\", \"visible\",1);
+           dpSet($dpe_value+\".SHOW\", 1);//тег и значение автоматически включаются при превышении предупредительных и предаварийных значениях аналогового параметра
+         }
+      }
+    }
+
+}
+
+void EP_setColorUstavka()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT:_alert_hdl.._act_prior\"))
+  {
+    return;
+  }
+
+  dpConnect(\"EP_setColorCBUstavka\",
+            $dpe_value+\".OUT:_alert_hdl.._act_prior\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+}
+
+void EP_setColorCBUstavka(string dpSource, int iPrior, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {//если ремонт или неисправен
+    visibleUstavkaLine(false);
+  } else {
+    visibleUstavkaLine(true);
+    if (iPrior == ALERT_PRIOR_HH) {
+      setValue(\"lineHH\", \"foreCol\", \"fon_alarm\");
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+    } else if (iPrior == ALERT_PRIOR_LL) {
+      setValue(\"lineLL\", \"foreCol\", \"fon_alarm\");
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+    } else if (iPrior == ALERT_PRIOR_L) {
+      setValue(\"lineL\", \"foreCol\", \"fon_warn\");
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+    } else if (iPrior == ALERT_PRIOR_H) {
+      setValue(\"lineH\", \"foreCol\", \"fon_warn\");
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+    } else {
+      setValue(\"lineHH\", \"foreCol\", lineColor);
+      setValue(\"lineH\", \"foreCol\", lineColor);
+      setValue(\"lineL\", \"foreCol\", lineColor);
+      setValue(\"lineLL\", \"foreCol\", lineColor);
+    }
+  }
+}
+
+void visibleUstavkaLine(bool isVisible)
+{
+  setValue(\"lineHH\", \"visible\", isVisible);
+  setValue(\"lineH\", \"visible\", isVisible);
+  setValue(\"lineL\", \"visible\", isVisible);
+  setValue(\"lineLL\", \"visible\", isVisible);
+}
+
+" 0
+ E 0 5 3 2 1 E 1.088235294117648 0 0.8200000000000002 30.11764705882342 -29.00000000000001 0 E 120 100 180 250
+2 16
+"value"
+""
+1 185.7666666666666 77.57820512820531 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".OUT\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            $dpe_value+\".OUT\",
+            $dpe_value+\".OUT:_online.._invalid\",
+            $dpe_value+\".REP\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(\"\", \"text\", \"\");
+  } else {
+    setValue(\"\", \"text\", getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 1 0 1 E U  0 E 185.6 77.93974358974366 210 90
+0 2 2 "0s" 0 0 0 192 0 0  185.6 77.93974358974366 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 5 xx.xx
+LANG:10001 5 xx.xx
+LANG:10000 4 Text
+2 22
+"tag"
+""
+1 188.1666666666666 24.3529914529915 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagName($dpe_value));
+}
+" 0
+ E 0 1 1 0 1 E 1 0 0.9750000000000003 -2.400000000000006 39.97096153846152 0 E 188 24.83846153846165 224 37
+0 2 2 "0s" 0 0 0 192 0 0  188 24.83846153846165 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 6 PTxxxx
+LANG:10001 6 PTxxxx
+LANG:10000 4 Text
+6 33
+"s1"
+""
+1 40 130 E E E 1 E 1 E N {0,0,0} E N "cont_text" E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setPositionUsatvkaLines();
+  setVisibleTags();
+}
+
+void setVisibleTags()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SHOW:_online.._value\"))
+  {
+    return;
+  }
+  dpConnect(\"setVisibleTagsCB\",
+            $dpe_value+\".SHOW:_online.._value\");
+}
+
+void setVisibleTagsCB(string dp, bool boNewValue)
+{
+  if (!$b_isDetail)
+  {
+  setValue(\"tag\", \"visible\", boNewValue);
+  setValue(\"value\", \"visible\", boNewValue);
+  setValue(\"unit\", \"visible\", boNewValue);
+  }
+  else//если во вкладке детальной панели то не отображаем никогда
+  {
+  setValue(\"tag\", \"visible\", false);
+  setValue(\"value\", \"visible\", false);
+  setValue(\"unit\", \"visible\", false);
+  }
+}
+
+float getMathCal(float fMin, float fMax, float fValue, int sizeY, int pozY)
+{
+  float fTemp, fNewScale;
+  if(fValue>=fMax) fValue=fMax;
+  if(fValue<=fMin) fValue=fMin;
+
+  fTemp = (sizeY * fValue)/(fMax - fMin);
+  fNewScale = pozY - fTemp;
+  return fNewScale;
+}
+
+void setPositionUsatvkaLines()
+{
+  float fMin, fMax, fTemp, fNewScale, fvalHH, fvalH, fvalLL, fvalL;
+  int sizeX, sizeY, pozX, pozY, tpozX, tpozY;
+  int delta = 0;//дополнительная погрешность для вверхнего предела
+  getValue(\"p2\", \"size\",sizeX, sizeY);
+  getValue(\"p2\", \"position\",pozX, pozY);
+  dpGet(  $dpe_value+\".OUT:_pv_range.._min\", fMin, $dpe_value+\".OUT:_pv_range.._max\", fMax);
+  dpGet($dpe_value+\".HH\", fvalHH,
+        $dpe_value+\".H\", fvalH,
+        $dpe_value+\".L\", fvalL,
+        $dpe_value+\".LL\", fvalLL);
+
+  getValue(\"lineHH\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalHH, sizeY, pozY);
+  setValue(\"lineHH\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"lineH\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalH, sizeY, pozY);
+  setValue(\"lineH\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"lineL\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalL, sizeY, pozY);
+  setValue(\"lineL\", \"position\",tpozX, fTemp+delta);
+
+  getValue(\"lineLL\", \"position\",tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalLL, sizeY, pozY);
+  setValue(\"lineLL\", \"position\",tpozX, fTemp+delta);
+
+
+    sizeX = 5;
+    sizeY = 1;
+
+    setValue(\"lineHH\", \"size\",sizeX, sizeY);
+    setValue(\"lineH\", \"size\",sizeX, sizeY);
+    setValue(\"lineL\", \"size\",sizeX, sizeY);
+    setValue(\"lineLL\", \"size\",sizeX, sizeY);
+}
+
+" 0
+ E 0 1 3 2 1 E 0.7 0 0.4103703703703602 145.8529411764706 112.5185185185198 1 E 40 130 50 140
+2 36
+"unit"
+""
+1 188.1666666666666 52.15555555555555 E E E 1 E 1 E N "cont_text" E N "_Transparent" E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  setValue(\"\", \"text\", getTagUnit($dpe_value+\".OUT\"));
+}
+
+" 0
+ E 0 1 1 0 1 E 1 0 0.9750000000000008 -2.400000000000006 40.66602564102559 0 E 188 52.6410256410257 200 65
+0 2 2 "0s" 0 0 0 192 0 0  188 52.6410256410257 1
+3
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 26 Arial,-1,11,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,11,5,50,0,0,0,0,0
+0 3
+LANG:10027 2 xx
+LANG:10001 2 xx
+LANG:10000 4 Text
+0
+LAYER, 1 
+2
+LANG:10027 6 Layer2
+LANG:10001 6 Layer2
+4 3
+"lineHH"
+""
+1 180 74.15555555555557 E E E 1 E 1 E N "3_grey" E N "black" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  175.6 74 179.6 74
+4 18
+"lineH"
+""
+1 179.6144083662638 82.15555555555557 E E E 1 E 1 E N "3_grey" E N "black" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  175.6 82.15555555555557 179.6 82.15555555555557
+4 19
+"lineL"
+""
+1 179.6615384615384 152.1555555555555 E E E 1 E 1 E N "3_grey" E N "black" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  175.6 152.1555555555555 179.6 152.1555555555555
+4 20
+"lineLL"
+""
+1 179.6615384615384 159.1555555555556 E E E 1 E 1 E N "3_grey" E N "black" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 2 0 1 E  175.6 159.1555555555556 179.6 159.1555555555556
+1 37 0 "" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 6 Layer3
+LANG:10001 6 Layer3
+6 29
+"RECTANGLE1"
+""
+1 10 10 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"#uses \"Situational_bar\"
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+int pointX, pointY;
+int s1BackSizeX, s1BackSizeY;
+
+main()
+{
+ msDPE=$dpe_value;
+ msCol=\"fon_open\";
+ miDirection=1;
+ mbIBit=$b_IBit;
+ miNum=1;
+ miNum2=1;
+ isSlider = false;
+ aiType = 1;
+ bShowAlarm = true;
+ getValue(\"s1\", \"position\", pointX, pointY);
+ getValue(\"p2\", \"size\", s1BackSizeX, s1BackSizeY);
+ setValue(\"\",\"fill\",\"[solid]\");
+ STD_bar_AI();
+}
+
+" 0
+ "main(mapping event)
+{
+  if (!$b_isDetail)
+  {
+    openFrontAndDetailPanel($dpe_value);
+  }
+}" 0
+ 3 1 1 0 1 E 2.176470588235295 0 3.727272727272729 138.9411764705882 15.72727272727272 1 E 10 10 40 43
+0
+LAYER, 3 
+2
+LANG:10027 6 Layer4
+LANG:10001 6 Layer4
+0
+LAYER, 4 
+2
+LANG:10027 6 Layer5
+LANG:10001 6 Layer5
+0
+LAYER, 5 
+2
+LANG:10027 6 Layer6
+LANG:10001 6 Layer6
+0
+LAYER, 6 
+2
+LANG:10027 6 Layer7
+LANG:10001 6 Layer7
+0
+LAYER, 7 
+2
+LANG:10027 6 Layer8
+LANG:10001 6 Layer8
+0
+3 0 "imitFigRef" -1
+"layoutAlignment" "AlignNone"
+"initCB" "main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+\".SIM:_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"fon_nan\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $dpe_value+\".SIM:_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"fon_nan\");
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+"
+"" ""
+"objects/Situational/subsituational/imitPanel.pnl" 101.0277777777778 86.88333333333324 T 25 1 0 1 65.80000000000001 -26.60000000000001
+0
+0

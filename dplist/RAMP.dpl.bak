@@ -1,0 +1,9 @@
+# ascii dump of database
+
+# DpType
+TypeName
+SIT_RAMP.SIT_RAMP	1#1
+	SECTION	21#2
+	STATION	21#3
+	MODE	1#4
+		ST1	21#5

@@ -1,0 +1,88 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1168 844 N "fon_static" 0
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+NC
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 1 0 "" 2
+0
+1 4 1 "" 2
+0
+1 7 2 "" 2
+0
+1 10 3 "" 2
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/Quality/TrendShuhart.pnl" 50 30 T 1659 U 
+1
+"$dp""1Param"
+3 1 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/Quality/TrendShuhart.pnl" 50 30 T 1660 1 0 1 569.3408417058894 0
+1
+"$dp""1CL"
+3 2 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/Quality/TrendShuhart.pnl" 50 30 T 1661 1 0 1 2 411
+1
+"$dp""1LCL"
+3 3 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/Quality/TrendShuhart.pnl" 50 30 T 1662 1 0 1 572 411
+1
+"$dp""1UCL"
+0

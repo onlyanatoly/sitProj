@@ -1,0 +1,157 @@
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+GOU_CV155	SIT_REG	12146
+GOU_CV159	SIT_REG	12147
+GOU_CV152	SIT_REG	12168
+GOU_CV101H	SIT_REG	12181
+GOU_CV101G	SIT_REG	12182
+GOU_CV101F	SIT_REG	12183
+
+# Aliases/Comments
+AliasId	AliasName	CommentName
+GOU_CV155.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+GOU_CV159.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+GOU_CV152.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+GOU_CV101H.	""	lt:2 LANG:10027 "Регулятор@%s@" LANG:10001 "@%s@" 
+GOU_CV101H.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+GOU_CV101G.	""	lt:2 LANG:10027 "Регулятор@%s@" LANG:10001 "@%s@" 
+GOU_CV101G.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+GOU_CV101F.	""	lt:2 LANG:10027 "Регулятор@%s@" LANG:10001 "@%s@" 
+GOU_CV101F.OUT	""	lt:2 LANG:10027 "@@%" LANG:10001 "@@%" 
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	GOU_CV155.OUT	SIT_REG	20	0x8300000000100101	14.02.2022 12:50:04.028
+EV (2)/0	GOU_CV155.SHOW	SIT_REG	1	0x8300000000300101	25.05.2022 12:53:38.373
+UI (2)/0	GOU_CV155.REG	SIT_REG	0	0x8300000000100101	12.05.2022 13:03:13.083
+UI (1)/0	GOU_CV155.MEST	SIT_REG	0	0x8300000000100101	14.02.2022 10:52:35.791
+UI (1)/0	GOU_CV155.CV	SIT_REG	35	0x8300000000000101	14.02.2022 10:52:43.940
+UI (1)/0	GOU_CV155.invalid	SIT_REG	0	0x8300000000100101	14.02.2022 13:06:31.530
+EV (2)/0	GOU_CV159.OUT	SIT_REG	68	0x8300000000300101	11.02.2022 07:05:53.836
+EV (2)/0	GOU_CV159.SHOW	SIT_REG	1	0x8300000000300101	25.05.2022 12:53:38.373
+UI (2)/0	GOU_CV159.REG	SIT_REG	0	0x8300000000100101	12.05.2022 13:03:13.083
+UI (1)/0	GOU_CV159.MEST	SIT_REG	0	0x8300000000100101	17.02.2022 10:03:03.728
+UI (1)/0	GOU_CV159.CV	SIT_REG	68	0x8300000000300101	11.02.2022 07:05:53.836
+EV (2)/0	GOU_CV159.invalid	SIT_REG	0	0x8300000000000101	11.02.2022 07:05:53.836
+EV (2)/0	GOU_CV152.OUT	SIT_REG	35	0x8300000000100101	23.05.2022 10:43:33.781
+UI (2)/0	GOU_CV152.SIM	SIT_REG	0	0x8300000000100101	23.05.2022 10:43:33.781
+EV (2)/0	GOU_CV152.SHOW	SIT_REG	1	0x8300000000300101	25.05.2022 12:53:38.373
+UI (2)/0	GOU_CV152.REG	SIT_REG	1	0x8300000000300101	23.05.2022 11:14:18.342
+ASC (1)/0	GOU_CV152.MEST	SIT_REG	0	0x8300000000000101	14.02.2022 10:56:40.843
+UI (2)/0	GOU_CV152.SIMV	SIT_REG	90	0x8300000000200101	23.05.2022 10:43:25.899
+ASC (1)/0	GOU_CV152.CV	SIT_REG	35	0x8300000000000101	14.02.2022 10:56:40.843
+UI (1)/0	GOU_CV152.invalid	SIT_REG	0	0x8300000000100101	14.02.2022 13:16:43.539
+EV (2)/0	GOU_CV101H.OUT	SIT_REG	35	0x8300000000300101	25.05.2022 08:09:58.160
+UI (2)/0	GOU_CV101H.SIM	SIT_REG	0	0x8300000000100101	25.05.2022 08:09:58.160
+EV (2)/0	GOU_CV101H.SHOW	SIT_REG	1	0x8300000000300101	25.05.2022 12:53:38.373
+UI (2)/0	GOU_CV101H.REG	SIT_REG	1	0x8300000000300101	25.05.2022 08:06:35.359
+ASC (1)/0	GOU_CV101H.MEST	SIT_REG	0	0x8300000000000101	14.02.2022 11:06:37.760
+ASC (1)/0	GOU_CV101H.CV	SIT_REG	35	0x8300000000000101	14.02.2022 11:06:37.760
+EV (2)/0	GOU_CV101H.invalid	SIT_REG	0	0x8300000000000101	14.02.2022 11:06:37.807
+EV (2)/0	GOU_CV101G.OUT	SIT_REG	35	0x8300000000300101	25.05.2022 12:48:34.475
+UI (2)/0	GOU_CV101G.SIM	SIT_REG	0	0x8300000000100101	25.05.2022 12:48:34.475
+EV (2)/0	GOU_CV101G.SHOW	SIT_REG	1	0x8300000000300101	25.05.2022 12:53:38.373
+UI (2)/0	GOU_CV101G.REG	SIT_REG	1	0x8300000000300101	25.05.2022 08:09:29.745
+ASC (1)/0	GOU_CV101G.MEST	SIT_REG	0	0x8300000000000101	14.02.2022 11:07:05.163
+ASC (1)/0	GOU_CV101G.CV	SIT_REG	35	0x8300000000000101	14.02.2022 11:07:05.163
+EV (2)/0	GOU_CV101G.invalid	SIT_REG	0	0x8300000000000101	14.02.2022 11:07:05.209
+EV (2)/0	GOU_CV101F.OUT	SIT_REG	35	0x8300000000100101	25.05.2022 12:36:51.063
+UI (2)/0	GOU_CV101F.SIM	SIT_REG	0	0x8300000000100101	25.05.2022 12:36:51.063
+EV (2)/0	GOU_CV101F.SHOW	SIT_REG	1	0x8300000000300101	25.05.2022 12:53:38.373
+UI (2)/0	GOU_CV101F.REG	SIT_REG	0	0x8300000000100101	12.05.2022 13:03:13.083
+ASC (1)/0	GOU_CV101F.MEST	SIT_REG	0	0x8300000000000101	14.02.2022 11:07:38.089
+UI (2)/0	GOU_CV101F.SIMV	SIT_REG	100	0x8300000000300101	25.05.2022 08:10:15.366
+ASC (1)/0	GOU_CV101F.CV	SIT_REG	35	0x8300000000000101	14.02.2022 11:07:38.089
+EV (2)/0	GOU_CV101F.invalid	SIT_REG	0	0x8300000000000101	14.02.2022 11:07:38.136
+
+# PvssRangeCheck
+Manager/User	ElementName	TypeName	_pv_range.._type	_pv_range.._ignor_inv	_pv_range.._neg	_pv_range.._min	_pv_range.._max	_pv_range.._incl_min	_pv_range.._incl_max	_pv_range.._set	_pv_range.._match
+UI (1)/0	GOU_CV155.OUT	SIT_REG	7	0	0	0	100	1	1		
+UI (1)/0	GOU_CV155.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+UI (1)/0	GOU_CV159.OUT	SIT_REG	7	0	0	0	100	1	1		
+UI (1)/0	GOU_CV159.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV152.OUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV152.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV101H.OUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV101H.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV101G.OUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV101G.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV101F.OUT	SIT_REG	7	0	0	0	100	1	1		
+ASC (1)/0	GOU_CV101F.aiOUT	SIT_REG	7	0	0	0	100	1	1		
+
+# AlertValue
+Manager/User	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+UI (1)/0	GOU_CV155.OUT	SIT_REG		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (1)/0	GOU_CV155.OUT	SIT_REG	1	4	-1.7976931348623e+308	0	1	0					Sit_L.	lt:2 LANG:10027 "Минимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV155.OUT	SIT_REG	2	4	0	100	1	0					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV155.OUT	SIT_REG	3	4	100	1.7976931348623e+308	1	1					Sit_H.	lt:2 LANG:10027 "Максимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV155.SIM	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV155.invalid	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV159.OUT	SIT_REG		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (1)/0	GOU_CV159.OUT	SIT_REG	1	4	-1.7976931348623e+308	0	1	0					Sit_L.	lt:2 LANG:10027 "Минимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV159.OUT	SIT_REG	2	4	0	100	1	0					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV159.OUT	SIT_REG	3	4	100	1.7976931348623e+308	1	1					Sit_H.	lt:2 LANG:10027 "Максимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV159.SIM	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV159.invalid	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV152.OUT	SIT_REG		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (1)/0	GOU_CV152.OUT	SIT_REG	1	4	-1.7976931348623e+308	0	1	0					Sit_L.	lt:2 LANG:10027 "Минимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV152.OUT	SIT_REG	2	4	0	100	1	0					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV152.OUT	SIT_REG	3	4	100	1.7976931348623e+308	1	1					Sit_H.	lt:2 LANG:10027 "Максимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	GOU_CV152.SIM	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	GOU_CV152.invalid	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV101H.OUT	SIT_REG		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (1)/0	GOU_CV101H.OUT	SIT_REG	1	4	-1.7976931348623e+308	0	1	0					Sit_L.	lt:2 LANG:10027 "Минимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV101H.OUT	SIT_REG	2	4	0	100	1	0					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV101H.OUT	SIT_REG	3	4	100	1.7976931348623e+308	1	1					Sit_H.	lt:2 LANG:10027 "Максимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	GOU_CV101H.SIM	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	GOU_CV101H.invalid	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV101G.OUT	SIT_REG		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (1)/0	GOU_CV101G.OUT	SIT_REG	1	4	-1.7976931348623e+308	0	1	0					Sit_L.	lt:2 LANG:10027 "Минимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV101G.OUT	SIT_REG	2	4	0	100	1	0					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV101G.OUT	SIT_REG	3	4	100	1.7976931348623e+308	1	1					Sit_H.	lt:2 LANG:10027 "Максимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	GOU_CV101G.SIM	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	GOU_CV101G.invalid	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	GOU_CV101F.OUT	SIT_REG		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (1)/0	GOU_CV101F.OUT	SIT_REG	1	4	-1.7976931348623e+308	0	1	0					Sit_L.	lt:2 LANG:10027 "Минимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV101F.OUT	SIT_REG	2	4	0	100	1	0					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	GOU_CV101F.OUT	SIT_REG	3	4	100	1.7976931348623e+308	1	1					Sit_H.	lt:2 LANG:10027 "Максимальное задание" LANG:10001 "" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	GOU_CV101F.SIM	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	GOU_CV101F.invalid	SIT_REG		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+
+# DpFunction
+Manager/User	ElementName	TypeName	_dp_fct.._type	_dp_fct.._param	_dp_fct.._fct	_dp_fct.._global	_dp_fct.._old_new_compare	_dp_fct.._stat_type	_dp_fct.._interval	_dp_fct.._time	_dp_fct.._day_of_week	_dp_fct.._day	_dp_fct.._month	_dp_fct.._delay	_dp_fct.._read_archive	_dp_fct.._inv_func	_dp_fct.._inv_limit	_dp_fct.._def_func	_dp_fct.._def_limit	_dp_fct.._user1_func	_dp_fct.._user1_limit	_dp_fct.._user2_func	_dp_fct.._user2_limit	_dp_fct.._user3_func	_dp_fct.._user3_limit	_dp_fct.._user4_func	_dp_fct.._user4_limit	_dp_fct.._user5_func	_dp_fct.._user5_limit	_dp_fct.._user6_func	_dp_fct.._user6_limit	_dp_fct.._user7_func	_dp_fct.._user7_limit	_dp_fct.._user8_func	_dp_fct.._user8_limit	_dp_fct.._interm_res	_dp_fct.._interm_res_cyc
+UI (1)/0	GOU_CV155.OUT	SIT_REG	60	GOU_CV155.SIM:_original.._value, GOU_CV155.CV:_original.._value, GOU_CV155.SIMV:_original.._value	"p1?p3:p2"		0
+UI (1)/0	GOU_CV155.SHOW	SIT_REG	60	NAVIGATION.showElement:_original.._value	"p1"		0
+UI (1)/0	GOU_CV155.invalid	SIT_REG	60	GOU_CV155.CV:_original.._invalid	"p1"		0
+UI (1)/0	GOU_CV159.OUT	SIT_REG	60	GOU_CV159.SIM:_original.._value, GOU_CV159.CV:_original.._value, GOU_CV159.SIMV:_original.._value	"p1?p3:p2"		0
+UI (1)/0	GOU_CV159.SHOW	SIT_REG	60	NAVIGATION.showElement:_original.._value	"p1"		0
+UI (1)/0	GOU_CV159.invalid	SIT_REG	60	GOU_CV159.CV:_original.._invalid	"p1"		0
+ASC (1)/0	GOU_CV152.OUT	SIT_REG	60	GOU_CV152.SIM:_original.._value, GOU_CV152.CV:_original.._value, GOU_CV152.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	GOU_CV152.SHOW	SIT_REG	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	GOU_CV152.invalid	SIT_REG	60	GOU_CV152.CV:_original.._invalid	"p1"		0
+ASC (1)/0	GOU_CV101H.OUT	SIT_REG	60	GOU_CV101H.SIM:_original.._value, GOU_CV101H.CV:_original.._value, GOU_CV101H.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	GOU_CV101H.SHOW	SIT_REG	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	GOU_CV101H.invalid	SIT_REG	60	GOU_CV101H.CV:_original.._invalid	"p1"		0
+ASC (1)/0	GOU_CV101G.OUT	SIT_REG	60	GOU_CV101G.SIM:_original.._value, GOU_CV101G.CV:_original.._value, GOU_CV101G.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	GOU_CV101G.SHOW	SIT_REG	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	GOU_CV101G.invalid	SIT_REG	60	GOU_CV101G.CV:_original.._invalid	"p1"		0
+ASC (1)/0	GOU_CV101F.OUT	SIT_REG	60	GOU_CV101F.SIM:_original.._value, GOU_CV101F.CV:_original.._value, GOU_CV101F.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	GOU_CV101F.SHOW	SIT_REG	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	GOU_CV101F.invalid	SIT_REG	60	GOU_CV101F.CV:_original.._invalid	"p1"		0
+
+# DbArchiveInfo
+Manager/User	ElementName	TypeName	DetailNr	_archive.._type	_archive.._archive	_archive.._class	_archive.._interv	_archive.._interv_type	_archive.._std_type	_archive.._std_tol	_archive.._std_time	_archive.._round_val	_archive.._round_inv
+UI (1)/0	GOU_CV155.REG	SIT_REG		45	1
+UI (1)/0	GOU_CV155.REG	SIT_REG	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0
+UI (1)/0	GOU_CV159.REG	SIT_REG		45	1
+UI (1)/0	GOU_CV159.REG	SIT_REG	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0
+ASC (1)/0	GOU_CV152.REG	SIT_REG		45	1
+ASC (1)/0	GOU_CV152.REG	SIT_REG	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0
+ASC (1)/0	GOU_CV101H.REG	SIT_REG		45	1
+ASC (1)/0	GOU_CV101H.REG	SIT_REG	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0
+ASC (1)/0	GOU_CV101G.REG	SIT_REG		45	1
+ASC (1)/0	GOU_CV101G.REG	SIT_REG	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0
+ASC (1)/0	GOU_CV101F.REG	SIT_REG		45	1
+ASC (1)/0	GOU_CV101F.REG	SIT_REG	1	15		_ValueArchive_0	0	0	0	0	01.01.1970 00:00:00.000	0	0

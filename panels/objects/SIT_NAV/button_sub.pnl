@@ -1,0 +1,153 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 400 400 N "_3DFace" 0
+E E E E E 1 -1 -1 0  17.78571428571433 17
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 1
+"button"
+""
+1 40 160 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"cornerRadius" "10"
+E E 0 1 3 2 1 E 1.246666666666667 0 0.7833333333333332 -32.08095238095235 -107.3333333333333 1 E 40 160 190 220
+1 2 0 "" 1
+0
+1 4 1 "" 2
+0
+1 6 2 "" 2
+0
+1 8 3 "" 2
+0
+2 11
+"btnText"
+""
+1 110.7857142857143 29 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+}" 0
+ E 0 1 3 2 1 E U  0 E 88.78571428571431 19 132.7857142857143 40
+0 2 2 "0s" 0 0 0 201 0 0  110.7857142857143 29 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,18,5,50,0,0,0,0,0,Обычный
+LANG:10001 50 MS Shell Dlg 2,-1,18,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10027 4 name
+LANG:10001 8 $btnText
+6 12
+"rectInvisible"
+""
+1 20 20 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+6 0 0 0 0 0
+E E "main(bool enter)
+{
+  string colIn = \"fon_open\";
+  string colOut = \"fon_static\";
+  string col = button.backCol;
+  col==colIn? button.backCol(colOut): button.backCol(colIn);
+}" 0
+
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 9.300000000000001 0 1.165624999999999 -167.2142857142857 -4.749999999999986 1 E 20 20 40 60
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/alarm.pnl" 104.1428571428572 101.1428571428571 T 0 1 0 1 -39.21428571428569 -37.14285714285714
+0
+3 1 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/warning.pnl" 152 69 T 1 1 0 1 -40.21428571428569 -5.625000000000021
+0
+3 2 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/nan.pnl" 200 71.5 T 2 1 0 1 -42.21428571428569 -7.625000000000021
+0
+3 3 "PANEL_REF4" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_SIGN/imitation.pnl" 205.7857142857143 140 T 3 1 0 1 -2 -75.37500000000003
+0
+0

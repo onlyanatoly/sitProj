@@ -1,0 +1,71 @@
+<div style="width:100%;height:100%;position: relative;">
+    <canvas id="myChart" ></canvas>
+</div>
+<script>
+  let dataPoints = ["ExampleDP_Arg1.", "ExampleDP_Arg2."];
+  let chart = null;
+  let chartData = {
+    font: "16px Arial",
+    labels: ["Piece Count"],
+    datasets: [{
+      label: 'Good',
+      backgroundColor: [
+        'rgba(100,125,45,0.5)',
+        
+      ],
+      borderColor: [
+        'rgba(100,125,45,0.7)',
+      
+      ],
+      borderWidth: 1
+    },
+	{
+      label: 'Bad',
+      backgroundColor: [
+        'rgba(175,35,95,0.5)',
+      ],
+      borderColor: [
+        'rgba(175,35,95,0.7)',
+      ],
+      borderWidth: 1
+    }
+	]
+  };
+  $.when(
+    $.getScript("/data/html/js/vendor/chartsjs.2.7.2.min.js"),
+    oaJsApi.dpGet(dataPoints, {
+      success: function(data) {
+        chartData.datasets[0].data = [data[0]];
+		chartData.datasets[1].data = [data[1]];
+      }
+    })
+  ).done(function() {
+Chart.defaults.global.defaultFontFamily = 'Arial';
+Chart.defaults.global.defaultFontSize = 16;
+    chart = new Chart(document.getElementById("myChart").getContext('2d'), {
+      type: 'bar',
+      data: chartData,
+      options: {
+		maintainAspectRatio:false,
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  });
+
+  //register for future updates
+  oaJsApi.dpConnect(dataPoints, true, {
+    success: function(data) {
+	  console.log(data);
+      chartData.datasets[0].data = [data.value[0]];
+	  chartData.datasets[1].data = [data.value[1]];
+      chart.update();
+    }
+  });
+</script>
+

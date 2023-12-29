@@ -1,0 +1,362 @@
+V 14
+2
+LANG:10001 0 
+LANG:10027 0 
+PANEL,-1 -1 732 311 N "6_darkwhite" 4
+"$DP_contract"
+"$DP_countActual"
+"$DP_countOrder"
+"$DP_order"
+E E E E E 1 -1 -1 0  70 60
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10001 0 
+LANG:10027 0 
+4 6
+"LINE2"
+""
+1 360.0000000000001 73 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  360.0000000000001 73 569.9999999999999 73
+4 7
+"LINE3"
+""
+1 360.4999999999998 103 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  360.4999999999998 103 570 103
+6 14
+"RECTANGLE5"
+""
+1 400 60 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 1 0 1.283333333333333 126 -25.99999999999999 1 E 400 60 490 120
+4 16
+"LINE7"
+""
+1 40 51.00000000000001 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  40 51.00000000000001 616 51.00000000000001
+4 15
+"LINE6"
+""
+1 40.00000000000023 128 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  40.00000000000023 128 616.0000000000002 128
+4 9
+"LINE5"
+""
+1 82 83.49999999999997 E E E 1 E 1 E N "fact_order" E N {255,255,255} E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  82 83.49999999999997 82 103
+4 5
+"LINE1"
+""
+1 40 73 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  40 73 77 73
+6 1
+"RECTANGLE1"
+""
+1 70 60 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 22.30769230769233 0 2.076923076923077 -1491.538461538463 -64.61538461538463 1 E 70 60 83 73
+2 2
+"PRIMITIVE_TEXT1"
+""
+1 75.5 61.5 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  setValue(\"\",\"text\", $DP_contract);
+}" 0
+ E 0 1 3 2 1 E U  0 E 75.5 61.5 155 84
+0 2 2 "0s" 0 0 0 192 0 0  75.5 61.5 1
+2
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10001 16 Заказчик
+LANG:10027 12 $DP_contract
+6 3
+"RECTANGLE2"
+""
+1 70 60 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 18.5 0 2.076923076923077 -1175 -35.11538461538463 1 E 70 60 83 73
+2 4
+"PRIMITIVE_TEXT2"
+""
+1 121.4999999999998 91.50000000000003 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  setValue(\"\",\"text\", $DP_order);
+}" 0
+ E 0 1 3 2 1 E U  0 E 121.4999999999998 91.50000000000003 242 114
+0 2 2 "0s" 0 0 0 192 0 0  121.4999999999998 91.50000000000003 1
+2
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10001 23 Номер заказа
+LANG:10027 12 $DP_contract
+4 8
+"LINE4"
+""
+1 82.99999999999977 103 E E E 1 E 1 E N "fact_order" E N {255,255,255} E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  82.99999999999977 103 119.9999999999998 103
+6 10
+"RECTANGLE3"
+""
+1 400 60 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 2 3 2 1 E 1 0 1.283333333333333 0 -25.99999999999999 1 E 400 60 490 120
+2 12
+"PRIMITIVE_TEXT3"
+""
+1 443.5 76.5 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  setValue(\"\",\"text\", $DP_countOrder);
+}" 0
+ E 0 1 3 2 1 E U  0 E 416 76.5 472 99
+0 2 2 "0s" 0 0 0 193 0 0  443.5 76.5 1
+2
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10001 4 ####
+LANG:10027 5 ###.#
+2 13
+"PRIMITIVE_TEXT4"
+""
+1 570.75 77.75 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  setValue(\"\",\"text\", $DP_countActual);
+}" 0
+ E 0 1 3 2 1 E U  0 E 543 77.75 599 100
+0 2 2 "0s" 0 0 0 193 0 0  570.75 77.75 1
+2
+LANG:10001 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+LANG:10027 50 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0,Обычный
+0 2
+LANG:10001 4 ####
+LANG:10027 5 ###.#
+0
+LAYER, 1 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 2 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 3 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 4 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 5 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 6 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 7 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+0

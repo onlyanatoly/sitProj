@@ -1,0 +1,422 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1759 542 N "fon_static" 1
+"$iFire"
+"main()
+{
+  dyn_string parameterFire;
+  int i, j, k;
+  string sectionPanel = \"pnlTest/sub/POA_GTO_section.pnl\";
+  int fire=$iFire;
+  DebugN(\"fire = \"+fire);
+  dyn_string moduleFire = makeDynString(\"moduleER\",\"moduleHR1\", \"moduleHR2\", \"moduleHR3\", \"moduleBR\");
+  dyn_string dynRams = makeDynString(\"ER\",\"HR1\", \"HR2\", \"HR3\", \"BR\");
+
+  for(i=1; i<=dynlen(moduleFire);i++)
+  {
+    setValue(moduleFire[i], \"ModuleName\", ptms_BuildModuleName(moduleFire[i],ptnavi_GetScreenName()));
+    if (dynRams[i]==\"ER\")
+    {
+      k=0;
+    }
+    else if (dynRams[i]==\"BR\")
+    {
+      k=2;
+    }
+    else
+    {
+      k=1;
+    }
+    dynAppend(parameterFire, \"$i_ramp:\"+k);
+    fillDyn(parameterFire, fire, dynRams[i]);
+    fillDynStatSect(parameterFire, fire, dynRams[i], 1);
+    if (dynRams[i]==\"ER\")
+    {
+      fillDynStatSect(parameterFire, fire, \"TPR\", 2);
+    }else if (dynRams[i]==\"BR\")
+    {
+      fillDynStatSect(parameterFire, fire, \"ZPR\", 2);
+    }
+
+    RootPanelOnModule( sectionPanel, \"\",
+                     ptms_BuildModuleName(moduleFire[i],ptnavi_GetScreenName()),
+                     parameterFire);
+    dynClear(parameterFire);
+  }
+}
+
+void fillDyn(dyn_string &dyn, int fire, string ramp)
+{
+  int i;
+  for(i=1; i<=9; i++)
+  {
+    dynAppend(dyn, \"$Tdpe\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\"_\"+i+\"_T\");
+    dynAppend(dyn, \"$Pdpe\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\"_\"+i+\"_P\");
+    dynAppend(dyn, \"$SPdpe\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\"_\"+i+\"_SP\");
+  }
+}
+
+void fillDynStatSect(dyn_string &dyn, int fire, string ramp, int j)
+{
+  int i;
+  dynAppend(dyn, \"$dpeStation\"+j+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\".STATION\");
+  dynAppend(dyn, \"$dpeSection\"+j+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\".SECTION\");
+  for(i=1; i<=9; i++)
+  {
+    dynAppend(dyn, \"$dpeMode\"+i+\":OO1_GTO_FIRE\"+fire+\"_\"+ramp+\".MODE.ST\"+i);
+  }
+}
+" 0
+ E E E E 1 -1 -1 0  12.46072343172893 44.83435113380324
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "96.0236"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+29 1
+"moduleER"
+""
+1 12.50086770677884 44.86678859596429 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  12.46072343172893 45.3312977323933 272.4976896136313 493.9999999999999
+15 Canvas.Canvas.1
+0
+E29 2
+"EMBEDDED_MODULE1"
+""
+1 272.4920228420998 44.70113972976759 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  272.4792065226804 45.16564886619659 355.4976896136316 493.8343511338032
+15 Canvas.Canvas.1
+0
+E29 3
+"EMBEDDED_MODULE2"
+""
+1 355.5012643875754 44.53549086357094 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  355.488448068156 44.99999999999994 438.5069311591072 493.6687022676066
+15 Canvas.Canvas.1
+0
+E29 4
+"moduleHR1"
+""
+1 438.5239715704681 44.53549086357094 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  438.4838272954182 44.99999999999994 698.5207934773205 493.6687022676066
+15 Canvas.Canvas.1
+0
+E29 5
+"moduleHR2"
+""
+1 698.5424546614192 44.36984199737424 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  698.5023103863693 44.83435113380324 958.5392765682716 493.5030534014098
+15 Canvas.Canvas.1
+0
+E29 6
+"moduleHR3"
+""
+1 958.4976896136316 45 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  958.4575453385817 45.464509136429 1218.494511520484 494.1332114040356
+15 Canvas.Canvas.1
+0
+E29 7
+"EMBEDDED_MODULE3"
+""
+1 1218.499675341001 44.68492099868712 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1218.486859021581 45.14943013511612 1301.505342112532 493.8181324027228
+15 Canvas.Canvas.1
+0
+E29 8
+"EMBEDDED_MODULE4"
+""
+1 1301.508916886476 44.51927213249047 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1301.496100567057 44.98378126891947 1384.514583658008 493.6524835365261
+15 Canvas.Canvas.1
+0
+E29 9
+"moduleBR"
+""
+1 1384.526208773344 44.59398720004856 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1384.486064498294 45.05849633647756 1644.523030680197 493.7271986040842
+15 Canvas.Canvas.1
+0
+E29 10
+"EMBEDDED_MODULE6"
+""
+1 1644.522381943046 44.39098080007278 E E E 1 E 1 E N "_3DText" E N "fon_static" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  1644.509565623627 44.85548993650178 1727.528048714578 493.5241922041084
+15 Canvas.Canvas.1
+0
+E0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

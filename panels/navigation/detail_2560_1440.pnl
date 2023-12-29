@@ -1,0 +1,342 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 853 300 N "fon_static" 2
+"$dpNav"
+"$dpNavNoScreen"
+"main()
+{
+  setValue(DETAIL_MODULE_SUB, \"ModuleName\", ptms_BuildModuleName(DETAIL_MODULE_SUB,ptnavi_GetScreenName()));
+  dpConnect(\"setElement\", true, $dpNav+\".element\");
+}
+" 0
+ E E E E 1 -1 -1 0  60 182.8125
+""0  1
+E "/** текущие ВФ на панели навигации и соответсвующие reference панели*/
+dyn_string navigationVF;
+dyn_string referenceVF;
+string DETAIL_SUB_AI_PNL = \"navigation/detail/detailAI.pnl\";
+string DETAIL_SUB_DI_PNL = \"navigation/detail/detailDI.pnl\";
+string DETAIL_SUB_REG_PNL = \"navigation/detail/detailReg.pnl\";
+string DETAIL_MODULE_SUB = \"detailModuleSub\";
+
+/*Массив для элементов radiobox*/
+dyn_string array = makeDynString(\"GOU_FT165_Nm\", \"GOU_FT165_Am\",
+                                 \"GOU_FT154_Nm\", \"GOU_FT154_Am\",
+                                 \"GOU_FT150_Nm\", \"GOU_FT150_Am\",
+                                 \"GOU_FT101A_Nm\", \"GOU_FT101A_Am\",
+                                 \"GOU_FT101B_Nm\", \"GOU_FT101B_Am\",
+                                 \"GOU_FT101C_Nm\", \"GOU_FT101C_Am\",
+                                 \"GOU_FT101D_Nm\", \"GOU_FT101D_Am\");
+
+void setElement(string dpe, string element)
+{
+  dyn_string dollars,values;
+  string dpType, pnlName=\"\";
+  if (element!=\"\")
+  {
+    setValue(\"tag\", \"text\", element);
+    setValue(\"name\", \"text\", dpGetComment(element+\".\"));
+    dpType=dpTypeName(element);
+    if (dpType == \"SIT_AI\")
+    {
+      pnlName = DETAIL_SUB_AI_PNL;
+    }
+    else if (dpType == \"SIT_DI\")
+    {
+      pnlName = DETAIL_SUB_DI_PNL;
+    }
+    else if (dpType == \"SIT_REG\")
+    {
+      pnlName = DETAIL_SUB_REG_PNL;
+    }
+    if (pnlName!=\"\")
+    {
+      RootPanelOnModule( pnlName, \"\", ptms_BuildModuleName(DETAIL_MODULE_SUB,ptnavi_GetScreenName()), makeDynString(\"$dpe_value:\"+element));
+    }
+
+    int i = dynContains(array, element);
+    if (i>0) {
+      setValue(\"RADIOBOX\",\"visible\",true);
+      if (i%2==0) {
+        setValue(\"RADIOBOX\",\"text\",0, array[i-1]);
+        setValue(\"RADIOBOX\",\"text\",1, array[i]);
+        setValue(\"RADIOBOX\",\"number\",1);
+      } else {
+        setValue(\"RADIOBOX\",\"text\",0, array[i]);
+        setValue(\"RADIOBOX\",\"text\",1, array[i+1]);
+        setValue(\"RADIOBOX\",\"number\",0);
+      }
+    } else {
+      setValue(\"RADIOBOX\",\"visible\",false);
+    }
+
+  }
+}
+
+/**
+  Закрытие панели
+*/
+void closeBtnClicked()
+{
+  dpSet($dpNav+\".monitorNumber\",0);
+}
+
+
+void radioboxClick()
+{
+  string clickName = RADIOBOX.text(RADIOBOX.number);
+  int i = dynContains(array, clickName);
+
+  if (i > 0)
+  {
+    string moduleName = getModuleName(1);
+    string panelName = getCurrentPanelFullName(1);
+    string refNameVisible = \"REF_\" + array[i];
+    string refNameUnvisible = \"REF_\";
+
+    if (i % 2 == 0)
+    {
+      refNameUnvisible = refNameUnvisible +  array[i - 1];
+    }
+    else
+    {
+      refNameUnvisible = refNameUnvisible +  array[i + 1];
+    }
+
+    string shapeNameVisible = moduleName + \".\" + panelName + \":\" + refNameVisible;
+    string shapeNameUnvisible = moduleName + \".\" + panelName + \":\" + refNameUnvisible;
+    DebugN(\"shapeNameVisible = \" + shapeNameVisible);
+    DebugN(\"shapeNameUnvisible = \" + shapeNameUnvisible);
+    shape sVisible = getShape(shapeNameVisible);
+    shape sUnvisible = getShape(shapeNameUnvisible);
+    sVisible.visible = true;
+    sUnvisible.visible = false;
+    openFrontAndDetailPanel(array[i]);
+  }
+}
+
+
+" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+13 1006
+"closeBtn"
+"WF"
+1 519 526.265625 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 27 Удалить фильтр
+LANG:10001 13 Delete filter
+LANG:10000 15 Filter löschen
+
+2
+"sizePolicy" "Preferred Preferred"
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+0  810 26.265625 839 55.265625
+
+P 
+4294967295
+"pictures/cns/delete_20.png"
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+"main()
+{
+  closeBtnClicked();
+}" 0
+ E E E
+2 1259
+"tag"
+""
+1 410 30 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 389 17 431 44
+0 2 2 "0s" 0 0 0 201 0 0  410 30 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 TAG
+LANG:10001 3 TAG
+2 1260
+"name"
+""
+1 410 61 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 381 48 439 75
+0 2 2 "0s" 0 0 0 201 0 0  410 61 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,23,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 4 Name
+LANG:10001 3 TAG
+1 1330 22 "" 1
+0
+29 1317
+"detailModuleSub"
+""
+1 101.3321741353635 76.77947994687517 E E E 1 E 1 E N "_3DText" E N {255,255,255} E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+4
+LANG:10027 0 
+LANG:10001 0 
+LANG:0 0 
+LANG:1 0 
+
+7
+"verticalScrollBarPolicy" "enum 1"
+"horizontalScrollBarPolicy" "enum 1"
+"frameShape" "enum 3"
+"ModuleName" "string mainModule"
+"sizeAdjustPolicy" "enum 0"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,11,5,50,0,0,0,0,0
+LANG:0 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+LANG:1 37 MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0
+0  101.8529411764705 77 757.0000000000001 290
+15 Canvas.Canvas.1
+0
+E19 1329
+"RADIOBOX"
+""
+1 76.99999999999997 17.50000000000003 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+46 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+2
+"layoutAlignment" "AlignNone"
+"showBackground" "0"
+2
+LANG:10027 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,10,5,50,0,0,0,0,0,Regular
+0  74.99999999999997 15.50000000000003 188.9999999999999 67.50000000000003
+2
+T 
+2
+LANG:10027 7 xxxxxxx
+LANG:10001 3 ???
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+2
+LANG:10027 8 xxxxxxxx
+LANG:10001 3 ???
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+1
+E "main(int button)
+{
+  radioboxClick();
+}
+" 0
+
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 22 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_NAV/button_screen_2.pnl" 99.705882352941 197.625 T 41 1 0 1 -14 -86.12499999999997
+2
+"$dpNav""$dpNav"
+"$dpNavNoScreen""$dpNavNoScreen"
+0

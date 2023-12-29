@@ -1,0 +1,2425 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 1284 918 N "_3DFace" 0
+"main()
+{
+  initRadar();
+  setVisiblity(0);
+}" 0
+ E E E E 1 -1 -1 0  0 0
+""0  1
+E "dyn_string colors = makeDynString(\"SiemensNaturalYellowLight\", \"SiemensNaturalYellowDark\", \"SiemensNaturalRedLight\",
+                                  \"SiemensNaturalRedDark\", \"SiemensNaturalGreenLight\", \"SiemensNaturalGreenDark\",
+                                  \"SiemensNaturalGrayLight\", \"SiemensNaturalGrayDark\", \"SiemensNaturalBlueLight\",
+                                  \"SiemensNaturalBlueDark\");
+string defaultLabel = (string)angleLabel.text;
+
+clearAll()
+{
+  Chart_ewo2.removeAxes();
+
+  int count = Chart_ewo2.seriesCount;
+  for (int i = 0; i < count; i++)
+     Chart_ewo2.removeSeries(0);
+}
+
+initRadar()
+{
+  Chart_ewo2.removeAxes();
+
+  dyn_float values;
+  dyn_string labels;
+
+  for (int i = 1; i <= 6; i++)
+  {
+    values[i] = rand();
+    labels[i] = \"value \" + (string)i;
+    Chart_ewo2.addAxis(0, 32768, \"axis of\\nvalue \" + (string)i);
+  }
+
+  Chart_ewo2.setSeries(0, values, labels);
+
+  for (int i = 1; i <= 6; i++)
+  {
+    Chart_ewo2.setItemFillColor(0, i-1, colors[i]);
+  }
+
+  //if ( Chart_ewo2.chartType == \"Radar\" )
+  {
+    // series 2
+    for (int i = 1; i <= 6; i++)
+    {
+      values[i] = rand();
+      labels[i] = \"value \" + (string)(i + 6);
+    }
+
+    Chart_ewo2.setSeries(1, values, labels);
+
+//    for (int i = 1; i <= 6; i++)
+//      Chart_ewo2.setItemFillColor(0, i-1, colors[i]);
+  }
+
+}
+
+setVisiblity(int checkBoxIdx)
+{
+  status.text = \"\";
+  switch ( checkBoxIdx )
+  {
+    case 0: // Donut
+    case 1: // DonutBars
+    {
+      setValue(\"AngleSettings\", \"visible\", true);
+      setValue(\"StopAngle\", \"visible\", true);
+      setValue(\"DonutSettings\", \"visible\", true);
+      Percent.visible(true);
+      ValCol.visible(false);
+      Grid.visible(false);
+      Orientation.visible(false);
+      setValue(\"MarkerSettings\", \"visible\", false);
+      angleLabel.text = defaultLabel;
+
+      break;
+    }
+    case 2: // Radar
+    {
+      setValue(\"AngleSettings\", \"visible\", true);
+      setValue(\"StopAngle\", \"visible\", false);
+      setValue(\"DonutSettings\", \"visible\", false);
+      Percent.visible(false);
+      ValCol.visible(true);
+      Grid.visible(true);
+      Orientation.visible(false);
+      setValue(\"MarkerSettings\", \"visible\", true);
+      if ( getActiveLang() == 0 )
+        angleLabel.text = \"Drehung\";
+      else
+        angleLabel.text = \"Rotation\";
+
+      break;
+    }
+    case 3: // Bars
+    case 4: // StackedBars
+    {
+      setValue(\"AngleSettings\", \"visible\", false);
+      setValue(\"DonutSettings\", \"visible\", false);
+      Percent.visible(false);
+      ValCol.visible(false);
+      Grid.visible(true);
+      Orientation.visible(true);
+      setValue(\"MarkerSettings\", \"visible\", true);
+      angleLabel.text = defaultLabel;
+
+      break;
+    }
+    case 5: // PercentStackedBars
+    {
+      setValue(\"AngleSettings\", \"visible\", false);
+      setValue(\"DonutSettings\", \"visible\", false);
+      Percent.visible(true);
+      ValCol.visible(false);
+      Grid.visible(true);
+      Orientation.visible(true);
+      setValue(\"MarkerSettings\", \"visible\", false);
+      angleLabel.text = defaultLabel;
+
+      break;
+    }
+    case 6:  // Bubbles
+    {
+      setValue(\"AngleSettings\", \"visible\", false);
+      setValue(\"DonutSettings\", \"visible\", false);
+      Percent.visible(false);
+      ValCol.visible(true);
+      Grid.visible(true);
+      Orientation.visible(false);
+      setValue(\"MarkerSettings\", \"visible\", true);
+      angleLabel.text = defaultLabel;
+
+      break;
+    }
+    case 7: // Polar
+    {
+      setValue(\"AngleSettings\", \"visible\", true);
+      setValue(\"StopAngle\", \"visible\", false);
+      setValue(\"DonutSettings\", \"visible\", false);
+      Percent.visible(false);
+      ValCol.visible(false);
+      Grid.visible(true);
+      Orientation.visible(false);
+      CHECK_BOX5.visible(true);
+      setValue(\"MarkerSettings\", \"visible\", true);
+      if ( getActiveLang() == 0 )
+        angleLabel.text = \"Drehung\";
+      else
+        angleLabel.text = \"Rotation\";
+    }
+  }
+}
+" 0
+ 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+2 1 0 0 0 0 1 3
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 312
+"RECTANGLE9"
+""
+1 0 350 E E E 1 E 1 E N "_ButtonBarBackground" E N "_ButtonBarBackground" E E
+ E E
+141 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"minimumSize" "-1 45"
+"maximumSize" "-1 45"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 2.571142284569138 0 1 0 873 1 E 0 0 499 44
+6 192
+"RECTANGLE8"
+""
+1 0 80 E E E 1 E 1 E N {0,0,0} E N "_Window" E E
+ E E
+60 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"maximumSize" "-1 100"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.457954545454546 0 0.7615384615384615 0 38.07692307692307 1 E 0 80 880 -50
+13 193
+"cmdCancel"
+"WF"
+1 1187.950495049505 882 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+62 0 0 0 27 0
+E E E
+0
+3
+LANG:10027 27 Закрыть панель
+LANG:10001 11 Close panel
+LANG:10000 16 Panel schließen
+
+3
+"minimumSize" "85 25"
+"maximumSize" "85 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0  1187 881 1275 909
+
+T 
+3
+LANG:10027 14 Закрыть
+LANG:10001 5 Close
+LANG:10000 10 Schließen
+"main()
+{
+  PanelOff();
+}
+" 0
+ E E E
+13 196
+"cmd_Help"
+"WF"
+1 8 881.4373164648102 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+63 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 14 Справка
+LANG:10001 16 Open online help
+LANG:10000 20 Online Hilfe öffnen
+
+3
+"minimumSize" "85 25"
+"maximumSize" "85 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 arial,-1,13,5,50,0,0,0,0,0
+0  8 881 96 909
+
+T 
+3
+LANG:10027 14 Справка
+LANG:10001 4 Help
+LANG:10000 5 Hilfe
+"main()
+{
+  std_help(\"chartEwo\");
+}" 0
+ E E E
+2 265
+"PRIMITIVE_TEXT25"
+""
+1 310 10 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+102 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"maximumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 7.538922155688621 0 0.392156862745098 -2325.065868263473 2.07843137254902 0 E 310 10 477 61
+0 2 2 "0s" 0 0 0 192 0 0  310 10 3
+3
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,75,0,0,0,0,0
+0 3
+LANG:10027 23 ChartEwo - Examplepanel
+LANG:10001 23 ChartEwo - Examplepanel
+LANG:10000 23 ChartEwo - Examplepanel
+3
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,75,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,75,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+2 267
+"PRIMITIVE_TEXT26"
+""
+1 310 10 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+104 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"maximumSize" "-1 70"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 3.637396547701341 0 0.2910798122065728 -1115.362532539739 28.08920187793427 0 E 310 10 656 223
+0 2 2 "0s" 0 0 0 192 0 0  310 10 12
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 57 This demopanel shows some possibilities of the Chart Ewo.
+LANG:10001 57 This demopanel shows some possibilities of the Chart Ewo.
+LANG:10000 64 Dieses Demopanel zeigt einige Möglichkeiten des Chart Ewos auf.
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+3
+LANG:10027 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+29 270
+"Chart_ewo2"
+""
+1 6 103 E E E 1 E 1 E N "black" E N {140,175,234,39} E E
+ E E
+105 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 16 values chart-ewo
+LANG:10001 16 values chart-ewo
+LANG:10000 15 Werte Chart-Ewo
+
+26
+"holeSize" "float 0.2"
+"chartType" "enum 0"
+"legendPosition" "enum 3"
+"frameShape" "enum 1"
+"startAngle" "float 0"
+"axesColor" "color Yellow"
+"showGrid" "bool TRUE"
+"seriesSpacing" "int 20"
+"defaultItemPen" "pen [none,oneColor,JoinBevel,CapProjecting,1]"
+"defaultItemBrush" "fill [solid]"
+"orientation" "enum 1"
+"selectionBrush" "fill [gradient,[linear,pad,0,0,0.639,0.602,0,{0,0,0},1,{255,255,255}]]"
+"animateValueChange" "bool TRUE"
+"shownValueText" "enum 2"
+"valueTextPosition" "enum 3"
+"gridColor" "color {124,124,124,70}"
+"stopAngle" "float 360"
+"explosionOffset" "uint 0"
+"animateHoverItem" "bool TRUE"
+"holeFactor" "float 0.5"
+"itemsSelectable" "bool TRUE"
+"axesFont" "font Noto Sans,-1,24,5,50,0,0,0,0,0"
+"legendFont" "font Noto Sans,-1,27,5,50,1,0,0,0,0"
+"axesLabelFont" "font Luxi Serif,-1,17,5,50,2,0,0,0,0"
+"segmentSpacing" "int 10"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 32 DejaVu Sans,-1,15,5,50,0,0,0,0,0
+LANG:10001 32 DejaVu Sans,-1,15,5,50,0,0,0,0,0
+LANG:10000 32 DejaVu Sans,-1,16,5,50,0,0,0,0,0
+0  6 103 1021 835
+9 Chart.ewo
+1
+0 "itemSelected" "(int series, int idx)"
+"  if ( (series >= 0) && (idx >= 0) )
+    status.text = \"ser:\" + (string)series + \" item:\" + (string)idx + \" value:\" + this.getItemValue(series,idx);
+  else
+    status.text = \"\";"
+E13 271
+"PUSH_BUTTON1"
+"WF"
+1 1034 300.6153846153846 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+106 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 294 1273 322
+
+T 
+3
+LANG:10027 19 Generate new values
+LANG:10001 19 Generate new values
+LANG:10000 20 Generiere neue Werte
+"main(mapping event)
+{
+  dyn_float values;
+  dyn_string labels;
+
+  int count = 6;
+  if ( Chart_ewo2.chartType == \"Radar\" )
+    count = Chart_ewo2.axesCount;
+  else if ( Chart_ewo2.chartType == \"Polar\" )
+    count = 8;
+
+  for (int i = 1; i <= count; i++)
+  {
+    values[i] = rand();
+    labels[i] = \"Value \" + (string)i;
+  }
+
+  switch ( Chart_ewo2.chartType )
+  {
+    case \"Donut\":
+    case \"DonutBars\":
+    case \"Radar\":
+      Chart_ewo2.setSeries(0, values, labels);
+      break;
+
+    case \"Polar\":
+      Chart_ewo2.setSeriesPolar(0, makeDynFloat(0, 45, 90, 135, 180, 225, 270, 315), values);
+      break;
+
+    default:
+      Chart_ewo2.setSeries(0, values);
+  }
+}
+" 0
+ E E E
+20 272
+"VisibilitySeries0"
+"WF"
+1 1034 324 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+107 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"horizontal" ""
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 322 1273 350
+1
+T 
+3
+LANG:10027 7 Visible
+LANG:10001 7 Visible
+LANG:10000 8 Sichtbar
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  Chart_ewo2.setSeriesVisible(0, state);
+}" 0
+13 273
+"PUSH_BUTTON2"
+"WF"
+1 1034 386.6153846153846 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+108 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 380 1273 408
+
+T 
+3
+LANG:10027 19 Generate new values
+LANG:10001 19 Generate new values
+LANG:10000 20 Generiere neue Werte
+"bool negative;
+
+main(mapping event)
+{
+  dyn_float values;
+  dyn_string labels;
+
+  int count = 6;
+  if ( Chart_ewo2.chartType == \"Radar\" )
+    count = Chart_ewo2.axesCount;
+  else if ( Chart_ewo2.chartType == \"Polar\" )
+    count = 8;
+  else
+  {
+    Chart_ewo2.removeAxes();
+    Chart_ewo2.addAxis(0, 0, \"[EURO]\");
+    Chart_ewo2.addAxis(0, 0, \"Values Last Year\");
+  }
+
+  for (int i = 1; i <= count; i++)
+  {
+    values[i] = rand();
+    if ( negative &&
+         ((Chart_ewo2.chartType == \"Bars\") ||
+          (Chart_ewo2.chartType == \"StackedBars\")) )
+      values[i] *= -1;
+
+    labels[i] = \"Line \" + (string)i;
+  }
+
+  negative = !negative;
+
+  Chart_ewo2.setSeries(1, values, labels);
+  Chart_ewo2.setSeriesStretch(1, 2);
+
+  for (int i = 1; i <= count; i++)
+  {
+    Chart_ewo2.setItemFillColor(1, i-1, colors[i]);
+  }
+
+  if ( Chart_ewo2.chartType == \"Polar\" )
+    Chart_ewo2.setSeriesPolar(1, makeDynFloat(0, 45, 90, 135, 180, 225, 270, 315), values);
+}
+
+
+" 0
+ E E E
+19 274
+"RADIO_BOX1"
+"WF"
+1 1034 127 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+109 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+1
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 125 1273 264
+8
+T 
+3
+LANG:10027 5 Donut
+LANG:10001 5 Donut
+LANG:10000 5 Donut
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 9 DonutBars
+LANG:10001 9 DonutBars
+LANG:10000 9 DonutBars
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 5 Radar
+LANG:10001 5 Radar
+LANG:10000 5 Radar
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 4 Bars
+LANG:10001 4 Bars
+LANG:10000 4 Bars
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 11 StackedBars
+LANG:10001 11 StackedBars
+LANG:10000 11 StackedBars
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 18 PercentStackedBars
+LANG:10001 18 PercentStackedBars
+LANG:10000 18 PercentStackedBars
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 7 Bubbles
+LANG:10001 7 Bubbles
+LANG:10000 7 Bubbles
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 5 Polar
+LANG:10001 5 Polar
+LANG:10000 5 Polar
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+1
+E "bool flag = false;
+
+main(int button)
+{
+  Chart_ewo2.updatesEnabled = false;
+  setVisiblity(button);
+
+  VisibilitySeries1.state(0, true);
+  switch ( button )
+  {
+    case 0: // Donut
+      if ( Chart_ewo2.chartType != \"Donut\" )
+        clearAll();
+
+      Chart_ewo2.chartType = \"Donut\";
+      Chart_ewo2.shownValueText = \"Percent\";
+
+      initRadar();
+      break;
+
+    case 1: // DonutBars
+      Chart_ewo2.chartType = \"DonutBars\";
+      Chart_ewo2.shownValueText = \"None\";
+      Chart_ewo2.removeAxes();
+
+      dyn_float values;
+      int r = rand();
+
+      for (int i = 0; i < 36; i++)
+        values[i + 1] = 100 + sin(deg2rad((r + i * 10) % 180)) * 1000;
+
+      Chart_ewo2.setSeries(0, values);
+
+      if ( Chart_ewo2.isSeriesVisible(1) )
+      {
+        Chart_ewo2.setSeriesVisible(1, false);
+        VisibilitySeries1.state(0, false);
+      }
+
+      if ( (Chart_ewo2.seriesCount() > 2) &&
+            Chart_ewo2.isSeriesVisible(2) )
+        Chart_ewo2.setSeriesVisible(2, false);
+
+      int idx = 1;
+      for (int i = 0; i < 36; i++)
+      {
+        idx = idx >= 11 ? 1 : idx;
+        string color = colors[idx++];
+        Chart_ewo2.setItemFillColor(0, i, color);
+      }
+      break;
+
+    case 2: // Radar
+      Chart_ewo2.chartType = \"Radar\";
+      initRadar();
+
+      if ( VisibilitySeries0.state(0) )
+        Chart_ewo2.setSeriesVisible(0, true);
+      else
+        Chart_ewo2.setSeriesVisible(0, false);
+
+      if ( VisibilitySeries1.state(0) )
+        Chart_ewo2.setSeriesVisible(1, true);
+      else
+        Chart_ewo2.setSeriesVisible(0, false);
+
+      if ( (Chart_ewo2.seriesCount() > 2) &&
+            Chart_ewo2.isSeriesVisible(2) )
+        Chart_ewo2.setSeriesVisible(2, false);
+
+      Chart_ewo2.setSeriesName(0, \"Profit\");
+      Chart_ewo2.setSeriesName(1, \"Sales\");
+      Chart_ewo2.setSeriesFillColor(0, \"{255,185,0,100}\");
+      Chart_ewo2.setSeriesFillColor(1, \"{175,35,95,100}\");
+      break;
+
+    case 3: // Bars
+    case 4: // StackedBars
+    case 5: // PercentStackedBars
+      if ( button != 5 )
+        Chart_ewo2.shownValueText = \"Value\";
+
+      if ( button == 3 )
+        Chart_ewo2.chartType = \"Bars\";
+      else if ( button == 4 )
+        Chart_ewo2.chartType = \"StackedBars\";
+      else
+      {
+        Chart_ewo2.chartType = \"PercentStackedBars\";
+        Chart_ewo2.shownValueText = \"Percent\";
+      }
+
+      for (int j = 0; j < 3; j++)
+      {
+        dyn_float values;
+        dyn_string labels;
+
+        for (int i = 1; i <= 6; i++)
+        {
+          values[i] = rand();
+          labels[i] = formatTime(\"%b\", makeTime(2017, i, 1));
+        }
+
+        Chart_ewo2.setSeries(j, values, labels);
+        Chart_ewo2.setSeriesVisible(j, true);
+        Chart_ewo2.setSeriesName(j, \"series_\" + (string)j);
+        Chart_ewo2.setSeriesFillColor(j, colors[j+3]);
+      }
+      Chart_ewo2.removeAxes();
+      Chart_ewo2.addAxis(0, 0, \"[EURO]\");
+      Chart_ewo2.addAxis(0, 0, \"Values Last Year\");
+      break;
+
+    case 6:  // Bubbles
+      Chart_ewo2.chartType = \"Bubbles\";
+
+      if ( VisibilitySeries1.state(0) )
+        Chart_ewo2.setSeriesVisible(1, true);
+      else
+        Chart_ewo2.setSeriesVisible(0, false);
+
+      if ( Chart_ewo2.seriesCount > 2 )
+        Chart_ewo2.setSeriesVisible(2, false);
+
+      Chart_ewo2.removeAxes();
+      Chart_ewo2.addAxis(0, 0, \"[EURO]\");
+      Chart_ewo2.addAxis(0, 0, \"Values Last Year\");
+
+      for (int j = 0; j < 2; j++)
+      {
+        dyn_float dx, dy, dv;
+        float variationX = 180.0 * rand() / 32768.0;
+        float variationY = 180.0 * rand() / 32768.0;
+
+        if ( Chart_ewo2.bubbleColorFromValue )
+        {
+          const int maxX = 40;
+          const int maxY = 20;
+          dx[maxX*maxY] = 0.0;
+          dy[maxX*maxY] = 0.0;
+          dv[maxX*maxY] = 0.0;
+
+          for (int x = 0; x < maxX; x++)
+          {
+            for (int y = 0; y < maxY; y++)
+            {
+              dx[x * maxY + y + 1] = x;
+              dy[x * maxY + y + 1] = y;
+
+              dv[x * maxY + y + 1] = fabs(sin(deg2rad(variationX + x * (180.0 / maxX)))) +
+                                     fabs(sin(deg2rad(variationY + y * (180.0 / maxY))));
+            }
+          }
+        }
+        else
+        {
+          for (int i = 1; i <= 100; i++)
+          {
+            dx[i] = rand();
+            dy[i] = rand();
+
+            if ( flag )
+              dv[i] = rand();
+            else
+              dv[i] = 1;
+          }
+        }
+
+        Chart_ewo2.setSeriesXYV(j, dx, dy, dv);
+        Chart_ewo2.setSeriesName(j, \"series_\" + (string)j);
+      }
+      Chart_ewo2.setSeriesFillColor(0, colors[1]);
+      Chart_ewo2.setSeriesFillColor(1, colors[3]);
+      Chart_ewo2.setSeriesLineColor(0, colors[1]);
+      Chart_ewo2.setSeriesLineColor(1, colors[3]);
+      Chart_ewo2.setSeriesLineType(0, \"[none,oneColor,JoinMiter,CapButt,0]\");
+      Chart_ewo2.setSeriesLineType(1, \"[none,oneColor,JoinMiter,CapButt,0]\");
+
+      flag = !flag;
+      break;
+
+    case 7:  // Polar
+      Chart_ewo2.chartType = \"Polar\";
+
+      if ( VisibilitySeries0.state(0) )
+        Chart_ewo2.setSeriesVisible(0, true);
+      else
+        Chart_ewo2.setSeriesVisible(0, false);
+
+      if ( VisibilitySeries1.state(0) )
+        Chart_ewo2.setSeriesVisible(1, true);
+      else
+        Chart_ewo2.setSeriesVisible(1, false);
+
+      if ( (Chart_ewo2.seriesCount() > 2) &&
+            Chart_ewo2.isSeriesVisible(2) )
+        Chart_ewo2.setSeriesVisible(2, false);
+
+      Chart_ewo2.removeAxes();
+
+      Chart_ewo2.addAxis(0, 360, \"phi\");
+      Chart_ewo2.addAxis(0, 35000, \"R\");
+
+      dyn_float valuesX = makeDynFloat(0, 45, 90, 135, 180, 225, 270, 315);
+      dyn_float randomY;
+
+      for (int i = 1; i <= dynlen(valuesX); ++i)
+        randomY[i] = rand();
+
+      Chart_ewo2.setSeriesPolar(0, valuesX, randomY);
+
+      dynClear(randomY);
+
+      for (int i = 1; i <= dynlen(valuesX); ++i)
+        randomY[i] = rand();
+
+      Chart_ewo2.setSeriesPolar(1, valuesX, randomY);
+
+      Chart_ewo2.setSeriesFillColor(0, \"{255,185,0,100}\");
+      Chart_ewo2.setSeriesFillColor(1, \"{175,35,95,100}\");
+      Chart_ewo2.setSeriesName(0, \"series 0\");
+      Chart_ewo2.setSeriesName(1, \"series 1\");
+      Chart_ewo2.setSeriesLineType(0, \"[none,oneColor,JoinMiter,CapButt,0]\");
+      Chart_ewo2.setSeriesLineType(1, \"[none,oneColor,JoinMiter,CapButt,0]\");
+      break;
+
+  }
+  Chart_ewo2.updatesEnabled = true;
+}
+" 0
+
+21 275
+"SPIN_BUTTON1"
+"WF"
+1 1156 472.3200000000001 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+110 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 28"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1154 466 1273 497
+0
+
+E
+"main()
+{
+  if ( this.value >= SPIN_BUTTON5.value)
+  {
+    this.value = SPIN_BUTTON5.value;
+  }
+
+  Chart_ewo2.startAngle = this.value;
+}" 0
+
+E
+
+N 0 360 1 0 1 1
+2 276
+"angleLabel"
+"WF"
+1 1017.625 458 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+111 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.5483753585538 0 1.437499999999998 -539.4231198567021 -188.3749999999991 0 E 1017.625 458 1089 474
+0 2 2 "0s" 0 0 0 192 0 0  1017.625 458 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 11 Start angle
+LANG:10001 11 Start angle
+LANG:10000 12 Start Winkel
+2 278
+"PRIMITIVE_TEXT2"
+"WF"
+1 1021.25 547 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+113 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.005846066245789 0 1.4375 8.680362054305789 -224.3125 0 E 1021.25 547 1098 563
+0 2 2 "0s" 0 0 0 192 0 0  1021.25 547 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 11 Marker type
+LANG:10001 11 Marker type
+LANG:10000 10 Marker Typ
+20 279
+"Grid"
+"WF"
+1 1034 800 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+114 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 34 Arial,-1,15,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,15,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,15,5,50,0,0,0,0,0,Regular
+0  1032 798 1151 826
+1
+T 
+3
+LANG:10027 4 Grid
+LANG:10001 4 Grid
+LANG:10000 4 Grid
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  Chart_ewo2.showGrid = state;
+}" 0
+20 280
+"Percent"
+"WF"
+1 1156 769 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+115 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"horizontal" ""
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1154 767 1273 795
+1
+T 
+3
+LANG:10027 10 Value as %
+LANG:10001 10 Value as %
+LANG:10000 9 Wert in %
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  if ( button == 0 )
+    Chart_ewo2.shownValueText = state ?  \"Percent\" : \"Value\";
+}" 0
+14 281
+"status"
+"WF"
+1 772 847.0134736842106 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+116 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "250 28"
+"maximumSize" "300 -1"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  770 840 1023 871
+3 "0s" 0 0 0 0 0 -1  E E E
+20 282
+"CHECK_BOX5"
+"WF"
+1 1034 591 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+117 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 589 1273 617
+1
+T 
+3
+LANG:10027 16 Series 1 as line
+LANG:10001 16 Series 1 as line
+LANG:10000 17 Serie 1 als Linie
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  Chart_ewo2.setSeriesAsLine(1, state);
+  Chart_ewo2.setSeriesLineType(1, \"[solid,oneColor,JoinMiter,CapButt,4]\");
+
+  if ( state)
+  {
+    Chart_ewo2.setSeriesLineColor(1, colors[4]);
+  }
+  else
+  {
+    Chart_ewo2.setSeriesLineColor(1, \"_Transparent\");
+  }
+}" 0
+20 283
+"CHECK_BOX6"
+"WF"
+1 1034 680 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+118 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"horizontal" ""
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 678 1273 706
+5
+T 
+3
+LANG:10027 1 1
+LANG:10001 1 1
+LANG:10000 1 1
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 1 2
+LANG:10001 1 2
+LANG:10000 1 2
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 1 3
+LANG:10001 1 3
+LANG:10000 1 3
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 1 4
+LANG:10001 1 4
+LANG:10000 1 4
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+T 
+3
+LANG:10027 1 5
+LANG:10001 1 5
+LANG:10000 1 5
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  if ( (Chart_ewo2.chartType == \"Donut\") || (Chart_ewo2.chartType == \"DonutBars\") )
+  {
+    Chart_ewo2.setItemExploded(0, button, state);
+  }
+}" 0
+21 284
+"SPIN_BUTTON3"
+"WF"
+1 1156 712.5 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+119 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 28"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1154 706 1273 737
+0
+
+"main()
+{
+  Chart_ewo2.holeFactor = this.value / 100.0;
+}" 0
+
+"main()
+{
+  Chart_ewo2.holeFactor = this.value / 100.0;
+}" 0
+
+E
+
+N 0 100 1 60 1 1
+21 285
+"SPIN_BUTTON4"
+"WF"
+1 1156 653.5 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+120 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 28"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1154 647 1273 678
+0
+
+"main()
+{
+  Chart_ewo2.explosionOffset = this.value;
+}" 0
+
+"main()
+{
+  Chart_ewo2.explosionOffset = this.value;
+}" 0
+
+E
+
+N 0 100 1 20 1 1
+20 286
+"ValCol"
+"WF"
+1 1156 800 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+121 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1154 798 1273 826
+1
+T 
+3
+LANG:10027 14 Value as color
+LANG:10001 14 Value as color
+LANG:10000 13 Wert in Farbe
+
+0 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  Chart_ewo2.bubbleColorFromValue = state;
+  if ( state )
+  {
+    Chart_ewo2.bubbleMinSize = 20;
+    Chart_ewo2.bubbleMaxSize = Chart_ewo2.bubbleMinSize;
+    Chart_ewo2.setSeriesMarkerType(0, \"Rectangle\");
+  }
+  else
+  {
+    Chart_ewo2.bubbleMaxSize = 60;
+    Chart_ewo2.bubbleMinSize = 6;
+  }
+}" 0
+21 287
+"SPIN_BUTTON5"
+"WF"
+1 1156 503.32 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+122 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+2
+"minimumSize" "-1 28"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1154 497 1273 528
+0
+
+E
+"main()
+{
+  if ( this.value <= SPIN_BUTTON1.value)
+  {
+    this.value = SPIN_BUTTON1.value;
+  }
+
+  Chart_ewo2.stopAngle = this.value;
+}" 0
+
+E
+
+N 0 360 1 360 1 1
+2 288
+"PRIMITIVE_TEXT27"
+"WF"
+1 1015.6875 485 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+123 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.571669321868122 0 1.4375 -560.0788839518552 -196.1875 0 E 1015.6875 485 1086 501
+0 2 2 "0s" 0 0 0 192 0 0  1015.6875 485 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 10 Stop angle
+LANG:10001 10 Stop angle
+LANG:10000 11 Stop Winkel
+2 290
+"PRIMITIVE_TEXT28"
+"WF"
+1 1019.625 691.01953125 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+125 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.549879342798838 0 1.439256905402099 -544.1070439474004 -284.554632119284 0 E 1019.625 691.01953125 1091 707
+0 2 2 "0s" 0 0 0 192 0 0  1019.625 691.01953125 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 11 Hole factor
+LANG:10001 11 Hole factor
+LANG:10000 11 Loch Faktor
+2 291
+"PRIMITIVE_TEXT29"
+"WF"
+1 1018.75 634.1249999999999 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+126 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.063329098970469 0 1.448818897637788 -47.1925488600025 -267.7322834645623 0 E 1018.75 634.1249999999999 1123 650
+0 2 2 "0s" 0 0 0 192 0 0  1018.75 634.1249999999999 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 16 Explosion offset
+LANG:10001 16 Explosion offset
+LANG:10000 16 Explosion Offset
+2 292
+"PRIMITIVE_TEXT30"
+"WF"
+1 500 832.125 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+127 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9999999999999998 0 1.448818897637809 76.00000000000011 -361.5984251968619 0 E 500 832.125 687 848
+0 2 2 "0s" 0 0 0 192 0 0  500 832.125 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 28 Value of selcted ChartObject
+LANG:10001 28 Value of selcted ChartObject
+LANG:10000 35 Wert des selektierten Chart Objekts
+30 295
+"FRAME1"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+128 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"minimumSize" "250 -1"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 1.044303797468354 -217.0000000000001 -3.518987341772099 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 10 Chart Type
+LANG:10001 10 Chart Type
+LANG:10000 9 Chart Typ
+30 298
+"FRAME2"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+129 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 0.5569620253164559 -217 387.1898734177215 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 14 Angle settings
+LANG:10001 14 Angle settings
+LANG:10000 19 Winkeleinstellungen
+30 299
+"FRAME3"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+130 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 0.5379746835443038 -217.0000000000001 481.126582278481 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 15 Marker settings
+LANG:10001 15 Marker settings
+LANG:10000 19 Markereinstellungen
+30 300
+"FRAME4"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+131 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 0.734177215189874 -217 550.1139240506328 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 14 Donut settings
+LANG:10001 14 Donut settings
+LANG:10000 18 Donuteinstellungen
+30 303
+"FRAME5"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+132 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 0.518987341772152 -217.0000000000001 219.0632911392405 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 15 Values series 0
+LANG:10001 15 Values series 0
+LANG:10000 13 Werte Serie 0
+20 304
+"VisibilitySeries1"
+"WF"
+1 1034 410 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+133 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"horizontal" ""
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 408 1273 436
+1
+T 
+3
+LANG:10027 7 Visible
+LANG:10001 7 Visible
+LANG:10000 8 Sichtbar
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  Chart_ewo2.setSeriesVisible(1, state);
+}" 0
+30 305
+"FRAME6"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+134 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 0.5189873417721518 -217 305.0632911392405 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 15 Values series 1
+LANG:10001 15 Values series 1
+LANG:10000 13 Werte Serie 1
+32 306
+"SPACER1"
+""
+1 453 842 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+135 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"transparentForMouse" ""
+"sizePolicy" "Expanding Ignored"
+"layoutAlignment" "AlignNone"
+ 453 842 567 869 1
+20 307
+"Orientation"
+"WF"
+1 1034 769 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+136 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"horizontal" ""
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1032 767 1151 795
+1
+T 
+3
+LANG:10027 8 Vertical
+LANG:10001 8 Vertical
+LANG:10000 8 Vertikal
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  if ( button == 0 )
+    Chart_ewo2.orientation = state ? \"Vertical\" : \"Horizontal\";
+}" 0
+30 308
+"FRAME7"
+"WF"
+1 1000 102 E E E 1 E 1 E N "WF_Text" E N {0,0,0} E E
+ E E
+137 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.245 0 0.5379746835443036 -217 690.126582278481 0 E 1000 102 1201 261
+3
+LANG:10027 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,75,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,75,0,0,0,0,0
+0 3
+LANG:10027 14 Other Settings
+LANG:10001 14 Other Settings
+LANG:10000 22 Sonstige Einstellungen
+32 311
+"SPACER2"
+""
+1 101 883 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+140 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"transparentForMouse" ""
+"sizePolicy" "Expanding Ignored"
+"layoutAlignment" "AlignNone"
+ 101 883 1182 907 1
+32 313
+"SPACER3"
+""
+1 1028 834 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+142 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"transparentForMouse" ""
+"sizePolicy" "Ignored Expanding"
+"layoutAlignment" "AlignNone"
+ 1028 834 1277 869 2
+22 315
+"COMBO_BOX1"
+"WF"
+1 1122 563.8571428571428 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+144 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "150 28"
+"maximumSize" "150 -1"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  1120 558 1273 589
+10
+3
+LANG:10027 4 None
+LANG:10001 4 None
+LANG:10000 4 None
+
+0
+3
+LANG:10027 9 Rectangle
+LANG:10001 9 Rectangle
+LANG:10000 8 Rechteck
+
+0
+3
+LANG:10027 5 Cross
+LANG:10001 5 Cross
+LANG:10000 5 Kreuz
+
+0
+3
+LANG:10027 4 Plus
+LANG:10001 4 Plus
+LANG:10000 4 Plus
+
+0
+3
+LANG:10027 4 Star
+LANG:10001 4 Star
+LANG:10000 5 Stern
+
+0
+3
+LANG:10027 6 Circle
+LANG:10001 6 Circle
+LANG:10000 5 Kreis
+
+0
+3
+LANG:10027 8 Triangle
+LANG:10001 8 Triangle
+LANG:10000 7 Dreieck
+
+0
+3
+LANG:10027 13 Filled Circle
+LANG:10001 12 FilledCircle
+LANG:10000 16 Gefüllter Kreis
+
+0
+3
+LANG:10027 15 Filled Triangle
+LANG:10001 14 FilledTriangle
+LANG:10000 18 Gefülltes Dreieck
+
+0
+3
+LANG:10027 6 Custom
+LANG:10001 6 Custom
+LANG:10000 6 Custom
+
+0
+
+E
+"main()
+{
+  int type = this.selectedPos - 1;
+
+  if ( type == 9 )
+  {
+    Chart_ewo2.setSeriesMarkerType(1, type, \"apply_16.png\");
+  }
+  else
+  {
+    Chart_ewo2.setSeriesMarkerType(1, type);
+  }
+}" 0
+
+E
+ 1 0
+22 316
+"COMBO_BOX2"
+"WF"
+1 1664.962025316455 850.0999999999999 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+145 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 28"
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 34 Arial,-1,15,5,50,0,0,0,0,0,Regular
+LANG:10001 34 Arial,-1,15,5,50,0,0,0,0,0,Regular
+LANG:10000 34 Arial,-1,15,5,50,0,0,0,0,0,Regular
+0  114 840 246 871
+5
+3
+LANG:10027 4 None
+LANG:10001 4 None
+LANG:10000 4 None
+
+0
+3
+LANG:10027 4 Left
+LANG:10001 4 Left
+LANG:10000 4 Left
+
+0
+3
+LANG:10027 5 Right
+LANG:10001 5 Right
+LANG:10000 5 Right
+
+0
+3
+LANG:10027 3 Top
+LANG:10001 3 Top
+LANG:10000 3 Top
+
+0
+3
+LANG:10027 6 Bottom
+LANG:10001 6 Bottom
+LANG:10000 6 Bottom
+
+0
+
+"main()
+{
+  string legendPos = Chart_ewo2.legendPosition();
+  switch ( legendPos )
+  {
+    case \"None\":
+      COMBO_BOX2.selectedPos(1);
+      break;
+
+    case \"Left\":
+      COMBO_BOX2.selectedPos(2);
+      break;
+
+    case \"Right\":
+      COMBO_BOX2.selectedPos(3);
+      break;
+
+    case \"Top\":
+      COMBO_BOX2.selectedPos(4);
+      break;
+
+    case \"Bottom\":
+      COMBO_BOX2.selectedPos(5);
+      break;
+  }
+}
+" 0
+
+"main()
+{
+  Chart_ewo2.legendPosition(this.selectedText());
+}" 0
+
+E
+ 1 0
+2 317
+"PRIMITIVE_TEXT31"
+"WF"
+1 500 832.125 E E E 1 E 1 E N "WF_Text" E N "_Window" E E
+ E E
+146 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 0.9999999999999998 0 1.4488188976378 -491.9999999999999 -361.5984251968544 0 E 500 832.125 599 848
+0 2 2 "0s" 0 0 0 192 0 0  500 832.125 1
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0 3
+LANG:10027 15 legend position
+LANG:10001 15 legend position
+LANG:10000 16 Position Legende
+20 320
+"CHECK_BOX7"
+"WF"
+1 307 842 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+149 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"minimumSize" "-1 25"
+"layoutAlignment" "AlignNone"
+"horizontal" ""
+3
+LANG:10027 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10001 26 Arial,-1,15,5,50,0,0,0,0,0
+LANG:10000 26 Arial,-1,15,5,50,0,0,0,0,0
+0  305 840 448.0000000000029 871
+1
+T 
+3
+LANG:10027 17 animate hoverItem
+LANG:10001 17 animate hoverItem
+LANG:10000 17 animiere Elemente
+
+1 
+2
+LANG:10027 0 
+LANG:10001 0 
+E E
+0 0 0 0 0
+0
+E"main(int button, int state)
+{
+  Chart_ewo2.animateHoverItem(state);
+}" 0
+32 321
+"SPACER4"
+""
+1 251 842 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+150 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"transparentForMouse" ""
+"sizePolicy" "Fixed Ignored"
+"layoutAlignment" "AlignNone"
+ 251 842 300 869 1
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+4 9 "LAYOUT_GROUP9" -1
+3 0 
+192 265 267 
+
+"S 265" "0 0 1 1"
+"S 267" "1 0 1 1"
+"" ""
+1 2 1 9 9 3 3 1 0
+4 10 "ChartType" 26
+2 0 
+295 274 
+
+"S 274" "0 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 11 "Serie0" 26
+3 0 
+303 271 272 
+
+"S 271" "0 0 1 1"
+"S 272" "1 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 12 "Serie1" 26
+3 0 
+305 273 304 
+
+"S 273" "0 0 1 1"
+"S 304" "1 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 13 "StartAngle" 15
+2 0 
+276 275 
+
+"S 276" "0 0 1 1"
+"S 275" "1 0 1 1"
+"" ""
+0 1 0 0
+4 14 "StopAngle" 15
+2 0 
+288 287 
+
+"S 288" "0 0 1 1"
+"S 287" "1 0 1 1"
+"" ""
+0 1 0 0
+4 15 "AngleSettings" 26
+1 2 
+298 
+13 14 
+"G 13" "0 0 1 1"
+"G 14" "1 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 16 "MarkerType" 17
+2 0 
+278 315 
+
+"S 278" "0 0 1 1"
+"S 315" "1 0 1 1"
+"" ""
+0 1 0 0
+4 17 "MarkerSettings" 26
+2 1 
+299 282 
+16 
+"S 282" "1 0 1 1"
+"G 16" "0 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 18 "LAYOUT_GROUP18" 20
+2 0 
+291 285 
+
+"S 291" "0 0 1 1"
+"S 285" "1 0 1 1"
+"" ""
+0 1 0 0
+4 19 "LAYOUT_GROUP19" 20
+2 0 
+290 284 
+
+"S 290" "0 0 1 1"
+"S 284" "1 0 1 1"
+"" ""
+0 1 0 0
+4 20 "DonutSettings" 26
+2 2 
+300 283 
+18 19 
+"S 283" "1 0 1 1"
+"G 18" "0 0 1 1"
+"G 19" "2 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 21 "LAYOUT_GROUP21" 25
+7 0 
+281 292 306 316 317 320 321 
+
+"S 281" "6 0 1 1"
+"S 292" "5 0 1 1"
+"S 306" "4 0 1 1"
+"S 316" "1 0 1 1"
+"S 317" "0 0 1 1"
+"S 320" "3 0 1 1"
+"S 321" "2 0 1 1"
+"" ""
+0 1 0 0
+4 22 "LAYOUT_GROUP22" 23
+4 0 
+307 280 279 286 
+
+"S 307" "0 0 1 1"
+"S 280" "0 1 1 1"
+"S 279" "1 0 1 1"
+"S 286" "1 1 1 1"
+"" ""
+0 3 0 0
+4 23 "OtherSettings" 26
+1 1 
+308 
+22 
+"G 22" "0 0 1 1"
+"" ""
+1 2 1 3 3 3 3 1 3
+4 25 "LAYOUT_GROUP25" 27
+1 1 
+270 
+21 
+"S 270" "0 0 1 1"
+"G 21" "1 0 1 1"
+"" ""
+0 2 0 0
+4 26 "LAYOUT_GROUP26" 27
+1 7 
+313 
+10 11 12 15 17 20 23 
+"S 313" "7 0 1 1"
+"G 10" "0 0 1 1"
+"G 11" "1 0 1 1"
+"G 12" "2 0 1 1"
+"G 15" "3 0 1 1"
+"G 17" "4 0 1 1"
+"G 20" "5 0 1 1"
+"G 23" "6 0 1 1"
+"" ""
+0 2 0 1 3
+4 27 "LAYOUT_GROUP27" -1
+0 2 
+
+26 25 
+"G 26" "1 0 1 1"
+"G 25" "0 0 1 1"
+"" ""
+0 1 1 6 6 0 0 0
+4 28 "LAYOUT_GROUP28" -1
+4 0 
+312 193 196 311 
+
+"S 193" "2 0 1 1"
+"S 196" "0 0 1 1"
+"S 311" "1 0 1 1"
+"" ""
+1 1 0 0
+0

@@ -1,0 +1,647 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 786 N "fon_static" 0
+E E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 207
+"RECTANGLE4"
+""
+1 1000 100 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+245 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1 0 0.6730769230769231 0 122.6923076923077 1 E 1000 100 1010 620
+1 348 99 "" 1
+18 "font" 0 0 2
+LANG:10027 38 Noto Sans,-1,30,5,50,0,0,0,0,0,Regular
+LANG:10001 30 Noto Sans,-1,20,5,50,0,0,0,0,0
+0 
+31 "transform" 0 0 1 0 1 -22.66429450261802 -637.1507478632476
+22 "textType" 0 0 "0s" 0 0 0 1 0 0 
+20 "primitiveText" 0 0 1
+2
+LANG:10027 89 ТТиАО корпуса №1. Подача "зеленых" анодных блоков
+LANG:10001 25 TTAO. Feeding green anode
+
+0
+1 349 100 "" 1
+0
+1 363 101 "" 1
+0
+1 369 102 "" 13
+0
+1 378 103 "" 7
+0
+1 389 104 "" 1
+0
+1 391 104 "" 3
+31 "transform" 0 0 1.615384615384615 0 1.155555555555557 -174.3783787068557 -89.67201646090651
+0
+1 392 104 "" 4
+31 "transform" 0 0 1 0 1 2.301346801346881 -14.64114052017294
+0
+1 396 105 "" 13
+0
+1 405 106 "" 7
+0
+1 416 107 "" 1
+31 "transform" 0 0 1 4.930380657631324e-32 -4.930380657631324e-32 1 -1.70530256582424e-13 -1.673674294641842
+0
+1 417 107 "" 2
+31 "transform" 0 0 1 0 1 -3.410605131648481e-13 -1.67367429464187
+0
+1 418 107 "" 3
+31 "transform" 0 0 1.615384615384615 0 1.155555555555557 -299.6333291700051 -91.50124631110393
+0
+1 419 107 "" 4
+31 "transform" 0 0 1 0 1 2.301346801346881 -16.31481481481478
+0
+1 423 108 "" 13
+0
+1 432 109 "" 7
+0
+1 443 110 "" 1
+31 "transform" 0 0 1 7.395570986446986e-32 -2.465190328815662e-32 1 -2.27373675443232e-13 -1.673674294641842
+0
+1 444 110 "" 2
+31 "transform" 0 0 1 0 1 -3.410605131648481e-13 -1.673674294641842
+0
+1 445 110 "" 3
+31 "transform" 0 0 1.615384615384615 0 1.155555555555557 -424.8354199556974 -91.61468206557915
+0
+1 446 110 "" 4
+31 "transform" 0 0 1 0 1 2.301346801346881 -16.31481481481478
+0
+1 450 111 "" 13
+0
+1 459 112 "" 7
+0
+1 470 113 "" 1
+31 "transform" 0 0 1 4.930380657631324e-32 -4.930380657631324e-32 1 -1.13686837721616e-13 -1.673674294641955
+0
+1 471 113 "" 2
+31 "transform" 0 0 1 0 1 -3.410605131648481e-13 -1.673674294641899
+0
+1 472 113 "" 3
+31 "transform" 0 0 1.615384615384615 0 1.155555555555557 -549.4508045710819 -91.61468206557915
+0
+1 473 113 "" 4
+31 "transform" 0 0 1 0 1 2.301346801346881 -16.31481481481478
+0
+1 477 114 "" 1
+0
+1 483 117 "" 13
+0
+1 492 118 "" 7
+0
+1 503 119 "" 1
+31 "transform" 0 0 1 7.395570986446986e-32 -2.465190328815662e-32 1 5.048709793414476e-29 -1.6736742946417
+0
+1 504 119 "" 2
+31 "transform" 0 0 1 0 1 -4.547473508864641e-13 -1.673674294641756
+0
+1 505 119 "" 3
+31 "transform" 0 0 1.615384615384615 0 1.155555555555557 -853.9621652906418 -44.25355928724709
+0
+1 506 119 "" 4
+31 "transform" 0 0 1 0 1 2.301346801346881 -16.31481481481478
+0
+1 510 120 "" 13
+0
+1 519 121 "" 12
+0
+1 555 122 "" 1
+0
+1 561 123 "" 1
+0
+1 567 124 "" 1
+0
+1 573 125 "" 1
+0
+1 580 126 "" 1
+0
+10 292
+"POLYGON1"
+""
+1 800 400 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+254 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 220 130 1 E 12 800 400
+800 380
+790 380
+790 410
+940 410
+940 380
+930 380
+930 400
+870 400
+870 380
+860 380
+860 400
+ 1
+10 293
+"POLYGON2"
+""
+1 800 400 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+255 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E 1 0 1 220 -189.3333333333333 1 E 12 800 400
+800 380
+790 380
+790 410
+940 410
+940 380
+930 380
+930 400
+870 400
+870 380
+860 380
+860 400
+ 1
+1 587 127 "" 1
+0
+1 593 128 "" 1
+0
+1 599 129 "" 1
+0
+1 605 130 "" 1
+0
+1 611 131 "" 1
+0
+4 324
+"LINE6"
+""
+1 1160 220 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+261 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 1 3 2 1 E  1160 220 1292.311631305438 220
+1 617 133 "" 1
+31 "transform" 0 0 6.123233995736772e-17 -1 1 6.123233995736772e-17 651.5185758677525 1349.533253473123
+0
+1 618 133 "" 2
+31 "transform" 0 0 6.123233995736757e-17 -1 1 6.123233995736767e-17 652.3623258677524 1351.081997492261
+0
+1 619 133 "" 3
+31 "transform" 0 0 0.2564102564102562 0 2.733333333333336 747.9581852150179 -648.1098765432109
+0
+1 620 133 "" 4
+31 "transform" 0 0 1 0 1 43.13230797063136 10.14589688995966
+0
+6 347
+"RECTANGLE6"
+""
+1 1400 510 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+267 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E -1 1 3 2 1 E 0.6735819327731092 0 0.9148235294117634 242.8284313725489 -273.985098039215 2  1 0  "pictures/cogwheel-with-circles_icon_55602.png" 4294967295 E 1400 510 1440 540
+1 631 137 "" 1
+0
+6 346
+"RECTANGLE5"
+""
+1 1400 510 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+265 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E -1 1 3 2 1 E 0.6735819327731092 0 0.9148235294117634 243.3469921233075 41.05411764705951 2  1 0  "pictures/lock-6-48.png" 4294967295 E 1400 510 1440 540
+1 624 134 "" 1
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 360 100 "0" 1
+0
+1 367 101 "0" 1
+0
+1 376 102 "0" 1
+0
+1 393 104 "0" 1
+0
+1 403 105 "0" 1
+0
+1 420 107 "0" 1
+31 "transform" 0 0 1 0 0.9999999999999999 2.8421709430404e-13 -1.673674294641387
+0
+1 421 107 "0" 2
+31 "transform" 0 0 1 0 1 -1.13686837721616e-13 -1.673674294642182
+0
+1 430 108 "0" 1
+0
+1 447 110 "0" 1
+31 "transform" 0 0 1 0 0.9999999999999999 5.684341886080799e-14 -1.6736742946415
+0
+1 448 110 "0" 2
+31 "transform" 0 0 1 0 1 0 -1.673674294642125
+0
+1 457 111 "0" 1
+0
+1 474 113 "0" 1
+31 "transform" 0 0 1 0 0.9999999999999999 -5.684341886080801e-14 -1.6736742946415
+0
+1 475 113 "0" 2
+31 "transform" 0 0 1 0 1 -5.684341886080801e-14 -1.673674294642125
+0
+1 481 114 "0" 1
+0
+1 490 117 "0" 1
+0
+1 507 119 "0" 1
+31 "transform" 0 0 1 0 0.9999999999999999 -5.684341886080801e-14 -1.673674294641699
+0
+1 508 119 "0" 2
+31 "transform" 0 0 1 0 1 -5.684341886080801e-14 -1.673674294641955
+0
+1 517 120 "0" 1
+0
+1 545 121 "" 8
+0
+1 559 122 "0" 1
+0
+1 565 123 "0" 1
+0
+1 571 124 "0" 1
+0
+1 578 125 "0" 1
+0
+1 585 126 "0" 1
+0
+1 591 127 "0" 1
+0
+1 597 128 "0" 1
+0
+1 603 129 "0" 1
+0
+1 609 130 "0" 1
+0
+1 615 131 "0" 1
+0
+1 621 133 "0" 1
+31 "transform" 0 0 1 0 0.9999999999999999 -2.666666666666572 -16.34034096130836
+0
+1 622 133 "0" 2
+31 "transform" 0 0 1 0 1 -2.666666666666686 -16.34034096130867
+0
+1 635 137 "0" 1
+0
+1 628 134 "0" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 362 100 "" 6
+0
+1 395 104 "" 5
+31 "transform" 0 0 1.615384615384616 0 0.8292682926829305 -174.3783787068562 87.54426377596953
+0
+1 422 107 "" 5
+31 "transform" 0 0 1.615384615384616 0 0.82926829268293 -299.6333291700056 86.04132118864449
+0
+1 449 110 "" 5
+31 "transform" 0 0 1.615384615384616 0 0.8292682926829298 -424.8354199556985 86.16582384599525
+0
+1 476 113 "" 5
+31 "transform" 0 0 1.615384615384616 0 0.82926829268293 -549.450804571083 86.16582384599523
+0
+1 509 119 "" 5
+31 "transform" 0 0 1.615384615384616 0 0.8292682926829298 -853.9621652906435 34.18410372343732
+0
+1 552 121 "" 61
+0
+1 623 133 "" 5
+31 "transform" 0 0 0.2621082621082622 0 1.98373983739838 742.8757745160922 -360.6690755796467
+0
+1 637 137 "" 5
+0
+1 630 134 "" 5
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 99 "PANEL_REF112" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Legend.pnl" 127.4999999999985 665.4008547008547 T 210 1 0 1 772.5000000000015 34.59914529914533
+1
+"$text""\"ТТиАО корпуса №1. Подача \"зеленых\" анодных блоков\""
+3 100 "PANEL_REF113" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Loader.pnl" 210 620 T 211 1 0 1 -5 -72.5
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B111-ZS01"
+3 101 "PANEL_REF114" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 212 1 0 1 1 -77.48684210526312
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B111-ZS02"
+3 102 "PANEL_REF117" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_Anode.pnl" 319 593.25 T 222 1 0 1 74 -100.9469553549856
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B111-ZS03"
+3 103 "PANEL_REF118" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 198.4607054973818 465 T 223 1 0 1 0 -80
+0
+3 104 "PANEL_REF119" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 202.0803687970449 428.5810817020492 T 223 1 0 1 56.38033670033693 135.4189182979509
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B111-M01"
+3 105 "PANEL_REF122" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_Anode.pnl" 319 593.25 T 226 1 0 1 285 -100.9469553549856
+2
+"$b_isDetail""TRUE"
+"$dpe_value""OO1_TTA_B211-ZS01"
+3 106 "PANEL_REF123" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 198.4607054973818 465 T 227 1 0 1 203.5392945026182 -80
+0
+3 107 "PANEL_REF124" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 202.0803687970449 428.5810817020492 T 228 1 0 1 259.9196312029551 136.4189182979508
+2
+"$b_isDetail""TRUE"
+"$dpe_value""OO1_TTA_B211-M01"
+3 108 "PANEL_REF125" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_Anode.pnl" 319 593.25 T 229 1 0 1 477.3357054973819 -100.9469553549856
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B221-ZS01"
+3 109 "PANEL_REF126" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 198.4607054973818 465 T 230 1 0 1 404.5000000000001 -80
+0
+3 110 "PANEL_REF127" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 202.0803687970449 428.5810817020492 T 231 1 0 1 463.3730287297054 137.1481481481483
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B221-M01"
+3 111 "PANEL_REF128" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_Anode.pnl" 319 593.25 T 232 1 0 1 679.835705497382 -100.9469553549856
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B311-ZS01"
+3 112 "PANEL_REF129" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 198.4607054973818 465 T 233 1 0 1 607.0000000000001 -80
+0
+3 113 "PANEL_REF130" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 202.0803687970449 428.5810817020492 T 234 1 0 1 665.8730287297054 137.1481481481483
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B311-M01"
+3 114 "PANEL_REF131" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 235 1 0 1 789.835705497382 -73.73684173216759
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B311-ZS02"
+3 117 "PANEL_REF136" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_Anode.pnl" 319 593.25 T 240 1 0 1 1174.666666666667 -405.411316072831
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B341-ZS01"
+3 118 "PANEL_REF137" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/SIT_CONST/Conveyor.pnl" 198.4607054973818 465 T 241 1 0 1 1101.830961169285 -384.4643607178454
+0
+3 119 "PANEL_REF138" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 202.0803687970449 428.5810817020492 T 242 1 0 1 1160.70398989899 -167.3162125696971
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B341-M01"
+3 120 "PANEL_REF140" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI_Anode.pnl" 319 593.25 T 244 1 0 1 996 -363.8636223947478
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-ZS01"
+3 121 "PANEL_REF251" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/PolarStar3B.pnl" 192.1169944771117 407.2674781083596 T 247 1 0 1 901.8830055228885 -249.4534636768621
+3
+"$dpe1""OO1_TTA_B321-ZT01"
+"$dpe2""OO1_TTA_B321-WT01"
+"$dpe3""OO1_TTA_B321-WT02"
+3 122 "PANEL_REF142" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 248 1 0 1 861 39.67982456140328
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-ZSL01"
+3 123 "PANEL_REF143" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 249 1 0 1 928.9999999999995 39.99999999999989
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-ZSSL01"
+3 124 "PANEL_REF144" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 250 1 0 1 787.3333333333333 -333.5899119076062
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-ZSSH01"
+3 125 "PANEL_REF145" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIrepair.pnl" 1208.25 539.4934210526314 T 251 1 0 1 -15.25 -228.9166662935711
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-ZSS01"
+3 126 "PANEL_REF146" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DIrepair.pnl" 1208.25 539.4934210526314 T 252 1 0 1 -85.25 -228.9166662935711
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-ZSS02"
+3 127 "PANEL_REF147" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 256 1 0 1 861 -24.98684210526312
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B331-ZS01"
+3 128 "PANEL_REF148" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 257 1 0 1 931 -24.98684210526312
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B331-ZS02"
+3 129 "PANEL_REF149" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 258 1 0 1 1075.147336802819 -17.17128978766323
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-PS01"
+3 130 "PANEL_REF150" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 259 1 0 1 1002.666666666667 -266.570175065501
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B351-ZSH01"
+3 131 "PANEL_REF151" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 262 590 T 260 1 0 1 1002.666666666667 -211.5833329602379
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B351-ZSL01"
+3 133 "PANEL_REF153" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/ConveyorMotor.pnl" 202.0803687970449 428.5810817020492 T 263 1 0 1 781.9146953963721 -22.91441503538255
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B321-M01"
+3 134 "PANEL_REF154" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Drive.pnl" 1291.335705497382 565.4818295652969 T 264 1 0 1 -115.6081144609672 4.650450393832955
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B331-FC0x"
+3 137 "PANEL_REF155" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Drive.pnl" 1291.335705497382 565.4818295652969 T 266 1 0 1 -115.6081144609672 -314.6716334868656
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_TTA_B351-FC0x"
+0

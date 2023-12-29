@@ -1,0 +1,127 @@
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+OO1_TTA_B321-ZT01	SIT_AI	12209
+OO1_TTA_B321-WT01	SIT_AI	12210
+OO1_TTA_B321-WT02	SIT_AI	12211
+
+# Aliases/Comments
+AliasId	AliasName	CommentName
+OO1_TTA_B321-ZT01.	""	lt:2 LANG:10027 "Температура@%s@" LANG:10001 "Temperature@%s@" 
+OO1_TTA_B321-ZT01.OUT	""	lt:2 LANG:10027 "@@мм" LANG:10001 "Температура 1@@мм" 
+OO1_TTA_B321-ZT01.HH	""	lt:2 LANG:10027 "@%f@" LANG:10001 "@%f@" 
+OO1_TTA_B321-ZT01.SIM	""	lt:2 LANG:10027 "Simulation@@" LANG:10001 "Режим симуляция@@" 
+OO1_TTA_B321-ZT01.REP	""	lt:2 LANG:10027 "Repair@@" LANG:10001 "Ремонт@@" 
+OO1_TTA_B321-ZT01.SHOW	""	lt:2 LANG:10027 "Show tag and value@@" LANG:10001 "Видимость значений, тегов@@" 
+OO1_TTA_B321-ZT01.STD_PV	""	lt:2 LANG:10027 "expected standard value@@" LANG:10001 "ожидаемое стандартное значение@@" 
+OO1_TTA_B321-WT01.	""	lt:2 LANG:10027 "Температура@%s@" LANG:10001 "Temperature@%s@" 
+OO1_TTA_B321-WT01.OUT	""	lt:2 LANG:10027 "@@кг" LANG:10001 "Температура 1@@кг" 
+OO1_TTA_B321-WT01.HH	""	lt:2 LANG:10027 "@%f@" LANG:10001 "@%f@" 
+OO1_TTA_B321-WT01.SIM	""	lt:2 LANG:10027 "Simulation@@" LANG:10001 "Режим симуляция@@" 
+OO1_TTA_B321-WT01.REP	""	lt:2 LANG:10027 "Repair@@" LANG:10001 "Ремонт@@" 
+OO1_TTA_B321-WT01.SHOW	""	lt:2 LANG:10027 "Show tag and value@@" LANG:10001 "Видимость значений, тегов@@" 
+OO1_TTA_B321-WT01.STD_PV	""	lt:2 LANG:10027 "expected standard value@@" LANG:10001 "ожидаемое стандартное значение@@" 
+OO1_TTA_B321-WT02.	""	lt:2 LANG:10027 "Температура@%s@" LANG:10001 "Temperature@%s@" 
+OO1_TTA_B321-WT02.OUT	""	lt:2 LANG:10027 "@@кг" LANG:10001 "Температура 1@@кг" 
+OO1_TTA_B321-WT02.HH	""	lt:2 LANG:10027 "@%f@" LANG:10001 "@%f@" 
+OO1_TTA_B321-WT02.SIM	""	lt:2 LANG:10027 "Simulation@@" LANG:10001 "Режим симуляция@@" 
+OO1_TTA_B321-WT02.REP	""	lt:2 LANG:10027 "Repair@@" LANG:10001 "Ремонт@@" 
+OO1_TTA_B321-WT02.SHOW	""	lt:2 LANG:10027 "Show tag and value@@" LANG:10001 "Видимость значений, тегов@@" 
+OO1_TTA_B321-WT02.STD_PV	""	lt:2 LANG:10027 "expected standard value@@" LANG:10001 "ожидаемое стандартное значение@@" 
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+UI (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	50	0x8300000000100101	21.06.2022 05:31:58.020
+UI (1)/0	OO1_TTA_B321-ZT01.HH	SIT_AI	80	0x8300000000100101	21.06.2022 05:33:34.479
+UI (1)/0	OO1_TTA_B321-ZT01.H	SIT_AI	70	0x8300000000000101	21.06.2022 05:33:46.150
+ASC (1)/0	OO1_TTA_B321-ZT01.L	SIT_AI	20	0x8300000000000101	18.02.2022 06:05:13.937
+ASC (1)/0	OO1_TTA_B321-ZT01.LL	SIT_AI	10	0x8300000000000101	18.02.2022 06:05:13.937
+ASC (1)/0	OO1_TTA_B321-ZT01.SIM	SIT_AI	0	0x8300000000000101	18.02.2022 06:05:13.937
+ASC (1)/0	OO1_TTA_B321-ZT01.REP	SIT_AI	0	0x8300000000000101	18.02.2022 06:05:13.937
+EV (2)/0	OO1_TTA_B321-ZT01.SHOW	SIT_AI	1	0x8300000000300101	20.06.2022 10:21:57.914
+UI (2)/0	OO1_TTA_B321-ZT01.STD_PV	SIT_AI	50	0x8300000000000101	12.05.2022 13:03:12.256
+ASC (1)/0	OO1_TTA_B321-ZT01.CV	SIT_AI	24	0x8300000000000101	18.02.2022 06:05:13.954
+ASC (1)/0	OO1_TTA_B321-ZT01.SIMV	SIT_AI	50	0x8300000000000101	18.02.2022 06:05:13.954
+ASC (1)/0	OO1_TTA_B321-ZT01.isHH	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:13.954
+ASC (1)/0	OO1_TTA_B321-ZT01.isH	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:13.954
+ASC (1)/0	OO1_TTA_B321-ZT01.isL	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:13.969
+ASC (1)/0	OO1_TTA_B321-ZT01.isLL	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:13.969
+EV (2)/0	OO1_TTA_B321-ZT01.invalid	SIT_AI	0	0x8300000000000101	18.02.2022 06:05:14.016
+UI (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	50	0x8300000000100101	21.06.2022 05:31:46.160
+UI (1)/0	OO1_TTA_B321-WT01.HH	SIT_AI	80	0x8300000000100101	21.06.2022 05:32:49.414
+UI (1)/0	OO1_TTA_B321-WT01.H	SIT_AI	70	0x8300000000100101	21.06.2022 05:32:53.674
+ASC (1)/0	OO1_TTA_B321-WT01.L	SIT_AI	20	0x8300000000000101	18.02.2022 06:05:57.188
+ASC (1)/0	OO1_TTA_B321-WT01.LL	SIT_AI	10	0x8300000000000101	18.02.2022 06:05:57.188
+ASC (1)/0	OO1_TTA_B321-WT01.SIM	SIT_AI	0	0x8300000000000101	18.02.2022 06:05:57.188
+ASC (1)/0	OO1_TTA_B321-WT01.REP	SIT_AI	0	0x8300000000000101	18.02.2022 06:05:57.188
+EV (2)/0	OO1_TTA_B321-WT01.SHOW	SIT_AI	1	0x8300000000300101	20.06.2022 10:21:57.914
+UI (2)/0	OO1_TTA_B321-WT01.STD_PV	SIT_AI	50	0x8300000000000101	12.05.2022 13:03:12.256
+ASC (1)/0	OO1_TTA_B321-WT01.CV	SIT_AI	24	0x8300000000000101	18.02.2022 06:05:57.203
+ASC (1)/0	OO1_TTA_B321-WT01.SIMV	SIT_AI	50	0x8300000000000101	18.02.2022 06:05:57.203
+ASC (1)/0	OO1_TTA_B321-WT01.isHH	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:57.203
+ASC (1)/0	OO1_TTA_B321-WT01.isH	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:57.203
+ASC (1)/0	OO1_TTA_B321-WT01.isL	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:57.218
+ASC (1)/0	OO1_TTA_B321-WT01.isLL	SIT_AI	1	0x8300000000000101	18.02.2022 06:05:57.218
+EV (2)/0	OO1_TTA_B321-WT01.invalid	SIT_AI	0	0x8300000000000101	18.02.2022 06:05:57.265
+UI (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	50	0x8300000000100101	21.06.2022 05:31:52.281
+UI (1)/0	OO1_TTA_B321-WT02.HH	SIT_AI	80	0x8300000000100101	21.06.2022 05:33:12.123
+UI (1)/0	OO1_TTA_B321-WT02.H	SIT_AI	70	0x8300000000100101	21.06.2022 05:33:22.367
+ASC (1)/0	OO1_TTA_B321-WT02.L	SIT_AI	20	0x8300000000000101	18.02.2022 06:06:33.482
+ASC (1)/0	OO1_TTA_B321-WT02.LL	SIT_AI	10	0x8300000000000101	18.02.2022 06:06:33.482
+ASC (1)/0	OO1_TTA_B321-WT02.SIM	SIT_AI	0	0x8300000000000101	18.02.2022 06:06:33.482
+ASC (1)/0	OO1_TTA_B321-WT02.REP	SIT_AI	0	0x8300000000000101	18.02.2022 06:06:33.482
+EV (2)/0	OO1_TTA_B321-WT02.SHOW	SIT_AI	1	0x8300000000300101	20.06.2022 10:21:57.914
+UI (2)/0	OO1_TTA_B321-WT02.STD_PV	SIT_AI	50	0x8300000000000101	12.05.2022 13:03:12.256
+ASC (1)/0	OO1_TTA_B321-WT02.CV	SIT_AI	24	0x8300000000000101	18.02.2022 06:06:33.497
+ASC (1)/0	OO1_TTA_B321-WT02.SIMV	SIT_AI	50	0x8300000000000101	18.02.2022 06:06:33.497
+ASC (1)/0	OO1_TTA_B321-WT02.isHH	SIT_AI	1	0x8300000000000101	18.02.2022 06:06:33.497
+ASC (1)/0	OO1_TTA_B321-WT02.isH	SIT_AI	1	0x8300000000000101	18.02.2022 06:06:33.497
+ASC (1)/0	OO1_TTA_B321-WT02.isL	SIT_AI	1	0x8300000000000101	18.02.2022 06:06:33.513
+ASC (1)/0	OO1_TTA_B321-WT02.isLL	SIT_AI	1	0x8300000000000101	18.02.2022 06:06:33.513
+EV (2)/0	OO1_TTA_B321-WT02.invalid	SIT_AI	0	0x8300000000000101	18.02.2022 06:06:33.560
+
+# PvssRangeCheck
+Manager/User	ElementName	TypeName	_pv_range.._type	_pv_range.._ignor_inv	_pv_range.._neg	_pv_range.._min	_pv_range.._max	_pv_range.._incl_min	_pv_range.._incl_max	_pv_range.._set	_pv_range.._match
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	7	0	0	0	100	1	1		
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	7	0	0	0	100	1	1		
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	7	0	0	0	100	1	1		
+
+# AlertValue
+Manager/User	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	0				0																0								
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	1	4	-1.7976931348623e+308	10	1	1					Sit_LL.	lt:2 LANG:10027 "Нижний аварийный предел" LANG:10001 "Lower alert limit" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	1																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	2	4	10	20	0	1					Sit_L.	lt:2 LANG:10027 "Нижний предупредительный предел" LANG:10001 "Lower warning limit" 				0	01.01.1970 00:00:00.000		1	2																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	3	4	20	80	0	1					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		2	99																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	4	4	80	90	0	1					Sit_H.	lt:2 LANG:10027 "Верхний предупредительный предел" LANG:10001 "Upper warning limit" 				0	01.01.1970 00:00:00.000		99	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	5	4	90	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10027 "Верхний аварийный предел" LANG:10001 "Upper alert limit" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-ZT01.SIM	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	OO1_TTA_B321-ZT01.invalid	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	0				0																0								
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	1	4	-1.7976931348623e+308	10	1	1					Sit_LL.	lt:2 LANG:10027 "Нижний аварийный предел" LANG:10001 "Lower alert limit" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	1																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	2	4	10	20	0	1					Sit_L.	lt:2 LANG:10027 "Нижний предупредительный предел" LANG:10001 "Lower warning limit" 				0	01.01.1970 00:00:00.000		1	2																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	3	4	20	80	0	1					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		2	99																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	4	4	80	90	0	1					Sit_H.	lt:2 LANG:10027 "Верхний предупредительный предел" LANG:10001 "Upper warning limit" 				0	01.01.1970 00:00:00.000		99	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	5	4	90	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10027 "Верхний аварийный предел" LANG:10001 "Upper alert limit" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT01.SIM	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	OO1_TTA_B321-WT01.invalid	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI		13					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	0				0																0								
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	1	4	-1.7976931348623e+308	10	1	1					Sit_LL.	lt:2 LANG:10027 "Нижний аварийный предел" LANG:10001 "Lower alert limit" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	1																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	2	4	10	20	0	1					Sit_L.	lt:2 LANG:10027 "Нижний предупредительный предел" LANG:10001 "Lower warning limit" 				0	01.01.1970 00:00:00.000		1	2																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	3	4	20	80	0	1					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		2	99																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	4	4	80	90	0	1					Sit_H.	lt:2 LANG:10027 "Верхний предупредительный предел" LANG:10001 "Upper warning limit" 				0	01.01.1970 00:00:00.000		99	100																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	5	4	90	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10027 "Верхний аварийный предел" LANG:10001 "Upper alert limit" 				0	01.01.1970 00:00:00.000		100	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+ASC (1)/0	OO1_TTA_B321-WT02.SIM	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+ASC (1)/0	OO1_TTA_B321-WT02.invalid	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+
+# DpFunction
+Manager/User	ElementName	TypeName	_dp_fct.._type	_dp_fct.._param	_dp_fct.._fct	_dp_fct.._global	_dp_fct.._old_new_compare	_dp_fct.._stat_type	_dp_fct.._interval	_dp_fct.._time	_dp_fct.._day_of_week	_dp_fct.._day	_dp_fct.._month	_dp_fct.._delay	_dp_fct.._read_archive	_dp_fct.._inv_func	_dp_fct.._inv_limit	_dp_fct.._def_func	_dp_fct.._def_limit	_dp_fct.._user1_func	_dp_fct.._user1_limit	_dp_fct.._user2_func	_dp_fct.._user2_limit	_dp_fct.._user3_func	_dp_fct.._user3_limit	_dp_fct.._user4_func	_dp_fct.._user4_limit	_dp_fct.._user5_func	_dp_fct.._user5_limit	_dp_fct.._user6_func	_dp_fct.._user6_limit	_dp_fct.._user7_func	_dp_fct.._user7_limit	_dp_fct.._user8_func	_dp_fct.._user8_limit	_dp_fct.._interm_res	_dp_fct.._interm_res_cyc
+ASC (1)/0	OO1_TTA_B321-ZT01.OUT	SIT_AI	60	OO1_TTA_B321-ZT01.SIM:_original.._value, OO1_TTA_B321-ZT01.CV:_original.._value, OO1_TTA_B321-ZT01.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	OO1_TTA_B321-ZT01.SHOW	SIT_AI	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	OO1_TTA_B321-ZT01.invalid	SIT_AI	60	OO1_TTA_B321-ZT01.CV:_original.._invalid	"p1"		0
+ASC (1)/0	OO1_TTA_B321-WT01.OUT	SIT_AI	60	OO1_TTA_B321-WT01.SIM:_original.._value, OO1_TTA_B321-WT01.CV:_original.._value, OO1_TTA_B321-WT01.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	OO1_TTA_B321-WT01.SHOW	SIT_AI	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	OO1_TTA_B321-WT01.invalid	SIT_AI	60	OO1_TTA_B321-WT01.CV:_original.._invalid	"p1"		0
+ASC (1)/0	OO1_TTA_B321-WT02.OUT	SIT_AI	60	OO1_TTA_B321-WT02.SIM:_original.._value, OO1_TTA_B321-WT02.CV:_original.._value, OO1_TTA_B321-WT02.SIMV:_original.._value	"p1?p3:p2"		0
+ASC (1)/0	OO1_TTA_B321-WT02.SHOW	SIT_AI	60	NAVIGATION.showElement:_original.._value	"p1"		0
+ASC (1)/0	OO1_TTA_B321-WT02.invalid	SIT_AI	60	OO1_TTA_B321-WT02.CV:_original.._invalid	"p1"		0

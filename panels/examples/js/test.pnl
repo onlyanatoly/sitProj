@@ -1,0 +1,97 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 855 576 N "_3DFace" 0
+E E E E E 1 -1 -1 0  30 -100
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "141.585"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+29 1
+"WebView_ewo1"
+""
+1 277 149 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+5
+"url" "string "
+"webInspector" "bool TRUE"
+"minimumSize" "100 -1"
+"sizePolicy" "Expanding Expanding"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  80 20 802 519
+11 WebView.ewo
+1
+0 "messageReceived" "(mapping params)"
+"  switch (params.params.command)
+  {
+    case \"getAttributes\":
+      this.msgToJs(params, this.scriptables());
+      break;
+    case \"getShapes\":
+      this.msgToJs(params, getShapes(myModuleName(), myPanelName(), \"\"));
+      break;
+    }"
+"main()
+{
+  WebView_ewo1.loadSnippet(\"/data/html/demo/app/test/test.html\");
+}
+" 0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

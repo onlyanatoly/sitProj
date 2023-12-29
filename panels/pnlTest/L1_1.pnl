@@ -1,0 +1,137 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1806 783 N "_3DFace" 0
+E E E E E 1 -1 -1 0  90 120
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "120"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+2 1
+"PRIMITIVE_TEXT1"
+""
+1 400 10 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 400 10 704 45
+0 2 2 "0s" 0 0 0 192 0 0  400 10 1
+2
+LANG:10027 50 MS Shell Dlg 2,-1,30,5,50,0,0,0,0,0,Обычный
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 35 Мнемосхема 1 уровня
+LANG:10001 35 Мнемосхема 1 уровня
+1 2 0 "" 14
+0
+1 15 1 "" 14
+0
+1 29 2 "" 1
+0
+1 35 3 "" 68
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 5 0 "" 8
+0
+1 19 1 "" 8
+0
+1 33 2 "0" 1
+0
+1 43 3 "1" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 14 0 "" 29
+0
+1 28 1 "" 29
+0
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 45 3 "" 14
+0
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 0 "PANEL_REF1" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_h.pnl" 60 90 T 3 1 0 1 -27 -43
+4
+"$b_IBit""TRUE"
+"$b_isDuplAlert""TRUE"
+"$dpe_value""Temp1"
+"$i_PozTypeText""1"
+3 1 "PANEL_REF2" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/AI_v.pnl" 331.2162393162394 66 T 4 1 0 1 1182.200427350427 473
+6
+"$b_IBit""TRUE"
+"$b_isDetail""FALSE"
+"$b_isDuplAlert""TRUE"
+"$b_isTrend""TRUE"
+"$dpe_value""Temp2"
+"$i_PozTypeText""2"
+3 2 "PANEL_REF3" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 193.4999999999999 305.9999999999999 T 5 1 0 1 -70.99999999999984 449
+3
+"$b_isDetail""FALSE"
+"$dpe_value""DI1"
+"$i_PozTypeText""0"
+3 3 "PANEL_REF5" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/Pump.pnl" 194.2995726495727 286 T 7 1 0 1 1322.200427350427 -302.4886752136753
+1
+"$dpe_value""PUMP1"
+0

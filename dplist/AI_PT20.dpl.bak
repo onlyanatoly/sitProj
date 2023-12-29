@@ -1,0 +1,52 @@
+# ascii dump of database
+
+# Datapoint/DpId
+DpName	TypeName	ID
+LT31	SIT_AI	
+
+# Aliases/Comments
+AliasId	AliasName	CommentName
+LT31.OUT	""	lt:2 LANG:10027 "@%0.2f@MПа" LANG:10001 "@%0.2f@мм" 
+LT31.HH	""	lt:2 LANG:10027 "@%0.2f@" LANG:10001 "@%0.2f@" 
+LT31.H	""	lt:2 LANG:10027 "@%0.2f@" LANG:10001 "@%0.2f@" 
+LT31.L	""	lt:2 LANG:10027 "@%0.2f@" LANG:10001 "@%0.2f@" 
+LT31.LL	""	lt:2 LANG:10027 "@%0.2f@" LANG:10001 "@%0.2f@" 
+LT31.SIMV	""	lt:2 LANG:10027 "@%15.2f@" LANG:10001 "@%15.2f@" 
+
+# DpValue
+Manager/User	ElementName	TypeName	_original.._value	_original.._status64	_original.._stime
+EV (2)/0	LT31.OUT	SIT_AI	0.257	0x8300000000100101	28.01.2022 06:03:32.811
+UI (1)/0	LT31.HH	SIT_AI	5.15	0x8300000000100101	27.01.2022 07:44:59.091
+UI (2)/0	LT31.H	SIT_AI	4	0x8300000000100101	27.01.2022 07:15:39.343
+UI (2)/0	LT31.L	SIT_AI	0.1	0x8300000000100101	28.01.2022 05:18:49.230
+UI (2)/0	LT31.SIM	SIT_AI	0	0x8300000000100101	28.01.2022 06:03:32.811
+UI (1)/0	LT31.REP	SIT_AI	0	0x8300000000100101	28.01.2022 05:52:18.011
+UI (2)/0	LT31.SHOW	SIT_AI	1	0x8300000000200101	28.01.2022 06:12:01.533
+UI (1)/0	LT31.CV	SIT_AI	0.257	0x8300000000000101	28.01.2022 05:58:34.355
+UI (2)/0	LT31.SIMV	SIT_AI	4.2	0x8300000000100101	27.01.2022 08:11:37.227
+UI (2)/0	LT31.isHH	SIT_AI	1	0x8300000000000101	27.01.2022 07:14:54.671
+UI (2)/0	LT31.isH	SIT_AI	1	0x8300000000000101	27.01.2022 07:14:55.272
+UI (2)/0	LT31.isL	SIT_AI	1	0x8300000000000101	27.01.2022 07:14:56.045
+UI (2)/0	LT31.isLL	SIT_AI	1	0x8300000000000101	27.01.2022 07:14:56.582
+EV (2)/0	LT31.invalid	SIT_AI	0	0x8300000000100101	28.01.2022 05:58:34.355
+
+# PvssRangeCheck
+Manager/User	ElementName	TypeName	_pv_range.._type	_pv_range.._ignor_inv	_pv_range.._neg	_pv_range.._min	_pv_range.._max	_pv_range.._incl_min	_pv_range.._incl_max	_pv_range.._set	_pv_range.._match
+UI (1)/0	LT31.OUT	SIT_AI	7	0	0	0	100	1	1		
+
+# AlertValue
+Manager/User	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+UI (2)/0	LT31.OUT	SIT_AI		13					""		lt:2 LANG:10027 "" LANG:10001 "" 	\0			1	1				0																0								
+UI (2)/0	LT31.OUT	SIT_AI	1	4	-1.7976931348623e+308	0	1	1					Sit_LL.	lt:2 LANG:10027 "Низкий критический" LANG:10001 "Низкий критический" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	0																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (2)/0	LT31.OUT	SIT_AI	2	4	0	0.1	0	1					Sit_L.	lt:2 LANG:10027 "Низкий предупредительный" LANG:10001 "Низкий предупредительный" 				0	01.01.1970 00:00:00.000		0	0.1																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (2)/0	LT31.OUT	SIT_AI	3	4	0.1	4	0	1					 	lt:2 LANG:10027 "" LANG:10001 "" 				0	01.01.1970 00:00:00.000		0.1	4																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (2)/0	LT31.OUT	SIT_AI	4	4	4	5.15	0	1					Sit_H.	lt:2 LANG:10027 "Высокий предупредительный" LANG:10001 "Высокий предупредительный" 				0	01.01.1970 00:00:00.000		4	5.15																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (2)/0	LT31.OUT	SIT_AI	5	4	5.15	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10027 "Высокий критический" LANG:10001 "Высокий критический" 				0	01.01.1970 00:00:00.000		5.15	1.7976931348623e+308																lt:2 LANG:10027 "" LANG:10001 "" 	 	0x0				
+UI (1)/0	LT31.SIM	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	SIT_SIM.		0	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Режим симуляции включен" LANG:10001 "Simulation is enable" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+UI (1)/0	LT31.invalid	SIT_AI		12					""	""	lt:2 LANG:10027 "" LANG:10001 "" 	\0	Sit_NAN.		1	1	0	0	01.01.1970 00:00:00.000	0			lt:2 LANG:10027 "Данные недостоверны" LANG:10001 "Datas are invalid" 	lt:2 LANG:10027 "" LANG:10001 "" 												0								
+
+# DpFunction
+Manager/User	ElementName	TypeName	_dp_fct.._type	_dp_fct.._param	_dp_fct.._fct	_dp_fct.._global	_dp_fct.._old_new_compare	_dp_fct.._stat_type	_dp_fct.._interval	_dp_fct.._time	_dp_fct.._day_of_week	_dp_fct.._day	_dp_fct.._month	_dp_fct.._delay	_dp_fct.._read_archive	_dp_fct.._inv_func	_dp_fct.._inv_limit	_dp_fct.._def_func	_dp_fct.._def_limit	_dp_fct.._user1_func	_dp_fct.._user1_limit	_dp_fct.._user2_func	_dp_fct.._user2_limit	_dp_fct.._user3_func	_dp_fct.._user3_limit	_dp_fct.._user4_func	_dp_fct.._user4_limit	_dp_fct.._user5_func	_dp_fct.._user5_limit	_dp_fct.._user6_func	_dp_fct.._user6_limit	_dp_fct.._user7_func	_dp_fct.._user7_limit	_dp_fct.._user8_func	_dp_fct.._user8_limit	_dp_fct.._interm_res	_dp_fct.._interm_res_cyc
+UI (1)/0	LT31.OUT	SIT_AI	60	LT31.SIM:_original.._value, LT31.CV:_original.._value, LT31.SIMV:_original.._value	"p1?p3:p2"		0
+UI (1)/0	LT31.SHOW	SIT_AI	60	NAVIGATION.showElement:_original.._value	"p1"		0
+UI (1)/0	LT31.invalid	SIT_AI	60	LT31.CV:_original.._invalid	"p1"		0

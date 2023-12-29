@@ -1,0 +1,2161 @@
+V 14
+1
+LANG:10027 0 
+PANEL,-1 -1 400 400 N "_3DFace" 2
+"$SET4"
+"$UTM_Switch_SiriusSV"
+E E E E E 1 -1 -1 0  30.94095428964818 23.39515549358995
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "95.958"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10027 0 
+4 25
+"LINE3"
+""
+1 43 71 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+24 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_LINE3\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"LINE3\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"LINE3\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_LINE3
+void cb_Callback_LINE3(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"LINE3\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 2 3 2 1 E  43 71 43 45.19515549358997
+4 26
+"LINE4"
+""
+1 43 105 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+25 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_LINE4\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"LINE4\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"LINE4\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_LINE4
+void cb_Callback_LINE4(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"LINE4\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 2 3 2 1 E  43 105 42.99999999999997 130.80484450641
+4 27
+"LINE7"
+""
+1 43 45.19515549358997 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+26 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_LINE7\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"LINE7\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"LINE7\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_LINE7
+void cb_Callback_LINE7(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"LINE7\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 2 3 2 1 E  43 45.19515549358997 33 55.19515549358997
+4 28
+"LINE8"
+""
+1 43 45.19515549358997 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+27 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_LINE8\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"LINE8\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"LINE8\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_LINE8
+void cb_Callback_LINE8(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"LINE8\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 2 3 2 1 E  43 45.19515549358997 53 55.19515549358997
+4 29
+"LINE9"
+""
+1 43 40.2 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  43 40.2 33 50.19999999999999
+4 30
+"LINE10"
+""
+1 43 40.2 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  43 40.2 53 50.19999999999999
+4 31
+"LINE13"
+""
+1 43 40.2 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  43 40.2 43 14.39515549358995
+4 32
+"LINE14"
+""
+1 42.99999999999999 160.80484450641 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  42.99999999999999 160.80484450641 42.99999999999999 135.0000000000001
+4 33
+"LINE18"
+""
+1 42.99999999999997 130.80484450641 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_LINE18\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"LINE18\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"LINE18\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_LINE18
+void cb_Callback_LINE18(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"LINE18\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 2 3 2 1 E  42.99999999999997 130.80484450641 53 120.0000000000001
+4 34
+"LINE19"
+""
+1 42.99999999999997 130.80484450641 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_LINE19\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"LINE19\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"LINE19\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_LINE19
+void cb_Callback_LINE19(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"LINE19\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 2 3 2 1 E  42.99999999999997 130.80484450641 32.99999999999999 120.0000000000001
+4 35
+"LINE20"
+""
+1 42.99999999999999 135.0000000000001 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  42.99999999999999 135.0000000000001 53 125.0000000000001
+4 36
+"LINE21"
+""
+1 42.99999999999999 135.0000000000001 E E E 1 E 1 E N {200,150,100} E N {255,255,255} E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  42.99999999999999 135.0000000000001 32.99999999999999 125.0000000000001
+6 55
+"RECTANGLE15"
+""
+1 107 85 E E E 1 E 1 E N {80,80,80} E N {80,80,80} E E
+ E E
+54 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Truck_Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Truck_Control_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_RECTANGLE15\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"RECTANGLE15\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"RECTANGLE15\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_RECTANGLE15
+void cb_Callback_RECTANGLE15(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Truck_Arm_online_value;
+  bool Truck_Control_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Truck_Arm_online_value\" )
+      Truck_Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Truck_Control_online_value\" )
+      Truck_Control_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility(!(Truck_Control_online_value && !Truck_Arm_online_value), 1, \"RECTANGLE15\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 1 3 2 1 E 1.380952380952381 0 2.375 -119.7619047619047 -161.875 1 E 107 85 128 125
+6 49
+"RECTANGLE14"
+""
+1 70 130 E E E 1 E 1 E N "White" E N "_Transparent" E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 3;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_On\" + \":_alert_hdl.._ack\";
+  dsDps[2] = $UTM_Switch_SiriusSV+\".AVR.AVR_On\" + \":_alert_hdl.._ack\";
+  dsDps[3] = $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_Off\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {3}
+// dp1 {$UTM_Switch_SiriusSV+\".AVR.Auto_AVR_On\"}
+// dp2 {$UTM_Switch_SiriusSV+\".AVR.AVR_On\"}
+// dp3 {$UTM_Switch_SiriusSV+\".AVR.Auto_AVR_Off\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+48 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setForeColor();
+  EP_setVisible();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 6 3 2 1 E 1.0125 0 0.9966666666666639 -47.875 -61.56666666666632 1 E 70 130 110 170
+6 22
+"RECTANGLE1"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N {200,150,100} E E
+ E E
+21 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".Clsd\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            $UTM_Switch_SiriusSV+\".Clsd\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setBackColorCB(string dpSource, bool boNewValue)
+{
+  if (!boNewValue)
+    setValue(\"\", \"backCol\", \"_Transparent\");
+  else
+    setValue(\"\", \"backCol\", \"{200,150,100}\");
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$UTM_Switch_SiriusSV+\".Clsd\"}
+// DPConfig {:_online.._value}
+// DPType {bool}
+// AlertHdl {FALSE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// Operator1 {notequal}
+// Operant1 {0}
+// Color1 {_Transparent}
+// Operator2 {equal}
+// Operant2 {1}
+// Color2 {\\{200,150,100\\}}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 5 3 2 1 E 0.85 0 0.85 -33.5 -39.5 1 E 70 130 110 170
+6 23
+"RECTANGLE8"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N "_Transparent" E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $UTM_Switch_SiriusSV+\".Alarm_Disconnect\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$UTM_Switch_SiriusSV+\".Alarm_Disconnect\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+22 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setBackColor();
+}
+
+void EP_setBackColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".Alarm_Disconnect\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setBackColorCB\",
+            $UTM_Switch_SiriusSV+\".Alarm_Disconnect\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_setBackColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"backCol\", sNewColor);
+}
+
+// SimpleCtrlScript {EP_setBackColor}
+// DP {$UTM_Swith+\".Alarm.Alarm_Disconnect\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setBackColor}
+" 0
+ E 0 5 3 2 1 E 0.85 0 0.85 -33.5 -39.5 1 E 70 130 110 170
+6 24
+"RECTANGLE3"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N "_Transparent" E E
+ E E
+23 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 5 3 2 1 E 0.85 0 0.85 -33.49999999999999 -39.50000000000003 1 E 70 130 110 170
+6 37
+"RECTANGLE9"
+""
+1 70 130 E E E 1 E 1 E N "White" E N "White" E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Clsd:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Contorl_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe3 = sdCheckDpe($UTM_Switch_SiriusSV+\".Clsd:_online.._value\");
+    if ( strlen(dpe3) )
+    {
+      dynAppend(dpeList, dpe3);
+      dynAppend(varList, \"Clsd_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_RECTANGLE9\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"RECTANGLE9\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"RECTANGLE9\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_RECTANGLE9
+void cb_Callback_RECTANGLE9(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Arm_online_value;
+  bool Contorl_online_value;
+  bool Clsd_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Arm_online_value\" )
+      Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Contorl_online_value\" )
+      Contorl_online_value = valueList[i];
+    else if ( varList[i] == \"Clsd_online_value\" )
+      Clsd_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility((Contorl_online_value && Clsd_online_value && !Arm_online_value), 1, \"RECTANGLE9\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 5 3 2 1 E 0.85 0 0.85 -33.5 -39.50000000000003 1 E 70 130 110 170
+6 38
+"RECTANGLE11"
+""
+1 70 130 E E E 1 E 1 E N "White" E N "_Transparent" E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"//[SCRIPT_WIZARD_GENERATED {invalid}
+//[FUNCTION main
+main()
+{
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:
+    //VALUEBAD_RETURNWHENBAD:FALSE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //bool \"ES_RU_UPN_YACH10.Truck_Arm:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Truck_Control:_online.._value\"
+    //bool \"ES_RU_UPN_YACH10.Clsd:_online.._value\"
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Arm:_online.._value\");
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, \"Arm_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe2 = sdCheckDpe($UTM_Switch_SiriusSV+\".Truck_Control:_online.._value\");
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, \"Contorl_online_value\");
+    }
+    else
+    {
+    }
+
+    string dpe3 = sdCheckDpe($UTM_Switch_SiriusSV+\".Clsd:_online.._value\");
+    if ( strlen(dpe3) )
+    {
+      dynAppend(dpeList, dpe3);
+      dynAppend(varList, \"Clsd_online_value\");
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(\"cb_Callback_RECTANGLE11\", varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(\"RECTANGLE11\", 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(\"RECTANGLE11\", 4);
+  }
+  //]
+}
+//]
+//[FUNCTION cb_Callback_RECTANGLE11
+void cb_Callback_RECTANGLE11(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  bool Arm_online_value;
+  bool Contorl_online_value;
+  bool Clsd_online_value;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i <= dynlen(varList); i++)
+  {
+    if ( varList[i] == \"Arm_online_value\" )
+      Arm_online_value = valueList[i];
+    else if ( varList[i] == \"Contorl_online_value\" )
+      Contorl_online_value = valueList[i];
+    else if ( varList[i] == \"Clsd_online_value\" )
+      Clsd_online_value = valueList[i];
+  }
+  //]
+  //[ANIMATION
+  sdVisibility((Contorl_online_value && !Clsd_online_value && !Arm_online_value), 1, \"RECTANGLE11\");
+  //]
+}
+//]
+//]
+" 0
+ E 0 5 3 2 1 E 0.85 0 0.85 -33.5 -39.50000000000003 1 E 70 130 110 170
+6 39
+"RECTANGLE7"
+""
+1 70 130 E E E 1 E 1 E N {200,150,100} E N "White" E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 5 3 2 1 E 0.85 0 0.85 -33.5 -39.5 1 E 70 130 110 170
+2 40
+"PRIMITIVE_TEXT2"
+""
+1 6 8 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".Clsd\"+\":_online.._bad\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".Clsd\"+\":_online.._bad\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Swith+\".Opnd\"}
+// DPConfig {:_online.._bad}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 0.9712499999999976 0 1.5 27.46000000000003 60.99999999999999 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,29,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 1 ?
+4 41
+"LINE1"
+""
+1 59.93772893772887 70.99999999999996 E E E 1 E 1 E N "White" E N {255,255,255} E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 27;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $UTM_Switch_SiriusSV+\".Protect.DI1\" + \":_alert_hdl.._ack\";
+  dsDps[2] = $UTM_Switch_SiriusSV+\".Protect.DI2\" + \":_alert_hdl.._ack\";
+  dsDps[3] = $UTM_Switch_SiriusSV+\".Protect.DI3\" + \":_alert_hdl.._ack\";
+  dsDps[4] = $UTM_Switch_SiriusSV+\".Protect.DI4\" + \":_alert_hdl.._ack\";
+  dsDps[5] = $UTM_Switch_SiriusSV+\".Protect.DI5\" + \":_alert_hdl.._ack\";
+  dsDps[6] = $UTM_Switch_SiriusSV+\".Protect.DI6\" + \":_alert_hdl.._ack\";
+  dsDps[7] = $UTM_Switch_SiriusSV+\".Protect.DI7\" + \":_alert_hdl.._ack\";
+  dsDps[8] = $UTM_Switch_SiriusSV+\".Protect.DI8\" + \":_alert_hdl.._ack\";
+  dsDps[9] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI1\" + \":_alert_hdl.._ack\";
+  dsDps[10] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI2\" + \":_alert_hdl.._ack\";
+  dsDps[11] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI3\" + \":_alert_hdl.._ack\";
+  dsDps[12] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI4\" + \":_alert_hdl.._ack\";
+  dsDps[13] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI5\" + \":_alert_hdl.._ack\";
+  dsDps[14] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI6\" + \":_alert_hdl.._ack\";
+  dsDps[15] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI7\" + \":_alert_hdl.._ack\";
+  dsDps[16] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI8\" + \":_alert_hdl.._ack\";
+  dsDps[17] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI9\" + \":_alert_hdl.._ack\";
+  dsDps[18] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI10\" + \":_alert_hdl.._ack\";
+  dsDps[19] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI11\" + \":_alert_hdl.._ack\";
+  dsDps[20] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI12\" + \":_alert_hdl.._ack\";
+  dsDps[21] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI13\" + \":_alert_hdl.._ack\";
+  dsDps[22] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI14\" + \":_alert_hdl.._ack\";
+  dsDps[23] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI15\" + \":_alert_hdl.._ack\";
+  dsDps[24] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI16\" + \":_alert_hdl.._ack\";
+  dsDps[25] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI17\" + \":_alert_hdl.._ack\";
+  dsDps[26] = $UTM_Switch_SiriusSV+\".Analog_parametrs.AI18\" + \":_alert_hdl.._ack\";
+  dsDps[27] = $UTM_Switch_SiriusSV+\".Control_SHU\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {27}
+// dp1 {$UTM_Switch_SiriusSV+\".Protect.DI1\"}
+// dp2 {$UTM_Switch_SiriusSV+\".Protect.DI2\"}
+// dp3 {$UTM_Switch_SiriusSV+\".Protect.DI3\"}
+// dp4 {$UTM_Switch_SiriusSV+\".Protect.DI4\"}
+// dp5 {$UTM_Switch_SiriusSV+\".Protect.DI5\"}
+// dp6 {$UTM_Switch_SiriusSV+\".Protect.DI6\"}
+// dp7 {$UTM_Switch_SiriusSV+\".Protect.DI7\"}
+// dp8 {$UTM_Switch_SiriusSV+\".Protect.DI8\"}
+// dp9 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI1\"}
+// dp10 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI2\"}
+// dp11 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI3\"}
+// dp12 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI4\"}
+// dp13 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI5\"}
+// dp14 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI6\"}
+// dp15 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI7\"}
+// dp16 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI8\"}
+// dp17 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI9\"}
+// dp18 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI10\"}
+// dp19 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI11\"}
+// dp20 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI12\"}
+// dp21 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI13\"}
+// dp22 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI14\"}
+// dp23 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI15\"}
+// dp24 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI16\"}
+// dp25 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI17\"}
+// dp26 {$UTM_Switch_SiriusSV+\".Analog_parametrs.AI18\"}
+// dp27 {$UTM_Switch_SiriusSV+\".Control_SHU\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+40 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setForeColor();
+  EP_setVisible();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AllAlarm\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $UTM_Switch_SiriusSV+\".AllAlarm\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AllAlarm\"+\":_alert_hdl.._act_state\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".AllAlarm\"+\":_alert_hdl.._act_state\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 3 3 2 1 E  59.93772893772887 70.99999999999996 26.06227106227102 104.9999999999999
+6 43
+"Border3"
+""
+1 465 452 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".TU\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".TU\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".TU\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 1 0 1 E 0.7040482954545458 0 0.8125 -277.3824573863638 -252.25 2  1 4  "pictures/Indicators/operation_mode_manual_green_up.wmf" 4294967295 E 465 420 497 452
+6 44
+"RECTANGLE2"
+""
+1 465 452 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10000 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".TU\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".TU\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", !boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".TU\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {0}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 1 0 1 E 0.7271875000000012 0 0.8125 -289.4374147727278 -253.2500000000001 2  1 4  "pictures/Indicators/32_machine_locked.gif" 4294967295 E 465 420 497 452
+6 42
+"RECTANGLE12"
+""
+1 134 98 E E E 1 E 1 E N "_Transparent" E N "_Transparent" E E
+ "main()
+{
+	symb_actionAtRightClick2($UTM_Switch_SiriusSV, $UTM_Switch_SiriusSV);
+}
+
+symb_actionAtRightClick2(string DPT, string DPE)
+{
+  // check user
+  // depending on DPT & user generate Popup
+  // open correct panel
+
+  bool bBuildTrendPopup;
+  dyn_string popup;
+  int answer;
+
+  //
+  //  build POPUP:
+  //
+  //  Trends & Trend
+  //  Information&Simulation
+  //  Options
+  //  Properties
+  //
+  //
+  //
+  //   Trend-Popup
+  bBuildTrendPopup = symb_isDptTrendable2(DPT);
+  if (bBuildTrendPopup)
+    dynAppend(popup, makeDynString(\"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trends\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),     // OPERATOR
+                                   \"CASCADE_BUTTON, \" +getCatStr(\"STD_Symbols\",\"trendbuffer\")+\", \"  +(getUserPermission(2)?\"1\":\"0\"),// Operator
+                                   \"SEPARATOR\"));
+  //  Information&Simulation
+  //
+  switch (DPT)
+  {
+   case \"SLIDE_VALVE_HAND1\": dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+
+                                         \"SEPARATOR\"));break;
+   //default: dynAppend(popup, makeDynString(\"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"information\")+\", 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+                                //         \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"simulation\")+\" , 1,\" +(getUserPermission(4)?\"1\":\"0\"),  // PARA
+                                  //       \"SEPARATOR\"));break;
+  }
+  //
+  //  DPT-specific Options
+  //
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"UTM_AI\":               // no special options
+   case \"COUNTER1\":             // no special options
+   case \"BIT_CONDITION\":        // no special options
+   case \"DRIVE1\":              // no special options
+   case \"DRIVE2\":              // no special options
+   case \"PUMP1\":               // no special options
+   case \"PUMP2\":               // no special options
+   case \"SETPOINT\":             // no special options
+   case \"SLIDE_VALVE1\":        // no special options
+   case \"SLIDE_VALVE2\":        // no special options
+   case \"SLIDE_VALVE_HAND1\":   // no special options
+   case \"ANALOG2\":              // no special options
+   case \"ANALOG1\":   break;     // no special options
+   //default:                      dynAppend(popup, makeDynString(\"PUSH_BUTTON, EXTEND1 , 2, \"+(getUserPermission(2)?\"1\":\"0\"),  // OPERATOR
+  //                                                        \"PUSH_BUTTON, EXTEND2 , 1,\" +(getUserPermission(3)?\"1\":\"0\"),  // OPERATOR ALL
+   //                                                       \"SEPARATOR\"));
+        break;
+  }
+  //  DPT_CHANGE END
+  //
+  //  Properties
+  //
+    dynAppend(popup, makeDynString( \"PUSH_BUTTON, \"+getCatStr(\"STD_Symbols\",\"properties\")+\", 3,\"  +(getUserPermission(4)?\"1\":\"0\")));  // PARA
+
+  //
+  // build subpopups
+  //
+  if (bBuildTrendPopup)                            // Trend
+  {
+     symb_buildPopUpTrend(popup,1000,getCatStr(\"STD_Symbols\",\"trends\"));
+     symb_buildPopUpTrendbuffer(popup);
+  }
+  //
+  //  show popup
+  //
+  //
+
+  if (dynlen(popup) > 0)
+  {
+     popupMenu(popup, answer);
+     symb_EvaluatePopup2(popup, answer, DPE, DPT);
+  }
+
+}
+
+symb_EvaluatePopup2(dyn_string popup, int answer, string DPE, string DPT)
+{
+   //
+   //   !!! actual only working with STD_objects !!!
+   //
+   string sObjectPath = \"objects_parts/STD_OBJECTS/\";
+   string PANEL, path;
+
+   switch (answer)
+   {
+   case 0:  break;   // ESCAPE
+   case 1:           // Simulation
+             symb_checkDPE(DPE,DPT);
+             PANEL = sObjectPath+DPT+\"_sim.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_sim.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"SIM:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"SIM:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+  //           break;
+   case 2:           // Informaton
+             PANEL = sObjectPath+DPT+\"_info.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_info.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"INFO:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+                else
+                    ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"INFO:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_sim.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+             break;
+   case 3:           // Properties
+                PANEL = sObjectPath+DPT+\"_prop.pnl\";
+             path =  getPath(PANELS_REL_PATH, PANEL);
+             if (path != \"\")                                                   // found -> use it
+                 ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dpt:\"+DPT));
+             else
+             {
+                PANEL = sObjectPath+\"COMMON_prop.pnl\";
+                path =  getPath(PANELS_REL_PATH, PANEL);
+                if (path != \"\")                                                   // found -> use it
+                   ChildPanelOnCentral( PANEL,getCatStr(\"STD_Symbols\",\"PARA:\")+dpSubStr(DPE,DPSUB_DP),makeDynString(\"$dpe:\"+DPE, \"$dp:\"+dpSubStr(DPE, DPSUB_SYS_DP)));
+                else
+                       ChildPanelOnCentral(\"vision/MessageWarning\",getCatStr(\"STD_Symbols\",\"PARA:\")+getCatStr(\"va\",\"e13\"),makeDynString(getCatStr(\"STD_Symbols\",\"panelmissing\")+sObjectPath+DPT+\"_prop.pnl\",getCatStr(\"general\",\"cancel\")));
+             }
+              break;
+   default:
+               symb_EvaluatePopupOtherActions(popup, answer, DPE, DPT);
+  }
+}
+
+
+bool symb_isDptTrendable2(string DPT)
+{
+  bool ret = false;
+
+  //  DPT_CHANGE START
+  switch (DPT)
+  {
+   case \"WH_SC1\":
+   case \"COUNTER1\":
+   case \"ANALOG2\":
+   case \"ANALOG1\": ret = TRUE; break;
+   case \"BIT_CONDITION\":
+   case \"DRIVE1\":
+   case \"DRIVE2\":
+   case \"PUMP1\":
+   case \"PUMP2\":
+   case \"SETPOINT\":
+   case \"SLIDE_VALVE1\":
+   case \"SLIDE_VALVE2\":
+   case \"SLIDE_VALVE_HAND1\":
+   default:      break;
+  }
+  //  DPT_CHANGE END
+  return ret;
+}" 0
+ E
+41 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E "// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_childPanelOn();
+}
+
+void EP_childPanelOn()
+{
+  ChildPanelOnCentral(\"objects/SIRIUS/PopupSV.pnl\",
+      \"Параметры ячейки\",
+      makeDynString(\"$SET4:\" + $SET4, \"$UTM_Switch_Sirius:\" + $UTM_Switch_SiriusSV, \"$UTM_Switch_SiriusSV:\" + $UTM_Switch_SiriusSV),
+      0, 0);
+}
+
+// SimpleCtrlScript {EP_childPanelOn}
+// Function {ChildPanelOnRelativModal}
+// File {objects/SIRIUS/PopupSV.pnl}
+// Panel {Параметры ячейки}
+// Parent {}
+// Module {}
+// OffsetX {0}
+// OffsetY {0}
+// PanelPara1 {$SET4:$SET4}
+// PanelPara2 {$UTM_Switch_Sirius:$UTM_Switch_SiriusSV}
+// PanelPara3 {$UTM_Switch_SiriusSV:$UTM_Switch_SiriusSV}
+// SimpleCtrlScriptEnd {EP_childPanelOn}
+" 0
+ 0 1 3 2 1 E 0.740988372093024 0 0.7380952380952354 -72.22369186046529 0.1666666666669272 1 E 134 98 177 140
+2 52
+"PRIMITIVE_TEXT3"
+""
+1 6 8 E E E 1 E 1 E N "Red" E N "_Window" E "// SimpleCtrlScriptStart {valid}
+main(int iType)
+{
+  dyn_errClass err;
+
+  int          i, iReturnValue = 1, iDpCount = 1;
+  dyn_int      diType = makeDynInt();
+  dyn_string   dsDps;
+
+  dsDps[1] = $UTM_Switch_SiriusSV+\".AVR.AVR_On\" + \":_alert_hdl.._ack\";
+
+  if ( isFunctionDefined(\"isAckable\") )
+  {
+    isAckable( iType, dsDps, iReturnValue );
+    if ( iReturnValue == 0 || dynlen (dsDps ) < 1 ) return;
+  }
+
+  for ( i = 1; i <= dynlen(dsDps); i++ )
+    diType[i] = iType;
+
+  dpSetWait( dsDps, diType );
+
+  err = getLastError();
+  if ( dynlen(err) > 0 )
+    DebugN(err);
+}
+// SimpleCtrlScript {EP_confirm}
+// dpCount {1}
+// dp1 {$UTM_Switch_SiriusSV+\".AVR.AVR_On\"}
+// SimpleCtrlScriptEnd {EP_confirm}
+" 0
+
+ E E
+51 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  EP_setForeColor();
+  EP_setVisible();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state\"))
+  {
+    setValue(\"\", \"foreCol\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".AVR.AVR_On\"+\":_alert_hdl.._act_state\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 3.25 0 0.6999999999999946 -9.5 46.40000000000004 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,11,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 19 Работа АВР
+2 53
+"PRIMITIVE_TEXT4"
+""
+1 6 8 E E E 1 E 1 E N "STD_value_ok" E N "_Window" E E
+ E E
+52 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"// SimpleCtrlScriptStart {invalid}
+main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_On\"+\":_online.._value\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_On\"+\":_online.._value\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".AVR.AVR_On\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 3.75 0 0.6999999999999946 -17 35.69757774679505 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,11,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 21 АВР введено
+2 54
+"PRIMITIVE_TEXT5"
+""
+1 6 8 E E E 1 E 1 E N "Yellow" E N "_Window" E E
+ E E
+53 0 0 0 0 0
+E E E
+0
+1
+LANG:10027 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  EP_setForeColor();
+  EP_setVisible();
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_Off\"+\":_alert_hdl.._act_state_color\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setForeColorCB\",
+            $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_Off\"+\":_alert_hdl.._act_state_color\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setForeColorCB(string dpSource, string sNewColor)
+{
+  setValue(\"\", \"foreCol\", sNewColor);
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_Off\"+\":_alert_hdl.._act_state\"))
+  {
+    setValue(\"\", \"foreCol\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_setVisibleCB\",
+            $UTM_Switch_SiriusSV+\".AVR.Auto_AVR_Off\"+\":_alert_hdl.._act_state\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(\"\", \"visible\", boNewValue);
+}
+
+// SimpleCtrlScript {EP_setForeColor}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_alert_hdl.._act_state_color}
+// DPType {string}
+// AlertHdl {TRUE}
+// DPEInvalid {}
+// DPEConfigInvalid {}
+// SimpleCtrlScriptEnd {EP_setForeColor}
+// SimpleCtrlScript {EP_setVisible}
+// DP {$UTM_Switch_SiriusSV+\".AllAlarm\"}
+// DPConfig {:_online.._value}
+// DPTyp {bool}
+// Active {1}
+// Operator {less}
+// Value {TRUE}
+// SimpleCtrlScriptEnd {EP_setVisible}
+" 0
+ E 0 1 3 2 1 E 4.274999999999999 0 0.6999999999999946 -25.39999999999998 35.6975777467951 0 E 6 8 26 28
+0 2 2 "0s" 0 0 0 64 0 0  6 8 1
+1
+LANG:10027 47 Arial,-1,11,5,75,0,0,0,0,0,Полужирный
+0 1
+LANG:10027 23 АВР выведено
+0
+LAYER, 1 
+1
+LANG:10027 0 
+0
+LAYER, 2 
+1
+LANG:10027 0 
+0
+LAYER, 3 
+1
+LANG:10027 0 
+0
+LAYER, 4 
+1
+LANG:10027 0 
+0
+LAYER, 5 
+1
+LANG:10027 0 
+0
+LAYER, 6 
+1
+LANG:10027 0 
+0
+LAYER, 7 
+1
+LANG:10027 0 
+0
+0

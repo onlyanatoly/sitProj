@@ -1,0 +1,207 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1294 500 N "_3DFace" 0
+E E E E E 1 -1 -1 0  35.06686746987953 32.5
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 1
+"RECTANGLE35"
+""
+1 150 20 E E E 1 E 1 E N {0,0,0} E N "cont_static" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E 1.627821686746988 0 1 -209.0395180722891 10.46682422969178 1 E 150 20 900 430
+2 2
+"PRIMITIVE_TEXT38"
+""
+1 52.43313253012045 47 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"sizePolicy" "Fixed Fixed"
+"layoutAlignment" "AlignCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 1 2 1 E U  0 E 52.43313253012045 47 75 69
+0 2 2 "0s" 0 0 0 192 0 0  52.43313253012045 47 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,19,5,50,0,0,0,0,0
+0 2
+LANG:10027 2 C1
+LANG:10001 2 C1
+13 3
+"abbrechen"
+""
+1 1172.433132530121 459 E E E 1 E 1 E N {0,0,0} E N "_Button" E E
+ E E
+15 0 0 0 27 0
+E E E
+0
+4
+LANG:10027 31 Discard changes and close panel
+LANG:10001 31 Discard changes and close panel
+LANG:0 40 �nderungen verwerfen und Panel schlie�en
+LANG:1 31 Discard changes and close panel
+
+1
+"layoutAlignment" "AlignCenter"
+4
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:0 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:1 26 Arial,-1,13,5,40,0,0,0,0,0
+0  1170 458 1258 486
+
+T 
+4
+LANG:10027 14 Закрыть
+LANG:10001 6 Cancel
+LANG:0 9 Abbrechen
+LANG:1 6 Cancel
+"main()
+{
+  PanelOff();
+}" 0
+ E E E
+1 4 0 "" 1
+0
+1 30 9 "" 43
+0
+1 53 10 "" 43
+0
+1 76 11 "" 43
+0
+1 99 13 "" 22
+0
+1 122 19 "" 22
+0
+1 145 21 "" 43
+0
+1 168 22 "" 43
+0
+1 191 23 "" 43
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 121 13 "" 43
+0
+1 144 19 "" 43
+0
+0
+3 0 "PANEL_REF10" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/ET.pnl" 108 52 T 0 1 0 1 61.7664658634537 1
+0
+3 9 "PANEL_REF11" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AI.pnl" 262 55 T 9 1 0 1 88.76646586345373 26.30939476935862
+1
+"$DP""AI1_1"
+3 10 "PANEL_REF10" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AI.pnl" 262 55 T 16 1 0 1 166.7664658634537 26.30939476935862
+1
+"$DP""AI1_2"
+3 11 "PANEL_REF11" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AI.pnl" 262 55 T 17 1 0 1 244.7664658634537 26.30939476935862
+1
+"$DP""AI1_3"
+3 13 "PANEL_REF13" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AO.pnl" 717.5999999999999 168 T 19 1 0 1 180.1664658634538 -117.0331757703082
+1
+"$DP""AO1_7"
+3 19 "PANEL_REF19" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AO.pnl" 717.5999999999999 168 T 26 1 0 1 258.1664658634538 -117.0331757703082
+1
+"$DP""AO1_8"
+3 21 "PANEL_REF21" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AI.pnl" 262 55 T 28 1 0 1 322.7664658634537 26.30939476935862
+1
+"$DP""AI1_4"
+3 22 "PANEL_REF22" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AI.pnl" 262 55 T 29 1 0 1 400.7664658634537 26.30939476935862
+1
+"$DP""AI1_5"
+3 23 "PANEL_REF23" -1
+"layoutAlignment" "AlignCenter"
+"" ""
+"objects/AI.pnl" 262 55 T 30 1 0 1 478.7664658634537 26.30939476935862
+1
+"$DP""AI1_6"
+0

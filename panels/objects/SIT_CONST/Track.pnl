@@ -1,0 +1,226 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 325 163 N "_3DFace" 0
+E E E E E 1 -1 -1 0  128 68
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "141.585"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+10 1
+"POLYGON23"
+""
+1 1460 70 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1.043625388034187 0 0.1020765469617235 -1409.693066529912 88.0120114639949 1 E 5 1460 70
+1470 70
+1540 70
+1540 180
+1460 180
+ 1
+10 2
+"POLYGON52"
+""
+1 490 650 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 -386 -593.6142100828948 1 E 9 490 650
+560 650
+570 640
+580 640
+560 690
+560 700
+500 700
+480 680
+490 650
+ 1
+7 3
+"ELLIPSE1021"
+""
+1 610 690 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 -484.2549844786321 -583.6142100828948 1 E 610 690 10 10
+7 4
+"ELLIPSE1023"
+""
+1 610 690 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 -454.2549844786321 -583.6142100828947 1 E 610 690 10 10
+10 5
+"POLYGON54"
+""
+1 1870 250 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 0.9999999999999999 0 1.666666666666669 -1676 -359.0524565837723 1 E 7 1870 250
+1870 260
+1870 270
+1870 280
+1910 280
+1910 260
+1890 250
+ 1
+10 6
+"POLYGON55"
+""
+1 1870 250 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 0.4489576711201216 0 0.4899254599816164 -645.5508449946276 -56.53382157917576 1 E 7 1870 250
+1870 260
+1870 270
+1870 280
+1910 280
+1910 260
+1890 250
+ 1
+7 7
+"ELLIPSE1024"
+""
+1 610 690 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 1 0 1 -396.0000000000001 -583.3857899171052 1 E 610 690 10 10
+4 8
+"LINE438"
+""
+1 194.0000000000002 80.64530721567689 E E E 1 E 1 E N "cont_static" E N {255,255,255} E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  194.0000000000002 80.64530721567689 233.4900310427354 80.61421008289494
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+1 0 "SHAPE_GROUP891" -1
+8 0 
+1 2 3 4 5 6 7 8 
+
+"layoutAlignment" "AlignNone"
+"" ""
+0

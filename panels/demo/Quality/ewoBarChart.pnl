@@ -1,0 +1,233 @@
+V 14
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+PANEL,-1 -1 594 433 N "fon_static" 0
+E E E E E 1 -1 -1 0  59.34084170588952 34.99999580821236
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+2 2
+"title"
+""
+1 362 323 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+4
+"layoutAlignment" "AlignVCenter"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E 1.513764117010538 0 1.323167169169162 -517.1338966837218 -412.6146673333308 0 E 362 323 690 343
+0 2 2 "0s" 0 0 0 65 0 0  362 323 1
+3
+LANG:10027 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10001 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+LANG:10000 31 Arial,-1,20,5,75,0,0,0,0,0,Bold
+0 3
+LANG:10027 80 Удельная поверхность пылевой фракции, см2/г 
+LANG:10001 22 Production line status
+LANG:10000 22 Production line status
+30 3
+"FRAME1"
+""
+1 50 12 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+2 0 0 0 0 0
+E E E
+1
+3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 1.897802805686298 0 1.272374899335428 -84.23098199020444 -12.60746577404553 0 E 50 12 351 341
+3
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10000 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 3
+LANG:10027 0 
+LANG:10001 0 
+LANG:10000 0 
+29 5
+"Chart_ewo2"
+""
+1 17.00000000000006 43.87800603003011 E E E 1 E 1 E N "black" E N "fon_static" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 16 values chart-ewo
+LANG:10001 16 values chart-ewo
+LANG:10000 15 Werte Chart-Ewo
+
+32
+"holeSize" "float 0.2"
+"chartType" "enum 3"
+"legendPosition" "enum 3"
+"frameShape" "enum 0"
+"startAngle" "float 0"
+"axesColor" "color {255,255,0}"
+"showGrid" "bool TRUE"
+"seriesSpacing" "int 10"
+"defaultItemPen" "pen [none,oneColor,JoinBevel,CapProjecting,1]"
+"defaultItemBrush" "fill [solid]"
+"orientation" "enum 1"
+"selectionBrush" "fill [gradient,[linear,pad,0,0,0.639,0.602,0,{0,0,0},1,{255,255,255}]]"
+"animateValueChange" "bool TRUE"
+"shownValueText" "enum 2"
+"valueTextPosition" "enum 3"
+"gridColor" "color {124,124,124,70}"
+"stopAngle" "float 360"
+"explosionOffset" "uint 0"
+"animateHoverItem" "bool TRUE"
+"holeFactor" "float 1"
+"itemsSelectable" "bool TRUE"
+"axesFont" "font Noto Sans,-1,16,5,50,0,0,0,0,0,Regular"
+"legendFont" "font Noto Sans,-1,19,5,50,0,0,0,0,0,Regular"
+"axesLabelFont" "font Luxi Serif,-1,17,5,50,2,0,0,0,0"
+"segmentSpacing" "int 10"
+"plotColor" "color {230,230,230}"
+"inputMethodHints" "enum 4"
+"frameShadow" "enum 16"
+"lineWidth" "int 5"
+"tabletTracking" "bool FALSE"
+"layoutDirection" "enum 0"
+"layoutAlignment" "AlignNone"
+3
+LANG:10027 32 DejaVu Sans,-1,15,5,50,0,0,0,0,0
+LANG:10001 32 DejaVu Sans,-1,15,5,50,0,0,0,0,0
+LANG:10000 32 DejaVu Sans,-1,16,5,50,0,0,0,0,0
+0  17.00000000000006 43.87800603003011 572 410
+9 Chart.ewo
+1
+0 "itemSelected" "(int series, int idx)"
+"  if ( (series >= 0) && (idx >= 0) )
+    status.text = \"ser:\" + (string)series + \" item:\" + (string)idx + \" value:\" + this.getItemValue(series,idx);
+  else
+    status.text = \"\";"
+"dyn_string colors = makeDynString(\"graph_1\", \"graph_2\", \"graph_3\",
+                                  \"graph_1\", \"SiemensNaturalGreenLight\", \"SiemensNaturalGreenDark\",
+                                  \"SiemensNaturalGrayLight\", \"SiemensNaturalGrayDark\", \"SiemensNaturalBlueLight\",
+                                  \"SiemensNaturalBlueDark\");
+
+main()
+{
+  Chart_ewo2.updatesEnabled = false;
+  //setVisiblity(button);
+  //VisibilitySeries1.state(0, true);
+
+
+
+        Chart_ewo2.shownValueText = \"Value\";
+
+        Chart_ewo2.chartType = \"Bars\";
+
+
+
+
+
+
+      for (int j = 0; j < 3; j++)
+      {
+        dyn_float values;
+        dyn_string labels;
+
+        for (int i = 1; i <= 6; i++)
+        {
+          values[i] = rand();
+          labels[i] = formatTime(\"%b\", makeTime(2017, i+1, 1));
+        }
+
+        Chart_ewo2.setSeries(j, values, labels);
+        DebugN(labels);
+        Chart_ewo2.setSeriesVisible(j, true);
+        Chart_ewo2.setSeriesName(j, \"Линия №\" + (string)(j+1));
+        Chart_ewo2.setSeriesFillColor(j, colors[j+3]);
+      }
+
+
+
+
+
+      Chart_ewo2.removeAxes();
+      Chart_ewo2.addAxis(0, 0, \"\");
+      Chart_ewo2.addAxis(0, 0, \"2019\");
+
+
+ /*setValue(\"AngleSettings\", \"visible\", false);
+      setValue(\"DonutSettings\", \"visible\", false);
+      Percent.visible(false);
+      ValCol.visible(false);
+      Grid.visible(true);
+      Orientation.visible(true);
+      setValue(\"MarkerSettings\", \"visible\", true);
+*/
+      Chart_ewo2.setSeriesMarkerType(1, \"Plus\");
+
+  Chart_ewo2.updatesEnabled = true;
+
+//   this.curveMarking(\"Param\",1,99,99,\"black\",\"[dashed,oneColor,JoinMiter,CapButt,1]\");
+}
+
+" 0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+0

@@ -1,0 +1,42 @@
+<!-- bootstrap -->
+<script type="text/javascript" src="/data/html/js/vendor/bootstrap/4.0.0/bootstrap.min.js?dc="></script>
+<link rel="stylesheet" href="/data/html/js/vendor/bootstrap/4.0.0/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/data/html/demo/app/msgToWebviewEwo/app.css">
+
+<div class="container">
+    <h2>dpGet</h2>
+    <!--
+    lets build a nice bootstrap form for the demo application, which contains
+    - a field for the datapoint element name
+    - a field for the value
+    - a submit button
+    -->
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="form-group row">
+                    <label for="dp-name" class="col-sm-2 col-form-label">DPE</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="dp-name"
+                               value="_MemoryCheck.AvailKB:_original.._value"
+                               placeholder="_MemoryCheck.AvailKB:_original.._value">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="dp-value" class="col-sm-2 col-form-label">Value</label>
+                    <div class="col-sm-8">
+                        <input type="text" readonly class="form-control-plaintext " id="dp-value" value="">
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="col-md-12 text-center">
+            <button class="btn btn-primary dpGetButton">Execute dpGet</button>
+
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="/data/html/demo/app/dpGet/dpGet.js"></script>

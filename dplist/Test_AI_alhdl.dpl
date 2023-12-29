@@ -1,0 +1,22 @@
+# ascii dump of database
+
+# AlertValue
+Manager/User	ElementName	TypeName	DetailNr	_alert_hdl.._type	_alert_hdl.._l_limit	_alert_hdl.._u_limit	_alert_hdl.._l_incl	_alert_hdl.._u_incl	_alert_hdl.._panel	_alert_hdl.._panel_param	_alert_hdl.._help	_alert_hdl.._min_prio	_alert_hdl.._class	_alert_hdl.._text	_alert_hdl.._active	_alert_hdl.._orig_hdl	_alert_hdl.._ok_range	_alert_hdl.._hyst_type	_alert_hdl.._hyst_time	_alert_hdl.._multi_instance	_alert_hdl.._l_hyst_limit	_alert_hdl.._u_hyst_limit	_alert_hdl.._text1	_alert_hdl.._text0	_alert_hdl.._ack_has_prio	_alert_hdl.._order	_alert_hdl.._dp_pattern	_alert_hdl.._dp_list	_alert_hdl.._prio_pattern	_alert_hdl.._abbr_pattern	_alert_hdl.._ack_deletes	_alert_hdl.._non_ack	_alert_hdl.._came_ack	_alert_hdl.._pair_ack	_alert_hdl.._both_ack	_alert_hdl.._impulse	_alert_hdl.._filter_threshold	_alert_hdl.._went_text	_alert_hdl.._add_text	_alert_hdl.._status64_pattern	_alert_hdl.._neg	_alert_hdl.._status64_match	_alert_hdl.._match	_alert_hdl.._set
+UI (1)/0	Temp1.PV	Test_AI		13					""	""	lt:2 LANG:10001 "" LANG:10027 "" 	\0			1	1				0																0								
+UI (1)/0	Temp1.PV	Test_AI	1	4	-1.7976931348623e+308	10	1	1					Sit_LL.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	10																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp1.PV	Test_AI	2	4	10	20	0	1					Sit_L.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		10	20																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp1.PV	Test_AI	3	4	20	80	0	1					 	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		20	80																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp1.PV	Test_AI	4	4	80	90	0	1					Sit_H.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		80	90																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp1.PV	Test_AI	5	4	90	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		90	1.7976931348623e+308																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp2.PV	Test_AI		13					""	""	lt:2 LANG:10001 "" LANG:10027 "" 	\0			1	1				0																0								
+UI (1)/0	Temp2.PV	Test_AI	1	4	-1.7976931348623e+308	10	1	1					Sit_LL.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	10																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp2.PV	Test_AI	2	4	10	20	0	1					Sit_L.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		10	20																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp2.PV	Test_AI	3	4	20	80	0	1					 	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		20	80																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp2.PV	Test_AI	4	4	80	90	0	1					Sit_H.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		80	90																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp2.PV	Test_AI	5	4	90	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		90	1.7976931348623e+308																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp3.PV	Test_AI		13					""	""	lt:2 LANG:10001 "" LANG:10027 "" 	\0			1	1				0																0								
+UI (1)/0	Temp3.PV	Test_AI	1	4	-1.7976931348623e+308	10	1	1					Sit_LL.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		-1.7976931348623e+308	10																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp3.PV	Test_AI	2	4	10	20	0	1					Sit_L.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		10	20																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp3.PV	Test_AI	3	4	20	80	0	1					 	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		20	80																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp3.PV	Test_AI	4	4	80	90	0	1					Sit_H.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		80	90																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				
+UI (1)/0	Temp3.PV	Test_AI	5	4	90	1.7976931348623e+308	0	1					Sit_HH.	lt:2 LANG:10001 "" LANG:10027 "" 				0	01.01.1970 00:00:00.000		90	1.7976931348623e+308																lt:2 LANG:10001 "" LANG:10027 "" 	 	0x0				

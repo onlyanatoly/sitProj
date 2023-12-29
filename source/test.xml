@@ -1,0 +1,857 @@
+V 14
+2
+LANG:10027 8 test.xml
+LANG:10001 0 
+PANEL,-1 -1 680 488 N "_3DFace" 1
+"$dpt"
+E E E E E 1 -1 -1 0  153 176.4514728096676
+""0  1
+E "refreshTable()
+{
+  int        error,i,j;
+  string     dpName,stateText,stateColor;
+  dyn_int    indices,alerts;
+  dyn_string names,prioNames,sumAlerts;
+  dyn_langString nodeName;
+
+  tblAlerts.visible=false;
+  tblAlerts.tableMode(TABLE_SELECT_BROWSE);
+  tblAlerts.selectByClick(TABLE_SELECT_LINE);
+  tblAlerts.selectColors(\"[0,0,0]\",\"[80,80,80]\");
+  tblAlerts.selectColors(\"STD_grey_dark\",\"_Window\");
+  tblAlerts.sortOnClick(FALSE);
+  tblAlerts.deleteAllLines();
+
+  dpGet(\"_SumAlertGeneral.prioRange.name:_online.._value\",prioNames,
+        \"_PanelTopology.fileName:_online.._value\",names,
+        \"_PanelTopology.nodeName:_online.._value\",nodeName,
+        \"_PanelTopology.panelNumber:_online.._value\",indices,
+        \"_PanelTopology.sumAlertNumber:_online.._value\",alerts);
+  // Reading alerts
+  for (i=1;i<=dynlen(prioNames);i++)
+  {
+    tblAlerts.columnHeader(i+1,prioNames[i]);
+    tblAlerts.columnVisibility(i+1,true);
+  }
+  for (i=dynlen(prioNames)+1;i<(tblAlerts.columnCount()-1);i++)
+  {
+    tblAlerts.columnVisibility(i+1,false);
+  }
+  for (i=1;i<=dynlen(names);i++)
+  {
+    // Free panels not needed
+    if (names[i]==\"\") break;
+
+    tblAlerts.appendLine(\"#1\",nodeName[i],
+                         \"#2\",\"...\",
+                         \"#21\",indices[i]);
+    for (j=1;j<=dynlen(prioNames);j++)
+    {
+      dpName=pt_fileNameToDpName(names[i],alerts[i])+\".\"+prioNames[j];
+      dpGet(dpName+\":_alert_hdl.._act_state_text\",stateText,
+            dpName+\":_alert_hdl.._act_state_color\",stateColor);
+      tblAlerts.cellValueRC(i-1,\"#\"+(j+2),stateText);
+      tblAlerts.cellBackColRC(i-1,\"#\"+(j+2),stateColor);
+    }
+  }
+  tblAlerts.lineVisible=0;
+  tblAlerts.visible=true;
+}
+
+" 0
+ 4
+"CBRef" "1"
+"EClose" E
+"dpi" "120"
+"pdpi" "96.0236"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+6 203
+"boxPicture"
+""
+1 110 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.fill(\"[pattern,[fit,any,ER.png]]\");
+}" 0
+ E 0 1 3 2 1 E 1 0 1 -10 110 1 E 110 10 170 50
+6 204
+"RECTANGLE2"
+""
+1 110 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.fill(\"[pattern,[fit,any,HR.png]]\");
+}" 0
+ E 0 1 3 2 1 E 1 0 1 -10 164.5 1 E 110 10 170 50
+6 205
+"RECTANGLE3"
+""
+1 110 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.fill(\"[pattern,[fit,any,ZPR.png]]\");
+}" 0
+ E 0 1 3 2 1 E 1 0 1 -10 223 1 E 110 10 170 50
+6 206
+"RECTANGLE4"
+""
+1 110 10 E E E 1 E 1 E N "cont_static" E N "fon_static" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"main()
+{
+  this.fill(\"DI1\" + \"[pattern,[fit,any,BR.png]]\");
+}" 0
+ E 0 1 3 2 1 E 1 0 1 -10 280 1 E 110 10 170 50
+2 209
+"PRIMITIVE_TEXT1"
+""
+1 270 220 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  this.text = ptnavi_GetScreenName();
+}" 0
+ E 0 4 3 2 1 E U  1 E 270 220 360 250
+0 2 2 "0s" 0 0 0 64 0 0  270 220 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+2 212
+"PRIMITIVE_TEXT198"
+""
+1 838.2916900208222 756.0607450354772 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+6
+"hoverfclr" "N {0,0,0}"
+"hoverbclr" "N {0,0,0}"
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+
+  //this.text = ptnavi_GetScreenName();
+  DebugN(\"Проверка функции getGediNames()\"+getGediNames());
+  DebugN(\"Проверка функции getVisionNames() \"+getVisionNames());
+
+  string y=getPath(PANELS_REL_PATH + \"/test.pnl\" );
+
+dyn_string x=getDollarParamsFromPanel(y);
+dyn_string x1=getDollarParams(y);
+
+DebugN(\"Вывод функции getDollarParamsFromPanel \", x,\"x1 вывод = \",x1);  // Ouput in log viewer
+
+dyn_string dollarP;
+  int i = getDollarList(y, dollarP);
+  DebugN(\"dollarParam:\",\"i->\",i,\"$dollarP->\", dollarP);
+ string sname = this.name;
+  DebugN(\"getIdentOfObject\",getIdentOfObject(sname));
+
+
+  int iX;
+
+string  refName;
+
+dyn_string dollars, values;
+
+iX=getDollarValue(x);
+
+this.text(iX);
+refName=getDollarValue(x[1]);
+//DebugN(\"refname->\", refName, \"dollar->\",dollars,\"x->\",iX);
+DebugN(\"IX->\",iX);
+DebugN(\"x->\",refName);
+DebugN(\"!!!!!!!!!!!!!!!!!!!!!\");
+DebugN(getGediNames());
+
+}
+
+" 0
+ E 0 4 3 2 1 E 0.9170830997917778 0 0.7979751654840913 -500.0581138042711 -298.8044304014639 1 E 838.2916900208222 756.0607450354772 938.2916900208222 786.0607450354772
+0 2 2 "0s" 0 0 0 64 0 0  838.2916900208222 756.0607450354772 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 0 
+LANG:10001 0 
+1 304 1 "" 1
+0
+1 310 2 "" 1
+0
+13 222
+"PUSH_BUTTON1"
+""
+1 39.99999999999999 368.2666666666667 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ "main(mapping event)
+{
+  popupMenu(\"PUSH_BUTTON, test field, 15, 1\" + \"SEPARATOR\", answer);
+}" 0
+ E
+12 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  37.99999999999999 358 162 393
+
+T 
+2
+LANG:10027 12 PUSH_BUTTON1
+LANG:10001 12 PUSH_BUTTON1
+"
+#uses \"pt.ctl\"
+main(mapping event)
+{
+  string y=getPath(PANELS_REL_PATH + \"/test.xml\" );
+
+   bool ok = 0;    // Файл c:/test1/test.txt    // копируется в c:/test2/test.txt.
+   ok = copyFile (y,SOURCE_REL_PATH + myPanelName());    // или также:    //
+   dyn_string dn_s;
+
+   file f; // наш файл
+
+int err; // код ошибки
+
+//f=fopen(\"c://test1//test.pnl\",\"r\"); // Открытие файла для чтения
+
+dyn_string d_s;
+dyn_string d_s1;
+
+
+//err=ferror(f); // Экспорт ошибки
+
+//fclose(f); // закрытие файла
+
+if (err!=0) DebugN(\"Error no. \",err,\" occurred\");
+
+
+ string content;
+ fileToString(y, content); // read file into a string variable
+DebugTN(\"Content\",content);
+ dyn_dyn_string result;
+ dyn_string lines = strsplit(content, \"\\n\"); // split the string into lines
+ //DebugTN(lines);
+ for ( int i=1; i<=dynlen(lines); i++ ) {
+ //DebugTN(\"Lines--->>\",lines[i],i);
+   if (patternMatch(\"*$dpe_value*\", lines[i])){
+      dynAppend(result,lines[i]);
+      DebugTN(\"RESULT\",result);
+     //result[i]=lines[i];
+//result[i]=strsplit(lines[i], \"\\\"\\\"\"); // delimiter
+
+/*while (dynlen(result[i])<>0){
+dynRemove(result[i],(dynContains(result[i],\"\")));
+}*/
+
+}
+
+ }
+ for (int j=1 ; j<=dynlen(result); j++ ){
+dn_s[j]=strsplit(result[j],\"\\\"\\\"\");
+ DebugTN(\"Result DN_S--->>\",dn_s);
+d_s1[j]=strltrim(dn_s[j],\" | $dpe_value |  | \");
+
+if (strlen(d_s1[j])>15){
+   dynRemove(d_s1,j);
+ }
+
+//dynRemove(d_s1,dynContaints(d_s1,\"\"));
+dynUnique(d_s1);
+
+DebugTN(\"Result DN_S1--->>\",d_s1);
+
+//if (dn_s1[j]== \"\\\"\\\"\"){
+  //dynRemove(dn_s1,j);
+//strRemove(dn_s[j],\" \");
+//}
+
+}
+ //dn_s= getDollarParamsFromPanel(y);
+// DebugTN(\"Result DN_S--->>\",dn_s);
+
+ //PT_checkAllAlerts(true, // true = fct started from  //   panel, open check-panel
+                //  true,           // true = debug
+                  //     true,        // detailed results
+                  //d_s) ;        // results in text format*
+
+//dpSet(\"ts1:_original.._value\",dn_s1[2]);
+
+ // dpSet(\"ts1.elements\",d_s1);
+ int count_alrm,cnt1=0,tst1;
+ for (int j1=1;j1<=dynlen(d_s1);j1++){
+   if (d_s1[j1]==\"\"){
+     DebugTN(\"dyn_remove work\");
+    dynRemove(d_s1,j1);}
+  // else{
+  //dpGet(d_s1[j1]+\".OUT:_alert_hdl.._act_range\",count_alrm);
+  DebugTN(\"Result d_s1 elelments--->>\"+\"j1=\"+j1,d_s1[j1]);
+
+
+//}
+   if (count_alrm>0){cnt1++;};
+   //DebugTN(\"Result count_alrm--->>\",count_alrm);
+ }
+ dpSet(\"ts1.elements\",d_s1);
+ //dpGet(\"DI1.OUT:_alert_hdl.._act_range\",count_alrm);
+ dyn_dyn_anytype any1;
+
+ dpQuery(\"SELECT '_alert_hdl..value'FROM 'SIT_DI'\",any1);
+ DebugTN(\"Query results--->>\",any1);
+
+  bool ok;
+  atime a;
+  dpGet(\"DI1.OUT:_alert_hdl.._ok_range\", ok);
+  alertGet(a, getACount(a), \"DI1.OUT:_alert_hdl.._value\", ok);
+
+  DebugN(\"alertGet: atime = \" + (string) a + \", value = \" + ok);
+ DebugTN(\"Result count_alrm--->>\",count_alrm);
+ signCnt111.text=count_alrm;
+  DebugTN(\"Result count--->>\",dpGet(\"DI1.OUT:_alert_hdl.1._act_state\",tst1),tst1);
+  bool isActive;
+   dpGet(\"DI1.OUT\"+\":_alert_hdl..value\", isActive);
+   DebugTN(\"isActive--->>\",isActive);
+
+DebugTN(\"getTree--->>\",getTree());
+}
+string getTree()
+{
+  int i, j;
+  dyn_string files = getFileNames(PANELS_REL_PATH + \"/pnlTest\", \"*.pnl\");
+  dyn_string fldr = getFileNames(PANELS_REL_PATH + \"/pnlTest\", \"*\", FILTER_DIRS);
+  DebugN(fldr);
+  dyn_string names, comm;
+  //shape b = getShape(myModuleName(), \"basepanel\", \"MainModule\");
+  dyn_string buff, buff1;
+
+  for (i = 1; i <= dynlen(files); i++)
+  {
+    names[i] = \"pnlTest/\" + files[i];
+    if (dpExists(names[i]))
+      DebugN(\"already exists\");
+    else
+      dpCreate(names[i],\"test_mnemo\");
+    //TREE1.appendItemNC(\"LIST\", names[i], comm[i] = readComm(names[i]));
+  }
+
+  for (i = 1; i <= dynlen(fldr); i++)
+  {
+    if ((fldr[i] != \".\") & (fldr[i] != \"..\"))
+    {
+      buff1.clear();
+      buff[i] = \"pnlTest/\" + fldr[i] + \"/\";
+      //TREE1.appendItemNC(\"LIST\", fldr[i], fldr[i]);
+      buff1 = getFileNames(path + \"/\" + buff[i], \"*.pnl\");
+
+      if (buff1.isEmpty() == 0)
+      {
+        for (j = 1; j <= dynlen(buff1); j++)
+        {
+          //TREE1.appendItemNC(fldr[i], \"scheme/\" + fldr[i] + \"/\" + buff1[j], comm[dynlen(names) + 1] = readComm(\"scheme/\" + fldr[i] + \"/\" + buff1[j]));
+          names[dynlen(names) + 1] = \"pnlTest/\" + fldr[i] + \"/\" + buff1[j] ;
+          //       DebugN(\"scheme/\" + fldr[i] + \"/\" + buff1[j], readComm(\"scheme\" + fldr[i] + \"/\" + buff1[j]));
+        }
+      }
+    }
+  }
+
+  names[dynlen(names) + 1] = \"vision/aes/AEScreen.pnl\";
+
+  if (dynlen(module_names) == 1)
+    dpSet(getSystemName() + name + \"._names._path:_original.._value\", names);
+  else
+    dpSet(getSystemName() + \"s_\" + module_names[2] + \"._names._path:_original.._value\", names);
+
+
+//  for (i = 1; i <= dynlen(names) - 1 ; i++)
+//  {
+//    comm[i] = readComm(names[i]);
+//  }
+  if (dynlen(module_names) == 1)
+  {
+  comm[dynlen(names)] = \"Панель алармов и событий\";
+    dpSet(getSystemName() + name + \"._names._names:_original.._value\", comm);
+  }
+  else
+    dpSet(getSystemName() + \"s_\" + module_names[2] + \"._names._names:_original.._value\", comm);
+
+
+
+
+  //TREE1.setSorting(0, true);
+  //TREE1.showSortIndicator(true);
+}
+" 0
+ E E E
+1 311 3 "" 1
+0
+13 238
+"cmdRefresh"
+""
+1 272.3687741989523 407 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+3
+LANG:10027 31 Обновить таблицу
+LANG:10001 13 Refresh table
+LANG:10000 17 Tabelle neu lesen
+
+1
+"layoutAlignment" "AlignCenter"
+3
+LANG:10027 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10001 26 Arial,-1,13,5,40,0,0,0,0,0
+LANG:10000 26 Arial,-1,13,5,40,0,0,0,0,0
+0  270.3687741989523 405 358.3687741989523 433
+
+T 
+3
+LANG:10027 16 Обновить
+LANG:10001 7 Refresh
+LANG:10000 9 Neu lesen
+"main()
+{
+setElementForVF();
+}" 0
+ E E E
+2 255
+"signCnt111"
+""
+1 198.8571428571429 365.6428571428571 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  string str;
+  dpGet(\"1001SL01.OUT\"+\"_online.._value\",str);
+  DebugN(str);
+}" 0
+ E 0 1 3 2 1 E U  0 E 188 359 210 374
+0 2 2 "0s" 0 0 0 201 0 0  198.8571428571429 365.6428571428571 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 123
+LANG:10001 3 123
+2 269
+"PRIMITIVE_TEXT199"
+""
+1 259.041529956619 73.64285714285711 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+
+ // dpGet(\"DI1.OUT:_alert_hdl.4._act_state\",i);
+  EP_textFieldIn();
+}
+
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:ts1.elements:_alert_hdl.._summed_alerts_count\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:ts1.elements:_alert_hdl.._summed_alerts_count\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"text\", uNewValue);
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:ts1.elements}
+// DPConfig {:_alert_hdl.._summed_alerts_count}
+// DPType {unsigned}
+// UseDPUnit {FALSE}
+// UseDPFormat {FALSE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 248 67 270 82
+0 2 2 "0s" 0 0 0 201 0 0  259.041529956619 73.64285714285711 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 123
+LANG:10001 3 123
+13 283
+"PUSH_BUTTON2"
+""
+1 296.2765806492142 76.76666666666671 E E E 1 E 1 E N "_ButtonText" E N "_Button" E E
+ E E
+17 0 0 0 0 0
+E E E
+8
+2
+LANG:10027 0 
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0  294.2765806492142 66.5 418.2765806492142 101.5
+
+T 
+2
+LANG:10027 12 PUSH_BUTTON1
+LANG:10001 12 PUSH_BUTTON1
+"
+#uses \"pt.ctl\"
+main(mapping event)
+{
+  string a;
+  bool ok=true;
+  bool notOk;
+  bool isActive;
+  dyn_anytype dn_a;
+  string y=getPath(PANELS_REL_PATH + \"//\"+ myPanelName());//test.xml\" );
+  dpGet(\"ts1.elements:\",dn_a);
+  for (int i=1;i<=dynlen(dn_a);i++){
+    dn_a[i]=dn_a[i]+\".OUT\" ;
+    }
+  dpGet(\"ts1.elements:_alert_hdl.._active\",isActive);
+  DebugN(\"Alerts isActive\",isActive);
+  isActive?dpSet(\"ts1.elements:_alert_hdl.._active\",notOk):dpSetWait(\"ts1.elements:_alert_hdl.._dp_list\",dn_a);
+
+  if (dpSetWait(\"ts1.elements:_alert_hdl.._dp_list\",dn_a)==0){
+    dpSet(\"ts1.elements:_alert_hdl.._force_filtered\",ok);
+    dpSet(\"ts1.elements:_alert_hdl.._active\",ok);
+  } else
+  {
+   DebugN(\"uSummedAlerts\",\"-1\");
+  }
+
+  //dpSet(\"ts1.elements:_alert_hdl.._active\",ok);
+
+  //dpConnect(\"workCB\", \"ts1.:_alert_hdl.._summed_alerts_count\");
+  //dpConnect(\"ExampleDP_AlertHdl1:_alert_hdl.._act\",a);
+  //pt_getSumAlertNumber(y);
+  DebugN(\"uSummedAlerts\",a);
+  bool Warningact, Alertact;
+  //dpGet(\"Wattersupply_Alertfilter_Alert.Sumalert:_alert_hdl.._active\",Alertact);
+  //dpGet(\"Wattersupply_Alertfilter_Warning.Sumalert:_alert_hdl.._active\",Warningact);
+
+   DebugN(\"DollarParam result =\",pt_getDollarParams(myPanelName()));
+
+}
+
+
+
+
+
+
+
+
+
+
+unsigned pt_getSumAlertNumber(string fileName, int pos)
+{
+  // TFS 74890: Completely re-implemented
+  if (pos > dynlen(gPtAlerts)) // something wrong with global variable
+    return 1;
+
+  unsigned oldAlertNumber = gPtAlerts[pos];
+
+  // determining next free number for fileName (gabs are ignored; when nodes where deleted)
+  dyn_int alarmNumbersForFileName;
+
+  for (int i = 1; i <= dynlen(gPtPanels); i++)
+  {
+    if (gPtPanels[i] == fileName)
+      dynAppend(alarmNumbersForFileName, gPtAlerts[i]);
+  }
+
+  // if it is the first time for that fileName AND position, new number
+  if (oldAlertNumber == 0)
+    return dynMax(alarmNumbersForFileName) + 1;
+
+  // a number was already set, keep unchanged
+  return oldAlertNumber;
+}
+
+workCB(string dp1, unsigned uSummedAlerts) {
+
+  DebugN(\"uSummedAlerts\",uSummedAlerts);
+}
+" 0
+ E E E
+1 317 4 "" 1
+0
+2 303
+"PRIMITIVE_TEXT200"
+""
+1 259.041529956619 108.3928571428571 E E E 1 E 1 E N "cont_text" E N "_Window" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+2
+LANG:10027 0 
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+
+ // dpGet(\"DI1.OUT:_alert_hdl.4._act_state\",i);
+  EP_textFieldIn();
+}
+
+
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( \"System1:mnemo_alarm.elements:_alert_hdl.._summed_alerts_count\"))
+  {
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+    return;
+  }
+
+  dpConnect(\"EP_textFieldInCB\",
+            \"System1:mnemo_alarm.elements:_alert_hdl.._summed_alerts_count\");
+  err = getLastError();
+  if (dynlen(err) > 0)
+    setValue(\"\", \"color\", \"_dpdoesnotexist\");
+
+}
+
+
+void EP_textFieldInCB(string dp, unsigned uNewValue)
+{
+  setValue(\"\", \"text\", uNewValue);
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {System1:ts1.elements}
+// DPConfig {:_alert_hdl.._summed_alerts_count}
+// DPType {unsigned}
+// UseDPUnit {FALSE}
+// UseDPFormat {FALSE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+" 0
+ E 0 1 3 2 1 E U  0 E 248 101 270 116
+0 2 2 "0s" 0 0 0 201 0 0  259.041529956619 108.3928571428571 1
+2
+LANG:10027 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+LANG:10001 35 MS Shell Dlg 2,-1,13,5,50,0,0,0,0,0
+0 2
+LANG:10027 3 123
+LANG:10001 3 123
+1 324 6 "" 1
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 308 1 "0" 1
+0
+1 315 3 "0" 1
+0
+1 321 4 "0" 1
+0
+1 323 5 "" 0
+0
+1 328 6 "0" 1
+0
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 1 "PANEL_REF365" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 953.5 722.985195118361 T 12 1 0 1 -478.2083099791778 -385.1031928500831
+2
+"$b_isDetail""FALSE"
+"$dpe_value""DI1"
+3 2 "PANEL_REF366" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/tst.pnl" 191.5 375 T 12 1 0 1 154.5791827993015 -5
+1
+"$dpe_value""DI1"
+3 3 "PANEL_REF367" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 953.5 722.985195118361 T 13 1 0 1 -478.2083099791778 -458.4851951183612
+2
+"$b_isDetail""FALSE"
+"$dpe_value""FIRE"
+3 4 "PANEL_REF368" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 953.5 722.985195118361 T 18 1 0 1 -414.2083099791778 -458.4851951183612
+2
+"$b_isDetail""FALSE"
+"$dpe_value""OO1_LSH001"
+3 5 "PANEL_REF369" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/STD_PARTS/ELEMENT_CLICKBOX.pnl" 602.7916900208222 887 T 19 U 
+2
+"$dpe""DI1"
+"$dpt""$dpt"
+3 6 "PANEL_REF370" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"objects/Situational/DI.pnl" 953.5 722.985195118361 T 19 1 0 1 -414.2083099791778 -385.1031928500831
+2
+"$b_isDetail""FALSE"
+"$dpe_value""FA4-1"
+0

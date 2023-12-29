@@ -1,0 +1,84 @@
+V 14
+2
+LANG:10027 0 
+LANG:10001 0 
+PANEL,-1 -1 1168 845 N "fon_static" 0
+E E E E E 1 -1 -1 0  0 0
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+NC
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10027 0 
+LANG:10001 0 
+1 4 6 "" 2
+0
+1 7 7 "" 1
+0
+1 10 8 "" 2
+0
+1 16 9 "" 2
+0
+0
+LAYER, 1 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 2 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 3 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 4 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 5 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 6 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+LAYER, 7 
+2
+LANG:10027 0 
+LANG:10001 0 
+0
+3 6 "PANEL_REF7" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/KPI/ewoDonutChart.pnl" 554 216.1610330179797 T 1655 1 0 1 68.18168341177886 -190.9110372097672
+0
+3 7 "PANEL_REF8" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/KPI/ewoBarChart.pnl" 506.3566753149296 157.6610288261919 T 1656 1 0 1 -453.5158336090401 -132.4110330179795
+0
+3 8 "PANEL_REF10" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/KPI/ewoStackedBarChart.pnl" 52.84084170588937 444.9999958082124 T 1657 1 0 1 579.8408417058896 -2.411033017979662
+0
+3 9 "PANEL_REF12" -1
+"layoutAlignment" "AlignNone"
+"" ""
+"demo/KPI/ewoDonutChart2.pnl" 56 444 T 1659 U 
+0
+0

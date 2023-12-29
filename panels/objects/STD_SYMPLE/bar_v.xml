@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="ru_RU.utf8"></prop>
+   <prop name="en_US.utf8"></prop>
+   <prop name="de_AT.utf8"></prop>
+  </prop>
+  <prop name="Size">244 350</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">55 35</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">96</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <events>
+  <script name="Initialize" isEscaped="1"><![CDATA[//[SCRIPT_WIZARD_GENERATED
+//[FUNCTION main
+main()
+{
+  //[DOLLAR_PARAMETERS
+  //$CONST_FLOAT_MAX description_2
+  //$CONST_FLOAT_MIN description_3
+  //$CONST_STRING_COLOR description_4
+  //]
+  //[CONNECT
+  if ( getUserPermission(1) )
+  {
+    //[BADVALUE
+    //VALUEBAD_RULE:_value_online_bad==true
+    //VALUEBAD_RETURNWHENBAD:TRUE
+    //VALUEBAD_RESETCOLORS:TRUE
+    //]
+    //[DPES
+    //float $DP+ $DPE_FLOAT_VALUEDPE + &quot;:_online.._value&quot;
+    //bool $DP+ $DPE_FLOAT_VALUEDPE + &quot;:_online.._bad&quot;
+    //]
+    dyn_string dpeList;
+    dyn_string varList;
+    string dpe1 = sdCheckDpe($DP+ &quot;.OUT&quot; + &quot;:_online.._value&quot;);
+    if ( strlen(dpe1) )
+    {
+      dynAppend(dpeList, dpe1);
+      dynAppend(varList, &quot;_value_online_value&quot;);
+    }
+    else
+    {
+      setValue(&quot;front&quot;, &quot;visible&quot;, false);
+    }
+
+    string dpe2 = sdCheckDpe($DP+ &quot;.OUT&quot; + &quot;:_online.._bad&quot;);
+    if ( strlen(dpe2) )
+    {
+      dynAppend(dpeList, dpe2);
+      dynAppend(varList, &quot;_value_online_bad&quot;);
+    }
+    else
+    {
+    }
+
+    if ( dpConnectUserData(&quot;cb_Callback&quot;, varList, true, dpeList) == -1 )    {
+      sdShowBadConnect(&quot;front&quot;, 3);
+    }
+  }
+  else
+  {
+    //sdShowNoUserPermission
+    sdShowNoUserPermission(&quot;front&quot;, 3);
+  }
+  //]
+  //[SETVALUE_CODE
+  //sdSetValue(&quot;max (PRIMITIVE_TEXT)&quot;, &quot;text&quot;, &quot;text&quot;, $CONST_FLOAT_MAX);
+  setValue(&quot;max&quot;, &quot;text&quot;, 100.0);
+  //]
+  //[SETVALUE_CODE
+  //sdSetValue(&quot;min (PRIMITIVE_TEXT)&quot;, &quot;text&quot;, &quot;text&quot;, $CONST_FLOAT_MIN);
+  setValue(&quot;min&quot;, &quot;text&quot;, 0.0);
+  //]
+}
+//]
+//[FUNCTION cb_Callback
+void cb_Callback(
+dyn_string varList, dyn_string dpeList, dyn_anytype valueList)
+{
+  //[VAR_LIST
+  float _value_online_value;
+  bool _value_online_bad;
+  //]
+  //[ASSIGN_VARS
+  for (int i = 1; i &lt;= dynlen(varList); i++)
+  {
+    if ( varList[i] == &quot;_value_online_value&quot; )
+      _value_online_value = valueList[i];
+    else if ( varList[i] == &quot;_value_online_bad&quot; )
+      _value_online_bad = valueList[i];
+  }
+  //]
+  //[SHOW_BAD_VALUE
+  bool statusBad = _value_online_bad==true;
+  if ( statusBad )
+  {
+    sdShowBadValue(&quot;front&quot;, 3);
+    return;
+  }
+  else
+  {
+    sdResetShowBadValue(&quot;front&quot;, 3);
+  }
+  //]
+  //[ANIMATION
+  sdScaleVertical(&quot;front&quot;, _value_online_value,0.0, 100.0, FALSE);
+  //]
+  //[SETVALUE_CODE
+  //sdSetValue(&quot;value (PRIMITIVE_TEXT)&quot;, &quot;text&quot;, &quot;text&quot;, _value_online_value);
+  setValue(&quot;value&quot;, &quot;text&quot;, _value_online_value);
+  //]
+  //[SETVALUE_CODE
+  //sdSetValue(&quot;front (RECTANGLE)&quot;, &quot;backCol&quot;, &quot;backCol&quot;, $CONST_STRING_COLOR);
+  setValue(&quot;front&quot;, &quot;backCol&quot;, $CONST_STRING_COLOR);
+  //]
+  //[SETVALUE_CODE
+  //sdSetValue(&quot;value (PRIMITIVE_TEXT)&quot;, &quot;foreCol&quot;, &quot;foreCol&quot;, $CONST_STRING_COLOR);
+  setValue(&quot;value&quot;, &quot;foreCol&quot;, $CONST_STRING_COLOR);
+  //]
+}
+//]
+//]]]></script>
+ </events>
+ <shapes>
+  <shape Name="unit" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">8</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">70 100</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_text</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">8</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Location">70.21095008051529 99.84444444444441</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,-1,10,5,50,0,0,0,0,0,Regular</prop>
+     <prop name="en_US.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+     <prop name="de_AT.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">xx</prop>
+     <prop name="en_US.utf8">xx</prop>
+     <prop name="de_AT.utf8">Text</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">True</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  setValue(&quot;&quot;, &quot;text&quot;, getTagUnit($dpe_value+&quot;.OUT&quot;));
+}
+
+]]></script>
+   </events>
+  </shape>
+  <shape Name="p1" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">9</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">120 100</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">9</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,5]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.072463768115943 0 0 0.8200000000000002 -95.0749597423511 -19.98092031425367</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">120 100</prop>
+    <prop name="Size">61 151</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[#uses &quot;AlertHandl&quot;
+string lineColor = &quot;cont_static&quot;;
+
+main()
+{
+  EP_setForeColor();
+  if ($b_isDuplAlert){
+    EP_setColorUstavka();
+  }
+}
+
+void EP_setForeColor()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.OUT:_alert_hdl.._act_state_color&quot;))
+  {
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+    return;
+  }
+
+  dpConnect(&quot;EP_setForeColorCB&quot;,
+            $dpe_value+&quot;.OUT:_alert_hdl.._act_state_color&quot;,
+            $dpe_value+&quot;.OUT:_online.._invalid&quot;,
+            $dpe_value+&quot;.REP&quot;);
+  err = getLastError();
+  if (dynlen(err) &gt; 0)
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+
+}
+
+
+void EP_setForeColorCB(string dpSource, string sNewColor, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+    if (boInvalid) {
+      if (value) {// ремонт
+        setValue(&quot;&quot;, &quot;visible&quot;,0);
+      } else {
+        setValue(&quot;&quot;, &quot;foreCol&quot;, &quot;fon_nan&quot;);
+        setValue(&quot;&quot;, &quot;visible&quot;,1);
+      }
+
+    } else {
+      if (value) {// ремонт
+        setValue(&quot;&quot;, &quot;visible&quot;,0);
+      } else {
+        setValue(&quot;&quot;, &quot;foreCol&quot;, sNewColor);
+        if (sNewColor==&quot;&quot;)
+           setValue(&quot;&quot;, &quot;visible&quot;,0);
+        else {
+           setValue(&quot;&quot;, &quot;visible&quot;,1);
+           dpSet($dpe_value+&quot;.SHOW&quot;, 1);//тег и значение автоматически включаются при превышении предупредительных и предаварийных значениях аналогового параметра
+         }
+      }
+    }
+
+}
+
+void EP_setColorUstavka()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.OUT:_alert_hdl.._act_prior&quot;))
+  {
+    return;
+  }
+
+  dpConnect(&quot;EP_setColorCBUstavka&quot;,
+            $dpe_value+&quot;.OUT:_alert_hdl.._act_prior&quot;,
+            $dpe_value+&quot;.OUT:_online.._invalid&quot;,
+            $dpe_value+&quot;.REP&quot;);
+  err = getLastError();
+}
+
+void EP_setColorCBUstavka(string dpSource, int iPrior, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {//если ремонт или неисправен
+    visibleUstavkaLine(false);
+  } else {
+    visibleUstavkaLine(true);
+    if (iPrior == ALERT_PRIOR_HH) {
+      setValue(&quot;lineHH&quot;, &quot;foreCol&quot;, &quot;fon_alarm&quot;);
+      setValue(&quot;lineH&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineL&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineLL&quot;, &quot;foreCol&quot;, lineColor);
+    } else if (iPrior == ALERT_PRIOR_LL) {
+      setValue(&quot;lineLL&quot;, &quot;foreCol&quot;, &quot;fon_alarm&quot;);
+      setValue(&quot;lineH&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineL&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineHH&quot;, &quot;foreCol&quot;, lineColor);
+    } else if (iPrior == ALERT_PRIOR_L) {
+      setValue(&quot;lineL&quot;, &quot;foreCol&quot;, &quot;fon_warn&quot;);
+      setValue(&quot;lineH&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineLL&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineHH&quot;, &quot;foreCol&quot;, lineColor);
+    } else if (iPrior == ALERT_PRIOR_H) {
+      setValue(&quot;lineH&quot;, &quot;foreCol&quot;, &quot;fon_warn&quot;);
+      setValue(&quot;lineL&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineLL&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineHH&quot;, &quot;foreCol&quot;, lineColor);
+    } else {
+      setValue(&quot;lineHH&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineH&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineL&quot;, &quot;foreCol&quot;, lineColor);
+      setValue(&quot;lineLL&quot;, &quot;foreCol&quot;, lineColor);
+    }
+  }
+}
+
+void visibleUstavkaLine(bool isVisible)
+{
+  setValue(&quot;lineHH&quot;, &quot;visible&quot;, isVisible);
+  setValue(&quot;lineH&quot;, &quot;visible&quot;, isVisible);
+  setValue(&quot;lineL&quot;, &quot;visible&quot;, isVisible);
+  setValue(&quot;lineLL&quot;, &quot;visible&quot;, isVisible);
+}
+
+]]></script>
+   </events>
+  </shape>
+  <shape Name="PRIMITIVE_TEXT1" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">10</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">196.3776167471819 167.771794871795</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_text</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">10</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1 0 0 0.975 -126.0000000000001 -77.69611645299145</prop>
+    <prop name="Location">196.2109500805153 168</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,-1,10,5,50,0,0,0,0,0,Regular</prop>
+     <prop name="en_US.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+     <prop name="de_AT.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">xx.xx</prop>
+     <prop name="en_US.utf8">xx.xx</prop>
+     <prop name="de_AT.utf8">Text</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">True</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.OUT&quot;))
+  {
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+    return;
+  }
+
+  dpConnect(&quot;EP_textFieldInCB&quot;,
+            $dpe_value+&quot;.OUT&quot;,
+            $dpe_value+&quot;.OUT:_online.._invalid&quot;,
+            $dpe_value+&quot;.REP&quot;);
+  err = getLastError();
+  if (dynlen(err) &gt; 0)
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(&quot;&quot;, &quot;text&quot;, &quot;&quot;);
+  } else {
+    setValue(&quot;&quot;, &quot;text&quot;, getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+]]></script>
+   </events>
+  </shape>
+  <shape Name="tag" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">11</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">195.9999999999999 153.4863247863248</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_text</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">11</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1 0 0 0.975 -126.0000000000001 -78.00070512820511</prop>
+    <prop name="Location">196.2109500805153 153.971794871795</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,-1,10,5,50,0,0,0,0,0,Regular</prop>
+     <prop name="en_US.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+     <prop name="de_AT.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">Lxxxxx</prop>
+     <prop name="en_US.utf8">Lxxxxx</prop>
+     <prop name="de_AT.utf8">Text</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">True</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[
+
+main()
+{
+  setValue(&quot;&quot;, &quot;text&quot;, getTagName($dpe_value));
+}
+]]></script>
+   </events>
+  </shape>
+  <shape Name="s1" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">12</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">18 213</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">False</prop>
+    <prop name="ForeColor">fon_open</prop>
+    <prop name="BackColor">fon_open</prop>
+    <prop name="TabOrder">12</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[none,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">0.1666666666666667 0 0 0.5252525252525253 58.3612399945732 61.90591630591636</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">18 19</prop>
+    <prop name="Size">31 199</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  setPositionUsatvkaLines();
+  setVisibleTags();
+}
+
+void setVisibleTags()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.SHOW:_online.._value&quot;))
+  {
+    return;
+  }
+  dpConnect(&quot;setVisibleTagsCB&quot;,
+            $dpe_value+&quot;.SHOW:_online.._value&quot;);
+}
+
+void setVisibleTagsCB(string dp, bool boNewValue)
+{
+  if (!$b_isDetail)
+  {
+  setValue(&quot;tag&quot;, &quot;visible&quot;, boNewValue);
+  setValue(&quot;value&quot;, &quot;visible&quot;, boNewValue);
+  setValue(&quot;unit&quot;, &quot;visible&quot;, boNewValue);
+  }
+  else//если во вкладке детальной панели то не отображаем никогда
+  {
+  setValue(&quot;tag&quot;, &quot;visible&quot;, false);
+  setValue(&quot;value&quot;, &quot;visible&quot;, false);
+  setValue(&quot;unit&quot;, &quot;visible&quot;, false);
+  }
+}
+
+float getMathCal(float fMin, float fMax, float fValue, int sizeY, int pozY)
+{
+  float fTemp, fNewScale;
+  if(fValue&gt;=fMax) fValue=fMax;
+  if(fValue&lt;=fMin) fValue=fMin;
+
+  fTemp = (sizeY * fValue)/(fMax - fMin);
+  fNewScale = pozY - fTemp;
+  return fNewScale;
+}
+
+void setPositionUsatvkaLines()
+{
+  float fMin, fMax, fTemp, fNewScale, fvalHH, fvalH, fvalLL, fvalL;
+  int sizeX, sizeY, pozX, pozY, tpozX, tpozY;
+  int delta = 2;//дополнительная погрешность для вверхнего предела
+  getValue(&quot;s1&quot;, &quot;size&quot;,sizeX, sizeY);
+  getValue(&quot;s1&quot;, &quot;position&quot;,pozX, pozY);
+  dpGet(  $dpe_value+&quot;.OUT:_pv_range.._min&quot;, fMin, $dpe_value+&quot;.OUT:_pv_range.._max&quot;, fMax);
+  dpGet($dpe_value+&quot;.HH&quot;, fvalHH,
+        $dpe_value+&quot;.H&quot;, fvalH,
+        $dpe_value+&quot;.L&quot;, fvalL,
+        $dpe_value+&quot;.LL&quot;, fvalLL);
+
+  getValue(&quot;lineHH&quot;, &quot;position&quot;,tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalHH, sizeY, pozY);
+  setValue(&quot;lineHH&quot;, &quot;position&quot;,tpozX, fTemp+delta);
+
+  getValue(&quot;lineH&quot;, &quot;position&quot;,tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalH, sizeY, pozY);
+  setValue(&quot;lineH&quot;, &quot;position&quot;,tpozX, fTemp+delta);
+
+  getValue(&quot;lineL&quot;, &quot;position&quot;,tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalL, sizeY, pozY);
+  setValue(&quot;lineL&quot;, &quot;position&quot;,tpozX, fTemp+delta);
+
+  getValue(&quot;lineLL&quot;, &quot;position&quot;,tpozX, tpozY);
+  fTemp = getMathCal(fMin, fMax, fvalLL, sizeY, pozY);
+  setValue(&quot;lineLL&quot;, &quot;position&quot;,tpozX, fTemp+delta);
+
+    sizeX = 5;
+    sizeY = 1;
+    setValue(&quot;lineHH&quot;, &quot;size&quot;,sizeX, sizeY);
+    setValue(&quot;lineH&quot;, &quot;size&quot;,sizeX, sizeY);
+    setValue(&quot;lineL&quot;, &quot;size&quot;,sizeX, sizeY);
+    setValue(&quot;lineLL&quot;, &quot;size&quot;,sizeX, sizeY);
+}
+]]></script>
+   </events>
+  </shape>
+  <shape Name="p3" shapeType="POLYGON" layerId="0">
+   <properties>
+    <prop name="serialId">13</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">18 117</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">3_grey</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">13</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,2]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">0.1666666666666667 0 0 1.072164948453608 58.36123999457331 50.32453601602177</prop>
+    <prop name="Closed">False</prop>
+    <prop name="Points">
+     <prop name="Location">18 117</prop>
+     <prop name="Location">48 117</prop>
+     <prop name="Location">48 20</prop>
+    </prop>
+   </properties>
+  </shape>
+  <shape Name="p2" shapeType="POLYGON" layerId="0">
+   <properties>
+    <prop name="serialId">14</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">18 115</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_static</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">14</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapProjecting,2]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">0.1666666666666667 0 0 1.051020408163265 58.36123999457331 52.39724684486596</prop>
+    <prop name="Closed">False</prop>
+    <prop name="Points">
+     <prop name="Location">18 117</prop>
+     <prop name="Location">18 19</prop>
+     <prop name="Location">48 19</prop>
+    </prop>
+   </properties>
+  </shape>
+  <shape Name="lineHH" shapeType="LINE" layerId="0">
+   <properties>
+    <prop name="serialId">15</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">68.73626373626371 80.04126984126989</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">3_grey</prop>
+    <prop name="BackColor">black</prop>
+    <prop name="TabOrder">15</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapRound,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="Start">61.62857142857141 79.88571428571433</prop>
+    <prop name="End">65.62857142857141 79.88571428571433</prop>
+   </properties>
+  </shape>
+  <shape Name="lineH" shapeType="LINE" layerId="0">
+   <properties>
+    <prop name="serialId">16</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">69.1819120743931 88.88571428571433</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">3_grey</prop>
+    <prop name="BackColor">black</prop>
+    <prop name="TabOrder">16</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapRound,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="Start">61.62857142857141 88.88571428571433</prop>
+    <prop name="End">65.62857142857141 88.88571428571433</prop>
+   </properties>
+  </shape>
+  <shape Name="lineL" shapeType="LINE" layerId="0">
+   <properties>
+    <prop name="serialId">17</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">69.26634036461601 154.4412698412698</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">3_grey</prop>
+    <prop name="BackColor">black</prop>
+    <prop name="TabOrder">17</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapRound,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="Start">61.62857142857141 154.2857142857143</prop>
+    <prop name="End">65.62857142857141 154.2857142857143</prop>
+   </properties>
+  </shape>
+  <shape Name="lineLL" shapeType="LINE" layerId="0">
+   <properties>
+    <prop name="serialId">18</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">69.26634036461601 161.4412698412699</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">3_grey</prop>
+    <prop name="BackColor">black</prop>
+    <prop name="TabOrder">18</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapRound,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="Start">61.62857142857141 161.2857142857143</prop>
+    <prop name="End">65.62857142857141 161.2857142857143</prop>
+   </properties>
+  </shape>
+  <shape Name="RECTANGLE1" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">21</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">10 10</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_Transparent</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">19</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[dash_dot,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">2.144927536231886 0 0 3.727272727272729 12.17141706924322 24.74635241301903</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">10 10</prop>
+    <prop name="Size">31 34</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  if (!$b_isDetail)
+  {
+    openFrontAndDetailPanel($dpe_value);
+  }
+}]]></script>
+    <script name="Initialize" isEscaped="1"><![CDATA[#uses &quot;Situational_bar&quot;
+
+string msDPE;
+string  msCol;
+int    miDirection;
+bool    mbIBit;
+int     miNum, miNum2;
+bool isSlider;
+int aiType;
+bool bShowAlarm;
+
+main()
+{
+ msDPE=$dpe_value;
+ //msCol=$s_Col;
+ msCol=&quot;fon_open&quot;;
+ miDirection=1;
+ mbIBit=$b_IBit;
+ miNum=1;
+ isSlider = false;
+ aiType = 0;
+ bShowAlarm = true;
+ setValue(&quot;&quot;,&quot;fill&quot;,&quot;[solid]&quot;);
+ STD_bar_AI();
+}
+
+]]></script>
+   </events>
+  </shape>
+  <shape Name="Scale_L" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">22</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">196.3776167471819 167.771794871795</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_text</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">20</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1 0 0 0.975 -157.7436507936509 5.716634599967961</prop>
+    <prop name="Location">196.2109500805153 168</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,-1,10,5,50,0,0,0,0,0,Regular</prop>
+     <prop name="en_US.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+     <prop name="de_AT.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">xx.xx</prop>
+     <prop name="en_US.utf8">xx.xx</prop>
+     <prop name="de_AT.utf8">Text</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">True</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+
+  dpGet($dpe_value+&quot;.OUT:&quot;,);
+  setValue(&quot;&quot;, &quot;text&quot;, getFormatTagValue(dp, fNewValue));
+dpGet(&quot;0903BT01.OUT:&quot;);
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+]]></script>
+   </events>
+  </shape>
+  <shape Name="Scale_H" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">23</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">196.3776167471819 167.771794871795</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_text</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">21</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1 0 0 0.975 -161.3714285714286 -97.56428571428566</prop>
+    <prop name="Location">196.2109500805153 168</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,-1,10,5,50,0,0,0,0,0,Regular</prop>
+     <prop name="en_US.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+     <prop name="de_AT.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">xx.xx</prop>
+     <prop name="en_US.utf8">xx.xx</prop>
+     <prop name="de_AT.utf8">Text</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">True</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.OUT&quot;))
+  {
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+    return;
+  }
+
+  dpConnect(&quot;EP_textFieldInCB&quot;,
+            $dpe_value+&quot;.OUT&quot;,
+            $dpe_value+&quot;.OUT:_online.._invalid&quot;,
+            $dpe_value+&quot;.REP&quot;);
+  err = getLastError();
+  if (dynlen(err) &gt; 0)
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(&quot;&quot;, &quot;text&quot;, &quot;&quot;);
+  } else {
+    setValue(&quot;&quot;, &quot;text&quot;, getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+]]></script>
+   </events>
+  </shape>
+  <shape Name="Scale_M" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">24</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">196.3776167471819 167.771794871795</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">cont_text</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">22</prop>
+    <prop name="ToolTipText">
+     <prop name="ru_RU.utf8"></prop>
+     <prop name="en_US.utf8"></prop>
+     <prop name="de_AT.utf8"></prop>
+    </prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="layoutAlignment">AlignCenter</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1 0 0 0.975 -160.1212675408328 -46.13092031425367</prop>
+    <prop name="Location">196.2109500805153 168</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,-1,10,5,50,0,0,0,0,0,Regular</prop>
+     <prop name="en_US.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+     <prop name="de_AT.utf8">Arial,-1,11,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">xx.xx</prop>
+     <prop name="en_US.utf8">xx.xx</prop>
+     <prop name="de_AT.utf8">Text</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="Transformable">True</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+   <events>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+
+  EP_textFieldIn();
+}
+void EP_textFieldIn()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.OUT&quot;))
+  {
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+    return;
+  }
+
+  dpConnect(&quot;EP_textFieldInCB&quot;,
+            $dpe_value+&quot;.OUT&quot;,
+            $dpe_value+&quot;.OUT:_online.._invalid&quot;,
+            $dpe_value+&quot;.REP&quot;);
+  err = getLastError();
+  if (dynlen(err) &gt; 0)
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+
+}
+
+
+void EP_textFieldInCB(string dp, float fNewValue, string dpInvalid, bool boInvalid, string dpSource2, bool value)
+{
+  if (boInvalid || value) {
+    setValue(&quot;&quot;, &quot;text&quot;, &quot;&quot;);
+  } else {
+    setValue(&quot;&quot;, &quot;text&quot;, getFormatTagValue(dp, fNewValue));
+  }
+}
+
+// SimpleCtrlScript {EP_textFieldIn}
+// DP {$dpe_value}
+// DPConfig {:_online.._value}
+// DPType {float}
+// UseDPUnit {TRUE}
+// UseDPFormat {TRUE}
+// SimpleCtrlScriptEnd {EP_textFieldIn}
+]]></script>
+   </events>
+  </shape>
+  <reference parentSerial="-1" Name="imitFigRef" referenceId="0">
+   <properties>
+    <prop name="FileName">objects/Situational/subsituational/imitPanel.pnl</prop>
+    <prop name="Location">101.0277777777778 86.88333333333324</prop>
+    <prop name="Geometry">1 0 0 1 -50.77142857142864 -15.51428571428566</prop>
+    <prop name="TabOrder">7</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  EP_setVisible();
+}
+
+void EP_setVisible()
+{
+  dyn_errClass err;
+
+  if( !dpExists( $dpe_value+&quot;.SIM:_online.._value&quot;))
+  {
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+    return;
+  }
+
+  dpConnect(&quot;EP_setVisibleCB&quot;,
+            $dpe_value+&quot;.SIM:_online.._value&quot;);
+  err = getLastError();
+  if (dynlen(err) &gt; 0)
+    setValue(&quot;&quot;, &quot;color&quot;, &quot;fon_nan&quot;);
+
+}
+
+
+void EP_setVisibleCB(string dp, bool boNewValue)
+{
+    setValue(&quot;&quot;, &quot;visible&quot;, boNewValue);
+}
+]]></script>
+   </properties>
+  </reference>
+ </shapes>
+</panel>

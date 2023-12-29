@@ -1,0 +1,176 @@
+V 14
+2
+LANG:10001 0 
+LANG:10027 0 
+PANEL,-1 -1 25 44 N "6_darkwhite" 0
+E E E E E 1 -1 -1 0  70 80
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+2
+LANG:10001 0 
+LANG:10027 0 
+4 3
+"LINE2"
+""
+1 13.24999999999999 3.125 E E E 1 E 1 E N "el_violet" E N {255,255,255} E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  13.24999999999999 3.125 13.24999999999999 35.25
+9 7
+"ARC2"
+""
+1 90 50 E E E 1 E 1 E N "el_violet" E N "6_darkwhite" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 1 1 E 0.5 0 0.4 -31.75 -5.75 1 E 90 50 10 10
+ 0 90 40 90 60 1
+9 8
+"ARC3"
+""
+1 90 50 E E E 1 E 1 E N "el_violet" E N "6_darkwhite" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 1 1 E 0.5 0 0.4 -31.75 2.25 1 E 90 50 10 10
+ 0 90 40 90 60 1
+7 9
+"ELLIPSE1"
+""
+1 90 40 E E E 1 E 1 E N "el_violet" E N "el_violet" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 0.08749999999999999 0 0.1 4.5 3.25 1 E 90 40 10 10
+7 10
+"ELLIPSE2"
+""
+1 90 40 E E E 1 E 1 E N "el_violet" E N "el_violet" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E 0.08749999999999999 0 0.1 4.5 25.25 1 E 90 40 10 10
+4 11
+"LINE38"
+""
+1 16 10.25000000000023 E E E 1 E 1 E N "el_violet" E N {255,255,255} E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  16 10.25 13.25 10.25
+4 12
+"LINE39"
+""
+1 16 26.25000000000023 E E E 1 E 1 E N "el_violet" E N {255,255,255} E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+2
+LANG:10001 0 
+LANG:10027 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+E E 0 2 3 2 1 E  16 26.25 13.25 26.25
+0
+LAYER, 1 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 2 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 3 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 4 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 5 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 6 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+LAYER, 7 
+2
+LANG:10001 0 
+LANG:10027 0 
+0
+0
